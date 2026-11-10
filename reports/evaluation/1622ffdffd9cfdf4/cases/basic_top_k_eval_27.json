@@ -1,0 +1,53 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_27",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_27",
+    "question": "What will RBC provision for credit losses be in 2030?",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2030
+      }
+    ],
+    "expected_behavior": "Decline to predict an unsupported future filing or number.",
+    "reference_query": "What will RBC provision for credit losses be in 2030?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer this question.",
+    "sources": [],
+    "retrieval_seconds": 0.09314979996997863,
+    "structured": null
+  },
+  "latency_seconds": 0.09318790002726018,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "embedding_tokens": 0,
+  "chat_calls": 0,
+  "query_embedding_seconds": 0.02097049995791167,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately states that there is insufficient information to predict future provisions for credit losses, aligning with the expected behavior.",
+    "relevance_reason": "The response directly addresses the question by stating the lack of information to make a prediction.",
+    "completeness_reason": "The answer fully covers the request by clearly stating the limitation without omitting any relevant aspects.",
+    "unsupported_claims": [],
+    "reference_limitations": "No relevant filings or data were provided to support a prediction for 2030."
+  },
+  "judge_cost_usd": 0.00015539999999999998
+}

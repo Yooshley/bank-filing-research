@@ -1,0 +1,190 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_30",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_30",
+    "question": "Calculate the percentage change in RBC provision for credit losses from 2024 to 2025.",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "calculation",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Use matching annual PCL amounts with units and citations; show (new-old)/old*100, or abstain if either input is missing.",
+    "reference_query": "RBC total provision for credit losses fiscal year"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer this question.",
+    "sources": [
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00357",
+        "text": "Balance at beginning of period\n$\n774\n$\n785 $\n767\n$\n2,326 $\n597\n$\n585 $\n392\n$\n1,574\nProvision for credit losses Transfers to stage 1\n284\n(282)\n(2)\n–\n216\n(215)\n(1)\n–\nTransfers to stage 2\n(152)\n159\n(7)\n–\n(87)\n89\n(2)\n–\nTransfers to stage 3\n(9)\n(77)\n86\n–\n(10)\n(60)\n70\n–\nOriginations\n737\n–\n–\n737\n651\n–\n–\n651\nMaturities\n(438)\n(379)\n–\n(817)\n(448)\n(270)\n–\n(718)\nChanges in risk, parameters and\n\nexposures\n(407)\n827\n957\n1,377\n(153)\n647\n718\n1,212\nWrite-offs\n–\n–\n(763)\n(763)\n–\n–\n(324)\n(324)\nRecoveries\n–\n–\n63\n63\n–\n–\n31\n31\nExchange rate and other\n(2)\n5\n(133)\n(130)\n8\n9\n(117)\n(100)\n\nBalance at end of period\n$\n787\n$\n1,038 $\n968\n$\n2,793 $\n774\n$\n785 $\n767\n$\n2,326\n\nConsolidated Financial Statements\n\nNote 5\nLoans and allowance for credit losses (continued)\n\nKey inputs and assumptions\nThe measurement of expected credit losses is a complex calculation that involves a significant number of interrelated inputs and\nassumptions and the allowance is not sensitive to any one single factor. The key drivers of changes in expected credit losses\ninclude the following:\n\n• Changes in the credit quality of the borrower or instrument, primarily reflected in changes in internal risk ratings;\n• Changes in forward-looking macroeconomic conditions, specifically the macroeconomic variables to which our models are\ncalibrated, which are those most closely correlated with credit losses in the relevant portfolio;\n• Changes in scenario design and the weight assigned to each scenario; and\n• Transfers between stages, which can be triggered by changes to any of the above inputs.\n\nTo reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics.\n\nInternal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit risk\nand Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.",
+        "similarity": 0.5617722868919373,
+        "document_type": "annual_report",
+        "section": "FVOCI",
+        "fiscal_year": 2024,
+        "page_end": 190,
+        "bank_code": "RBC",
+        "quarter": 0,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "page_start": 189
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00349",
+        "text": "Allowance for credit losses on investment securities\nThe following tables reconcile the opening and closing allowance for debt securities at FVOCI and amortized cost by stage.\nReconciling items include the following:\n•\nTransfers between stages, which are presumed to occur before any corresponding remeasurement of the allowance.\n•\nPurchases, which reflect the allowance related to assets newly recognized during the period, including those assets that\nwere derecognized following a modification of terms.\n•\nSales and maturities, which reflect the allowance related to assets derecognized during the period without a credit loss\nbeing incurred, including those assets that were derecognized following a modification of terms.\n•\nChanges in risk, parameters and exposures, which comprise the impact of changes in model inputs or assumptions, including\nchanges in forward-looking macroeconomic conditions; partial repayments; changes in the measurement following a\ntransfer between stages; and unwinding of the time value discount due to the passage of time.\n\nAllowance for credit losses – securities at FVOCI (1)\n\nFor the year ended\n\nOctober 31, 2024\n\nOctober 31, 2023\n\nPerforming\n\nImpaired\n\nPerforming\n\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3 (2)\nTotal\nStage 1\nStage 2\nStage 3 (2)\nTotal\n\nBalance at beginning of period\n$\n4 $\n– $\n(37) $\n(33) $\n3 $\n1 $\n(23) $\n(19)\nProvision for credit losses\n\nTransfers to stage 1\n–\n–\n–\n–\n1\n(1)\n–\n–\nTransfers to stage 2\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 3\n–\n–\n–\n–\n–\n–\n–\n–\nPurchases\n10\n–\n–\n10\n7\n–\n–\n7\nSales and maturities\n(4)\n–\n–\n(4)\n(2)\n–\n–\n(2)\nChanges in risk, parameters and\n\nexposures\n(4)\n–\n(8)\n(12)\n(5)\n–\n(17)\n(22)\nExchange rate and other\n–\n–\n4\n4\n–\n–\n3\n3\n\nBalance at end of period\n$\n6 $\n– $\n(41) $\n(35) $\n4 $\n– $\n(37) $\n(33)\n\n(1)\nExpected credit losses on debt securities at FVOCI are not separately recognized on the Consolidated Balance Sheets as the related securities are recorded at fair value.\nThe cumulative amount of credit losses recognized in income is presented in Other components of equity.\n(2)\nReflects changes in the allowance for purchased credit impaired securities.\n\nConsolidated Financial Statements\n\nNote 4\nSecurities (continued)\n\nAllowance for credit losses – securities at amortized cost\n\nFor the year ended\n\nOctober 31, 2024\n\nOctober 31, 2023\n\nPerforming\nImpaired\n\nPerforming\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nBalance at beginning of period\n$\n8 $\n15 $\n– $\n23 $\n8 $\n14 $\n– $\n22\nProvision for credit losses",
+        "similarity": 0.5329058766365051,
+        "bank": "Royal Bank of Canada",
+        "page_end": 186,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "fiscal_year": 2024,
+        "section": "FVOCI",
+        "document_type": "annual_report",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "page_start": 185,
+        "bank_code": "RBC"
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00355",
+        "text": "Balance at beginning of period\n$\n223\n$\n90 $\n168\n$\n481 $\n235\n$\n65 $\n132\n$\n432\nProvision for credit losses Transfers to stage 1\n99\n(97)\n(2)\n–\n95\n(95)\n–\n–\nTransfers to stage 2\n(23)\n36\n(13)\n–\n(26)\n38\n(12)\n–\nTransfers to stage 3\n(5)\n(42)\n47\n–\n(2)\n(13)\n15\n–\nOriginations\n94\n–\n–\n94\n89\n–\n–\n89\nMaturities\n(19)\n(17)\n–\n(36)\n(17)\n(9)\n–\n(26)\nChanges in risk, parameters and\n\nexposures\n(155)\n157\n54\n56\n(152)\n103\n60\n11\nWrite-offs\n–\n–\n(23)\n(23)\n–\n–\n(30)\n(30)\nRecoveries\n–\n–\n13\n13\n–\n–\n13\n13\nExchange rate and other\n1\n(1)\n(13)\n(13)\n1\n1\n(10)\n(8)\n\nBalance at end of period\n$\n215\n$\n126 $\n231\n$\n572 $\n223\n$\n90 $\n168\n$\n481\n\nPersonal\n\nBalance at beginning of period\n$\n280\n$\n793 $\n155\n$\n1,228 $\n285\n$\n661 $\n97\n$\n1,043\nProvision for credit losses\n\nTransfers to stage 1\n537\n(537)\n–\n–\n696\n(695)\n(1)\n–\nTransfers to stage 2\n(75)\n78\n(3)\n–\n(88)\n90\n(2)\n–\nTransfers to stage 3\n(3)\n(130)\n133\n–\n(1)\n(57)\n58\n–\nOriginations\n116\n–\n–\n116\n103\n–\n–\n103\nMaturities\n(51)\n(186)\n–\n(237)\n(45)\n(112)\n–\n(157)\nChanges in risk, parameters and\n\nexposures\n(499)\n947\n550\n998\n(671)\n906\n412\n647\nWrite-offs\n–\n–\n(745)\n(745)\n–\n–\n(518)\n(518)\nRecoveries\n–\n–\n129\n129\n–\n–\n114\n114\nExchange rate and other\n–\n1\n(8)\n(7)\n1\n–\n(5)\n(4)\n\nBalance at end of period\n$\n305\n$\n966 $\n211\n$\n1,482 $\n280\n$\n793 $\n155\n$\n1,228\n\nCredit cards\n\nBalance at beginning of period\n$\n203\n$\n866 $\n–\n$\n1,069 $\n177\n$\n716 $\n–\n$\n893\nProvision for credit losses\n\nTransfers to stage 1\n559\n(559)\n–\n–\n539\n(539)\n–\n–\nTransfers to stage 2\n(111)\n111\n–\n–\n(101)\n101\n–\n–\nTransfers to stage 3\n(2)\n(483)\n485\n–\n(2)\n(394)\n396\n–\nOriginations\n25\n–\n–\n25\n13\n–\n–\n13\nMaturities\n(5)\n(48)\n–\n(53)\n(6)\n(33)\n–\n(39)\nChanges in risk, parameters and",
+        "similarity": 0.5322890281677246,
+        "bank_code": "RBC",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "bank": "Royal Bank of Canada",
+        "document_type": "annual_report",
+        "fiscal_year": 2024,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "page_end": 189,
+        "section": "FVOCI",
+        "page_start": 189
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00356",
+        "text": "Balance at beginning of period\n$\n203\n$\n866 $\n–\n$\n1,069 $\n177\n$\n716 $\n–\n$\n893\nProvision for credit losses Transfers to stage 1\n559\n(559)\n–\n–\n539\n(539)\n–\n–\nTransfers to stage 2\n(111)\n111\n–\n–\n(101)\n101\n–\n–\nTransfers to stage 3\n(2)\n(483)\n485\n–\n(2)\n(394)\n396\n–\nOriginations\n25\n–\n–\n25\n13\n–\n–\n13\nMaturities\n(5)\n(48)\n–\n(53)\n(6)\n(33)\n–\n(39)\nChanges in risk, parameters and\n\nexposures\n(465)\n1,139\n185\n859\n(417)\n1,015\n64\n662\nWrite-offs\n–\n–\n(892)\n(892)\n–\n–\n(650)\n(650)\nRecoveries\n–\n–\n223\n223\n–\n–\n190\n190\nExchange rate and other\n3\n–\n(1)\n2\n–\n–\n–\n–\n\nBalance at end of period\n$\n207\n$\n1,026 $\n–\n$\n1,233 $\n203\n$\n866 $\n–\n$\n1,069\n\nSmall business\n\nBalance at beginning of period\n$\n70\n$\n66 $\n58\n$\n194 $\n73\n$\n73 $\n48\n$\n194\nProvision for credit losses\n\nTransfers to stage 1\n35\n(35)\n–\n–\n39\n(39)\n–\n–\nTransfers to stage 2\n(20)\n20\n–\n–\n(14)\n14\n–\n–\nTransfers to stage 3\n(1)\n(10)\n11\n–\n(1)\n(10)\n11\n–\nOriginations\n43\n–\n–\n43\n36\n–\n–\n36\nMaturities\n(17)\n(21)\n–\n(38)\n(18)\n(21)\n–\n(39)\nChanges in risk, parameters and\n\nexposures\n(31)\n65\n139\n173\n(48)\n44\n50\n46\nWrite-offs\n–\n–\n(98)\n(98)\n–\n–\n(50)\n(50)\nRecoveries\n–\n–\n14\n14\n–\n–\n11\n11\nExchange rate and other\n1\n1\n(18)\n(16)\n3\n5\n(12)\n(4)\n\nBalance at end of period\n$\n80\n$\n86 $\n106\n$\n272 $\n70\n$\n66 $\n58\n$\n194\n\nWholesale\n\nBalance at beginning of period\n$\n774\n$\n785 $\n767\n$\n2,326 $\n597\n$\n585 $\n392\n$\n1,574\nProvision for credit losses\n\nTransfers to stage 1\n284\n(282)\n(2)\n–\n216\n(215)\n(1)\n–\nTransfers to stage 2\n(152)\n159\n(7)\n–\n(87)\n89\n(2)\n–\nTransfers to stage 3\n(9)\n(77)\n86\n–\n(10)\n(60)\n70\n–\nOriginations\n737\n–\n–\n737\n651\n–\n–\n651\nMaturities\n(438)\n(379)\n–\n(817)\n(448)\n(270)\n–\n(718)\nChanges in risk, parameters and",
+        "similarity": 0.530199408531189,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "page_end": 189,
+        "bank_code": "RBC",
+        "section": "FVOCI",
+        "page_start": 189,
+        "document_type": "annual_report",
+        "fiscal_year": 2024,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "quarter": 0,
+        "bank": "Royal Bank of Canada"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00343",
+        "text": "Consolidated Financial Statements Note 5\nLoans and allowance for credit losses (continued) Allowance for credit losses – Retail and wholesale loans For the year ended October 31, 2025 October 31, 2024 Performing Impaired Performing Impaired (Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal Residential mortgages\n\nBalance at beginning of period\n$\n215\n$\n126 $\n231\n$\n572 $\n223\n$\n90 $\n168\n$\n481\nProvision for credit losses\n\nTransfers to stage 1\n157\n(153)\n(4)\n–\n99\n(97)\n(2)\n–\nTransfers to stage 2\n(41)\n49\n(8)\n–\n(23)\n36\n(13)\n–\nTransfers to stage 3\n(7)\n(45)\n52\n–\n(5)\n(42)\n47\n–\nOriginations\n100\n–\n–\n100\n94\n–\n–\n94\nMaturities\n(25)\n(29)\n–\n(54)\n(19)\n(17)\n–\n(36)\nChanges in risk, parameters and\n\nexposures\n(123)\n256\n101\n234\n(155)\n157\n54\n56\nWrite-offs\n–\n–\n(20)\n(20)\n–\n–\n(23)\n(23)\nRecoveries\n–\n–\n11\n11\n–\n–\n13\n13\nExchange rate and other\n–\n–\n(49)\n(49)\n1\n(1)\n(13)\n(13)\n\nBalance at end of period\n$\n276\n$\n204 $\n314\n$\n794 $\n215\n$\n126 $\n231\n$\n572\n\nPersonal\n\nBalance at beginning of period\n$\n305\n$\n966 $\n211\n$\n1,482 $\n280\n$\n793 $\n155\n$\n1,228\nProvision for credit losses\n\nTransfers to stage 1\n594\n(593)\n(1)\n–\n537\n(537)\n–\n–\nTransfers to stage 2\n(96)\n100\n(4)\n–\n(75)\n78\n(3)\n–\nTransfers to stage 3\n(4)\n(163)\n167\n–\n(3)\n(130)\n133\n–\nOriginations\n105\n–\n–\n105\n116\n–\n–\n116\nMaturities\n(53)\n(233)\n(1)\n(287)\n(51)\n(186)\n–\n(237)\nChanges in risk, parameters and\n\nexposures\n(562)\n1,040\n660\n1,138\n(499)\n947\n550\n998\nWrite-offs\n–\n–\n(935)\n(935)\n–\n–\n(745)\n(745)\nRecoveries\n–\n–\n156\n156\n–\n–\n129\n129\nExchange rate and other\n2\n(2)\n(20)\n(20)\n–\n1\n(8)\n(7)\n\nBalance at end of period\n$\n291\n$\n1,115 $\n233\n$\n1,639 $\n305\n$\n966 $\n211\n$\n1,482\n\nCredit cards\n\nBalance at beginning of period\n$\n207\n$\n1,026 $\n–\n$\n1,233 $\n203\n$\n866 $\n–\n$\n1,069\nProvision for credit losses",
+        "similarity": 0.5759422183036804,
+        "page_start": 184,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "quarter": 0,
+        "section": "FVOCI",
+        "document_type": "annual_report",
+        "page_end": 184,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00345",
+        "text": "exposures\n(41)\n98\n156\n213\n(31)\n65\n139\n173\nWrite-offs\n–\n–\n(124)\n(124)\n–\n–\n(98)\n(98)\nRecoveries\n–\n–\n20\n20\n–\n–\n14\n14\nExchange rate and other\n6\n2\n(34)\n(26)\n1\n1\n(18)\n(16) Balance at end of period\n$\n95\n$\n117 $\n139\n$\n351 $\n80\n$\n86 $\n106\n$\n272 Wholesale\n\nBalance at beginning of period\n$\n787\n$\n1,038 $\n968\n$\n2,793 $\n774\n$\n785 $\n767\n$\n2,326\nProvision for credit losses\n\nTransfers to stage 1\n277\n(275)\n(2)\n–\n284\n(282)\n(2)\n–\nTransfers to stage 2\n(124)\n133\n(9)\n–\n(152)\n159\n(7)\n–\nTransfers to stage 3\n(15)\n(273)\n288\n–\n(9)\n(77)\n86\n–\nOriginations\n755\n–\n–\n755\n737\n–\n–\n737\nMaturities\n(543)\n(418)\n–\n(961)\n(438)\n(379)\n–\n(817)\nChanges in risk, parameters and\n\nexposures\n(243)\n912\n1,496\n2,165\n(407)\n827\n957\n1,377\nWrite-offs\n–\n–\n(1,237)\n(1,237)\n–\n–\n(763)\n(763)\nRecoveries\n–\n–\n74\n74\n–\n–\n63\n63\nExchange rate and other\n2\n6\n(278)\n(270)\n(2)\n5\n(133)\n(130)\n\nBalance at end of period\n$\n896\n$\n1,123 $\n1,300\n$\n3,319 $\n787\n$\n1,038 $\n968\n$\n2,793\n\n182\nConsolidated Financial Statements\n\nKey inputs and assumptions\nThe measurement of expected credit losses is a complex calculation that involves a significant number of interrelated inputs\nand assumptions and the allowance is not sensitive to any one single factor. The key drivers of changes in expected credit\nlosses include the following:\n\n• Changes in the credit quality of the borrower or instrument, primarily reflected in changes in internal risk ratings;\n• Changes in forward-looking macroeconomic conditions, specifically the macroeconomic variables to which our models\nare calibrated, which are those most closely correlated with credit losses in the relevant portfolio;\n• Changes in scenario design and the weight assigned to each scenario; and\n• Transfers between stages, which can be triggered by changes to any of the above inputs.\n\nTo reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics.\n\nInternal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit\nrisk and Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.",
+        "similarity": 0.5529946088790894,
+        "page_end": 185,
+        "quarter": 0,
+        "page_start": 184,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "section": "FVOCI",
+        "bank_code": "RBC",
+        "bank": "Royal Bank of Canada",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00344",
+        "text": "exposures\n(562)\n1,040\n660\n1,138\n(499)\n947\n550\n998\nWrite-offs\n–\n–\n(935)\n(935)\n–\n–\n(745)\n(745)\nRecoveries\n–\n–\n156\n156\n–\n–\n129\n129\nExchange rate and other\n2\n(2)\n(20)\n(20)\n–\n1\n(8)\n(7) Balance at end of period\n$\n291\n$\n1,115 $\n233\n$\n1,639 $\n305\n$\n966 $\n211\n$\n1,482 Credit cards Balance at beginning of period\n$\n207\n$\n1,026 $\n–\n$\n1,233 $\n203\n$\n866 $\n–\n$\n1,069\nProvision for credit losses\n\nTransfers to stage 1\n662\n(662)\n–\n–\n559\n(559)\n–\n–\nTransfers to stage 2\n(112)\n112\n–\n–\n(111)\n111\n–\n–\nTransfers to stage 3\n(2)\n(595)\n597\n–\n(2)\n(483)\n485\n–\nOriginations\n14\n–\n–\n14\n25\n–\n–\n25\nMaturities\n(4)\n(56)\n–\n(60)\n(5)\n(48)\n–\n(53)\nChanges in risk, parameters and\n\nexposures\n(546)\n1,313\n231\n998\n(465)\n1,139\n185\n859\nWrite-offs\n–\n–\n(1,010)\n(1,010)\n–\n–\n(892)\n(892)\nRecoveries\n–\n–\n181\n181\n–\n–\n223\n223\nExchange rate and other\n(2)\n1\n1\n–\n3\n–\n(1)\n2\n\nBalance at end of period\n$\n217\n$\n1,139 $\n–\n$\n1,356 $\n207\n$\n1,026 $\n–\n$\n1,233\n\nSmall business\n\nBalance at beginning of period\n$\n80\n$\n86 $\n106\n$\n272 $\n70\n$\n66 $\n58\n$\n194\nProvision for credit losses\n\nTransfers to stage 1\n54\n(54)\n–\n–\n35\n(35)\n–\n–\nTransfers to stage 2\n(23)\n23\n–\n–\n(20)\n20\n–\n–\nTransfers to stage 3\n(1)\n(14)\n15\n–\n(1)\n(10)\n11\n–\nOriginations\n39\n–\n–\n39\n43\n–\n–\n43\nMaturities\n(19)\n(24)\n–\n(43)\n(17)\n(21)\n–\n(38)\nChanges in risk, parameters and\n\nexposures\n(41)\n98\n156\n213\n(31)\n65\n139\n173\nWrite-offs\n–\n–\n(124)\n(124)\n–\n–\n(98)\n(98)\nRecoveries\n–\n–\n20\n20\n–\n–\n14\n14\nExchange rate and other\n6\n2\n(34)\n(26)\n1\n1\n(18)\n(16)\n\nBalance at end of period\n$\n95\n$\n117 $\n139\n$\n351 $\n80\n$\n86 $\n106\n$\n272\n\nWholesale",
+        "similarity": 0.5423411726951599,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "bank_code": "RBC",
+        "page_start": 184,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "page_end": 184,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "section": "FVOCI"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00337",
+        "text": "Allowance for credit losses on investment securities\nThe following tables reconcile the opening and closing allowance for debt securities at FVOCI and amortized cost by stage.\nReconciling items include the following:\n•\nTransfers between stages, which are presumed to occur before any corresponding remeasurement of the allowance.\n•\nPurchases, which reflect the allowance related to assets newly recognized during the period, including those assets that\nwere derecognized following a modification of terms.\n•\nSales and maturities, which reflect the allowance related to assets derecognized during the period without a credit loss\nbeing incurred, including those assets that were derecognized following a modification of terms.\n•\nChanges in risk, parameters and exposures, which comprise the impact of changes in model inputs or assumptions,\nincluding changes in forward-looking macroeconomic conditions; partial repayments; changes in the measurement\nfollowing a transfer between stages; and unwinding of the time value discount due to the passage of time.\n\nAllowance for credit losses – securities at FVOCI (1)\n\nFor the year ended\n\nOctober 31, 2025\n\nOctober 31, 2024\n\nPerforming\n\nImpaired\n\nPerforming\n\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3 (2)\nTotal\nStage 1\nStage 2\nStage 3 (2)\nTotal\n\nBalance at beginning of period\n$\n6 $\n– $\n(41) $\n(35) $\n4 $\n– $\n(37) $\n(33)\nProvision for credit losses\n\nTransfers to stage 1\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 2\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 3\n–\n–\n–\n–\n–\n–\n–\n–\nPurchases\n7\n–\n–\n7\n10\n–\n–\n10\nSales and maturities\n(4)\n–\n–\n(4)\n(4)\n–\n–\n(4)\nChanges in risk, parameters and\n\nexposures\n(4)\n–\n(10)\n(14)\n(4)\n–\n(8)\n(12)\nExchange rate and other\n–\n–\n6\n6\n–\n–\n4\n4\n\nBalance at end of period\n$\n5 $\n– $\n(45) $\n(40) $\n6 $\n– $\n(41) $\n(35)\n\n(1)\nExpected credit losses on debt securities at FVOCI are not separately recognized on the Consolidated Balance Sheets as the related securities are recorded at fair value.\nThe cumulative amount of credit losses recognized in income is presented in Other components of equity.\n(2)\nReflects changes in the allowance for purchased credit-impaired securities.\n\n178\nConsolidated Financial Statements\n\nAllowance for credit losses – securities at amortized cost\n\nFor the year ended\n\nOctober 31, 2025\n\nOctober 31, 2024\n\nPerforming\nImpaired\n\nPerforming\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nBalance at beginning of period\n$\n6 $\n8 $\n– $\n14 $\n8 $\n15 $\n– $\n23\nProvision for credit losses",
+        "similarity": 0.5196504592895508,
+        "page_start": 180,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "section": "FVOCI",
+        "bank_code": "RBC",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 181,
+        "document_type": "annual_report",
+        "bank": "Royal Bank of Canada"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 1.6329970000078902
+  },
+  "latency_seconds": 2.6812528000446036,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0008598,
+  "input_tokens": 5680,
+  "output_tokens": 13,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.05067130015231669,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately reflects the absence of sufficient information to calculate the percentage change in RBC provision for credit losses from 2024 to 2025, as no specific figures for these years were provided in the context.",
+    "relevance_reason": "The response directly addresses the question about calculating the percentage change, stating that the necessary information is not available.",
+    "completeness_reason": "The response fully covers the request by clearly stating the limitation regarding the lack of data for the calculation.",
+    "unsupported_claims": [],
+    "reference_limitations": "No specific provision for credit losses figures for 2024 and 2025 were provided in the retrieved filings."
+  },
+  "judge_cost_usd": 0.0027169499999999997,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_30",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

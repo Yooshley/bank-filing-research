@@ -1,0 +1,137 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_15",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_15",
+    "question": "What liquidity risk management did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity risk management did CIBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, CIBC disclosed several key aspects of its liquidity risk management:\n\n1. **Definition and Sources of Liquidity Risk**: CIBC defines liquidity risk as the risk of having insufficient cash or its equivalent to meet financial obligations in a timely and cost-effective manner. Common sources include unanticipated withdrawals of deposits and the inability to replace maturing debt [S1].\n\n2. **Management Approach**: CIBC's liquidity risk management approach supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The management strategies are regularly reviewed to adapt to changes in the liquidity environment [S1].\n\n3. **Governance Structure**: Liquidity risk is managed using a three lines of defence model:\n   - The Treasurer manages the measurement and reporting of liquidity risk as the first line of defence.\n   - The Liquidity and Non-Trading Market Risk group provides independent oversight as the second line of defence.\n   - Internal audit serves as the third line of defence, ensuring the effectiveness of governance practices and risk management processes [S1].\n\n4. **Policies and Contingency Planning**: CIBC maintains a liquidity risk management policy that ensures sufficient unencumbered liquid assets and diversified funding sources. It also has a detailed global contingency funding plan to address liquidity shortfalls in emergencies [S2].\n\n5. **Risk Measurement and Stress Testing**: CIBC uses both regulatory-driven and internally developed metrics to measure liquidity risk exposure. This includes the Liquidity Horizon, which assesses future cash flows under stress scenarios. Stress testing is a key component, modeling various scenarios to evaluate liquidity needs [S2].\n\n6. **Risk Appetite and Reporting**: The liquidity risk tolerance is defined by an annual risk appetite statement approved by the Board. CIBC regularly monitors its liquidity position and reports on metrics such as the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR) [S2][S3].\n\n7. **Funding Strategy**: CIBC funds its operations primarily through client-sourced deposits and a variety of wholesale funding sources. The bank continuously evaluates opportunities to diversify its funding products and investor segments [S3].\n\nOverall, CIBC's liquidity risk management framework is designed to ensure that it can meet its obligations while maintaining compliance with regulatory requirements and aligning with its strategic goals.",
+    "sources": [
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00171",
+        "text": "Liquidity risk is the risk of having insufficient cash or its equivalent in a timely and cost-effective manner to meet financial obligations as they\ncome due. Common sources of liquidity risk inherent in banking services include unanticipated withdrawals of deposits, the inability to replace\nmaturing debt, credit and liquidity commitments, and additional pledging or other collateral requirements.\n\nOur approach to liquidity risk management supports our business strategy, aligns with our risk appetite and adheres to regulatory\nexpectations.\n\nOur management strategies, objectives and practices are regularly reviewed to align with changes to the liquidity environment, including\nregulatory, business and/or market developments. Liquidity risk remains within CIBC’s risk appetite.\n\nGovernance and management\nWe manage liquidity risk in a manner that enables us to withstand a liquidity stress event without an adverse impact on the viability of our\noperations. Actual and anticipated cash flows generated from on- and off-balance sheet exposures are routinely measured and monitored to ensure\ncompliance with established limits. We incorporate stress testing into the management and measurement of liquidity risk. Stress test results assist\nwith the development of our liquidity assumptions, identification of potential constraints to funding planning, and contribute to the design of our\ncontingency funding plan.\n\nLiquidity risk is managed using the three lines of defence model, and the ongoing management of liquidity risk is the responsibility of the\nTreasurer, supported by guidance from GALCO.\n\nThe Treasurer is responsible for managing the activities and processes required for measurement and the reporting and monitoring of CIBC’s\nliquidity risk position as the first line of defence.\n\nThe Liquidity and Non-Trading Market Risk group provides independent oversight of the measurement, monitoring and control of liquidity risk,\nas the second line of defence.\n\nInternal audit is the third line of defence providing reasonable assurance to senior management and the Audit Committee of the Board on the\neffectiveness of CIBC’s governance practices, risk management processes, and internal control as part of its risk-based audit plan and in\naccordance with its mandate as described in the Internal Audit Charter.\n\nThe GALCO governs CIBC’s liquidity risk management, ensuring the liquidity risk management methodologies, assumptions, and key metrics\nare regularly reviewed and aligned with CIBC’s requirements. The Liquidity Risk Management Committee, a subcommittee of GALCO, monitors\nglobal liquidity risk and is responsible for ensuring that CIBC’s liquidity risk profile is comprehensively measured and managed in alignment with\nCIBC’s strategic direction, risk appetite and regulatory requirements.\n\nThe RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually.\n\nPolicies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy.\n\nOur pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.",
+        "similarity": 0.7828680276870728,
+        "bank_code": "CIBC",
+        "section": "Liquidity risk",
+        "fiscal_year": 2025,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_end": 83,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "page_start": 83,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00172",
+        "text": "The RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually. Policies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy. Our pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.\n\nWe maintain a detailed global contingency funding plan that sets out the strategies for addressing liquidity shortfalls in emergency and\nunexpected situations, and delineates the requirements necessary to manage a range of stress conditions, establishes lines of responsibility,\narticulates implementation, defines escalation procedures, and is aligned to CIBC’s risk appetite. In order to reflect CIBC’s organizational\ncomplexity, regional and subsidiary contingency funding plans are maintained to respond to liquidity stresses unique to the jurisdictions within\nwhich CIBC operates, and support CIBC as an enterprise.\n\nRisk measurement\nOur liquidity risk tolerance is defined by our risk appetite statement, which is approved annually by the Board, and forms the basis for the\ndelegation of liquidity risk authority to senior management. We use both regulatory-driven and internally developed liquidity risk metrics to\nmeasure our liquidity risk exposure. Internally, our liquidity position is measured using the Liquidity Horizon, which combines contractual and\nbehavioural cash flows to measure the future point in time when projected cumulative cash outflows exceed cash inflows under a combined\nCIBC-specific and market-wide stress scenario. Expected and potential anticipated inflows and outflows of funds generated from on- and\noff-balance sheet exposures are measured and monitored on a regular basis to ensure compliance with established limits. These cash flows\nincorporate both contractual and behavioural on- and off-balance sheet cash flows.\n\nOur liquidity measurement system provides liquidity risk exposure reports that include the calculation of the internal liquidity stress tests\nand regulatory reporting such as the LCR, NSFR and net cumulative cash flow (NCCF). Our liquidity management also incorporates the\nmonitoring of our unsecured wholesale funding position and funding capacity.\n\nRisk appetite\nCIBC’s risk appetite statement ensures prudent management of liquidity risk by outlining qualitative considerations and quantitative metrics\nincluding the LCR and Liquidity Horizon. Quantitative metrics are measured and managed to a set of limits approved by Risk Management.\n\nStress testing\nA key component of our liquidity risk management, and complementing our assessments of liquidity risk exposure, is liquidity risk stress testing.\nLiquidity stress testing involves the application of name-specific and market-wide stress scenarios at varying levels of severity to assess the amount\nof available liquidity required to satisfy anticipated obligations as they come due. The scenarios model potential liquidity and funding requirements\nin the event of changes to unsecured wholesale funding and deposit run-off, contingent liquidity utilization, and liquid asset marketability.",
+        "similarity": 0.7438228130340576,
+        "page_end": 83,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "section": "Liquidity risk",
+        "page_start": 83
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00180",
+        "text": "32\nOff-balance sheet items\n505,253 (1)\n17,483 33\nTotal RSF\n$\n543,140 34\nNSFR 116 % Weighted $ millions, as at July 31, 2025 value 35\nTotal ASF\n$\n613,114 36\nTotal RSF\n$\n532,026 37\nNSFR\n115 % Weighted $ millions, as at October 31, 2024 value 38\nTotal ASF\n$\n579,137 39\nTotal RSF\n$\n503,435 40\nNSFR\n115 % (1) No assigned time period per disclosure template design.\n\nOur NSFR as at October 31, 2025, increased to 116% from 115% in the prior quarter, and increased from 115% in 2024, mainly due to an increase\nin operational deposits and wholesale funding, which was partially offset by a corresponding increase in loans.\n\nCIBC considers the impact of its business decisions on the LCR, NSFR and other liquidity risk metrics that it regularly monitors as part of a robust\nliquidity risk management function. Variables that can impact the metrics month-over-month include, but are not limited to, items such as wholesale\nfunding activities and maturities, strategic balance sheet initiatives, and transactions and market conditions affecting collateral.\n\nReporting of the LCR and NSFR is calibrated centrally by Treasury, in conjunction with the SBUs and other functional groups.\n\nFunding\nWe fund our operations with client-sourced deposits, supplemented with a wide range of wholesale funding.\n\nOur principal approach aims to fund our consolidated balance sheet with deposits primarily raised from personal and commercial banking\nchannels. We maintain a foundation of relationship-based core deposits, whose stability is regularly evaluated through internally developed\nstatistical assessments.\n\nWe routinely access a range of short-term and long-term secured and unsecured funding sources diversified by geography, depositor\ntype, instrument, currency and maturity. We raise long-term funding from existing programs including covered bonds, asset securitizations and\nunsecured debt.\n\nWe continuously evaluate opportunities to diversify into new funding products and investor segments in an effort to maximize funding\nflexibility and minimize concentration and financing costs. We regularly monitor wholesale funding levels and concentrations to internal limits\nconsistent with our desired liquidity risk profile.\n\nGALCO and RMC review and approve CIBC’s funding plan, which incorporates projected asset and liability growth, funding maturities, and\noutput from our liquidity position forecasting.\n\nThe following table provides the contractual maturity profile of our wholesale funding sources at their carrying values:\n\nLess than\n\n$ millions, as at October 31, 2025\n\n1 month\n1–3\nmonths\n\n3–6\nmonths\n\n6–12\nmonths\n\nLess than\n1 year total\n1–2\nyears\n\nOver\n2 years\nTotal",
+        "similarity": 0.6845092177391052,
+        "quarter": 0,
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "page_end": 88,
+        "page_start": 87,
+        "section": "Management’s discussion and analysis",
+        "document_type": "annual_report",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00013",
+        "text": "These priorities encompassed oversight of CIBC’s enterprise-\nwide strategy – including its technology, data and AI strategy which is overseen by your\nBoard’s new Technology Committee – as well as engagement with shareholders and\nsustainability stewardship. Your Board remained actively engaged with the evolving\nlandscape, staying abreast of emerging regulatory developments and broader stakeholder\nperspectives as CIBC advanced its strategy. We also continued to proactively manage the ongoing Board renewal process to ensure we\nhad the strongest and most capable Board by further expanding the skill set, experience\nand expertise of our directors. Marianne Harrison joined your Board. She was previously\nPresident and Chief Executive Officer at John Hancock, as well as President and Chief\nExecutive Officer of Manulife Canada. She brings deep finance and accounting expertise,\ndeveloped over an almost 40-year career in the financial industry.\n\nAs we look to the future, we are confident that CIBC is well positioned to continue creating\nvalue for all stakeholders. On behalf of your Board, I would like to recognize Victor for all he\nhas done to transform CIBC into a client-focused, purpose-led bank.\n\nYour Board is looking forward to continuing to work closely with Harry and CIBC’s leadership\nteam as they build on the momentum that has been established in creating enduring value\nfor all our stakeholders.\n\nKatharine B. Stevenson\nChair of the Board\n\nviii\n\nEnhanced Disclosure Task Force\n\nThe Enhanced Disclosure Task Force (EDTF), established by the Financial Stability Board, released its report “Enhancing the Risk Disclosures of\nBanks” in 2012, which included thirty-two disclosure recommendations. The index below provides the listing of these disclosures, along with their\nlocations. EDTF disclosures are located in our management’s discussion and analysis, consolidated financial statements, and supplementary\npackages, which may be found on our website (www.cibc.com). No information on CIBC’s website, including the supplementary packages, should\nbe considered incorporated herein by reference.\n\nPillar 3 Report and\n\nManagement’s\n\nConsolidated\n\nSupplementary\n\nTopics\nRecommendations\nDisclosures\n\ndiscussion\nand analysis\n\nfinancial\nstatements\n\nregulatory\ncapital disclosure\nPage references\n\nGeneral\n1\nIndex of risk information – current page\n\n2\nRisk terminology and measures\n97–100\n95–97\n\n3\nTop and emerging risks\n50–52\n\n4\nKey future regulatory ratio requirements\n33, 35–36, 72, 74\n157\n17, 27\n\n5\nRisk management structure\n43, 44\n\nRisk\ngovernance,\n\n6\nRisk culture and appetite\n42, 45–47\n\n7\nRisks arising from business activities\n42–49, 53\n\nrisk\nmanagement\nand business\n\nmodel\n\n8\nBank-wide stress testing\n31–32, 49, 57, 62,\n68, 70\n\n9\nMinimum capital requirements\n31–33\n157\n\nCapital\nadequacy and\n\n10\nComponents of capital and\n\n35\n16–19\n\nrisk-weighted\n\nassets\n\nreconciliation to the consolidated\nregulatory balance sheet\n\n11\nRegulatory capital flow statement\n36\n20\n\n12\nCapital management and planning\n31, 33\n157\n\n13\nBusiness activities and risk-weighted\n\n37, 53\n5\n\nassets\n\n14\nRisk-weighted assets and capital\n\n34, 37\n3, 5, 6–7\n\nrequirements\n\n15\nCredit risk by major portfolios\n55–60\n40–54, 63–72\n\nrisk\nmanagement\nand business model 8\nBank-wide stress testing\n31–32, 49, 57, 62,\n68, 70 9\nMinimum capital requirements\n31–33\n157 Capital\nadequacy and 10\nComponents of capital and 35\n16–19 risk-weighted assets reconciliation to the consolidated\nregulatory balance sheet 11\nRegulatory capital flow statement\n36\n20 12\nCapital management and planning\n31, 33\n157 13\nBusiness activities and risk-weighted 37, 53\n5 assets 14\nRisk-weighted assets and capital 34, 37\n3, 5, 6–7 requirements 15\nCredit risk by major portfolios\n55–60\n40–54, 63–72\n\n16\nRisk-weighted assets flow statement\n35, 37\n5, 11\n\n17\nBack-testing of models\n49, 57\n94\n\nLiquidity\n18\nLiquid assets\n71\n\nFunding\n19\nEncumbered assets\n71, 76\n\n20\nContractual maturity of assets,\n\n75–77\n\nliabilities and off-balance sheet\ninstruments\n\n21\nFunding strategy and sources\n75",
+        "similarity": 0.674055278301239,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 13,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "bank_code": "CIBC",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_start": 12,
+        "fiscal_year": 2025,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "section": "Notes to the consolidated financial statements"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00101",
+        "text": "Risk Identification, Measurement, Monitoring and Reporting Effective Challenge as Second Line of Defence Stress Testing Risk Treatment and Mitigation The Risk Management group performs several important activities including:\n•\nDeveloping our risk appetite and associated management control metrics;\n•\nSetting risk strategy to manage risks in alignment with our risk appetite and business strategy;\n•\nEstablishing and communicating risk frameworks, policies, procedures and limits to mitigate risks in alignment with risk strategy;\n•\nMeasuring, monitoring and reporting on risk levels;\n•\nIdentifying and assessing emerging and potential strategic risks;\n•\nAdjudicating transactions, as applicable;\n•\nReviewing and performing effective challenge on business risk assessments; and\n•\nEnsuring compliance with applicable regulatory and anti-money laundering (AML) requirements.\n\nThe following key groups within Risk Management, independent of the originating businesses, contribute to our management of risk:\n•\nCapital Markets Risk Management (CMRM) – This group provides independent oversight of the measurement, monitoring and control of\nmarket risks (both trading and non-trading), and trading credit risk (also called counterparty credit risk, which includes CVA risk) across\nCIBC’s portfolios, and effective challenge and sound risk management oversight to the treasury, including with respect to liquidity and funding\nrisk management and SIRR management function within CIBC.\n•\nEurope and Asia-Pacific Risk Management – This group carries out the mandate of CIBC Risk Management at a regional level under the\nleadership of the Senior Vice-President, Chief Risk Officer, Europe & APAC, with oversight from the Management Committees and CIBC\nLuxembourg Board. The group provides independent oversight for the identification, management, measurement, monitoring and mitigation of\nrisks in Europe and Asia.\n•\nRisk Analytics and Credit Decisioning – This group is responsible for the management and oversight of credit risk in the personal and business\nbanking lending portfolios (such as residential mortgages, credit cards, loans/lines of credit, and indirect auto lending), including the\ndevelopment of analytics to optimize credit performance and AML outcomes within CIBC’s risk appetite. This group is also responsible for all\nauto-adjudicated business banking loans.\n•\nGlobal Operational and Enterprise Risk Management (GOERM) – This group is responsible for the oversight of all enterprise-wide operational\nrisks globally and will establish and provide an independent risk perspective and ongoing strategic direction for various enterprise risk\nfunctions, while providing overall leadership to risk-wide business management and transformation activities. GOERM is responsible for\nenterprise-wide analysis, including the measuring and monitoring of risk appetite, enterprise-wide stress testing and reporting, environmental\nrisk, risk culture, strategic risk management, allowance for credit loss assessment and reporting, risk models and model quantification,\neconomic and regulatory capital methodologies, as well as risk data management.\n•\nCompliance and Global Regulatory Affairs (CGRA) – This group is responsible for designing and implementing an effective enterprise-wide\nframework to manage and mitigate regulatory compliance risk at CIBC, to be executed by CGRA and the other Oversight Functions (as\ndefined in the Regulatory Compliance Management Policy). CGRA also provides oversight of conduct and culture risk, including sales practice\nrisk and effective challenge of compensation plan changes. In addition, the Privacy Office under CGRA manages CIBC’s privacy-related risks\nand supports the protection of the privacy of all CIBC client and employee information. Overall, CGRA is responsible for maintaining strong\nrelationships with our prudential, privacy, and market conduct regulators and acts as a liaison between the regulators and CIBC.",
+        "similarity": 0.6649489402770996,
+        "section": "Management’s discussion and analysis",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_start": 57,
+        "document_type": "annual_report",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "page_end": 57,
+        "bank_code": "CIBC",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "quarter": 0,
+        "fiscal_year": 2025
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.8054257999174297
+  },
+  "latency_seconds": 5.508829100057483,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00086865,
+  "input_tokens": 3915,
+  "output_tokens": 469,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.02122700004838407,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about CIBC's liquidity risk management in the 2025 annual report are directly supported by the actual answer context, including definitions, governance structure, policies, and risk measurement methods.",
+    "relevance_reason": "The answer directly addresses the question regarding liquidity risk management disclosed by CIBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of liquidity risk management as disclosed in the report, including definitions, governance, policies, risk measurement, and stress testing, with no omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00163215,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_15",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

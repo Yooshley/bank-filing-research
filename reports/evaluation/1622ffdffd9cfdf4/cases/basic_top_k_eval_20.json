@@ -1,0 +1,159 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_20",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_20",
+    "question": "Compare how all five Canadian banks describe AI model risk or OSFI E-23 in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "RBC",
+      "TD",
+      "BMO",
+      "BNS",
+      "CIBC"
+    ],
+    "risk": "model_risk",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Cover all five banks, cite supporting excerpts, and distinguish no retrieved mention from no disclosure.",
+    "reference_query": "artificial intelligence model risk OSFI E-23 governance validation"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided excerpts from the 2025 annual reports of the five Canadian banks do not contain sufficient information to allow for a comprehensive comparison of how each bank describes AI model risk or OSFI E-23. Here is what is available:\n\n1. **Royal Bank of Canada (RBC)**: The excerpt does not mention AI model risk or OSFI E-23 at all, focusing instead on various product categories and market share information [S1].\n\n2. **Toronto-Dominion Bank (TD)**: The excerpt discusses the bank's risk management processes, including stress testing and monitoring of risks, but does not specifically address AI model risk or OSFI E-23 [S2].\n\n3. **Bank of Montreal (BMO)**: The excerpt focuses on governance and risk management frameworks but does not provide any details regarding AI model risk or OSFI E-23 [S3].\n\n4. **Bank of Nova Scotia (BNS)**: The excerpt mentions various types of risks, including operational and strategic risks, but does not specifically address AI model risk or OSFI E-23 [S4].\n\n5. **Canadian Imperial Bank of Commerce (CIBC)**: This bank explicitly discusses AI model risk, noting the potential benefits and risks associated with AI technologies. CIBC mentions the publication of OSFI's Guideline E-23 on Model Risk Management, which will include AI and Machine Learning methodologies, and emphasizes their commitment to responsible use and risk mitigation in this area [S5].\n\nIn summary, only CIBC provides specific information regarding AI model risk and OSFI E-23, while the other banks do not address these topics in the provided excerpts.",
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00012",
+        "text": "This is based on the following key product\ncategories: Personal Lending (including residential mortgages), Personal Core Deposits and Guaranteed Investment Certificates (GICs), Credit Cards and Long-term Mutual Funds. 2 Market share is calculated based on deposit balances excluding term deposits from OSFI (M4) and lending balances from CBA, and is as at August 2025 and March 2025, respectively. 3 Based on externally disclosed capital markets revenue for Canadian peers (Bank of Montreal, The Bank of Nova Scotia, Canadian Imperial Bank of Commerce, The Toronto-Dominion Bank\nand National Bank of Canada) for the last 12 months as of July 31, 2025. 4 Fiscal 2025, Dealogic. 5 Industry information sourced from Investor Economics, as of June 2025.\n\n6 Based on publicly available information for full-service wealth advisory firms (excluding independent broker dealers) in the U.S. as of September 2025.\n\n7 Based on publicly available information for wealth management firms (excluding platform businesses) in the U.K. as of June 2025.\n\n8 Refer to Glossary for definition on page 133.\n\n9 Industry information sourced from SIMA, as of September 2025.\n\n10 Based on the most current total nine-month revenue for life insurance companies, as available from OSFI.\n\nRoyal Bank of Canada Annual Report 2025 | 11\n\nClients\n\nRecognized for excellence\n\nWinner of 10 Ipsos 2025\n\nAvion Rewards was named\n\nRanked highest in customer\n\nsatisfaction for the 2nd\n\nFinancial Service Excellence\n\nInternational Loyalty\n\nconsecutive year in the J.D.\n\nAwards among the Big Five\n\nProgram of the Year\n\nPower 2025 Canada Retail\n\nbanks, including four solo\n\n(Americas) for the 3rd\n\nBanking Satisfaction Study.\n\nwins in the categories:\n\nconsecutive year at the 2025\n\nRecommend to Friends or\n\nInternational Loyalty Awards.\n\nTop 10 Investment Bank\n\nFamily (Net Promoter Score),\n\nglobally,11 Best Investment\n\nFinancial Planning & Advice,\n\nNamed Best Private Bank\n\nBank in Canada and Best\n\nATM Banking Excellence and\n\nin Canada16 and Outstanding\n\nResearch Bank in North\n\nOnline Banking Excellence.\n\nAmerica.12\n\nPrivate Bank — North America\n\nand Global.17\n\nRBC Clear — our U.S.\n\nRBC Dominion Securities®\n\nTransaction Banking platform\n\nranked highest among\n\nRBC Insurance was\n\n— was named Best Digital\n\nCanadian bank-owned\n\ninvestment brokerage\n\nrecognized for the Best\n\nBanking Initiative at the 2025\n\nfirms for the 19th\n\nBanking Tech Awards USA\n\nDigital Insurance Initiative,\n\nconsecutive year.13\n\nBest Digital Transformation\n\nand winner of the 2025 Model\n\nProgram and Outstanding\n\nCelent Award for Reinventing\n\nBest overall bank for\n\nCustomer Relations & Brand\n\nCash Management.\n\ncash management\n\nEngagement Initiative.18\n\nin Canada for the 4th\n\nRBC Global Asset\n\nconsecutive year and the\n\nManagement® was named\n\nRecognized as the Most\n\nleading trade finance\n\nTopGun Investment Team\n\nValuable Canadian Brand\n\nprovider in Canada for the\n\n13th consecutive year.14\n\nof the Year for the 10th time.15\n\nfor the 7th consecutive year.19\n\n11 Euromoney MarketMap 2025.\n\n12 Euromoney Award for Excellence 2025.\n\n13 Investment Executive Brokerage Report Card 2025.\n\n14 Global Finance Magazine, 2025.\n\n15 Brendan Wood International, since 2013.\n\n16 The Banker Global Private Banking Awards 2025.",
+        "similarity": 0.5814698934555054,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 14,
+        "document_type": "annual_report",
+        "page_start": 13,
+        "bank_code": "RBC",
+        "section": "Management’s Discussion and Analysis",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "quarter": 0,
+        "bank": "Royal Bank of Canada",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00286",
+        "text": "Stress testing results are further reviewed\nby ERMC and are also shared with the Board and regulators. The Bank’s\nEWST program involves the development, execution and assessment\nof stress scenarios with varying features and degrees of severity on the\nbalance sheet, income statement, capital, liquidity, and leverage. It enables\nmanagement to identify and assess enterprise-wide risks and understand\npotential vulnerabilities, and changes to the risk profile of the Bank. The stress scenarios are developed with consideration of the Bank’s key\nbusiness activities, exposures, concentrations and vulnerabilities. The\nscenarios are designed to be consistent with regulatory stress testing\nframeworks and cover a wide variety of risk factors meaningful to\nthe Bank’s risk profiles in North America and globally including changes\nto unemployment, gross domestic product, home prices, inflation and\ninterest rates.\n\nRisk Monitoring and Reporting\nThe Bank monitors and reports on risk levels on a regular basis against\nits risk appetite and Risk Management reports on its risk monitoring\nactivities to senior management, the Board and its Committees, and\nappropriate executive and management committees. Complementing\nregular risk monitoring and reporting, ad hoc risk reporting is provided to\nsenior management, the Risk Committee, and the Board, as appropriate,\nfor new and emerging risks or any significant changes to the Bank’s risk\nprofile. The Bank is developing methodologies and approaches for climate\nscenario analysis through participation in industry-wide working groups\nand the OSFI led Standardized Climate Scenario Exercise, and is working\nto embed the assessment of climate-related risks and opportunities into\nrelevant Bank processes.\n\nFor the 2025 EWST program, the Bank developed and assessed a number\nof scenarios using validated approaches that explored emerging risks\nsuch as inflation, various interest rate environments, U.S. trade policy\nand tariffs, and elevated regulatory risks. The stress testing scenarios\nincluded a plausible typical recession calibrated to historical recessions in\nCanada and the U.S., a low probability and highly severe scenario related\nto geopolitical uncertainty accompanied with high inflation and interest\nrate environment, and an alternative scenario where concerns around\nfederal deficits lead to increases in treasury yields and reduced economic\nactivity. Supplemental analysis performed during 2025 explored strategic\nrisks and other events including insider fraud, cybersecurity breach and\nsanctions violation to support senior management in assessing key risks\nand vulnerabilities.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nEach member of the SET is responsible for establishing and managing\nshort-and medium-term strategic priorities for their areas of responsibility\n(business segment or corporate function), and ensuring such strategies are\naligned with the Bank’s short-and medium-term objectives and priorities,\nand are within the Bank’s risk appetite. Each member of the SET is also\naccountable to the CEO for identifying, assessing, measuring, controlling,\nmonitoring, and reporting on the effectiveness and risks of their business\nsegment or corporate function’s strategies.\n\nThe CEO, members of the SET, and other senior executives report to the\nBoard on the implementation of the Bank’s strategies, identifying related\nrisks and explaining how they are managed.",
+        "similarity": 0.5776404142379761,
+        "page_start": 99,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 100,
+        "section": "APPROACH TO RISK MANAGEMENT PROCESSES",
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "bank_code": "TD",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00015",
+        "text": "Broderick\nCorporate Director\nCommittees:\nAudit and Conduct Review,\nGovernance and Nominating,\nRisk Review (Chair)\nDirector since: 2018 Stephen Dent\nManaging Director\nand Co-Founder,\nBirch Hill Equity Partners\nCommittees:\nGovernance and Nominating,\nHuman Resources (Chair),\nRisk Review\nDirector since: 2021 Tammy L. Brown*\nCorporate Director\nCommittees:\nRisk Review\nDirector since: 2025 Lorraine Mitchelmore\nCorporate Director\nCommittees:\nGovernance and Nominating (Chair),\nHuman Resources, Risk Review\nDirector since: 2015 Martin S. Eichenbaum\nCharles Moskos\nProfessor of Economics,\nNorthwestern University\nCommittees:\nAudit and Conduct Review,\nRisk Review\nDirector since: 2015\n\nExecutive Committee\n\nDarryl White\nChief Executive Officer\n\nPaul Noble\nGeneral Counsel\n\nPiyush Agrawal\nChief Risk Officer\n\nMona Malone\nChief Administrative Officer,\nChief Human Resources Officer\nand Head of People,\nCulture & Brand\n\nSharon Haward-Laird\nGroup Head, Canadian\nCommercial Banking & North\nAmerican Integrated Solutions,\nand Co-Head, Canadian Personal\n& Commercial Banking\n\nAlan Tannenbaum\nChief Executive Officer & Group Head,\nBMO Capital Markets\n\nDarrel Hackett\nU.S. Chief Executive Officer\n\nDeland Kamanga\nGroup Head,\nBMO Wealth Management\n\nSteve Tennyson\nChief Technology\nand Operations Officer\n\nMathew Mehrotra\nGroup Head, Canadian Personal\n& Business Banking, and\nCo-Head Canadian Personal\n& Commercial Banking\n\nTayfun Tuzun\nChief Financial Officer\n\nAron Levine\nGroup Head & President,\nBMO U.S. Banking\n\n* Effective December 4, 2025.\n\n14 BMO Financial Group 208th Annual Report 2025\n\nEnhanced Disclosure Task Force\n\nThe Enhanced Disclosure Task Force (EDTF) was established by the Financial Stability Board to provide guidance and recommendations for best\npractice risk disclosures for banks. We have adopted these recommendations at BMO in order to prepare and deliver high-quality, transparent\nrisk disclosures. The index below details these recommendations and references the presentation of the disclosures in our 2025 Annual Report,\nSupplementary Financial Information (SFI) and Supplementary Regulatory Capital Information (SRCI). Information on BMO’s website, including\ninformation within the SFI or SRCI, is not, and should not be considered to be incorporated by reference into this 2025 Annual Report.\n\nTopic\nEDTF Disclosure\nPage number\nAnnual Report\nSFI\nSRCI\n\nGeneral\n1.\nRisk-related information in each report, including an index for easy navigation\n67-107\nIndex\nIndex\n2.\nRisk terminology, measures and key parameters\n70-107,\n122-124\n3.\nTop and emerging risks\n67-69\n4.\nPlans to meet new key regulatory ratios once applicable rules are finalized\n61\n\nRisk Governance,\nRisk Management and\nBusiness Model\n\n5.\nRisk management and governance framework, processes and key functions\n70-74\n6.\nRisk culture, risk appetite and procedures to support the culture\n72-75\n7.\nRisks that arise from business models and activities\n63,72-74\n8.\nStress testing within the risk governance and capital frameworks\n75\n\nCapital Adequacy and\nRisk-Weighted Assets\n(RWA)",
+        "similarity": 0.5288857221603394,
+        "section": "CULTURE",
+        "fiscal_year": 2025,
+        "bank_code": "BMO",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "quarter": 0,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank": "Bank of Montreal",
+        "page_start": 16,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_end": 17,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00160",
+        "text": "• Credit risk 88%\n• Market risk 2%\n• Operational risk 10% • Credit risk 72%\n• Market risk -%\n• Operational risk 28% • RWA $113.0bn\n• Proportion of Bank 24%\nComprised of:\n• Credit risk 80%\n• Market risk 8%\n• Operational risk\n12% • RWA $32.5bn\n• Proportion of Bank 6%\nComprised of:\n• Credit risk 80%\n• Market risk 2%\n• Operational risk 18% •••\n• • • • ••• • • • Credit, market, liquidity, money laundering, terrorist financing and sanctions, operational, cyber security and information technology, compliance, environmental, data, model, reputational and strategic risk.\n\n(1)\nAverage assets for the Other segment include certain non-earning assets related to the business lines.\n(2) Attributed Capital is a combination of regulatory: (i) Risk-based capital and (ii) Leverage capital.\n(3) Includes Attributed Capital for significant investments, goodwill, intangibles and leverage capital.\n(4) Risk-weighted assets (RWA) are as at October 31, 2025 as measured for regulatory purposes in accordance with Basel III.\n\n84 | 2025 Scotiabank Annual Report\n\nTop and emerging risks\n\nThe Bank is exposed to a variety of top and emerging risks. These risks can potentially affect the Bank’s business strategies, financial performance,\nand reputation. As part of our risk management approach, we monitor our operating environment to identify, assess, review, and manage a broad\nrange of top and emerging risks and drivers of those risks to undertake appropriate risk mitigation strategies.\n\nRisk drivers are identified using a risk identification system whereby information is gathered and consolidated from a variety of internal and\nexternal sources including industry research and peer analysis, Senior Management expertise, and risk reporting from our international operations.\nThe results of this research, in conjunction with internal risk assessments across the Bank’s principal risks and Business Lines, help identify the\nimpact of top and emerging risk drivers, which, along with mitigation activities, are summarized and reported to Executives and the Board of\nDirectors on a quarterly basis.\n\nThe external risk environment continues to be characterized by an unprecedented rate of change and interconnectivity on a global scale. Drivers\nof risk are becoming less predictable and require a more agile approach to respond quickly to mitigate their impacts. While emerging risk drivers\ncontinue to be concentrated in non-financial areas, they have the potential to interact and amplify other top risks, including financial ones, in ways\nthat can be difficult to predict. This year, the impacts of U.S. imposed tariffs and continued trade and government policy uncertainty have been\nkey interconnected risk drivers.\n\nThe Bank’s top and emerging risk drivers are as follows:\n\nManagement’s Discussion and Analysis | Risk Management",
+        "similarity": 0.6001463532447815,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_start": 86,
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "Management’s Discussion and Analysis",
+        "bank_code": "BNS",
+        "bank": "Bank of Nova Scotia",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "page_end": 87,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00116",
+        "text": "New technology solutions offer\nadvanced capabilities, connectivity between systems and efficiencies to support a growing business, while also increasing the complexity of\nongoing management and resilience across multiple internal and external stakeholders and platforms hosted on premises, in the cloud or by third\nparties. Globally, regulators continue to expect financial institutions to have well-designed and managed technology development, deployment,\noperational and support processes in place to actively manage the risks inherent to a large enterprise technology environment. We continue to manage these risks through our risk management and governance structures that include policies, standards, and risk\nassessment, measurement and monitoring tools. A robust control environment is in place, focused on developing, delivering and maintaining high-\nquality, reliable and stable technology solutions that support business needs and enable operations within our risk appetite.\n\nDisintermediation risk\nThe level of disintermediation risk from fintechs for Canadian financial institutions is generally considered low. Canada has a growing fintech sector,\nwith numerous startups and established tech companies offering digital financial services as alternatives to traditional banking services, such as\nautomated investing, peer-to-peer lending, and financial management tools. Canadian consumers have demonstrated increasing use of digital\nservices, evidenced by high rates of online banking usage. Canada’s robust regulatory framework somewhat limits the speed and extent of\ndisruption by fintechs. However, regulations are evolving, and the authorities’ increasing openness to fintech innovations and open-banking could\nheighten disintermediation risks if we do not continue to invest in our digital capabilities. Ease of use is the primary factor we consider when\nevaluating disintermediation risk from fintechs. With fintechs primarily focused on digital engagement, the risk of clients choosing fintech solutions\nremains low. Although fintechs have not yet demonstrated success in providing financial advice and wealth management services in Canada, the\nthreat may increase in the future. CIBC’s proactivity in adopting new technologies and integrating digital financial services helps to mitigate this risk\n\nData and Artificial Intelligence risk\nData is being used every day to further advance CIBC’s strategic objectives and create competitive advantages. To support this, we continue to\ninvest in our data management and governance capabilities to ensure we have a strong data foundation and business decision making, and grow\nour analytics and reporting practices to use data as a transformative asset.\n\nWith rapid advances in technology, we continue to observe growth in applications of AI to drive productivity and competitive enhancements.\nAlongside the potential benefits of AI tools and technology comes risks; as AI systems make decisions based on data and models, they can inherit or\namplify bias or raise concerns about fairness or ethical use. In addition, transparency in AI models is required to ensure the reasoning, accuracy or\nappropriateness of the output is clearly understood. CIBC has published an AI Framework and has implemented AI governance and risk management\npractices. From a model risk perspective, OSFI published its final version of Guideline E-23 on Model Risk Management to take effect on May 1, 2027.\nThe revised Guideline E-23 now includes AI and Machine Learning (ML) methodologies in the definition of “model” given the surge in AI/ML analytics.\nAs we navigate the increased adoption of solutions using AI, our approach will remain rooted in ensuring responsible use and ensuring operational risks\nare mitigated.",
+        "similarity": 0.5684775114059448,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "section": "Management’s discussion and analysis",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "document_type": "annual_report",
+        "page_end": 65,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "page_start": 64
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 4.6698081999784335
+  },
+  "latency_seconds": 9.277484700083733,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007507499999999999,
+  "input_tokens": 3673,
+  "output_tokens": 333,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.09714640025049448,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 4,
+    "faithfulness_reason": "All claims about the banks' disclosures regarding AI model risk and OSFI E-23 are accurately supported by the provided excerpts from their 2025 annual reports.",
+    "relevance_reason": "The answer directly addresses the question by comparing the disclosures of all five banks regarding AI model risk and OSFI E-23.",
+    "completeness_reason": "The answer covers four out of five banks in detail, but does not provide specific excerpts for the Bank of Nova Scotia (BNS) regarding AI model risk or OSFI E-23, which is a minor omission.",
+    "unsupported_claims": [],
+    "reference_limitations": "The answer does not include specific excerpts for BNS regarding AI model risk or OSFI E-23, indicating a limitation in the retrieved data."
+  },
+  "judge_cost_usd": 0.0026839499999999996
+}

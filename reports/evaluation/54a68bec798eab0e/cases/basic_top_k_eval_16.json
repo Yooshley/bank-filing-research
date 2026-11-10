@@ -1,0 +1,191 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_16",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_16",
+    "question": "Compare RBC and TD disclosures on credit risk management in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "RBC",
+      "TD"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare RBC and TD disclosures on credit risk management in their 2025 annual reports."
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided excerpts from the 2025 annual reports of Royal Bank of Canada (RBC) and Toronto-Dominion Bank (TD) offer insights into their credit risk management practices.\n\n### RBC's Credit Risk Management\nRBC defines credit risk as the potential loss associated with an obligor's inability or unwillingness to fulfill contractual obligations. The management of credit risk is structured around a three lines of defense governance model, with responsibilities shared across the organization. Key elements of RBC's credit risk management include:\n\n- Establishing a Board-approved credit risk appetite and risk limits.\n- Empowering the Chief Risk Officer (CRO) to delegate credit risk approval authorities.\n- Setting objectives to ensure credit quality is maintained, managing risks in transactions and portfolios, avoiding excessive concentrations of correlated credit risks, and applying consistent credit risk exposure measurements.\n- Utilizing credit risk rating systems and ongoing monitoring to detect and prevent inappropriate credit risks.\n- Employing credit risk mitigation techniques such as hedging and insurance [S3].\n\n### TD's Credit Risk Management\nTD's approach to credit risk management is integrated into its overall strategic risk management framework. The CEO, supported by the Senior Executive Team (SET) and the Enterprise Risk Management Committee (ERMC), oversees the management of strategic risk, which includes credit risk. Key aspects of TD's credit risk management include:\n\n- Established policies and procedures for assessing credit performance and managing retail credit exposures.\n- Ongoing reviews by Retail Risk Management to evaluate the effectiveness of credit decisions and identify emerging issues.\n- Compliance with the Basel Framework to ensure capital requirements adequately capture risks [S5].\n\n### Comparison\n1. **Governance Structure**: Both banks utilize a governance model for credit risk management, but RBC emphasizes a three lines of defense model, while TD integrates credit risk management within its broader strategic risk framework led by the CEO and SET.\n\n2. **Risk Appetite and Limits**: RBC explicitly mentions the establishment of a Board-approved credit risk appetite and risk limits, whereas TD focuses on policies and procedures for assessing credit performance without detailing a formal risk appetite framework.\n\n3. **Monitoring and Review**: RBC highlights ongoing credit risk monitoring and the use of credit risk rating systems, while TD emphasizes the role of Retail Risk Management in reviewing credit decisions and tracking policy exceptions.\n\n4. **Mitigation Techniques**: RBC discusses various credit risk mitigation techniques, including hedging and insurance, while TD's focus is more on the governance and oversight of credit risk models and decision strategies.\n\nIn summary, both banks have structured approaches to credit risk management, but they differ in their governance frameworks, emphasis on risk appetite, and specific monitoring practices. The provided filings do not contain enough information to make a comprehensive comparison of their credit risk management effectiveness or outcomes.",
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00244",
+        "text": "balances of impaired loans and\nimpairment allowances during the year\n\n29\nQuantification of gross notional exposure\n\n77\n32\n\nfor OTC derivatives or exchange-traded\nderivatives\n\n30\nCredit risk mitigation, including collateral\n\n75-76\n*\n\nheld for all sources of credit risk\n\nOther\n31\nOther risk types\n102-110\n–\n32\nPublicly known risk events\n107-108, 230-231\n–\n\n*\nThese disclosure requirements are satisfied or partially satisfied by disclosures provided in our Pillar 3 Report for the quarter ended October 31, 2025 and for the year\nended October 31, 2024.\n\n136\nIndex for Enhanced Disclosure Task Force recommendations",
+        "similarity": 0.5666768550872803,
+        "bank": "Royal Bank of Canada",
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 138,
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "page_start": 138,
+        "section": "Credit risk",
+        "quarter": 0,
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00003",
+        "text": "16.3%\nreturn on common equity2 up from\n14.4% in 2024 Prudent risk management with\n37 basis points of provision for\ncredit losses (PCL) on impaired\nloans $11.3 billion of profits returned\nto our common shareholders\nthrough dividends and share\nrepurchases; total payout ratio\nof 57%4 13.5%\nrobust common equity tier 1\n(CET1) ratio3 $14.07 diluted earnings per\nshare (EPS), up from $11.25 in\n2024\nStrong funding profile\n100% ratio of loans to deposits in\nCanadian Banking $6.04\ndividends declared per share,\nup 7.9% from 2024; dividend payout\nratio of 43% Financial performance metrics\n\nMedium-Term Objectives5\n3-Year\n5-Year\n\nDiluted EPS growth of 7%+\n8%\n13%\n\nROE of 16%+6\n15.0%\n16.0%\n\nStrong capital ratio (CET1)3\n13.8%\n13.5%\n\nDividend payout ratio of 40% -50%\n48%\n46%\n\nTotal shareholder return (TSR)7, 8\n3-Year\n5-Year\n\nRBC\n22%\n22%\n\nGlobal peer average (excl. RBC)\n26%\n25%\n\nEarnings\n\nRevenue by business segment10\n\nNet income (C$ billion)\n\n(C$ billion)\n\n$20.4\n\n$16.2\n\n$22.4\nWealth\nManagement\n\n$19.9\nPersonal\nBanking\n\nAnnualized\ndividend\nincrease of:\n\n7%\n\nFive year9\n\n$1.3\nInsurance\n\n7%\n\nTen year9\n\n$8.6\nCommercial\nBanking\n\n$14.4\nCapital\nMarkets\n\n2024\n2025\n\n2\nRefer to Glossary for definition on page 134.\n3\nRefer to Glossary for definition on page 133.\n4\nCommon dividends and common shares purchased for cancellation as a percentage of net income available to common shareholders.\n5\n\u0007A medium-term (3-5 year) objective is considered to be achieved when the performance goal is met in either a 3- or 5- year period. These objectives assume a normal business\nenvironment and our ability to achieve them in a period may be adversely affected by the macroeconomic backdrop and the cyclical nature of the credit cycle.\n6\n\u0007For fiscal 2026, we have revised our ROE financial objective to 17%+ to reflect improving revenue productivity and cost efficiencies driven by the execution of our strategic\ninitiatives.\n7\n\u0007Annualized TSR is calculated based on the TSX common share price appreciation plus reinvested dividend income. Source: Bloomberg, as at October 31, 2025. Please refer to\npage 26.\n8\n\u0007Beginning in fiscal 2026, the achievement of top half total shareholder returns (TSR) will no longer be a medium-term objective. TSR performance relative to peers will continue to\nbe a part of our overall evaluation of shareholder outcomes and in our compensation programs. However, we believe the achievement of our financial performance objectives is a\nbetter indication of our execution against strategic priorities.\n9\nCompound annual growth rate.\n10 Excludes Corporate Support.\n\nRoyal Bank of Canada Annual Report 2025 | 3\n\nDear fellow shareholders,",
+        "similarity": 0.5642710328102112,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "quarter": 0,
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "section": "Management’s Discussion and Analysis",
+        "page_end": 6,
+        "page_start": 5,
+        "bank": "Royal Bank of Canada"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00117",
+        "text": "Credit risk is the risk of loss associated with an obligor’s potential inability or unwillingness to fulfill its contractual\nobligations on a timely basis and may arise directly from the risk of default of a primary obligor (e.g., issuer, debtor,\ncounterparty, borrower or policyholder), indirectly from a secondary obligor (e.g., guarantor or reinsurer), and/or through\noff-balance sheet exposures, contingent credit risk, associated credit risk and/or transactional risk exposures. Credit risk\nincludes counterparty credit risk arising from both trading and non-trading activities. Exposure to credit risk occurs any time\nfunds are extended, committed or invested through an actual or implied contractual agreement.\n\nThe responsibility for managing credit risk is shared broadly across the organization following the three lines of defence\ngovernance model. The allocation of the Board approved credit risk appetite is supported by the establishment of risk\napproval authorities and risk limits, delegated by the Board to the President & CEO and CRO. Credit transactions in excess of\nthese authorities must be approved by the Risk Committee of the Board. To facilitate day-to-day business activities, the CRO\nhas been empowered to further delegate credit risk approval authorities to individuals within GRM, the business segments\nand functional units, as deemed necessary.\n\nWe balance our risk and return by setting the following objectives for the management of credit risk:\n•\nEnsuring credit quality is not compromised for growth;\n•\nManaging credit risks in transactions, relationships and portfolios;\n•\nAvoiding excessive concentrations in correlated credit risks;\n•\nUsing our credit risk rating and scoring systems or other approved credit risk assessment or rating methodologies,\npolicies and tools;\n•\nPricing appropriately for the credit risk taken;\n•\nDetecting and preventing inappropriate credit risk through effective systems and controls;\n•\nApplying consistent credit risk exposure measurements;\n•\nOngoing credit risk monitoring and administration;\n•\nTransferring credit risk to third parties where appropriate through approved credit risk mitigation techniques (e.g., sale,\nhedging, insurance, securitization); and\n•\nAvoiding activities that are inconsistent with our values, Code of Conduct or policies.\n\n72",
+        "similarity": 0.5632726550102234,
+        "bank": "Royal Bank of Canada",
+        "section": "Credit risk",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "fiscal_year": 2025,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_start": 74,
+        "bank_code": "RBC",
+        "page_end": 74,
+        "filing_id": "RBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00223",
+        "text": "To manage the transition to IFRS 18, we established a\nprogram to assess the impact on systems, processes and financial reporting required for adoption. We continue to assess the\nimpact of adopting this standard on our Consolidated Financial Statements. Controls and procedures Disclosure controls and procedures\nOur disclosure controls and procedures are designed to provide reasonable assurance that information required to be disclosed\nby us in reports filed or submitted under Canadian and U.S. securities laws is recorded, processed, summarized and reported\nwithin the time periods specified under those laws and include controls and procedures that are designed to ensure that\ninformation is accumulated and communicated to management, including the President and Chief Executive Officer, and the\nChief Financial Officer, to allow timely decisions regarding required disclosure.\n\nAs of October 31, 2025, management evaluated, under the supervision of and with the participation of the President and\nChief Executive Officer and the Chief Financial Officer, the effectiveness of our disclosure controls and procedures as defined\nunder rules adopted by the Canadian securities regulatory authorities and the U.S. SEC. Based on that evaluation, the President\nand Chief Executive Officer and the Chief Financial Officer concluded that our disclosure controls and procedures were effective\nas of October 31, 2025.\n\nInternal control over financial reporting\nManagement is responsible for establishing and maintaining adequate internal control over financial reporting. Internal control\nover financial reporting is designed to provide reasonable assurance regarding the reliability of financial reporting and the\npreparation of financial statements for external purposes in accordance with IFRS. However, because of its inherent limitations,\ninternal control over financial reporting may not prevent or detect misstatements on a timely basis. See Management’s Report\non Internal Control over Financial Reporting and the Report of Independent Registered Public Accounting Firm.\n\nThere were no changes in our internal control over financial reporting during the year ended October 31, 2025 that have\nmaterially affected, or are reasonably likely to materially affect, our internal control over financial reporting.\n\n124\n\nRelated party transactions\n\nIn the ordinary course of business, we provide normal banking services and operational services, and enter into other\ntransactions with associated and other related corporations, including our joint venture entities, on terms similar to those\noffered to non-related parties. We grant loans to directors, officers and other employees at rates normally accorded to preferred\nclients. In addition, we offer deferred share and other plans to non-employee directors, executives and certain other key\nemployees. For further information, refer to Notes 12 and 25 of our 2025 Annual Consolidated Financial Statements.\n\nSupplementary information\n\nSelected annual information\nTable 68\n\n(Millions of Canadian dollars, except per share amounts)\n2025\n2024\n2023\n\nTotal revenue\n$\n66,605 $\n57,344 $\n51,464\nNet income attributable to:\n\nShareholders\n20,362\n16,230\n14,605\nNon-controlling interest\n7\n10\n7\n\n$\n20,369 $\n16,240 $\n14,612\n\nBasic earnings per share\n$\n14.10 $\n11.27 $\n10.33\nDiluted earnings per share\n14.07\n11.25\n10.32\nDividends declared per common shares\n6.04\n5.60\n5.34\nTotal assets\n$ 2,325,006 $ 2,171,582 $ 2,006,531\nDeposits\n1,515,616\n1,409,531\n1,231,687\n\nNet interest income on average assets and liabilities\nTable 69\n\nAverage balances\n\nInterest\n\nAverage rate",
+        "similarity": 0.5600650906562805,
+        "page_start": 126,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "bank": "Royal Bank of Canada",
+        "section": "Management’s Discussion and Analysis",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "page_end": 128
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00289",
+        "text": "The CEO manages Strategic Risk, supported by members of the SET\nand the ERMC. The CEO, together with the SET, defines the overall\nstrategy, in consultation with, and subject to approval by the Board. The\nEnterprise Strategy group, under the leadership of the CFO, is charged\nwith developing the Bank’s long-term strategy and shorter-term strategic\nobjectives and priorities with input and support from senior executives\nacross the Bank.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nThe shaded areas of this MD&A represent a discussion on risk\nmanagement policies and procedures relating to credit, market, and\nliquidity risks as required under IFRS 7, Financial Instruments: Disclosures\n(IFRS 7), which permits these specific disclosures to be included in\nthe MD&A. Therefore, the shaded areas which include Credit Risk,\nMarket Risk, and Liquidity Risk, form an integral part of the audited\nConsolidated Financial Statements for the years ended October 31, 2025\nand October 31, 2024.\n\ninformation, to determine the amount of credit the Bank is prepared to\nextend to retail customers and to estimate future credit performance.\nEstablished policies and procedures are in place to govern the use, and\nmonitor and assess the performance of scoring models and decision\nstrategies to align with expected performance results. Retail credit\nexposures approved within the credit underwriting centres are subject\nto ongoing Retail Risk Management review to assess the effectiveness\nof credit decisions and risk controls, as well as to identify emerging or\nsystemic issues and trends. Material policy exceptions are tracked and\nreported and larger dollar exposures and material exceptions to policy are\nescalated to Retail Risk Management.\n\nThe Basel Framework\nThe objective of the Basel Framework is to improve the consistency of\ncapital requirements internationally and establish minimum regulatory\ncapital standards which adequately capture risks. The Basel Framework\nsets different risk-sensitive approaches for calculating credit, market, and\noperational RWA.",
+        "similarity": 0.6451858282089233,
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "bank": "Toronto-Dominion Bank",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 100,
+        "page_end": 101,
+        "document_type": "annual_report",
+        "section": "WHO MANAGES STRATEGIC RISK",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00437",
+        "text": "How We Addressed the Matter in Our Audit\nWe obtained an understanding, evaluated the design, and tested the\noperating effectiveness of management’s controls over the allowance\nfor credit losses. The controls we tested included, amongst others, the\ndevelopment and validation of models and selection of appropriate inputs\nincluding economic forecasting, determination of non-retail borrower risk\nratings, the integrity of the data used including the associated controls\nover relevant information technology (IT) systems, and the governance and\noversight over the modelled results and the use of expert credit judgment.\n\nBasis for Opinion\nThese consolidated financial statements are the responsibility of TD’s\nmanagement. Our responsibility is to express an opinion on TD’s\nconsolidated financial statements based on our audits. We are a public\naccounting firm registered with the PCAOB and are required to be\nindependent with respect to TD in accordance with the U.S. federal\nsecurities laws and the applicable rules and regulations of the Securities\nand Exchange Commission and the PCAOB.\n\nWe conducted our audits in accordance with the standards of the\nPCAOB. Those standards require that we plan and perform the audit\nto obtain reasonable assurance about whether the financial statements\nare free of material misstatement, whether due to error or fraud. Our\naudits included performing procedures to assess the risks of material\nmisstatement of the financial statements, whether due to error or fraud,\nand performing procedures that respond to those risks. Such procedures\nincluded examining, on a test basis, evidence regarding the amounts\nand disclosures in the consolidated financial statements. Our audits\nalso included evaluating the accounting principles used and significant\nestimates made by management, as well as evaluating the overall\npresentation of the consolidated financial statements. We believe that\nour audits provide a reasonable basis for our opinion.\n\nTo test the allowance for credit losses, our audit procedures included,\namongst others, involving our credit risk specialists to assess whether the\nmethodology and assumptions, including management’s SICR triggers,\nused in significant models that estimate the ECL across various portfolios\nare consistent with the requirements of IFRS. This included reperforming\nthe model validation procedures for a sample of models to evaluate\nwhether management’s conclusions were appropriate. With the assistance\nof our economic specialists, we evaluated the models, methodology and\nprocess used by management to develop the FLI variable forecasts for each\nscenario and the scenario probability weights. For a sample of FLI variables,\nwe compared management’s FLI to independently derived forecasts and\npublicly available information. On a sample basis, we recalculated the\nECL to test the mathematical accuracy of management’s models. We\ntested the completeness and accuracy of data used in measuring the ECL\nby agreeing to source documents and systems and evaluated a sample\nof management’s non-retail borrower risk ratings against TD’s risk rating\npolicy. With the assistance of our credit risk specialists, we also evaluated\nmanagement’s methodology and governance over the application of\nexpert credit judgment by evaluating that the amounts recorded were\nreflective of underlying credit quality and macroeconomic trends. We\nalso assessed the adequacy of disclosures related to the allowance for\ncredit losses.",
+        "similarity": 0.6189217567443848,
+        "bank": "Toronto-Dominion Bank",
+        "bank_code": "TD",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "document_type": "annual_report",
+        "page_start": 151,
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 151,
+        "section": "ACCOUNTING FIRM",
+        "file_name": "TD_2025_annual_report.pdf",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00430",
+        "text": "The controls we tested included, amongst others, the\ndevelopment and validation of models and selection of appropriate inputs\nincluding economic forecasting, determination of non-retail borrower risk\nratings, the integrity of the data used including the associated controls\nover relevant information technology (IT) systems, and the governance and\noversight over the modelled results and the use of expert credit judgment. Basis for Opinion\nWe conducted our audit in accordance with Canadian generally\naccepted auditing standards. Our responsibilities under those standards\nare further described in the Auditor’s Responsibilities for the Audit of\nthe Consolidated Financial Statements section of our report. We are\nindependent of TD in accordance with the ethical requirements that are\nrelevant to our audit of the consolidated financial statements in Canada,\nand we have fulfilled our other ethical responsibilities in accordance with\nthese requirements. We believe that the audit evidence we have obtained\nis sufficient and appropriate to provide a basis for our opinion.\n\nKey Audit Matters\nKey audit matters are those matters that, in our professional judgment,\nwere of most significance in our audit of the consolidated financial\nstatements of the year ended October 31, 2025. These matters were\naddressed in the context of our audit of the consolidated financial\nstatements as a whole, and in forming our opinion thereon, and we do\nnot provide a separate opinion on these matters. For each matter below,\nour description of how our audit addressed the matter is provided in\nthat context.\n\nWe have fulfilled the responsibilities described in the Auditor’s\nResponsibilities for the Audit of the Consolidated Financial Statements\nsection of our report, including in relation to these matters. Accordingly,\nour audit included the performance of procedures designed to respond to\nour assessment of the risks of material misstatement of the consolidated\nfinancial statements. The results of our audit procedures, including the\nprocedures performed to address the matters below, provide the basis for\nour audit opinion on the accompanying consolidated financial statements.\n\nTo test the allowance for credit losses, our audit procedures included,\namongst others, involving our credit risk specialists to assess whether the\nmethodology and assumptions, including management’s SICR triggers,\nused in significant models that estimate the ECL across various portfolios\nare consistent with the requirements of IFRS. This included reperforming\nthe model validation procedures for a sample of models to evaluate\nwhether management’s conclusions were appropriate. With the assistance\nof our economic specialists, we evaluated the models, methodology and\nprocess used by management to develop the FLI variable forecasts for each\nscenario and the scenario probability weights. For a sample of FLI variables,\nwe compared management’s FLI to independently derived forecasts and\npublicly available information. On a sample basis, we recalculated the\nECL to test the mathematical accuracy of management’s models. We\ntested the completeness and accuracy of data used in measuring the ECL\nby agreeing to source documents and systems and evaluated a sample\nof management’s non-retail borrower risk ratings against TD’s risk rating\npolicy. With the assistance of our credit risk specialists, we also evaluated\nmanagement’s methodology and governance over the application of\nexpert credit judgment by evaluating that the amounts recorded were\nreflective of underlying credit quality and macroeconomic trends. We\nalso assessed the adequacy of disclosures related to the allowance for\ncredit losses.",
+        "similarity": 0.5933163166046143,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 148,
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "document_type": "annual_report",
+        "page_end": 148,
+        "section": "INDEPENDENT AUDITOR’S REPORT",
+        "fiscal_year": 2025,
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "bank_code": "TD"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00022",
+        "text": "quarter Supplemental Financial Information (SFI), or Supplemental\nRegulatory Disclosures (SRD). Information on TD’s website, SFI, and SRD\nis not and should not be considered incorporated herein by reference\ninto the 2025 Annual Report, Management’s Discussion and Analysis,\nor the Consolidated Financial Statements.\n\nThe Enhanced Disclosure Task Force (EDTF) was established by the\nFinancial Stability Board in 2012 to identify fundamental disclosure\nprinciples, recommendations, and leading practices to enhance risk\ndisclosures of banks. The index below includes the recommendations\n(as published by the EDTF) and lists the location of the related EDTF\ndisclosures presented in the 2025 Annual Report or the 2025 fourth\n\nPage\n\nType of Risk\nTopic\nEDTF Disclosure\n\nAnnual Report\nSFI\nSRD\n\nGeneral\n1\nPresent all related risk information together in any particular report.\nRefer to below for location of disclosures\n\n2\nThe bank’s risk terminology and risk measures and present key parameter\nvalues used.\n\n92-99, 103, 108,\n110, 112, 123-126\n\n3\nDescribe and discuss top and emerging risks.\n82-91\n\n78, 120\n\n4\nOutline plans to meet each new key regulatory ratio once applicable rules\nare finalized.\n\n5\nSummarize the bank’s risk management organization, processes, and key functions.\n93-97\n\n6\nDescription of the bank’s risk culture and procedures applied to support the culture.\n92-93\n\n7\nDescription of key risks that arise from the bank’s business models and activities.\n77, 92, 98-127\n\nRisk\nGovernance\nand Risk\nManagement\nand Business\nModel\n\n8\nDescription of stress testing within the bank’s risk governance and\ncapital frameworks.\n\n75, 97-98,\n106, 123\n\n9\nPillar 1 capital requirements and the impact for global systemically important banks.\n72-74, 79, 235\n1-3, 6\n\n72\n1-3, 5\n\n10\nComposition of capital and reconciliation of accounting balance sheet to the\nregulatory balance sheet.\n\n11\nFlow statement of the movements in regulatory capital.\n4\n\nCapital\nAdequacy\nand Risk\nWeighted\nAssets\n\n73-76, 123\n\n12\nDiscussion of capital planning within a more general discussion of management’s\nstrategic planning.\n\n76-77\n9-15\n\n13\nAnalysis of how risk-weighted assets (RWA) relate to business activities and\nrelated risks.\n\n14\nAnalysis of capital requirements for each method used for calculating RWA.\n100-101,103,\n105-106\n13\n\n15\nTabulate credit risk in the banking book for Basel asset classes and major portfolios.\n36-53, 59-65\n\n16\nFlow statement reconciling the movements of RWA by risk type.\n18-19\n\n17\nDiscussion of Basel III back-testing requirements.\n102, 106, 110-111\n80-82\n\nLiquidity\n18\nThe bank’s management of liquidity needs and liquidity reserves.\n112-114, 116-117\n\nFunding\n19\nEncumbered and unencumbered assets in a table by balance sheet category.\n115, 229\n\n120-122\n\n20\nTabulate consolidated total assets, liabilities and off-balance sheet commitments\nby remaining contractual maturity at the balance sheet date.\n\n21\nDiscussion of the bank’s funding sources and the bank’s funding strategy.\n118-120\n\n104",
+        "similarity": 0.5929443836212158,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank": "Toronto-Dominion Bank",
+        "file_name": "TD_2025_annual_report.pdf",
+        "section": "ENHANCED DISCLOSURE TASK FORCE",
+        "fiscal_year": 2025,
+        "page_start": 19,
+        "bank_code": "TD",
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 19
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 1.5884816999314353
+  },
+  "latency_seconds": 7.7134881999809295,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.001068,
+  "input_tokens": 4924,
+  "output_tokens": 549,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.03399970009922981,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 4,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer accurately describes RBC and TD's credit risk management practices, but lacks specific citations for some claims, particularly regarding TD's governance structure and risk appetite.",
+    "relevance_reason": "The answer mostly addresses the question by comparing RBC and TD's disclosures on credit risk management, but it could be more focused on specific similarities and differences.",
+    "completeness_reason": "The answer provides a general comparison but omits detailed evidence from TD's disclosures that could enhance the analysis, particularly regarding specific metrics or outcomes related to credit risk management.",
+    "unsupported_claims": [],
+    "reference_limitations": "The answer does not fully utilize the available evidence from both banks' annual reports, particularly in detailing TD's specific practices and metrics."
+  },
+  "judge_cost_usd": 0.00235665,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_16",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

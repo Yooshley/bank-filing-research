@@ -1,0 +1,157 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_06",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_06",
+    "question": "What liquidity and funding risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity and funding risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity and funding risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, TD disclosed several liquidity and funding risks. The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events, with eligibility for these assets considering stressed market values and operational impediments to their sale or pledging [S3]. Additionally, TD employs a three lines of defence governance model for liquidity risk management, where Treasury manages liquidity risk, supported by independent oversight from Risk Management and Internal Audit [S3]. Furthermore, the report indicates that TD's funded exposure through liquidity facilities for ABCP funding increased significantly from $15,419 million in 2024 to $38,464 million in 2025, reflecting a substantial rise in the Bank's exposure to liquidity risks associated with these conduits [S4].",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00010",
+        "text": "8.3 4.72 2024 2023\n2025 2023\n2024\n2025 2023\n2024\n2025 Dividend History Balance Sheet and\nCapital Position $4.20 2 (as at October 31, 2025) ~8% Annualized Growth $2.1 trillion $2.16 Assets $1.3 trillion Deposits 2025\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024 169-year 4.6% 25.9% 3 14.7% Total Shareholder Return 3 (5-year CAGR4) Continuous\nDividend History 2025 Dividend\nYield CET1 Ratio5\n\n1 Adjusted results are non-GAAP financial measures. Refer to “Non-GAAP and Other Financial Measures” in the “Financial Results Overview” section of the\n\n2025 Management’s Discussion and Analysis (MD&A).\n2 10-year CAGR is the compound annual growth rate calculated from 2015 to 2025.\n3 For additional information about this metric, refer to the Glossary in the 2025 MD&A.\n4 5-year CAGR is the compound annual growth rate calculated from 2020 to 2025.\n5 This measure has been calculated in accordance with OSFI’s Capital Adequacy Requirements and Liquidity Adequacy Requirements guidelines.\n\nTD BANK GROUP ANNUAL REPORT 2025\n\nManaging Risk\nat TD\n\nTD’s Risk Appetite\n\nA Closer Look: Progress\non TD’s Anti-Money\nLaundering (AML) Program\n\nIn 2025, TD stayed focused on delivering\nagainst its top priority, advancing\nremediation efforts and strengthening\nits AML program across the Bank.\n\nKey achievements on the remediation\nof TD’s U.S. AML program include:\n\nWe take risks required to build our business,\nbut only if those risks:\n1\n\nFit our business strategy\nand can be understood\nand managed.\n2\nDo not expose the enterprise to\n\n• Continued strengthening\nleadership and talent.\n\n• Enhanced client onboarding\nprocedures and strengthened\ncash deposit requirements.\n\nthe TD brand.\n\nany significant single loss events;\nTD does not “bet the bank” on any\nsingle acquisition, business, product\nor decision.\n3\nDo not risk harming\n\n• Improved investigative procedures\nwith updated guidelines and\nstreamlined workflow.\n\nTD’s Risk Culture\n\n• Implemented role-based targeted\ntraining and enhanced Bank-wide\ngeneral training to reinforce\nunderstanding and accountability.\n\n• Deployed a new transaction\nmonitoring platform with enhanced\nscenario coverage and capabilities.\n\nA strong risk culture is fundamental to TD’s success.\nIt shapes how the Bank seizes opportunities, navigates\nchallenges and maintains its focus on the future.\nDoing the right thing is at the heart of our risk culture\nand reflects who we are as a Bank.\n\n• Implemented specialized artificial\nintelligence (AI) and machine\nlearning capabilities.\n\n• Continued making progress on\nlookback reviews.\n\nThe Bank fosters an environment where colleagues\nfeel empowered to take ownership, escalate\nissues and continuously build their risk knowledge.\nEvery day, TD colleagues across the enterprise do\nthe right thing and Own it, Raise it and Know it.\n\nThese behaviours underpin a strong risk culture\nand are critical to achieving our vision, remaining\nsuccessful in a complex and competitive operating\nenvironment and driving better outcomes for\nclients, colleagues and communities.",
+        "similarity": 0.6485064029693604,
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 0,
+        "page_end": 9,
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_start": 8,
+        "section": "Notes to Consolidated Financial Statements",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00639",
+        "text": "In\naddition, some actions seek very large or indeterminate damages. Based\non the Bank’s current knowledge, and subject to the factors listed above\nas well as other uncertainties inherent in litigation and regulatory matters,\nother than as described below, since October 31, 2025, no other legal\nor regulatory matter has arisen or progressed to the point that it would\nreasonably be expected to result in a material financial impact to the Bank. TD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nthe Bank, its affiliates, or their employees that may be a violation of U.S.\nfederal law. The Bank is focused on meeting the terms of the consent\norders and plea agreements, including meeting its requirements to\nremediate the Bank’s U.S. BSA/AML compliance programs. During the first\nfiscal quarter of 2025, the Bank fully paid the remainder of the monetary\npenalty owed pursuant to the consent orders and plea agreements that\nwere entered into as part of the Global Resolution. The payment was\ncovered by provisions previously taken by the Bank for this matter.\n\n(DPA) with the U.S. DOJ related to the actions of a former TDS trader.\nPursuant to the terms of the DPA, TDS-US agreed to pay total monetary\nsanctions of approximately US$15.5 million, which consists of a criminal\npenalty, forfeiture and victim compensation. TDS-US and, in certain\ninstances, TD Group US Holdings LLC, further agreed to abide by certain\ncooperation, reporting and compliance obligations in connection with\nthe DPA. These include, but are not limited to: (i) an ongoing obligation\nto cooperate with DOJ investigations; (ii) an ongoing obligation to report\nevidence or allegations of violations by TDS-US of certain federal statutes;\n(iii) the implementation and maintenance of a corporate compliance\nprogram that meets certain enumerated standards; and (iv) an ongoing\nobligation to regularly report to the DOJ on its efforts to bolster its\ncompliance program. TDS-US also resolved investigations by the U.S.\nSecurities and Exchange Commission (SEC) and the Financial Industry\nRegulatory Authority (FINRA) relating to the actions of the former TDS-US\ntrader. As part of the resolutions, TDS-US agreed to pay approximately\nUS$7 million in total monetary sanctions to the SEC and US$6 million\nto FINRA.",
+        "similarity": 0.5924484133720398,
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank_code": "TD",
+        "section": "PROVISIONS, CONTINGENT LIABILITIES, COMMITMENTS, GUARANTEES, PLEDGED ASSETS, AND COLLATERAL",
+        "page_end": 230,
+        "quarter": 0,
+        "page_start": 229,
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "bank": "Toronto-Dominion Bank",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00331",
+        "text": "The Bank’s unencumbered liquid assets could be used to help address\npotential funding needs arising from stress events. Liquid asset eligibility\nconsiders estimated stressed market values and trading market depth, as\nwell as operational, legal, or other impediments to sale, rehypothecation\nor pledging.\n\nIn addition to our committee oversight framework, liquidity risk\nmanagement activities are subject to the three lines of defence governance\nmodel. Treasury, the first line of defence for the management of liquidity\nrisk, is subject to independent second line challenge and oversight by Risk\nManagement. TD’s Internal Audit is the third line of defence. The three\nlines of defence are independent of the business whose activities generate\nliquidity risks.\n\nAssets held by the Bank to meet liquidity requirements are\nsummarized in the following tables. The tables do not include assets\nheld within the Bank’s insurance businesses as these are used to support\ninsurance-specific liabilities and capital requirements.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nT A B L E 4 6",
+        "similarity": 0.615522563457489,
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_start": 114,
+        "page_end": 115,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "LIQUID ASSETS",
+        "quarter": 0,
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank_code": "TD"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00231",
+        "text": "1\n\n|\n\n(millions of Canadian dollars, except as noted)\nAs at\n\nOctober 31\n\n2025\nOctober 31\n\n2024\n\nResidential mortgage loans\n$ 13,023\n$ 8,527\nAutomobile loans and leases\n11,949\n5,580\nTelecommunication receivables2\n6,239\nn/a\nTrade receivables\n4,726\n–\nEquipment leases\n1,225\n1,246\nCredit card receivables2\n851\nn/a\nConsumer loans2\n240\nn/a\nInsurance premium receivables2\n145\nn/a\nInvestment loans\n66\n66\n\nTotal funded exposure\n$ 38,464\n$ 15,419\n\n1 The Bank’s funded exposure through the provision of liquidity facilities only relates to\noutstanding issuances of ABCP funding ‘A’ or above rated assets.\n\n2 Balances as at October 31, 2025 pertain only to the U.S. multi-seller ABCP conduits\nthat were deconsolidated prospectively effective July 31, 2025, as described below.\n\nAs at October 31, 2025, the Bank held $2.0 billion of ABCP issued\nby Bank-sponsored multi-seller conduits recorded on its 2025 Consolidated\nBalance Sheet (October 31, 2024 – $0.4 billion).",
+        "similarity": 0.5490188002586365,
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 82,
+        "page_start": 82,
+        "bank_code": "TD",
+        "section": "UNCONSOLIDATED CONDUITS",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00223",
+        "text": "$ 11,281\n\n1 Effective the first quarter of 2025, Risk-weighted assets associated with investments in insurance subsidiaries are allocated to the Corporate segment.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n|\nT A B L E 4 0",
+        "similarity": 0.5876721143722534,
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_end": 80,
+        "bank_code": "TD",
+        "section": "Operational Risk",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "page_start": 79,
+        "quarter": 0
+      }
+    ],
+    "structured": {
+      "answer": "In its 2025 annual report, TD disclosed several liquidity and funding risks. The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events, with eligibility for these assets considering stressed market values and operational impediments to their sale or pledging [S3]. Additionally, TD employs a three lines of defence governance model for liquidity risk management, where Treasury manages liquidity risk, supported by independent oversight from Risk Management and Internal Audit [S3]. Furthermore, the report indicates that TD's funded exposure through liquidity facilities for ABCP funding increased significantly from $15,419 million in 2024 to $38,464 million in 2025, reflecting a substantial rise in the Bank's exposure to liquidity risks associated with these conduits [S4].",
+      "sources": [
+        {
+          "label": "S3",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "LIQUID ASSETS",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "UNCONSOLIDATED CONDUITS",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 1.1863023999612778
+  },
+  "latency_seconds": 4.8041149999480695,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0004959,
+  "input_tokens": 2350,
+  "output_tokens": 239,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.023054099990986288,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's liquidity and funding risks in the 2025 annual report are supported by the actual answer context, including specific details about unencumbered liquid assets and governance models.",
+    "relevance_reason": "The answer directly addresses the question regarding liquidity and funding risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer covers all aspects of the requested information, including the governance model and specific figures related to liquidity facilities, as well as the correct bank and fiscal year.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00100275,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_06",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

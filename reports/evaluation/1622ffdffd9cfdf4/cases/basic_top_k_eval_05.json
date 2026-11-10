@@ -1,0 +1,135 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_05",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_05",
+    "question": "What residential mortgage credit risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed residential mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What residential mortgage credit risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, TD disclosed several residential mortgage credit risks, including:\n\n1. **Risk Ratings**: Residential mortgages were categorized into different risk levels. As of October 31, 2025, the breakdown was as follows:\n   - Low Risk: $221,168 million (Stage 1), $765 million (Stage 2)\n   - Normal Risk: $70,217 million (Stage 1), $8,391 million (Stage 2)\n   - Medium Risk: $351 million (Stage 1), $9,490 million (Stage 2)\n   - High Risk: $3 million (Stage 1), $3,700 million (Stage 2)\n   - Default: $587 million (Stage 3) [S2].\n\n2. **Allowance for Loan Losses**: The total allowance for loan losses related to residential mortgages was $357 million, with specific allowances for different stages: $102 million (Stage 1), $175 million (Stage 2), and $80 million (Stage 3) [S2].\n\n3. **Loans Past Due but Not Impaired**: As of October 31, 2025, residential mortgages that were past due but not impaired totaled $536 million, with $407 million in the 31-60 days category and $129 million in the 61-89 days category [S4].\n\n4. **Impaired Loans**: The report indicated that there were impaired loans with a balance of $273 million, which did not have a related allowance for loan losses because the realizable value of the collateral exceeded the loan amount [S5].\n\n5. **Collateral**: As of October 31, 2025, the collateral held against total gross impaired loans represented 84% of total gross impaired loans, indicating a significant level of collateralization [S4].\n\nThese disclosures highlight the various credit risks associated with residential mortgages, including the categorization of loans by risk, the allowances set aside for potential losses, and the status of loans that are past due but not yet impaired.",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00538",
+        "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+        "similarity": 0.6462543606758118,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 187,
+        "bank_code": "TD",
+        "bank": "Toronto-Dominion Bank",
+        "document_type": "annual_report",
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "fiscal_year": 2025,
+        "file_name": "TD_2025_annual_report.pdf",
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_start": 186
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00539",
+        "text": "Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures. TD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS The following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances. Loans by Risk Rating (millions of Canadian dollars)\nAs at October 31, 2025\nOctober 31, 2024 Stage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal Residential mortgages1,2,3\n\nLow Risk\n$ 221,168\n$\n765\n$\nn/a\n$ 221,933\n$ 238,101\n$\n655\n$\nn/a\n$ 238,756\nNormal Risk\n70,217\n8,391\nn/a\n78,608\n65,318\n13,620\nn/a\n78,938\nMedium Risk\n351\n9,490\nn/a\n9,841\n370\n9,614\nn/a\n9,984\nHigh Risk\n3\n3,700\n391\n4,094\n5\n3,201\n347\n3,553\nDefault\nn/a\nn/a\n587\n587\nn/a\nn/a\n418\n418\n\nTotal loans\n291,739\n22,346\n978\n315,063\n303,794\n27,090\n765\n331,649\n\nAllowance for loan losses\n102\n175\n80\n357\n116\n189\n60\n365\n\nLoans, net of allowance\n291,637\n22,171\n898\n314,706\n303,678\n26,901\n705\n331,284\n\nConsumer instalment and other personal4\n\nLow Risk\n110,513\n2,588\nn/a\n113,101\n101,171\n2,624\nn/a\n103,795\nNormal Risk\n75,881\n19,812\nn/a\n95,693\n66,105\n12,054\nn/a\n78,159\nMedium Risk\n29,757\n6,792\nn/a\n36,549\n27,188\n6,352\nn/a\n33,540\nHigh Risk\n5,407\n7,209\n448\n13,064\n4,017\n7,881\n412\n12,310\nDefault\nn/a\nn/a\n626\n626\nn/a\nn/a\n578\n578\n\nTotal loans\n221,558\n36,401\n1,074\n259,033\n198,481\n28,911\n990\n228,382\n\nAllowance for loan losses\n699\n1,220\n274\n2,193\n667\n1,120\n262\n2,049\n\nLoans, net of allowance\n220,859\n35,181\n800\n256,840\n197,814\n27,791\n728\n226,333",
+        "similarity": 0.6000562906265259,
+        "bank": "Toronto-Dominion Bank",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "page_end": 187,
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "page_start": 187,
+        "quarter": 0
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00119",
+        "text": "Refer to Note 12 of the 2025 Consolidated Financial Statements for\nfurther information on Schwab.\n\n41 Loan portfolios identified for sale or run-off include the Point of Sale finance business which services third party retailers, correspondent lending, export and import lending,\ncommercial auto dealer portfolio, and other non-core portfolios. 2025 average loan volumes: US$184 billion (2024: US$192 billion). 2025 average loan volumes of loan portfolios\nidentified for sale or run-off: US$24 billion (2024: US$36 billion). 2025 average loan volumes excluding loan portfolios identified for sale or run-off: US$160 billion (2024:\nUS$156 billion).\n\n42 For additional information about the Bank’s use of non-GAAP financial measures, refer to “Non-GAAP and Other Financial Measures” in the “Financial Results Overview”\nsection of this document.\n\n43 The Bank’s expectations regarding expense growth are based on the assumptions regarding certain factors, including the Bank’s ability to successfully execute against its\ngovernance and control initiatives, including U.S. BSA/AML remediation, the timing of business investments, and productivity and restructuring savings. Refer to the “Risk Factors\nThat May Affect Future Results” section of this document for additional information about risks and uncertainties that may impact the Bank’s estimates.\n\n44 The Bank’s Q1 2026 net interest margin expectations for the segment are based on the Bank’s assumptions regarding interest rates, deposit reinvestment rates, average asset\nlevels, execution of planned restructuring opportunities, and other variables, and are subject to inherent risks and uncertainties, including those set out in the “Risk Factors That\nMay Affect Future Results” section of this document.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "similarity": 0.5716355443000793,
+        "fiscal_year": 2025,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "THE CHARLES SCHWAB CORPORATION",
+        "quarter": 0,
+        "page_end": 50,
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 50,
+        "document_type": "annual_report",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank_code": "TD",
+        "bank": "Toronto-Dominion Bank"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00553",
+        "text": "(i) LOANS PAST DUE BUT NOT IMPAIRED\nA loan is classified as past due when a borrower has failed to make a\npayment by the contractual due date. The following table summarizes\nloans that are past due but not impaired. Loans less than 31 days\ncontractually past due are excluded as they do not generally reflect a\nborrower’s ability to meet their payment obligations. Incremental lifetime ECLs impact\n$ 1,702\n$ 1,953 Loans Past Due but not Impaired1 (millions of Canadian dollars)\nAs at October 31, 2025\nOctober 31, 2024 31-60\ndays 31-60\ndays 61-89\ndays\nTotal 61-89\ndays\nTotal\n\nResidential mortgages\n$\n407\n$\n129\n$\n536\n$\n443\n$\n111\n$\n554\nConsumer instalment and other personal\n930\n301\n1,231\n983\n335\n1,318\nCredit card\n373\n253\n626\n375\n269\n644\nBusiness and government\n247\n85\n332\n244\n83\n327\n\nTotal\n$ 1,957\n$\n768\n$ 2,725\n$ 2,045\n$\n798\n$ 2,843\n\n1 Includes loans that are measured at FVOCI.\n\nand conditions of the loan and/or the loan is considered impaired.\nManagement considers the nature of the collateral, seniority ranking of\nthe debt, and loan structure in assessing the value of collateral. These\nestimated cash flows are reviewed at least annually, or more frequently\nwhen new information indicates a change in the timing or amount\nexpected to be received.\n\n(j) MODIFIED FINANCIAL ASSETS\nThe amortized cost of financial assets with lifetime allowance that were\nmodified during the year ended October 31, 2025, was $210 million\n(October 31, 2024 – $214 million) before modification, with insignificant\nmodification gain or loss. The gross carrying amount of modified\nfinancial assets for which the loss allowance changed from lifetime to\ntwelve-month ECLs during the years ended October 31, 2025 and\nOctober 31, 2024 were insignificant.\n\n(k) COLLATERAL\nAs at October 31, 2025, the collateral held against total gross impaired\nloans represents 84% (October 31, 2024 – 82%) of total gross impaired\nloans. The fair value of non-financial collateral is determined at the\norigination date of the loan. A revaluation of non-financial collateral\nis performed if there has been a significant change in the terms\n\n(l) SALE OF U.S. RESIDENTIAL MORTGAGE LOANS\nOn March 26, 2025, the Bank sold US$8.6 billion of certain U.S. residential\nmortgage loans (correspondent loans) which resulted in the recognition\nof a pre-tax loss including transaction costs of US$507 million in Other\nincome (loss) on the Consolidated Statement of Income. The sale related\nto balance sheet restructuring activities undertaken in the U.S. Retail\nsegment. Refer to Note 25 for additional information regarding the asset\nlimitation on TD’s two U.S. bank subsidiaries.\n\nN O T E 9",
+        "similarity": 0.5705273151397705,
+        "page_end": 193,
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 193,
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00541",
+        "text": "Loans, net of allowance\n312,697\n27,661\n2,026\n342,384\n325,038\n26,805\n1,777\n353,620 Total loans\n862,929\n93,640\n5,420\n961,989\n862,652\n90,272\n4,949\n957,873\nTotal allowance for loan losses\n2,739\n4,362\n1,588\n8,689\n2,470\n4,082\n1,542\n8,094 Total loans, net of allowance\n$ 860,190\n$ 89,278\n$ 3,832\n$ 953,300\n$ 860,182\n$ 86,190\n$ 3,407\n$ 949,779 3 Includes insured mortgages of $69 billion (October 31, 2024 – $71 billion).\n\n4 lncludes Canadian government-insured real estate personal loans of $5 billion\n(October 31, 2024 – $6 billion).\n\n1 Includes impaired loans with a balance of $273 million (October 31, 2024 –\n$259 million) which did not have a related allowance for loan losses as the realizable\nvalue of the collateral exceeded the loan amount.\n\n2 Excludes trading loans and non-trading loans at FVTPL with a fair value of $30 billion\n(October 31, 2024 – $24 billion) and $0.3 billion (October 31, 2024 – $3 billion),\nrespectively.\n\n5 Includes loans guaranteed by government agencies of $24 billion (October 31, 2024 –\n$24 billion), which are primarily reported in non-investment grade or a lower risk\nrating based on the borrowers’ credit risk.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nLoans by Risk Rating (continued) – Off-Balance Sheet Credit Instruments1\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nRetail Exposures2\n\nLow Risk\n$ 318,759\n$\n1,464\n$\nn/a\n$ 320,223\n$ 268,234\n$\n1,365\n$\nn/a\n$ 269,599\nNormal Risk\n62,564\n1,147\nn/a\n63,711\n93,576\n1,332\nn/a\n94,908\nMedium Risk\n16,381\n1,295\nn/a\n17,676\n18,562\n1,247\nn/a\n19,809\nHigh Risk\n1,282\n1,092\n–\n2,374\n1,126\n1,181\n–\n2,307\nDefault\nn/a\nn/a\n–\n–\nn/a\nn/a\n–\n–\nNon-Retail Exposures3\n\nInvestment grade\n319,274\n–\nn/a\n319,274\n287,830\n–\nn/a\n287,830\nNon-investment grade\n103,936\n5,710\nn/a\n109,646\n99,866\n6,968\nn/a\n106,834\nWatch and classified\n150\n4,905\n–\n5,055\n328\n5,418\n–\n5,746\nDefault\nn/a\nn/a\n343\n343\nn/a\nn/a\n252\n252",
+        "similarity": 0.5698330402374268,
+        "page_end": 188,
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "bank": "Toronto-Dominion Bank",
+        "page_start": 187,
+        "file_name": "TD_2025_annual_report.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.8821332999505103
+  },
+  "latency_seconds": 10.027056899969466,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007738499999999999,
+  "input_tokens": 3467,
+  "output_tokens": 423,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.03074319998268038,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about residential mortgage credit risks are directly supported by the actual answer context, including specific figures and categories from TD's 2025 annual report.",
+    "relevance_reason": "The answer directly addresses the question regarding residential mortgage credit risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including risk ratings, allowances for loan losses, loans past due but not impaired, impaired loans, and collateral, all relevant to the question.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00147075
+}

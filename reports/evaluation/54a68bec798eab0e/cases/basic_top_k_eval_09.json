@@ -1,0 +1,137 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_09",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_09",
+    "question": "What operational and technology risks did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed operational and technology risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What operational and technology risks did BMO disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, BMO disclosed several operational and technology risks, including:\n\n1. **Operational Resilience**: BMO emphasizes the importance of operational resilience, which is the ability to protect and sustain core business products and services during normal operations and in times of operational stress or disruption. This resilience is supported by effective management of operational non-financial risk management (ONFRM) [S4].\n\n2. **Third-Party Risk**: The bank noted that its relationships with third parties, while beneficial for delivering innovative solutions, can introduce risks that threaten operational resilience. These risks include potential compromises of customer data and disruptions in the availability of critical products and services [S5].\n\n3. **Emerging Technologies**: BMO is investing in new technologies, including artificial intelligence, to meet evolving customer expectations. However, the adoption of these technologies may introduce complex regulatory, strategic, and reputational risks [S5].\n\n4. **Environmental and Social Risks**: The bank is exposed to risks related to environmental factors, such as extreme weather events that could disrupt operations and impact customers. Additionally, there are risks associated with borrowers facing financial losses due to climate-related changes [S5].\n\n5. **Legal and Regulatory Compliance Risks**: BMO faces risks from potential non-compliance with legal and regulatory requirements, which could lead to financial losses, regulatory sanctions, and damage to reputation [S3].\n\nThese disclosures highlight BMO's proactive approach to identifying and managing various operational and technology-related risks as part of its overall risk management framework.",
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00021",
+        "text": "67\nEnterprise-Wide Risk Management\n\n23\nNon-GAAP and Other Financial Measures\n\n27\nEconomic Developments and Outlook\n\n28\n2025 Financial Performance Review\n\n108\nAccounting Matters and Disclosure and Internal Control\n108\nCritical Accounting Estimates and Judgments\n111\nFuture Changes in Accounting Policies\n111\nOther Regulatory Developments\n111\nTransactions with Related Parties\n112\nShareholders’ Auditors’ Services and Fees\n113\nManagement’s Annual Report on Disclosure Controls and\nProcedures and Internal Control over Financial Reporting\n\n114\nSupplemental Information\n\n122\nGlossary of Financial Terms\n\n34\n2025 Operating Segments Performance Review\n34\nHow BMO Reports Operating Segments Results\n35\nCanadian Personal and Commercial Banking\n39\nU.S. Banking\n43\nWealth Management\n47\nCapital Markets\n50\nCorporate Services, including Technology and Operations\n52\nSummary Quarterly Earnings Trends\n\nRegulatory Filings\nBMO’s continuous disclosure materials, including our interim consolidated financial statements and interim MD&A, audited annual consolidated financial statements and\nannual MD&A, Annual Information Form and Notice of Annual Meeting of Shareholders and Management Proxy Circular, are available on our website at www.bmo.com/\ninvestorrelations, on the Canadian Securities Administrators’ website at www.sedarplus.ca and on the EDGAR section of the U.S. Securities and Exchange Commission’s\n(SEC) website at www.sec.gov. BMO’s Chief Executive Officer and Chief Financial Officer certify the appropriateness and fairness of BMO’s annual and interim consolidated\nfinancial statements, annual MD&A and Annual Information Form, the effectiveness of BMO’s disclosure controls and procedures and the effectiveness of, and any material\nweaknesses relating to, BMO’s internal control over financial reporting. Information contained in, or otherwise accessible through, our website (www.bmo.com) or any\nthird-party websites mentioned herein, does not form part of this document.\n\nCaution\nThe About BMO, Financial Objectives and Value Measures, Economic Developments and Outlook, Provision for Income Taxes and Other Taxes, 2026 Areas of Focus, Business\nEnvironment and Outlook, Enterprise-Wide Capital Management, Off-Balance Sheet Arrangements, Enterprise-Wide Risk Management, Future Changes in Accounting\nPolicies and Other Regulatory Developments sections contain certain forward-looking statements. By their nature, forward-looking statements require us to make\nassumptions and are subject to inherent risks and uncertainties. Refer to the Caution Regarding Forward-Looking Statements section for a discussion of such risks and\nuncertainties and the material factors and assumptions related to the statements set forth in such sections.\n\n16 BMO Financial Group 208th Annual Report 2025\n\nFactors That May Affect Future Results\nAs noted in the following Caution Regarding Forward-Looking Statements section, all forward-looking statements and information, by their nature,\nare subject to inherent risks and uncertainties, both general and specific, which may cause actual results to differ materially from the expectations\nexpressed in any forward-looking statement. The Enterprise-Wide Risk Management section describes a number of risks, including credit and\ncounterparty, market, insurance, liquidity and funding, operational non-financial, legal and regulatory compliance, strategic, environmental and social,\nand reputation risk. Should our risk management framework prove ineffective, there could be a material impact on our financial position and results.",
+        "similarity": 0.6364115476608276,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "page_end": 19,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "page_start": 18,
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "bank": "Bank of Montreal",
+        "section": "MD&A"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00124",
+        "text": "Our customer base is broadly diversified, and we do not anticipate events or conditions that would cause a significant\nnumber of customers to fail to perform in accordance with the terms of their contracts. We use the credit adjudication process in deciding whether to\nenter into these arrangements, just as we do when extending credit in the form of a loan. We monitor off-balance sheet credit instruments in order\nto avoid undue concentrations in any single geographic region or industry. For the credit commitments outlined in the preceding paragraphs, in the absence of an event that triggers a default, early termination by BMO\nmay result in a breach of contract. Further information on these instruments can be found in Note 24 of the audited annual consolidated financial statements.\n\nCaution\nThis Off-Balance Sheet Arrangements section contains forward-looking statements. Please refer to the Caution Regarding Forward-Looking Statements.\n\n66 BMO Financial Group 208th Annual Report 2025\n\nEnterprise-Wide Risk Management\n\nAs a diversified financial services company providing banking, wealth management, capital markets and insurance services,\nBMO is exposed to a variety of risks that are inherent in each of these business activities. A disciplined and integrated\napproach to managing risk is fundamental to the success of our operations. Our Risk Management Framework provides a\nconsistent, enterprise-wide approach to risk management and oversight that underpins our strategy, enables informed\ndecision-making and drives resilience and efficiency.\n\nEnterprise-Wide Risk Management outlines BMO’s approach to managing the key financial risks and other related risks that are inherent in these\nbusiness activities, as discussed in the following sections:\n\n67\nRisks That May Affect Future Results\n70\nRisk Management Framework\n76\nCredit and Counterparty Risk\n84",
+        "similarity": 0.6246488094329834,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_start": 68,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "page_end": 69,
+        "document_type": "annual_report",
+        "section": "MD&A"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00132",
+        "text": "In addition,\ndifferences in the laws and regulations enacted by a range of national regulatory authorities may offer advantages to our international competitors,\nwhich could affect our ability to compete. We monitor such developments, and other potential changes, so that we are well-positioned to respond\nand implement any necessary changes. BMO is subject to legal proceedings, including reviews and investigations by governments and regulators,\narising in the normal course of business. Failure to comply with applicable legal and regulatory requirements and expectations could lead to further\nlegal proceedings, financial losses, regulatory sanctions and fines, enforcement actions, criminal convictions and penalties, operational restrictions or\nan inability to execute certain business strategies, a decline in investor and customer confidence, and damage to our reputation. Refer to the Legal and Regulatory Compliance Risk section for further discussion of these risks. Other Factors That May Affect Future Results\n\nTax Legislation and Interpretations\nLegislative changes and changes in tax policy, including their interpretation by tax authorities and the courts, may impact earnings. Tax laws, as well\nas interpretations of tax laws and policy by tax authorities, may change as a result of efforts by the Canadian and U.S. governments, other G20\ngovernments and the Organisation for Economic Co-operation and Development (OECD) to increase taxes, broaden the tax base globally and improve\ntax-related reporting. For example, in fiscal 2024, the Canadian government enacted the Global Minimum Tax Act (GMTA) to adopt the OECD/G20\nInclusive Framework on Base Erosion and Profit Shifting two-pillar plan (Pillar 2) for international tax reform, which levied a 15% minimum tax on\noperations globally.\n\nChanges to Business Portfolio\nAs part of its overall business strategy, BMO may acquire companies, businesses and assets. Although we conduct thorough due diligence before\ncompleting these acquisitions, some may not perform in accordance with our financial or strategic objectives or expectations, and may be dependent,\namong others, on timely regulatory and shareholder approvals, changes in the competitive and economic environment and acquisition-related\nintegration costs. Successful post-acquisition performance depends on retaining the clients and key employees of acquired companies and businesses\nand integrating key systems and processes without disruption.\n\nBMO also evaluates potential dispositions of assets and businesses that may no longer meet our strategic and financial objectives. Dispositions\nmay be impacted by the terms and timeliness of exit strategies and greater than expected disruption, and may also be subject to the satisfaction of\nconditions and the granting of governmental or regulatory approvals on acceptable terms that, if not satisfied or obtained, may prevent the\ncompletion of a disposition as intended, or at all.\n\nCritical Accounting Estimates, Judgments and Accounting Standards\nBMO prepares its consolidated financial statements in accordance with International Financial Reporting Standards (IFRS). Future changes in\naccounting policies are discussed in the Future Changes in Accounting Policies section, as well as in Note 1 of the audited annual consolidated\nfinancial statements.\n\nThe application of IFRS requires management to make significant judgments and estimates that affect the carrying amounts of certain assets and\nliabilities, certain amounts reported in net income and other related disclosures. BMO’s financial results could be affected for the period during which\nany such new information or change in circumstances becomes apparent, and the extent of the impact could be significant. More information is\nincluded in the Critical Accounting Estimates and Judgments section.\n\nCritical Accounting Estimates, Judgments and Accounting Standards\nBMO prepares its consolidated financial statements in accordance with International Financial Reporting Standards (IFRS). Future changes in\naccounting policies are discussed in the Future Changes in Accounting Policies section, as well as in Note 1 of the audited annual consolidated\nfinancial statements. The application of IFRS requires management to make significant judgments and estimates that affect the carrying amounts of certain assets and\nliabilities, certain amounts reported in net income and other related disclosures. BMO’s financial results could be affected for the period during which\nany such new information or change in circumstances becomes apparent, and the extent of the impact could be significant. More information is\nincluded in the Critical Accounting Estimates and Judgments section.\n\nCaution\nThe Risks That May Affect Future Results section and the remainder of this Enterprise-Wide Risk Management section contain forward-looking statements. Please refer to the Caution Regarding Forward-\nLooking Statements. Other factors beyond BMO’s control that may affect its future results are noted in the Caution Regarding Forward-Looking Statements. BMO cautions that the preceding discussion of risks\nthat may affect future results is not exhaustive.\n\nBMO Financial Group 208th Annual Report 2025 69",
+        "similarity": 0.6107213497161865,
+        "document_type": "annual_report",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "section": "MD&A",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal",
+        "quarter": 0,
+        "page_end": 71,
+        "page_start": 71
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00203",
+        "text": "The program reflects our commitment to an ethical culture defined by BMO’s values, including integrity\nand responsible risk management, reinforced by enhanced operational resilience. Operational resilience is an organization’s ability to protect and\nsustain core business products and services that are essential to its clients, both during the normal course of business and when experiencing\noperational stress or disruption. It involves the ability to respond to unpredictable events, adapt to changes and external circumstances, and is an\noutcome of effective management of ONFRM. BMO is well positioned to meet the requirements outlined in the August 2024 release of OSFI’s Operational Risk and Resilience Guideline. The following are the key programs, methodologies and processes set out in the ONFRM program that assist us in the ongoing review of our\noperational non-financial risk profile:\n\n‰ BMO’s Product/Service and Process Risk Assessment program is used by our operating segments and Corporate Services to assess the controls\n\nand residual risk exposures in their business operations by focusing on the key controls applied to their products, services, internal activities and\nprocesses, which are subject to second-line effective challenge. It provides a current and forward-looking view of the impact of both our internal\ncontrols and the external business environment on the risk profiles of our operating segments and Corporate Services, supporting the proactive\nidentification, assessment, measurement, management and reporting of risk.\n\n‰ BMO’s Initiative Assessment and Approval Process is used to assess, document and approve new products and services, or enhancements to\n\nexisting products and services, as well as review projects which could impact the existing control environment. This process supports continuous\noversight of change in risk exposure by setting out specific requirements for due diligence, approval, monitoring and reporting that apply at all\nlevels of the organization.\n\n98 BMO Financial Group 208th Annual Report 2025\n\n‰ KRIs, Issues Management and Internal Loss Data Events are integral components of the ONFRM program that inform the operational risk profile\n\nand are utilized to monitor and manage specific risk exposures in relation to BMO’s overall risk appetite. Our policies and standards require the\ntimely, complete and accurate reporting of KRIs, issues and events, including managing an effective second-line challenge, within the bank’s\noperational risk platform. Root cause analysis is undertaken on KRI breaches, issues and material events, and mitigating actions are monitored for\ncompletion, if required.\n\n‰ Operational Risk Capital Measurement: The bank’s operational risk capital is determined using the Basel III Standardized Approach (SA), which is\n\nan outcome of the Business Indicator Component (BIC) and Internal Loss Multiplier (ILM). BIC is a financial statement-based proxy representing\nactivity within the bank and ILM is a proxy representing the control environment relative to activity. ILM is a mathematical calculation based\non 10-year average historical losses (net of recoveries) and the three-year average BIC.\n\n‰ Stress Testing Scenario Analysis assesses the potential impact of severe, hypothetical but plausible scenarios covering material and emerging\n\nrisks, as well as critical business processes at the bank. Results of the stress test scenarios are leveraged to derive operational loss projections that\ncan be used for risk management (understanding areas of concentration, susceptibility, prioritizing incremental risk mitigation strategies, etc.) and\nrisk measurement (understanding exposures, benchmarking, developing KRIs, controls and supporting regulatory stress submissions).\n\n‰ BMO’s Corporate Risk and Insurance (CR&I) group provides a second layer of mitigation for certain operational risk exposures. CR&I is also",
+        "similarity": 0.6076680421829224,
+        "page_start": 100,
+        "document_type": "annual_report",
+        "bank": "Bank of Montreal",
+        "fiscal_year": 2025,
+        "bank_code": "BMO",
+        "page_end": 101,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "section": "MD&A",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00130",
+        "text": "Through innovation we aim to deliver digital solutions, services, processes and products that keep pace with industry\ndevelopments and rapidly evolving customer expectations, as well as new competitors, without disruption to business-critical systems. New\ntechnologies may introduce more complex regulatory, strategic and reputation risks. In alignment with our digital-first strategy, we continue to invest\nin emerging technologies, including AI, and talent to adapt to this dynamic environment and deliver competitive and digitally enabled products and\nservices to meet our customers’ expectations for personalized and on-demand banking, pursue new business growth opportunities and improve\noperational efficiency. We remain committed to the prudent and responsible adoption of new technologies. For further discussion of BMO’s technology risk program, refer to the Operational Non-Financial Risk section.\n\nThird-Party Risk\nOur use of third-party relationships continues to evolve and expand, helping us to deliver new and innovative solutions for our clients across the\nbank. While third-party relationships are beneficial for the bank, they can also give rise to risks that may threaten BMO’s operational resilience, such\nas compromised customer data or disruptions in the availability of critical products and services, which could financially impact the bank. We continue\nto enhance and evolve our capabilities, including those around contingency and transition planning, in order to maintain effective third-party risk\nmanagement and oversight and the efficient delivery of products and services that depend on third parties.\n\nFor further discussion of BMO’s third-party risk program, refer to the Operational Non-Financial Risk section.\n\nEnvironmental and Social Risk\nBMO is exposed to environmental and social risks, in particular physical climate risks, such as extreme weather events that could potentially disrupt\nour operations, impact our customers and counterparties, and result in potential losses. Factors contributing to heightened environmental risks include\nweather events of increasing severity and frequency, and the further intensification of development in areas of greater environmental sensitivity.\nBusiness continuity and disaster recovery plans provide us with the roadmap and tools to support the restoration, maintenance and management of\ncritical operations and processes in the event of a business disruption.\n\nWe are also exposed to risks related to borrowers that may experience financial losses or rising operating costs as a result of acute or chronic\nchanges in climate conditions, climate-related litigation and/or policies, such as carbon emissions pricing, or a decline in revenue as new and\nemerging technologies and changing consumer preferences disrupt or displace demand for certain commodities, products and services. BMO’s climate\nambition is to be our clients’ lead partner in their transition to a net zero world. Our strategy seeks opportunities to generate commercial value\nthrough partnering with our clients in achieving their decarbonization goals.\n\nLegal and regulatory compliance risk or reputation risk could arise from actual or perceived actions, or inactions, by BMO or its clients related to\nclimate change, other environmental and social issues, or the bank’s climate-related disclosures. Risks related to these issues could also affect our\n\n68 BMO Financial Group 208th Annual Report 2025\n\ncustomers, suppliers or other stakeholders, which could give rise to new risks. Globally, financial services regulators and supervisors are evolving their\napproaches to the management of climate-related financial risk and disclosures of climate-related financial information. Litigation or enforcement\nmeasures could arise from obligations to manage and report on climate-related risks.\n\nRefer to the Environmental and Social Risk section for further discussion of these risks.",
+        "similarity": 0.6053211092948914,
+        "document_type": "annual_report",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "quarter": 0,
+        "page_start": 70,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "MD&A",
+        "page_end": 71,
+        "bank": "Bank of Montreal"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.7671059999847785
+  },
+  "latency_seconds": 4.7531081000342965,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007401,
+  "input_tokens": 3690,
+  "output_tokens": 311,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.023254700005054474,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about BMO's operational and technology risks in the 2025 annual report are supported by the actual answer context, including specific risks like operational resilience, third-party risk, emerging technologies, environmental and social risks, and legal and regulatory compliance risks.",
+    "relevance_reason": "The answer directly addresses the question regarding the operational and technology risks disclosed by BMO in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all requested aspects of operational and technology risks as disclosed in the 2025 annual report, with no omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0014838,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_09",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

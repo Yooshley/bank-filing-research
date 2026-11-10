@@ -1,0 +1,607 @@
+[
+  {
+    "id": "eval_01",
+    "question": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed credit risks and provisions for credit losses; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_02",
+    "question": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk and Value-at-Risk measures; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_03",
+    "question": "What physical and transition climate risks did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed physical and transition climate risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What physical and transition climate risks did RBC disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_04",
+    "question": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed cybersecurity and operational risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_05",
+    "question": "What residential mortgage credit risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed residential mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What residential mortgage credit risks did TD disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_06",
+    "question": "What liquidity and funding risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity and funding risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity and funding risks did TD disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_07",
+    "question": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity risk controls and liquidity coverage measures; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_08",
+    "question": "What interest-rate risk management did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed interest-rate risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What interest-rate risk management did BMO disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_09",
+    "question": "What operational and technology risks did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed operational and technology risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What operational and technology risks did BMO disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_10",
+    "question": "What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed physical and transition climate risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_11",
+    "question": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed credit risk and loan-loss provisions; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_12",
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk management did Scotiabank disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_13",
+    "question": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed housing and mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_14",
+    "question": "What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed cybersecurity and technology risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_15",
+    "question": "What liquidity risk management did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity risk management did CIBC disclose in its 2025 annual report?"
+  },
+  {
+    "id": "eval_16",
+    "question": "Compare RBC and TD disclosures on credit risk management in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "RBC",
+      "TD"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare RBC and TD disclosures on credit risk management in their 2025 annual reports."
+  },
+  {
+    "id": "eval_17",
+    "question": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "TD",
+      "BMO"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports."
+  },
+  {
+    "id": "eval_18",
+    "question": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "BMO",
+      "CIBC"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports."
+  },
+  {
+    "id": "eval_19",
+    "question": "Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "BNS",
+      "RBC"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports."
+  },
+  {
+    "id": "eval_20",
+    "question": "Compare how all five Canadian banks describe AI model risk or OSFI E-23 in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "RBC",
+      "TD",
+      "BMO",
+      "BNS",
+      "CIBC"
+    ],
+    "risk": "model_risk",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Cover all five banks, cite supporting excerpts, and distinguish no retrieved mention from no disclosure.",
+    "reference_query": "artificial intelligence model risk OSFI E-23 governance validation"
+  },
+  {
+    "id": "eval_21",
+    "question": "How did RBC disclosures about provision for credit losses change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did RBC disclosures about provision for credit losses change between 2024 and 2025?"
+  },
+  {
+    "id": "eval_22",
+    "question": "How did TD disclosures about cybersecurity risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "TD"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did TD disclosures about cybersecurity risk change between 2024 and 2025?"
+  },
+  {
+    "id": "eval_23",
+    "question": "How did BMO disclosures about liquidity risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did BMO disclosures about liquidity risk change between 2024 and 2025?"
+  },
+  {
+    "id": "eval_24",
+    "question": "How did Scotiabank disclosures about climate risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did Scotiabank disclosures about climate risk change between 2024 and 2025?"
+  },
+  {
+    "id": "eval_25",
+    "question": "How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?"
+  },
+  {
+    "id": "eval_26",
+    "question": "What were Bank of Atlantis credit losses in 2025?",
+    "question_type": "edge",
+    "banks": [],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "ATLANTIS"
+      }
+    ],
+    "expected_behavior": "State that this bank is outside the corpus; do not fabricate figures.",
+    "reference_query": "What were Bank of Atlantis credit losses in 2025?"
+  },
+  {
+    "id": "eval_27",
+    "question": "What will RBC provision for credit losses be in 2030?",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2030
+      }
+    ],
+    "expected_behavior": "Decline to predict an unsupported future filing or number.",
+    "reference_query": "What will RBC provision for credit losses be in 2030?"
+  },
+  {
+    "id": "eval_28",
+    "question": "Did the bank improve its risk profile?",
+    "question_type": "edge",
+    "banks": [],
+    "risk": "ambiguous",
+    "scopes": [],
+    "expected_behavior": "Ask which bank and period; do not pick an arbitrary bank or claim improvement.",
+    "reference_query": "Did the bank improve its risk profile?"
+  },
+  {
+    "id": "eval_29",
+    "question": "Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Answer in French using supported RBC credit-risk disclosures and citations.",
+    "reference_query": "RBC credit risk management provision credit losses"
+  },
+  {
+    "id": "eval_30",
+    "question": "Calculate the percentage change in RBC provision for credit losses from 2024 to 2025.",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "calculation",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Use matching annual PCL amounts with units and citations; show (new-old)/old*100, or abstain if either input is missing.",
+    "reference_query": "RBC total provision for credit losses fiscal year"
+  }
+]

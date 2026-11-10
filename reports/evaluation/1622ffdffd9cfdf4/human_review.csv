@@ -1,0 +1,16 @@
+case_id,config,question_id,question,answer,human_faithfulness,human_relevance,human_completeness,notes
+1622ffdffd9cfdf4/basic_top_k/eval_01,basic_top_k,eval_01,What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed several aspects related to credit risks and provisions for credit losses:
+
+1. **Credit Risk Assessment**: RBC considers credit risk to be low for instruments with a low risk of default, where borrowers can fulfill their obligations even during adverse economic conditions. Instruments identified as having low credit risk include certain interest-bearing deposits, assets purchased under reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to multi-seller conduits [S1].
+
+2. **Expected Credit Losses (ECL)**: The measurement of expected credit losses involves significant judgment and considers past events, current conditions, and reasonable projections of future economic conditions. RBC uses macroeconomic variables such as unemployment rates, GDP growth rates, and housing prices to model expected credit losses for different stages of credit risk [S1].
+
+3. **Provisions for Credit Losses**: The report provides detailed figures on provisions for credit losses, including transfers between stages (Stage 1, Stage 2, and Stage 3), originations, maturities, and changes in risk parameters. For example, the balance at the end of the period for wholesale credit losses was reported as $3,319 million, with significant write-offs and recoveries noted [S2].
+
+4. **Internal Risk Ratings**: RBC assigns internal risk ratings that reflect the credit quality of borrowers, which are crucial for estimating probability of default (PD) parameters. Changes in these ratings can significantly impact expected credit losses [S2].
+
+5. **Management of Credit Risk**: RBC actively manages credit exposures and limits to align with its risk appetite and to mitigate concentration risks across various sectors and products. The bank has specialized groups to manage high-risk borrowers and may enter into forbearance agreements to assist clients in financial difficulty [S5].
+
+6. **Judgment in Credit Risk Assessment**: The assessment of significant increases in credit risk is performed at least quarterly and involves evaluating changes in PD and other qualitative factors. Instruments that are 30 days past due are generally considered to have experienced a significant increase in credit risk [S4].
+
+Overall, RBC's approach to credit risk and provisions for credit losses is comprehensive, involving detailed assessments, modeling based on macroeconomic conditions, and active management of borrower relationships.",,,,

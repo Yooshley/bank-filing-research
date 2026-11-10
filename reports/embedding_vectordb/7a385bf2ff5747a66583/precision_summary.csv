@@ -1,0 +1,3 @@
+provider,strategy,queries_scored,queries_total,partial_mean_precision_at_3,macro_precision_at_3
+local,mmr,10,10,0.3,0.3
+local,top_k,10,10,0.3333333333333333,0.3333333333333333

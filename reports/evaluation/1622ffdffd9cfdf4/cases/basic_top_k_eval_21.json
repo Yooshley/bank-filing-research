@@ -1,0 +1,188 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_21",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_21",
+    "question": "How did RBC disclosures about provision for credit losses change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did RBC disclosures about provision for credit losses change between 2024 and 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer this question.",
+    "sources": [
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00093",
+        "text": "Commercial Banking revenue has benefitted from volume growth in loans and deposits over the period. HSBC Canada\nrevenue has been included since the transaction closed on March 28, 2024. Wealth Management revenue has generally benefitted from growth in average fee-based client assets, which was impacted\nby market conditions. On July 3, 2023, we completed the sale of the European asset servicing activities of RBC Investor Services\nand its associated Malaysian centre of excellence. The fourth quarter of 2023 reflected impairment losses on our interest in an\nassociated company. As part of our adoption of IFRS 17, effective November 1, 2023, fluctuations in Insurance revenue are reflective of market\nconditions and insurance experience, while new business gains are deferred through CSM.\n\nCapital Markets revenue is influenced, to a large extent, by market conditions that impact client activity. While investment\nbanking fee pools were muted in 2023, we saw an increase in activity beginning the second quarter of 2024, during which we also\nimproved market share across all major products. Sales & trading activity increased in 2023 and carried strong momentum into 2024.\n\nPCL is comprised of provisions taken on performing assets and provisions taken on impaired assets. PCL on performing\nassets fluctuated over the period as it is impacted by changes in credit quality, macroeconomic conditions and exposures.\nProvisions on performing assets over the period have generally been reflective of unfavourable changes in credit quality. During\nthe early part of the period, there were unfavourable changes in our macroeconomic forecast. Starting in 2024, we have seen\nimprovements in our macroeconomic forecast. The second quarter of 2024 includes initial PCL on performing loans purchased in\nthe HSBC Canada transaction. PCL on impaired assets was low during the early part of the period, but has generally trended\nupwards over the remainder of the period.\n\nNon-interest expense has been impacted by fluctuations in variable compensation over the period, commensurate with\nfluctuations in revenue and earnings. Changes in the fair value of our U.S. share-based compensation plans, which are largely\noffset in revenue, have also contributed to fluctuations over the period and are impacted by market conditions. While we\ncontinue to focus on efficiency management activities, expenses over the period also reflect investments in staff and technology.\n\n62\n\nBeginning in fiscal 2023, expenses have also included HSBC Canada transaction and integration costs. HSBC Canada non-interest\nexpenses have been included since the transaction closed on March 28, 2024.\n\nOur effective income tax rate has fluctuated over the period, mostly due to varying levels of tax adjustments and changes in\nearnings mix. The first quarter of 2023 reflects the impact of the CRD and other tax related adjustments. The fourth quarter of\n2023 reflects the recognition of deferred tax assets relating to realized losses in City National associated with the intercompany\nsale of certain debt securities.\n\nFinancial condition\n\nCondensed balance sheets\n\nTable 38\n\nAs at October 31 (Millions of Canadian dollars)\n2024\n2023 (1)\n\nAssets\n\nCash and due from banks\n$\n56,723\n$\n61,989\nInterest-bearing deposits with banks\n66,020\n71,086\nSecurities, net of applicable allowance (2)\n439,918\n409,730\nAssets purchased under reverse repurchase agreements and securities borrowed\n350,803\n340,191\nLoans",
+        "similarity": 0.5419766902923584,
+        "page_end": 63,
+        "page_start": 62,
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "document_type": "annual_report",
+        "section": "Management’s Discussion and Analysis",
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00349",
+        "text": "Allowance for credit losses on investment securities\nThe following tables reconcile the opening and closing allowance for debt securities at FVOCI and amortized cost by stage.\nReconciling items include the following:\n•\nTransfers between stages, which are presumed to occur before any corresponding remeasurement of the allowance.\n•\nPurchases, which reflect the allowance related to assets newly recognized during the period, including those assets that\nwere derecognized following a modification of terms.\n•\nSales and maturities, which reflect the allowance related to assets derecognized during the period without a credit loss\nbeing incurred, including those assets that were derecognized following a modification of terms.\n•\nChanges in risk, parameters and exposures, which comprise the impact of changes in model inputs or assumptions, including\nchanges in forward-looking macroeconomic conditions; partial repayments; changes in the measurement following a\ntransfer between stages; and unwinding of the time value discount due to the passage of time.\n\nAllowance for credit losses – securities at FVOCI (1)\n\nFor the year ended\n\nOctober 31, 2024\n\nOctober 31, 2023\n\nPerforming\n\nImpaired\n\nPerforming\n\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3 (2)\nTotal\nStage 1\nStage 2\nStage 3 (2)\nTotal\n\nBalance at beginning of period\n$\n4 $\n– $\n(37) $\n(33) $\n3 $\n1 $\n(23) $\n(19)\nProvision for credit losses\n\nTransfers to stage 1\n–\n–\n–\n–\n1\n(1)\n–\n–\nTransfers to stage 2\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 3\n–\n–\n–\n–\n–\n–\n–\n–\nPurchases\n10\n–\n–\n10\n7\n–\n–\n7\nSales and maturities\n(4)\n–\n–\n(4)\n(2)\n–\n–\n(2)\nChanges in risk, parameters and\n\nexposures\n(4)\n–\n(8)\n(12)\n(5)\n–\n(17)\n(22)\nExchange rate and other\n–\n–\n4\n4\n–\n–\n3\n3\n\nBalance at end of period\n$\n6 $\n– $\n(41) $\n(35) $\n4 $\n– $\n(37) $\n(33)\n\n(1)\nExpected credit losses on debt securities at FVOCI are not separately recognized on the Consolidated Balance Sheets as the related securities are recorded at fair value.\nThe cumulative amount of credit losses recognized in income is presented in Other components of equity.\n(2)\nReflects changes in the allowance for purchased credit impaired securities.\n\nConsolidated Financial Statements\n\nNote 4\nSecurities (continued)\n\nAllowance for credit losses – securities at amortized cost\n\nFor the year ended\n\nOctober 31, 2024\n\nOctober 31, 2023\n\nPerforming\nImpaired\n\nPerforming\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nBalance at beginning of period\n$\n8 $\n15 $\n– $\n23 $\n8 $\n14 $\n– $\n22\nProvision for credit losses",
+        "similarity": 0.5379478931427002,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "page_end": 186,
+        "bank": "Royal Bank of Canada",
+        "page_start": 185,
+        "quarter": 0,
+        "section": "FVOCI",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "fiscal_year": 2024,
+        "filing_id": "RBC_2024_annual_report_FY"
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00290",
+        "text": "After a financial asset has transferred to Stage 2, if\nits credit risk is no longer considered to have significantly increased relative to its initial recognition, the financial asset will\nmove back to Stage 1. For certain instruments with low credit risk as at the reporting date, it is presumed that credit risk has not increased\nsignificantly relative to initial recognition. Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased under\nreverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have been\nidentified as having low credit risk.\n\nUse of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices, and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\n158\nConsolidated Financial Statements\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario based\non reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are designed to\ncapture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of additional\ndownside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.",
+        "similarity": 0.5337658524513245,
+        "document_type": "annual_report",
+        "bank": "Royal Bank of Canada",
+        "page_start": 158,
+        "fiscal_year": 2024,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "bank_code": "RBC",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "quarter": 0,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "section": "FVOCI",
+        "page_end": 159
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00190",
+        "text": "We continue to assess the impacts of these laws,\nregulations and actions on our litigation and regulatory compliance risks. “Greenwashing” generally refers to the practice of\nconveying false or misleading information about an organization’s products or services or operations to suggest that the\norganization is doing more to protect the environment than it is. Interest Rate Benchmark Reform\nAs part of the interest rate benchmark reform, the publication of all remaining Canadian Dollar Offered Rate (CDOR) settings\nceased on June 28, 2024. Relatedly, we have ceased Bankers’ Acceptance-based lending. As at October 31, 2024, and consistent\nwith our transition plan, our exposure to financial instruments referencing CDOR and interest rates substantially similar to CDOR\nis no longer material to our Consolidated Financial Statements.\n\nGovernment of Canada 2023 and 2024 budgets\nThe Fall Economic Statement Implementation Act, 2023 (the FESIA), introduced as Bill C-59 and tabled by the Government of\nCanada, received Royal Assent and was enacted on June 20, 2024. The FESIA implements a variety of tax measures including:\nsubject to certain exceptions, eliminating availability of the dividend received deduction in respect of dividends received by\nfinancial institutions after December 31, 2023 on shares of corporations resident in Canada, where such shares are\nmark-to-market property or tracking property for tax purposes; and a new 2% tax applicable to certain publicly listed\ncorporations on net share buybacks in excess of $1 million occurring on or after January 1, 2024. The 2024 impact from the\nenactment of the legislation was not material.\n\nThe Budget Implementation Act, 2024, No. 1 (the BIA), introduced as Bill C-69 and tabled by the Government of Canada, received\nRoyal Assent and was enacted on June 20, 2024. The BIA included the Global Minimum Tax Act (the GMTA) which implemented into\nCanadian law certain measures relating to the Organisation for Economic Co-operation and Development’s two-pillar plan to combat\ntax base erosion and profit shifting, including a 15% global minimum corporate tax on certain multinational enterprises (Pillar Two). A\nnumber of other countries in which RBC operates have also enacted Pillar Two legislation. The GMTA and corresponding foreign Pillar\nTwo legislation will be effective for our fiscal year beginning November 1, 2024. Had Pillar Two legislation in all relevant jurisdictions\napplied to the fiscal year ended October 31, 2024, RBC’s effective tax rate would have increased by an estimated 1% to 2%. For further\ndetails, refer to Note 21 of our 2024 Annual Consolidated Financial Statements.\n\nFor further details on regulatory capital and related requirements, refer to the risk and Capital management sections of this 2024\nAnnual Report.\n\nCompetitive risk",
+        "similarity": 0.5337584018707275,
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "quarter": 0,
+        "section": "Management’s Discussion and Analysis",
+        "fiscal_year": 2024,
+        "bank_code": "RBC",
+        "page_end": 109,
+        "page_start": 109,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2024_annual_report_FY"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00280",
+        "text": "Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased\nunder reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have\nbeen identified as having low credit risk. Use of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario\nbased on reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are\ndesigned to capture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of\nadditional downside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.\n\nDefinition of default\nThe definition of default used in the measurement of expected credit losses is consistent with the definition of default used for\nour internal credit risk management purposes. Our definition of default may differ across products and consider both\nquantitative and qualitative factors, such as the terms of financial covenants and days past due. For retail and wholesale\nborrowers, except as detailed below, default occurs when the borrower is more than 90 days past due on any material obligation\nto us, and/or we consider the borrower unlikely to make their payments in full without recourse action on our part, such as\ntaking formal possession of any collateral held. For certain credit card balances, default occurs when payments are 180 days\n\n154\nConsolidated Financial Statements",
+        "similarity": 0.5413417816162109,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "section": "FVOCI",
+        "fiscal_year": 2025,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "page_start": 156,
+        "page_end": 156
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00343",
+        "text": "Consolidated Financial Statements Note 5\nLoans and allowance for credit losses (continued) Allowance for credit losses – Retail and wholesale loans For the year ended October 31, 2025 October 31, 2024 Performing Impaired Performing Impaired (Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal Residential mortgages\n\nBalance at beginning of period\n$\n215\n$\n126 $\n231\n$\n572 $\n223\n$\n90 $\n168\n$\n481\nProvision for credit losses\n\nTransfers to stage 1\n157\n(153)\n(4)\n–\n99\n(97)\n(2)\n–\nTransfers to stage 2\n(41)\n49\n(8)\n–\n(23)\n36\n(13)\n–\nTransfers to stage 3\n(7)\n(45)\n52\n–\n(5)\n(42)\n47\n–\nOriginations\n100\n–\n–\n100\n94\n–\n–\n94\nMaturities\n(25)\n(29)\n–\n(54)\n(19)\n(17)\n–\n(36)\nChanges in risk, parameters and\n\nexposures\n(123)\n256\n101\n234\n(155)\n157\n54\n56\nWrite-offs\n–\n–\n(20)\n(20)\n–\n–\n(23)\n(23)\nRecoveries\n–\n–\n11\n11\n–\n–\n13\n13\nExchange rate and other\n–\n–\n(49)\n(49)\n1\n(1)\n(13)\n(13)\n\nBalance at end of period\n$\n276\n$\n204 $\n314\n$\n794 $\n215\n$\n126 $\n231\n$\n572\n\nPersonal\n\nBalance at beginning of period\n$\n305\n$\n966 $\n211\n$\n1,482 $\n280\n$\n793 $\n155\n$\n1,228\nProvision for credit losses\n\nTransfers to stage 1\n594\n(593)\n(1)\n–\n537\n(537)\n–\n–\nTransfers to stage 2\n(96)\n100\n(4)\n–\n(75)\n78\n(3)\n–\nTransfers to stage 3\n(4)\n(163)\n167\n–\n(3)\n(130)\n133\n–\nOriginations\n105\n–\n–\n105\n116\n–\n–\n116\nMaturities\n(53)\n(233)\n(1)\n(287)\n(51)\n(186)\n–\n(237)\nChanges in risk, parameters and\n\nexposures\n(562)\n1,040\n660\n1,138\n(499)\n947\n550\n998\nWrite-offs\n–\n–\n(935)\n(935)\n–\n–\n(745)\n(745)\nRecoveries\n–\n–\n156\n156\n–\n–\n129\n129\nExchange rate and other\n2\n(2)\n(20)\n(20)\n–\n1\n(8)\n(7)\n\nBalance at end of period\n$\n291\n$\n1,115 $\n233\n$\n1,639 $\n305\n$\n966 $\n211\n$\n1,482\n\nCredit cards\n\nBalance at beginning of period\n$\n207\n$\n1,026 $\n–\n$\n1,233 $\n203\n$\n866 $\n–\n$\n1,069\nProvision for credit losses",
+        "similarity": 0.5336402654647827,
+        "section": "FVOCI",
+        "page_start": 184,
+        "fiscal_year": 2025,
+        "page_end": 184,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00337",
+        "text": "Allowance for credit losses on investment securities\nThe following tables reconcile the opening and closing allowance for debt securities at FVOCI and amortized cost by stage.\nReconciling items include the following:\n•\nTransfers between stages, which are presumed to occur before any corresponding remeasurement of the allowance.\n•\nPurchases, which reflect the allowance related to assets newly recognized during the period, including those assets that\nwere derecognized following a modification of terms.\n•\nSales and maturities, which reflect the allowance related to assets derecognized during the period without a credit loss\nbeing incurred, including those assets that were derecognized following a modification of terms.\n•\nChanges in risk, parameters and exposures, which comprise the impact of changes in model inputs or assumptions,\nincluding changes in forward-looking macroeconomic conditions; partial repayments; changes in the measurement\nfollowing a transfer between stages; and unwinding of the time value discount due to the passage of time.\n\nAllowance for credit losses – securities at FVOCI (1)\n\nFor the year ended\n\nOctober 31, 2025\n\nOctober 31, 2024\n\nPerforming\n\nImpaired\n\nPerforming\n\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3 (2)\nTotal\nStage 1\nStage 2\nStage 3 (2)\nTotal\n\nBalance at beginning of period\n$\n6 $\n– $\n(41) $\n(35) $\n4 $\n– $\n(37) $\n(33)\nProvision for credit losses\n\nTransfers to stage 1\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 2\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 3\n–\n–\n–\n–\n–\n–\n–\n–\nPurchases\n7\n–\n–\n7\n10\n–\n–\n10\nSales and maturities\n(4)\n–\n–\n(4)\n(4)\n–\n–\n(4)\nChanges in risk, parameters and\n\nexposures\n(4)\n–\n(10)\n(14)\n(4)\n–\n(8)\n(12)\nExchange rate and other\n–\n–\n6\n6\n–\n–\n4\n4\n\nBalance at end of period\n$\n5 $\n– $\n(45) $\n(40) $\n6 $\n– $\n(41) $\n(35)\n\n(1)\nExpected credit losses on debt securities at FVOCI are not separately recognized on the Consolidated Balance Sheets as the related securities are recorded at fair value.\nThe cumulative amount of credit losses recognized in income is presented in Other components of equity.\n(2)\nReflects changes in the allowance for purchased credit-impaired securities.\n\n178\nConsolidated Financial Statements\n\nAllowance for credit losses – securities at amortized cost\n\nFor the year ended\n\nOctober 31, 2025\n\nOctober 31, 2024\n\nPerforming\nImpaired\n\nPerforming\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nBalance at beginning of period\n$\n6 $\n8 $\n– $\n14 $\n8 $\n15 $\n– $\n23\nProvision for credit losses",
+        "similarity": 0.5320340991020203,
+        "bank": "Royal Bank of Canada",
+        "page_end": 181,
+        "page_start": 180,
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "section": "FVOCI"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00345",
+        "text": "exposures\n(41)\n98\n156\n213\n(31)\n65\n139\n173\nWrite-offs\n–\n–\n(124)\n(124)\n–\n–\n(98)\n(98)\nRecoveries\n–\n–\n20\n20\n–\n–\n14\n14\nExchange rate and other\n6\n2\n(34)\n(26)\n1\n1\n(18)\n(16) Balance at end of period\n$\n95\n$\n117 $\n139\n$\n351 $\n80\n$\n86 $\n106\n$\n272 Wholesale\n\nBalance at beginning of period\n$\n787\n$\n1,038 $\n968\n$\n2,793 $\n774\n$\n785 $\n767\n$\n2,326\nProvision for credit losses\n\nTransfers to stage 1\n277\n(275)\n(2)\n–\n284\n(282)\n(2)\n–\nTransfers to stage 2\n(124)\n133\n(9)\n–\n(152)\n159\n(7)\n–\nTransfers to stage 3\n(15)\n(273)\n288\n–\n(9)\n(77)\n86\n–\nOriginations\n755\n–\n–\n755\n737\n–\n–\n737\nMaturities\n(543)\n(418)\n–\n(961)\n(438)\n(379)\n–\n(817)\nChanges in risk, parameters and\n\nexposures\n(243)\n912\n1,496\n2,165\n(407)\n827\n957\n1,377\nWrite-offs\n–\n–\n(1,237)\n(1,237)\n–\n–\n(763)\n(763)\nRecoveries\n–\n–\n74\n74\n–\n–\n63\n63\nExchange rate and other\n2\n6\n(278)\n(270)\n(2)\n5\n(133)\n(130)\n\nBalance at end of period\n$\n896\n$\n1,123 $\n1,300\n$\n3,319 $\n787\n$\n1,038 $\n968\n$\n2,793\n\n182\nConsolidated Financial Statements\n\nKey inputs and assumptions\nThe measurement of expected credit losses is a complex calculation that involves a significant number of interrelated inputs\nand assumptions and the allowance is not sensitive to any one single factor. The key drivers of changes in expected credit\nlosses include the following:\n\n• Changes in the credit quality of the borrower or instrument, primarily reflected in changes in internal risk ratings;\n• Changes in forward-looking macroeconomic conditions, specifically the macroeconomic variables to which our models\nare calibrated, which are those most closely correlated with credit losses in the relevant portfolio;\n• Changes in scenario design and the weight assigned to each scenario; and\n• Transfers between stages, which can be triggered by changes to any of the above inputs.\n\nTo reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics.\n\nInternal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit\nrisk and Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.",
+        "similarity": 0.5258544087409973,
+        "fiscal_year": 2025,
+        "page_start": 184,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "quarter": 0,
+        "page_end": 185,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "section": "FVOCI"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 2.3445517000509426
+  },
+  "latency_seconds": 3.1031287000514567,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0008824499999999999,
+  "input_tokens": 5831,
+  "output_tokens": 13,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.0478560000192374,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately reflects the absence of sufficient information in the provided filings to compare the provision for credit losses between 2024 and 2025, without making unsupported claims.",
+    "relevance_reason": "The response directly addresses the question about changes in disclosures regarding provisions for credit losses between the specified years.",
+    "completeness_reason": "The answer fully covers the request by stating the limitation of the available data, which is consistent with the evidence provided.",
+    "unsupported_claims": [],
+    "reference_limitations": "The filings do not contain comparative data for provisions for credit losses between 2024 and 2025."
+  },
+  "judge_cost_usd": 0.00265305
+}

@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_09",
+  "config": "agentic",
+  "question": {
+    "id": "eval_09",
+    "question": "What operational and technology risks did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed operational and technology risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What operational and technology risks did BMO disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What operational and technology risks did BMO disclose in its 2025 annual report?",
+    "answer": "In its 2025 annual report, BMO disclosed the following operational and technology risks:\n\n1. **Operational Non-Financial Risk (ONFR)**: This encompasses a wide range of non-financial risks, including those related to business change, customer trust, reputation, and data. These risks can lead to financial loss due to inadequate or failed internal processes, human error, misconduct, or external events. BMO has established a Risk Management Framework (RMF) to manage these risks, which includes internal controls and governance processes (BMO_2025_annual_report_FY_00201).\n\n2. **Governance of Operational Non-Financial Risk**: The Enterprise Operational Risk Committee (EORC) oversees operational non-financial risk management. It monitors the bank's resilience capabilities and supports proactive risk management to prevent failures. The governance includes regular analysis and reporting of operational risk profiles to various committees (BMO_2025_annual_report_FY_00202).\n\n3. **Operational Resilience**: BMO emphasizes the importance of operational resilience, which is the ability to protect and sustain core business products and services during normal operations and in times of stress or disruption. This resilience is supported by effective management of ONFR (BMO_2025_annual_report_FY_00202).\n\n4. **Strategic Risk**: Although primarily a strategic risk, it includes operational aspects. This risk arises from ineffective strategies or inadequate responses to changes in the business environment, which can lead to financial loss or reputational damage (BMO_2025_annual_report_FY_00216).\n\nThese disclosures highlight BMO's comprehensive approach to managing operational and technology risks, focusing on governance, resilience, and strategic alignment. For further details, you can refer to the full report [here](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 3836,
+    "output_tokens": 416,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000825,
+    "seconds": 6.91,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "operational risk",
+          "bank": "BMO",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00201",
+              "text": "Operational Non-Financial Risk\n\nOperational Non-Financial Risk encompasses a wide range of non-financial risks, including those related to business change, customer trust,\nreputation and data, all of which can result in financial loss. These losses can stem from inadequate or failed internal processes or systems,\nhuman error or misconduct, and external events that may directly or indirectly impact the fair value of assets we hold in our credit or\ninvestment portfolios.\n\nOperational non-financial risk (ONFR) is inherent in all our business and banking activities and can lead to significant impacts on our operating and\nfinancial results, including financial loss, restatements of financial results and damage to BMO’s reputation.\n\nOur ability to conduct business may be adversely affected by disruption to the infrastructure that supports our operations and the communities\nin which we do business, including, but not limited to, public health or other emergencies, civil disorder, acts of war or terrorism. We have an\nestablished Risk Management Framework (RMF) to manage and mitigate these risks, including internal controls, limits and governance processes,\nas well as plans/playbooks to maintain operations, serve our clients, and minimize adverse impacts of disruptions.\n\nWe regularly review top and emerging risk exposures that could impact BMO’s business and operations, and we assess our preparedness to\nproactively manage the risks we face or potentially face. Consistent with the management of risk across the enterprise, we employ a three-\nlines-of-defence approach in managing our exposures to non-financial risk.\n\nRefer to the Risks That May Affect Future Results – Top and Emerging Risks That May Affect Future Results section for further discussion of\nthese risks.",
+              "similarity": 0.624,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "page_end": 100,
+              "quarter": 0,
+              "page_start": 100,
+              "bank": "Bank of Montreal",
+              "document_type": "annual_report",
+              "bank_code": "BMO",
+              "fiscal_year": 2025,
+              "filing_id": "BMO_2025_annual_report_FY",
+              "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+              "file_name": "BMO_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00202",
+              "text": "Operational Non-Financial Risk Governance\nThe Enterprise Operational Risk Committee (EORC), a sub-committee of the Risk Management Committee (RMC), is the primary governance committee\nexercising oversight of operational non-financial risk management matters. The EORC provides oversight of all material operational non-financial risks,\nmonitors the bank’s resilience capabilities, and supports a proactive approach to risk management to prevent avoidable failures. As part of its\ngovernance responsibilities, the EORC acts to support the review and recommendation for approval of ONFR corporate policies and standards to the\nRisk Review Committee (RRC), the RMC and senior executives as required, as well as the methodologies and tools that comprise the governing\nprinciples of the Operational Non-Financial Risk Management (ONFRM) program. The documentation that gives effect to these governing principles is\nreviewed on a regular basis to confirm that it incorporates sound governance practices and is consistent with BMO’s risk appetite. Regular analysis\nand reporting of our enterprise operational risk profile to the various committees (ORC, RMC and RRC) are important elements of our RMF. Operational\nrisk reporting provides an integrated view of top and emerging risks, trends in loss data, capital consumption, key risk indicators (KRIs) and operating\nsegment profiles. We continue to invest in our reporting platforms, supporting timely and comprehensive reporting capabilities to enhance risk\ntransparency and facilitate the proactive management of operational risk exposures.\n\nOperational Non-Financial Risk Management\nAs the first line of defence, the operating segments and Corporate Services, which includes Technology and Operations, are accountable for the\nday-to-day management of their non-financial risk. Operational Risk Officers within the second line of defence independently assess the operational\nrisk profiles of our operating segments, identify material exposures and potential weaknesses in our product, service and process-based risk and\ncontrol environment, and recommend appropriate mitigation strategies and actions.\n\nIndependent operational risk management oversight is provided by ONFRM, which is responsible for developing effective risk-related strategies,\nthe RMF and policies, and for exercising independent second-line oversight, effective challenge and governance. ONFRM sets out and maintains the\nONFRM program, which defines the processes to be used by the first line of defence to identify, assess, measure, manage and report key operational\nrisk exposures, losses and near-miss operational risk events with significant potential impact. In addition, the ONFRM program sets out the processes\nby which ONFRM, as the independent second line of defence, guides, monitors, assesses and communicates with the first line in the management of\noperational non-financial risks.\n\nThrough the implementation and oversight of the ONFRM program, we seek to maintain an operational risk profile that is consistent with our risk\nappetite and supported by adequate capital. The program reflects our commitment to an ethical culture defined by BMO’s values, including integrity\nand responsible risk management, reinforced by enhanced operational resilience. Operational resilience is an organization’s ability to protect and\nsustain core business products and services that are essential to its clients, both during the normal course of business and when experiencing\noperational stress or disruption. It involves the ability to respond to unpredictable events, adapt to changes and external circumstances, and is an\noutcome of effective management of ONFRM.\n\nBMO is well positioned to meet the requirements outlined in the August 2024 release of OSFI’s Operational Risk and Resilience Guideline.\nThe following are the key programs, methodologies and processes set out in the ONFRM program that assist us in the ongoing review of our\noperational non-financial risk profile:",
+              "similarity": 0.612,
+              "bank": "Bank of Montreal",
+              "section": "MD&A",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "quarter": 0,
+              "page_start": 100,
+              "filing_id": "BMO_2025_annual_report_FY",
+              "page_end": 100,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "bank_code": "BMO"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00139",
+              "text": "Risk Appetite Framework\nWe believe that risk management is every employee’s responsibility. This is guided by the five key principles that define our approach to managing\nrisk across the enterprise and comprise our risk appetite: ‰ Understand and manage by only taking risks that are transparent and understood. ‰ Protect BMO’s reputation by adhering to principles of honesty, integrity, respect and high ethical standards, in line with our Code of Conduct. ‰ Diversify. Limit tail risk by targeting a business mix that minimizes earnings volatility and exposure to low-probability, high-impact events. ‰ Maintain strong capital and liquidity positions that meet, or exceed, regulatory requirements and market expectations. ‰ Optimize risk return by managing risk-adjusted exposures and making decisions that create value for shareholders.\n\nOur Risk Appetite Framework consists of a Risk Appetite Statement, risk limits and an outline of the responsibilities of the Board of Directors, its\ncommittees and senior management. The Risk Appetite Statement incorporates a risk appetite, comprising both qualitative statements and\nquantitative measures (including risk limits), that indicates the aggregate level and types of risk that the bank is willing to assume in order to support\nsound business initiatives and drive appropriate returns and targeted growth. Our risk appetite is integrated within our strategic and business\nobjectives and our capital and liquidity plans, as well as the bank’s recovery and resolution plans. It is established by following the framework’s\nprinciples, supported by corporate policies, standards and committee mandates, and is developed to meet regulatory requirements under both\nnormal and stressed conditions. The framework assists senior management and the Board of Directors in assessing the bank’s risk profile against our\nrisk appetite. Both the framework and Risk Appetite Statement are reviewed and approved by the Board of Directors annually. Our risk appetite is\narticulated and applied consistently across the enterprise, with operating segments, key businesses and entities developing their own respective risk\nappetite statements within the framework.\n\n72 BMO Financial Group 208th Annual Report 2025\n\nRisk Limits\nRisk limits are set so that risk-taking activities remain within BMO’s risk appetite, balancing risk diversification, exposure to loss and risk-adjusted\nreturns. These limits inform business strategies and decisions, and are reviewed and approved by the Board of Directors, its committees or\nmanagement, as appropriate, based on the level and granularity of the limits. These include:\n\n‰ Credit and Counterparty Risk – limits on group and single-name exposures and material country, industry and portfolio/product segments.\n\n‰ Market Risk – limits on economic value and earnings exposures to stress scenarios and significant market movements, as well as limits on value at\n\nrisk and stress related to trading and underwriting activities.\n\n‰ Insurance Risk – limits on policy exposures and reinsurance arrangements.\n\n‰ Liquidity and Funding Risk – minimum limits governing the internal liquidity stress testing scenario, minimum regulatory liquidity ratio\n\nrequirements, and maximum levels of asset pledging and wholesale funding, as well as limits related to liability diversification and exposure to\ncredit and liquidity facilities.\n\n‰ Operational Non-Financial Risk – key metrics for measuring operational and other non-financial risks that may have financial consequences.",
+              "similarity": 0.53,
+              "filing_id": "BMO_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "bank": "Bank of Montreal",
+              "page_start": 74,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "quarter": 0,
+              "bank_code": "BMO",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "section": "MD&A",
+              "fiscal_year": 2025,
+              "page_end": 75
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00216",
+              "text": "Strategic Risk\n\nStrategic Risk is the potential for financial loss or reputational damage stemming from ineffective strategies, challenges in executing chosen\nstrategies, or inadequate responses to shifts in the business environment, such as market dynamics. Strategic risk also includes corporate structure\nand insurance risk.\n\nIn recognition of its unique characteristics, strategic risk is classified in BMO’s risk taxonomy as a transverse risk that may manifest itself through\nother risk types. Strategic risk arises from the risk that the adoption of enterprise or business strategies may not result in the intended outcome due\nto unsound decision-making, ineffective implementation of strategies or failure to address changes in the business environment that could impact the\neffective execution of such strategies. This risk is limited through a robust strategic risk program, complemented by stress testing.\n\nBMO’s Corporate Strategy group oversees the strategic planning process and works with the lines of business and Corporate Services to identify,\nmonitor and mitigate risks across the enterprise. We apply a disciplined strategic risk program that supports consistent strategic planning through a\nmulti-year, integrated strategic and financial approach, aligned with our enterprise risk appetite.\n\nThe program promotes consistency and adherence to management standards, including a consideration of stress testing results in our decision-\nmaking and capital planning. The potential impacts of changes in the business environment, including macroeconomic developments, broader\nindustry trends, the actions of existing and new competitors and regulatory developments, are considered in this process and inform decision-making\nwithin each line of business. Oversight of strategic risk is the responsibility of the Executive Committee and the Board of Directors. This is carried out\nthrough an annual review of enterprise and operating segment strategies, which involves interactive sessions that challenge assumptions and\nstrategies in the context of both the current and potential future business environment. Enterprise Risk and Portfolio Management reviews business\nstrategies to confirm that they are developed and executed in accordance with the Risk Management Framework and are within our established risk\nappetite, tolerances and limits. Where required, these strategies are revised to address new or unexpected developments.",
+              "similarity": 0.518,
+              "filing_id": "BMO_2025_annual_report_FY",
+              "bank": "Bank of Montreal",
+              "bank_code": "BMO",
+              "page_end": 106,
+              "quarter": 0,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "page_start": 106,
+              "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+              "fiscal_year": 2025,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In its 2025 annual report, BMO disclosed the following operational and technology risks:\n\n1. **Operational Non-Financial Risk (ONFR)**: This encompasses a wide range of non-financial risks, including those related to business change, customer trust, reputation, and data. These risks can lead to financial loss due to inadequate or failed internal processes, human error, misconduct, or external events. BMO has established a Risk Management Framework (RMF) to manage these risks, which includes internal controls and governance processes (BMO_2025_annual_report_FY_00201).\n\n2. **Governance of Operational Non-Financial Risk**: The Enterprise Operational Risk Committee (EORC) oversees operational non-financial risk management. It monitors the bank's resilience capabilities and supports proactive risk management to prevent failures. The governance includes regular analysis and reporting of operational risk profiles to various committees (BMO_2025_annual_report_FY_00202).\n\n3. **Operational Resilience**: BMO emphasizes the importance of operational resilience, which is the ability to protect and sustain core business products and services during normal operations and in times of stress or disruption. This resilience is supported by effective management of ONFR (BMO_2025_annual_report_FY_00202).\n\n4. **Strategic Risk**: Although primarily a strategic risk, it includes operational aspects. This risk arises from ineffective strategies or inadequate responses to changes in the business environment, which can lead to financial loss or reputational damage (BMO_2025_annual_report_FY_00216).\n\nThese disclosures highlight BMO's comprehensive approach to managing operational and technology risks, focusing on governance, resilience, and strategic alignment. For further details, you can refer to the full report [here](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00201",
+        "text": "Operational Non-Financial Risk\n\nOperational Non-Financial Risk encompasses a wide range of non-financial risks, including those related to business change, customer trust,\nreputation and data, all of which can result in financial loss. These losses can stem from inadequate or failed internal processes or systems,\nhuman error or misconduct, and external events that may directly or indirectly impact the fair value of assets we hold in our credit or\ninvestment portfolios.\n\nOperational non-financial risk (ONFR) is inherent in all our business and banking activities and can lead to significant impacts on our operating and\nfinancial results, including financial loss, restatements of financial results and damage to BMO’s reputation.\n\nOur ability to conduct business may be adversely affected by disruption to the infrastructure that supports our operations and the communities\nin which we do business, including, but not limited to, public health or other emergencies, civil disorder, acts of war or terrorism. We have an\nestablished Risk Management Framework (RMF) to manage and mitigate these risks, including internal controls, limits and governance processes,\nas well as plans/playbooks to maintain operations, serve our clients, and minimize adverse impacts of disruptions.\n\nWe regularly review top and emerging risk exposures that could impact BMO’s business and operations, and we assess our preparedness to\nproactively manage the risks we face or potentially face. Consistent with the management of risk across the enterprise, we employ a three-\nlines-of-defence approach in managing our exposures to non-financial risk.\n\nRefer to the Risks That May Affect Future Results – Top and Emerging Risks That May Affect Future Results section for further discussion of\nthese risks.",
+        "similarity": 0.624,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_end": 100,
+        "quarter": 0,
+        "page_start": 100,
+        "bank": "Bank of Montreal",
+        "document_type": "annual_report",
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "file_name": "BMO_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00202",
+        "text": "Operational Non-Financial Risk Governance\nThe Enterprise Operational Risk Committee (EORC), a sub-committee of the Risk Management Committee (RMC), is the primary governance committee\nexercising oversight of operational non-financial risk management matters. The EORC provides oversight of all material operational non-financial risks,\nmonitors the bank’s resilience capabilities, and supports a proactive approach to risk management to prevent avoidable failures. As part of its\ngovernance responsibilities, the EORC acts to support the review and recommendation for approval of ONFR corporate policies and standards to the\nRisk Review Committee (RRC), the RMC and senior executives as required, as well as the methodologies and tools that comprise the governing\nprinciples of the Operational Non-Financial Risk Management (ONFRM) program. The documentation that gives effect to these governing principles is\nreviewed on a regular basis to confirm that it incorporates sound governance practices and is consistent with BMO’s risk appetite. Regular analysis\nand reporting of our enterprise operational risk profile to the various committees (ORC, RMC and RRC) are important elements of our RMF. Operational\nrisk reporting provides an integrated view of top and emerging risks, trends in loss data, capital consumption, key risk indicators (KRIs) and operating\nsegment profiles. We continue to invest in our reporting platforms, supporting timely and comprehensive reporting capabilities to enhance risk\ntransparency and facilitate the proactive management of operational risk exposures.\n\nOperational Non-Financial Risk Management\nAs the first line of defence, the operating segments and Corporate Services, which includes Technology and Operations, are accountable for the\nday-to-day management of their non-financial risk. Operational Risk Officers within the second line of defence independently assess the operational\nrisk profiles of our operating segments, identify material exposures and potential weaknesses in our product, service and process-based risk and\ncontrol environment, and recommend appropriate mitigation strategies and actions.\n\nIndependent operational risk management oversight is provided by ONFRM, which is responsible for developing effective risk-related strategies,\nthe RMF and policies, and for exercising independent second-line oversight, effective challenge and governance. ONFRM sets out and maintains the\nONFRM program, which defines the processes to be used by the first line of defence to identify, assess, measure, manage and report key operational\nrisk exposures, losses and near-miss operational risk events with significant potential impact. In addition, the ONFRM program sets out the processes\nby which ONFRM, as the independent second line of defence, guides, monitors, assesses and communicates with the first line in the management of\noperational non-financial risks.\n\nThrough the implementation and oversight of the ONFRM program, we seek to maintain an operational risk profile that is consistent with our risk\nappetite and supported by adequate capital. The program reflects our commitment to an ethical culture defined by BMO’s values, including integrity\nand responsible risk management, reinforced by enhanced operational resilience. Operational resilience is an organization’s ability to protect and\nsustain core business products and services that are essential to its clients, both during the normal course of business and when experiencing\noperational stress or disruption. It involves the ability to respond to unpredictable events, adapt to changes and external circumstances, and is an\noutcome of effective management of ONFRM.\n\nBMO is well positioned to meet the requirements outlined in the August 2024 release of OSFI’s Operational Risk and Resilience Guideline.\nThe following are the key programs, methodologies and processes set out in the ONFRM program that assist us in the ongoing review of our\noperational non-financial risk profile:",
+        "similarity": 0.612,
+        "bank": "Bank of Montreal",
+        "section": "MD&A",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "page_start": 100,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "page_end": 100,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00139",
+        "text": "Risk Appetite Framework\nWe believe that risk management is every employee’s responsibility. This is guided by the five key principles that define our approach to managing\nrisk across the enterprise and comprise our risk appetite: ‰ Understand and manage by only taking risks that are transparent and understood. ‰ Protect BMO’s reputation by adhering to principles of honesty, integrity, respect and high ethical standards, in line with our Code of Conduct. ‰ Diversify. Limit tail risk by targeting a business mix that minimizes earnings volatility and exposure to low-probability, high-impact events. ‰ Maintain strong capital and liquidity positions that meet, or exceed, regulatory requirements and market expectations. ‰ Optimize risk return by managing risk-adjusted exposures and making decisions that create value for shareholders.\n\nOur Risk Appetite Framework consists of a Risk Appetite Statement, risk limits and an outline of the responsibilities of the Board of Directors, its\ncommittees and senior management. The Risk Appetite Statement incorporates a risk appetite, comprising both qualitative statements and\nquantitative measures (including risk limits), that indicates the aggregate level and types of risk that the bank is willing to assume in order to support\nsound business initiatives and drive appropriate returns and targeted growth. Our risk appetite is integrated within our strategic and business\nobjectives and our capital and liquidity plans, as well as the bank’s recovery and resolution plans. It is established by following the framework’s\nprinciples, supported by corporate policies, standards and committee mandates, and is developed to meet regulatory requirements under both\nnormal and stressed conditions. The framework assists senior management and the Board of Directors in assessing the bank’s risk profile against our\nrisk appetite. Both the framework and Risk Appetite Statement are reviewed and approved by the Board of Directors annually. Our risk appetite is\narticulated and applied consistently across the enterprise, with operating segments, key businesses and entities developing their own respective risk\nappetite statements within the framework.\n\n72 BMO Financial Group 208th Annual Report 2025\n\nRisk Limits\nRisk limits are set so that risk-taking activities remain within BMO’s risk appetite, balancing risk diversification, exposure to loss and risk-adjusted\nreturns. These limits inform business strategies and decisions, and are reviewed and approved by the Board of Directors, its committees or\nmanagement, as appropriate, based on the level and granularity of the limits. These include:\n\n‰ Credit and Counterparty Risk – limits on group and single-name exposures and material country, industry and portfolio/product segments.\n\n‰ Market Risk – limits on economic value and earnings exposures to stress scenarios and significant market movements, as well as limits on value at\n\nrisk and stress related to trading and underwriting activities.\n\n‰ Insurance Risk – limits on policy exposures and reinsurance arrangements.\n\n‰ Liquidity and Funding Risk – minimum limits governing the internal liquidity stress testing scenario, minimum regulatory liquidity ratio\n\nrequirements, and maximum levels of asset pledging and wholesale funding, as well as limits related to liability diversification and exposure to\ncredit and liquidity facilities.\n\n‰ Operational Non-Financial Risk – key metrics for measuring operational and other non-financial risks that may have financial consequences.",
+        "similarity": 0.53,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "bank": "Bank of Montreal",
+        "page_start": 74,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "quarter": 0,
+        "bank_code": "BMO",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "section": "MD&A",
+        "fiscal_year": 2025,
+        "page_end": 75
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00216",
+        "text": "Strategic Risk\n\nStrategic Risk is the potential for financial loss or reputational damage stemming from ineffective strategies, challenges in executing chosen\nstrategies, or inadequate responses to shifts in the business environment, such as market dynamics. Strategic risk also includes corporate structure\nand insurance risk.\n\nIn recognition of its unique characteristics, strategic risk is classified in BMO’s risk taxonomy as a transverse risk that may manifest itself through\nother risk types. Strategic risk arises from the risk that the adoption of enterprise or business strategies may not result in the intended outcome due\nto unsound decision-making, ineffective implementation of strategies or failure to address changes in the business environment that could impact the\neffective execution of such strategies. This risk is limited through a robust strategic risk program, complemented by stress testing.\n\nBMO’s Corporate Strategy group oversees the strategic planning process and works with the lines of business and Corporate Services to identify,\nmonitor and mitigate risks across the enterprise. We apply a disciplined strategic risk program that supports consistent strategic planning through a\nmulti-year, integrated strategic and financial approach, aligned with our enterprise risk appetite.\n\nThe program promotes consistency and adherence to management standards, including a consideration of stress testing results in our decision-\nmaking and capital planning. The potential impacts of changes in the business environment, including macroeconomic developments, broader\nindustry trends, the actions of existing and new competitors and regulatory developments, are considered in this process and inform decision-making\nwithin each line of business. Oversight of strategic risk is the responsibility of the Executive Committee and the Board of Directors. This is carried out\nthrough an annual review of enterprise and operating segment strategies, which involves interactive sessions that challenge assumptions and\nstrategies in the context of both the current and potential future business environment. Enterprise Risk and Portfolio Management reviews business\nstrategies to confirm that they are developed and executed in accordance with the Risk Management Framework and are within our established risk\nappetite, tolerances and limits. Where required, these strategies are revised to address new or unexpected developments.",
+        "similarity": 0.518,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank": "Bank of Montreal",
+        "bank_code": "BMO",
+        "page_end": 106,
+        "quarter": 0,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_start": 106,
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 6.909221100038849,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.000825,
+  "input_tokens": 3836,
+  "output_tokens": 416,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.02118710009381175,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about BMO's operational and technology risks in the 2025 annual report are directly supported by the actual answer context, including specific references to the report sections and accurate descriptions of the risks.",
+    "relevance_reason": "The answer directly addresses the question regarding the operational and technology risks disclosed by BMO in its 2025 annual report, providing relevant details without deviation.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the operational and technology risks disclosed by BMO, including specific risks and governance structures, as outlined in the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0012762
+}

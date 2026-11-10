@@ -1,0 +1,130 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_28",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_28",
+    "question": "Did the bank improve its risk profile?",
+    "question_type": "edge",
+    "banks": [],
+    "risk": "ambiguous",
+    "scopes": [],
+    "expected_behavior": "Ask which bank and period; do not pick an arbitrary bank or claim improvement.",
+    "reference_query": "Did the bank improve its risk profile?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings indicate that the Toronto-Dominion Bank (TD) has made updates to its risk management framework in 2025, which may suggest an improvement in its risk profile. Specifically, the bank elevated Financial Crime Risk to a stand-alone Major Risk Category and divided Operational Risk into two distinct categories: one focusing on Data, Technology, and Cybersecurity, and the other excluding those elements. Additionally, a new Executive Committee, the Remediation Subcommittee, was established to oversee enforcement commitments and progress on required remediations [S1], [S2].\n\nThese changes reflect a proactive approach to managing risks and adapting to emerging threats, which could be interpreted as an improvement in the bank's risk profile. However, the filings do not provide explicit metrics or comparisons to previous periods that would definitively confirm an overall improvement in the risk profile. Therefore, while there are indications of enhanced risk management practices, the evidence is not sufficient to conclusively state that the bank's risk profile has improved.",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_quarterly_Q3_00095",
+        "text": "Growing profitability in financial results based on balanced revenue, expense and capital growth services involves selectively taking and managing risks within the\nBank’s risk appetite. The Bank’s goal is to earn a stable and sustainable rate of return for every dollar of risk it takes, while putting significant emphasis on\ninvesting in its businesses to meet its future strategic objectives.\n\nThe Bank’s businesses and operations are exposed to a broad number of risks that have been identified and defined in the Enterprise Risk Framework. The\nBank’s tolerance to those risks is defined in the Enterprise Risk Appetite which has been developed within a comprehensive framework that takes into\nconsideration current conditions in which the Bank operates and the impact that emerging risks will have on TD’s strategy and risk profile. The Bank’s risk appetite\nstates that it takes risks required to build its business, but only if those risks: (1) fit the business strategy and can be understood and managed; (2) do not expose\nthe enterprise to any significant single loss events; TD does not ‘bet the bank’ on any single acquisition, business, product or decision; and (3) do not risk harming\nthe TD brand. Each business is responsible for setting and aligning its individual risk appetites with that of the enterprise based on a thorough examination of the\nspecific risks to which it is exposed.\n\nThe Bank considers it critical to regularly assess its operating environment and highlight top and emerging risks. These are risks with a potential to have a\nmaterial effect on the Bank and where the attention of senior leaders is focused due to the potential magnitude or immediacy of their impact.\n\nRisks are identified, discussed, and actioned by senior leaders and reported quarterly to the Risk Committee. Specific plans to mitigate top and emerging risks\nare prepared, monitored, and adjusted as required.\n\nThe Bank’s risk governance structure and risk management approach have not substantially changed from that described in the Bank’s 2024 MD&A. In the third\nquarter of 2025, the Bank updated its Enterprise Risk Framework and made the following changes to better reflect the Bank’s priorities and structure:\n\n•\nFinancial Crime Risk was elevated to a stand-alone Major Risk Category (previously part of Legal and Regulatory Compliance Risk)\n\n•\nOperational Risk was divided into two Major Risk Categories, 1) Operational Risk – Data, Technology and Cybersecurity and 2) Operational\n\nRisk excluding Data, Technology and Cybersecurity\n\n•\nThe Bank also convened a new Executive Committee, the Remediation Subcommittee of the Enterprise Risk Management Committee, dedicated to\noverseeing the Bank’s enforcement commitments and progress on required remediations.\nThese changes resulted in two new Major Risk Categories and updates to the definitions as noted below:\n\nMajor Risk Categories\n\nStrategic\n\nRisk\n\nCredit\n\nRisk\n\nMarket\n\nRisk",
+        "similarity": 0.6945408582687378,
+        "page_end": 35,
+        "filing_id": "TD_2025_quarterly_Q3",
+        "bank": "Toronto-Dominion Bank",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q3/q3-2025-report-to-shareholders-en.pdf",
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "page_start": 34,
+        "file_name": "TD_2025_Q3_quarterly.pdf",
+        "document_type": "quarterly",
+        "quarter": 3,
+        "section": "EXECUTIVE SUMMARY"
+      },
+      {
+        "chunk_id": "TD_2025_quarterly_Q2_00091",
+        "text": "Growing profitability in financial results based on balanced revenue, expense and capital growth services involves selectively taking and managing risks within the\nBank’s risk appetite. The Bank’s goal is to earn a stable and sustainable rate of return for every dollar of risk it takes, while putting significant emphasis on\ninvesting in its businesses to meet its future strategic objectives.\n\nThe Bank’s businesses and operations are exposed to a broad number of risks that have been identified and defined in the Enterprise Risk Framework. The\nBank’s tolerance to those risks is defined in the Enterprise Risk Appetite which has been developed within a comprehensive framework that takes into\nconsideration current conditions in which the Bank operates and the impact that emerging risks will have on TD’s strategy and risk profile. The Bank’s risk appetite\nstates that it takes risks required to build its business, but only if those risks: (1) fit the business strategy and can be understood and managed; (2) do not expose\nthe enterprise to any significant single loss events; TD does not ‘bet the bank’ on any single acquisition, business, product or decision; and (3) do not risk harming\nthe TD brand. Each business is responsible for setting and aligning its individual risk appetites with that of the enterprise based on a thorough examination of the\nspecific risks to which it is exposed.\n\nThe Bank considers it critical to regularly assess its operating environment and highlight top and emerging risks. These are risks with a potential to have a\nmaterial effect on the Bank and where the attention of senior leaders is focused due to the potential magnitude or immediacy of their impact.\n\nRisks are identified, discussed, and actioned by senior leaders and reported quarterly to the Risk Committee. Specific plans to mitigate top and emerging risks\nare prepared, monitored, and adjusted as required.\n\nThe Bank’s risk governance structure and risk management approach have not substantially changed from that described in the Bank’s 2024 MD&A. In the\nsecond quarter of 2025, the Bank updated its Enterprise Risk Framework and made the following changes to better reflect the Bank’s priorities and structure:\n\n•\nFinancial Crime Risk was elevated to a stand-alone Major Risk Category (previously part of Legal and Regulatory Compliance Risk)\n\n•\nOperational Risk was divided into two Major Risk Categories, 1) Operational Risk – Data, Technology and Cybersecurity and 2) Operational\nRisk excluding Data, Technology and Cybersecurity\n•\nThe Bank also convened a new Executive Committee, the Remediation Subcommittee of the Enterprise Risk Management Committee, dedicated to\noverseeing the Bank’s enforcement commitments and progress on required remediations.\nThese changes resulted in two new Major Risk Categories and updates to the definitions as noted below:\n\nFinancial Crime Risk: The risk associated with the Bank failing to sufficiently identify and manage risks associated with money laundering, terrorist financing,\nbribery/corruption activities and economic sanctions, or otherwise comply with associated legal and regulatory requirements for financial crime.\n\nOperational Risk excluding Data, Technology and Cybersecurity: The risk of loss resulting from inadequate or failed internal processes, people or external\nevents and also includes losses related to legal risk events and regulatory fines.\n\nOperational Risk – Data, Technology and Cybersecurity: The potential for loss resulting from inadequate or ineffectual data, technology or cybersecurity\ncontrols originating from internal or external events.",
+        "similarity": 0.6829363107681274,
+        "page_start": 34,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q2/2025-q2-reports-shareholders-en.pdf",
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "bank": "Toronto-Dominion Bank",
+        "document_type": "quarterly",
+        "quarter": 2,
+        "filing_id": "TD_2025_quarterly_Q2",
+        "section": "EXECUTIVE SUMMARY",
+        "file_name": "TD_2025_Q2_quarterly.pdf",
+        "page_end": 35
+      },
+      {
+        "chunk_id": "TD_2025_quarterly_Q1_00077",
+        "text": "Growing profitability in financial results based on balanced revenue, expense and capital growth services involves selectively taking and managing risks within the\nBank’s risk appetite. The Bank’s goal is to earn a stable and sustainable rate of return for every dollar of risk it takes, while putting significant emphasis on\ninvesting in its businesses to meet its future strategic objectives.\n\nThe Bank’s businesses and operations are exposed to a broad number of risks that have been identified and defined in the Enterprise Risk Framework. The\nBank’s tolerance to those risks is defined in the Enterprise Risk Appetite which has been developed within a comprehensive framework that takes into\nconsideration current conditions in which the Bank operates and the impact that emerging risks will have on TD’s strategy and risk profile. The Bank’s risk appetite\nstates that it takes risks required to build its business, but only if those risks: (1) fit the business strategy and can be understood and managed; (2) do not expose\nthe enterprise to any significant single loss events; TD does not ‘bet the bank’ on any single acquisition, business, product or decision; and (3) do not risk harming\nthe TD brand. Each business is responsible for setting and aligning its individual risk appetites with that of the enterprise based on a thorough examination of the\nspecific risks to which it is exposed.\n\nThe Bank considers it critical to regularly assess its operating environment and highlight top and emerging risks. These are risks with a potential to have a\nmaterial effect on the Bank and where the attention of senior leaders is focused due to the potential magnitude or immediacy of their impact.\n\nRisks are identified, discussed, and actioned by senior leaders and reported quarterly to the Risk Committee. Specific plans to mitigate top and emerging risks\nare prepared, monitored, and adjusted as required.\n\nThe Bank’s risk governance structure and risk management approach have not substantially changed from that described in the Bank’s 2024 MD&A. Additional\ninformation on risk factors can be found in this document and the 2024 MD&A under the heading “Risk Factors and Management”. For a complete discussion of\nthe risk governance structure and the risk management approach, refer to the “Managing Risk” section in the Bank’s 2024 MD&A.\n\nThe shaded sections of this MD&A represent a discussion relating to market and liquidity risks and form an integral part of the Interim Consolidated Financial\nStatements for the period ended January 31, 2025.",
+        "similarity": 0.6729401350021362,
+        "page_end": 32,
+        "page_start": 32,
+        "quarter": 1,
+        "fiscal_year": 2025,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q1/2025-q1-reports-shareholders-en.pdf",
+        "bank_code": "TD",
+        "file_name": "TD_2025_Q1_quarterly.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "document_type": "quarterly",
+        "filing_id": "TD_2025_quarterly_Q1",
+        "section": "EXECUTIVE SUMMARY"
+      },
+      {
+        "chunk_id": "TD_2025_quarterly_Q2_00092",
+        "text": "These changes resulted in two new Major Risk Categories and updates to the definitions as noted below: Financial Crime Risk: The risk associated with the Bank failing to sufficiently identify and manage risks associated with money laundering, terrorist financing,\nbribery/corruption activities and economic sanctions, or otherwise comply with associated legal and regulatory requirements for financial crime. Operational Risk excluding Data, Technology and Cybersecurity: The risk of loss resulting from inadequate or failed internal processes, people or external\nevents and also includes losses related to legal risk events and regulatory fines. Operational Risk – Data, Technology and Cybersecurity: The potential for loss resulting from inadequate or ineffectual data, technology or cybersecurity\ncontrols originating from internal or external events.\n\nCompliance and Legal Risk: The risk associated with the Bank’s failure to comply (with letter or intent) with key federal and provincial/state banking,\nsecurities, trust and insurance laws, regulations, regulatory guidelines, voluntary codes and public commitments (regulatory requirements), legal obligations, the\nTD Code of Conduct and Ethics, and other TD policies related to TD’s activities and practices with respect to business conduct and market conduct as well as\nregulatory requirements applicable across the Bank, which can lead to fines, sanctions, liabilities, or reputational harm that could be material to the Bank.\n\nAdditional information on risk factors can be found in this document and the 2024 MD&A under the heading “Risk Factors and Management”. For a complete\ndiscussion of the risk governance structure and the risk management approach, refer to the “Managing Risk” section in the Bank’s 2024 MD&A.\n\nThe shaded sections of this MD&A represent a discussion relating to market and liquidity risks and form an integral part of the Interim Consolidated Financial\nStatements for the period ended April 30, 2025.",
+        "similarity": 0.6643239259719849,
+        "quarter": 2,
+        "filing_id": "TD_2025_quarterly_Q2",
+        "bank": "Toronto-Dominion Bank",
+        "page_start": 35,
+        "page_end": 35,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q2/2025-q2-reports-shareholders-en.pdf",
+        "document_type": "quarterly",
+        "fiscal_year": 2025,
+        "bank_code": "TD",
+        "file_name": "TD_2025_Q2_quarterly.pdf",
+        "section": "EXECUTIVE SUMMARY"
+      },
+      {
+        "chunk_id": "TD_2024_quarterly_Q2_00077",
+        "text": "Growing profitability in financial results based on balanced revenue, expense and capital growth services involves selectively taking and managing risks within the\nBank’s risk appetite. The Bank’s goal is to earn a stable and sustainable rate of return for every dollar of risk it takes, while putting significant emphasis on\ninvesting in its businesses to meet its future strategic objectives.\n\nThe Bank’s businesses and operations are exposed to a broad number of risks that have been identified and defined in the Enterprise Risk Framework. The\nBank’s tolerance to those risks is defined in the Enterprise Risk Appetite which has been developed within a comprehensive framework that takes into\nconsideration current conditions in which the Bank operates and the impact that emerging risks will have on TD’s strategy and risk profile. The Bank’s risk appetite\nstates that it takes risks required to build its business, but only if those risks: (1) fit the business strategy and can be understood and managed; (2) do not expose\nthe enterprise to any significant single loss events; TD does not ‘bet the bank’ on any single acquisition, business, or product; and (3) do not risk harming the TD\nbrand. Each business is responsible for setting and aligning its individual risk appetites with that of the enterprise based on a thorough examination of the specific\nrisks to which it is exposed.\n\nThe Bank considers it critical to regularly assess its operating environment and highlight top and emerging risks. These are risks with a potential to have a\nmaterial effect on the Bank and where the attention of senior leaders is focused due to the potential magnitude or immediacy of their impact.\n\nRisks are identified, discussed, and actioned by senior leaders and reported quarterly to the Risk Committee. Specific plans to mitigate top and emerging risks\nare prepared, monitored, and adjusted as required.\n\nThe Bank’s risk governance structure and risk management approach have not substantially changed from that described in the Bank’s 2023 Annual Report.\nAdditional information on risk factors can be found in this document and the 2023 MD&A under the heading “Risk Factors and Management”. For a complete\ndiscussion of the risk governance structure and the risk management approach, refer to the “Managing Risk” section in the Bank’s 2023 Annual Report.\n\nThe shaded sections of this MD&A represent a discussion relating to market and liquidity risks and form an integral part of the Interim Consolidated Financial\nStatements for the period ended April 30, 2024.",
+        "similarity": 0.660351037979126,
+        "section": "EXECUTIVE SUMMARY",
+        "bank_code": "TD",
+        "quarter": 2,
+        "bank": "Toronto-Dominion Bank",
+        "file_name": "TD_2024_Q2_quarterly.pdf",
+        "filing_id": "TD_2024_quarterly_Q2",
+        "fiscal_year": 2024,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q2/2024-q2-reports-shareholders-en.pdf",
+        "document_type": "quarterly",
+        "page_start": 29,
+        "page_end": 29
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.04936450009699911
+  },
+  "latency_seconds": 3.341186699923128,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0005530499999999999,
+  "input_tokens": 2891,
+  "output_tokens": 199,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.02630010002758354,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 3,
+    "relevance": 4,
+    "completeness": 4,
+    "faithfulness_reason": "The answer claims improvements in risk management practices based on updates to the risk framework, but does not provide explicit metrics or comparisons to previous periods to confirm an overall improvement, leading to some unsupported generalizations.",
+    "relevance_reason": "The answer mostly addresses the question about the bank's risk profile but does not clarify the specific period or provide a definitive answer regarding improvement, which slightly detracts from its relevance.",
+    "completeness_reason": "The answer covers the changes made in 2025 but lacks a comprehensive comparison to previous periods or a clear conclusion about the overall risk profile, resulting in minor omissions.",
+    "unsupported_claims": [
+      "The bank's risk profile has improved without explicit metrics or comparisons to previous periods.",
+      "The changes reflect a proactive approach that could be interpreted as an improvement without definitive evidence."
+    ],
+    "reference_limitations": "The filings do not provide explicit metrics or comparisons to previous periods that would definitively confirm an overall improvement in the risk profile."
+  },
+  "judge_cost_usd": 0.0007698
+}

@@ -1,0 +1,219 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_01",
+  "config": "agentic",
+  "question": {
+    "id": "eval_01",
+    "question": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed credit risks and provisions for credit losses; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?",
+    "answer": "In RBC's 2025 annual report, the following credit risks and provisions for credit losses were disclosed:\n\n1. **Credit Risk Assessment**: RBC considers credit risk to be low for instruments with a low risk of default and the borrower's ability to meet obligations. The assessment includes forward-looking information and macroeconomic variables such as unemployment rates and GDP growth.\n\n2. **Expected Credit Losses (ECL)**: The ECL measurement involves significant judgment and is based on a discounted probability-weighted estimate considering multiple macroeconomic scenarios. The bank uses parameters like Probability of Default (PD), Loss Given Default (LGD), and Exposure at Default (EAD) to estimate credit losses.\n\n3. **Stages of Credit Losses**: Credit losses are categorized into three stages:\n   - **Stage 1**: Performing assets with expected losses over 12 months.\n   - **Stage 2**: Underperforming assets with expected losses over their lifetime.\n   - **Stage 3**: Non-performing assets.\n\n4. **Provisions for Credit Losses**: The report details movements in the allowance for credit losses (ACL), including provisions, write-offs, and recoveries. For example, the balance at the end of the period for wholesale credit losses was reported as $896 million, with significant movements due to originations and changes in risk parameters.\n\n5. **Management of Credit Risk**: RBC actively manages credit exposures and limits to avoid undue concentration risk across sectors and products. They have specialized groups for managing high-risk borrowers and may enter forbearance agreements to assist clients in financial difficulty.\n\nFor detailed figures and further specifics, refer to the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (source: RBC_2025_annual_report_FY, sections FVOCI and Management’s Discussion and Analysis).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4813,
+    "output_tokens": 422,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000975,
+    "seconds": 7.4,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "credit risks and provisions for credit losses",
+          "bank": "RBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00280",
+              "text": "Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased\nunder reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have\nbeen identified as having low credit risk. Use of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario\nbased on reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are\ndesigned to capture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of\nadditional downside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.\n\nDefinition of default\nThe definition of default used in the measurement of expected credit losses is consistent with the definition of default used for\nour internal credit risk management purposes. Our definition of default may differ across products and consider both\nquantitative and qualitative factors, such as the terms of financial covenants and days past due. For retail and wholesale\nborrowers, except as detailed below, default occurs when the borrower is more than 90 days past due on any material obligation\nto us, and/or we consider the borrower unlikely to make their payments in full without recourse action on our part, such as\ntaking formal possession of any collateral held. For certain credit card balances, default occurs when payments are 180 days\n\n154\nConsolidated Financial Statements",
+              "similarity": 0.71,
+              "bank_code": "RBC",
+              "bank": "Royal Bank of Canada",
+              "fiscal_year": 2025,
+              "page_start": 156,
+              "section": "FVOCI",
+              "quarter": 0,
+              "document_type": "annual_report",
+              "page_end": 156,
+              "filing_id": "RBC_2025_annual_report_FY",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "file_name": "RBC_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00345",
+              "text": "exposures\n(41)\n98\n156\n213\n(31)\n65\n139\n173\nWrite-offs\n–\n–\n(124)\n(124)\n–\n–\n(98)\n(98)\nRecoveries\n–\n–\n20\n20\n–\n–\n14\n14\nExchange rate and other\n6\n2\n(34)\n(26)\n1\n1\n(18)\n(16) Balance at end of period\n$\n95\n$\n117 $\n139\n$\n351 $\n80\n$\n86 $\n106\n$\n272 Wholesale\n\nBalance at beginning of period\n$\n787\n$\n1,038 $\n968\n$\n2,793 $\n774\n$\n785 $\n767\n$\n2,326\nProvision for credit losses\n\nTransfers to stage 1\n277\n(275)\n(2)\n–\n284\n(282)\n(2)\n–\nTransfers to stage 2\n(124)\n133\n(9)\n–\n(152)\n159\n(7)\n–\nTransfers to stage 3\n(15)\n(273)\n288\n–\n(9)\n(77)\n86\n–\nOriginations\n755\n–\n–\n755\n737\n–\n–\n737\nMaturities\n(543)\n(418)\n–\n(961)\n(438)\n(379)\n–\n(817)\nChanges in risk, parameters and\n\nexposures\n(243)\n912\n1,496\n2,165\n(407)\n827\n957\n1,377\nWrite-offs\n–\n–\n(1,237)\n(1,237)\n–\n–\n(763)\n(763)\nRecoveries\n–\n–\n74\n74\n–\n–\n63\n63\nExchange rate and other\n2\n6\n(278)\n(270)\n(2)\n5\n(133)\n(130)\n\nBalance at end of period\n$\n896\n$\n1,123 $\n1,300\n$\n3,319 $\n787\n$\n1,038 $\n968\n$\n2,793\n\n182\nConsolidated Financial Statements\n\nKey inputs and assumptions\nThe measurement of expected credit losses is a complex calculation that involves a significant number of interrelated inputs\nand assumptions and the allowance is not sensitive to any one single factor. The key drivers of changes in expected credit\nlosses include the following:\n\n• Changes in the credit quality of the borrower or instrument, primarily reflected in changes in internal risk ratings;\n• Changes in forward-looking macroeconomic conditions, specifically the macroeconomic variables to which our models\nare calibrated, which are those most closely correlated with credit losses in the relevant portfolio;\n• Changes in scenario design and the weight assigned to each scenario; and\n• Transfers between stages, which can be triggered by changes to any of the above inputs.\n\nTo reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics.\n\nInternal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit\nrisk and Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.",
+              "similarity": 0.705,
+              "bank_code": "RBC",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "fiscal_year": 2025,
+              "file_name": "RBC_2025_annual_report.pdf",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "section": "FVOCI",
+              "bank": "Royal Bank of Canada",
+              "page_end": 185,
+              "page_start": 184,
+              "quarter": 0,
+              "document_type": "annual_report"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00278",
+              "text": "For finance lease receivables, credit loss estimates are based on cash flows consistent with the\ncash flows used in measuring the lease receivable. Increases or decreases in the required ACL attributable to model changes and new originations, sales or maturities, and\nchanges in risk, parameters and exposures due to changes in loss expectations or stage transfers are recorded in PCL. Write-offs\nand recoveries of amounts previously written off are recorded against ACL. The ACL represents an unbiased estimate of expected credit losses on our financial assets as at the balance sheet date. Judgment is required in making assumptions and estimations when calculating the ACL, including movements between the three\nstages, the inclusion of forward-looking information and the application of expert credit judgment. The underlying assumptions\nand estimates may result in changes to the provisions from period to period that significantly affect our results of operations.\n\nMeasurement of expected credit losses\nExpected credit losses are based on a range of possible outcomes and consider all available reasonable and supportable\ninformation, including internal and external ratings, historical credit loss experience and expectations about future cash flows.\nThe measurement of expected credit losses is based primarily on the product of the instrument’s PD, loss given default (LGD),\nand EAD discounted to the reporting date. The main difference between Stage 1 and Stage 2 expected credit losses for\nperforming financial assets is the respective calculation horizon. Stage 1 estimates project PD, LGD and EAD over a maximum\nperiod of 12 months while Stage 2 estimates project PD, LGD and EAD over the remaining lifetime of the instrument.\n\nAn expected credit loss estimate is produced for each individual exposure. Relevant parameters are modelled on a\ncollective basis using portfolio segmentation that allows for appropriate incorporation of forward-looking information. To\nreflect other characteristics that are not already considered through modelling, expert credit judgment is exercised in\ndetermining the final expected credit losses.\n\nFor a small percentage of our portfolios which lack detailed historical information and/or loss experience, we apply\nsimplified measurement approaches that may differ from what is described above. These approaches have been designed to\nmaximize the available information that is reliable and supportable for each portfolio and may be collective in nature.\n\nExpected credit losses are discounted to the reporting period date using the effective interest rate.\n\nConsolidated Financial Statements\n\nNote 2\nSummary of material accounting policies, estimates and judgments (continued)\n\nExpected life\nFor instruments in Stage 2 or Stage 3, loss allowances reflect expected credit losses over the expected remaining lifetime of the\ninstrument. For most instruments, the expected life is limited to the remaining contractual life.\n\nAn exemption is provided for certain instruments with the following characteristics: (a) the instrument includes both a loan\nand undrawn commitment component; (b) we have the contractual ability to demand repayment and cancel the undrawn\ncommitment; and (c) our exposure to credit losses is not limited to the contractual notice period. For products in scope of this\nexemption, the expected life may exceed the remaining contractual life and is the period over which our exposure to credit\nlosses is not mitigated by our normal credit risk management actions. This period varies by product and risk category and is\nestimated based on our historical experience with similar exposures and consideration of credit risk management actions taken\nas part of our regular credit review cycle. Products in scope of this exemption include credit cards, overdraft balances and\ncertain revolving lines of credit. Judgment is required in determining the instruments in scope for this exemption and estimating\nthe appropriate remaining life based on our historical experience and credit risk mitigation practices.",
+              "similarity": 0.671,
+              "bank": "Royal Bank of Canada",
+              "quarter": 0,
+              "filing_id": "RBC_2025_annual_report_FY",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "page_end": 156,
+              "bank_code": "RBC",
+              "page_start": 155,
+              "section": "FVOCI",
+              "file_name": "RBC_2025_annual_report.pdf",
+              "fiscal_year": 2025,
+              "document_type": "annual_report"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00126",
+              "text": "Risk limits are established at the following\nlevels: single name; regional, country and industrial sector (notional and economic capital); regulatory large exposure;\nproduct and portfolio; and underwriting and distribution. These limits apply across all businesses, portfolios, transactions\nand products. We actively manage credit exposures and limits to ensure alignment with our risk appetite, to maintain our target\nbusiness mix and to ensure that there is no undue concentration risk. Concentration risk is defined as the risk arising from an overexposure in particular industry sectors, countries, or credit\nproducts within the portfolio, reflecting the potential for credit deterioration and default to be relatively highly correlated. Credit concentration limits are reviewed on a regular basis after considering business, economic, financial and regulatory\nenvironments.\n\nCredit risk administration\nLoan forbearance\nIn our overall management of borrower relationships, economic, legal or other reasons may necessitate forbearance to certain\nclients with respect to the original terms and conditions of their loans. We have specialized groups and formalized policies that\ndirect the management of high risk, delinquent or defaulted borrowers. We strive to identify borrowers in financial difficulty\nearly and modify their loan terms to minimize losses and assist clients in need. A forbearance agreement may be entered into\nwith the borrower where we will forbear from enforcing on security in exchange for concessions made by the borrower and/or\nadditional security provided by the borrower. Examples of concessions to borrowers may include rate reductions, payment\ndeferrals, term extensions, covenant relief, extensions of matured facilities, amendments or restructuring of agreements, or\nrelaxation of covenants, as applicable. The goal of a forbearance is to enhance our position in exchange for providing the\nborrower additional time to meet the terms and obligations of the loan agreement. For such loans, the appropriate remediation\ntechniques are based on the specific borrower’s situation, our policy and the client’s willingness and capacity to meet the new\nor modified loan terms.\n\n76\n\nCredit risk exposure by portfolio, sector and geography\nThe following table presents our credit risk exposures under the Basel regulatory defined classes and reflects EAD. The\nclassification of our sectors aligns with our view of credit risk by industry.\n\nCredit risk exposure by portfolio, sector and geography\nTable 41\n\nAs at\n\nOctober 31\n\nOctober 31\n\n2024\n\n2025\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nOff-balance sheet\n\nOff-balance sheet\n\namount (3)\n\namount (3)\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n(Millions of Canadian dollars)\nUndrawn\nOther (4)\nDerivatives\nUndrawn\nOther (4)\nDerivatives\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n\nRetail\n\nResidential secured (6)\n$\n514,623 $ 132,502 $\n– $\n– $\n– $\n647,125 $\n498,014 $ 124,743 $\n– $\n– $\n– $\n622,757\nQualifying revolving (7)\n36,407\n104,369\n–\n–\n–\n140,776\n33,571\n95,776\n–\n–\n–\n129,347\nOther retail\n57,003\n22,522\n164\n–\n–\n79,689\n53,257\n21,530\n162\n–\n–\n74,949",
+              "similarity": 0.671,
+              "page_start": 78,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "file_name": "RBC_2025_annual_report.pdf",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "bank": "Royal Bank of Canada",
+              "section": "Management’s Discussion and Analysis",
+              "document_type": "annual_report",
+              "quarter": 0,
+              "page_end": 79,
+              "bank_code": "RBC",
+              "fiscal_year": 2025
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In RBC's 2025 annual report, the following credit risks and provisions for credit losses were disclosed:\n\n1. **Credit Risk Assessment**: RBC considers credit risk to be low for instruments with a low risk of default and the borrower's ability to meet obligations. The assessment includes forward-looking information and macroeconomic variables such as unemployment rates and GDP growth.\n\n2. **Expected Credit Losses (ECL)**: The ECL measurement involves significant judgment and is based on a discounted probability-weighted estimate considering multiple macroeconomic scenarios. The bank uses parameters like Probability of Default (PD), Loss Given Default (LGD), and Exposure at Default (EAD) to estimate credit losses.\n\n3. **Stages of Credit Losses**: Credit losses are categorized into three stages:\n   - **Stage 1**: Performing assets with expected losses over 12 months.\n   - **Stage 2**: Underperforming assets with expected losses over their lifetime.\n   - **Stage 3**: Non-performing assets.\n\n4. **Provisions for Credit Losses**: The report details movements in the allowance for credit losses (ACL), including provisions, write-offs, and recoveries. For example, the balance at the end of the period for wholesale credit losses was reported as $896 million, with significant movements due to originations and changes in risk parameters.\n\n5. **Management of Credit Risk**: RBC actively manages credit exposures and limits to avoid undue concentration risk across sectors and products. They have specialized groups for managing high-risk borrowers and may enter forbearance agreements to assist clients in financial difficulty.\n\nFor detailed figures and further specifics, refer to the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (source: RBC_2025_annual_report_FY, sections FVOCI and Management’s Discussion and Analysis)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00280",
+        "text": "Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased\nunder reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have\nbeen identified as having low credit risk. Use of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario\nbased on reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are\ndesigned to capture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of\nadditional downside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.\n\nDefinition of default\nThe definition of default used in the measurement of expected credit losses is consistent with the definition of default used for\nour internal credit risk management purposes. Our definition of default may differ across products and consider both\nquantitative and qualitative factors, such as the terms of financial covenants and days past due. For retail and wholesale\nborrowers, except as detailed below, default occurs when the borrower is more than 90 days past due on any material obligation\nto us, and/or we consider the borrower unlikely to make their payments in full without recourse action on our part, such as\ntaking formal possession of any collateral held. For certain credit card balances, default occurs when payments are 180 days\n\n154\nConsolidated Financial Statements",
+        "similarity": 0.71,
+        "bank_code": "RBC",
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025,
+        "page_start": 156,
+        "section": "FVOCI",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 156,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00345",
+        "text": "exposures\n(41)\n98\n156\n213\n(31)\n65\n139\n173\nWrite-offs\n–\n–\n(124)\n(124)\n–\n–\n(98)\n(98)\nRecoveries\n–\n–\n20\n20\n–\n–\n14\n14\nExchange rate and other\n6\n2\n(34)\n(26)\n1\n1\n(18)\n(16) Balance at end of period\n$\n95\n$\n117 $\n139\n$\n351 $\n80\n$\n86 $\n106\n$\n272 Wholesale\n\nBalance at beginning of period\n$\n787\n$\n1,038 $\n968\n$\n2,793 $\n774\n$\n785 $\n767\n$\n2,326\nProvision for credit losses\n\nTransfers to stage 1\n277\n(275)\n(2)\n–\n284\n(282)\n(2)\n–\nTransfers to stage 2\n(124)\n133\n(9)\n–\n(152)\n159\n(7)\n–\nTransfers to stage 3\n(15)\n(273)\n288\n–\n(9)\n(77)\n86\n–\nOriginations\n755\n–\n–\n755\n737\n–\n–\n737\nMaturities\n(543)\n(418)\n–\n(961)\n(438)\n(379)\n–\n(817)\nChanges in risk, parameters and\n\nexposures\n(243)\n912\n1,496\n2,165\n(407)\n827\n957\n1,377\nWrite-offs\n–\n–\n(1,237)\n(1,237)\n–\n–\n(763)\n(763)\nRecoveries\n–\n–\n74\n74\n–\n–\n63\n63\nExchange rate and other\n2\n6\n(278)\n(270)\n(2)\n5\n(133)\n(130)\n\nBalance at end of period\n$\n896\n$\n1,123 $\n1,300\n$\n3,319 $\n787\n$\n1,038 $\n968\n$\n2,793\n\n182\nConsolidated Financial Statements\n\nKey inputs and assumptions\nThe measurement of expected credit losses is a complex calculation that involves a significant number of interrelated inputs\nand assumptions and the allowance is not sensitive to any one single factor. The key drivers of changes in expected credit\nlosses include the following:\n\n• Changes in the credit quality of the borrower or instrument, primarily reflected in changes in internal risk ratings;\n• Changes in forward-looking macroeconomic conditions, specifically the macroeconomic variables to which our models\nare calibrated, which are those most closely correlated with credit losses in the relevant portfolio;\n• Changes in scenario design and the weight assigned to each scenario; and\n• Transfers between stages, which can be triggered by changes to any of the above inputs.\n\nTo reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics.\n\nInternal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit\nrisk and Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.",
+        "similarity": 0.705,
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "fiscal_year": 2025,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "section": "FVOCI",
+        "bank": "Royal Bank of Canada",
+        "page_end": 185,
+        "page_start": 184,
+        "quarter": 0,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00278",
+        "text": "For finance lease receivables, credit loss estimates are based on cash flows consistent with the\ncash flows used in measuring the lease receivable. Increases or decreases in the required ACL attributable to model changes and new originations, sales or maturities, and\nchanges in risk, parameters and exposures due to changes in loss expectations or stage transfers are recorded in PCL. Write-offs\nand recoveries of amounts previously written off are recorded against ACL. The ACL represents an unbiased estimate of expected credit losses on our financial assets as at the balance sheet date. Judgment is required in making assumptions and estimations when calculating the ACL, including movements between the three\nstages, the inclusion of forward-looking information and the application of expert credit judgment. The underlying assumptions\nand estimates may result in changes to the provisions from period to period that significantly affect our results of operations.\n\nMeasurement of expected credit losses\nExpected credit losses are based on a range of possible outcomes and consider all available reasonable and supportable\ninformation, including internal and external ratings, historical credit loss experience and expectations about future cash flows.\nThe measurement of expected credit losses is based primarily on the product of the instrument’s PD, loss given default (LGD),\nand EAD discounted to the reporting date. The main difference between Stage 1 and Stage 2 expected credit losses for\nperforming financial assets is the respective calculation horizon. Stage 1 estimates project PD, LGD and EAD over a maximum\nperiod of 12 months while Stage 2 estimates project PD, LGD and EAD over the remaining lifetime of the instrument.\n\nAn expected credit loss estimate is produced for each individual exposure. Relevant parameters are modelled on a\ncollective basis using portfolio segmentation that allows for appropriate incorporation of forward-looking information. To\nreflect other characteristics that are not already considered through modelling, expert credit judgment is exercised in\ndetermining the final expected credit losses.\n\nFor a small percentage of our portfolios which lack detailed historical information and/or loss experience, we apply\nsimplified measurement approaches that may differ from what is described above. These approaches have been designed to\nmaximize the available information that is reliable and supportable for each portfolio and may be collective in nature.\n\nExpected credit losses are discounted to the reporting period date using the effective interest rate.\n\nConsolidated Financial Statements\n\nNote 2\nSummary of material accounting policies, estimates and judgments (continued)\n\nExpected life\nFor instruments in Stage 2 or Stage 3, loss allowances reflect expected credit losses over the expected remaining lifetime of the\ninstrument. For most instruments, the expected life is limited to the remaining contractual life.\n\nAn exemption is provided for certain instruments with the following characteristics: (a) the instrument includes both a loan\nand undrawn commitment component; (b) we have the contractual ability to demand repayment and cancel the undrawn\ncommitment; and (c) our exposure to credit losses is not limited to the contractual notice period. For products in scope of this\nexemption, the expected life may exceed the remaining contractual life and is the period over which our exposure to credit\nlosses is not mitigated by our normal credit risk management actions. This period varies by product and risk category and is\nestimated based on our historical experience with similar exposures and consideration of credit risk management actions taken\nas part of our regular credit review cycle. Products in scope of this exemption include credit cards, overdraft balances and\ncertain revolving lines of credit. Judgment is required in determining the instruments in scope for this exemption and estimating\nthe appropriate remaining life based on our historical experience and credit risk mitigation practices.",
+        "similarity": 0.671,
+        "bank": "Royal Bank of Canada",
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 156,
+        "bank_code": "RBC",
+        "page_start": 155,
+        "section": "FVOCI",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00126",
+        "text": "Risk limits are established at the following\nlevels: single name; regional, country and industrial sector (notional and economic capital); regulatory large exposure;\nproduct and portfolio; and underwriting and distribution. These limits apply across all businesses, portfolios, transactions\nand products. We actively manage credit exposures and limits to ensure alignment with our risk appetite, to maintain our target\nbusiness mix and to ensure that there is no undue concentration risk. Concentration risk is defined as the risk arising from an overexposure in particular industry sectors, countries, or credit\nproducts within the portfolio, reflecting the potential for credit deterioration and default to be relatively highly correlated. Credit concentration limits are reviewed on a regular basis after considering business, economic, financial and regulatory\nenvironments.\n\nCredit risk administration\nLoan forbearance\nIn our overall management of borrower relationships, economic, legal or other reasons may necessitate forbearance to certain\nclients with respect to the original terms and conditions of their loans. We have specialized groups and formalized policies that\ndirect the management of high risk, delinquent or defaulted borrowers. We strive to identify borrowers in financial difficulty\nearly and modify their loan terms to minimize losses and assist clients in need. A forbearance agreement may be entered into\nwith the borrower where we will forbear from enforcing on security in exchange for concessions made by the borrower and/or\nadditional security provided by the borrower. Examples of concessions to borrowers may include rate reductions, payment\ndeferrals, term extensions, covenant relief, extensions of matured facilities, amendments or restructuring of agreements, or\nrelaxation of covenants, as applicable. The goal of a forbearance is to enhance our position in exchange for providing the\nborrower additional time to meet the terms and obligations of the loan agreement. For such loans, the appropriate remediation\ntechniques are based on the specific borrower’s situation, our policy and the client’s willingness and capacity to meet the new\nor modified loan terms.\n\n76\n\nCredit risk exposure by portfolio, sector and geography\nThe following table presents our credit risk exposures under the Basel regulatory defined classes and reflects EAD. The\nclassification of our sectors aligns with our view of credit risk by industry.\n\nCredit risk exposure by portfolio, sector and geography\nTable 41\n\nAs at\n\nOctober 31\n\nOctober 31\n\n2024\n\n2025\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nOff-balance sheet\n\nOff-balance sheet\n\namount (3)\n\namount (3)\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n(Millions of Canadian dollars)\nUndrawn\nOther (4)\nDerivatives\nUndrawn\nOther (4)\nDerivatives\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n\nRetail\n\nResidential secured (6)\n$\n514,623 $ 132,502 $\n– $\n– $\n– $\n647,125 $\n498,014 $ 124,743 $\n– $\n– $\n– $\n622,757\nQualifying revolving (7)\n36,407\n104,369\n–\n–\n–\n140,776\n33,571\n95,776\n–\n–\n–\n129,347\nOther retail\n57,003\n22,522\n164\n–\n–\n79,689\n53,257\n21,530\n162\n–\n–\n74,949",
+        "similarity": 0.671,
+        "page_start": 78,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "page_end": 79,
+        "bank_code": "RBC",
+        "fiscal_year": 2025
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 7.393212999915704,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009751499999999999,
+  "input_tokens": 4813,
+  "output_tokens": 422,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.025522899930365384,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [
+      "RBC_2025_annual_report_FY"
+    ],
+    "citation_identifiers_valid": false,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about credit risks and provisions for credit losses are supported by the actual answer context from RBC's 2025 annual report, including specific details about credit risk assessment, expected credit losses, stages of credit losses, provisions for credit losses, and management of credit risk.",
+    "relevance_reason": "The answer directly addresses the question regarding credit risks and provisions for credit losses disclosed by RBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including specific categories and details of credit risks and provisions for credit losses as disclosed in the report.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0014052
+}

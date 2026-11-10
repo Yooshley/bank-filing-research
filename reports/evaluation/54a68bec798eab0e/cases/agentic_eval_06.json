@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_06",
+  "config": "agentic",
+  "question": {
+    "id": "eval_06",
+    "question": "What liquidity and funding risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity and funding risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity and funding risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What liquidity and funding risks did TD disclose in its 2025 annual report?",
+    "answer": "In TD's 2025 annual report, the following liquidity and funding risks were disclosed:\n\n1. **Insufficient Cash or Collateral**: There is a risk of having insufficient cash or collateral to meet financial obligations, which may arise from deposit withdrawals, debt maturities, or commitments to provide credit. The report highlights the potential inability to raise funding or monetize assets at a non-distressed price (TD_2025_annual_report_FY_00328).\n\n2. **Stress Testing**: The Bank conducts internal stress testing to manage liquidity risk, considering severe combined stress events that could lead to elevated liquidity requirements and loss of confidence in the Bank's ability to meet obligations. Scenarios include loss of access to wholesale funding, accelerated deposit attrition, increased utilization of credit facilities, and heightened collateral requirements due to credit rating downgrades (TD_2025_annual_report_FY_00328).\n\n3. **Liquidity Management Policies**: TD maintains liquidity risk management policies that require sufficient liquid assets to support business growth and cover stressed liquidity requirements for up to 90 days. The Bank targets a 90-day survival horizon under stress scenarios and emphasizes a stable, diversified deposit base as a core funding source (TD_2025_annual_report_FY_00327).\n\n4. **Contingency Funding Plan**: The Bank has a contingency funding plan to enhance preparedness for potential liquidity stress events, which is part of its integrated liquidity risk management program (TD_2025_annual_report_FY_00327).\n\n5. **Unencumbered Liquid Assets**: The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events, with eligibility considering stressed market values and operational impediments (TD_2025_annual_report_FY_00331).\n\nFor further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 2628,
+    "output_tokens": 451,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000665,
+    "seconds": 8.83,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "liquidity and funding risks",
+          "bank": "TD",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00347",
+              "text": "The Bank has access to a variety of unsecured and secured funding\nsources. The Bank’s funding activities are conducted in accordance with\nliquidity risk management policies that require assets be funded to the\nappropriate term and to a prudent diversification profile.",
+              "similarity": 0.698,
+              "file_name": "TD_2025_annual_report.pdf",
+              "page_start": 121,
+              "quarter": 0,
+              "bank_code": "TD",
+              "fiscal_year": 2025,
+              "filing_id": "TD_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "section": "FUNDING",
+              "bank": "Toronto-Dominion Bank",
+              "page_end": 121
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00328",
+              "text": "The risk of having insufficient cash or collateral to meet financial\nobligations and an inability to, in a timely manner, raise funding or\nmonetize assets at a non‐distressed price. Financial obligations can arise\nfrom deposit withdrawals, debt maturities, commitments to provide credit\nor liquidity support or the need to pledge additional collateral.\n\nThe Bank’s internal stress testing informs the management of liquidity\nrisk. Among scenarios considered is a severe combined stress event\nresulting in elevated liquidity requirements and a loss of confidence in\nthe Bank’s ability to meet obligations as they come due. In addition to\nthis bank-specific event, this scenario incorporates a market-wide liquidity\nstress that materially reduces the availability of funding for all institutions\nand decreases the marketability of assets. The Bank’s liquidity risk\nmanagement policies stipulate that the Bank must maintain a sufficient\nlevel of liquid assets to support business growth, and to cover stressed\nliquidity requirements under the stress scenario for a period of up to\n90 days. Key elements of the scenario include:\n• loss of access to wholesale funding including repayment of maturing\ndebt in the next 90 days;\n• accelerated deposit attrition or “run-off”;\n• increased utilization of available credit and liquidity facilities; and\n• increased collateral requirements associated with downgrades in\nthe Bank’s credit ratings.",
+              "similarity": 0.678,
+              "section": "Liquidity Risk",
+              "document_type": "annual_report",
+              "bank": "Toronto-Dominion Bank",
+              "quarter": 0,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "page_start": 114,
+              "page_end": 114,
+              "filing_id": "TD_2025_annual_report_FY",
+              "file_name": "TD_2025_annual_report.pdf",
+              "fiscal_year": 2025,
+              "bank_code": "TD"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00327",
+              "text": "The Bank manages the liquidity profile of its businesses in accordance\nwith its defined liquidity risk appetite. The Bank’s strategies, plans and\ngovernance practices underpin an integrated liquidity risk management\nprogram that is designed to reduce exposure to liquidity risk and maintain\ncompliance with regulatory requirements. A combination of quantitative\nand qualitative measures is used to control liquidity risk with the objective\nof maintaining sufficient liquidity to satisfy the Bank’s operational needs\nand client commitments in both normal and stress conditions. The Bank\ntargets a 90-day survival horizon under a combined bank-specific and\nmarket-wide stress scenario, and surpluses over regulatory requirements,\nincluding those prescribed by OSFI’s Liquidity Adequacy Requirements\n(LAR) guideline. The Bank’s funding program emphasizes a stable,\ndiversified deposit base as a core source of funding and maintains ready\naccess to wholesale funding markets to diversify across terms, funding\ntypes, and currencies. This approach helps lower exposure to sudden\ncontractions of wholesale funding capacity and minimizes structural\nliquidity gaps. The Bank also maintains a contingency funding plan (CFP)\nto enhance preparedness to address potential liquidity stress events.\n\nStrategies are in place to help manage the risk to the Bank’s reinsurance\nbusiness. Underwriting risk on business assumed is managed through\na policy that limits exposure to certain types of business and countries.\nThe vast majority of reinsurance treaties are annually renewable, which\nminimizes long-term risk. Pandemic exposure is reviewed and estimated\nannually within the reinsurance business to manage concentration risk.",
+              "similarity": 0.676,
+              "fiscal_year": 2025,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "page_end": 114,
+              "document_type": "annual_report",
+              "filing_id": "TD_2025_annual_report_FY",
+              "bank": "Toronto-Dominion Bank",
+              "bank_code": "TD",
+              "quarter": 0,
+              "file_name": "TD_2025_annual_report.pdf",
+              "section": "HOW TD MANAGES LIQUIDITY RISK",
+              "page_start": 114
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00331",
+              "text": "The Bank’s unencumbered liquid assets could be used to help address\npotential funding needs arising from stress events. Liquid asset eligibility\nconsiders estimated stressed market values and trading market depth, as\nwell as operational, legal, or other impediments to sale, rehypothecation\nor pledging.\n\nIn addition to our committee oversight framework, liquidity risk\nmanagement activities are subject to the three lines of defence governance\nmodel. Treasury, the first line of defence for the management of liquidity\nrisk, is subject to independent second line challenge and oversight by Risk\nManagement. TD’s Internal Audit is the third line of defence. The three\nlines of defence are independent of the business whose activities generate\nliquidity risks.\n\nAssets held by the Bank to meet liquidity requirements are\nsummarized in the following tables. The tables do not include assets\nheld within the Bank’s insurance businesses as these are used to support\ninsurance-specific liabilities and capital requirements.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nT A B L E 4 6",
+              "similarity": 0.656,
+              "document_type": "annual_report",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "section": "LIQUID ASSETS",
+              "bank_code": "TD",
+              "file_name": "TD_2025_annual_report.pdf",
+              "bank": "Toronto-Dominion Bank",
+              "page_end": 115,
+              "filing_id": "TD_2025_annual_report_FY",
+              "page_start": 114,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In TD's 2025 annual report, the following liquidity and funding risks were disclosed:\n\n1. **Insufficient Cash or Collateral**: There is a risk of having insufficient cash or collateral to meet financial obligations, which may arise from deposit withdrawals, debt maturities, or commitments to provide credit. The report highlights the potential inability to raise funding or monetize assets at a non-distressed price (TD_2025_annual_report_FY_00328).\n\n2. **Stress Testing**: The Bank conducts internal stress testing to manage liquidity risk, considering severe combined stress events that could lead to elevated liquidity requirements and loss of confidence in the Bank's ability to meet obligations. Scenarios include loss of access to wholesale funding, accelerated deposit attrition, increased utilization of credit facilities, and heightened collateral requirements due to credit rating downgrades (TD_2025_annual_report_FY_00328).\n\n3. **Liquidity Management Policies**: TD maintains liquidity risk management policies that require sufficient liquid assets to support business growth and cover stressed liquidity requirements for up to 90 days. The Bank targets a 90-day survival horizon under stress scenarios and emphasizes a stable, diversified deposit base as a core funding source (TD_2025_annual_report_FY_00327).\n\n4. **Contingency Funding Plan**: The Bank has a contingency funding plan to enhance preparedness for potential liquidity stress events, which is part of its integrated liquidity risk management program (TD_2025_annual_report_FY_00327).\n\n5. **Unencumbered Liquid Assets**: The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events, with eligibility considering stressed market values and operational impediments (TD_2025_annual_report_FY_00331).\n\nFor further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00347",
+        "text": "The Bank has access to a variety of unsecured and secured funding\nsources. The Bank’s funding activities are conducted in accordance with\nliquidity risk management policies that require assets be funded to the\nappropriate term and to a prudent diversification profile.",
+        "similarity": 0.698,
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 121,
+        "quarter": 0,
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "FUNDING",
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 121
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00328",
+        "text": "The risk of having insufficient cash or collateral to meet financial\nobligations and an inability to, in a timely manner, raise funding or\nmonetize assets at a non‐distressed price. Financial obligations can arise\nfrom deposit withdrawals, debt maturities, commitments to provide credit\nor liquidity support or the need to pledge additional collateral.\n\nThe Bank’s internal stress testing informs the management of liquidity\nrisk. Among scenarios considered is a severe combined stress event\nresulting in elevated liquidity requirements and a loss of confidence in\nthe Bank’s ability to meet obligations as they come due. In addition to\nthis bank-specific event, this scenario incorporates a market-wide liquidity\nstress that materially reduces the availability of funding for all institutions\nand decreases the marketability of assets. The Bank’s liquidity risk\nmanagement policies stipulate that the Bank must maintain a sufficient\nlevel of liquid assets to support business growth, and to cover stressed\nliquidity requirements under the stress scenario for a period of up to\n90 days. Key elements of the scenario include:\n• loss of access to wholesale funding including repayment of maturing\ndebt in the next 90 days;\n• accelerated deposit attrition or “run-off”;\n• increased utilization of available credit and liquidity facilities; and\n• increased collateral requirements associated with downgrades in\nthe Bank’s credit ratings.",
+        "similarity": 0.678,
+        "section": "Liquidity Risk",
+        "document_type": "annual_report",
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_start": 114,
+        "page_end": 114,
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "bank_code": "TD"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00327",
+        "text": "The Bank manages the liquidity profile of its businesses in accordance\nwith its defined liquidity risk appetite. The Bank’s strategies, plans and\ngovernance practices underpin an integrated liquidity risk management\nprogram that is designed to reduce exposure to liquidity risk and maintain\ncompliance with regulatory requirements. A combination of quantitative\nand qualitative measures is used to control liquidity risk with the objective\nof maintaining sufficient liquidity to satisfy the Bank’s operational needs\nand client commitments in both normal and stress conditions. The Bank\ntargets a 90-day survival horizon under a combined bank-specific and\nmarket-wide stress scenario, and surpluses over regulatory requirements,\nincluding those prescribed by OSFI’s Liquidity Adequacy Requirements\n(LAR) guideline. The Bank’s funding program emphasizes a stable,\ndiversified deposit base as a core source of funding and maintains ready\naccess to wholesale funding markets to diversify across terms, funding\ntypes, and currencies. This approach helps lower exposure to sudden\ncontractions of wholesale funding capacity and minimizes structural\nliquidity gaps. The Bank also maintains a contingency funding plan (CFP)\nto enhance preparedness to address potential liquidity stress events.\n\nStrategies are in place to help manage the risk to the Bank’s reinsurance\nbusiness. Underwriting risk on business assumed is managed through\na policy that limits exposure to certain types of business and countries.\nThe vast majority of reinsurance treaties are annually renewable, which\nminimizes long-term risk. Pandemic exposure is reviewed and estimated\nannually within the reinsurance business to manage concentration risk.",
+        "similarity": 0.676,
+        "fiscal_year": 2025,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_end": 114,
+        "document_type": "annual_report",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "bank_code": "TD",
+        "quarter": 0,
+        "file_name": "TD_2025_annual_report.pdf",
+        "section": "HOW TD MANAGES LIQUIDITY RISK",
+        "page_start": 114
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00331",
+        "text": "The Bank’s unencumbered liquid assets could be used to help address\npotential funding needs arising from stress events. Liquid asset eligibility\nconsiders estimated stressed market values and trading market depth, as\nwell as operational, legal, or other impediments to sale, rehypothecation\nor pledging.\n\nIn addition to our committee oversight framework, liquidity risk\nmanagement activities are subject to the three lines of defence governance\nmodel. Treasury, the first line of defence for the management of liquidity\nrisk, is subject to independent second line challenge and oversight by Risk\nManagement. TD’s Internal Audit is the third line of defence. The three\nlines of defence are independent of the business whose activities generate\nliquidity risks.\n\nAssets held by the Bank to meet liquidity requirements are\nsummarized in the following tables. The tables do not include assets\nheld within the Bank’s insurance businesses as these are used to support\ninsurance-specific liabilities and capital requirements.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nT A B L E 4 6",
+        "similarity": 0.656,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "section": "LIQUID ASSETS",
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 115,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 114,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 8.83190220000688,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0006647999999999999,
+  "input_tokens": 2628,
+  "output_tokens": 451,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.019476399989798665,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about liquidity and funding risks are directly supported by the actual answer context from TD's 2025 annual report, including specific risks and their descriptions.",
+    "relevance_reason": "The answer directly addresses the question regarding liquidity and funding risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of liquidity and funding risks as disclosed in the report, referencing the correct bank and fiscal year without omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0008541
+}

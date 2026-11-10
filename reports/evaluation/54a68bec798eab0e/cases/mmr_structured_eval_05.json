@@ -1,0 +1,171 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_05",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_05",
+    "question": "What residential mortgage credit risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed residential mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What residential mortgage credit risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, TD disclosed several residential mortgage credit risks: 1. The bank manages residential mortgage exposures using predictive credit scoring techniques and categorizes them into different risk levels based on probability of default (PD) ranges, with a focus on downturn loss given default (LGD) reflecting potential impacts from severe housing downturns [S5]. 2. As of October 31, 2025, TD reported that residential mortgages past due but not impaired amounted to $536 million, indicating potential credit risk exposure [S4]. 3. The bank retains first lien on most properties securing residential mortgages, but there is a small portion with second liens, which could increase risk if the primary mortgage defaults [S3]. 4. TD's credit policies limit the combined exposure of uninsured facilities on a property to 80% of its collateral value at origination, but higher loan-to-value ratios are allowed with default insurance, which mitigates some risk [S3]. 5. The bank sold US$8.6 billion of U.S. residential mortgage loans in March 2025, resulting in a pre-tax loss, indicating potential restructuring risks in its mortgage portfolio [S4].",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00538",
+        "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+        "similarity": 0.6462543606758118,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "file_name": "TD_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank": "Toronto-Dominion Bank",
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "page_end": 187,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 186,
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00119",
+        "text": "Refer to Note 12 of the 2025 Consolidated Financial Statements for\nfurther information on Schwab.\n\n41 Loan portfolios identified for sale or run-off include the Point of Sale finance business which services third party retailers, correspondent lending, export and import lending,\ncommercial auto dealer portfolio, and other non-core portfolios. 2025 average loan volumes: US$184 billion (2024: US$192 billion). 2025 average loan volumes of loan portfolios\nidentified for sale or run-off: US$24 billion (2024: US$36 billion). 2025 average loan volumes excluding loan portfolios identified for sale or run-off: US$160 billion (2024:\nUS$156 billion).\n\n42 For additional information about the Bank’s use of non-GAAP financial measures, refer to “Non-GAAP and Other Financial Measures” in the “Financial Results Overview”\nsection of this document.\n\n43 The Bank’s expectations regarding expense growth are based on the assumptions regarding certain factors, including the Bank’s ability to successfully execute against its\ngovernance and control initiatives, including U.S. BSA/AML remediation, the timing of business investments, and productivity and restructuring savings. Refer to the “Risk Factors\nThat May Affect Future Results” section of this document for additional information about risks and uncertainties that may impact the Bank’s estimates.\n\n44 The Bank’s Q1 2026 net interest margin expectations for the segment are based on the Bank’s assumptions regarding interest rates, deposit reinvestment rates, average asset\nlevels, execution of planned restructuring opportunities, and other variables, and are subject to inherent risks and uncertainties, including those set out in the “Risk Factors That\nMay Affect Future Results” section of this document.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "similarity": 0.5716355443000793,
+        "page_end": 50,
+        "file_name": "TD_2025_annual_report.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "quarter": 0,
+        "section": "THE CHARLES SCHWAB CORPORATION",
+        "bank_code": "TD",
+        "page_start": 50,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00166",
+        "text": "Retail real estate secured lending includes mortgages and lines of credit\nto North American consumers to satisfy financing needs including home\npurchases and refinancing. While the Bank retains first lien on the\nmajority of properties held as security, there is a small portion of loans\nwith second liens, but most of these are behind a TD mortgage or home\nequity line of credit that is in first position. In Canada, credit policies are\ndesigned so that the combined exposure of all uninsured facilities on\none property does not exceed 80% of the collateral value at origination.\nLending at a higher loan-to-value ratio is permitted by legislation but\nrequires default insurance. This insurance is contractual coverage for\nthe life of eligible facilities and protects the Bank’s real estate secured\nlending portfolio against potential losses caused by borrowers’ default.\nThe Bank may also purchase default insurance on lower loan-to-value\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n1,2\n\n|\nT A B L E 2 7",
+        "similarity": 0.5383947491645813,
+        "fiscal_year": 2025,
+        "page_end": 65,
+        "section": "REAL ESTATE SECURED LENDING",
+        "bank_code": "TD",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 64
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00553",
+        "text": "(i) LOANS PAST DUE BUT NOT IMPAIRED\nA loan is classified as past due when a borrower has failed to make a\npayment by the contractual due date. The following table summarizes\nloans that are past due but not impaired. Loans less than 31 days\ncontractually past due are excluded as they do not generally reflect a\nborrower’s ability to meet their payment obligations. Incremental lifetime ECLs impact\n$ 1,702\n$ 1,953 Loans Past Due but not Impaired1 (millions of Canadian dollars)\nAs at October 31, 2025\nOctober 31, 2024 31-60\ndays 31-60\ndays 61-89\ndays\nTotal 61-89\ndays\nTotal\n\nResidential mortgages\n$\n407\n$\n129\n$\n536\n$\n443\n$\n111\n$\n554\nConsumer instalment and other personal\n930\n301\n1,231\n983\n335\n1,318\nCredit card\n373\n253\n626\n375\n269\n644\nBusiness and government\n247\n85\n332\n244\n83\n327\n\nTotal\n$ 1,957\n$\n768\n$ 2,725\n$ 2,045\n$\n798\n$ 2,843\n\n1 Includes loans that are measured at FVOCI.\n\nand conditions of the loan and/or the loan is considered impaired.\nManagement considers the nature of the collateral, seniority ranking of\nthe debt, and loan structure in assessing the value of collateral. These\nestimated cash flows are reviewed at least annually, or more frequently\nwhen new information indicates a change in the timing or amount\nexpected to be received.\n\n(j) MODIFIED FINANCIAL ASSETS\nThe amortized cost of financial assets with lifetime allowance that were\nmodified during the year ended October 31, 2025, was $210 million\n(October 31, 2024 – $214 million) before modification, with insignificant\nmodification gain or loss. The gross carrying amount of modified\nfinancial assets for which the loss allowance changed from lifetime to\ntwelve-month ECLs during the years ended October 31, 2025 and\nOctober 31, 2024 were insignificant.\n\n(k) COLLATERAL\nAs at October 31, 2025, the collateral held against total gross impaired\nloans represents 84% (October 31, 2024 – 82%) of total gross impaired\nloans. The fair value of non-financial collateral is determined at the\norigination date of the loan. A revaluation of non-financial collateral\nis performed if there has been a significant change in the terms\n\n(l) SALE OF U.S. RESIDENTIAL MORTGAGE LOANS\nOn March 26, 2025, the Bank sold US$8.6 billion of certain U.S. residential\nmortgage loans (correspondent loans) which resulted in the recognition\nof a pre-tax loss including transaction costs of US$507 million in Other\nincome (loss) on the Consolidated Statement of Income. The sale related\nto balance sheet restructuring activities undertaken in the U.S. Retail\nsegment. Refer to Note 25 for additional information regarding the asset\nlimitation on TD’s two U.S. bank subsidiaries.\n\nN O T E 9",
+        "similarity": 0.5705273151397705,
+        "page_start": 193,
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 193,
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00293",
+        "text": "For products secured by residential real estate, such\nas mortgages and HELOCs, downturn LGD reflects the potential impact\nof a severe housing downturn. EAD estimates similarly reflect a\ndownturn scenario. The following table maps PD ranges to risk levels: To continue to qualify to use the IRB approaches for credit risk, the Bank\nmust meet the ongoing conditions and requirements established by OSFI\nand the Basel Framework. The Bank regularly assesses its compliance with\nthese requirements. Risk Assessment\nPD Segment\nPD Range Low Risk\n1\n0.00 to 0.15% Normal Risk\n2\n0.16 to 0.41\n3\n0.42 to 1.10 Medium Risk\n4\n1.11 to 2.93\n5\n2.94 to 4.74\n\nCredit Risk Exposures Subject to the IRB Approaches\nBanks that adopt the IRB approaches to credit risk must report credit risk\nexposures by counterparty type, each having different underlying risk\ncharacteristics. These counterparty types may differ from the presentation\nin the Bank’s 2025 Consolidated Financial Statements. The Bank’s credit\nrisk exposures are divided into two main portfolios, retail and non-retail.\n\nHigh Risk\n6\n4.75 to 7.59\n7\n7.60 to 18.24\n8\n18.25 to 99.99\n\nDefault\n9\n100.00\n\nRetail Exposures\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. There are three sub-types of retail exposures: residential\nsecured (for example, mortgages and HELOCs), qualifying revolving\nretail (for example, credit cards, unsecured lines of credit, and overdraft\nprotection products), and other retail (for example, personal loans,\nincluding secured automobile loans, student lines of credit, and small\nbusiness banking credit products).\n\nNon‐Retail Exposures\nIn the non-retail portfolio, the Bank manages exposures on an individual\nborrower basis, using industry and sector-specific credit risk models, and\nexpert judgment. The Bank has categorized non-retail credit risk exposures\naccording to the following Basel counterparty types: corporate, including\nwholesale and commercial customers, sovereign, and bank. Under the IRB\napproaches, CMHC-insured mortgages are considered sovereign risk and\nare therefore classified as non-retail.\n\nThe Bank calculates RWA for its retail exposures using the AIRB\napproach. All retail PD, LGD, and EAD parameter models are based on the\ninternal default and loss performance history for each of the three retail\nexposure sub-types. These parameters are also used in the calculation of\nregulatory capital, economic capital, and allowance for credit losses.\n\nAccount-level PD, LGD, and EAD models are built for each product\nportfolio and calibrated based on the observed account-level default and\nloss performance for the portfolio.",
+        "similarity": 0.5403178930282593,
+        "quarter": 0,
+        "page_start": 102,
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "section": "HOW TD MANAGES CREDIT RISK",
+        "page_end": 102,
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank": "Toronto-Dominion Bank"
+      }
+    ],
+    "structured": {
+      "answer": "In its 2025 annual report, TD disclosed several residential mortgage credit risks: 1. The bank manages residential mortgage exposures using predictive credit scoring techniques and categorizes them into different risk levels based on probability of default (PD) ranges, with a focus on downturn loss given default (LGD) reflecting potential impacts from severe housing downturns [S5]. 2. As of October 31, 2025, TD reported that residential mortgages past due but not impaired amounted to $536 million, indicating potential credit risk exposure [S4]. 3. The bank retains first lien on most properties securing residential mortgages, but there is a small portion with second liens, which could increase risk if the primary mortgage defaults [S3]. 4. TD's credit policies limit the combined exposure of uninsured facilities on a property to 80% of its collateral value at origination, but higher loan-to-value ratios are allowed with default insurance, which mitigates some risk [S3]. 5. The bank sold US$8.6 billion of U.S. residential mortgage loans in March 2025, resulting in a pre-tax loss, indicating potential restructuring risks in its mortgage portfolio [S4].",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+          "year": 2025
+        },
+        {
+          "label": "S3",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "REAL ESTATE SECURED LENDING",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "HOW TD MANAGES CREDIT RISK",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 1.5349486001068726
+  },
+  "latency_seconds": 6.770731500000693,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007041,
+  "input_tokens": 3050,
+  "output_tokens": 411,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.10347960004583001,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's residential mortgage credit risks are supported by the actual answer context, including specific figures and descriptions from the 2025 annual report.",
+    "relevance_reason": "The answer directly addresses the question regarding residential mortgage credit risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including various risks and relevant figures from the 2025 report.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.001335,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_05",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

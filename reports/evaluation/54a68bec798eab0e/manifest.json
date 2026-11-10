@@ -1,0 +1,62 @@
+{
+  "run_id": "54a68bec798eab0e",
+  "base": ".",
+  "corpus_hash": "a6dcfee74676d1730446760df577122fdf02d97b3f6ca5f15b703ceb2c5d618a",
+  "test_set_hash": "28f1d5c72f1f7dfc8045543af7c32d5b0efb129f16058de18191d3ae72474e2d",
+  "answer_model": "gpt-4o-mini",
+  "judge_model": "gpt-4o-mini",
+  "embedding_provider": "local",
+  "questions": 30,
+  "configurations": [
+    "basic_top_k",
+    "mmr_structured",
+    "agentic"
+  ],
+  "signature": {
+    "corpus": "a6dcfee74676d1730446760df577122fdf02d97b3f6ca5f15b703ceb2c5d618a",
+    "dataset": "28f1d5c72f1f7dfc8045543af7c32d5b0efb129f16058de18191d3ae72474e2d",
+    "rubric": "evidence_grounded_v1",
+    "source": {
+      "notebooks/04_prompt_optimization.ipynb": "c5b3a2e0c29cd197f7f99880862cbc151d848389747891bdc75645d02b1da226",
+      "notebooks/05_agentic_workflow.ipynb": "a6e4b293992eedd4fc0979b03db7754e4a1a2a432adef130505a6d969e5f023e",
+      "src/evaluation.py": "af5fce7d5753ee374027f01f60f17fdefba4a14efa2b0e61f0d8db86f9cc3f2e",
+      "src/evaluation_runtime.py": "f89b16244b634253cd55ec7f4ddebd22f8d7ea22b52c426fb90325da999f830c"
+    },
+    "models": {
+      "local": "sentence-transformers/all-MiniLM-L6-v2",
+      "openai": "text-embedding-3-small"
+    },
+    "answer_model": "gpt-4o-mini",
+    "configs": [
+      "basic_top_k",
+      "mmr_structured",
+      "agentic"
+    ],
+    "pricing": {
+      "gpt-4o-mini": {
+        "input": 0.15,
+        "cached_input": 0.075,
+        "output": 0.6
+      },
+      "text-embedding-3-small": {
+        "input": 0.02
+      }
+    }
+  },
+  "pricing_date": "2026-10-27",
+  "prices_per_million_usd": {
+    "gpt-4o-mini": {
+      "input": 0.15,
+      "cached_input": 0.075,
+      "output": 0.6
+    },
+    "text-embedding-3-small": {
+      "input": 0.02
+    }
+  },
+  "retrieval_usd_per_query": 0.0,
+  "budget_usd": 5.0,
+  "local_model_load_excluded_from_latency": true,
+  "workers": 3,
+  "limitation": "Judge and generator use the same model family; shared references are retrieval-based, not expert gold answers."
+}

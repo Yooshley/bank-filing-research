@@ -1,0 +1,396 @@
+{
+  "case_id": "1622ffdffd9cfdf4/agentic/eval_28",
+  "config": "agentic",
+  "question": {
+    "id": "eval_28",
+    "question": "Did the bank improve its risk profile?",
+    "question_type": "edge",
+    "banks": [],
+    "risk": "ambiguous",
+    "scopes": [],
+    "expected_behavior": "Ask which bank and period; do not pick an arbitrary bank or claim improvement.",
+    "reference_query": "Did the bank improve its risk profile?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "Did the bank improve its risk profile?",
+    "answer": "To assess whether Scotiabank has improved its risk profile, I compared the 2024 and 2025 annual reports.\n\n### Findings:\n\n1. **2024 Annual Report**:\n   - The report emphasizes the importance of regular monitoring and reporting of risks to senior management and the Board. It outlines a comprehensive risk management framework that includes risk identification, assessment, and management processes. The bank categorizes risks into financial (credit, liquidity, market) and non-financial (operational, compliance, ESG, etc.), with a low risk appetite for non-financial risks (BNS_2024_annual_report_FY, pages 78-80). [Source](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf)\n\n2. **2025 Annual Report**:\n   - The 2025 report reiterates the commitment to effective risk management as fundamental to the bank's success. It introduces a more structured Enterprise Risk Management Framework that aligns local frameworks with overarching principles. The report also emphasizes shared accountability among employees for risk management and highlights the integration of ESG risk considerations into decision-making processes (BNS_2025_annual_report_FY, pages 78-116). [Source](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf)\n\n### Conclusion:\nThe 2025 report indicates a continued commitment to enhancing risk management practices, with a more structured framework and a focus on integrating ESG risks. However, without specific metrics or comparative data on risk outcomes between the two years, a definitive conclusion on whether the risk profile has improved cannot be made. The comparison of risk management frameworks suggests an evolution rather than a clear improvement or deterioration.",
+    "iterations": 3,
+    "tool_calls": 2,
+    "tools_used": [
+      "get_filing_list",
+      "compare_sections"
+    ],
+    "input_tokens": 8929,
+    "output_tokens": 438,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.001602,
+    "seconds": 14.88,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "get_filing_list",
+        "arguments": {
+          "bank": "BNS"
+        },
+        "observation": {
+          "filings": [
+            {
+              "filing_id": "BNS_2024_AIF_FY",
+              "bank_code": "BNS",
+              "document_type": "AIF",
+              "fiscal_year": 2024,
+              "quarter": 0,
+              "file_name": "BNS_2024_AIF.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiafunds/documents/AIF_2024.pdf"
+            },
+            {
+              "filing_id": "BNS_2024_annual_report_FY",
+              "bank_code": "BNS",
+              "document_type": "annual_report",
+              "fiscal_year": 2024,
+              "quarter": 0,
+              "file_name": "BNS_2024_annual_report.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf"
+            },
+            {
+              "filing_id": "BNS_2024_quarterly_Q1",
+              "bank_code": "BNS",
+              "document_type": "quarterly",
+              "fiscal_year": 2024,
+              "quarter": 1,
+              "file_name": "BNS_2024_Q1_quarterly.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q1/BNS_Q124_Shareholders_Report-EN.pdf"
+            },
+            {
+              "filing_id": "BNS_2024_quarterly_Q2",
+              "bank_code": "BNS",
+              "document_type": "quarterly",
+              "fiscal_year": 2024,
+              "quarter": 2,
+              "file_name": "BNS_2024_Q2_quarterly.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q2/Q224_Shareholders_Report-EN.pdf"
+            },
+            {
+              "filing_id": "BNS_2024_quarterly_Q3",
+              "bank_code": "BNS",
+              "document_type": "quarterly",
+              "fiscal_year": 2024,
+              "quarter": 3,
+              "file_name": "BNS_2024_Q3_quarterly.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q3/Q324_Shareholders_Report-EN.pdf"
+            },
+            {
+              "filing_id": "BNS_2025_AIF_FY",
+              "bank_code": "BNS",
+              "document_type": "AIF",
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "file_name": "BNS_2025_AIF.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiafunds/documents/AIF_2025.pdf"
+            },
+            {
+              "filing_id": "BNS_2025_annual_report_FY",
+              "bank_code": "BNS",
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "file_name": "BNS_2025_annual_report.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf"
+            },
+            {
+              "filing_id": "BNS_2025_quarterly_Q1",
+              "bank_code": "BNS",
+              "document_type": "quarterly",
+              "fiscal_year": 2025,
+              "quarter": 1,
+              "file_name": "BNS_2025_Q1_quarterly.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q1/Q125_Shareholders_Report-EN.pdf"
+            },
+            {
+              "filing_id": "BNS_2025_quarterly_Q2",
+              "bank_code": "BNS",
+              "document_type": "quarterly",
+              "fiscal_year": 2025,
+              "quarter": 2,
+              "file_name": "BNS_2025_Q2_quarterly.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q2/Q225_Shareholders_Report-EN_acc.pdf"
+            },
+            {
+              "filing_id": "BNS_2025_quarterly_Q3",
+              "bank_code": "BNS",
+              "document_type": "quarterly",
+              "fiscal_year": 2025,
+              "quarter": 3,
+              "file_name": "BNS_2025_Q3_quarterly.pdf",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q3/Q325_Shareholders_Report-EN.pdf"
+            }
+          ],
+          "count": 10
+        },
+        "public_action_summary": "Tool requested: get_filing_list"
+      },
+      {
+        "iteration": 2,
+        "action": "compare_sections",
+        "arguments": {
+          "query": "risk profile",
+          "bank": "BNS",
+          "year_a": 2024,
+          "year_b": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "bank": "BNS",
+          "query": "risk profile",
+          "years": {
+            "2024": {
+              "status": "found",
+              "passages": [
+                {
+                  "chunk_id": "BNS_2024_annual_report_FY_00163",
+                  "text": "Metric owners are responsible for regular monitoring, reporting and escalating breaches of early warning thresholds and risk appetite limits or any\nother deteriorating trends in risk profile to senior management and/or the Board, as appropriate. Regular risk reporting to senior management and the Board of Directors provides aggregate measures of risk for all products and business lines,\nacross the Bank’s global footprint, and are used to ensure compliance with risk appetite, policies, limits, and guidelines. They also provide a clear\nstatement on the types, amounts, and sensitivities of the various risks in the portfolio. Senior management and the Board use this information to\nunderstand the Bank’s risk profile and the performance of the portfolios. A comprehensive summary of the Bank’s risk profile and performance of\nthe portfolios is presented to the Board of Directors on a quarterly basis. 76 | 2024 Scotiabank Annual Report Risk Identification and Assessment\n\nEffective risk management requires a comprehensive process to identify risks and assess their materiality. The Bank defines Risk as the\npotential impact of deviations from expected outcomes on the Bank’s earnings, capital, liquidity, reputation and resilience caused by internal\nand external vulnerabilities.\n\nTo support proper risk identification and assessment the risk areas in the Bank have developed specific risk taxonomies to assist in the\nmanagement and governance of the various risks impacting the Bank. The risk identification and assessment processes are to comply with the\nnaming conventions set out by the Enterprise Risk Taxonomy for effective data governance and lineage.\n\nRisk identification and assessment are performed on an ongoing basis through the following:\n\n• Transactions – risks, including credit and market exposures, are assessed by the business lines as risk owners with GRM providing review and\neffective challenge, as applicable\n• Monitoring – risks are identified by constantly monitoring and reporting current trends and analysis, top and emerging risks and internal and\nexternal significant adverse events impacting the Bank\n• New Products and Services – new or significant change to products, services and/or supporting technology are assessed for potential risks\nthrough the New Initiatives Risk Assessment Program\n• Strategic Investments – investment transactions are thoroughly reviewed for risks and are approved by the Operating Committee with advice\nand counsel from the Strategic Transactions and Investment Committee who provides direction and guidance on effective allocation and\nprioritization of resources\n• Self Assessments – operational risks through people, processes and systems are periodically self-assessed by the risk owners with the\nresponsible second line of defense providing effective challenge\n\nManagement’s Discussion and Analysis | Risk Management\n\nOn an annual basis, the Bank undergoes a Bank-wide risk assessment that identifies the material risks faced by the Bank for the Internal Capital\nAdequacy Assessment Process (ICAAP) and the determination of internal capital. This process evaluates the risks and determines the\npervasiveness of the risk across multiple business lines, the significance of the risk to a specific business line, the likelihood and potential impact of\nthe risk and whether the risk may cause unexpected losses in income and therefore would be mitigated by internal capital. The process also\nreviews other evolving and emerging risks and includes qualitative considerations such as strategic, economic and ESG risk factors. The identified\nrisks are ascribed a rating of how probable and impactful they may be and are used as an important input in the ICAAP process and the\ndetermination of internal capital.\n\nAs part of this annual risk assessment process, the Bank’s Principal Risks for the year are identified through consultation with various risk owners\nand/or stakeholders and approved by the Operational Risk Committee and the Risk Management Committee.",
+                  "similarity": 0.603,
+                  "fiscal_year": 2024,
+                  "document_type": "annual_report",
+                  "quarter": 0,
+                  "bank_code": "BNS",
+                  "bank": "Bank of Nova Scotia",
+                  "filing_id": "BNS_2024_annual_report_FY",
+                  "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+                  "section": "Management’s Discussion and Analysis",
+                  "page_start": 79,
+                  "file_name": "BNS_2024_annual_report.pdf",
+                  "page_end": 79
+                },
+                {
+                  "chunk_id": "BNS_2024_annual_report_FY_00161",
+                  "text": "Risk Management Tools\n\nEffective risk management includes tools that are guided by the Bank’s Enterprise Risk Appetite Framework and integrated with the Bank’s\nstrategies and business planning processes.\n\nScotiabank’s risk management framework is supported by a variety of risk management tools that are used individually and/or jointly to manage\nenterprise-wide risks. Risk management tools are regularly reviewed and updated to ensure consistency with risk-taking activities, and relevance to\nthe business and financial strategies of the Bank. Enterprise risk management processes should provide a view of the Bank’s risks in a\ncomprehensive and integrated manner and need to consider the relationships and interconnectivity of risks across the Bank.\n\nFrameworks, Policies and Limits\n\nFrameworks and Policies\n\nThe Bank develops and maintains frameworks and policies to manage risks and establish clear expectations to control bank activities. Frameworks\nand policies are designed taking into consideration industry best practices, requirements and guidelines of the Office of the Superintendent of\nFinancial Institutions (OSFI), the Bank Act, as well as the requirements and expectations of other regulators in the jurisdictions where the Bank\nconducts business. They are developed in consultation with various stakeholders across risk management, other control and corporate functions,\nbusiness lines and the Audit Department. Frameworks and policies are guided by the Bank’s risk appetite, governance standards and set the limits\nand controls within which the Bank and its subsidiaries can operate. Risk frameworks and policies may be supported by standards, procedures,\nguidelines and manuals. The Bank also provides advice and counsel to its subsidiaries in respect of their local risk frameworks and policies to\npromote alignment within the Bank.\n\nLimits\n\nLimits govern and control risk-taking activities within the appetite and tolerances established by the Board and executive management. Limits also\nestablish accountability for key tasks in the risk-taking process and establish the level or conditions under which transactions may be approved or\nexecuted.\n\nRisk Measurement\nThe Bank’s measurement of risk is a key component of its risk management framework. The measurement methodologies may apply to a group of\nrisks or a single risk type and are supported by an assessment of qualitative risk factors to ensure the level of risks is within the Bank’s risk appetite.\nThe Bank utilizes various risk techniques such as: models; stress testing; scenario and sensitivity analysis; and back testing using data with forward-\nlooking projections based on plausible and worst case economic and financial market events; to support its risk measurement activities.\n\nModels\n\nThe use of quantitative risk methodologies and models is subject to effective oversight and a strong governance framework which includes the\napplication of sound and experienced judgment. The development, design, independent review and testing, and approval of models are subject to\nthe Model Risk Management Policy.\n\nThe Bank employs models for a number of important risk measurement and management processes including: regulatory and internal capital,\ninternal risk management, valuation/pricing and financial reporting, meeting initial margin requirements, business decision-making for risk\nmanagement, and stress testing.\n\nForward-Looking Exercises\n\nStress Testing",
+                  "similarity": 0.582,
+                  "page_start": 78,
+                  "section": "Management’s Discussion and Analysis",
+                  "document_type": "annual_report",
+                  "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+                  "filing_id": "BNS_2024_annual_report_FY",
+                  "bank_code": "BNS",
+                  "quarter": 0,
+                  "bank": "Bank of Nova Scotia",
+                  "page_end": 78,
+                  "file_name": "BNS_2024_annual_report.pdf",
+                  "fiscal_year": 2024
+                },
+                {
+                  "chunk_id": "BNS_2024_annual_report_FY_00165",
+                  "text": "Principal Risks are categorized into two main groups: Financial Risks: Credit, Liquidity, Market\nThese are risks that are directly associated with the Bank’s primary business and revenue generating activities. The Bank understands these risks\nwell and takes them on to generate sustainable, consistent and predictable earnings. Financial risks are generally quantifiable and are relatively\npredictable. The Bank has a higher risk appetite for financial risks which are a fundamental part of doing business; but only when they are well\nunderstood, within established limits, and meet the desired strategic priorities and risk return profile. 2024 Scotiabank Annual Report | 77 Non-Financial Risks:\n\nOperational, Data, Compliance, Model, Money Laundering / Terrorist Financing and Sanctions, Environmental, Social & Governance (ESG), Cyber\nSecurity & Information Technology (IT), Strategic, Reputational\nThese are risks that are inherent in the Bank’s business and can have significant negative strategic, business, financial and/or reputational\nconsequences if not managed properly. In comparison to financial risks, non-financial risks are less predictable and more difficult to define and\nmeasure. The Bank has low risk appetite for non-financial risks and mitigates these accordingly.\n\nSignificant Adverse Events\n\nThe Bank defines a Significant Adverse Event (SAE) as an internally or externally occurring event that has resulted, or may result in, a significant\nimpact on the Bank’s financial performance, strategy, reputation, risk appetite, regulatory compliance, or operations. Significant is defined as the\nrelative importance of a matter within the context in which it is being considered, including quantitative and qualitative factors, such as magnitude,\nnature, effect, relevance, and impact.\n\nRisk Culture\n\nEffective risk management requires a strong, robust, and pervasive risk culture where every Bank employee understands and recognizes their\nrole as a risk manager and is responsible for identifying and managing risks.\n\nHow are Culture, Risk Culture & Conduct Risk Connected?\n\nKeeping the Bank Safe\n\nCulture refers to how an organization\n\nThe Bank’s risk culture is influenced by\nnumerous factors, including the interdependent\nrelationship amongst the Bank’s overarching\nCulture, risk governance structure, risk appetite,\nstrategy, and risk management tools.\n\nCulture\n\nRisk\nCulture\n\nConduct\n\nRisk\n\nRisk Culture is the underlying norms,\noperates, communicates, and does\nattitudes and beliefs of individuals and\nbusiness.\ngroups that drive their risk management\nbehaviour.\n•\nScotiabond – the Bank’s culture ambition, reflects\nour Bank’s Values and Behaviours:\n• Bank’s Risk Culture program is based on four\n• Our Values (client-centric, integrity, inclusion,\nindicators (elements) of a strong risk culture:\naccountability) guide our day-to-day interactions\nTone from the Top, Accountability, Risk\nand decisions.\nManagement and People Management.\n• Our Behaviours (results-driven, shaping the\nA strong Risk Culture is fostered by an environment\nfuture, striving for better, inclusive) articulate\nthat encourages open communication, where\nhow we win together as one team.\nemployees feel secure to voice concerns, and such issues\nare properly managed.\n\nConduct Risk is the behavioural manifestation of our Culture and Risk Culture.\n\n•\nBy way of example, Conduct Risk includes, but not limited to, sales conduct, bribery & corruption, conflicts\nof interest, insider trading, and market manipulation.",
+                  "similarity": 0.567,
+                  "section": "Management’s Discussion and Analysis",
+                  "document_type": "annual_report",
+                  "bank_code": "BNS",
+                  "page_start": 80,
+                  "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+                  "fiscal_year": 2024,
+                  "file_name": "BNS_2024_annual_report.pdf",
+                  "filing_id": "BNS_2024_annual_report_FY",
+                  "page_end": 80,
+                  "quarter": 0,
+                  "bank": "Bank of Nova Scotia"
+                }
+              ]
+            },
+            "2025": {
+              "status": "found",
+              "passages": [
+                {
+                  "chunk_id": "BNS_2025_annual_report_FY_00140",
+                  "text": "Effective risk management is fundamental to the success and resilience of the Bank and is recognized as key in the Bank’s overall approach to\nstrategy management. Scotiabank has a strong, disciplined risk culture where managing risk is a responsibility shared by all of the Bank’s\nemployees.\n\nRisk Management Framework\n\nThe Enterprise Risk Management Framework (the Framework or ERMF) is a key source of information for the Board of Directors, executive\nmanagement, and other stakeholders of the Bank that:\n\n• outlines the Bank’s risk governance and oversight, risk identification and measurement, risk assessment and control management, risk\nmonitoring and testing, risk reporting and escalation and other key elements of the Bank’s risk management framework; and\n• serves as an over-arching framework for all elements of the Bank’s risk management activities, and a source document to which all other risk\nmanagement frameworks and policies must be aligned.\n\nAll local risk management frameworks must be aligned with this Framework, in accordance with the type and scale of their activities and local\nregulatory requirements and are subject to advice and counsel by Global Risk Management.\n\nRisk Management Principles\n\nRisk-taking and risk management activities across the enterprise are guided by the following principles:\n\nBalancing Risk and Reward – business and risk decisions are consistent with strategies and risk appetite.\n\nUnderstand the Risks – all material risks to which the Bank is exposed, including both financial and non-financial, are identified and managed.\n\nForward Thinking – emerging risks and potential vulnerabilities are proactively identified and managed.\n\nShared Accountability – every employee is responsible for managing risk.\n\nClient Focus – understanding our clients and their needs is essential to all business and risk decision-making.\n\nProtect our Brand – all risk-taking activities must be in line with the Bank’s risk appetite, our Scotiabank Code of Conduct (our “Code”), including\nvalues and behaviours (ScotiaBond), and framework principles.\n\nControls – maintaining a robust and resilient control environment to protect our stakeholders and to manage risk in alignment with the Bank’s Risk\nAppetite.\n\nCompensation – performance and compensation structures reinforce ScotiaBond values and behaviours and promote sound risk taking behaviour\nconsidering the compensation-related regulatory environment.\n\nFinancial Resilience – maintaining financial resilience to withstand financial stress. Capital and liquidity management are fundamental to financial\nresilience as they ensure the Bank can absorb shocks and meet its obligations during periods of stress.\n\nOperational Resilience – maintaining operational resilience to effectively prepare for, respond to, and recover from operational disruptions to the\nprovision of services that have the potential to cause intolerable harm to clients, or threaten the viability of the Bank, or cause instability to the\nfinancial system. This could in turn impact the Bank’s financial resilience and its ability to meet obligations during periods of stress. Effective\nenterprise risk management requires an understanding of how risk types are interconnected, which in turn supports financial and operational\nresilience.\n\nThree Lines of Defence\nThe Three Lines of Defence (3LoD) model is a foundational component of the Bank’s Enterprise Risk Management Framework, supporting a\nrobust and resilient risk management lifecycle. It delineates clear roles and responsibilities across the organization to ensure effective risk\nownership, oversight, and assurance. Together, these lines form an integrated structure that promotes accountability, transparency, and\ncontinuous improvement across the risk lifecycle.\n\nFirst Line of Defence\nBusiness Lines and Corporate/Support Functions\n\n•Incurs and owns the risks.\n•Designs and executes internal controls.\n•Ensures that the risks generated are identified, assessed,\nmanaged, monitored, reported on, within risk appetite,\nand are in compliance with relevant policies, guidelines\nand limits.\n\nLOD\n\nLOD\n\nSecond Line of Defence\nIndependent Risk and Compliance Functions",
+                  "similarity": 0.605,
+                  "quarter": 0,
+                  "document_type": "annual_report",
+                  "bank_code": "BNS",
+                  "bank": "Bank of Nova Scotia",
+                  "file_name": "BNS_2025_annual_report.pdf",
+                  "filing_id": "BNS_2025_annual_report_FY",
+                  "fiscal_year": 2025,
+                  "page_start": 78,
+                  "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+                  "page_end": 78,
+                  "section": "Risk Management"
+                },
+                {
+                  "chunk_id": "BNS_2025_annual_report_FY_00143",
+                  "text": "Financial Risks:\nCredit, Liquidity, Market\nThese are risks that are directly associated with the Bank’s primary business and revenue generating activities. The Bank understands these risks\nwell and takes them on to generate sustainable, consistent and predictable earnings. Financial risks are generally quantifiable and are relatively\npredictable. The Bank has a higher risk appetite for financial risks which are a fundamental part of doing business; but only when they are well\nunderstood, within established limits, and meet the desired strategic priorities and risk return profile.\n\nNon-Financial Risks:\nOperational, Model, Data, Compliance, Money Laundering /Terrorist Financing and Sanctions, Environmental, Social & Governance (ESG), Cyber\nSecurity & Information Technology (IT), Strategic, Reputational\nThese are risks that are inherent in the Bank’s business and can have significant negative strategic, business, financial and/or reputational\nconsequences if not managed properly. In comparison to financial risks, non-financial risks are less predictable and more difficult to define and\nmeasure. The Bank has low risk appetite for non-financial risks and mitigates these accordingly.\n\nTransverse Risks:\nTransverse risks are risks that do not exist in isolation but instead manifest through other recognized risk channels or types (for example, ESG Risk,\nReputational Risk, Culture Risk, and Strategic Risk). Distinct risk events could be the result of a specific risk type or a combination of financial and\nnon-financial transverse risks. The Bank manages these risks through risk-specific teams which coordinate cross-functionally to address and\nrespond to the broader risk environment. This is supported by comprehensive risk reporting, established escalation channels, and data\nstandardization which enables effective aggregate analysis and effective decision-making.\n\nRisk Management Lifecycle\n\nEffective risk management is a continuous and integrated process that underpins the Bank’s ability to achieve its strategic objectives while\nsafeguarding its financial and operational resilience. Each component of the risk management lifecycle operates in an ongoing and iterative\nmanner, reflecting the dynamic nature of the risk environment. The Bank’s Risk Management Framework provides a standardized structure that\npromotes consistency across these components, enabling the Bank to assess, manage, and monitor risk in a disciplined and transparent way. This\nstandardization enhances the Bank’s ability to evaluate the effectiveness of its risk management practices and supports informed decision-\nmaking across the enterprise.\n\nThe primary goals of risk management are to ensure that the outcomes of risk-taking activities are consistent with the Bank’s ScotiaBond\n(Values & Behaviours), strategies and risk appetite, and that there is an appropriate balance between risk and reward to maximize shareholder\nvalue. This Framework provides the foundation for achieving these goals.\n\nThe Framework is applied on an enterprise-wide basis and consists of five key elements:\n\n• Risk Governance and Oversight\n• Risk Identification and Measurement\n• Risk Assessment and Control Management\n• Risk Monitoring and Testing\n• Risk Reporting and Escalation\n\n2025 Scotiabank Annual Report | 77",
+                  "similarity": 0.6,
+                  "quarter": 0,
+                  "bank_code": "BNS",
+                  "bank": "Bank of Nova Scotia",
+                  "filing_id": "BNS_2025_annual_report_FY",
+                  "page_end": 79,
+                  "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+                  "fiscal_year": 2025,
+                  "page_start": 79,
+                  "file_name": "BNS_2025_annual_report.pdf",
+                  "section": "Risk Management",
+                  "document_type": "annual_report"
+                },
+                {
+                  "chunk_id": "BNS_2025_annual_report_FY_00229",
+                  "text": "The Bank’s approach for the effective management of ESG risk is governed by our ESG Risk Management Framework in a manner consistent with\nthe Enterprise-wide Risk Management Framework. The ESG Risk Management Framework describes the guiding principles, program elements,\nand roles and responsibilities relating to the Bank’s management of ESG risk and establishes the minimum requirements for the integration of ESG\nrisk considerations into the decision-making processes across other risk types and business strategies, activities and internal operations. This\nframework assists the Bank as we continue to advance our capabilities in managing ESG risks in a manner that is consistent with regulatory\nrequirements, industry standards, best practices, and risk appetite.\n\nThe ESG Risk Management framework is supported by additional policies, processes, and guidelines, designed to help mitigate ESG Risk or\nadvance responsible practices. For example, Scotiabank is a signatory to the Equator Principles (EPs) framework, which enables the Bank, in\npartnership with our clients, to identify, assess, manage and report environmental and social risks and impacts associated with the large-scale\ninfrastructure and industrial development projects. We also have policies in place related to our financing activities to oil and gas projects in the\nArctic Circle, and to projects related to thermal coal mining and power, UNESCO World Heritage Sites and Wetlands of International Importance,\nand illegal logging and wildlife trade. Our approach to respecting and promoting human rights is communicated in our Code and in the Global\nHuman Rights Statement. The Bank has set a number of enterprise-wide commitments that aim to address climate-related risks and\nopportunities, such as our commitment to provide $350 billion in climate-related finance by 2030 to support clients in their strategies to address\nclimate change and other environmental goals. Our Climate Related Finance Framework outlines the financial product and services we offer in\nsupport of this commitment. Additional information on the Bank’s approach to climate change risk management and strategy will be provided in\nour 2025 Sustainability Report.\n\nData Management Risk\n\nData Management Risk is the risk of exposure to the financial and non-financial consequences caused by people, inadequate processes and\nsystems related to data governance, data quality, data architecture and/or data ethics.\n\nThe Data Risk Management Framework provides an overview of the key governance components for the data management risk and oversight\nactivities across the Bank. The Data Risk Management Policy defines key guiding principles for managing data risk, including the interaction model\nand roles and responsibilities for key stakeholders involved in managing data management risk across the Bank.\n\nModel Risk\n\nModel risk is the risk of adverse financial (e.g. inadequate capital, financial losses, inadequate liquidity, underfunding of defined benefit\npension plans) operational, and/or reputational consequences arising from the design, development, implementation and/or use of a\nmodel. It can originate from, among other things, inappropriate specification; incorrect parameter estimates; flawed hypotheses and/or\nassumptions; mathematical computation errors; inaccurate, inappropriate or incomplete data; inappropriate, improper or unintended\nusage; and inadequate monitoring and/or controls.\n\nModel risk is managed through a structured framework that outlines minimum compliance requirements aligned with OSFI’s revised E-23 Model\nRisk Management Guideline. This framework spans the entire model lifecycle – from identification and assessment to monitoring and remediation.\n\nAll models that meet the Bank’s definition – including those developed internally or sourced from vendors – are governed by the Model Risk\nManagement Framework (MRMF). The MRMF is supported by a suite of policies, standards, and guidelines that ensure consistent and effective\nmodel risk management across the organization, including well-defined roles and responsibilities for key stakeholders across the lifecycle.",
+                  "similarity": 0.589,
+                  "page_start": 116,
+                  "bank": "Bank of Nova Scotia",
+                  "filing_id": "BNS_2025_annual_report_FY",
+                  "page_end": 116,
+                  "section": "Risk Management",
+                  "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+                  "bank_code": "BNS",
+                  "quarter": 0,
+                  "document_type": "annual_report",
+                  "file_name": "BNS_2025_annual_report.pdf",
+                  "fiscal_year": 2025
+                }
+              ]
+            }
+          },
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: compare_sections"
+      },
+      {
+        "iteration": 3,
+        "action": "final_answer",
+        "answer": "To assess whether Scotiabank has improved its risk profile, I compared the 2024 and 2025 annual reports.\n\n### Findings:\n\n1. **2024 Annual Report**:\n   - The report emphasizes the importance of regular monitoring and reporting of risks to senior management and the Board. It outlines a comprehensive risk management framework that includes risk identification, assessment, and management processes. The bank categorizes risks into financial (credit, liquidity, market) and non-financial (operational, compliance, ESG, etc.), with a low risk appetite for non-financial risks (BNS_2024_annual_report_FY, pages 78-80). [Source](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf)\n\n2. **2025 Annual Report**:\n   - The 2025 report reiterates the commitment to effective risk management as fundamental to the bank's success. It introduces a more structured Enterprise Risk Management Framework that aligns local frameworks with overarching principles. The report also emphasizes shared accountability among employees for risk management and highlights the integration of ESG risk considerations into decision-making processes (BNS_2025_annual_report_FY, pages 78-116). [Source](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf)\n\n### Conclusion:\nThe 2025 report indicates a continued commitment to enhancing risk management practices, with a more structured framework and a focus on integrating ESG risks. However, without specific metrics or comparative data on risk outcomes between the two years, a definitive conclusion on whether the risk profile has improved cannot be made. The comparison of risk management frameworks suggests an evolution rather than a clear improvement or deterioration."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00163",
+        "text": "Metric owners are responsible for regular monitoring, reporting and escalating breaches of early warning thresholds and risk appetite limits or any\nother deteriorating trends in risk profile to senior management and/or the Board, as appropriate. Regular risk reporting to senior management and the Board of Directors provides aggregate measures of risk for all products and business lines,\nacross the Bank’s global footprint, and are used to ensure compliance with risk appetite, policies, limits, and guidelines. They also provide a clear\nstatement on the types, amounts, and sensitivities of the various risks in the portfolio. Senior management and the Board use this information to\nunderstand the Bank’s risk profile and the performance of the portfolios. A comprehensive summary of the Bank’s risk profile and performance of\nthe portfolios is presented to the Board of Directors on a quarterly basis. 76 | 2024 Scotiabank Annual Report Risk Identification and Assessment\n\nEffective risk management requires a comprehensive process to identify risks and assess their materiality. The Bank defines Risk as the\npotential impact of deviations from expected outcomes on the Bank’s earnings, capital, liquidity, reputation and resilience caused by internal\nand external vulnerabilities.\n\nTo support proper risk identification and assessment the risk areas in the Bank have developed specific risk taxonomies to assist in the\nmanagement and governance of the various risks impacting the Bank. The risk identification and assessment processes are to comply with the\nnaming conventions set out by the Enterprise Risk Taxonomy for effective data governance and lineage.\n\nRisk identification and assessment are performed on an ongoing basis through the following:\n\n• Transactions – risks, including credit and market exposures, are assessed by the business lines as risk owners with GRM providing review and\neffective challenge, as applicable\n• Monitoring – risks are identified by constantly monitoring and reporting current trends and analysis, top and emerging risks and internal and\nexternal significant adverse events impacting the Bank\n• New Products and Services – new or significant change to products, services and/or supporting technology are assessed for potential risks\nthrough the New Initiatives Risk Assessment Program\n• Strategic Investments – investment transactions are thoroughly reviewed for risks and are approved by the Operating Committee with advice\nand counsel from the Strategic Transactions and Investment Committee who provides direction and guidance on effective allocation and\nprioritization of resources\n• Self Assessments – operational risks through people, processes and systems are periodically self-assessed by the risk owners with the\nresponsible second line of defense providing effective challenge\n\nManagement’s Discussion and Analysis | Risk Management\n\nOn an annual basis, the Bank undergoes a Bank-wide risk assessment that identifies the material risks faced by the Bank for the Internal Capital\nAdequacy Assessment Process (ICAAP) and the determination of internal capital. This process evaluates the risks and determines the\npervasiveness of the risk across multiple business lines, the significance of the risk to a specific business line, the likelihood and potential impact of\nthe risk and whether the risk may cause unexpected losses in income and therefore would be mitigated by internal capital. The process also\nreviews other evolving and emerging risks and includes qualitative considerations such as strategic, economic and ESG risk factors. The identified\nrisks are ascribed a rating of how probable and impactful they may be and are used as an important input in the ICAAP process and the\ndetermination of internal capital.\n\nAs part of this annual risk assessment process, the Bank’s Principal Risks for the year are identified through consultation with various risk owners\nand/or stakeholders and approved by the Operational Risk Committee and the Risk Management Committee.",
+        "similarity": 0.603,
+        "fiscal_year": 2024,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank_code": "BNS",
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2024_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "section": "Management’s Discussion and Analysis",
+        "page_start": 79,
+        "file_name": "BNS_2024_annual_report.pdf",
+        "page_end": 79
+      },
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00161",
+        "text": "Risk Management Tools\n\nEffective risk management includes tools that are guided by the Bank’s Enterprise Risk Appetite Framework and integrated with the Bank’s\nstrategies and business planning processes.\n\nScotiabank’s risk management framework is supported by a variety of risk management tools that are used individually and/or jointly to manage\nenterprise-wide risks. Risk management tools are regularly reviewed and updated to ensure consistency with risk-taking activities, and relevance to\nthe business and financial strategies of the Bank. Enterprise risk management processes should provide a view of the Bank’s risks in a\ncomprehensive and integrated manner and need to consider the relationships and interconnectivity of risks across the Bank.\n\nFrameworks, Policies and Limits\n\nFrameworks and Policies\n\nThe Bank develops and maintains frameworks and policies to manage risks and establish clear expectations to control bank activities. Frameworks\nand policies are designed taking into consideration industry best practices, requirements and guidelines of the Office of the Superintendent of\nFinancial Institutions (OSFI), the Bank Act, as well as the requirements and expectations of other regulators in the jurisdictions where the Bank\nconducts business. They are developed in consultation with various stakeholders across risk management, other control and corporate functions,\nbusiness lines and the Audit Department. Frameworks and policies are guided by the Bank’s risk appetite, governance standards and set the limits\nand controls within which the Bank and its subsidiaries can operate. Risk frameworks and policies may be supported by standards, procedures,\nguidelines and manuals. The Bank also provides advice and counsel to its subsidiaries in respect of their local risk frameworks and policies to\npromote alignment within the Bank.\n\nLimits\n\nLimits govern and control risk-taking activities within the appetite and tolerances established by the Board and executive management. Limits also\nestablish accountability for key tasks in the risk-taking process and establish the level or conditions under which transactions may be approved or\nexecuted.\n\nRisk Measurement\nThe Bank’s measurement of risk is a key component of its risk management framework. The measurement methodologies may apply to a group of\nrisks or a single risk type and are supported by an assessment of qualitative risk factors to ensure the level of risks is within the Bank’s risk appetite.\nThe Bank utilizes various risk techniques such as: models; stress testing; scenario and sensitivity analysis; and back testing using data with forward-\nlooking projections based on plausible and worst case economic and financial market events; to support its risk measurement activities.\n\nModels\n\nThe use of quantitative risk methodologies and models is subject to effective oversight and a strong governance framework which includes the\napplication of sound and experienced judgment. The development, design, independent review and testing, and approval of models are subject to\nthe Model Risk Management Policy.\n\nThe Bank employs models for a number of important risk measurement and management processes including: regulatory and internal capital,\ninternal risk management, valuation/pricing and financial reporting, meeting initial margin requirements, business decision-making for risk\nmanagement, and stress testing.\n\nForward-Looking Exercises\n\nStress Testing",
+        "similarity": 0.582,
+        "page_start": 78,
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "filing_id": "BNS_2024_annual_report_FY",
+        "bank_code": "BNS",
+        "quarter": 0,
+        "bank": "Bank of Nova Scotia",
+        "page_end": 78,
+        "file_name": "BNS_2024_annual_report.pdf",
+        "fiscal_year": 2024
+      },
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00165",
+        "text": "Principal Risks are categorized into two main groups: Financial Risks: Credit, Liquidity, Market\nThese are risks that are directly associated with the Bank’s primary business and revenue generating activities. The Bank understands these risks\nwell and takes them on to generate sustainable, consistent and predictable earnings. Financial risks are generally quantifiable and are relatively\npredictable. The Bank has a higher risk appetite for financial risks which are a fundamental part of doing business; but only when they are well\nunderstood, within established limits, and meet the desired strategic priorities and risk return profile. 2024 Scotiabank Annual Report | 77 Non-Financial Risks:\n\nOperational, Data, Compliance, Model, Money Laundering / Terrorist Financing and Sanctions, Environmental, Social & Governance (ESG), Cyber\nSecurity & Information Technology (IT), Strategic, Reputational\nThese are risks that are inherent in the Bank’s business and can have significant negative strategic, business, financial and/or reputational\nconsequences if not managed properly. In comparison to financial risks, non-financial risks are less predictable and more difficult to define and\nmeasure. The Bank has low risk appetite for non-financial risks and mitigates these accordingly.\n\nSignificant Adverse Events\n\nThe Bank defines a Significant Adverse Event (SAE) as an internally or externally occurring event that has resulted, or may result in, a significant\nimpact on the Bank’s financial performance, strategy, reputation, risk appetite, regulatory compliance, or operations. Significant is defined as the\nrelative importance of a matter within the context in which it is being considered, including quantitative and qualitative factors, such as magnitude,\nnature, effect, relevance, and impact.\n\nRisk Culture\n\nEffective risk management requires a strong, robust, and pervasive risk culture where every Bank employee understands and recognizes their\nrole as a risk manager and is responsible for identifying and managing risks.\n\nHow are Culture, Risk Culture & Conduct Risk Connected?\n\nKeeping the Bank Safe\n\nCulture refers to how an organization\n\nThe Bank’s risk culture is influenced by\nnumerous factors, including the interdependent\nrelationship amongst the Bank’s overarching\nCulture, risk governance structure, risk appetite,\nstrategy, and risk management tools.\n\nCulture\n\nRisk\nCulture\n\nConduct\n\nRisk\n\nRisk Culture is the underlying norms,\noperates, communicates, and does\nattitudes and beliefs of individuals and\nbusiness.\ngroups that drive their risk management\nbehaviour.\n•\nScotiabond – the Bank’s culture ambition, reflects\nour Bank’s Values and Behaviours:\n• Bank’s Risk Culture program is based on four\n• Our Values (client-centric, integrity, inclusion,\nindicators (elements) of a strong risk culture:\naccountability) guide our day-to-day interactions\nTone from the Top, Accountability, Risk\nand decisions.\nManagement and People Management.\n• Our Behaviours (results-driven, shaping the\nA strong Risk Culture is fostered by an environment\nfuture, striving for better, inclusive) articulate\nthat encourages open communication, where\nhow we win together as one team.\nemployees feel secure to voice concerns, and such issues\nare properly managed.\n\nConduct Risk is the behavioural manifestation of our Culture and Risk Culture.\n\n•\nBy way of example, Conduct Risk includes, but not limited to, sales conduct, bribery & corruption, conflicts\nof interest, insider trading, and market manipulation.",
+        "similarity": 0.567,
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "bank_code": "BNS",
+        "page_start": 80,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "fiscal_year": 2024,
+        "file_name": "BNS_2024_annual_report.pdf",
+        "filing_id": "BNS_2024_annual_report_FY",
+        "page_end": 80,
+        "quarter": 0,
+        "bank": "Bank of Nova Scotia"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00140",
+        "text": "Effective risk management is fundamental to the success and resilience of the Bank and is recognized as key in the Bank’s overall approach to\nstrategy management. Scotiabank has a strong, disciplined risk culture where managing risk is a responsibility shared by all of the Bank’s\nemployees.\n\nRisk Management Framework\n\nThe Enterprise Risk Management Framework (the Framework or ERMF) is a key source of information for the Board of Directors, executive\nmanagement, and other stakeholders of the Bank that:\n\n• outlines the Bank’s risk governance and oversight, risk identification and measurement, risk assessment and control management, risk\nmonitoring and testing, risk reporting and escalation and other key elements of the Bank’s risk management framework; and\n• serves as an over-arching framework for all elements of the Bank’s risk management activities, and a source document to which all other risk\nmanagement frameworks and policies must be aligned.\n\nAll local risk management frameworks must be aligned with this Framework, in accordance with the type and scale of their activities and local\nregulatory requirements and are subject to advice and counsel by Global Risk Management.\n\nRisk Management Principles\n\nRisk-taking and risk management activities across the enterprise are guided by the following principles:\n\nBalancing Risk and Reward – business and risk decisions are consistent with strategies and risk appetite.\n\nUnderstand the Risks – all material risks to which the Bank is exposed, including both financial and non-financial, are identified and managed.\n\nForward Thinking – emerging risks and potential vulnerabilities are proactively identified and managed.\n\nShared Accountability – every employee is responsible for managing risk.\n\nClient Focus – understanding our clients and their needs is essential to all business and risk decision-making.\n\nProtect our Brand – all risk-taking activities must be in line with the Bank’s risk appetite, our Scotiabank Code of Conduct (our “Code”), including\nvalues and behaviours (ScotiaBond), and framework principles.\n\nControls – maintaining a robust and resilient control environment to protect our stakeholders and to manage risk in alignment with the Bank’s Risk\nAppetite.\n\nCompensation – performance and compensation structures reinforce ScotiaBond values and behaviours and promote sound risk taking behaviour\nconsidering the compensation-related regulatory environment.\n\nFinancial Resilience – maintaining financial resilience to withstand financial stress. Capital and liquidity management are fundamental to financial\nresilience as they ensure the Bank can absorb shocks and meet its obligations during periods of stress.\n\nOperational Resilience – maintaining operational resilience to effectively prepare for, respond to, and recover from operational disruptions to the\nprovision of services that have the potential to cause intolerable harm to clients, or threaten the viability of the Bank, or cause instability to the\nfinancial system. This could in turn impact the Bank’s financial resilience and its ability to meet obligations during periods of stress. Effective\nenterprise risk management requires an understanding of how risk types are interconnected, which in turn supports financial and operational\nresilience.\n\nThree Lines of Defence\nThe Three Lines of Defence (3LoD) model is a foundational component of the Bank’s Enterprise Risk Management Framework, supporting a\nrobust and resilient risk management lifecycle. It delineates clear roles and responsibilities across the organization to ensure effective risk\nownership, oversight, and assurance. Together, these lines form an integrated structure that promotes accountability, transparency, and\ncontinuous improvement across the risk lifecycle.\n\nFirst Line of Defence\nBusiness Lines and Corporate/Support Functions\n\n•Incurs and owns the risks.\n•Designs and executes internal controls.\n•Ensures that the risks generated are identified, assessed,\nmanaged, monitored, reported on, within risk appetite,\nand are in compliance with relevant policies, guidelines\nand limits.\n\nLOD\n\nLOD\n\nSecond Line of Defence\nIndependent Risk and Compliance Functions",
+        "similarity": 0.605,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "bank_code": "BNS",
+        "bank": "Bank of Nova Scotia",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "page_start": 78,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_end": 78,
+        "section": "Risk Management"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00143",
+        "text": "Financial Risks:\nCredit, Liquidity, Market\nThese are risks that are directly associated with the Bank’s primary business and revenue generating activities. The Bank understands these risks\nwell and takes them on to generate sustainable, consistent and predictable earnings. Financial risks are generally quantifiable and are relatively\npredictable. The Bank has a higher risk appetite for financial risks which are a fundamental part of doing business; but only when they are well\nunderstood, within established limits, and meet the desired strategic priorities and risk return profile.\n\nNon-Financial Risks:\nOperational, Model, Data, Compliance, Money Laundering /Terrorist Financing and Sanctions, Environmental, Social & Governance (ESG), Cyber\nSecurity & Information Technology (IT), Strategic, Reputational\nThese are risks that are inherent in the Bank’s business and can have significant negative strategic, business, financial and/or reputational\nconsequences if not managed properly. In comparison to financial risks, non-financial risks are less predictable and more difficult to define and\nmeasure. The Bank has low risk appetite for non-financial risks and mitigates these accordingly.\n\nTransverse Risks:\nTransverse risks are risks that do not exist in isolation but instead manifest through other recognized risk channels or types (for example, ESG Risk,\nReputational Risk, Culture Risk, and Strategic Risk). Distinct risk events could be the result of a specific risk type or a combination of financial and\nnon-financial transverse risks. The Bank manages these risks through risk-specific teams which coordinate cross-functionally to address and\nrespond to the broader risk environment. This is supported by comprehensive risk reporting, established escalation channels, and data\nstandardization which enables effective aggregate analysis and effective decision-making.\n\nRisk Management Lifecycle\n\nEffective risk management is a continuous and integrated process that underpins the Bank’s ability to achieve its strategic objectives while\nsafeguarding its financial and operational resilience. Each component of the risk management lifecycle operates in an ongoing and iterative\nmanner, reflecting the dynamic nature of the risk environment. The Bank’s Risk Management Framework provides a standardized structure that\npromotes consistency across these components, enabling the Bank to assess, manage, and monitor risk in a disciplined and transparent way. This\nstandardization enhances the Bank’s ability to evaluate the effectiveness of its risk management practices and supports informed decision-\nmaking across the enterprise.\n\nThe primary goals of risk management are to ensure that the outcomes of risk-taking activities are consistent with the Bank’s ScotiaBond\n(Values & Behaviours), strategies and risk appetite, and that there is an appropriate balance between risk and reward to maximize shareholder\nvalue. This Framework provides the foundation for achieving these goals.\n\nThe Framework is applied on an enterprise-wide basis and consists of five key elements:\n\n• Risk Governance and Oversight\n• Risk Identification and Measurement\n• Risk Assessment and Control Management\n• Risk Monitoring and Testing\n• Risk Reporting and Escalation\n\n2025 Scotiabank Annual Report | 77",
+        "similarity": 0.6,
+        "quarter": 0,
+        "bank_code": "BNS",
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_end": 79,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "fiscal_year": 2025,
+        "page_start": 79,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "Risk Management",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00229",
+        "text": "The Bank’s approach for the effective management of ESG risk is governed by our ESG Risk Management Framework in a manner consistent with\nthe Enterprise-wide Risk Management Framework. The ESG Risk Management Framework describes the guiding principles, program elements,\nand roles and responsibilities relating to the Bank’s management of ESG risk and establishes the minimum requirements for the integration of ESG\nrisk considerations into the decision-making processes across other risk types and business strategies, activities and internal operations. This\nframework assists the Bank as we continue to advance our capabilities in managing ESG risks in a manner that is consistent with regulatory\nrequirements, industry standards, best practices, and risk appetite.\n\nThe ESG Risk Management framework is supported by additional policies, processes, and guidelines, designed to help mitigate ESG Risk or\nadvance responsible practices. For example, Scotiabank is a signatory to the Equator Principles (EPs) framework, which enables the Bank, in\npartnership with our clients, to identify, assess, manage and report environmental and social risks and impacts associated with the large-scale\ninfrastructure and industrial development projects. We also have policies in place related to our financing activities to oil and gas projects in the\nArctic Circle, and to projects related to thermal coal mining and power, UNESCO World Heritage Sites and Wetlands of International Importance,\nand illegal logging and wildlife trade. Our approach to respecting and promoting human rights is communicated in our Code and in the Global\nHuman Rights Statement. The Bank has set a number of enterprise-wide commitments that aim to address climate-related risks and\nopportunities, such as our commitment to provide $350 billion in climate-related finance by 2030 to support clients in their strategies to address\nclimate change and other environmental goals. Our Climate Related Finance Framework outlines the financial product and services we offer in\nsupport of this commitment. Additional information on the Bank’s approach to climate change risk management and strategy will be provided in\nour 2025 Sustainability Report.\n\nData Management Risk\n\nData Management Risk is the risk of exposure to the financial and non-financial consequences caused by people, inadequate processes and\nsystems related to data governance, data quality, data architecture and/or data ethics.\n\nThe Data Risk Management Framework provides an overview of the key governance components for the data management risk and oversight\nactivities across the Bank. The Data Risk Management Policy defines key guiding principles for managing data risk, including the interaction model\nand roles and responsibilities for key stakeholders involved in managing data management risk across the Bank.\n\nModel Risk\n\nModel risk is the risk of adverse financial (e.g. inadequate capital, financial losses, inadequate liquidity, underfunding of defined benefit\npension plans) operational, and/or reputational consequences arising from the design, development, implementation and/or use of a\nmodel. It can originate from, among other things, inappropriate specification; incorrect parameter estimates; flawed hypotheses and/or\nassumptions; mathematical computation errors; inaccurate, inappropriate or incomplete data; inappropriate, improper or unintended\nusage; and inadequate monitoring and/or controls.\n\nModel risk is managed through a structured framework that outlines minimum compliance requirements aligned with OSFI’s revised E-23 Model\nRisk Management Guideline. This framework spans the entire model lifecycle – from identification and assessment to monitoring and remediation.\n\nAll models that meet the Bank’s definition – including those developed internally or sourced from vendors – are governed by the Model Risk\nManagement Framework (MRMF). The MRMF is supported by a suite of policies, standards, and guidelines that ensure consistent and effective\nmodel risk management across the organization, including well-defined roles and responsibilities for key stakeholders across the lifecycle.",
+        "similarity": 0.589,
+        "page_start": 116,
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_end": 116,
+        "section": "Risk Management",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank_code": "BNS",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "fiscal_year": 2025
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 14.87639130000025,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00148695,
+  "input_tokens": 8929,
+  "output_tokens": 438,
+  "embedding_tokens": 0,
+  "chat_calls": 3,
+  "query_embedding_seconds": 0.12176109990105033,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [
+      "BNS_2024_annual_report_FY",
+      "BNS_2025_annual_report_FY"
+    ],
+    "citation_identifiers_valid": false,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 3,
+    "relevance": 3,
+    "completeness": 3,
+    "faithfulness_reason": "The answer provides a comparison of risk management frameworks between 2024 and 2025 but lacks specific metrics or data to definitively assess improvement, leading to unsupported generalizations.",
+    "relevance_reason": "The answer partially addresses the question about risk profile improvement but does not clarify which bank and period were being assessed, leading to some ambiguity.",
+    "completeness_reason": "The answer discusses aspects of risk management for both years but does not fully cover all requested aspects or provide a clear conclusion on improvement, resulting in substantial omissions.",
+    "unsupported_claims": [
+      "The bank improved its risk profile without specific metrics or comparative data.",
+      "The 2025 report indicates a clear improvement in risk management practices without definitive evidence."
+    ],
+    "reference_limitations": "The answer lacks specific metrics or comparative data to conclusively assess risk profile improvement."
+  },
+  "judge_cost_usd": 0.0010398
+}

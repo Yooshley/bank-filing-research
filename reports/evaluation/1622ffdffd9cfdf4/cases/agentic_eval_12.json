@@ -1,0 +1,89 @@
+{
+  "case_id": "1622ffdffd9cfdf4/agentic/eval_12",
+  "config": "agentic",
+  "question": {
+    "id": "eval_12",
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk management did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "answer": "There are no available passages regarding market risk management in Scotiabank's 2025 annual report. Therefore, I cannot provide any details on this topic.",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 1032,
+    "output_tokens": 68,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000196,
+    "seconds": 2.17,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "market risk management",
+          "bank": "BNS",
+          "fiscal_year": 2025,
+          "document_type": "annual report"
+        },
+        "observation": {
+          "passages": [],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "There are no available passages regarding market risk management in Scotiabank's 2025 annual report. Therefore, I cannot provide any details on this topic."
+      }
+    ],
+    "sources": [],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 2.1727182999020442,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00019559999999999998,
+  "input_tokens": 1032,
+  "output_tokens": 68,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.022644500015303493,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 1,
+    "relevance": 1,
+    "completeness": 1,
+    "faithfulness_reason": "The answer claims there are no available passages regarding market risk management in Scotiabank's 2025 annual report, which contradicts the evidence that defines market risk and indicates its presence in the report.",
+    "relevance_reason": "The answer does not address the question about market risk management, instead stating a lack of information without acknowledging the relevant context provided.",
+    "completeness_reason": "The answer fails to provide any details or context regarding market risk management, despite evidence indicating its existence in the report.",
+    "unsupported_claims": [
+      "There are no available passages regarding market risk management in Scotiabank's 2025 annual report."
+    ],
+    "reference_limitations": "The evidence indicates that market risk is discussed in the report, but the answer does not utilize this information."
+  },
+  "judge_cost_usd": 0.00076815
+}

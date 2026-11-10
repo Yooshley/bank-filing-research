@@ -1,0 +1,362 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_11",
+  "config": "agentic",
+  "question": {
+    "id": "eval_11",
+    "question": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed credit risk and loan-loss provisions; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?",
+    "answer": "In Scotiabank's 2025 annual report, the following details regarding credit risk and loan-loss provisions were disclosed:\n\n### Credit Risk\n- **Overall Loan Book**: Increased to **$779 billion** as of October 31, 2025, from **$768 billion** in 2024. This increase was primarily driven by residential mortgages, which amounted to **$370 billion** (84% in Canada). The corporate loan book comprised **36%** of the total, with **50%** of these loans rated as investment grade.\n- **Regional Exposure**: The loan portfolio is diversified across regions, with **68%** in Canada, **8%** in the United States, **7%** in Chile, **6%** in Mexico, and **11%** in other areas.\n- **Credit Risk Management**: The bank employs a comprehensive credit risk management framework, including policies for risk appetite, credit risk rating systems, and methodologies for calculating the allowance for credit losses (source: BNS_2025_annual_report_FY_00168, BNS_2025_annual_report_FY_00169).\n\n### Loan-Loss Provisions\n- **Total Allowance for Credit Losses**: As of October 31, 2025, the total allowance for credit losses on loans was **$7,463 million**, broken down as follows:\n  - **Stage 1**: $1,860 million\n  - **Stage 2**: $3,262 million\n  - **Stage 3**: $2,341 million\n- **Provision for Credit Losses**: The total provision for credit losses for the year was **$4,714 million**, which includes:\n  - New provisions: **$4,883 million**\n  - Reversals: **$(130) million**\n  - Recoveries: **$(620) million** (source: BNS_2025_annual_report_FY_00390, BNS_2025_annual_report_FY_00248).\n\nFor further details, you can refer to the full report [here](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf).",
+    "iterations": 3,
+    "tool_calls": 2,
+    "tools_used": [
+      "search_filings",
+      "search_filings"
+    ],
+    "input_tokens": 12526,
+    "output_tokens": 542,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.002204,
+    "seconds": 12.08,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "credit risk",
+          "bank": "BNS",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00168",
+              "text": "Credit risk is the risk of loss resulting from the failure of a borrower or counterparty to honour its financial or contractual obligations to the\nBank. Credit risk arises in the Bank’s direct lending operations, and in its funding, investment and trading activities where counterparties\nhave repayment or other obligations to the Bank.\n\nCredit risk summary\n\n• The Bank’s overall loan book as of October 31, 2025 increased to $779 billion versus $768 billion as of October 31, 2024, led by an increase in\nResidential mortgages, despite decline in Business and Government lending. Residential mortgages were $370 billion as of October 31, 2025,\nwith 84% in Canada. The corporate loan book, which accounts for 36% of the total loan book is composed of 50% of loans with an investment\ngrade rating as of October 31, 2025, compared to 51% of the total loan book in October 31, 2024.\n• Loans and acceptances (Personal, and Business and Government lending) remained diversified by region, industry and customer. Regional\nexposure is spread across our key markets (Canada 68%, United States 8%, Chile 7%, Mexico 6% and Other 11%). Financial Services constitutes\n4% of overall gross exposures (before consideration of collateral) and was $32 billion. These exposures are predominately to highly rated\ncounterparties and are generally collateralized.\n\nThe effective management of credit risk requires the establishment of an appropriate risk culture. Key credit risk policies and appetite statements\nare important elements used to create this culture.\n\nThe Board of Directors, either directly or through the Risk Committee (the Board), reviews and approves the Bank’s Credit Risk Appetite limits\nannually and Credit Risk limits and thresholds biennially.\n\n• The objectives of the Credit Risk Appetite are to ensure that:\n\n– target markets and product offerings are well defined at both the enterprise-wide and business line levels;\n\n– the risk parameters for new underwritings and for the portfolios as a whole are clearly specified; and\n\n– transactions, including origination, syndication, loan sales and hedging, are managed in a manner that is consistent with the Bank’s risk\n\nappetite.\n\n• The Credit Risk Policy articulates the credit risk management framework, including:\n\n– credit risk management policies;\n\n– delegation of authority;\n\n– the credit risk management program;\n\n– credit risk management for trading and investment activities; and\n\n– Single Name and Aggregate limits, beyond which credit applications must be escalated to the Board for approval.\n\nGRM develops the credit risk management framework and policies that detail, among other things, the credit risk rating systems and associated\nparameter estimates; the delegation of authority for granting credit; the methodology and calculation of the allowance for credit losses; and the\nauthorization of write-offs.\n\nCorporate and commercial credit exposures are segmented by various business lines and/or by major industry type. Aggregate credit risk limits for\neach of these segments are also reviewed and approved biennially by the Board. Portfolio management objectives and risk diversification are key\nfactors in setting these limits.",
+              "similarity": 0.752,
+              "bank": "Bank of Nova Scotia",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "quarter": 0,
+              "document_type": "annual_report",
+              "bank_code": "BNS",
+              "fiscal_year": 2025,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "page_end": 90,
+              "page_start": 90,
+              "section": "Credit Risk"
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00169",
+              "text": "– the credit risk management program; – credit risk management for trading and investment activities; and – Single Name and Aggregate limits, beyond which credit applications must be escalated to the Board for approval. GRM develops the credit risk management framework and policies that detail, among other things, the credit risk rating systems and associated\nparameter estimates; the delegation of authority for granting credit; the methodology and calculation of the allowance for credit losses; and the\nauthorization of write-offs. Corporate and commercial credit exposures are segmented by various business lines and/or by major industry type. Aggregate credit risk limits for\neach of these segments are also reviewed and approved biennially by the Board. Portfolio management objectives and risk diversification are key\nfactors in setting these limits.\n\nConsistent with the Board-approved limits, borrower limits are set within the context of established lending criteria and guidelines for individual\nborrowers, particular industries, countries and certain types of lending, to ensure the Bank does not have excessive concentration to any single\nborrower, or related group of borrowers, particular industry sector or geographic region. Through the portfolio management process, loans may\nbe syndicated to reduce overall exposure to a single name. For certain segments of the portfolio, credit derivative contracts are also used to\nmitigate the risk of loss due to borrower default. Risk is also mitigated through the selective sale of loans.\n\nBanking units and GRM regularly review the various segments of the credit portfolio on an enterprise-wide basis to assess the impact of economic\ntrends or specific events on the performance of the portfolio, and to determine whether corrective action is required. These reviews include the\nexamination of the risk factors for particular products, industries and countries. The results of these reviews are reported to the Risk Management\nCommittee and, when significant, to the Board.\n\nRisk measures\nThe Bank’s credit risk rating systems support the determination of key credit risk parameter estimates (Probability of Default (PD), Loss-Given-\nDefault (LGD) and Exposure at Default (EAD)) that are applicable to both Retail and Business Banking portfolios and are designed to measure\ncustomer credit and transaction risk. The parameters are an integral part of enterprise-wide policies and procedures encompassing governance,\nrisk management, and control structure, and are used in various internal and regulatory credit risk quantification calculations.\n\nThe Bank’s credit risk rating system is subject to a comprehensive validation, governance and oversight framework. The objectives of this\nframework are to ensure that:\n\n• Credit risk rating methodologies and parameters are appropriately designed and developed, independently validated, and regularly reviewed,\nand that the results of each process are adequately documented; and\n• The validation process represents an effective challenge to the design and development process including an assessment of risk measures.\n\nThe Bank’s credit risk rating methodologies and parameters are reviewed and validated at least annually. Units within GRM are responsible for\ndesign, and development of credit risk rating methodologies and parameters. Separate units within GRM are responsible for validation and review.\nThe operation of these separate units is functionally independent from the business units responsible for originating exposures. Within GRM,\nthese units are also independent from the units involved in risk rating approval and credit adjudication.\n\n88 | 2025 Scotiabank Annual Report\n\nBusiness Banking credit risk ratings and associated risk parameters affect lending decisions, and loan pricing. Both Business Banking and Retail\nBanking’s credit risk rating systems affect the computation of the allowance for credit losses, and regulatory capital.\n\nCorporate and commercial\nCorporate and commercial credit exposure arises in the Bank’s business lines.",
+              "similarity": 0.659,
+              "document_type": "annual_report",
+              "page_start": 90,
+              "bank": "Bank of Nova Scotia",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "section": "Credit Risk",
+              "fiscal_year": 2025,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "bank_code": "BNS",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "quarter": 0,
+              "page_end": 91
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00170",
+              "text": "The Bank’s credit risk rating methodologies and parameters are reviewed and validated at least annually. Units within GRM are responsible for\ndesign, and development of credit risk rating methodologies and parameters. Separate units within GRM are responsible for validation and review. The operation of these separate units is functionally independent from the business units responsible for originating exposures. Within GRM,\nthese units are also independent from the units involved in risk rating approval and credit adjudication. 88 | 2025 Scotiabank Annual Report Business Banking credit risk ratings and associated risk parameters affect lending decisions, and loan pricing. Both Business Banking and Retail\nBanking’s credit risk rating systems affect the computation of the allowance for credit losses, and regulatory capital. Corporate and commercial\nCorporate and commercial credit exposure arises in the Bank’s business lines.\n\nRisk ratings\nThe Bank’s risk rating system utilizes internal grade (IG) ratings – a 17 point scale used to differentiate the risk of default of borrowers, and the risk\nof loss on facilities. The general relationship between the Bank’s IG ratings and external agency ratings is shown in table T35.\n\nIG ratings are also used to define credit adjudication authority levels appropriate to the size and risk of each credit application. Lower-rated\ncredits require increasingly more senior management involvement depending upon the aggregate exposure. Where a credit exceeds the authority\ndelegated to a credit unit, credit units will refer the request – with its recommendation – to a senior credit committee for adjudication. In certain\ncases, these must be referred to the Risk Committee of the Board of Directors.\n\nAdjudication\nCredit adjudication units within GRM analyze and evaluate all significant credit requests for corporate and commercial credit exposures, to ensure\nthat risks are adequately assessed, properly approved, continually monitored and actively managed. The decision-making process begins with an\nassessment of the credit risk of the individual borrower or counterparty. Key factors considered in the assessment include:\n\n• The borrower’s management;\n• The borrower’s current and projected financial results and credit statistics;\n• The industry in which the borrower operates;\n• Environmental and Climate Change risks (including regulatory or reputational impacts);\n• Economic trends; and\n• Geopolitical risk.\n\nBased on this assessment, a risk rating is assigned to the individual borrower or counterparty, using the Bank’s risk rating systems.\n\nManagement’s Discussion and Analysis | Risk Management\n\nA separate risk rating is also assigned at the facility level, taking into consideration additional factors, such as security, seniority of claim, structure,\nterm and any other forms of credit risk mitigation that affect the amount of potential loss in the event of a default of the facility. Security typically\ntakes the form of charges over inventory, receivables, real estate, and operating assets when lending to corporate and commercial borrowers; and\ncash or treasuries for trading lines such as securities lending, repurchase transactions, and derivatives. The types of acceptable collateral, and\nrelated valuation processes are documented in risk management policies and manuals.\n\nOther forms of credit risk mitigation include third party guarantees and, in the case of derivatives facilities, master netting agreements.\n\nInternal borrower and facility risk ratings are assigned when a facility is first authorized, and are promptly re-evaluated and adjusted, if necessary,\nas a result of changes to the customer’s financial condition or business prospects. Re-evaluation is an ongoing process, and is done in the context\nof general economic changes, specific industry prospects, and event risks, such as revised financial projections, interim financial results and\nextraordinary announcements.\n\nThe internal credit risk ratings are also considered as part of the Bank’s adjudication limits. Single borrower limits are much lower for higher risk\nborrowers than low risk borrowers.",
+              "similarity": 0.648,
+              "section": "Credit Risk",
+              "bank_code": "BNS",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "bank": "Bank of Nova Scotia",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "quarter": 0,
+              "page_start": 91,
+              "filing_id": "BNS_2025_annual_report_FY",
+              "fiscal_year": 2025,
+              "page_end": 91
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00459",
+              "text": "The Bank’s framework to monitor, evaluate and manage these risks is consistent with\nthat in place as at October 31, 2025: •\nextensive risk management policies define the Bank’s risk appetite, set the limits and controls within which the Bank and its subsidiaries\ncan operate, and reflect the requirements of regulatory authorities. Risk appetite is approved by the Bank’s Board of Directors, either\ndirectly or through the Risk Committee of the Board (the Board);\n•\nguidelines are developed to clarify risk limits and conditions under which the Bank’s risk policies are implemented;\n•\nprocesses are implemented to identify, evaluate, document, report and control risk. Standards define the breadth and quality of\ninformation required to make a decision; and\n•\ncompliance with risk policies, limits and guidelines is measured, monitored and reported to ensure consistency against defined goals.\n\nFurther details on the fair value of financial instruments and how these amounts were determined are provided in Note 6. Note 9 provides details\non the terms and conditions of the Bank’s derivative financial instruments including notional amounts, remaining term to maturity, credit risk, and\nfair values of derivatives used in trading and hedging activities.\n(a) Credit risk\nCredit risk is the risk of loss resulting from the failure of a borrower or counterparty to honour its financial or contractual obligations to the Bank.\nThe Bank’s Credit Risk Appetite and Credit Risk Policy are developed by its Global Risk Management (GRM) department and limits are reviewed\nand approved by the Board on an annual and biennial basis, respectively. The Credit Risk Appetite defines target markets and risk tolerances that\nare developed at an all-Bank level, and then further refined at the business line level. The objectives of the Credit Risk Appetite are to ensure that,\nfor the Bank, including the individual business lines:\n\n•\ntarget markets and product offerings are well defined;\n•\nthe risk parameters for new underwritings and for the portfolios as a whole are clearly specified; and\n•\ntransactions, including origination, syndication, loan sales and hedging, are managed in a manner to ensure the goals for the overall\nportfolio are met.\n\nThe Credit Risk Policy sets out, among other things, the credit risk rating systems and associated parameter estimates, the delegation of authority\nfor granting credit, and the calculation of allowance for credit losses. It forms an integral part of enterprise-wide policies and procedures that\nencompass governance, risk management and control structure.\n\nThe Bank’s credit risk rating systems are designed to support the determination of key credit risk parameter estimates which measure credit and\ntransaction risk. For non-retail exposures, parameters are associated with each credit facility through the assignment of borrower and facility\nratings. Borrower risk is evaluated using methodologies that are specific to particular industry sectors and/or business lines. The risk associated\nwith facilities of a given borrower is assessed by considering the facilities’ structural and collateral-related elements. For retail portfolios, product\nspecific models assign accounts into homogeneous segments using internal and external borrower/facility-level credit experience. This process\nprovides for a meaningful differentiation of risk and allows for appropriate and consistent estimation of loss characteristics at the model and\nsegment level. Further details on credit risk relating to derivatives are provided in Note 9(c).\n\n224 | 2025 Scotiabank Annual Report",
+              "similarity": 0.622,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "page_end": 226,
+              "quarter": 0,
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "section": "Risk management",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "page_start": 226,
+              "bank": "Bank of Nova Scotia",
+              "bank_code": "BNS",
+              "file_name": "BNS_2025_annual_report.pdf"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "search_filings",
+        "arguments": {
+          "query": "loan-loss provisions",
+          "bank": "BNS",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00316",
+              "text": "Consolidated Financial Statements For all loans, performing and credit-impaired, where the modification of terms did not result in the derecognition of the loan, the gross carrying\namount of the modified loan is recalculated based on the present value of the modified cash flows discounted at the original effective interest\nrate, and any gain or loss from the modification is recorded in the provision for credit losses line in the Consolidated Statement of Income. Definition of default\nThe Bank considers a financial instrument to be in default when one or more loss events occur after the date of initial recognition of the\ninstrument, and the loss event has a negative impact on the estimated future cash flows of the instrument that can be reliably estimated. This\nincludes events that indicate:\n\n•\nsignificant financial difficulty of the borrower;\n•\ndefault or delinquency in interest or principal payments;\n•\nhigh probability of the borrower entering a phase of bankruptcy or a financial reorganization;\n•\nmeasurable decrease in the estimated future cash flows from the loan or the underlying assets that back the loan.\n\nThe Bank considers that default has occurred and classifies the financial asset as impaired when it is more than 90 days past due, except for credit\ncard receivables that are treated as defaulted when 180 days past due, unless reasonable and supportable information demonstrates that a more\nlagging default criterion is appropriate.\n\nWrite-off policy\nThe Bank writes off an impaired financial asset (and the related impairment allowance), either partially or in full, when there is no realistic prospect\nof recovery. Where financial assets are secured, write-off is generally after receipt of any proceeds from the realization of security. In\ncircumstances where the net realizable value of any collateral has been determined and there is no reasonable expectation of further recovery,\nwrite-off may be earlier. Credit card receivables 180 days past due are written-off. In subsequent periods, any recoveries of amounts previously\nwritten off are credited to the provision for credit losses in the Consolidated Statement of Income.\n\nPurchased loans\nAll purchased loans are initially measured at fair value on the date of acquisition. As a result, no allowance for credit losses would be recorded in\nthe Consolidated Statement of Financial Position on the date of acquisition. Purchased loans may fit into either of the two categories: Performing\nloans or Purchased Credit-Impaired (PCI) loans.\n\nPurchased performing loans follow the same accounting as originated performing loans and are reflected in Stage 1 on the date of the acquisition.\nThey will be subject to a 12 month allowance for credit losses, which is recorded as a provision for credit losses in the Consolidated Statement of\nIncome. The fair value adjustment set up for these loans on the date of acquisition is amortized into interest income over the life of these loans.\n\nPCI loans are reflected in Stage 3 and are always subject to lifetime allowance for credit losses. Any changes in the expected cash flows since the\ndate of acquisition are recorded as a charge/recovery in the provision for credit losses in the Consolidated Statement of Income at the end of all\nreporting periods subsequent to the date of acquisition.",
+              "similarity": 0.666,
+              "page_start": 162,
+              "filing_id": "BNS_2025_annual_report_FY",
+              "section": "FVOCI",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "bank_code": "BNS",
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "bank": "Bank of Nova Scotia",
+              "page_end": 162,
+              "quarter": 0
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00390",
+              "text": "$ (427) $ 6,723 Presented as: Allowance for credit losses on loans\n$ 6,372 $ 6,536\nAllowance for credit losses on acceptances(2)\n90 1\nAllowance for credit losses on off-balance sheet exposures(3)\n149 186 (1)\nExcludes amounts associated with other assets and reversal of impairment losses of $(11). The provision for credit losses, net of these amounts, is $4,051. (2) Allowance for credit losses on acceptances is recorded against the financial asset in the Consolidated Statement of Financial Position. (3) Allowance for credit losses on off-balance sheet exposures is recorded in other liabilities in the Consolidated Statement of Financial Position.\n\nAllowance for credit losses on loans\n\nAs at October 31, 2025 ($ millions)\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages\n$\n196\n$\n424\n$\n840\n$ 1,460\n\nPersonal loans\n613\n1,215\n604\n2,432\nCredit cards\n338\n1,017\n–\n1,355\nBusiness and government\n713\n606\n897\n2,216\n\nTotal(1)\n$ 1,860\n$ 3,262\n$ 2,341\n$ 7,463\n\n(1)\nExcludes allowance for credit losses for other financial assets including acceptances, investment securities, deposits with banks, off-balance sheet credit risks and reverse repos which amounted to $191.\n\nAs at October 31, 2024 ($ millions)\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages\n$\n165\n$\n398\n$\n645\n$ 1,208\n\nPersonal loans\n544\n1,154\n621\n2,319\nCredit cards\n288\n872\n–\n1,160\nBusiness and government\n586\n475\n788\n1,849\n\nTotal(1)\n$ 1,583\n$ 2,899\n$ 2,054\n$ 6,536\n\n(1)\nExcludes allowance for credit losses for other financial assets including acceptances, investment securities, deposits with banks, off-balance sheet credit risks and reverse repos which amounted to $200.\n\n2025 Scotiabank Annual Report | 193\n\nConsolidated Financial Statements\n\nThe following table presents the changes to the allowance for credit losses on loans.\n\nAs a t Octob er 31, 2025\n\nAs at October 31, 2024\n\n($ millions)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\nResidential mortgages\n\nBalance at beginning of the year\n$\n165\n$\n398\n$\n645\n$ 1,208\n$\n265\n$\n321\n$\n498\n$ 1,084\nProvision for credit losses\n\nRemeasurement(1)\n(235)\n117\n\n423\n305\n(271)\n164\n\n373\n266\nNewly originated or purchased financial assets\n47\n\n–\n–\n47\n41\n–\n–\n41\nDerecognition of financial assets and maturities\n(8)\n(33)\n–\n(41)\n(9)\n(22)\n–\n(31)\nChanges in models and methodologies(7)\n(2)\n(14)\n9\n(7)\n(22)\n3\n–\n(19)\nTransfer to (from):\n\nStage 1\n268\n(216)\n(52)\n–\n215\n(165)\n(50)\n–",
+              "similarity": 0.645,
+              "file_name": "BNS_2025_annual_report.pdf",
+              "section": "PEN-CAD",
+              "bank_code": "BNS",
+              "quarter": 0,
+              "document_type": "annual_report",
+              "page_end": 196,
+              "filing_id": "BNS_2025_annual_report_FY",
+              "fiscal_year": 2025,
+              "bank": "Bank of Nova Scotia",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "page_start": 195
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00248",
+              "text": "T69 Changes in net impaired loans\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nGross impaired loans\nBalance at beginning of year\n$ 6,739\n$ 5,726\nNet additions\n\nNew additions\n9,598\n9,495\nAcquisition-related\n–\n–\nDeclassifications\n(2,847)\n(2,394)\nPayments\n(2,028)\n(1,744)\nSales\n(37)\n(79)\n\n4,686\n5,278\nWrite-offs\n\nResidential mortgages\n(135)\n(100)\nPersonal loans\n(2,127)\n(2,145)\nCredit cards\n(1,466)\n(1,356)\nBusiness and government\n(700)\n(484)\n\n(4,428)\n(4,085)\nForeign exchange and other\n247\n(180)\n\nBalance at end of year\n$ 7,244\n$ 6,739\n\nAllowance for credit losses on financial instruments\nBalance at beginning of year\n$ 2,054\n$ 1,881\nProvision for credit losses\n4,133\n3,930\nWrite-offs\n(4,428)\n(4,085)\nRecoveries\n\nResidential mortgages\n25\n24\nPersonal loans\n313\n288\nCredit cards\n224\n190\nBusiness and government\n58\n60\n\n620\n562\nForeign exchange and other\n(38)\n(234)\n\nBalance at end of year\n$ 2,341\n$ 2,054\n\nNet impaired loans\nBalance at beginning of year\n$ 4,685\n$ 3,845\nNet change in gross impaired loans\n505\n1,013\nNet change in allowance for credit losses on impaired financial instruments\n(287)\n(173)\n\nBalance at end of year\n$ 4,903\n$ 4,685\n\nT70 Provision for credit losses\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nNew provisions\n$ 4,883\n$ 4,591\nReversals\n(130)\n(99)\nRecoveries\n(620)\n(562)\n\nProvision for credit losses on impaired financial instruments\n4,133\n3,930\nProvision for credit losses – performing financial instruments\n581\n121\n\nTotal Provision for credit losses\n$ 4,714\n$ 4,051\n\n124 | 2025 Scotiabank Annual Report\n\nT71 Provision for credit losses against impaired financial instruments by type of borrower\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nResidential mortgages\n$\n267\n$\n250\nPersonal loans\n1,796\n1,885\nCredit cards\n1,233\n1,165\n\nPersonal\n3,296\n3,300\nFinancial services\n\nManagement’ s Discussion and Analysis | Supplementary Data\n\nNon-bank\n26\n34\nBank\n–\n–\nWholesale and retail\n189\n137\nReal estate and contractors\n179\n108\nEnergy\n(3)\n–\nTransportation\n79\n87\nAutomotive\n9\n6\nAgriculture\n95\n73\nHospitality and leisure\n5\n2\nMining\n1\n–\nMetals\n4\n9\nUtilities\n29\n–\nHealth care\n30\n22\nTechnology and media\n93\n32\nChemicals\n10\n6\nFood and beverage\n68\n69\nForest products\n12\n9\nOther\n10\n35\nSovereign\n1\n1\n\nBusiness and government\n837\n630",
+              "similarity": 0.636,
+              "quarter": 0,
+              "page_end": 127,
+              "filing_id": "BNS_2025_annual_report_FY",
+              "fiscal_year": 2025,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "bank_code": "BNS",
+              "bank": "Bank of Nova Scotia",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "section": "Management’s Discussion and Analysis",
+              "document_type": "annual_report",
+              "page_start": 126
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00401",
+              "text": "Total\n570,646\n17,105\n3,301\n591,052\n581,076\n20,633\n3,282\n604,991\nAllowance for credit losses\n854\n640\n897\n2,391\n739\n508\n788\n2,035 Carrying value\n$ 569,792\n$ 16,465\n$ 2,404\n$ 588,661\n$ 580,337\n$ 20,125\n$ 2,494\n$ 602,956 (1)\nStage 3 includes purchased or originated credit-impaired loans. (2) Portfolios where the customer account level ‘Probability of Default’ has not been determined have been included in the ‘Loans not graded’ category. |\n2025 Scotiabank Annual Report (g) Loans past due but not impaired(1)\n\nA loan is considered past due when a counterparty has not made a payment by the contractual due date. The following table presents the\ncarrying value of loans that are contractually past due but not classified as impaired. In cases where borrowers have opted to participate in\npayment deferral programs, deferral of payments is not considered past due and such loans are not aged further during the deferral period.\n\n2025(2)\n2024(2)\n\nAs at October 31 ($ millions)\n\n91 days\nand\ngreater(3)\nTotal\n\n31 - 60\ndays\n\n61 - 90\ndays\n\n91 days\nand\ngreater(3)\nTotal\n\n31 - 60\ndays\n\n61 - 90\ndays\n\nResidential mortgages\n$ 1,603\n$\n767\n$\n–\n$ 2,370\n$ 1,418\n$\n718\n$\n–\n$ 2,136\nPersonal loans\n691\n353\n–\n1,044\n647\n343\n–\n990\nCredit cards\n289\n189\n430\n908\n242\n172\n398\n812\nBusiness and government\n238\n104\n–\n342\n192\n48\n–\n240\n\nConsolidated Financial Statements\n\nTotal\n$ 2,821\n$ 1,413\n$ 430\n$ 4,664\n$ 2,499\n$ 1,281\n$ 398\n$ 4,178\n\n(1)\nLoans past due 30 days or less are not presented in this analysis as they are not administratively considered past due.\n(2) For loans where payment deferrals were granted, deferred payments are not considered past due and such loans are not aged further during the deferral period. Regular aging of the loans resumes, after the end of the deferral period.\n(3) All loans that are over 90 days past due are considered impaired with the exception of credit card receivables which are considered impaired when 180 days past due.\n\n(h) Purchased credit-impaired loans\nCertain financial assets including loans are credit-impaired on initial recognition either through acquisition or origination. The following table\nprovides details of such assets:\n\nAs at October 31 ($ millions)\n2025\n2024\n\nUnpaid principal balance(1)\n$\n224\n$\n243\nCredit-related fair value adjustments\n(24)\n(29)\n\nCarrying value\n200\n214\nStage 3 allowance\n(1)\n(1)\n\nCarrying value net of related allowance\n$\n199\n$\n213\n\n(1)\nRepresents principal amount owed net of write-offs.\n\n13 Derecognition of Financial Assets",
+              "similarity": 0.628,
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "bank_code": "BNS",
+              "section": "PEN-CAD",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "page_end": 199,
+              "quarter": 0,
+              "page_start": 199,
+              "file_name": "BNS_2025_annual_report.pdf",
+              "bank": "Bank of Nova Scotia"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 3,
+        "action": "final_answer",
+        "answer": "In Scotiabank's 2025 annual report, the following details regarding credit risk and loan-loss provisions were disclosed:\n\n### Credit Risk\n- **Overall Loan Book**: Increased to **$779 billion** as of October 31, 2025, from **$768 billion** in 2024. This increase was primarily driven by residential mortgages, which amounted to **$370 billion** (84% in Canada). The corporate loan book comprised **36%** of the total, with **50%** of these loans rated as investment grade.\n- **Regional Exposure**: The loan portfolio is diversified across regions, with **68%** in Canada, **8%** in the United States, **7%** in Chile, **6%** in Mexico, and **11%** in other areas.\n- **Credit Risk Management**: The bank employs a comprehensive credit risk management framework, including policies for risk appetite, credit risk rating systems, and methodologies for calculating the allowance for credit losses (source: BNS_2025_annual_report_FY_00168, BNS_2025_annual_report_FY_00169).\n\n### Loan-Loss Provisions\n- **Total Allowance for Credit Losses**: As of October 31, 2025, the total allowance for credit losses on loans was **$7,463 million**, broken down as follows:\n  - **Stage 1**: $1,860 million\n  - **Stage 2**: $3,262 million\n  - **Stage 3**: $2,341 million\n- **Provision for Credit Losses**: The total provision for credit losses for the year was **$4,714 million**, which includes:\n  - New provisions: **$4,883 million**\n  - Reversals: **$(130) million**\n  - Recoveries: **$(620) million** (source: BNS_2025_annual_report_FY_00390, BNS_2025_annual_report_FY_00248).\n\nFor further details, you can refer to the full report [here](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00168",
+        "text": "Credit risk is the risk of loss resulting from the failure of a borrower or counterparty to honour its financial or contractual obligations to the\nBank. Credit risk arises in the Bank’s direct lending operations, and in its funding, investment and trading activities where counterparties\nhave repayment or other obligations to the Bank.\n\nCredit risk summary\n\n• The Bank’s overall loan book as of October 31, 2025 increased to $779 billion versus $768 billion as of October 31, 2024, led by an increase in\nResidential mortgages, despite decline in Business and Government lending. Residential mortgages were $370 billion as of October 31, 2025,\nwith 84% in Canada. The corporate loan book, which accounts for 36% of the total loan book is composed of 50% of loans with an investment\ngrade rating as of October 31, 2025, compared to 51% of the total loan book in October 31, 2024.\n• Loans and acceptances (Personal, and Business and Government lending) remained diversified by region, industry and customer. Regional\nexposure is spread across our key markets (Canada 68%, United States 8%, Chile 7%, Mexico 6% and Other 11%). Financial Services constitutes\n4% of overall gross exposures (before consideration of collateral) and was $32 billion. These exposures are predominately to highly rated\ncounterparties and are generally collateralized.\n\nThe effective management of credit risk requires the establishment of an appropriate risk culture. Key credit risk policies and appetite statements\nare important elements used to create this culture.\n\nThe Board of Directors, either directly or through the Risk Committee (the Board), reviews and approves the Bank’s Credit Risk Appetite limits\nannually and Credit Risk limits and thresholds biennially.\n\n• The objectives of the Credit Risk Appetite are to ensure that:\n\n– target markets and product offerings are well defined at both the enterprise-wide and business line levels;\n\n– the risk parameters for new underwritings and for the portfolios as a whole are clearly specified; and\n\n– transactions, including origination, syndication, loan sales and hedging, are managed in a manner that is consistent with the Bank’s risk\n\nappetite.\n\n• The Credit Risk Policy articulates the credit risk management framework, including:\n\n– credit risk management policies;\n\n– delegation of authority;\n\n– the credit risk management program;\n\n– credit risk management for trading and investment activities; and\n\n– Single Name and Aggregate limits, beyond which credit applications must be escalated to the Board for approval.\n\nGRM develops the credit risk management framework and policies that detail, among other things, the credit risk rating systems and associated\nparameter estimates; the delegation of authority for granting credit; the methodology and calculation of the allowance for credit losses; and the\nauthorization of write-offs.\n\nCorporate and commercial credit exposures are segmented by various business lines and/or by major industry type. Aggregate credit risk limits for\neach of these segments are also reviewed and approved biennially by the Board. Portfolio management objectives and risk diversification are key\nfactors in setting these limits.",
+        "similarity": 0.752,
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_end": 90,
+        "page_start": 90,
+        "section": "Credit Risk"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00169",
+        "text": "– the credit risk management program; – credit risk management for trading and investment activities; and – Single Name and Aggregate limits, beyond which credit applications must be escalated to the Board for approval. GRM develops the credit risk management framework and policies that detail, among other things, the credit risk rating systems and associated\nparameter estimates; the delegation of authority for granting credit; the methodology and calculation of the allowance for credit losses; and the\nauthorization of write-offs. Corporate and commercial credit exposures are segmented by various business lines and/or by major industry type. Aggregate credit risk limits for\neach of these segments are also reviewed and approved biennially by the Board. Portfolio management objectives and risk diversification are key\nfactors in setting these limits.\n\nConsistent with the Board-approved limits, borrower limits are set within the context of established lending criteria and guidelines for individual\nborrowers, particular industries, countries and certain types of lending, to ensure the Bank does not have excessive concentration to any single\nborrower, or related group of borrowers, particular industry sector or geographic region. Through the portfolio management process, loans may\nbe syndicated to reduce overall exposure to a single name. For certain segments of the portfolio, credit derivative contracts are also used to\nmitigate the risk of loss due to borrower default. Risk is also mitigated through the selective sale of loans.\n\nBanking units and GRM regularly review the various segments of the credit portfolio on an enterprise-wide basis to assess the impact of economic\ntrends or specific events on the performance of the portfolio, and to determine whether corrective action is required. These reviews include the\nexamination of the risk factors for particular products, industries and countries. The results of these reviews are reported to the Risk Management\nCommittee and, when significant, to the Board.\n\nRisk measures\nThe Bank’s credit risk rating systems support the determination of key credit risk parameter estimates (Probability of Default (PD), Loss-Given-\nDefault (LGD) and Exposure at Default (EAD)) that are applicable to both Retail and Business Banking portfolios and are designed to measure\ncustomer credit and transaction risk. The parameters are an integral part of enterprise-wide policies and procedures encompassing governance,\nrisk management, and control structure, and are used in various internal and regulatory credit risk quantification calculations.\n\nThe Bank’s credit risk rating system is subject to a comprehensive validation, governance and oversight framework. The objectives of this\nframework are to ensure that:\n\n• Credit risk rating methodologies and parameters are appropriately designed and developed, independently validated, and regularly reviewed,\nand that the results of each process are adequately documented; and\n• The validation process represents an effective challenge to the design and development process including an assessment of risk measures.\n\nThe Bank’s credit risk rating methodologies and parameters are reviewed and validated at least annually. Units within GRM are responsible for\ndesign, and development of credit risk rating methodologies and parameters. Separate units within GRM are responsible for validation and review.\nThe operation of these separate units is functionally independent from the business units responsible for originating exposures. Within GRM,\nthese units are also independent from the units involved in risk rating approval and credit adjudication.\n\n88 | 2025 Scotiabank Annual Report\n\nBusiness Banking credit risk ratings and associated risk parameters affect lending decisions, and loan pricing. Both Business Banking and Retail\nBanking’s credit risk rating systems affect the computation of the allowance for credit losses, and regulatory capital.\n\nCorporate and commercial\nCorporate and commercial credit exposure arises in the Bank’s business lines.",
+        "similarity": 0.659,
+        "document_type": "annual_report",
+        "page_start": 90,
+        "bank": "Bank of Nova Scotia",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "Credit Risk",
+        "fiscal_year": 2025,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank_code": "BNS",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "quarter": 0,
+        "page_end": 91
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00170",
+        "text": "The Bank’s credit risk rating methodologies and parameters are reviewed and validated at least annually. Units within GRM are responsible for\ndesign, and development of credit risk rating methodologies and parameters. Separate units within GRM are responsible for validation and review. The operation of these separate units is functionally independent from the business units responsible for originating exposures. Within GRM,\nthese units are also independent from the units involved in risk rating approval and credit adjudication. 88 | 2025 Scotiabank Annual Report Business Banking credit risk ratings and associated risk parameters affect lending decisions, and loan pricing. Both Business Banking and Retail\nBanking’s credit risk rating systems affect the computation of the allowance for credit losses, and regulatory capital. Corporate and commercial\nCorporate and commercial credit exposure arises in the Bank’s business lines.\n\nRisk ratings\nThe Bank’s risk rating system utilizes internal grade (IG) ratings – a 17 point scale used to differentiate the risk of default of borrowers, and the risk\nof loss on facilities. The general relationship between the Bank’s IG ratings and external agency ratings is shown in table T35.\n\nIG ratings are also used to define credit adjudication authority levels appropriate to the size and risk of each credit application. Lower-rated\ncredits require increasingly more senior management involvement depending upon the aggregate exposure. Where a credit exceeds the authority\ndelegated to a credit unit, credit units will refer the request – with its recommendation – to a senior credit committee for adjudication. In certain\ncases, these must be referred to the Risk Committee of the Board of Directors.\n\nAdjudication\nCredit adjudication units within GRM analyze and evaluate all significant credit requests for corporate and commercial credit exposures, to ensure\nthat risks are adequately assessed, properly approved, continually monitored and actively managed. The decision-making process begins with an\nassessment of the credit risk of the individual borrower or counterparty. Key factors considered in the assessment include:\n\n• The borrower’s management;\n• The borrower’s current and projected financial results and credit statistics;\n• The industry in which the borrower operates;\n• Environmental and Climate Change risks (including regulatory or reputational impacts);\n• Economic trends; and\n• Geopolitical risk.\n\nBased on this assessment, a risk rating is assigned to the individual borrower or counterparty, using the Bank’s risk rating systems.\n\nManagement’s Discussion and Analysis | Risk Management\n\nA separate risk rating is also assigned at the facility level, taking into consideration additional factors, such as security, seniority of claim, structure,\nterm and any other forms of credit risk mitigation that affect the amount of potential loss in the event of a default of the facility. Security typically\ntakes the form of charges over inventory, receivables, real estate, and operating assets when lending to corporate and commercial borrowers; and\ncash or treasuries for trading lines such as securities lending, repurchase transactions, and derivatives. The types of acceptable collateral, and\nrelated valuation processes are documented in risk management policies and manuals.\n\nOther forms of credit risk mitigation include third party guarantees and, in the case of derivatives facilities, master netting agreements.\n\nInternal borrower and facility risk ratings are assigned when a facility is first authorized, and are promptly re-evaluated and adjusted, if necessary,\nas a result of changes to the customer’s financial condition or business prospects. Re-evaluation is an ongoing process, and is done in the context\nof general economic changes, specific industry prospects, and event risks, such as revised financial projections, interim financial results and\nextraordinary announcements.\n\nThe internal credit risk ratings are also considered as part of the Bank’s adjudication limits. Single borrower limits are much lower for higher risk\nborrowers than low risk borrowers.",
+        "similarity": 0.648,
+        "section": "Credit Risk",
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank": "Bank of Nova Scotia",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "page_start": 91,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "page_end": 91
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00459",
+        "text": "The Bank’s framework to monitor, evaluate and manage these risks is consistent with\nthat in place as at October 31, 2025: •\nextensive risk management policies define the Bank’s risk appetite, set the limits and controls within which the Bank and its subsidiaries\ncan operate, and reflect the requirements of regulatory authorities. Risk appetite is approved by the Bank’s Board of Directors, either\ndirectly or through the Risk Committee of the Board (the Board);\n•\nguidelines are developed to clarify risk limits and conditions under which the Bank’s risk policies are implemented;\n•\nprocesses are implemented to identify, evaluate, document, report and control risk. Standards define the breadth and quality of\ninformation required to make a decision; and\n•\ncompliance with risk policies, limits and guidelines is measured, monitored and reported to ensure consistency against defined goals.\n\nFurther details on the fair value of financial instruments and how these amounts were determined are provided in Note 6. Note 9 provides details\non the terms and conditions of the Bank’s derivative financial instruments including notional amounts, remaining term to maturity, credit risk, and\nfair values of derivatives used in trading and hedging activities.\n(a) Credit risk\nCredit risk is the risk of loss resulting from the failure of a borrower or counterparty to honour its financial or contractual obligations to the Bank.\nThe Bank’s Credit Risk Appetite and Credit Risk Policy are developed by its Global Risk Management (GRM) department and limits are reviewed\nand approved by the Board on an annual and biennial basis, respectively. The Credit Risk Appetite defines target markets and risk tolerances that\nare developed at an all-Bank level, and then further refined at the business line level. The objectives of the Credit Risk Appetite are to ensure that,\nfor the Bank, including the individual business lines:\n\n•\ntarget markets and product offerings are well defined;\n•\nthe risk parameters for new underwritings and for the portfolios as a whole are clearly specified; and\n•\ntransactions, including origination, syndication, loan sales and hedging, are managed in a manner to ensure the goals for the overall\nportfolio are met.\n\nThe Credit Risk Policy sets out, among other things, the credit risk rating systems and associated parameter estimates, the delegation of authority\nfor granting credit, and the calculation of allowance for credit losses. It forms an integral part of enterprise-wide policies and procedures that\nencompass governance, risk management and control structure.\n\nThe Bank’s credit risk rating systems are designed to support the determination of key credit risk parameter estimates which measure credit and\ntransaction risk. For non-retail exposures, parameters are associated with each credit facility through the assignment of borrower and facility\nratings. Borrower risk is evaluated using methodologies that are specific to particular industry sectors and/or business lines. The risk associated\nwith facilities of a given borrower is assessed by considering the facilities’ structural and collateral-related elements. For retail portfolios, product\nspecific models assign accounts into homogeneous segments using internal and external borrower/facility-level credit experience. This process\nprovides for a meaningful differentiation of risk and allows for appropriate and consistent estimation of loss characteristics at the model and\nsegment level. Further details on credit risk relating to derivatives are provided in Note 9(c).\n\n224 | 2025 Scotiabank Annual Report",
+        "similarity": 0.622,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_end": 226,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "section": "Risk management",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_start": 226,
+        "bank": "Bank of Nova Scotia",
+        "bank_code": "BNS",
+        "file_name": "BNS_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00316",
+        "text": "Consolidated Financial Statements For all loans, performing and credit-impaired, where the modification of terms did not result in the derecognition of the loan, the gross carrying\namount of the modified loan is recalculated based on the present value of the modified cash flows discounted at the original effective interest\nrate, and any gain or loss from the modification is recorded in the provision for credit losses line in the Consolidated Statement of Income. Definition of default\nThe Bank considers a financial instrument to be in default when one or more loss events occur after the date of initial recognition of the\ninstrument, and the loss event has a negative impact on the estimated future cash flows of the instrument that can be reliably estimated. This\nincludes events that indicate:\n\n•\nsignificant financial difficulty of the borrower;\n•\ndefault or delinquency in interest or principal payments;\n•\nhigh probability of the borrower entering a phase of bankruptcy or a financial reorganization;\n•\nmeasurable decrease in the estimated future cash flows from the loan or the underlying assets that back the loan.\n\nThe Bank considers that default has occurred and classifies the financial asset as impaired when it is more than 90 days past due, except for credit\ncard receivables that are treated as defaulted when 180 days past due, unless reasonable and supportable information demonstrates that a more\nlagging default criterion is appropriate.\n\nWrite-off policy\nThe Bank writes off an impaired financial asset (and the related impairment allowance), either partially or in full, when there is no realistic prospect\nof recovery. Where financial assets are secured, write-off is generally after receipt of any proceeds from the realization of security. In\ncircumstances where the net realizable value of any collateral has been determined and there is no reasonable expectation of further recovery,\nwrite-off may be earlier. Credit card receivables 180 days past due are written-off. In subsequent periods, any recoveries of amounts previously\nwritten off are credited to the provision for credit losses in the Consolidated Statement of Income.\n\nPurchased loans\nAll purchased loans are initially measured at fair value on the date of acquisition. As a result, no allowance for credit losses would be recorded in\nthe Consolidated Statement of Financial Position on the date of acquisition. Purchased loans may fit into either of the two categories: Performing\nloans or Purchased Credit-Impaired (PCI) loans.\n\nPurchased performing loans follow the same accounting as originated performing loans and are reflected in Stage 1 on the date of the acquisition.\nThey will be subject to a 12 month allowance for credit losses, which is recorded as a provision for credit losses in the Consolidated Statement of\nIncome. The fair value adjustment set up for these loans on the date of acquisition is amortized into interest income over the life of these loans.\n\nPCI loans are reflected in Stage 3 and are always subject to lifetime allowance for credit losses. Any changes in the expected cash flows since the\ndate of acquisition are recorded as a charge/recovery in the provision for credit losses in the Consolidated Statement of Income at the end of all\nreporting periods subsequent to the date of acquisition.",
+        "similarity": 0.666,
+        "page_start": 162,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "section": "FVOCI",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "bank": "Bank of Nova Scotia",
+        "page_end": 162,
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00390",
+        "text": "$ (427) $ 6,723 Presented as: Allowance for credit losses on loans\n$ 6,372 $ 6,536\nAllowance for credit losses on acceptances(2)\n90 1\nAllowance for credit losses on off-balance sheet exposures(3)\n149 186 (1)\nExcludes amounts associated with other assets and reversal of impairment losses of $(11). The provision for credit losses, net of these amounts, is $4,051. (2) Allowance for credit losses on acceptances is recorded against the financial asset in the Consolidated Statement of Financial Position. (3) Allowance for credit losses on off-balance sheet exposures is recorded in other liabilities in the Consolidated Statement of Financial Position.\n\nAllowance for credit losses on loans\n\nAs at October 31, 2025 ($ millions)\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages\n$\n196\n$\n424\n$\n840\n$ 1,460\n\nPersonal loans\n613\n1,215\n604\n2,432\nCredit cards\n338\n1,017\n–\n1,355\nBusiness and government\n713\n606\n897\n2,216\n\nTotal(1)\n$ 1,860\n$ 3,262\n$ 2,341\n$ 7,463\n\n(1)\nExcludes allowance for credit losses for other financial assets including acceptances, investment securities, deposits with banks, off-balance sheet credit risks and reverse repos which amounted to $191.\n\nAs at October 31, 2024 ($ millions)\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages\n$\n165\n$\n398\n$\n645\n$ 1,208\n\nPersonal loans\n544\n1,154\n621\n2,319\nCredit cards\n288\n872\n–\n1,160\nBusiness and government\n586\n475\n788\n1,849\n\nTotal(1)\n$ 1,583\n$ 2,899\n$ 2,054\n$ 6,536\n\n(1)\nExcludes allowance for credit losses for other financial assets including acceptances, investment securities, deposits with banks, off-balance sheet credit risks and reverse repos which amounted to $200.\n\n2025 Scotiabank Annual Report | 193\n\nConsolidated Financial Statements\n\nThe following table presents the changes to the allowance for credit losses on loans.\n\nAs a t Octob er 31, 2025\n\nAs at October 31, 2024\n\n($ millions)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\nResidential mortgages\n\nBalance at beginning of the year\n$\n165\n$\n398\n$\n645\n$ 1,208\n$\n265\n$\n321\n$\n498\n$ 1,084\nProvision for credit losses\n\nRemeasurement(1)\n(235)\n117\n\n423\n305\n(271)\n164\n\n373\n266\nNewly originated or purchased financial assets\n47\n\n–\n–\n47\n41\n–\n–\n41\nDerecognition of financial assets and maturities\n(8)\n(33)\n–\n(41)\n(9)\n(22)\n–\n(31)\nChanges in models and methodologies(7)\n(2)\n(14)\n9\n(7)\n(22)\n3\n–\n(19)\nTransfer to (from):\n\nStage 1\n268\n(216)\n(52)\n–\n215\n(165)\n(50)\n–",
+        "similarity": 0.645,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "PEN-CAD",
+        "bank_code": "BNS",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 196,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_start": 195
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00248",
+        "text": "T69 Changes in net impaired loans\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nGross impaired loans\nBalance at beginning of year\n$ 6,739\n$ 5,726\nNet additions\n\nNew additions\n9,598\n9,495\nAcquisition-related\n–\n–\nDeclassifications\n(2,847)\n(2,394)\nPayments\n(2,028)\n(1,744)\nSales\n(37)\n(79)\n\n4,686\n5,278\nWrite-offs\n\nResidential mortgages\n(135)\n(100)\nPersonal loans\n(2,127)\n(2,145)\nCredit cards\n(1,466)\n(1,356)\nBusiness and government\n(700)\n(484)\n\n(4,428)\n(4,085)\nForeign exchange and other\n247\n(180)\n\nBalance at end of year\n$ 7,244\n$ 6,739\n\nAllowance for credit losses on financial instruments\nBalance at beginning of year\n$ 2,054\n$ 1,881\nProvision for credit losses\n4,133\n3,930\nWrite-offs\n(4,428)\n(4,085)\nRecoveries\n\nResidential mortgages\n25\n24\nPersonal loans\n313\n288\nCredit cards\n224\n190\nBusiness and government\n58\n60\n\n620\n562\nForeign exchange and other\n(38)\n(234)\n\nBalance at end of year\n$ 2,341\n$ 2,054\n\nNet impaired loans\nBalance at beginning of year\n$ 4,685\n$ 3,845\nNet change in gross impaired loans\n505\n1,013\nNet change in allowance for credit losses on impaired financial instruments\n(287)\n(173)\n\nBalance at end of year\n$ 4,903\n$ 4,685\n\nT70 Provision for credit losses\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nNew provisions\n$ 4,883\n$ 4,591\nReversals\n(130)\n(99)\nRecoveries\n(620)\n(562)\n\nProvision for credit losses on impaired financial instruments\n4,133\n3,930\nProvision for credit losses – performing financial instruments\n581\n121\n\nTotal Provision for credit losses\n$ 4,714\n$ 4,051\n\n124 | 2025 Scotiabank Annual Report\n\nT71 Provision for credit losses against impaired financial instruments by type of borrower\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nResidential mortgages\n$\n267\n$\n250\nPersonal loans\n1,796\n1,885\nCredit cards\n1,233\n1,165\n\nPersonal\n3,296\n3,300\nFinancial services\n\nManagement’ s Discussion and Analysis | Supplementary Data\n\nNon-bank\n26\n34\nBank\n–\n–\nWholesale and retail\n189\n137\nReal estate and contractors\n179\n108\nEnergy\n(3)\n–\nTransportation\n79\n87\nAutomotive\n9\n6\nAgriculture\n95\n73\nHospitality and leisure\n5\n2\nMining\n1\n–\nMetals\n4\n9\nUtilities\n29\n–\nHealth care\n30\n22\nTechnology and media\n93\n32\nChemicals\n10\n6\nFood and beverage\n68\n69\nForest products\n12\n9\nOther\n10\n35\nSovereign\n1\n1\n\nBusiness and government\n837\n630",
+        "similarity": 0.636,
+        "quarter": 0,
+        "page_end": 127,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank_code": "BNS",
+        "bank": "Bank of Nova Scotia",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "page_start": 126
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00401",
+        "text": "Total\n570,646\n17,105\n3,301\n591,052\n581,076\n20,633\n3,282\n604,991\nAllowance for credit losses\n854\n640\n897\n2,391\n739\n508\n788\n2,035 Carrying value\n$ 569,792\n$ 16,465\n$ 2,404\n$ 588,661\n$ 580,337\n$ 20,125\n$ 2,494\n$ 602,956 (1)\nStage 3 includes purchased or originated credit-impaired loans. (2) Portfolios where the customer account level ‘Probability of Default’ has not been determined have been included in the ‘Loans not graded’ category. |\n2025 Scotiabank Annual Report (g) Loans past due but not impaired(1)\n\nA loan is considered past due when a counterparty has not made a payment by the contractual due date. The following table presents the\ncarrying value of loans that are contractually past due but not classified as impaired. In cases where borrowers have opted to participate in\npayment deferral programs, deferral of payments is not considered past due and such loans are not aged further during the deferral period.\n\n2025(2)\n2024(2)\n\nAs at October 31 ($ millions)\n\n91 days\nand\ngreater(3)\nTotal\n\n31 - 60\ndays\n\n61 - 90\ndays\n\n91 days\nand\ngreater(3)\nTotal\n\n31 - 60\ndays\n\n61 - 90\ndays\n\nResidential mortgages\n$ 1,603\n$\n767\n$\n–\n$ 2,370\n$ 1,418\n$\n718\n$\n–\n$ 2,136\nPersonal loans\n691\n353\n–\n1,044\n647\n343\n–\n990\nCredit cards\n289\n189\n430\n908\n242\n172\n398\n812\nBusiness and government\n238\n104\n–\n342\n192\n48\n–\n240\n\nConsolidated Financial Statements\n\nTotal\n$ 2,821\n$ 1,413\n$ 430\n$ 4,664\n$ 2,499\n$ 1,281\n$ 398\n$ 4,178\n\n(1)\nLoans past due 30 days or less are not presented in this analysis as they are not administratively considered past due.\n(2) For loans where payment deferrals were granted, deferred payments are not considered past due and such loans are not aged further during the deferral period. Regular aging of the loans resumes, after the end of the deferral period.\n(3) All loans that are over 90 days past due are considered impaired with the exception of credit card receivables which are considered impaired when 180 days past due.\n\n(h) Purchased credit-impaired loans\nCertain financial assets including loans are credit-impaired on initial recognition either through acquisition or origination. The following table\nprovides details of such assets:\n\nAs at October 31 ($ millions)\n2025\n2024\n\nUnpaid principal balance(1)\n$\n224\n$\n243\nCredit-related fair value adjustments\n(24)\n(29)\n\nCarrying value\n200\n214\nStage 3 allowance\n(1)\n(1)\n\nCarrying value net of related allowance\n$\n199\n$\n213\n\n(1)\nRepresents principal amount owed net of write-offs.\n\n13 Derecognition of Financial Assets",
+        "similarity": 0.628,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank_code": "BNS",
+        "section": "PEN-CAD",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_end": 199,
+        "quarter": 0,
+        "page_start": 199,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank": "Bank of Nova Scotia"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 12.079852900002152,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0018969,
+  "input_tokens": 12526,
+  "output_tokens": 542,
+  "embedding_tokens": 0,
+  "chat_calls": 3,
+  "query_embedding_seconds": 0.04878459998872131,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about Scotiabank's credit risk and loan-loss provisions are directly supported by the actual answer context, including specific figures and breakdowns for the fiscal year 2025.",
+    "relevance_reason": "The answer directly addresses the question regarding credit risk and loan-loss provisions disclosed by Scotiabank in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all requested aspects, including overall loan book details, regional exposure, credit risk management, total allowance for credit losses, and breakdowns by stage, matching the reference evidence provided.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0019878
+}

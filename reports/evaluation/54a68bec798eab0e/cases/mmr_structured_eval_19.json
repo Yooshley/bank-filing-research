@@ -1,0 +1,218 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_19",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_19",
+    "question": "Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "BNS",
+      "RBC"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports."
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "Scotiabank's 2025 annual report highlights the rising costs of climate change and the increased regulatory oversight related to climate risks, emphasizing the potential impacts of physical risks such as severe weather events on profitability. The bank has mechanisms in place to identify and mitigate these risks, including disaster recovery planning and a public ESG policy that restricts lending to certain high-risk sectors like Oil & Gas in the Arctic and thermal coal mining [S1]. Scotiabank also acknowledges the uncertainty created by changing political environments in the U.S. and Canada regarding climate-related regulations, which could affect clients' willingness to reduce emissions [S1]. \n\nIn contrast, RBC's 2025 annual report discusses the evolving landscape of sustainability-related laws and regulations, noting that these changes could lead to increased compliance costs and regulatory scrutiny. RBC is actively monitoring developments in climate risk management requirements and aims to meet upcoming disclosure phases set by OSFI and the ISSB [S5]. The bank also emphasizes its commitment to supporting the transition to a low-carbon economy, with specific goals for increasing lending to renewable energy sectors and investing in climate solutions [S7]. \n\nOverall, while both banks recognize the importance of managing climate risks, Scotiabank focuses more on the immediate impacts of physical risks and regulatory uncertainties, whereas RBC emphasizes its proactive approach to compliance and its strategic goals for supporting the transition to a low-carbon economy.",
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00163",
+        "text": "It could also\nlead to headwinds for the Bank in its priority markets, particularly the North American corridor, as political relationships change and policy\nuncertainty accelerates, requiring strategic adjustments. Government Affairs, Compliance, Global AML and Economics teams continue to monitor the changing political and economic landscape across\nthe Bank’s operating footprint, communicating broadly to clients and employees, and supporting stress testing and scenario analysis. These\nteams regularly update the Bank’s leadership to support a continuous understanding of the evolving environment and its impact on the Bank’s\nrisk profile, strategy and business performance. In Canada, recent legislative efforts, such as the One Canadian Economy Act, may help advance\nmajor projects and stimulate economic activity, potentially supporting loan demand and employment. 2025 Scotiabank Annual Report | 85\n\nClimate Change\nRising costs of climate change and new climate guidelines increase regulatory oversight and stakeholder expectations to demonstrate strong\ngovernance in managing climate risks. The increased intensity and frequency of severe weather events highlights the potential impacts of diverse\nphysical risks due to climate change, which include damage to properties and disruptions to operations that can negatively impact profitability.\nThe changing corporate and political environment in the US and Canada could result in reduced support for climate-related regulation and\nfunding for climate initiatives, creating uncertainty that could limit clients’ ability or willingness to reduce emissions. Under current laws and\nevolving climate regulations, which include management of nature-related risks and their impacts, making exaggerated or misleading\nsustainability claims or “greenwashing”, either intentionally or due to data collection and reporting challenges, can create legal and reputational\nrisks. For further details please refer to the ESG Risk section on page 113.\n\nThe Bank continues to maintain compliance with evolving climate regulations across its global footprint. To manage physical risks, there are\nseveral mechanisms to identify, mitigate, and assess potential Bank losses, while disaster recovery planning is focused on ensuring uninterrupted\noperations for localized disasters and weather-related events. The Bank has a public ESG policy that restricts lending to the Oil & Gas industry\nwithin the Arctic, thermal coal mining or coal power generation and new nature-related sustainability policies for activities in UNESCO World\nHeritage sites and RAMSAR wetlands.\n\nGeopolitical Tensions\nThe potential for political miscalculations and conflict escalations remains a key concern. Geopolitical uncertainty and a fracturing global economy\ncontinues as many geopolitical conflicts remain unresolved, including U.S.-China tensions, the continuing war in Ukraine, and the ongoing conflict\nin the Middle East. Geopolitical tensions are accelerating in complexity and speed with risk increasingly manifesting in interconnected ways that\ncould disrupt global trade, supply chains or operations, and cause market volatility. Financial institutions have limited influence over broad\ngeopolitical dynamics and resulting impacts could require strategic adjustments to manage changes to client and investor confidence and to\naddress a higher risk of financial instability.\n\nThe Bank seeks to grow and do business in countries that have a track record of economic growth and institutional stability, while continuing to invest in\nits priority markets within the North American corridor. The Bank monitors geopolitical developments through various pillars and threat intelligence\ncoordination, and monitors regions with geopolitical conflicts to ensure operations, including sanctions related controls continue to be fully compliant\nwith evolving laws. The Bank’s stress testing programs help evaluate the potential impacts of severe economic scenarios, and the Bank can draw from its\nextensive experience operating in emerging markets across the globe to manage volatility, and right scaling exposure when necessary. As well, the Bank’s\nstrong and varied client base, robust liquidity levels and diversified funding programs help manage disruptions or market dislocations.",
+        "similarity": 0.6250011920928955,
+        "page_start": 87,
+        "page_end": 88,
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "section": "Management’s Discussion and Analysis",
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "file_name": "BNS_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00015",
+        "text": "Your Board is confident in the path forward, and we\nremain committed to providing effective risk oversight\nas Scotiabank continues to drive profitable growth\nand build sustainable value for its shareholders\nover the long term. I want to extend our sincere thanks to Scott Bonham,\nMichael Penner, and Calin Rovinescu who retired from\nthe Board this year. We are grateful for their leadership,\ninsight, and many contributions to Scotiabank. I also\nwant to recognize President and CEO Scott Thomson,\nthe executive leadership team, and our global network\nof Scotiabankers for their steadfast commitment to our\nclients, shareholders, and the Bank during this period of\neconomic uncertainty. Returning to our roots On behalf of the entire Board, thank you for your\ncontinued trust and support.\n\nThis year, your Board was proud to welcome our\nshareholders to Halifax, Nova Scotia for Scotiabank’s\n193rd Annual Meeting of Shareholders. It marked our first\nAnnual Meeting outside Toronto since the onset of the\nCOVID-19 pandemic – and returning to our Atlantic roots\nfelt both timely and symbolic. Just as shareholders first\ngathered in Halifax in 1833, we came together once again\n\n12 | 2025 Scotiabank Annual Report\n\nBoard of Directors\n\nAaron W. Regent\n\n• Chair of the Board\n\n• Founder, Chairman and Chief Executive Officer of Magris Performance Materials Inc.\n\n• Scotiabank director since April 9, 2013\n\nCommittee Chairs\n\nNora A. Aufreiter\n\nLynn K. Patterson\n\nSteven C. Van Wyk\n\n• Human Capital and Compensation\nCommittee Chair and member\nof the Risk Committee\n\n• Risk Committee Chair and\nmember of the Human Capital\nand Compensation Committee\n\n• Technology Committee Chair\nand member of the Audit and\nConduct Review Committee\n\n• Corporate director\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nAugust 25, 2014\n\n• Scotiabank director since\nSeptember 1, 2020\n\n• Scotiabank director since\nNovember 15, 2024\n\nMichael B. Medline\n\nBenita M. Warmbold\n\n• Corporate Governance Committee\nChair and member of the Audit\nand Conduct Review Committee\n\n• Audit and Conduct Review\nCommittee Chair and member of\nthe Corporate Governance Committee\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Scotiabank director since\nOctober 29, 2018\n\nGuillermo E. Babatz\n\nW. Dave Dowrich\n\nSandra J. Stuart\n\n• Managing Partner of Atik Capital, S.C.\n\n• Corporate director\n\n• Scotiabank director since\nJanuary 28, 2014\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA)\n\n• Scotiabank director since June 1, 2022\n\nDaniel (Don) H. Callahan\n\nScott Thomson\n\n• Corporate director\n\nUna M. Power\n\n• President and Chief Executive Officer\nof Scotiabank\n\n• Corporate director\n\n• Scotiabank director since\nJune 15, 2021\n\n• Scotiabank director since April 12, 2016\n\n• Scotiabank director since April 12, 2016\n\nAs of December 2, 2025\n\n2025 Scotiabank Annual Report | 1 3\n\n• Scotiabank director since\nSeptember 1, 2023 • Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA) • Scotiabank director since June 1, 2022 Daniel (Don) H. Callahan Scott Thomson • Corporate director Una M. Power • President and Chief Executive Officer\nof Scotiabank • Corporate director • Scotiabank director since\nJune 15, 2021 • Scotiabank director since April 12, 2016 • Scotiabank director since April 12, 2016 As of December 2, 2025 2025 Scotiabank Annual Report | 1 3\n\nSustainability Highlights",
+        "similarity": 0.6206282377243042,
+        "quarter": 0,
+        "bank": "Bank of Nova Scotia",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "ASSETS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_end": 16,
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "page_start": 14
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00023",
+        "text": "26\nAnalysis of the aggregate credit risk exposures, including details of both\npersonal and wholesale lending.\n\n158-160\n\n27\nDiscussion of the policies for identifying impaired loans, defining\nimpairments and renegotiated loans, and explaining loan forbearance\npolicies.\n\n93, 122-125\n189\n34-35\n\n28\nReconciliations of the opening and closing balances of impaired loans and\nimpairment allowances during the year.\n\n89-91, 94\n\n29\nAnalysis of counterparty credit risk that arises from derivative transactions.\n88-90\n176-179\n108\n30\nDiscussion of credit risk mitigation, including collateral held for all sources of\ncredit risk.\n\nOther risks\n31\nQuantified measures of the management of operational risk.\n72, 112-113\n\n32\nDiscussion of publicly known risk items.\n85-87\n205-206\n\n16 | 2025 Scotiabank Annual Report\n\nManagement’s\nDiscussion & Analysis\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable readers to assess the Bank’s financial condition and\nresults of operations as at and for the year ended October 31, 2025. The MD&A should be read in conjunction with the Bank’s\n2025 Consolidated Financial Statements, including the Notes. This MD&A is dated December 2, 2025.\n\nAdditional information relating to the Bank, including the Bank’s 2025 Annual Report, are available on the Bank’s website at\nwww.scotiabank.com. As well, the Bank’s 2025 Annual Report and Annual Information Form are available on the SEDAR+\nwebsite at www.sedarplus.ca and on the EDGAR section of the SEC’s website at www.sec.gov.\n\nTable of Contents\n\nGroup Financial Condition\n\n18",
+        "similarity": 0.5945298671722412,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank_code": "BNS",
+        "page_end": 19,
+        "document_type": "annual_report",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "bank": "Bank of Nova Scotia",
+        "section": "Credit Risk",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "page_start": 18
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00177",
+        "text": "The very pessimistic scenario features a strong stagflationary impulse that leads to a\nprotracted period of financial market uncertainty. It also assumes U.S. imposed tariffs with a magnitude about three times that of the pessimistic\nscenario. Under this scenario, all countries retaliate. This results in higher inflation, requiring central banks to raise their policy rates to higher levels\nthan in the base case in order to bring inflation under control, which is dampening economic activity. 2025 Scotiabank Annual Report | 91 The following section provides additional detail on certain key macroeconomic variables used to calculate the modelled estimate for the\nallowance for credit losses (see page 190 for all key variables). Further changes in these variables up to the date of the consolidated financial\nstatements are incorporated through expert credit judgement.\n\nGross Domestic Product (GDP): Relative to last year, GDP levels in both countries are higher due to historical data revisions. In Canada, we expect\ngrowth of about 1.2% in 2025 – a slower pace than anticipated last year, reflecting tariff impacts – before modestly improving to 1.6% in 2026,\nremaining below potential in both years. In contrast, deterioration in the U.S. outlook is expected to continue into 2026, with growth projected at\n1.8% in 2025 and slowing further to 1.4% in 2026.\n\nCanada Real GDP\nUS Real GDP\n\n28.0\n\n2.9\nCAD, trillions (ch. $2017)\n\n27.0\nUSD, trillions (ch. $2017)\n\n2.8\n\n26.0\n\n2.7\n\n25.0\n\n2.6\n\n24.0\n\n2.5\n\n23.0\n\n2.4\n\n22.0\n\n2.3\n\n21.0\n\n2.2\n\nRange of Estimated Scenarios\nBaseline (October 31, 2025)\nBaseline (October 31, 2024)\n\nRange of Estimated Scenarios\nBaseline (October 31, 2025)\nBaseline (October 31, 2024)\n\n20.0\n\n2.1\n\n19.0\n\n2.0\n\n2027 Q2\n\n2027 Q2\n\n2027 Q3\n\n2027 Q3\n\n2027 Q4\n\n2027 Q4\n\n2027 Q1\n\n2027 Q1\n\n2025 Q2\n\n2025 Q2\n\n2025 Q3\n\n2025 Q3\n\n2025 Q1\n\n2025 Q1\n\n2024 Q3\n\n2029 Q2\n\n2029 Q2\n\n2025 Q4\n\n2025 Q4\n\n2029 Q3\n\n2029 Q3\n\n2024 Q4\n\n2029 Q1\n\n2029 Q1\n\n2024 Q4\n\n2029 Q4\n\n2029 Q4\n\n2030 Q2\n\n2030 Q2\n\n2024 Q3\n\n2028 Q1\n\n2028 Q1\n\n2026 Q1\n\n2026 Q1\n\n2026 Q2\n\n2030 Q1\n\n2026 Q2\n\n2030 Q1\n\n2028 Q2\n\n2028 Q2\n\n2026 Q4\n\n2026 Q4\n\n2026 Q3\n\n2026 Q3\n\n2028 Q3\n\n2028 Q3\n\n2028 Q4\n\n2028 Q4",
+        "similarity": 0.5041070580482483,
+        "bank": "Bank of Nova Scotia",
+        "section": "Management’s Discussion and Analysis",
+        "fiscal_year": 2025,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_start": 94,
+        "page_end": 94,
+        "bank_code": "BNS"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00184",
+        "text": "Our diversified business model, as well as our product and geographic diversification, continue to help mitigate the risks posed\nby global uncertainty. Sustainability-related legal and regulatory activity\nApplicable sustainability-related laws, regulations, policies, frameworks, methodologies and guidance continue to evolve in\ninconsistent ways across the regions in which we operate. As such, new or heightened requirements could result in increased\nregulatory, compliance or other costs or higher capital requirements, and may subject us to different and potentially conflicting\npolicies and requirements in the various jurisdictions in which we operate. We continue to monitor the development of\napplicable laws, regulations, policies, frameworks, methodologies and guidance in this area, including but not limited to the\nevolution of sustainability disclosure requirements and climate risk management requirements for financial institutions.\n\nIn Canada, OSFI’s Guideline B-15 Climate Risk Management, issued in March 2023, sets expectations for managing and\ndisclosing climate-related risks. Subsequent updates in 2024 and 2025 aligned disclosure expectations with IFRS S2 Climate-\nrelated Disclosures issued by the International Sustainability Standards Board (ISSB) and extended certain implementation\ntimelines to fiscal 2028 and 2029. We expect to meet upcoming disclosure phases and continue to monitor further developments.\n\nIn the U.S., scrutiny of financial institutions relating to environmental and/or social matters, including climate, continues to\nbe heightened at both the federal and state levels, including through statutes, regulations and litigation. As environmental and\nsocial issues remain heavily politicized, statutes or regulations in certain states may be interpreted to prohibit governmental\nentities, such as public pension funds and issuers of municipal bonds, from doing business with certain financial institutions,\nand political pressure may be placed upon governmental entities to not do business with certain financial institutions, based on\nthe financial institutions’ perceived positions on certain environmental and/or social matters. We continue to monitor\ndevelopments in this area and assess their impacts on our businesses.\n\nIn Europe, the European Union’s Corporate Sustainability Reporting Directive (CSRD) requires reporting under the European\nSustainability Reporting Standards (ESRS). The ESRS, which were adopted by the European Commission in July 2023, set out the\nrequirements for companies to report on sustainability-related impacts, opportunities and risks. We anticipate that we will be\nsubject to reporting obligations under the CSRD from fiscal 2029 at the consolidated level, and are currently assessing the\nimpact of these requirements.\n\nWe continue to monitor the development of applicable anti-greenwashing laws and regulations as well as climate-related\nlitigation and regulatory enforcement actions related to greenwashing, including amendments to the Competition Act (Canada)\nwhich came into force on June 20, 2024, and which introduced new anti-greenwashing provisions. These provisions are in addition\nto the pre-existing provisions of the Competition Act (Canada) that prohibit the making of claims that are materially false or\nmisleading. “Greenwashing” generally refers to the practice of conveying false or misleading information about an organization’s\nproducts or services or operations to suggest that the organization is doing more to protect the environment than it is.\n\nModel risk management\nOn September 11, 2025, OSFI released its final Guideline E-23 – Model Risk Management, which sets out expectations for\nmanaging risks associated with traditional models as well as emerging technologies such as artificial intelligence and machine\nlearning.\n\nThis guideline will be effective May 1, 2027. We have assessed the requirements and do not anticipate any issues in\ncomplying with the requirements by the effective date.",
+        "similarity": 0.642678439617157,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "section": "Management’s Discussion and Analysis",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "page_start": 109,
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 110
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00020",
+        "text": "Royal Bank of Canada Annual Report 2025 | 21\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable a reader to assess our results of operations and financial condition for the fiscal\nyear ended October 31, 2025, compared to the preceding fiscal year. This MD&A should be read in conjunction with our 2025 Annual Consolidated\nFinancial Statements and related notes and is dated December 2, 2025. All amounts are in Canadian dollars, unless otherwise specified, and are based on\nfinancial statements presented in accordance with International Financial Reporting Standards (IFRS) as issued by the International Accounting\nStandards Board (IASB), unless otherwise noted.\nAdditional information about us, including our 2025 Annual Information Form, is available free of charge on our website at rbc.com/investorrelations, on\nthe Canadian Securities Administrators’ website, SEDAR+, at sedarplus.com and on the EDGAR section of the United States (U.S.) Securities and\nExchange Commission’s (SEC) website at sec.gov.\nInformation contained in or otherwise accessible through the websites mentioned herein does not form part of this report. All references in this report to\nwebsites are inactive textual references and are for your information only.\n\nTable of contents\n\nKey performance and non-GAAP\n\nCaution regarding forward-looking\n\nstatements\n22\n\nInsurance risk\n102",
+        "similarity": 0.5945743918418884,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "section": "Management’s Discussion and Analysis",
+        "page_start": 23,
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_end": 24,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00018",
+        "text": "\n\u0007Expanded access to no-cost banking accounts2 for skills needed for a thriving future. Indigenous Peoples in Canada as well as anyone aged 24 and under, including non-students. \n\u0007RBC announced a $5 million commitment over five years to Windmill Microlending, a national charity offering \n\u0007RBC, RBC Foundation and RBC Foundation USA career loans to skilled immigrants and refugees. The announced a $10-million commitment globally to support will focus on helping internationally trained organizations addressing food insecurity. physicians secure Canadian credentials and restart \n\u0007My Money Matters®, RBC’s digital resource hub aimed at their healthcare careers. helping Canadians navigate their personal relationships \n\u0007RBC and RBC Foundation provided $11+ million to\n\nwith money, has been visited 7+ million times since its\n\npost-secondary institutions in Canada for programs that\n\n2023 launch.\n\nsupport job readiness and address labour market gaps\n\n\n\u0007Since 2019, 398,000+ people have registered for free\n\nin sectors facing talent shortages.\n\nonline courses in financial literacy, entrepreneurship\n\n\nRBC Foundation provided $3+ million to hospitals across\n\nand agriculture management.3 These courses were\n\nCanada to help upskill healthcare workers and support\n\ndeveloped by professors from McGill University, Ivey\n\ntheir resiliency.\n\nBusiness School at Western University and University of\n\nGuelph with support from RBC.\n\n2 This expanded access has in part been made available through RBC’s adherence to recent enhancements to the voluntary Commitment on Low-Cost and No-Cost Accounts, which came into\neffect on December 1, 2025.\n\n3 Since October 2019 for McGill University, January 2022 for University of Guelph and May 2022 for Western University.\n\nRoyal Bank of Canada Annual Report 2025 | 19\n\nPlanet\n\nPlanet\n\nOur goal is to be the bank of choice for the transition1\nto a low-carbon2 and resilient3 economy.\n\n1\nRefers to the economic, energy, technological and societal transformation that is required to achieve the significant greenhouse gas (GHG) emissions reductions necessary for a low-carbon or\nnet-zero world. This will impact all sectors, and is highly dependent on substantial GHG emissions reductions in high-emitting sectors.\n\n2 Refers to an economy with minimal output of GHG emissions.\n\n3 Refers to the capacity to anticipate, cope with, recover from or adapt to shock, disruption, stress or changing factors in the external environment. In the context of climate, this refers to the\nresilience of the economy to the effects of climate change. In the context of communities, this refers to communities being resilient to a wide range of risks while maintaining an acceptable\nlevel of functioning without compromising long-term prospects of sustainability development, peace and security, human rights and wellbeing for all.\n\n20 | Royal Bank of Canada Annual Report 2025\n\nPlanet\n\n\u0007Increased lending exposure to pure play renewable energy4 entities and\n\nestimated exposure to renewable energy through lending to mixed-energy\n\nentities,5 advancing towards our goal of tripling this lending by 2030 across\n\nCapital Markets and Commercial Banking, relative to our 2023 baseline.\n\nCommitted $80+ million in fund and\ndirect investments, totalling $248+ million\n\nsince 2022, to support the development and\n\nscaling of climate solutions,6 progressing towards\n\nour goal of allocating $1 billion by 2030.7\n\n\u0007Created a dedicated Energy\nTransition centre of\nexcellence within Capital\n\nMarkets to support clients on\n\nenergy transition with advice\n\nand capital.",
+        "similarity": 0.5759233832359314,
+        "fiscal_year": 2025,
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank": "Royal Bank of Canada",
+        "page_start": 21,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_end": 23,
+        "document_type": "annual_report",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "quarter": 0,
+        "bank_code": "RBC"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00028",
+        "text": "By their very nature, forward-looking statements require us to make assumptions and are subject to inherent risks and uncertainties, both general and\nspecific in nature, which give rise to the possibility that our predictions, forecasts, projections, expectations or conclusions will not prove to be accurate,\nthat our assumptions may not be correct, that our financial performance, environmental & social or other objectives, vision and strategic goals will not be\nachieved, and that our actual results may differ materially from such predictions, forecasts, projections, expectations or conclusions.\n\nWe caution readers not to place undue reliance on our forward-looking statements as a number of risk factors could cause our actual results to differ\nmaterially from the expectations expressed in such forward-looking statements. These factors – many of which are beyond our control and the effects of\nwhich can be difficult to predict – include, but are not limited to: business and economic conditions in the geographic regions in which we operate, Canadian\nhousing and household indebtedness, information technology, cyber and third-party risks, geopolitical uncertainty, environmental and social (E&S) risk,\ndigital disruption and innovation, privacy and data related risks, regulatory changes, culture and conduct risks, credit, market, liquidity and funding,\ninsurance, operational, compliance, reputation and strategic risks, other risks discussed in the risk sections of our 2025 Annual Report, including legal and\nregulatory environment risk, the effects of changes in government fiscal, monetary and other policies and tax risk and transparency, risks associated with\nescalating trade tensions, including protectionist trade policies such as the imposition of tariffs, risks associated with the adoption of emerging\ntechnologies, such as cloud computing, artificial intelligence (AI), including generative AI (GenAI), and robotics, fraud risk and our ability to anticipate and\nsuccessfully manage risks arising from all of the foregoing factors. Additional factors that could cause actual results to differ materially from the\nexpectations in such forward-looking statements can be found in the risk sections of our 2025 Annual Report, as may be updated by subsequent quarterly\nreports.\n\nWe caution that the foregoing list of risk factors is not exhaustive and other factors could also adversely affect our results. When relying on our\nforward-looking statements to make decisions with respect to us, investors and others should carefully consider the foregoing factors and other\nuncertainties and potential events, as well as the inherent uncertainty of forward-looking statements. Material economic assumptions underlying the\nforward-looking statements contained in this 2025 Annual Report are set out in the Economic, market and regulatory review and outlook section and for each\nbusiness segment under the Strategic priorities and Outlook headings, as such sections may be updated by subsequent quarterly reports. Any forward-\nlooking statements contained in this document represent the views of management only as of the date hereof, and except as required by law, we do not\nundertake to update any forward-looking statement, whether written or oral, that may be made from time to time by us or on our behalf.\n\nAdditional information about these and other factors can be found in the risk sections of this 2025 Annual Report, as may be updated by subsequent\nquarterly reports.\n\n22",
+        "similarity": 0.607040524482727,
+        "bank_code": "RBC",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 24,
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_end": 24,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "section": "Market risk"
+      }
+    ],
+    "structured": {
+      "answer": "Scotiabank's 2025 annual report highlights the rising costs of climate change and the increased regulatory oversight related to climate risks, emphasizing the potential impacts of physical risks such as severe weather events on profitability. The bank has mechanisms in place to identify and mitigate these risks, including disaster recovery planning and a public ESG policy that restricts lending to certain high-risk sectors like Oil & Gas in the Arctic and thermal coal mining [S1]. Scotiabank also acknowledges the uncertainty created by changing political environments in the U.S. and Canada regarding climate-related regulations, which could affect clients' willingness to reduce emissions [S1]. \n\nIn contrast, RBC's 2025 annual report discusses the evolving landscape of sustainability-related laws and regulations, noting that these changes could lead to increased compliance costs and regulatory scrutiny. RBC is actively monitoring developments in climate risk management requirements and aims to meet upcoming disclosure phases set by OSFI and the ISSB [S5]. The bank also emphasizes its commitment to supporting the transition to a low-carbon economy, with specific goals for increasing lending to renewable energy sectors and investing in climate solutions [S7]. \n\nOverall, while both banks recognize the importance of managing climate risks, Scotiabank focuses more on the immediate impacts of physical risks and regulatory uncertainties, whereas RBC emphasizes its proactive approach to compliance and its strategic goals for supporting the transition to a low-carbon economy.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Bank of Nova Scotia",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        },
+        {
+          "label": "S7",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 1.5429118999745697
+  },
+  "latency_seconds": 7.234317600028589,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0010938,
+  "input_tokens": 5736,
+  "output_tokens": 389,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.04800710012204945,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 4,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer contains mostly accurate claims about Scotiabank and RBC's disclosures on climate risks, but some details lack direct support from the provided evidence, particularly regarding specific mechanisms and policies mentioned.",
+    "relevance_reason": "The answer addresses the comparison of climate risk disclosures between Scotiabank and RBC, but it could be more focused on specific similarities and differences as requested.",
+    "completeness_reason": "The answer does not fully cover all aspects of the requested comparison, particularly missing specific details from RBC's disclosures that would provide a more comprehensive view.",
+    "unsupported_claims": [],
+    "reference_limitations": "The answer does not include specific page references or direct quotes from the actual reports for some claims, which limits the ability to verify all statements."
+  },
+  "judge_cost_usd": 0.0024833999999999998,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_19",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

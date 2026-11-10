@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_14",
+  "config": "agentic",
+  "question": {
+    "id": "eval_14",
+    "question": "What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed cybersecurity and technology risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?",
+    "answer": "In its 2025 annual report, CIBC disclosed several cybersecurity and technology risks:\n\n1. **Cybersecurity Risks**:\n   - CIBC highlighted the increasing frequency and sophistication of cyber threats, which pose risks such as financial loss, reputational harm, regulatory exposure, and business interruption. Specific threats mentioned include data breaches, malware, ransomware, unauthorized access, social engineering, fraud, and denial-of-service attacks. These risks could lead to damage to CIBC's systems, theft or loss of confidential information, unauthorized activity, and service disruptions (CIBC_2025_annual_report_FY_00115).\n\n2. **Technology Risks**:\n   - The bank noted that evolving technology solutions, while enhancing capabilities and efficiencies, also increase complexity in management and resilience across various platforms. CIBC is focused on maintaining a robust control environment to manage risks associated with technology development, deployment, and operations (CIBC_2025_annual_report_FY_00116).\n\n3. **AI and Data Risks**:\n   - CIBC acknowledged risks associated with the use of AI, including potential bias and ethical concerns. The bank has implemented an AI Framework and governance practices to manage these risks. Additionally, they are investing in data management and governance to support strategic objectives and mitigate operational risks (CIBC_2025_annual_report_FY_00117).\n\n4. **Third-party Risks**:\n   - The report also discussed risks arising from third-party relationships, which can introduce potential disruptions due to reliance on external entities for services and technology (CIBC_2025_annual_report_FY_00116).\n\nFor further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4310,
+    "output_tokens": 413,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000894,
+    "seconds": 8.07,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "cybersecurity technology risks",
+          "bank": "CIBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00115",
+              "text": "Information and cyber security risk\nWe continue to evolve our use of technology and business processes to improve the client experience and streamline operations. Concurrently,\ncyber threats are growing in frequency and sophistication, increasing the potential for financial loss, reputational harm, regulatory exposure and\nbusiness interruption. We actively manage these risks through strategic risk reviews and enterprise-wide technology and information security\nprograms aimed at prevention, detection, response and recovery. Threats include data breaches, malware and ransomware, unauthorized access,\nsocial engineering and fraud, and denial-of-service attacks, which may result in damage to CIBC systems and information; theft, loss or disclosure\nof confidential information; unauthorized or fraudulent activity; and service disruption at CIBC or its service providers, including those that offer\ncloud services.\n\nGiven the importance of electronic financial systems, including secure online and mobile banking provided by CIBC to its clients, CIBC\nmonitors the changing environment globally, including cyber threats, mitigation strategies and evolving regulatory requirements, to enhance our\ncontrols and processes to protect our systems and client information. In addition, we perform cyber security preparedness, testing, and recovery\nexercises to validate our defences, benchmark against best practices and provide regular updates to the Board. We have well-defined cyber\nincident response protocols and playbooks in the event that a security incident or breach occurs. We also have cyber insurance coverage to help\nmitigate against certain potential losses associated with cyber incidents. Our insurance coverage is subject to various terms and provisions,\nincluding limits on the types and amounts of coverage relating to losses arising from cyber incidents. We periodically assess our insurance\ncoverage based on our risk tolerance and limits. Despite our ongoing commitment to information and cyber security, and given the rapidly evolving\nthreat and regulatory landscape, coupled with a changing business environment, it is not possible for us to identify all cyber risks or implement\nmeasures that prevent all potential cyber incidents. We monitor our risk profile for changes and continue to refine our protection, detection,\nresponse and resilience capabilities to minimize the impact of any cyber incidents that may occur.\n\nTechnology risk\nWe are continuing to evolve our technology services to improve the client experience and streamline operations. New technology solutions offer\nadvanced capabilities, connectivity between systems and efficiencies to support a growing business, while also increasing the complexity of\nongoing management and resilience across multiple internal and external stakeholders and platforms hosted on premises, in the cloud or by third\nparties. Globally, regulators continue to expect financial institutions to have well-designed and managed technology development, deployment,\noperational and support processes in place to actively manage the risks inherent to a large enterprise technology environment.\n\nWe continue to manage these risks through our risk management and governance structures that include policies, standards, and risk\nassessment, measurement and monitoring tools. A robust control environment is in place, focused on developing, delivering and maintaining high-\nquality, reliable and stable technology solutions that support business needs and enable operations within our risk appetite.",
+              "similarity": 0.626,
+              "page_end": 64,
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "page_start": 64,
+              "bank_code": "CIBC",
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "section": "Management’s discussion and analysis",
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "bank": "Canadian Imperial Bank of Commerce"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00192",
+              "text": "Operational risk practices are continuously enhanced to increase robustness of\nthe operational risk management program for effective and efficient identification, measurement, mitigation, monitoring and reporting of operational\nrisks at CIBC. Operational risks that may adversely impact CIBC include the following: Anti-money laundering/anti-terrorist financing\nThe risk of CIBC’s potential non-conformance with global AML and ATF regulatory requirements and sanctions regulations which may lead to\nenhanced regulatory scrutiny, regulatory censure (i.e., cease and desist orders) and/or financial loss (i.e., regulatory, criminal or civil penalties and/\nor forfeiture of assets). See the “Top and emerging risks – Anti-money laundering, anti-terrorist financing and sanctions” section for further details.\n\nData risk\nThe risk arising from inadequate management of the data life cycle, which may impair CIBC’s ability to deliver consistent and accurate data. This\nrisk can impact critical activities such as financial reporting, regulatory compliance, and the effectiveness of analytical tools or models that help\nmake informed business decisions. See the “Top and emerging risks – Data and Artificial Intelligence risk” section for further details.\n\nFraud risk\nThe risk relating to any intentional act or omission designed to deceive others with a goal of misappropriating property/assets or circumventing\nregulations, the law or CIBC policies/procedures to achieve financial gain or benefit. These intentional acts can be committed by team members or\nby external parties (e.g., clients or third parties).\n\nInformation security risk (including cyber security)\nThe risk to the confidentiality, integrity and availability of CIBC-owned information, and the information entrusted to CIBC by clients, employees,\nshareholders, business partners, and third parties that if lost, disclosed, accessed, modified, or disrupted/destroyed without authorization, could\ncause damage to CIBC’s business and its customers. See the “Top and emerging risks – Information and cyber security risk” section for further\ndetails.\n\nTechnology risk\nThe risk of financial losses, operational disruptions, or damage to organizational reputation due to compromised availability, stability, resilience,\ncapacity, performance, currency, or integrity of technology. See the “Top and emerging risks – Technology risk” section for further details.\n\nThird-party risk\nThe potential risk that may arise from relying on a third-party business arrangement between CIBC and another entity, by contract or otherwise. This\nincludes activities that involve outsourced products and services, use of outside consultants, networking arrangements, managed services, services\nprovided by affiliates and subsidiaries, joint ventures, sponsorships, no-fee contracts, and any other arrangement that involves the delivery of\nbusiness activities, functions or processes to CIBC and/or its clients. See the “Top and emerging risks – Third-party risk” section for further details.\n\nOther operational risks include business interruption risk, conduct and culture risk (see the “Conduct and culture risk” section), financial reporting\nrisk, legal risk (see the “Reputation and legal risks” section), model risk, people risk, privacy risk, project risk, physical security risk, regulatory\ncompliance risk (see the “Regulatory compliance risk” section) and processing and execution risk.",
+              "similarity": 0.544,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "page_start": 91,
+              "bank_code": "CIBC",
+              "document_type": "annual_report",
+              "section": "Management’s discussion and analysis",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "page_end": 92
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00117",
+              "text": "Alongside the potential benefits of AI tools and technology comes risks; as AI systems make decisions based on data and models, they can inherit or\namplify bias or raise concerns about fairness or ethical use. In addition, transparency in AI models is required to ensure the reasoning, accuracy or\nappropriateness of the output is clearly understood. CIBC has published an AI Framework and has implemented AI governance and risk management\npractices. From a model risk perspective, OSFI published its final version of Guideline E-23 on Model Risk Management to take effect on May 1, 2027. The revised Guideline E-23 now includes AI and Machine Learning (ML) methodologies in the definition of “model” given the surge in AI/ML analytics. As we navigate the increased adoption of solutions using AI, our approach will remain rooted in ensuring responsible use and ensuring operational risks\nare mitigated.\n\nThird-party risk\nThe Board and senior management recognize the establishment of third-party relationships as important to CIBC’s business model and therefore\nleverage them to achieve CIBC’s business objectives. With the introduction of new technologies and increasing reliance on sub-contractors, the\nthird-party landscape continues to evolve. While such relationships may benefit us through reduced costs, increased innovation, improved\nperformance and increased business competitiveness, they can also introduce risks of failure or disruption to CIBC through breakdowns in people,\nprocesses or technology or through external events that impact these third parties.\n\nTo mitigate third-party risks, prepare for future third-party risks and changing regulatory expectations, and to ensure existing processes and\ninternal controls are operating effectively, we rely on our strong risk culture and established the Third Party Risk Management program, which\nincludes policies, procedures, expertise and resources dedicated to third-party risk management. The program identifies and manages risks that\narise from third-party relationships from the point of planning through the life cycle of the business arrangement and supports the maintenance of\ncollaborative relationships that advance our strategic direction and operational needs within our risk appetite.\n\nAnti-money laundering, anti-terrorist financing and sanctions\nMoney laundering, terrorist financing, and related crimes threaten the financial sector’s stability. CIBC is committed to meeting all AML, ATF, and\neconomic sanctions regulations in every jurisdiction where it operates. As identified in Canada’s 2025 National Risk Assessment, banks face\nsignificant risks from financial crimes such as drug trafficking, fraud, and crypto-related activities. In response, CIBC invests in robust controls,\nadvanced detection technologies, and comprehensive compliance programs. The bank maintains thorough client due diligence, record keeping,\nand reporting procedures, and requires annual AML/ATF and sanctions training for all team members. With ongoing regulatory changes expected\nthrough 2026, CIBC continuously monitors and enhances its compliance program to address evolving risks and regulatory expectations.",
+              "similarity": 0.451,
+              "page_end": 65,
+              "bank_code": "CIBC",
+              "section": "Management’s discussion and analysis",
+              "quarter": 0,
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "document_type": "annual_report",
+              "page_start": 65,
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "fiscal_year": 2025,
+              "bank": "Canadian Imperial Bank of Commerce",
+              "file_name": "CIBC_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00116",
+              "text": "New technology solutions offer\nadvanced capabilities, connectivity between systems and efficiencies to support a growing business, while also increasing the complexity of\nongoing management and resilience across multiple internal and external stakeholders and platforms hosted on premises, in the cloud or by third\nparties. Globally, regulators continue to expect financial institutions to have well-designed and managed technology development, deployment,\noperational and support processes in place to actively manage the risks inherent to a large enterprise technology environment. We continue to manage these risks through our risk management and governance structures that include policies, standards, and risk\nassessment, measurement and monitoring tools. A robust control environment is in place, focused on developing, delivering and maintaining high-\nquality, reliable and stable technology solutions that support business needs and enable operations within our risk appetite.\n\nDisintermediation risk\nThe level of disintermediation risk from fintechs for Canadian financial institutions is generally considered low. Canada has a growing fintech sector,\nwith numerous startups and established tech companies offering digital financial services as alternatives to traditional banking services, such as\nautomated investing, peer-to-peer lending, and financial management tools. Canadian consumers have demonstrated increasing use of digital\nservices, evidenced by high rates of online banking usage. Canada’s robust regulatory framework somewhat limits the speed and extent of\ndisruption by fintechs. However, regulations are evolving, and the authorities’ increasing openness to fintech innovations and open-banking could\nheighten disintermediation risks if we do not continue to invest in our digital capabilities. Ease of use is the primary factor we consider when\nevaluating disintermediation risk from fintechs. With fintechs primarily focused on digital engagement, the risk of clients choosing fintech solutions\nremains low. Although fintechs have not yet demonstrated success in providing financial advice and wealth management services in Canada, the\nthreat may increase in the future. CIBC’s proactivity in adopting new technologies and integrating digital financial services helps to mitigate this risk\n\nData and Artificial Intelligence risk\nData is being used every day to further advance CIBC’s strategic objectives and create competitive advantages. To support this, we continue to\ninvest in our data management and governance capabilities to ensure we have a strong data foundation and business decision making, and grow\nour analytics and reporting practices to use data as a transformative asset.\n\nWith rapid advances in technology, we continue to observe growth in applications of AI to drive productivity and competitive enhancements.\nAlongside the potential benefits of AI tools and technology comes risks; as AI systems make decisions based on data and models, they can inherit or\namplify bias or raise concerns about fairness or ethical use. In addition, transparency in AI models is required to ensure the reasoning, accuracy or\nappropriateness of the output is clearly understood. CIBC has published an AI Framework and has implemented AI governance and risk management\npractices. From a model risk perspective, OSFI published its final version of Guideline E-23 on Model Risk Management to take effect on May 1, 2027.\nThe revised Guideline E-23 now includes AI and Machine Learning (ML) methodologies in the definition of “model” given the surge in AI/ML analytics.\nAs we navigate the increased adoption of solutions using AI, our approach will remain rooted in ensuring responsible use and ensuring operational risks\nare mitigated.",
+              "similarity": 0.442,
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "fiscal_year": 2025,
+              "section": "Management’s discussion and analysis",
+              "bank_code": "CIBC",
+              "document_type": "annual_report",
+              "page_end": 65,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "quarter": 0,
+              "page_start": 64,
+              "filing_id": "CIBC_2025_annual_report_FY"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In its 2025 annual report, CIBC disclosed several cybersecurity and technology risks:\n\n1. **Cybersecurity Risks**:\n   - CIBC highlighted the increasing frequency and sophistication of cyber threats, which pose risks such as financial loss, reputational harm, regulatory exposure, and business interruption. Specific threats mentioned include data breaches, malware, ransomware, unauthorized access, social engineering, fraud, and denial-of-service attacks. These risks could lead to damage to CIBC's systems, theft or loss of confidential information, unauthorized activity, and service disruptions (CIBC_2025_annual_report_FY_00115).\n\n2. **Technology Risks**:\n   - The bank noted that evolving technology solutions, while enhancing capabilities and efficiencies, also increase complexity in management and resilience across various platforms. CIBC is focused on maintaining a robust control environment to manage risks associated with technology development, deployment, and operations (CIBC_2025_annual_report_FY_00116).\n\n3. **AI and Data Risks**:\n   - CIBC acknowledged risks associated with the use of AI, including potential bias and ethical concerns. The bank has implemented an AI Framework and governance practices to manage these risks. Additionally, they are investing in data management and governance to support strategic objectives and mitigate operational risks (CIBC_2025_annual_report_FY_00117).\n\n4. **Third-party Risks**:\n   - The report also discussed risks arising from third-party relationships, which can introduce potential disruptions due to reliance on external entities for services and technology (CIBC_2025_annual_report_FY_00116).\n\nFor further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00115",
+        "text": "Information and cyber security risk\nWe continue to evolve our use of technology and business processes to improve the client experience and streamline operations. Concurrently,\ncyber threats are growing in frequency and sophistication, increasing the potential for financial loss, reputational harm, regulatory exposure and\nbusiness interruption. We actively manage these risks through strategic risk reviews and enterprise-wide technology and information security\nprograms aimed at prevention, detection, response and recovery. Threats include data breaches, malware and ransomware, unauthorized access,\nsocial engineering and fraud, and denial-of-service attacks, which may result in damage to CIBC systems and information; theft, loss or disclosure\nof confidential information; unauthorized or fraudulent activity; and service disruption at CIBC or its service providers, including those that offer\ncloud services.\n\nGiven the importance of electronic financial systems, including secure online and mobile banking provided by CIBC to its clients, CIBC\nmonitors the changing environment globally, including cyber threats, mitigation strategies and evolving regulatory requirements, to enhance our\ncontrols and processes to protect our systems and client information. In addition, we perform cyber security preparedness, testing, and recovery\nexercises to validate our defences, benchmark against best practices and provide regular updates to the Board. We have well-defined cyber\nincident response protocols and playbooks in the event that a security incident or breach occurs. We also have cyber insurance coverage to help\nmitigate against certain potential losses associated with cyber incidents. Our insurance coverage is subject to various terms and provisions,\nincluding limits on the types and amounts of coverage relating to losses arising from cyber incidents. We periodically assess our insurance\ncoverage based on our risk tolerance and limits. Despite our ongoing commitment to information and cyber security, and given the rapidly evolving\nthreat and regulatory landscape, coupled with a changing business environment, it is not possible for us to identify all cyber risks or implement\nmeasures that prevent all potential cyber incidents. We monitor our risk profile for changes and continue to refine our protection, detection,\nresponse and resilience capabilities to minimize the impact of any cyber incidents that may occur.\n\nTechnology risk\nWe are continuing to evolve our technology services to improve the client experience and streamline operations. New technology solutions offer\nadvanced capabilities, connectivity between systems and efficiencies to support a growing business, while also increasing the complexity of\nongoing management and resilience across multiple internal and external stakeholders and platforms hosted on premises, in the cloud or by third\nparties. Globally, regulators continue to expect financial institutions to have well-designed and managed technology development, deployment,\noperational and support processes in place to actively manage the risks inherent to a large enterprise technology environment.\n\nWe continue to manage these risks through our risk management and governance structures that include policies, standards, and risk\nassessment, measurement and monitoring tools. A robust control environment is in place, focused on developing, delivering and maintaining high-\nquality, reliable and stable technology solutions that support business needs and enable operations within our risk appetite.",
+        "similarity": 0.626,
+        "page_end": 64,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "page_start": 64,
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "section": "Management’s discussion and analysis",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank": "Canadian Imperial Bank of Commerce"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00192",
+        "text": "Operational risk practices are continuously enhanced to increase robustness of\nthe operational risk management program for effective and efficient identification, measurement, mitigation, monitoring and reporting of operational\nrisks at CIBC. Operational risks that may adversely impact CIBC include the following: Anti-money laundering/anti-terrorist financing\nThe risk of CIBC’s potential non-conformance with global AML and ATF regulatory requirements and sanctions regulations which may lead to\nenhanced regulatory scrutiny, regulatory censure (i.e., cease and desist orders) and/or financial loss (i.e., regulatory, criminal or civil penalties and/\nor forfeiture of assets). See the “Top and emerging risks – Anti-money laundering, anti-terrorist financing and sanctions” section for further details.\n\nData risk\nThe risk arising from inadequate management of the data life cycle, which may impair CIBC’s ability to deliver consistent and accurate data. This\nrisk can impact critical activities such as financial reporting, regulatory compliance, and the effectiveness of analytical tools or models that help\nmake informed business decisions. See the “Top and emerging risks – Data and Artificial Intelligence risk” section for further details.\n\nFraud risk\nThe risk relating to any intentional act or omission designed to deceive others with a goal of misappropriating property/assets or circumventing\nregulations, the law or CIBC policies/procedures to achieve financial gain or benefit. These intentional acts can be committed by team members or\nby external parties (e.g., clients or third parties).\n\nInformation security risk (including cyber security)\nThe risk to the confidentiality, integrity and availability of CIBC-owned information, and the information entrusted to CIBC by clients, employees,\nshareholders, business partners, and third parties that if lost, disclosed, accessed, modified, or disrupted/destroyed without authorization, could\ncause damage to CIBC’s business and its customers. See the “Top and emerging risks – Information and cyber security risk” section for further\ndetails.\n\nTechnology risk\nThe risk of financial losses, operational disruptions, or damage to organizational reputation due to compromised availability, stability, resilience,\ncapacity, performance, currency, or integrity of technology. See the “Top and emerging risks – Technology risk” section for further details.\n\nThird-party risk\nThe potential risk that may arise from relying on a third-party business arrangement between CIBC and another entity, by contract or otherwise. This\nincludes activities that involve outsourced products and services, use of outside consultants, networking arrangements, managed services, services\nprovided by affiliates and subsidiaries, joint ventures, sponsorships, no-fee contracts, and any other arrangement that involves the delivery of\nbusiness activities, functions or processes to CIBC and/or its clients. See the “Top and emerging risks – Third-party risk” section for further details.\n\nOther operational risks include business interruption risk, conduct and culture risk (see the “Conduct and culture risk” section), financial reporting\nrisk, legal risk (see the “Reputation and legal risks” section), model risk, people risk, privacy risk, project risk, physical security risk, regulatory\ncompliance risk (see the “Regulatory compliance risk” section) and processing and execution risk.",
+        "similarity": 0.544,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_start": 91,
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "section": "Management’s discussion and analysis",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "page_end": 92
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00117",
+        "text": "Alongside the potential benefits of AI tools and technology comes risks; as AI systems make decisions based on data and models, they can inherit or\namplify bias or raise concerns about fairness or ethical use. In addition, transparency in AI models is required to ensure the reasoning, accuracy or\nappropriateness of the output is clearly understood. CIBC has published an AI Framework and has implemented AI governance and risk management\npractices. From a model risk perspective, OSFI published its final version of Guideline E-23 on Model Risk Management to take effect on May 1, 2027. The revised Guideline E-23 now includes AI and Machine Learning (ML) methodologies in the definition of “model” given the surge in AI/ML analytics. As we navigate the increased adoption of solutions using AI, our approach will remain rooted in ensuring responsible use and ensuring operational risks\nare mitigated.\n\nThird-party risk\nThe Board and senior management recognize the establishment of third-party relationships as important to CIBC’s business model and therefore\nleverage them to achieve CIBC’s business objectives. With the introduction of new technologies and increasing reliance on sub-contractors, the\nthird-party landscape continues to evolve. While such relationships may benefit us through reduced costs, increased innovation, improved\nperformance and increased business competitiveness, they can also introduce risks of failure or disruption to CIBC through breakdowns in people,\nprocesses or technology or through external events that impact these third parties.\n\nTo mitigate third-party risks, prepare for future third-party risks and changing regulatory expectations, and to ensure existing processes and\ninternal controls are operating effectively, we rely on our strong risk culture and established the Third Party Risk Management program, which\nincludes policies, procedures, expertise and resources dedicated to third-party risk management. The program identifies and manages risks that\narise from third-party relationships from the point of planning through the life cycle of the business arrangement and supports the maintenance of\ncollaborative relationships that advance our strategic direction and operational needs within our risk appetite.\n\nAnti-money laundering, anti-terrorist financing and sanctions\nMoney laundering, terrorist financing, and related crimes threaten the financial sector’s stability. CIBC is committed to meeting all AML, ATF, and\neconomic sanctions regulations in every jurisdiction where it operates. As identified in Canada’s 2025 National Risk Assessment, banks face\nsignificant risks from financial crimes such as drug trafficking, fraud, and crypto-related activities. In response, CIBC invests in robust controls,\nadvanced detection technologies, and comprehensive compliance programs. The bank maintains thorough client due diligence, record keeping,\nand reporting procedures, and requires annual AML/ATF and sanctions training for all team members. With ongoing regulatory changes expected\nthrough 2026, CIBC continuously monitors and enhances its compliance program to address evolving risks and regulatory expectations.",
+        "similarity": 0.451,
+        "page_end": 65,
+        "bank_code": "CIBC",
+        "section": "Management’s discussion and analysis",
+        "quarter": 0,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "document_type": "annual_report",
+        "page_start": 65,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00116",
+        "text": "New technology solutions offer\nadvanced capabilities, connectivity between systems and efficiencies to support a growing business, while also increasing the complexity of\nongoing management and resilience across multiple internal and external stakeholders and platforms hosted on premises, in the cloud or by third\nparties. Globally, regulators continue to expect financial institutions to have well-designed and managed technology development, deployment,\noperational and support processes in place to actively manage the risks inherent to a large enterprise technology environment. We continue to manage these risks through our risk management and governance structures that include policies, standards, and risk\nassessment, measurement and monitoring tools. A robust control environment is in place, focused on developing, delivering and maintaining high-\nquality, reliable and stable technology solutions that support business needs and enable operations within our risk appetite.\n\nDisintermediation risk\nThe level of disintermediation risk from fintechs for Canadian financial institutions is generally considered low. Canada has a growing fintech sector,\nwith numerous startups and established tech companies offering digital financial services as alternatives to traditional banking services, such as\nautomated investing, peer-to-peer lending, and financial management tools. Canadian consumers have demonstrated increasing use of digital\nservices, evidenced by high rates of online banking usage. Canada’s robust regulatory framework somewhat limits the speed and extent of\ndisruption by fintechs. However, regulations are evolving, and the authorities’ increasing openness to fintech innovations and open-banking could\nheighten disintermediation risks if we do not continue to invest in our digital capabilities. Ease of use is the primary factor we consider when\nevaluating disintermediation risk from fintechs. With fintechs primarily focused on digital engagement, the risk of clients choosing fintech solutions\nremains low. Although fintechs have not yet demonstrated success in providing financial advice and wealth management services in Canada, the\nthreat may increase in the future. CIBC’s proactivity in adopting new technologies and integrating digital financial services helps to mitigate this risk\n\nData and Artificial Intelligence risk\nData is being used every day to further advance CIBC’s strategic objectives and create competitive advantages. To support this, we continue to\ninvest in our data management and governance capabilities to ensure we have a strong data foundation and business decision making, and grow\nour analytics and reporting practices to use data as a transformative asset.\n\nWith rapid advances in technology, we continue to observe growth in applications of AI to drive productivity and competitive enhancements.\nAlongside the potential benefits of AI tools and technology comes risks; as AI systems make decisions based on data and models, they can inherit or\namplify bias or raise concerns about fairness or ethical use. In addition, transparency in AI models is required to ensure the reasoning, accuracy or\nappropriateness of the output is clearly understood. CIBC has published an AI Framework and has implemented AI governance and risk management\npractices. From a model risk perspective, OSFI published its final version of Guideline E-23 on Model Risk Management to take effect on May 1, 2027.\nThe revised Guideline E-23 now includes AI and Machine Learning (ML) methodologies in the definition of “model” given the surge in AI/ML analytics.\nAs we navigate the increased adoption of solutions using AI, our approach will remain rooted in ensuring responsible use and ensuring operational risks\nare mitigated.",
+        "similarity": 0.442,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "fiscal_year": 2025,
+        "section": "Management’s discussion and analysis",
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "page_end": 65,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "page_start": 64,
+        "filing_id": "CIBC_2025_annual_report_FY"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 8.066374100046232,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0008943,
+  "input_tokens": 4310,
+  "output_tokens": 413,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.021900100051425397,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about CIBC's cybersecurity and technology risks in the 2025 annual report are directly supported by the actual answer context, including specific risks and their implications.",
+    "relevance_reason": "The answer directly addresses the question regarding the cybersecurity and technology risks disclosed by CIBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including specific risks and their descriptions, as found in the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0013737
+}

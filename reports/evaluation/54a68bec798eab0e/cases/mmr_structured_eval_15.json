@@ -1,0 +1,157 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_15",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_15",
+    "question": "What liquidity risk management did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity risk management did CIBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "CIBC disclosed that its liquidity risk management approach supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The bank manages liquidity risk to withstand stress events without adversely impacting operations. It routinely measures and monitors cash flows from on- and off-balance sheet exposures to ensure compliance with established limits and incorporates stress testing into its management practices. The governance structure includes a three lines of defence model, with the Treasurer responsible for measurement and reporting, the Liquidity and Non-Trading Market Risk group providing oversight, and internal audit ensuring effectiveness. CIBC's liquidity risk management policy establishes requirements to meet anticipated liquidity needs in both normal and stressed conditions, maintaining sufficient unencumbered liquid assets and diversified funding sources. The bank also has a pledging policy to ensure liquid assets are available for liquidity purposes. As of October 31, 2025, CIBC's Net Stable Funding Ratio (NSFR) was reported at 116%, an increase from 115% in the prior quarter, attributed to increases in operational deposits and wholesale funding, partially offset by an increase in loans. CIBC funds its operations primarily through client-sourced deposits and a variety of wholesale funding sources, regularly evaluating the stability of these deposits and monitoring wholesale funding levels to align with its liquidity risk profile.",
+    "sources": [
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00171",
+        "text": "Liquidity risk is the risk of having insufficient cash or its equivalent in a timely and cost-effective manner to meet financial obligations as they\ncome due. Common sources of liquidity risk inherent in banking services include unanticipated withdrawals of deposits, the inability to replace\nmaturing debt, credit and liquidity commitments, and additional pledging or other collateral requirements.\n\nOur approach to liquidity risk management supports our business strategy, aligns with our risk appetite and adheres to regulatory\nexpectations.\n\nOur management strategies, objectives and practices are regularly reviewed to align with changes to the liquidity environment, including\nregulatory, business and/or market developments. Liquidity risk remains within CIBC’s risk appetite.\n\nGovernance and management\nWe manage liquidity risk in a manner that enables us to withstand a liquidity stress event without an adverse impact on the viability of our\noperations. Actual and anticipated cash flows generated from on- and off-balance sheet exposures are routinely measured and monitored to ensure\ncompliance with established limits. We incorporate stress testing into the management and measurement of liquidity risk. Stress test results assist\nwith the development of our liquidity assumptions, identification of potential constraints to funding planning, and contribute to the design of our\ncontingency funding plan.\n\nLiquidity risk is managed using the three lines of defence model, and the ongoing management of liquidity risk is the responsibility of the\nTreasurer, supported by guidance from GALCO.\n\nThe Treasurer is responsible for managing the activities and processes required for measurement and the reporting and monitoring of CIBC’s\nliquidity risk position as the first line of defence.\n\nThe Liquidity and Non-Trading Market Risk group provides independent oversight of the measurement, monitoring and control of liquidity risk,\nas the second line of defence.\n\nInternal audit is the third line of defence providing reasonable assurance to senior management and the Audit Committee of the Board on the\neffectiveness of CIBC’s governance practices, risk management processes, and internal control as part of its risk-based audit plan and in\naccordance with its mandate as described in the Internal Audit Charter.\n\nThe GALCO governs CIBC’s liquidity risk management, ensuring the liquidity risk management methodologies, assumptions, and key metrics\nare regularly reviewed and aligned with CIBC’s requirements. The Liquidity Risk Management Committee, a subcommittee of GALCO, monitors\nglobal liquidity risk and is responsible for ensuring that CIBC’s liquidity risk profile is comprehensively measured and managed in alignment with\nCIBC’s strategic direction, risk appetite and regulatory requirements.\n\nThe RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually.\n\nPolicies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy.\n\nOur pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.",
+        "similarity": 0.7828680276870728,
+        "quarter": 0,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_end": 83,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "section": "Liquidity risk",
+        "bank_code": "CIBC",
+        "page_start": 83,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00084",
+        "text": "50,712\n4,057\n46,811\n3,745\n\nTotal RWA\n$ 357,803\n$\n28,624\n$\n333,502\n$\n26,680\n\n(1) Refers to the minimum standard established by the BCBS before the application of the capital conservation buffer and any other capital buffers that may be established by\n\nregulators from time to time. It is calculated by multiplying RWA by 8%.\n(2) Credit risk includes CCR, which comprises derivative and repo-style transactions. Credit risk for CIBC Caribbean are calculated under the standardized approach.\n(3) Includes securitization exposures that are risk-weighted at 1250%.\n(4) Includes RWA relating to certain commercial loans which are determined using the supervisory slotting approach.\n(5) Includes residential mortgages insured by Canada Mortgage and Housing Corporation (CMHC), an agency of the Government of Canada, and government-guaranteed\n\nstudent loans.\n\nCapital initiatives\nThe following were the main capital initiatives undertaken since our 2024 Annual Report:\n\nNormal course issuer bid (NCIB)\nOn September 8, 2025, we announced that the Toronto Stock Exchange had accepted the notice of our intention to commence an NCIB. Purchases\nunder this bid will be completed upon the earlier of: (i) CIBC purchasing 20 million common shares; (ii) CIBC providing a notice of termination; or\n(iii) September 9, 2026. 3,500,000 common shares were purchased and cancelled during the fourth quarter at an average price of $112.54 for a\ntotal amount of $393 million.\n\nThe following table shows common shares purchased and cancelled under current and previously expired NCIBs.\n\n$ millions, except number of shares, as at or for the year ended October 31\n2025\n2024\nTotal\n\nNumber\nof shares\nAmount\n\nTSX approval date\n\nNumber\nof shares\nAmount\n\nNumber\nof shares\nAmount\n\nSeptember 5, 2024 (1)\n15,000,000\n$\n1,338\n5,000,000\n$\n419\n20,000,000\n$\n1,757\nSeptember 5, 2025 (2)\n3,500,000\n393\n–\n–\n3,500,000\n393\n\nTotal\n18,500,000\n$\n1,731\n5,000,000\n$\n419\n23,500,000\n$\n2,150\n\n(1) Common shares were repurchased at an average price of $87.80 under this NCIB.\n(2) Common shares were repurchased at an average price of $112.54 under this NCIB.",
+        "similarity": 0.6129953861236572,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_start": 50,
+        "fiscal_year": 2025,
+        "page_end": 50,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "document_type": "annual_report",
+        "bank_code": "CIBC",
+        "section": "Operational risk",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00114",
+        "text": "On April 23, 2025, the Canadian Securities Administrators (CSA) announced it is pausing its work on the development of a new mandatory\nclimate-related disclosure rule in order to support Canadian markets and issuers as they adapt to developments in the U.S. and globally. The CSA\nwill monitor domestic and international regulatory developments with respect to climate disclosures and expects to revisit and finalize requirements\nfor issuers.\n\nOn March 7, 2025, OSFI published updates to Guideline B-15 on Climate Risk Management (Guideline B-15), postponing scope 3 emissions\ndisclosure from fiscal year-end 2025 to 2028, aligning with the Canadian Sustainability Standards Board Standards’ transitional period. OSFI is\nexpected to continue to review Guideline B-15 as practices and standards evolve. Guideline B-15 was initially effective for us for our reporting\nperiod ending October 31, 2024 for certain disclosure elements, which were included in our 2024 Climate Report.\n\nOn June 5, 2025, the Competition Bureau issued updated guidance on environmental claims under Bill C-59, which contains anti-greenwashing\namendments to Canada’s Competition Act (Act). In addition, the Competition Bureau reaffirmed its previous communication on the private right of\naction, pursuant to which starting on June 20, 2025, individuals can seek permission to file claims with the Competition Tribunal against businesses\nunder the Act.\n\nOn October 7, 2023, California enacted climate disclosure laws, Senate Bill (SB) 253 and SB 261. SB 253 requires annual reporting of scope 1\nand 2 greenhouse gas emissions in 2026, expanding to scope 3 emissions reporting in 2027. SB 261 requires biennial climate-related financial risk\nreports, with the first report due by January 1, 2026. On November 18, 2025, the U.S. Court of Appeals for the Ninth Circuit, issued an order\ntemporarily halting the enforcement of SB 261. CIBC is preparing to meet these requirements and will continue to monitor regulatory updates.\n\nAdditionally, the European Commission adopted the European Sustainability Reporting Standards in 2023 for entities subject to the Corporate\nSustainability Reporting Directive. On June 23, 2025, the European Union announced it is negotiating its final position on the Omnibus Proposal II,\nwhich is expected to significantly narrow the scope of sustainability reporting for member states. These changes, if adopted, could impact the\nreporting requirements for CIBC and certain CIBC subsidiaries.\n\nPotential divergence among the regulators in disclosure expectations, coupled with the pace at which the regulatory landscape changes, pose\noperational risks to us. We continue to monitor these developments and evolve our approach to support future regulatory requirements.\n\nInformation and cyber security risk\nWe continue to evolve our use of technology and business processes to improve the client experience and streamline operations. Concurrently,\ncyber threats are growing in frequency and sophistication, increasing the potential for financial loss, reputational harm, regulatory exposure and\nbusiness interruption. We actively manage these risks through strategic risk reviews and enterprise-wide technology and information security\nprograms aimed at prevention, detection, response and recovery. Threats include data breaches, malware and ransomware, unauthorized access,\nsocial engineering and fraud, and denial-of-service attacks, which may result in damage to CIBC systems and information; theft, loss or disclosure\nof confidential information; unauthorized or fraudulent activity; and service disruption at CIBC or its service providers, including those that offer\ncloud services.",
+        "similarity": 0.6274425983428955,
+        "bank_code": "CIBC",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "quarter": 0,
+        "page_start": 64,
+        "document_type": "annual_report",
+        "section": "Management’s discussion and analysis",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_end": 64,
+        "fiscal_year": 2025,
+        "filing_id": "CIBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00192",
+        "text": "Operational risk practices are continuously enhanced to increase robustness of\nthe operational risk management program for effective and efficient identification, measurement, mitigation, monitoring and reporting of operational\nrisks at CIBC. Operational risks that may adversely impact CIBC include the following: Anti-money laundering/anti-terrorist financing\nThe risk of CIBC’s potential non-conformance with global AML and ATF regulatory requirements and sanctions regulations which may lead to\nenhanced regulatory scrutiny, regulatory censure (i.e., cease and desist orders) and/or financial loss (i.e., regulatory, criminal or civil penalties and/\nor forfeiture of assets). See the “Top and emerging risks – Anti-money laundering, anti-terrorist financing and sanctions” section for further details.\n\nData risk\nThe risk arising from inadequate management of the data life cycle, which may impair CIBC’s ability to deliver consistent and accurate data. This\nrisk can impact critical activities such as financial reporting, regulatory compliance, and the effectiveness of analytical tools or models that help\nmake informed business decisions. See the “Top and emerging risks – Data and Artificial Intelligence risk” section for further details.\n\nFraud risk\nThe risk relating to any intentional act or omission designed to deceive others with a goal of misappropriating property/assets or circumventing\nregulations, the law or CIBC policies/procedures to achieve financial gain or benefit. These intentional acts can be committed by team members or\nby external parties (e.g., clients or third parties).\n\nInformation security risk (including cyber security)\nThe risk to the confidentiality, integrity and availability of CIBC-owned information, and the information entrusted to CIBC by clients, employees,\nshareholders, business partners, and third parties that if lost, disclosed, accessed, modified, or disrupted/destroyed without authorization, could\ncause damage to CIBC’s business and its customers. See the “Top and emerging risks – Information and cyber security risk” section for further\ndetails.\n\nTechnology risk\nThe risk of financial losses, operational disruptions, or damage to organizational reputation due to compromised availability, stability, resilience,\ncapacity, performance, currency, or integrity of technology. See the “Top and emerging risks – Technology risk” section for further details.\n\nThird-party risk\nThe potential risk that may arise from relying on a third-party business arrangement between CIBC and another entity, by contract or otherwise. This\nincludes activities that involve outsourced products and services, use of outside consultants, networking arrangements, managed services, services\nprovided by affiliates and subsidiaries, joint ventures, sponsorships, no-fee contracts, and any other arrangement that involves the delivery of\nbusiness activities, functions or processes to CIBC and/or its clients. See the “Top and emerging risks – Third-party risk” section for further details.\n\nOther operational risks include business interruption risk, conduct and culture risk (see the “Conduct and culture risk” section), financial reporting\nrisk, legal risk (see the “Reputation and legal risks” section), model risk, people risk, privacy risk, project risk, physical security risk, regulatory\ncompliance risk (see the “Regulatory compliance risk” section) and processing and execution risk.",
+        "similarity": 0.6478842496871948,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_start": 91,
+        "bank_code": "CIBC",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 92,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "section": "Management’s discussion and analysis",
+        "fiscal_year": 2025,
+        "bank": "Canadian Imperial Bank of Commerce"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00180",
+        "text": "32\nOff-balance sheet items\n505,253 (1)\n17,483 33\nTotal RSF\n$\n543,140 34\nNSFR 116 % Weighted $ millions, as at July 31, 2025 value 35\nTotal ASF\n$\n613,114 36\nTotal RSF\n$\n532,026 37\nNSFR\n115 % Weighted $ millions, as at October 31, 2024 value 38\nTotal ASF\n$\n579,137 39\nTotal RSF\n$\n503,435 40\nNSFR\n115 % (1) No assigned time period per disclosure template design.\n\nOur NSFR as at October 31, 2025, increased to 116% from 115% in the prior quarter, and increased from 115% in 2024, mainly due to an increase\nin operational deposits and wholesale funding, which was partially offset by a corresponding increase in loans.\n\nCIBC considers the impact of its business decisions on the LCR, NSFR and other liquidity risk metrics that it regularly monitors as part of a robust\nliquidity risk management function. Variables that can impact the metrics month-over-month include, but are not limited to, items such as wholesale\nfunding activities and maturities, strategic balance sheet initiatives, and transactions and market conditions affecting collateral.\n\nReporting of the LCR and NSFR is calibrated centrally by Treasury, in conjunction with the SBUs and other functional groups.\n\nFunding\nWe fund our operations with client-sourced deposits, supplemented with a wide range of wholesale funding.\n\nOur principal approach aims to fund our consolidated balance sheet with deposits primarily raised from personal and commercial banking\nchannels. We maintain a foundation of relationship-based core deposits, whose stability is regularly evaluated through internally developed\nstatistical assessments.\n\nWe routinely access a range of short-term and long-term secured and unsecured funding sources diversified by geography, depositor\ntype, instrument, currency and maturity. We raise long-term funding from existing programs including covered bonds, asset securitizations and\nunsecured debt.\n\nWe continuously evaluate opportunities to diversify into new funding products and investor segments in an effort to maximize funding\nflexibility and minimize concentration and financing costs. We regularly monitor wholesale funding levels and concentrations to internal limits\nconsistent with our desired liquidity risk profile.\n\nGALCO and RMC review and approve CIBC’s funding plan, which incorporates projected asset and liability growth, funding maturities, and\noutput from our liquidity position forecasting.\n\nThe following table provides the contractual maturity profile of our wholesale funding sources at their carrying values:\n\nLess than\n\n$ millions, as at October 31, 2025\n\n1 month\n1–3\nmonths\n\n3–6\nmonths\n\n6–12\nmonths\n\nLess than\n1 year total\n1–2\nyears\n\nOver\n2 years\nTotal",
+        "similarity": 0.6845092177391052,
+        "quarter": 0,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_start": 87,
+        "bank_code": "CIBC",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "section": "Management’s discussion and analysis",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "page_end": 88,
+        "fiscal_year": 2025
+      }
+    ],
+    "structured": {
+      "answer": "CIBC disclosed that its liquidity risk management approach supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The bank manages liquidity risk to withstand stress events without adversely impacting operations. It routinely measures and monitors cash flows from on- and off-balance sheet exposures to ensure compliance with established limits and incorporates stress testing into its management practices. The governance structure includes a three lines of defence model, with the Treasurer responsible for measurement and reporting, the Liquidity and Non-Trading Market Risk group providing oversight, and internal audit ensuring effectiveness. CIBC's liquidity risk management policy establishes requirements to meet anticipated liquidity needs in both normal and stressed conditions, maintaining sufficient unencumbered liquid assets and diversified funding sources. The bank also has a pledging policy to ensure liquid assets are available for liquidity purposes. As of October 31, 2025, CIBC's Net Stable Funding Ratio (NSFR) was reported at 116%, an increase from 115% in the prior quarter, attributed to increases in operational deposits and wholesale funding, partially offset by an increase in loans. CIBC funds its operations primarily through client-sourced deposits and a variety of wholesale funding sources, regularly evaluating the stability of these deposits and monitoring wholesale funding levels to align with its liquidity risk profile.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "Liquidity risk",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "Management’s discussion and analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.7809664999367669
+  },
+  "latency_seconds": 5.121702800039202,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007539,
+  "input_tokens": 3694,
+  "output_tokens": 333,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.02178389998152852,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about CIBC's liquidity risk management in the 2025 annual report are directly supported by the provided context, including specific practices, governance structure, and metrics like the NSFR.",
+    "relevance_reason": "The answer directly addresses the question regarding CIBC's liquidity risk management disclosed in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of liquidity risk management as disclosed in the report, including governance, policies, and metrics, without omitting any relevant details.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0015272999999999999,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_15",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

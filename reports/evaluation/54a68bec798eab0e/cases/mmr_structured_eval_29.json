@@ -1,0 +1,157 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_29",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_29",
+    "question": "Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Answer in French using supported RBC credit-risk disclosures and citations.",
+    "reference_query": "RBC credit risk management provision credit losses"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "La RBC décrit plusieurs risques de crédit dans son rapport annuel 2025. Parmi ceux-ci, elle mentionne la gestion des limites de crédit qui sont établies à différents niveaux, y compris par nom unique, secteur industriel, et exposition réglementaire. La banque gère activement les expositions et les limites de crédit pour éviter les risques de concentration, qui peuvent découler d'une sur-exposition dans certains secteurs ou pays, augmentant ainsi le risque de détérioration du crédit et de défaut [S1]. De plus, la RBC a des politiques formalisées pour gérer les emprunteurs à risque élevé, en cherchant à identifier les emprunteurs en difficulté financière tôt et en modifiant les termes de leurs prêts pour minimiser les pertes [S1]. En 2025, la banque a également observé une augmentation des provisions sur les prêts dépréciés, principalement en raison de quelques comptes dans les secteurs des autres services et des produits de financement [S4].",
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00126",
+        "text": "Risk limits are established at the following\nlevels: single name; regional, country and industrial sector (notional and economic capital); regulatory large exposure;\nproduct and portfolio; and underwriting and distribution. These limits apply across all businesses, portfolios, transactions\nand products. We actively manage credit exposures and limits to ensure alignment with our risk appetite, to maintain our target\nbusiness mix and to ensure that there is no undue concentration risk. Concentration risk is defined as the risk arising from an overexposure in particular industry sectors, countries, or credit\nproducts within the portfolio, reflecting the potential for credit deterioration and default to be relatively highly correlated. Credit concentration limits are reviewed on a regular basis after considering business, economic, financial and regulatory\nenvironments.\n\nCredit risk administration\nLoan forbearance\nIn our overall management of borrower relationships, economic, legal or other reasons may necessitate forbearance to certain\nclients with respect to the original terms and conditions of their loans. We have specialized groups and formalized policies that\ndirect the management of high risk, delinquent or defaulted borrowers. We strive to identify borrowers in financial difficulty\nearly and modify their loan terms to minimize losses and assist clients in need. A forbearance agreement may be entered into\nwith the borrower where we will forbear from enforcing on security in exchange for concessions made by the borrower and/or\nadditional security provided by the borrower. Examples of concessions to borrowers may include rate reductions, payment\ndeferrals, term extensions, covenant relief, extensions of matured facilities, amendments or restructuring of agreements, or\nrelaxation of covenants, as applicable. The goal of a forbearance is to enhance our position in exchange for providing the\nborrower additional time to meet the terms and obligations of the loan agreement. For such loans, the appropriate remediation\ntechniques are based on the specific borrower’s situation, our policy and the client’s willingness and capacity to meet the new\nor modified loan terms.\n\n76\n\nCredit risk exposure by portfolio, sector and geography\nThe following table presents our credit risk exposures under the Basel regulatory defined classes and reflects EAD. The\nclassification of our sectors aligns with our view of credit risk by industry.\n\nCredit risk exposure by portfolio, sector and geography\nTable 41\n\nAs at\n\nOctober 31\n\nOctober 31\n\n2024\n\n2025\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nOff-balance sheet\n\nOff-balance sheet\n\namount (3)\n\namount (3)\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n(Millions of Canadian dollars)\nUndrawn\nOther (4)\nDerivatives\nUndrawn\nOther (4)\nDerivatives\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n\nRetail\n\nResidential secured (6)\n$\n514,623 $ 132,502 $\n– $\n– $\n– $\n647,125 $\n498,014 $ 124,743 $\n– $\n– $\n– $\n622,757\nQualifying revolving (7)\n36,407\n104,369\n–\n–\n–\n140,776\n33,571\n95,776\n–\n–\n–\n129,347\nOther retail\n57,003\n22,522\n164\n–\n–\n79,689\n53,257\n21,530\n162\n–\n–\n74,949",
+        "similarity": 0.4440377354621887,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "section": "Management’s Discussion and Analysis",
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank_code": "RBC",
+        "page_start": 78,
+        "document_type": "annual_report",
+        "page_end": 79,
+        "quarter": 0
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00020",
+        "text": "Royal Bank of Canada Annual Report 2025 | 21\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable a reader to assess our results of operations and financial condition for the fiscal\nyear ended October 31, 2025, compared to the preceding fiscal year. This MD&A should be read in conjunction with our 2025 Annual Consolidated\nFinancial Statements and related notes and is dated December 2, 2025. All amounts are in Canadian dollars, unless otherwise specified, and are based on\nfinancial statements presented in accordance with International Financial Reporting Standards (IFRS) as issued by the International Accounting\nStandards Board (IASB), unless otherwise noted.\nAdditional information about us, including our 2025 Annual Information Form, is available free of charge on our website at rbc.com/investorrelations, on\nthe Canadian Securities Administrators’ website, SEDAR+, at sedarplus.com and on the EDGAR section of the United States (U.S.) Securities and\nExchange Commission’s (SEC) website at sec.gov.\nInformation contained in or otherwise accessible through the websites mentioned herein does not form part of this report. All references in this report to\nwebsites are inactive textual references and are for your information only.\n\nTable of contents\n\nKey performance and non-GAAP\n\nCaution regarding forward-looking\n\nstatements\n22\n\nInsurance risk\n102",
+        "similarity": 0.3623207211494446,
+        "page_start": 23,
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 24,
+        "bank_code": "RBC",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00435",
+        "text": "Securities borrowing and lending\n$ 238,301 $\n198,887\nObligations related to securities sold short\n56,382\n46,088\nObligations related to securities loaned or sold under repurchase agreements\n292,335\n305,788\nSecuritization\n36,797\n39,769\nCovered bonds\n64,926\n71,307\nDerivative transactions\n73,686\n50,100\nForeign governments and central banks\n11,510\n8,469\nClearing systems, payment systems and depositories\n12,194\n11,261\nOther\n22,133\n19,415 $ 808,264 $\n751,084 (1)\nPrimarily relates to Obligations related to securities loaned or sold under repurchase agreements, Securities loaned and Derivative transactions. Note 24\nLegal and regulatory matters\n\nWe are a large global institution that is subject to many different complex legal and regulatory requirements that continue to\nevolve. We are and have been subject to a variety of legal proceedings, including civil claims and lawsuits, regulatory\nexaminations, investigations, audits and requests for information by various governmental regulatory agencies and law\nenforcement authorities in various jurisdictions. Some of these matters may involve novel legal theories and interpretations and\nmay be advanced under criminal as well as civil statutes, and some proceedings could result in the imposition of civil, regulatory\nenforcement or criminal penalties. We review the status of all proceedings on an ongoing basis and will exercise judgment in\nresolving them in such manner as we believe to be in our best interest. In many proceedings, it is inherently difficult to\ndetermine whether any loss is probable or to reliably estimate the amount of any loss. This is an area of significant judgment\nand uncertainty and the extent of our financial and other exposure to these proceedings after taking into account current\nprovisions could be material to our results of operations in any particular period though we do not believe that the ultimate\nresolution of any such matter will have a material effect on our consolidated financial condition. The following is a description\nof our significant legal proceedings. Based on the facts currently known, except as may otherwise be noted, it is not possible at\nthis time for us to predict the ultimate outcome of these proceedings or the timing of their resolution.\n\nRoyal Bank of Canada Trust Company (Bahamas) Limited proceedings\nOn April 13, 2015, a French investigating judge notified Royal Bank of Canada Trust Company (Bahamas) Limited (RBC Bahamas)\nof the issuance of an ordonnance de renvoi referring RBC Bahamas and other unrelated persons to the French tribunal\ncorrectionnel to face the charge of complicity in estate tax fraud relating to actions taken relating to a trust for which RBC\nBahamas serves as trustee. RBC Bahamas contested the charge in the French court. On January 12, 2017, the French court\nacquitted all parties including RBC Bahamas and on June 29, 2018, the French appellate court affirmed the acquittals. The\nacquittals were appealed and on January 6, 2021, the French Supreme Court issued a judgment reversing the decision of the\nFrench Court of Appeal and sent the case back to the French Court of Appeal for rehearing. The retrial before the Court of Appeal\ncommenced on September 18, 2023 and on March 5, 2024, the Court of Appeal rendered a judgment of conviction (the\nConviction) against RBC Bahamas and the other parties. RBC Bahamas was ordered by the Court of Appeal to pay a fine of\n€5,000 in connection with the Conviction. In addition, the Court of Appeal ordered that certain of those convicted of complicity in\nthe matter, including RBC Bahamas, are jointly liable for the allegedly unpaid inheritance taxes owing, plus penalties and\ninterest (such aggregate amount will be determined in separate proceedings before the tax courts, to which RBC Bahamas is not\na party). RBC Bahamas believes that its actions did not violate French law and has appealed the Conviction to the French\nSupreme Court. Under French law, upon the filing of an appeal by RBC Bahamas, the Conviction, as well as its effects (fine and\njoint liability) were stayed pending the outcome of the appeal. The French Supreme Court has scheduled the hearing for the\nappeal for December 10, 2025.",
+        "similarity": 0.36724400520324707,
+        "page_start": 232,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "section": "Market risk",
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_end": 232
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00081",
+        "text": "These macro conditions supported a growing industry wallet\nacross most of our core businesses. › Investment banking fee pool growth slowed in the first half of 2025 amidst macroeconomic uncertainty and market volatility; however, the fee pools increased in the second half of 2025. Against this backdrop, we continued to expand our client\ncoverage, which contributed to revenue growth. › Overall financial market activity was driven by elevated market volatility in the first half of 2025, which supported robust client-driven trading flows, notably from equities, foreign exchange and interest rate trading. The second half of 2025 saw a\nreduction in market volatility, which supported a recovery in credit trading, partly offset by slower growth in equities trading\nvolumes.\n\n› The credit environment reflected better-than-expected economic growth in the U.S., tempered by elevated U.S. interest rates,\n\nwhile other economies experienced slowing growth and the impacts of trade disruptions. We saw higher provisions on\nimpaired loans driven by a few accounts in the other services and financing products sectors.\n\n› The Pillar Two legislation, which includes a 15% global minimum corporate tax, resulted in an increase in tax expenses.\n\n1\nSource: Based on externally disclosed capital markets revenue for Canadian peers (Bank of Montreal, The Bank of Nova Scotia, Canadian Imperial Bank of Commerce,\nThe Toronto-Dominion Bank and National Bank of Canada) for the last twelve months as of July 31, 2025\n\nStrategic priorities",
+        "similarity": 0.4038793444633484,
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_end": 56,
+        "page_start": 55,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "section": "Management’s Discussion and Analysis"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00284",
+        "text": "Modifications\nThe original terms of a financial asset may be renegotiated or otherwise modified, resulting in changes to the contractual terms\nof the financial asset that affect the contractual cash flows. The treatment of such modifications is primarily based on the\nprocess undertaken to execute the renegotiation and the nature and extent of the expected changes. In the normal course of\nbusiness, modifications which are performed for credit reasons, primarily related to troubled debt restructurings, are generally\ntreated as modifications of the original financial asset. Modifications which are performed for other than credit reasons are\ngenerally considered to be an expiry of the original cash flows; accordingly, such renegotiations are treated as a derecognition\nof the original financial asset and recognition of a new financial asset. Consolidated Financial Statements Note 2\nSummary of material accounting policies, estimates and judgments (continued)\n\nIf a modification of terms does not result in derecognition of the financial asset, the carrying amount of the financial asset\nis recalculated as the present value of the renegotiated or modified contractual cash flows, discounted at the original effective\ninterest rate and a gain or loss is recognized. The financial asset continues to be subject to the same assessments for significant\nincrease in credit risk relative to initial recognition and credit-impairment, as described above. A modified financial asset will\ntransfer out of Stage 3 if the conditions that led to it being identified as credit-impaired are no longer present and relate\nobjectively to an event occurring after the original credit-impairment was recognized. A modified financial asset will transfer out\nof Stage 2 when it no longer satisfies the relative thresholds set to identify significant increases in credit risk, which are based\non changes in its lifetime PD, days past due and other qualitative considerations. The financial asset continues to be monitored\nfor significant increases in credit risk and credit-impairment.\n\nIf a modification of terms results in derecognition of the original financial asset and recognition of the new financial asset,\nthe new financial asset will generally be recorded in Stage 1, unless it is determined to be credit-impaired at the time of the\nrenegotiation. For the purposes of assessing for significant increases in credit risk, the date of initial recognition for the new\nfinancial asset is the date of the modification.\n\nDerivatives\nWhen derivatives are embedded in other financial instruments or host contracts, such combinations are known as hybrid\ninstruments. If the host contract is a financial asset within the scope of IFRS 9 Financial Instruments (IFRS 9), the classification\nand measurement criteria are applied to the entire hybrid instrument as described in the Classification of financial assets\nsection of Note 2. If the host contract is a financial liability or an asset that is not within the scope of IFRS 9, embedded\nderivatives are separately recognized if the economic characteristics and risks of the embedded derivative are not clearly and\nclosely related to the host contract, unless an election has been made to elect the fair value option, as described above. The\nhost contract is accounted for in accordance with the relevant standards. Embedded derivatives are presented on a combined\nbasis with the host contracts.",
+        "similarity": 0.37797868251800537,
+        "bank_code": "RBC",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 158,
+        "section": "FVOCI",
+        "document_type": "annual_report",
+        "page_end": 158,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada"
+      }
+    ],
+    "structured": {
+      "answer": "La RBC décrit plusieurs risques de crédit dans son rapport annuel 2025. Parmi ceux-ci, elle mentionne la gestion des limites de crédit qui sont établies à différents niveaux, y compris par nom unique, secteur industriel, et exposition réglementaire. La banque gère activement les expositions et les limites de crédit pour éviter les risques de concentration, qui peuvent découler d'une sur-exposition dans certains secteurs ou pays, augmentant ainsi le risque de détérioration du crédit et de défaut [S1]. De plus, la RBC a des politiques formalisées pour gérer les emprunteurs à risque élevé, en cherchant à identifier les emprunteurs en difficulté financière tôt et en modifiant les termes de leurs prêts pour minimiser les pertes [S1]. En 2025, la banque a également observé une augmentation des provisions sur les prêts dépréciés, principalement en raison de quelques comptes dans les secteurs des autres services et des produits de financement [S4].",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.7708521999884397
+  },
+  "latency_seconds": 5.584446199936792,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00066945,
+  "input_tokens": 3355,
+  "output_tokens": 277,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.022115199943073094,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "Toutes les affirmations concernant les risques de crédit de la RBC sont soutenues par le contexte de la réponse réelle, y compris la gestion des limites de crédit, la gestion des emprunteurs à risque élevé et l'augmentation des provisions sur les prêts dépréciés, avec des références appropriées aux sections pertinentes du rapport annuel 2025.",
+    "relevance_reason": "La réponse aborde directement la question sur les risques de crédit décrits par la RBC dans son rapport annuel 2025, en fournissant des détails spécifiques et pertinents.",
+    "completeness_reason": "La réponse couvre tous les aspects demandés concernant les risques de crédit, y compris les limites de crédit, la gestion des emprunteurs à risque élevé et les provisions sur les prêts, sans omissions significatives.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0014115,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_29",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

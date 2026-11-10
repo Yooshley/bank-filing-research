@@ -1,0 +1,191 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_17",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_17",
+    "question": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "TD",
+      "BMO"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports."
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided excerpts from the 2025 annual reports of Toronto-Dominion Bank (TD) and Bank of Montreal (BMO) offer insights into their disclosures regarding residential mortgage credit risk.\n\n### TD Bank Disclosures\n1. **Loan Composition and Allowance for Losses**: As of October 31, 2025, TD reported residential mortgages totaling $315,063 million, with an allowance for loan losses of $3,847 million across all loans. The total loans amounted to $961,989 million, with a total allowance for loan losses of $8,689 million [S1].\n\n2. **Credit Quality Management**: TD employs predictive credit scoring techniques for managing retail exposures, including residential mortgages. They utilize a Borrower Risk Rating (BRR) system that reflects the probability of default (PD) based on proprietary models and expert judgment. The bank updates risk parameter estimates quarterly and assesses the predictive power of their models against actual performance [S3][S4].\n\n3. **Risk Mitigation Techniques**: TD uses automated valuation models (AVMs) and appraisals to support property values when adjudicating loans secured by residential properties. They have specific guidelines for using AVMs and periodically validate them through third-party appraisals [S3].\n\n4. **Risk Parameters**: The bank's approach to estimating PD and Loss Given Default (LGD) incorporates economic indicators and is fully automated, ensuring that manual overrides do not occur. This systematic approach aims to maintain accuracy in risk assessments [S4].\n\n### BMO Disclosures\n1. **Market Conditions and Risks**: BMO highlights challenges in the Canadian housing market, including high household debt and potential increases in credit losses due to economic conditions such as rising unemployment. They stress test customers' ability to service mortgage debt at higher interest rates, which helps mitigate risks in their mortgage portfolio [S6].\n\n2. **Underwriting Practices**: BMO emphasizes prudent underwriting practices and low loan-to-value ratios as key factors in managing credit risk. They note that even in adverse economic conditions, their portfolio is expected to withstand significant housing price declines due to insurance coverage and equity levels held by borrowers [S6].\n\n3. **Risk Management Framework**: BMO's enterprise-wide risk management framework integrates various risks, including credit risk. They monitor off-balance sheet credit instruments to avoid undue concentrations in specific regions or industries, indicating a proactive approach to managing credit risk [S8].\n\n### Comparison\n- **Risk Assessment and Management**: Both banks utilize sophisticated risk assessment techniques, but TD focuses on automated models and a structured BRR system, while BMO emphasizes stress testing and prudent underwriting practices.\n- **Market Conditions**: BMO provides a broader context regarding external economic factors affecting credit risk, such as household debt and unemployment, which are not explicitly mentioned in TD's disclosures.\n- **Mitigation Strategies**: TD's use of AVMs and appraisals for property valuation contrasts with BMO's focus on low loan-to-value ratios and insurance coverage as risk mitigants.\n\nIn summary, while both banks address residential mortgage credit risk comprehensively, their approaches and the emphasis on different aspects of risk management reflect their unique strategies and market conditions.",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00538",
+        "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+        "similarity": 0.6091906428337097,
+        "bank": "Toronto-Dominion Bank",
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "file_name": "TD_2025_annual_report.pdf",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_start": 186,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 187,
+        "bank_code": "TD",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00289",
+        "text": "The CEO manages Strategic Risk, supported by members of the SET\nand the ERMC. The CEO, together with the SET, defines the overall\nstrategy, in consultation with, and subject to approval by the Board. The\nEnterprise Strategy group, under the leadership of the CFO, is charged\nwith developing the Bank’s long-term strategy and shorter-term strategic\nobjectives and priorities with input and support from senior executives\nacross the Bank.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nThe shaded areas of this MD&A represent a discussion on risk\nmanagement policies and procedures relating to credit, market, and\nliquidity risks as required under IFRS 7, Financial Instruments: Disclosures\n(IFRS 7), which permits these specific disclosures to be included in\nthe MD&A. Therefore, the shaded areas which include Credit Risk,\nMarket Risk, and Liquidity Risk, form an integral part of the audited\nConsolidated Financial Statements for the years ended October 31, 2025\nand October 31, 2024.\n\ninformation, to determine the amount of credit the Bank is prepared to\nextend to retail customers and to estimate future credit performance.\nEstablished policies and procedures are in place to govern the use, and\nmonitor and assess the performance of scoring models and decision\nstrategies to align with expected performance results. Retail credit\nexposures approved within the credit underwriting centres are subject\nto ongoing Retail Risk Management review to assess the effectiveness\nof credit decisions and risk controls, as well as to identify emerging or\nsystemic issues and trends. Material policy exceptions are tracked and\nreported and larger dollar exposures and material exceptions to policy are\nescalated to Retail Risk Management.\n\nThe Basel Framework\nThe objective of the Basel Framework is to improve the consistency of\ncapital requirements internationally and establish minimum regulatory\ncapital standards which adequately capture risks. The Basel Framework\nsets different risk-sensitive approaches for calculating credit, market, and\noperational RWA.",
+        "similarity": 0.5619049072265625,
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "section": "WHO MANAGES STRATEGIC RISK",
+        "page_end": 101,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "page_start": 100,
+        "quarter": 0
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00300",
+        "text": "The Bank’s policy is to\nenter into these transactions with investment grade financial institutions\nand transact predominantly on a collateralized basis. Credit risk to\nthese counterparties is managed through the same approval, limit, and\nmonitoring processes the Bank uses for all counterparties for which it\nhas credit exposure. Credit Risk Mitigation\nThe techniques the Bank uses to reduce or mitigate credit risk include\nwritten policies and procedures to value and manage financial and\nnon-financial security (collateral) and to review and negotiate netting\nagreements. The amount and type of collateral, and other credit risk\nmitigation techniques required, are based on the Bank’s own assessment\nof the borrower’s or counterparty’s credit quality and capacity to pay.\n\nThe Bank uses appraisals as well as valuations via automated valuation\nmodels (AVMs) to support property values when adjudicating loans\ncollateralized by residential property. AVMs are computer-based tools\nused to estimate or validate the market value of residential property and\nuses market comparables and price trends for local market areas. The\nprimary risk associated with the use of these tools is that the value of an\nindividual property may vary significantly from the average for the market\narea. The Bank has specific risk management guidelines addressing the\ncircumstances when they may be used, and processes to periodically\nvalidate AVMs including obtaining third-party appraisals.\n\nIn the Retail and Commercial banking businesses, security for loans\nis primarily non-financial and includes residential real estate, real estate\nunder development, commercial real estate, automobiles, and other\nbusiness assets, such as accounts receivable, inventory, and fixed assets.\nIn the Wholesale Banking business, a large portion of loans are to\ninvestment grade borrowers where no security is pledged. Non-investment\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nexposures consist primarily of outstanding loans, non-trading securities,\nderivatives, and certain other repo-style transactions. Off-balance sheet\nexposures consist primarily of undrawn commitments, guarantees, and\ncertain other repo style transactions.\n\nGross credit risk exposures for the two approaches the Bank uses to\nmeasure credit risk are included in the following table.\n\nGross Credit Risk Exposure\nGross credit risk exposure, also referred to as EAD, is the total amount\nthe Bank is exposed to at the time of default of a loan and is measured\nbefore counterparty-specific provisions or write-offs. Gross credit risk\nexposure does not reflect the effects of credit risk mitigation and includes\nboth on balance sheet and off-balance sheet exposures. On-balance sheet\n\n1\n\n|\nT A B L E 4 2\nGROSS CREDIT RISK EXPOSURES – Standardized and Internal Ratings‐Based (IRB) Approaches\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStandardized\nIRB\nTotal\nStandardized\nIRB\nTotal\n\nRetail\nResidential secured\n$ 5,141\n$\n552,249\n$\n557,390\n\n$ 4,163\n$\n537,075\n$\n541,238\nQualifying revolving retail\n871\n177,970\n178,841\n866\n172,203\n173,069\nOther retail\n3,660\n110,316\n113,976\n3,391\n104,253\n107,644\n\nTotal retail\n9,672\n840,535\n850,207\n8,420\n813,531\n821,951",
+        "similarity": 0.5617961287498474,
+        "page_end": 105,
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 104,
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "section": "HOW TD MANAGES CREDIT RISK"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00295",
+        "text": "For secured products\nsuch as residential mortgages, property characteristics, loan to value ratios,\nand a customer’s equity in the property, play a significant role in PD as well\nas in LGD models. All risk parameter estimates are updated on a quarterly basis based on\nthe refreshed model inputs. Parameter estimation is fully automated based\non approved formulas and is not subject to manual overrides. Exposures are then assigned to pre-defined PD segments based on their\nestimated long-run average one-year PD. The predictive power of the Bank’s retail credit models is assessed against\nthe most recently available one-year default and loss performance\non a quarterly basis. All models are also subject to a comprehensive\nindependent validation as outlined in the “Model Risk Management”\nsection of this disclosure.\n\nLong-run PD estimates are generated by including key economic\nindicators, such as interest rates and unemployment rates, and using their\nlong-run average over the credit cycle to estimate PD.\n\nBorrower Risk Rating and PD\nEach borrower is assigned a BRR that reflects the PD of the borrower\nusing proprietary models and expert judgment. In assessing borrower\nrisk, the Bank reviews the borrower’s competitive position, financial\nperformance, economic, and industry trends, management quality, and\naccess to funds. Under the IRB approaches, borrowers are grouped\ninto BRR grades where a PD is calibrated for each BRR grade. Use of\nprojections for model implied risk ratings is not permitted and BRRs may\nnot incorporate a projected reversal, stabilization of negative trends, or\nthe acceleration of existing positive trends. Historic financial results can\nhowever be sensitized to account for events that have occurred, or are\nabout to occur, such as additional debt incurred by a borrower since the\ndate of the last set of financial statements. In conducting an assessment of\nthe BRR, all relevant and material information must be taken into account\nand the information being used must be current. Quantitative rating\nmodels are used to rank the expected through-the-cycle PD, and these\nmodels are segmented into categories based on industry and borrower\nsize. The quantitative model output can be modified in some cases by\nexpert judgment, as prescribed within the Bank’s credit policies.\n\nLGD estimates are required to reflect a downturn scenario. Downturn\nLGD estimates are generated by using macroeconomic inputs, such\nas changes in housing prices and unemployment rates expected in an\nappropriately severe downturn scenario.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nTo calibrate PDs for each BRR band, the Bank computes yearly transition\nmatrices based on annual cohorts and then estimates the average annual\nPD for each BRR. The PD is set at the average estimation level plus an\nappropriate adjustment to cover statistical and model uncertainty. The\ncalibration process for PD is a through-the-cycle approach. TD’s 21-point\nBRR scale broadly aligns to external ratings as follows:\n\nDescription\nRating Category\nStandard & Poor’s\nMoody’s Investor Services\n\nInvestment grade\n0 to 1C\nAAA to AA-\nAaa to Aa3\n2A to 2C\nA+ to A-\nA1 to A3\n3A to 3C\nBBB+ to BBB-\nBaa1 to Baa3\n\nNon-investment grade\n4A to 4C\nBB+ to BB-\nBa1 to Ba3\n5A to 5C\nB+ to B-\nB1 to B3\n\nWatch and classified\n6 to 8\nCCC+ to CC and below\nCaa1 to Ca and below",
+        "similarity": 0.5606722235679626,
+        "page_end": 103,
+        "section": "HOW TD MANAGES CREDIT RISK",
+        "bank": "Toronto-Dominion Bank",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 102,
+        "filing_id": "TD_2025_annual_report_FY",
+        "quarter": 0,
+        "bank_code": "TD"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00021",
+        "text": "67\nEnterprise-Wide Risk Management\n\n23\nNon-GAAP and Other Financial Measures\n\n27\nEconomic Developments and Outlook\n\n28\n2025 Financial Performance Review\n\n108\nAccounting Matters and Disclosure and Internal Control\n108\nCritical Accounting Estimates and Judgments\n111\nFuture Changes in Accounting Policies\n111\nOther Regulatory Developments\n111\nTransactions with Related Parties\n112\nShareholders’ Auditors’ Services and Fees\n113\nManagement’s Annual Report on Disclosure Controls and\nProcedures and Internal Control over Financial Reporting\n\n114\nSupplemental Information\n\n122\nGlossary of Financial Terms\n\n34\n2025 Operating Segments Performance Review\n34\nHow BMO Reports Operating Segments Results\n35\nCanadian Personal and Commercial Banking\n39\nU.S. Banking\n43\nWealth Management\n47\nCapital Markets\n50\nCorporate Services, including Technology and Operations\n52\nSummary Quarterly Earnings Trends\n\nRegulatory Filings\nBMO’s continuous disclosure materials, including our interim consolidated financial statements and interim MD&A, audited annual consolidated financial statements and\nannual MD&A, Annual Information Form and Notice of Annual Meeting of Shareholders and Management Proxy Circular, are available on our website at www.bmo.com/\ninvestorrelations, on the Canadian Securities Administrators’ website at www.sedarplus.ca and on the EDGAR section of the U.S. Securities and Exchange Commission’s\n(SEC) website at www.sec.gov. BMO’s Chief Executive Officer and Chief Financial Officer certify the appropriateness and fairness of BMO’s annual and interim consolidated\nfinancial statements, annual MD&A and Annual Information Form, the effectiveness of BMO’s disclosure controls and procedures and the effectiveness of, and any material\nweaknesses relating to, BMO’s internal control over financial reporting. Information contained in, or otherwise accessible through, our website (www.bmo.com) or any\nthird-party websites mentioned herein, does not form part of this document.\n\nCaution\nThe About BMO, Financial Objectives and Value Measures, Economic Developments and Outlook, Provision for Income Taxes and Other Taxes, 2026 Areas of Focus, Business\nEnvironment and Outlook, Enterprise-Wide Capital Management, Off-Balance Sheet Arrangements, Enterprise-Wide Risk Management, Future Changes in Accounting\nPolicies and Other Regulatory Developments sections contain certain forward-looking statements. By their nature, forward-looking statements require us to make\nassumptions and are subject to inherent risks and uncertainties. Refer to the Caution Regarding Forward-Looking Statements section for a discussion of such risks and\nuncertainties and the material factors and assumptions related to the statements set forth in such sections.\n\n16 BMO Financial Group 208th Annual Report 2025\n\nFactors That May Affect Future Results\nAs noted in the following Caution Regarding Forward-Looking Statements section, all forward-looking statements and information, by their nature,\nare subject to inherent risks and uncertainties, both general and specific, which may cause actual results to differ materially from the expectations\nexpressed in any forward-looking statement. The Enterprise-Wide Risk Management section describes a number of risks, including credit and\ncounterparty, market, insurance, liquidity and funding, operational non-financial, legal and regulatory compliance, strategic, environmental and social,\nand reputation risk. Should our risk management framework prove ineffective, there could be a material impact on our financial position and results.",
+        "similarity": 0.621872067451477,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "page_start": 18,
+        "section": "MD&A",
+        "bank": "Bank of Montreal",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "quarter": 0,
+        "page_end": 19,
+        "bank_code": "BMO",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "document_type": "annual_report",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00131",
+        "text": "Legal and regulatory compliance risk or reputation risk could arise from actual or perceived actions, or inactions, by BMO or its clients related to\nclimate change, other environmental and social issues, or the bank’s climate-related disclosures. Risks related to these issues could also affect our 68 BMO Financial Group 208th Annual Report 2025 customers, suppliers or other stakeholders, which could give rise to new risks. Globally, financial services regulators and supervisors are evolving their\napproaches to the management of climate-related financial risk and disclosures of climate-related financial information. Litigation or enforcement\nmeasures could arise from obligations to manage and report on climate-related risks. Refer to the Environmental and Social Risk section for further discussion of these risks.\n\nCanadian Housing Market and Consumer Leverage\nHigh household debt continues to be a challenge for household spending and the broader economy. Despite recent rate reductions by the Bank of\nCanada, many borrowers still face higher mortgage payments at renewal, as well as challenges such as increasing unemployment rates that could\nlead to higher credit losses, particularly in unsecured consumer credit. Unsecured consumer loan losses could increase if economic weakness results in\nfurther increases in the unemployment rate. The housing market recovery will likely be constrained by regional disparities in affordability in major\nmarkets within Ontario and British Columbia, as well as lower immigration levels, which could impact mortgage origination volumes. The risk of credit\nlosses in our mortgage portfolio is partially mitigated by low loan-to-value and prudent underwriting practices that stress test customers’ ability to\nservice mortgage debt at higher interest rates. While portfolio stress test analysis suggests that even significant housing price declines and\nchallenging economic conditions would result in manageable losses, primarily due to insurance coverage and the level of equity held by owners\nwith seasoned loans, delinquencies and insolvencies in our portfolio could adversely affect our results and financial condition.\n\nRegulatory Environment and Changes\nThe financial services industry is highly regulated, and BMO operates in an environment of increasingly complex regulatory requirements and\nexpectations, as governments and regulators globally continue to pursue major reforms intended to strengthen the stability of the financial system\nand protect crucial markets and participants. These reforms may lead to further increases in regulatory capital or liquidity requirements and additional\ncompliance costs, which could lower returns and reduce growth. Such reforms could also affect the cost and availability of funding and the level of\nthe bank’s market-making activities. Regulatory reforms may also impact fees and other revenues for certain operating segments. In addition,\ndifferences in the laws and regulations enacted by a range of national regulatory authorities may offer advantages to our international competitors,\nwhich could affect our ability to compete. We monitor such developments, and other potential changes, so that we are well-positioned to respond\nand implement any necessary changes. BMO is subject to legal proceedings, including reviews and investigations by governments and regulators,\narising in the normal course of business. Failure to comply with applicable legal and regulatory requirements and expectations could lead to further\nlegal proceedings, financial losses, regulatory sanctions and fines, enforcement actions, criminal convictions and penalties, operational restrictions or\nan inability to execute certain business strategies, a decline in investor and customer confidence, and damage to our reputation.\n\nRefer to the Legal and Regulatory Compliance Risk section for further discussion of these risks.\n\nOther Factors That May Affect Future Results",
+        "similarity": 0.619814395904541,
+        "section": "MD&A",
+        "page_end": 71,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "quarter": 0,
+        "bank": "Bank of Montreal",
+        "page_start": 71,
+        "bank_code": "BMO"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00237",
+        "text": "Because of its inherent limitations, internal control over financial reporting can provide only reasonable assurance and may not prevent or detect\nmisstatements. Furthermore, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become\ninadequate because of changes in conditions, or that the degree of compliance with the related policies and procedures may deteriorate. BMO’s management, under the supervision of the CEO and the CFO, has evaluated the effectiveness of internal control over financial reporting\nusing the framework and criteria established in Internal Control – Integrated Framework, issued by the Committee of Sponsoring Organizations of the\nTreadway Commission in May 2013 (2013 COSO Framework). Based on this evaluation, management has concluded that internal control over financial\nreporting was effective as at October 31, 2025.\n\nAt the request of BMO’s Audit and Conduct Review Committee, KPMG LLP (the shareholders’ auditors), an independent registered public\naccounting firm, has conducted an audit of the effectiveness of our internal control over financial reporting. The audit report states in its conclusion\nthat, in KPMG’s opinion, BMO maintained, in all material respects, effective internal control over financial reporting as at October 31, 2025, in\naccordance with the criteria established in the 2013 COSO Framework.\n\nChanges in Internal Control over Financial Reporting\nThere were no changes in our internal control over financial reporting during the year ended October 31, 2025 which materially affected, or are\nreasonably likely to materially affect, our internal control over financial reporting.\n\nBMO Financial Group 208th Annual Report 2025 113\n\nSupplemental Information\n\nTen-Year Statistical Review\n\nTABLE 61\n\n($ millions)\nAs at or for the year ended October 31\n2025\n2024\n2023\n2022\n2021\n2020\n2019\n2018\n2017\n2016\n\nCondensed Consolidated Balance Sheet\nAssets\nCash and cash equivalents\n67,484\n65,098\n77,934\n87,466\n93,261\n57,408\n48,803\n42,142\n32,599\n31,653\nInterest bearing deposits with banks\n2,838\n3,640\n4,109\n5,677\n8,303\n9,035\n7,987\n8,305\n6,490\n4,449\nSecurities\n423,476\n396,880\n320,084\n272,551 232,849 234,260 189,438\n180,935\n163,198\n149,985\nSecurities borrowed or purchased under resale agreements\n129,421\n110,907\n115,662\n113,194 107,382 111,878 104,004\n85,051\n75,047\n66,646\nLoans, net of allowances\n677,161\n678,016\n656,665\n551,814 458,262 447,420 426,984\n384,172\n358,507\n357,518\nOther\n176,422\n155,106\n172,552\n142,695\n88,118\n89,260\n74,979\n72,688\n73,763\n77,709\n\nTotal assets\n1,476,802 1,409,647 1,347,006 1,173,397 988,175 949,261 852,195\n773,293\n709,604\n687,960",
+        "similarity": 0.6176069378852844,
+        "page_start": 115,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "fiscal_year": 2025,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "section": "MD&A",
+        "quarter": 0,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "bank": "Bank of Montreal",
+        "page_end": 116,
+        "bank_code": "BMO"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00124",
+        "text": "Our customer base is broadly diversified, and we do not anticipate events or conditions that would cause a significant\nnumber of customers to fail to perform in accordance with the terms of their contracts. We use the credit adjudication process in deciding whether to\nenter into these arrangements, just as we do when extending credit in the form of a loan. We monitor off-balance sheet credit instruments in order\nto avoid undue concentrations in any single geographic region or industry. For the credit commitments outlined in the preceding paragraphs, in the absence of an event that triggers a default, early termination by BMO\nmay result in a breach of contract. Further information on these instruments can be found in Note 24 of the audited annual consolidated financial statements.\n\nCaution\nThis Off-Balance Sheet Arrangements section contains forward-looking statements. Please refer to the Caution Regarding Forward-Looking Statements.\n\n66 BMO Financial Group 208th Annual Report 2025\n\nEnterprise-Wide Risk Management\n\nAs a diversified financial services company providing banking, wealth management, capital markets and insurance services,\nBMO is exposed to a variety of risks that are inherent in each of these business activities. A disciplined and integrated\napproach to managing risk is fundamental to the success of our operations. Our Risk Management Framework provides a\nconsistent, enterprise-wide approach to risk management and oversight that underpins our strategy, enables informed\ndecision-making and drives resilience and efficiency.\n\nEnterprise-Wide Risk Management outlines BMO’s approach to managing the key financial risks and other related risks that are inherent in these\nbusiness activities, as discussed in the following sections:\n\n67\nRisks That May Affect Future Results\n70\nRisk Management Framework\n76\nCredit and Counterparty Risk\n84",
+        "similarity": 0.6083879470825195,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank": "Bank of Montreal",
+        "quarter": 0,
+        "page_start": 68,
+        "page_end": 69,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "MD&A"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 1.5856923999963328
+  },
+  "latency_seconds": 9.707882200018503,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0011937,
+  "input_tokens": 5370,
+  "output_tokens": 647,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.0415148000465706,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 4,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer contains mostly accurate information about TD and BMO's disclosures on residential mortgage credit risk, but some claims lack direct support from the provided evidence, particularly regarding BMO's specific practices.",
+    "relevance_reason": "The answer is mostly relevant as it compares the disclosures of TD and BMO, but it does not fully address all aspects of the question regarding similarities and differences, particularly in the context of specific evidence from both banks.",
+    "completeness_reason": "The answer omits some details from BMO's disclosures that could provide a fuller comparison, such as specific figures or metrics related to residential mortgage credit risk, and does not mention the absence of certain evidence from the reference packet.",
+    "unsupported_claims": [],
+    "reference_limitations": "The answer does not fully utilize all available evidence from the reference packet, particularly regarding BMO's disclosures."
+  },
+  "judge_cost_usd": 0.0024256499999999997,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_17",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

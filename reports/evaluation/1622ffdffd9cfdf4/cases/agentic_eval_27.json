@@ -1,0 +1,69 @@
+{
+  "case_id": "1622ffdffd9cfdf4/agentic/eval_27",
+  "config": "agentic",
+  "question": {
+    "id": "eval_27",
+    "question": "What will RBC provision for credit losses be in 2030?",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2030
+      }
+    ],
+    "expected_behavior": "Decline to predict an unsupported future filing or number.",
+    "reference_query": "What will RBC provision for credit losses be in 2030?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What will RBC provision for credit losses be in 2030?",
+    "answer": "I cannot predict future financial figures such as RBC's provision for credit losses in 2030. Financial forecasts typically depend on various factors including economic conditions, regulatory changes, and the bank's operational strategies, none of which can be accurately determined at this time.",
+    "iterations": 1,
+    "tool_calls": 0,
+    "tools_used": [],
+    "input_tokens": 483,
+    "output_tokens": 52,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000104,
+    "seconds": 1.6,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "final_answer",
+        "answer": "I cannot predict future financial figures such as RBC's provision for credit losses in 2030. Financial forecasts typically depend on various factors including economic conditions, regulatory changes, and the bank's operational strategies, none of which can be accurately determined at this time."
+      }
+    ],
+    "sources": [],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 1.6009205000009388,
+  "embedding_cost_usd": 0,
+  "generation_cost_usd": 0.00010365000000000001,
+  "input_tokens": 483,
+  "output_tokens": 52,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately states the inability to predict future financial figures, which is a faithful response to the question.",
+    "relevance_reason": "The response directly addresses the question about predicting RBC's provision for credit losses in 2030, making it highly relevant.",
+    "completeness_reason": "The answer fully covers the request by clearly stating the limitations of predicting future financial figures without omitting any relevant aspects.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0001581
+}

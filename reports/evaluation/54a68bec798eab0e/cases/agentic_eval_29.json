@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_29",
+  "config": "agentic",
+  "question": {
+    "id": "eval_29",
+    "question": "Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Answer in French using supported RBC credit-risk disclosures and citations.",
+    "reference_query": "RBC credit risk management provision credit losses"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?",
+    "answer": "Dans son rapport annuel 2025, la RBC décrit plusieurs risques de crédit, notamment :\n\n1. **Définition du risque de crédit** : Il s'agit du risque de perte associé à l'incapacité ou au refus d'un débiteur de respecter ses obligations contractuelles. Cela inclut le risque de défaut d'un débiteur principal et le risque de crédit de contrepartie provenant d'activités de trading et non de trading (source : RBC_2025_annual_report_FY_00117).\n\n2. **Gestion du risque de crédit** : La RBC utilise un modèle de gouvernance en trois lignes de défense pour gérer le risque de crédit, avec des limites d'exposition et des autorités d'approbation des risques établies par le conseil d'administration (source : RBC_2025_annual_report_FY_00117).\n\n3. **Limites de concentration** : Des limites de concentration sont mises en place pour éviter une surexposition dans des secteurs industriels, des pays ou des produits de crédit spécifiques, afin de réduire le risque de détérioration du crédit et de défaut (source : RBC_2025_annual_report_FY_00126).\n\n4. **Forbearance des prêts** : La RBC a des politiques pour gérer les emprunteurs en difficulté, permettant des modifications des conditions de prêt pour minimiser les pertes (source : RBC_2025_annual_report_FY_00126).\n\n5. **Risque de contrepartie** : Le risque de contrepartie est atténué par l'utilisation d'accords de financement de titres standardisés et de contreparties centrales (CCP) (source : RBC_2025_annual_report_FY_00123).\n\n6. **Risque de crédit au détail** : La RBC utilise des systèmes de notation de crédit pour évaluer le risque des emprunteurs et des transactions dans le secteur de détail, en s'appuyant sur des données internes et externes (source : RBC_2025_annual_report_FY_00123).\n\nCes éléments montrent une approche structurée et proactive de la RBC pour gérer les risques de crédit dans ses opérations. Pour plus de détails, vous pouvez consulter le rapport complet [ici](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4466,
+    "output_tokens": 510,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000976,
+    "seconds": 7.43,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "risques de crédit",
+          "bank": "RBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00117",
+              "text": "Credit risk is the risk of loss associated with an obligor’s potential inability or unwillingness to fulfill its contractual\nobligations on a timely basis and may arise directly from the risk of default of a primary obligor (e.g., issuer, debtor,\ncounterparty, borrower or policyholder), indirectly from a secondary obligor (e.g., guarantor or reinsurer), and/or through\noff-balance sheet exposures, contingent credit risk, associated credit risk and/or transactional risk exposures. Credit risk\nincludes counterparty credit risk arising from both trading and non-trading activities. Exposure to credit risk occurs any time\nfunds are extended, committed or invested through an actual or implied contractual agreement.\n\nThe responsibility for managing credit risk is shared broadly across the organization following the three lines of defence\ngovernance model. The allocation of the Board approved credit risk appetite is supported by the establishment of risk\napproval authorities and risk limits, delegated by the Board to the President & CEO and CRO. Credit transactions in excess of\nthese authorities must be approved by the Risk Committee of the Board. To facilitate day-to-day business activities, the CRO\nhas been empowered to further delegate credit risk approval authorities to individuals within GRM, the business segments\nand functional units, as deemed necessary.\n\nWe balance our risk and return by setting the following objectives for the management of credit risk:\n•\nEnsuring credit quality is not compromised for growth;\n•\nManaging credit risks in transactions, relationships and portfolios;\n•\nAvoiding excessive concentrations in correlated credit risks;\n•\nUsing our credit risk rating and scoring systems or other approved credit risk assessment or rating methodologies,\npolicies and tools;\n•\nPricing appropriately for the credit risk taken;\n•\nDetecting and preventing inappropriate credit risk through effective systems and controls;\n•\nApplying consistent credit risk exposure measurements;\n•\nOngoing credit risk monitoring and administration;\n•\nTransferring credit risk to third parties where appropriate through approved credit risk mitigation techniques (e.g., sale,\nhedging, insurance, securitization); and\n•\nAvoiding activities that are inconsistent with our values, Code of Conduct or policies.\n\n72",
+              "similarity": 0.384,
+              "section": "Credit risk",
+              "quarter": 0,
+              "page_end": 74,
+              "page_start": 74,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "filing_id": "RBC_2025_annual_report_FY",
+              "bank_code": "RBC",
+              "file_name": "RBC_2025_annual_report.pdf",
+              "bank": "Royal Bank of Canada"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00126",
+              "text": "Risk limits are established at the following\nlevels: single name; regional, country and industrial sector (notional and economic capital); regulatory large exposure;\nproduct and portfolio; and underwriting and distribution. These limits apply across all businesses, portfolios, transactions\nand products. We actively manage credit exposures and limits to ensure alignment with our risk appetite, to maintain our target\nbusiness mix and to ensure that there is no undue concentration risk. Concentration risk is defined as the risk arising from an overexposure in particular industry sectors, countries, or credit\nproducts within the portfolio, reflecting the potential for credit deterioration and default to be relatively highly correlated. Credit concentration limits are reviewed on a regular basis after considering business, economic, financial and regulatory\nenvironments.\n\nCredit risk administration\nLoan forbearance\nIn our overall management of borrower relationships, economic, legal or other reasons may necessitate forbearance to certain\nclients with respect to the original terms and conditions of their loans. We have specialized groups and formalized policies that\ndirect the management of high risk, delinquent or defaulted borrowers. We strive to identify borrowers in financial difficulty\nearly and modify their loan terms to minimize losses and assist clients in need. A forbearance agreement may be entered into\nwith the borrower where we will forbear from enforcing on security in exchange for concessions made by the borrower and/or\nadditional security provided by the borrower. Examples of concessions to borrowers may include rate reductions, payment\ndeferrals, term extensions, covenant relief, extensions of matured facilities, amendments or restructuring of agreements, or\nrelaxation of covenants, as applicable. The goal of a forbearance is to enhance our position in exchange for providing the\nborrower additional time to meet the terms and obligations of the loan agreement. For such loans, the appropriate remediation\ntechniques are based on the specific borrower’s situation, our policy and the client’s willingness and capacity to meet the new\nor modified loan terms.\n\n76\n\nCredit risk exposure by portfolio, sector and geography\nThe following table presents our credit risk exposures under the Basel regulatory defined classes and reflects EAD. The\nclassification of our sectors aligns with our view of credit risk by industry.\n\nCredit risk exposure by portfolio, sector and geography\nTable 41\n\nAs at\n\nOctober 31\n\nOctober 31\n\n2024\n\n2025\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nOff-balance sheet\n\nOff-balance sheet\n\namount (3)\n\namount (3)\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n(Millions of Canadian dollars)\nUndrawn\nOther (4)\nDerivatives\nUndrawn\nOther (4)\nDerivatives\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n\nRetail\n\nResidential secured (6)\n$\n514,623 $ 132,502 $\n– $\n– $\n– $\n647,125 $\n498,014 $ 124,743 $\n– $\n– $\n– $\n622,757\nQualifying revolving (7)\n36,407\n104,369\n–\n–\n–\n140,776\n33,571\n95,776\n–\n–\n–\n129,347\nOther retail\n57,003\n22,522\n164\n–\n–\n79,689\n53,257\n21,530\n162\n–\n–\n74,949",
+              "similarity": 0.378,
+              "file_name": "RBC_2025_annual_report.pdf",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "page_end": 79,
+              "page_start": 78,
+              "fiscal_year": 2025,
+              "bank_code": "RBC",
+              "bank": "Royal Bank of Canada",
+              "quarter": 0,
+              "document_type": "annual_report",
+              "section": "Management’s Discussion and Analysis"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00123",
+              "text": "Similarly, for securities finance and repurchase trading activity we mitigate counterparty credit risk via the use of\nstandardized securities finance agreements, and by taking collateral generally in the form of eligible liquid securities. We also mitigate counterparty credit risk through the use of central counterparties (CCPs). These highly-regulated entities\nintermediate trades between participating bilateral counterparties and mitigate credit risk through the use of initial and\nvariation margin and the ability to net offsetting trades amongst participants. The specific structure and capitalization, including\ncontingent capital arrangements, of individual CCPs are analyzed as part of assigning an internal counterparty credit risk rating\nand determining appropriate counterparty credit risk limits.\n\nWrong-way risk\nWrong-way risk is the risk that exposure to a counterparty is adversely correlated with the credit quality of that counterparty.\nThere are two types of wrong-way risk:\n•\nSpecific wrong-way risk, which exists when our exposure to a particular counterparty is positively correlated with the PD of\nthe counterparty due to the nature of our transactions with them (e.g., loans collateralized by shares or debt issued by the\ncounterparty or a related party). Specific wrong-way risk trades are permitted only on an exception basis and when\nexplicitly pre-approved by GRM. Factors considered in reviewing such trades include the counterparty’s credit quality and\ncollateral practices, the underlying exposure of the transaction and the existence of credit mitigation.\n•\nGeneral wrong-way risk, which exists when our exposure to a particular counterparty is positively correlated with the PD of\nthe counterparty due to general macroeconomic or market factors. General wrong-way risk can arise in various\ncircumstances, depending on the transaction, collateral type, and the nature of the counterparty. We monitor general\nwrong-way risk using a variety of metrics including but not limited to correlation analysis between relevant macroeconomic\nor market factors and counterparty credit risk exposure.\n\nRetail credit risk\nCredit scoring is the primary risk rating system for assessing obligor and transaction risk for retail exposures. Scoring models\nuse internal and external data to assess and score borrowers, predict future performance and manage limits for existing\nloans and collection activities. Credit scores are one of the factors employed in the acquisition of new clients and\nmanagement of existing clients. The credit score of the borrower is used to assess credit risk for each independent\nacquisition or account management action, leading to an automated decision or guidance for an adjudicator. Credit scoring\nimproves credit decision quality, adjudication timeframes and consistency in the credit decision process and facilitates risk-\nbased pricing. We seek to continuously improve our credit scoring and analytic capabilities by exploring client behavioural\ndata and advanced analytical techniques to make sound credit decisions.\n\nTo arrive at a retail risk rating, borrower scores are categorized and associated with PDs for further grouping into risk\nrating categories. The following table maps PD bands to various summarized risk levels for retail exposures:\n\nInternal ratings map*\nTable 40\n\nPD bands\nDescription\n\n0.050% – 3.965%\nLow risk\n\n3.966% – 7.428%\nMedium risk\n\n7.429% – 99.99%\nHigh risk\n\n100%\nImpaired/Default\n\n*\nThis table represents an integral part of our 2025 Annual Consolidated Financial Statements.\n\nCredit risk mitigation\n\nWe seek to reduce our exposure to credit risk through a variety of means, including the structuring of transactions and the\nuse of collateral.",
+              "similarity": 0.372,
+              "bank": "Royal Bank of Canada",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "page_end": 77,
+              "quarter": 0,
+              "section": "Management’s Discussion and Analysis",
+              "bank_code": "RBC",
+              "file_name": "RBC_2025_annual_report.pdf",
+              "page_start": 77,
+              "fiscal_year": 2025,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00307",
+              "text": "7,092\n2,030\n1,583\n–\n970,675\n964,881\n981,380\n975,586 Other Derivatives\n150,612\n–\n–\n–\n–\n–\n150,612\n150,612\nOther assets (1)\n11,770\n–\n–\n–\n50,093\n50,093\n61,863\n61,863 Financial liabilities Deposits Personal\n$\n508 $\n33,799 $\n487,832 $\n490,170 $\n522,139 $\n524,477\nBusiness and government (2)\n191\n156,238 683,241\n684,748\n839,670\n841,177\nBank (3)\n–\n10,530 37,192\n37,183\n47,722\n47,713\n\n699\n200,567\n\n1,208,265\n1,212,101\n1,409,531\n1,413,367\n\nOther\n\nObligations related to securities sold short\n35,286\n–\n\n–\n–\n35,286\n35,286\nObligations related to assets sold under\n\nrepurchase agreements and securities\nloaned\n–\n270,663\n\n34,658\n34,658\n305,321\n305,321\nDerivatives\n163,763\n–\n\n–\n–\n163,763\n163,763\nOther liabilities (4)\n(1,407)\n–\n\n69,597\n69,850\n68,190\n68,443\nSubordinated debentures\n–\n–\n\n13,546\n13,602\n13,546\n13,602\n\n(1)\nIncludes financial instruments recognized in Other assets.\n(2)\nBusiness and government deposits include deposits from regulated deposit-taking institutions other than banks.\n(3)\nBank deposits refer to deposits from regulated banks and central banks.\n(4)\nIncludes financial instruments recognized in Other liabilities.\n\nFinancial assets designated as fair value through profit or loss\nFor our financial assets designated as FVTPL, we measure the change in fair value attributable to changes in credit risk as the\ndifference between the total change in the fair value of the instrument during the period and the change in fair value calculated\nusing the appropriate risk-free yield curves. For the year ended October 31, 2025, the change in fair value during the period\nattributable to changes in credit risk for positions still held was a loss of $1 million and the cumulative change in fair value\nattributable to changes in credit risk for positions still held was a loss of $5 million. For the year ended October 31, 2024, the\nchange in fair value during the period attributable to changes in credit risk for positions still held was a gain of $45 million and\nthe cumulative change in fair value attributable to changes in credit risk for positions still held was a loss of $9 million. As at\nOctober 31, 2025, the extent to which credit derivatives or similar instruments mitigate the maximum exposure to credit risk was\n$1,035 million (October 31, 2024 – $954 million).\n\nFinancial liabilities designated as fair value through profit or loss\nFor our financial liabilities designated as FVTPL, we take into account changes in our own credit spread and the expected\nduration of the instrument to measure the change in fair value attributable to changes in credit risk.\n\nAs at or for the year ended October 31, 2025 (1)\n\nDifference\n\nChanges in fair value attributable\n\nto changes in credit risk included\n\nContractual\n\nin OCI for positions still held",
+              "similarity": 0.354,
+              "document_type": "annual_report",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "bank_code": "RBC",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "section": "FVOCI",
+              "fiscal_year": 2025,
+              "page_end": 166,
+              "page_start": 166,
+              "quarter": 0,
+              "bank": "Royal Bank of Canada",
+              "file_name": "RBC_2025_annual_report.pdf"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "Dans son rapport annuel 2025, la RBC décrit plusieurs risques de crédit, notamment :\n\n1. **Définition du risque de crédit** : Il s'agit du risque de perte associé à l'incapacité ou au refus d'un débiteur de respecter ses obligations contractuelles. Cela inclut le risque de défaut d'un débiteur principal et le risque de crédit de contrepartie provenant d'activités de trading et non de trading (source : RBC_2025_annual_report_FY_00117).\n\n2. **Gestion du risque de crédit** : La RBC utilise un modèle de gouvernance en trois lignes de défense pour gérer le risque de crédit, avec des limites d'exposition et des autorités d'approbation des risques établies par le conseil d'administration (source : RBC_2025_annual_report_FY_00117).\n\n3. **Limites de concentration** : Des limites de concentration sont mises en place pour éviter une surexposition dans des secteurs industriels, des pays ou des produits de crédit spécifiques, afin de réduire le risque de détérioration du crédit et de défaut (source : RBC_2025_annual_report_FY_00126).\n\n4. **Forbearance des prêts** : La RBC a des politiques pour gérer les emprunteurs en difficulté, permettant des modifications des conditions de prêt pour minimiser les pertes (source : RBC_2025_annual_report_FY_00126).\n\n5. **Risque de contrepartie** : Le risque de contrepartie est atténué par l'utilisation d'accords de financement de titres standardisés et de contreparties centrales (CCP) (source : RBC_2025_annual_report_FY_00123).\n\n6. **Risque de crédit au détail** : La RBC utilise des systèmes de notation de crédit pour évaluer le risque des emprunteurs et des transactions dans le secteur de détail, en s'appuyant sur des données internes et externes (source : RBC_2025_annual_report_FY_00123).\n\nCes éléments montrent une approche structurée et proactive de la RBC pour gérer les risques de crédit dans ses opérations. Pour plus de détails, vous pouvez consulter le rapport complet [ici](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00117",
+        "text": "Credit risk is the risk of loss associated with an obligor’s potential inability or unwillingness to fulfill its contractual\nobligations on a timely basis and may arise directly from the risk of default of a primary obligor (e.g., issuer, debtor,\ncounterparty, borrower or policyholder), indirectly from a secondary obligor (e.g., guarantor or reinsurer), and/or through\noff-balance sheet exposures, contingent credit risk, associated credit risk and/or transactional risk exposures. Credit risk\nincludes counterparty credit risk arising from both trading and non-trading activities. Exposure to credit risk occurs any time\nfunds are extended, committed or invested through an actual or implied contractual agreement.\n\nThe responsibility for managing credit risk is shared broadly across the organization following the three lines of defence\ngovernance model. The allocation of the Board approved credit risk appetite is supported by the establishment of risk\napproval authorities and risk limits, delegated by the Board to the President & CEO and CRO. Credit transactions in excess of\nthese authorities must be approved by the Risk Committee of the Board. To facilitate day-to-day business activities, the CRO\nhas been empowered to further delegate credit risk approval authorities to individuals within GRM, the business segments\nand functional units, as deemed necessary.\n\nWe balance our risk and return by setting the following objectives for the management of credit risk:\n•\nEnsuring credit quality is not compromised for growth;\n•\nManaging credit risks in transactions, relationships and portfolios;\n•\nAvoiding excessive concentrations in correlated credit risks;\n•\nUsing our credit risk rating and scoring systems or other approved credit risk assessment or rating methodologies,\npolicies and tools;\n•\nPricing appropriately for the credit risk taken;\n•\nDetecting and preventing inappropriate credit risk through effective systems and controls;\n•\nApplying consistent credit risk exposure measurements;\n•\nOngoing credit risk monitoring and administration;\n•\nTransferring credit risk to third parties where appropriate through approved credit risk mitigation techniques (e.g., sale,\nhedging, insurance, securitization); and\n•\nAvoiding activities that are inconsistent with our values, Code of Conduct or policies.\n\n72",
+        "similarity": 0.384,
+        "section": "Credit risk",
+        "quarter": 0,
+        "page_end": 74,
+        "page_start": 74,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "bank": "Royal Bank of Canada"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00126",
+        "text": "Risk limits are established at the following\nlevels: single name; regional, country and industrial sector (notional and economic capital); regulatory large exposure;\nproduct and portfolio; and underwriting and distribution. These limits apply across all businesses, portfolios, transactions\nand products. We actively manage credit exposures and limits to ensure alignment with our risk appetite, to maintain our target\nbusiness mix and to ensure that there is no undue concentration risk. Concentration risk is defined as the risk arising from an overexposure in particular industry sectors, countries, or credit\nproducts within the portfolio, reflecting the potential for credit deterioration and default to be relatively highly correlated. Credit concentration limits are reviewed on a regular basis after considering business, economic, financial and regulatory\nenvironments.\n\nCredit risk administration\nLoan forbearance\nIn our overall management of borrower relationships, economic, legal or other reasons may necessitate forbearance to certain\nclients with respect to the original terms and conditions of their loans. We have specialized groups and formalized policies that\ndirect the management of high risk, delinquent or defaulted borrowers. We strive to identify borrowers in financial difficulty\nearly and modify their loan terms to minimize losses and assist clients in need. A forbearance agreement may be entered into\nwith the borrower where we will forbear from enforcing on security in exchange for concessions made by the borrower and/or\nadditional security provided by the borrower. Examples of concessions to borrowers may include rate reductions, payment\ndeferrals, term extensions, covenant relief, extensions of matured facilities, amendments or restructuring of agreements, or\nrelaxation of covenants, as applicable. The goal of a forbearance is to enhance our position in exchange for providing the\nborrower additional time to meet the terms and obligations of the loan agreement. For such loans, the appropriate remediation\ntechniques are based on the specific borrower’s situation, our policy and the client’s willingness and capacity to meet the new\nor modified loan terms.\n\n76\n\nCredit risk exposure by portfolio, sector and geography\nThe following table presents our credit risk exposures under the Basel regulatory defined classes and reflects EAD. The\nclassification of our sectors aligns with our view of credit risk by industry.\n\nCredit risk exposure by portfolio, sector and geography\nTable 41\n\nAs at\n\nOctober 31\n\nOctober 31\n\n2024\n\n2025\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nCredit risk (1), (2)\nCounterparty credit risk (5)\n\nOff-balance sheet\n\nOff-balance sheet\n\namount (3)\n\namount (3)\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n(Millions of Canadian dollars)\nUndrawn\nOther (4)\nDerivatives\nUndrawn\nOther (4)\nDerivatives\n\nOn-balance\nsheet amount\n\nRepo-style\ntransactions\n\nTotal\nexposure\n\nRetail\n\nResidential secured (6)\n$\n514,623 $ 132,502 $\n– $\n– $\n– $\n647,125 $\n498,014 $ 124,743 $\n– $\n– $\n– $\n622,757\nQualifying revolving (7)\n36,407\n104,369\n–\n–\n–\n140,776\n33,571\n95,776\n–\n–\n–\n129,347\nOther retail\n57,003\n22,522\n164\n–\n–\n79,689\n53,257\n21,530\n162\n–\n–\n74,949",
+        "similarity": 0.378,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 79,
+        "page_start": 78,
+        "fiscal_year": 2025,
+        "bank_code": "RBC",
+        "bank": "Royal Bank of Canada",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "section": "Management’s Discussion and Analysis"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00123",
+        "text": "Similarly, for securities finance and repurchase trading activity we mitigate counterparty credit risk via the use of\nstandardized securities finance agreements, and by taking collateral generally in the form of eligible liquid securities. We also mitigate counterparty credit risk through the use of central counterparties (CCPs). These highly-regulated entities\nintermediate trades between participating bilateral counterparties and mitigate credit risk through the use of initial and\nvariation margin and the ability to net offsetting trades amongst participants. The specific structure and capitalization, including\ncontingent capital arrangements, of individual CCPs are analyzed as part of assigning an internal counterparty credit risk rating\nand determining appropriate counterparty credit risk limits.\n\nWrong-way risk\nWrong-way risk is the risk that exposure to a counterparty is adversely correlated with the credit quality of that counterparty.\nThere are two types of wrong-way risk:\n•\nSpecific wrong-way risk, which exists when our exposure to a particular counterparty is positively correlated with the PD of\nthe counterparty due to the nature of our transactions with them (e.g., loans collateralized by shares or debt issued by the\ncounterparty or a related party). Specific wrong-way risk trades are permitted only on an exception basis and when\nexplicitly pre-approved by GRM. Factors considered in reviewing such trades include the counterparty’s credit quality and\ncollateral practices, the underlying exposure of the transaction and the existence of credit mitigation.\n•\nGeneral wrong-way risk, which exists when our exposure to a particular counterparty is positively correlated with the PD of\nthe counterparty due to general macroeconomic or market factors. General wrong-way risk can arise in various\ncircumstances, depending on the transaction, collateral type, and the nature of the counterparty. We monitor general\nwrong-way risk using a variety of metrics including but not limited to correlation analysis between relevant macroeconomic\nor market factors and counterparty credit risk exposure.\n\nRetail credit risk\nCredit scoring is the primary risk rating system for assessing obligor and transaction risk for retail exposures. Scoring models\nuse internal and external data to assess and score borrowers, predict future performance and manage limits for existing\nloans and collection activities. Credit scores are one of the factors employed in the acquisition of new clients and\nmanagement of existing clients. The credit score of the borrower is used to assess credit risk for each independent\nacquisition or account management action, leading to an automated decision or guidance for an adjudicator. Credit scoring\nimproves credit decision quality, adjudication timeframes and consistency in the credit decision process and facilitates risk-\nbased pricing. We seek to continuously improve our credit scoring and analytic capabilities by exploring client behavioural\ndata and advanced analytical techniques to make sound credit decisions.\n\nTo arrive at a retail risk rating, borrower scores are categorized and associated with PDs for further grouping into risk\nrating categories. The following table maps PD bands to various summarized risk levels for retail exposures:\n\nInternal ratings map*\nTable 40\n\nPD bands\nDescription\n\n0.050% – 3.965%\nLow risk\n\n3.966% – 7.428%\nMedium risk\n\n7.429% – 99.99%\nHigh risk\n\n100%\nImpaired/Default\n\n*\nThis table represents an integral part of our 2025 Annual Consolidated Financial Statements.\n\nCredit risk mitigation\n\nWe seek to reduce our exposure to credit risk through a variety of means, including the structuring of transactions and the\nuse of collateral.",
+        "similarity": 0.372,
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "page_end": 77,
+        "quarter": 0,
+        "section": "Management’s Discussion and Analysis",
+        "bank_code": "RBC",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 77,
+        "fiscal_year": 2025,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00307",
+        "text": "7,092\n2,030\n1,583\n–\n970,675\n964,881\n981,380\n975,586 Other Derivatives\n150,612\n–\n–\n–\n–\n–\n150,612\n150,612\nOther assets (1)\n11,770\n–\n–\n–\n50,093\n50,093\n61,863\n61,863 Financial liabilities Deposits Personal\n$\n508 $\n33,799 $\n487,832 $\n490,170 $\n522,139 $\n524,477\nBusiness and government (2)\n191\n156,238 683,241\n684,748\n839,670\n841,177\nBank (3)\n–\n10,530 37,192\n37,183\n47,722\n47,713\n\n699\n200,567\n\n1,208,265\n1,212,101\n1,409,531\n1,413,367\n\nOther\n\nObligations related to securities sold short\n35,286\n–\n\n–\n–\n35,286\n35,286\nObligations related to assets sold under\n\nrepurchase agreements and securities\nloaned\n–\n270,663\n\n34,658\n34,658\n305,321\n305,321\nDerivatives\n163,763\n–\n\n–\n–\n163,763\n163,763\nOther liabilities (4)\n(1,407)\n–\n\n69,597\n69,850\n68,190\n68,443\nSubordinated debentures\n–\n–\n\n13,546\n13,602\n13,546\n13,602\n\n(1)\nIncludes financial instruments recognized in Other assets.\n(2)\nBusiness and government deposits include deposits from regulated deposit-taking institutions other than banks.\n(3)\nBank deposits refer to deposits from regulated banks and central banks.\n(4)\nIncludes financial instruments recognized in Other liabilities.\n\nFinancial assets designated as fair value through profit or loss\nFor our financial assets designated as FVTPL, we measure the change in fair value attributable to changes in credit risk as the\ndifference between the total change in the fair value of the instrument during the period and the change in fair value calculated\nusing the appropriate risk-free yield curves. For the year ended October 31, 2025, the change in fair value during the period\nattributable to changes in credit risk for positions still held was a loss of $1 million and the cumulative change in fair value\nattributable to changes in credit risk for positions still held was a loss of $5 million. For the year ended October 31, 2024, the\nchange in fair value during the period attributable to changes in credit risk for positions still held was a gain of $45 million and\nthe cumulative change in fair value attributable to changes in credit risk for positions still held was a loss of $9 million. As at\nOctober 31, 2025, the extent to which credit derivatives or similar instruments mitigate the maximum exposure to credit risk was\n$1,035 million (October 31, 2024 – $954 million).\n\nFinancial liabilities designated as fair value through profit or loss\nFor our financial liabilities designated as FVTPL, we take into account changes in our own credit spread and the expected\nduration of the instrument to measure the change in fair value attributable to changes in credit risk.\n\nAs at or for the year ended October 31, 2025 (1)\n\nDifference\n\nChanges in fair value attributable\n\nto changes in credit risk included\n\nContractual\n\nin OCI for positions still held",
+        "similarity": 0.354,
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "section": "FVOCI",
+        "fiscal_year": 2025,
+        "page_end": 166,
+        "page_start": 166,
+        "quarter": 0,
+        "bank": "Royal Bank of Canada",
+        "file_name": "RBC_2025_annual_report.pdf"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 7.437033300055191,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009759,
+  "input_tokens": 4466,
+  "output_tokens": 510,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.02548209996894002,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "Toutes les affirmations concernant les risques de crédit de la RBC sont soutenues par des citations précises du rapport annuel 2025, y compris la définition du risque de crédit, la gestion du risque, les limites de concentration, la forbearance des prêts et le risque de contrepartie.",
+    "relevance_reason": "La réponse aborde directement la question sur les risques de crédit décrits par la RBC dans son rapport annuel 2025, en fournissant des détails pertinents et spécifiques.",
+    "completeness_reason": "La réponse couvre tous les aspects demandés concernant les risques de crédit, en mentionnant plusieurs types de risques et en fournissant des citations appropriées pour chaque point.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0013917
+}

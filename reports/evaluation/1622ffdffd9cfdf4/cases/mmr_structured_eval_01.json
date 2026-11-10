@@ -1,0 +1,155 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_01",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_01",
+    "question": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed credit risks and provisions for credit losses; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, RBC disclosed that credit risk is considered low for certain instruments, such as interest-bearing deposits with banks and liquidity facilities extended to multi-seller conduits, indicating a low risk of default and the borrowers' ability to meet obligations even during adverse economic conditions [S1]. The bank employs a forward-looking approach to measure expected credit losses (ECL), which includes assessing macroeconomic variables like unemployment rates and GDP growth to estimate credit loss allowances for different stages of credit risk [S1]. \n\nRBC's definition of default aligns with its internal credit risk management, where default is defined as being more than 90 days past due on any material obligation or when the borrower is unlikely to fulfill payments without recourse [S1]. \n\nThe report also highlights the gross impaired loans (GIL) for the year ended October 31, 2025, which totaled $5,867 million, a decrease from $8,682 million in 2024. This indicates a reduction in impaired loans across various segments, including personal banking and commercial banking [S5]. \n\nOverall, RBC's approach to credit risk management involves significant judgment and the use of multiple macroeconomic scenarios to estimate ECL, reflecting a comprehensive strategy to mitigate credit risks [S1].",
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00280",
+        "text": "Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased\nunder reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have\nbeen identified as having low credit risk. Use of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario\nbased on reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are\ndesigned to capture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of\nadditional downside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.\n\nDefinition of default\nThe definition of default used in the measurement of expected credit losses is consistent with the definition of default used for\nour internal credit risk management purposes. Our definition of default may differ across products and consider both\nquantitative and qualitative factors, such as the terms of financial covenants and days past due. For retail and wholesale\nborrowers, except as detailed below, default occurs when the borrower is more than 90 days past due on any material obligation\nto us, and/or we consider the borrower unlikely to make their payments in full without recourse action on our part, such as\ntaking formal possession of any collateral held. For certain credit card balances, default occurs when payments are 180 days\n\n154\nConsolidated Financial Statements",
+        "similarity": 0.5976731181144714,
+        "bank": "Royal Bank of Canada",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "section": "FVOCI",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "bank_code": "RBC",
+        "page_end": 156,
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "page_start": 156
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00116",
+        "text": "Resulting\nimplications from failing to manage data and privacy risks could include financial loss, theft of\nintellectual property and/or confidential information, litigation, enhanced regulatory attention and\npenalties, reputational damage and damaged client and employee trust. With the proliferation of AI,\nprivacy regulators globally have begun issuing guidance around ensuring appropriate use of AI when\nprocessing personal information, in addition to guardrails around transparency and ensuring the rights\nof the individual are respected in the context of AI systems. Adherence to these guidelines and\nguardrails and trusted integration into existing privacy programs continues to be a focal area for RBC. For details on how we are managing these risks, refer to the Operational risk section. Top & emerging risks\nDescription Regulatory changes\n\nThe ongoing introduction of new or revised regulations requires enhanced focus across the organization\non meeting additional or modified regulatory requirements and expectations across the multiple\njurisdictions in which we operate. Regulatory reforms that have been implemented or are being\nimplemented across multiple jurisdictions, such as in areas of digital and operational resilience, data\nand technology reforms, including AI, cyber security, capital, anti-money laundering and consumer\nprotection continue to impact our operations and strategies. For more details, refer to the Overview of\nother risks – Legal and regulatory environment risk section.\n\nCulture and conduct risks\n\nOur Purpose, vision, values and risk management principles define RBC’s culture. We demonstrate our\nculture through our conduct – the behaviours, decisions and actions or inactions of the organization and\nour employees. Culture and conduct risks are considered top risks for the financial services industry due\nto the impact that our choices, behaviours and overall risk governance can have on outcomes for our\nclients, shareholders and other stakeholders. We embed client considerations into our decision-making\nprocesses and continue to focus on the fair treatment of clients which also aligns with regulatory\ndirection. We seek to be responsive to evolving employee needs while expecting employees to always\nact with integrity.\n\nRegulators continue to focus on conduct risks, and heightened expectations generally from regulators\ncould lead to investigations, remediation requirements, higher compliance costs and enforcement\nactions and fines, and potential criminal prosecutions or imposition of sanctions, which may involve\nprohibitions or restrictions on some of our activities. While we take steps to continue to strengthen our\nconduct practices and prevent and detect risk outcomes that are not in keeping with our responsibilities\nto our stakeholders, such outcomes may not always be prevented or detected. Additionally, RBC\ncontinues to focus efforts on enhancing and fostering a strong risk culture. A strong risk culture\nreinforces risk-aware mindsets, competencies and behaviours by promoting responsible risk-taking\ndecisions across the bank. For more details, refer to the Culture and conduct risk section.\n\nThe shaded text along with the tables specifically marked with an asterisk (*) in the following sections of the MD&A represent\nour disclosures on credit, market and liquidity and funding risks in accordance with IFRS 7, Financial Instruments: Disclosures,\nand include discussion on how we measure our risks and the objectives, policies and methodologies for managing these\nrisks. Therefore, these shaded text and marked tables represent an integral part of our 2025 Annual Consolidated Financial\nStatements.\n\nPrincipal Risks",
+        "similarity": 0.5292820930480957,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "bank_code": "RBC",
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_end": 74,
+        "page_start": 74,
+        "section": "Management’s Discussion and Analysis"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00244",
+        "text": "balances of impaired loans and\nimpairment allowances during the year\n\n29\nQuantification of gross notional exposure\n\n77\n32\n\nfor OTC derivatives or exchange-traded\nderivatives\n\n30\nCredit risk mitigation, including collateral\n\n75-76\n*\n\nheld for all sources of credit risk\n\nOther\n31\nOther risk types\n102-110\n–\n32\nPublicly known risk events\n107-108, 230-231\n–\n\n*\nThese disclosure requirements are satisfied or partially satisfied by disclosures provided in our Pillar 3 Report for the quarter ended October 31, 2025 and for the year\nended October 31, 2024.\n\n136\nIndex for Enhanced Disclosure Task Force recommendations",
+        "similarity": 0.5808981657028198,
+        "section": "Credit risk",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "fiscal_year": 2025,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 138,
+        "bank_code": "RBC",
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_end": 138,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00004",
+        "text": "Source: Bloomberg, as at October 31, 2025. Please refer to\npage 26.\n8\n\u0007Beginning in fiscal 2026, the achievement of top half total shareholder returns (TSR) will no longer be a medium-term objective. TSR performance relative to peers will continue to\nbe a part of our overall evaluation of shareholder outcomes and in our compensation programs. However, we believe the achievement of our financial performance objectives is a\nbetter indication of our execution against strategic priorities.\n9\nCompound annual growth rate.\n10 Excludes Corporate Support. Royal Bank of Canada Annual Report 2025 | 3 Dear fellow shareholders,\n\nIn 2025, we advanced our position as one of the world’s\nmost trusted and successful financial institutions. Our\nperformance and strategic ambitions were a big part of\nthe story, but it’s the way we achieved our results that\ncontinues to define our success.\n\nA message from\nDave McKay,\nPresident & CEO\n\nRBC is a global team of 100,000+ colleagues who are\nunified by our Purpose: to help clients thrive and\ncommunities prosper. We strive to bring trusted advice\nand real care to every interaction — from guiding clients\nthrough major financial decisions and life moments, to\nhelping businesses and entrepreneurs bring new ideas\nto life. I receive feedback from clients all the time, and so\nmuch of it reinforces the important moments where our\npeople shape a client’s future for the better.\n\nIn a rapidly changing economy and more complex world,\nwe believe that combining personalized insights and\nadvice with global connectivity and scale is the foundation\nfor how RBC will continue to create long-term value for\nour 19+ million clients. This was at the heart of our all-\nbank Investor Day this year, where we shared our plan to\nexpand our global reach and capabilities and continue\nto transform the bank to exceed expectations for clients\nand shareholders.\n\nOur relentless client focus is shaping everything we do —\nfrom the way we’re expanding our global franchises to how\nwe’re deepening relationships and delivering value in new\nways. You’ll see that focus reflected in our 2025 results and\nthe momentum that is carrying us forward.\n\nOur 2025 results\n\nRBC is an all-weather bank, with the financial and strategic\nstrength to support our clients and deliver value to\nshareholders through all economic cycles. This year, we\ndemonstrated that by delivering exceptional financial\nresults across our businesses during a year of significant\nmacroeconomic uncertainty and market volatility.\n\nWe generated earnings of $20.4 billion and a Return on\nEquity of 16.3 per cent in 2025 as we continued to deepen\nclient relationships and build new ones across our market-\nleading franchises.\n\nIn 2025, we advanced our\nposition as one of the world’s\nmost trusted and successful\nfinancial institutions.\n“\n\nOur share price increased by 22 per cent year-over-year,\nand we returned $11.3 billion to our shareholders through\ncommon dividends and share buybacks. I’m proud that\nwe’re delivering results that our shareholders have come\nto expect, while maintaining strong governance and a\nprudent approach to risk and cost management.\n\n”\n\nWe entered the 2026 fiscal year as the 11th largest bank\nglobally and 6th largest in North America by market\n\n4 | Royal Bank of Canada Annual Report 2025\n\ncapitalization.1 Our financial strength remains one of\nour greatest advantages, underpinning our strong credit\nratings and giving us the capacity to fund future growth\nand pursue big opportunities.",
+        "similarity": 0.5237182378768921,
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_start": 6,
+        "page_end": 7,
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "section": "Management’s Discussion and Analysis",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00133",
+        "text": "RBC Homeline\nPlan products (3) Residential\nmortgages (2) Average of newly originated and acquired for the period, by\nregion (4) Atlantic provinces\n70%\n70% 68%\n68%\nQuebec\n70 70 64 67 Ontario\n70 65 63 60 Alberta\n72 70 66 67 Saskatchewan and Manitoba\n72 73 69 70 B.C. and territories\n67 63 51 60 U.S.\n72 n.m. 72 n.m. Other International\n71 n.m. 70 n.m. Average of newly originated and acquired for the period (5), (6), (7)\n70%\n67% 60%\n61% Total Personal Banking – Canada residential mortgages\nportfolio (8)\n60%\n49% 56%\n47%\n\n(1)\nDisclosure is provided in accordance with the requirements of OSFI’s Guideline B-20 (Residential Mortgage Underwriting Practices and\nProcedures).\n(2)\nResidential mortgages exclude residential mortgages within the RBC Homeline Plan products.\n(3)\nRBC Homeline Plan products comprise both residential mortgages and home equity lines of credit.\n(4)\nRegion is based upon the address of the property mortgaged. The Atlantic provinces comprise Newfoundland and Labrador, Prince\nEdward Island, Nova Scotia and New Brunswick; B.C. and territories comprise British Columbia, Nunavut, Northwest Territories and\nYukon.\n(5)\nThe average LTV ratios for newly originated and acquired uninsured residential mortgages and RBC Homeline Plan products are\ncalculated on a weighted basis by mortgage amounts at origination.\n(6)\nFor newly originated mortgages and RBC Homeline Plan products, LTV is calculated based on the total facility amount for the residential\nmortgage and RBC Homeline Plan product divided by the value of the related residential property.\n(7)\nThe year ended October 31, 2024 includes the impact of the HSBC Canada portfolio acquired in the second quarter of 2024. Excluding the\nacquired HSBC Canada portfolio, the average of newly originated and acquired residential mortgages and RBC Homeline Plan products\nfor the year ended October 31, 2024 was 70% and 65%, respectively.\n(8)\nWeighted by mortgage balances and adjusted for property values based on the Teranet – National Bank House Price Index‡.\nn.m. not meaningful\n\n80\n\nCredit quality performance\nThe following credit quality performance tables and analysis provide information on loans, which represents loans, acceptances\nand commitments, and other financial assets.\n\nGross impaired loans (GIL)\nTable 46\n\nAs at and for the year ended\n\nOctober 31\n\nOctober 31\n\n(Millions of Canadian dollars, except percentage amounts)\n\n2024\n\n2025\n\nPersonal Banking (1)\n$\n2,091 $\n1,652\nCommercial Banking (1)\n3,362\n2,372\nWealth Management\n609\n508\nCapital Markets\n2,620\n1,335\n\nTotal GIL\n$\n8,682 $\n5,867\n\nImpaired loans, beginning balance\n$\n5,867 $\n3,704\nClassified as impaired during the period (new impaired) (1)\n9,687\n6,272\nNet repayments (1)\n(1,381)\n(848)\nAmounts written off\n(3,326)\n(2,521)\nOther (2)\n(2,165)\n(740)\n\nImpaired loans, balance at end of period\n$\n8,682 $\n5,867\n\nGIL as a % of related loans and acceptances",
+        "similarity": 0.5309852957725525,
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_start": 82,
+        "bank": "Royal Bank of Canada",
+        "page_end": 83,
+        "fiscal_year": 2025,
+        "bank_code": "RBC",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+      }
+    ],
+    "structured": {
+      "answer": "In its 2025 annual report, RBC disclosed that credit risk is considered low for certain instruments, such as interest-bearing deposits with banks and liquidity facilities extended to multi-seller conduits, indicating a low risk of default and the borrowers' ability to meet obligations even during adverse economic conditions [S1]. The bank employs a forward-looking approach to measure expected credit losses (ECL), which includes assessing macroeconomic variables like unemployment rates and GDP growth to estimate credit loss allowances for different stages of credit risk [S1]. \n\nRBC's definition of default aligns with its internal credit risk management, where default is defined as being more than 90 days past due on any material obligation or when the borrower is unlikely to fulfill payments without recourse [S1]. \n\nThe report also highlights the gross impaired loans (GIL) for the year ended October 31, 2025, which totaled $5,867 million, a decrease from $8,682 million in 2024. This indicates a reduction in impaired loans across various segments, including personal banking and commercial banking [S5]. \n\nOverall, RBC's approach to credit risk management involves significant judgment and the use of multiple macroeconomic scenarios to estimate ECL, reflecting a comprehensive strategy to mitigate credit risks [S1].",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "FVOCI",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.4996141999727115
+  },
+  "latency_seconds": 5.012003200012259,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00073125,
+  "input_tokens": 3527,
+  "output_tokens": 337,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.021060300059616566,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about RBC's credit risks and provisions for credit losses are directly supported by the actual answer context, including specific figures and definitions from the 2025 annual report.",
+    "relevance_reason": "The answer directly addresses the question regarding credit risks and provisions for credit losses disclosed by RBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including definitions, risk assessments, and specific figures for gross impaired loans, as well as the methodology for estimating expected credit losses.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0014091
+}

@@ -1,0 +1,155 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_08",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_08",
+    "question": "What interest-rate risk management did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed interest-rate risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What interest-rate risk management did BMO disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "BMO disclosed that its structural earnings sensitivity quantifies the potential impact of interest rate changes on structural balance sheet pre-tax net income over the next 12 months. The sensitivity to falling interest rates increased relative to October 31, 2024, primarily due to lower modelled prepayment penalty fees collected on certain prepayable instruments. During 2025, both economic value sensitivity and earnings sensitivity remained within the limits established by the Board of Directors. The report also included specific figures for economic value sensitivity and earnings sensitivity under different interest rate scenarios, indicating potential losses and gains associated with 100 basis point increases and decreases in interest rates. For example, a 100 basis point increase in rates would result in a total economic value sensitivity loss of 1,736 million CAD, while a decrease would yield a gain of 1,063 million CAD. The report also detailed the net loans and acceptances by interest rate sensitivity, showing the amounts that will reprice or repay within specified time frames, which is crucial for understanding interest rate risk management strategies employed by BMO.",
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00124",
+        "text": "Our customer base is broadly diversified, and we do not anticipate events or conditions that would cause a significant\nnumber of customers to fail to perform in accordance with the terms of their contracts. We use the credit adjudication process in deciding whether to\nenter into these arrangements, just as we do when extending credit in the form of a loan. We monitor off-balance sheet credit instruments in order\nto avoid undue concentrations in any single geographic region or industry. For the credit commitments outlined in the preceding paragraphs, in the absence of an event that triggers a default, early termination by BMO\nmay result in a breach of contract. Further information on these instruments can be found in Note 24 of the audited annual consolidated financial statements.\n\nCaution\nThis Off-Balance Sheet Arrangements section contains forward-looking statements. Please refer to the Caution Regarding Forward-Looking Statements.\n\n66 BMO Financial Group 208th Annual Report 2025\n\nEnterprise-Wide Risk Management\n\nAs a diversified financial services company providing banking, wealth management, capital markets and insurance services,\nBMO is exposed to a variety of risks that are inherent in each of these business activities. A disciplined and integrated\napproach to managing risk is fundamental to the success of our operations. Our Risk Management Framework provides a\nconsistent, enterprise-wide approach to risk management and oversight that underpins our strategy, enables informed\ndecision-making and drives resilience and efficiency.\n\nEnterprise-Wide Risk Management outlines BMO’s approach to managing the key financial risks and other related risks that are inherent in these\nbusiness activities, as discussed in the following sections:\n\n67\nRisks That May Affect Future Results\n70\nRisk Management Framework\n76\nCredit and Counterparty Risk\n84",
+        "similarity": 0.677396297454834,
+        "document_type": "annual_report",
+        "page_start": 68,
+        "fiscal_year": 2025,
+        "bank": "Bank of Montreal",
+        "page_end": 69,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "quarter": 0,
+        "bank_code": "BMO",
+        "section": "MD&A"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00385",
+        "text": "Certain comparative figures have been reclassified to conform with the current year’s presentation.\n\nNotes\n\nBMO Financial Group 208th Annual Report 2025 181",
+        "similarity": 0.6220738887786865,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank": "Bank of Montreal",
+        "section": "FVTPL.",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO",
+        "quarter": 0,
+        "page_end": 183,
+        "page_start": 183,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00176",
+        "text": "Structural earnings sensitivity quantifies the potential\nimpact of interest rate changes on structural balance sheet pre-tax net income over the next 12 months. The sensitivity of structural earnings to\nfalling interest rates primarily reflects the risk of fixed-rate and floating-rate loans repricing at lower rates and the more limited ability to reduce\ndeposit pricing as rates fall. The benefit of rising interest rates to structural earnings primarily reflected the positive impact of reinvesting our net\nequity and non-rate sensitive deposits into assets with higher-term rates. The benefit of rising interest rates to structural earnings remained relatively\nunchanged compared with October 31, 2024. The exposure of falling interest rates to structural earnings increased relative to October 31, 2024,\nprimarily due to the impact of lower modelled prepayment penalty fees collected on certain prepayable instruments.\n\nDuring 2025, both economic value sensitivity and earnings sensitivity remained within the limits established by the Board of Directors.\n\nStructural Interest Rate Sensitivity (1) (2)\n\nTABLE 44\n\nEconomic value sensitivity\nEarnings sensitivity\n\nOctober 31, 2025\nOctober 31, 2024\nOctober 31, 2025\nOctober 31, 2024\n\n(Pre-tax Canadian $ equivalent in millions)\n\nCanada (3)\nUnited States\nTotal\nTotal\nCanada (3)\nUnited States\nTotal\nTotal\n\n100 basis point increase\n(986)\n(750)\n(1,736)\n(1,483)\n104\n252\n357\n367\n100 basis point decrease\n983\n80\n1,063\n660\n(26)\n(296)\n(322)\n(210)\n\n(1) Losses are presented in brackets and gains are presented as positive numbers.\n(2) Interest rate sensitivities assume an immediate and sustained parallel shift in assumed interest rates across the entire yield curve as at the end of the period, using a constant balance sheet.\n(3) Includes Canadian dollar and other currencies.\n\nThe table below presents net loans and acceptances by interest rate sensitivity.\n\nTABLE 45\n\n(Canadian $ in millions)\n2025\n2024\n\nFixed rate (1)\n\nContractual amounts that will reprice/repay within 3 months\n216,506\n213,314\nContractual amounts that will reprice/repay after 3 months\n236,771\n254,872\nFloating rate (2)\n217,120\n202,031\nNon-rate sensitive (3)\n7,475\n8,158\n\nTotal\n677,872\n678,375\n\n(1) Includes index-based loans.\n(2) Floating rate only includes loans that reprice immediately upon a change in interest rates.\n(3) Includes credit card balances that are paid when due, customers’ liability under acceptances, impaired loans and allowance for credit losses.\n\nMaterial presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements.\n\nBMO Financial Group 208th Annual Report 2025 87",
+        "similarity": 0.5862327218055725,
+        "page_end": 89,
+        "section": "MD&A",
+        "document_type": "annual_report",
+        "bank": "Bank of Montreal",
+        "page_start": 89,
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank_code": "BMO",
+        "quarter": 0,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00010",
+        "text": "5 The CET1 Ratio is disclosed in accordance with OSFI’s Capital Adequacy Requirements (CAR) Guideline. 6 As at October 31, 2025. 7 Percentages determined excluding results in Corporate Services. Certain comparative figures have been reclassified for changes in accounting policy. 8 BMO Financial Group 208th Annual Report 2025 BMO Net Income by Geography Reported Net Income by\nOperating Segment7 1817\nserving customers for 208 years\nand counting Adjusted2 Reported 7th largest\nbank in North America by assets Canadian P&C\n35% Canada/Other 61%\n59%\nU.S.\n39%\n41% U.S. Banking\n30% $1.5 trillion\nin total assets\n\nWealth Management 14%\n\nCapital Markets\n21%\n\nApproximately\n13 million\ncustomers globally\n\nA 197-year dividend record\n\nCompound annual growth rate\n\nBMO Financial Group has the longest-running dividend\npayout record of any company in Canada, at 197 years.\nBMO common shares had an annual dividend yield of\n3.7% at October 31, 2025.\n5.7%\n\nBMO 15-year\n8.7%\n\nBMO 5-year\n\nBMO Financial Group 208th Annual Report 2025 9\n\nBMOM\n\nBMOM\n\nBMO Tower Chicago",
+        "similarity": 0.6258289813995361,
+        "page_end": 12,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_start": 11,
+        "quarter": 0,
+        "section": "FINANCIAL PERFORMANCE",
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal",
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00242",
+        "text": "Supplemental Information Other Statistical Information\nNumber of employees\n53,234\n53,597\n55,767\n46,722\n43,863\n43,360\n45,513\n45,454\n45,200\n45,234\nNumber of bank branches\n1,832\n1,861\n1,890\n1,383\n1,405\n1,409\n1,456\n1,483\n1,503\n1,522\nNumber of automated teller machines\n5,710\n5,766\n5,765\n4,717\n4,851\n4,820\n4,967\n4,828\n4,731\n4,599\n\nBMO adopted IFRS 9 Financial Instruments (IFRS 9) in 2018 and IFRS 16 Leases (IFRS 16) in 2020 prospectively, with no changes to prior periods. In 2019, BMO adopted IFRS 15 Revenue from Contracts\nwith Customers (IFRS 15) and elected to reclassify 2017 and 2018 amounts. Effective 2024, BMO adopted IFRS 17 Insurance Contracts (IFRS 17). BMO also voluntarily changed our accounting policy for the\nmeasurement of investment properties under IAS 40 Investment Properties (IAS 40), from cost to fair value upon IFRS 17 transition and our accounting policy for securities transactions from settlement\ndate to trade date. These changes were retrospectively applied to fiscal 2023 results.\n\n(2) Capital ratios and risk-weighted assets are disclosed in accordance with the CAR Guideline, as set out by OSFI, as applicable.\n\nCertain comparative figures have been reclassified to conform with the current year’s presentation.\n\nBMO Financial Group 208th Annual Report 2025 115",
+        "similarity": 0.6370360255241394,
+        "fiscal_year": 2025,
+        "bank_code": "BMO",
+        "page_start": 117,
+        "document_type": "annual_report",
+        "page_end": 117,
+        "section": "MD&A",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "quarter": 0,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank": "Bank of Montreal"
+      }
+    ],
+    "structured": {
+      "answer": "BMO disclosed that its structural earnings sensitivity quantifies the potential impact of interest rate changes on structural balance sheet pre-tax net income over the next 12 months. The sensitivity to falling interest rates increased relative to October 31, 2024, primarily due to lower modelled prepayment penalty fees collected on certain prepayable instruments. During 2025, both economic value sensitivity and earnings sensitivity remained within the limits established by the Board of Directors. The report also included specific figures for economic value sensitivity and earnings sensitivity under different interest rate scenarios, indicating potential losses and gains associated with 100 basis point increases and decreases in interest rates. For example, a 100 basis point increase in rates would result in a total economic value sensitivity loss of 1,736 million CAD, while a decrease would yield a gain of 1,063 million CAD. The report also detailed the net loans and acceptances by interest rate sensitivity, showing the amounts that will reprice or repay within specified time frames, which is crucial for understanding interest rate risk management strategies employed by BMO.",
+      "sources": [
+        {
+          "label": "S3",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "MD&A",
+          "year": 2025
+        },
+        {
+          "label": "S1",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "MD&A",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.6841115000424907
+  },
+  "latency_seconds": 4.595085700042546,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0004939499999999999,
+  "input_tokens": 2165,
+  "output_tokens": 282,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.01138459995854646,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about BMO's interest-rate risk management in the 2025 annual report are supported by the actual answer context, including specific figures and explanations of sensitivity to interest rate changes.",
+    "relevance_reason": "The answer directly addresses the question regarding BMO's interest-rate risk management disclosed in its 2025 annual report.",
+    "completeness_reason": "The answer covers all aspects of the interest-rate risk management disclosed, including structural earnings sensitivity, economic value sensitivity, earnings sensitivity, and specific figures for different interest rate scenarios.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0011783999999999998
+}

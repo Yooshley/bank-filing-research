@@ -1,0 +1,28 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_09",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_09",
+    "question": "What operational and technology risks did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed operational and technology risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What operational and technology risks did BMO disclose in its 2025 annual report?"
+  },
+  "status": "error",
+  "error": {
+    "type": "ValueError",
+    "http_status": null,
+    "code": null
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_12",
+  "config": "agentic",
+  "question": {
+    "id": "eval_12",
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk management did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "answer": "In Scotiabank's 2025 Annual Report, market risk management is described as follows:\n\n1. **Definition of Market Risk**: Market risk is defined as the risk of loss from changes in market prices, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with their correlations and volatility levels (BNS_2025_annual_report_FY_00128).\n\n2. **Components of Market Risk**: The report identifies several types of market risk:\n   - **Interest Rate Risk**: Managed through sensitivity analysis, stress testing, and Value at Risk (VaR) limits.\n   - **Credit Spread Risk**: Managed similarly, focusing on loan and debt securities portfolios.\n   - **Foreign Currency Risk**: Managed through sensitivity analysis and hedging with foreign exchange derivatives.\n   - **Equity Risk**: Managed through sensitivity analysis and hedging with equity instruments.\n   - **Commodity Risk**: Managed through sensitivity analysis and derivative hedges (BNS_2025_annual_report_FY_00189).\n\n3. **Governance and Oversight**: The Board of Directors reviews and approves market risk policies annually. The Asset-Liability Committee (ALCO), Treasury Risk Committee (TRC), and Market Risk Management and Policy Committee (MRMPC) oversee market risk exposures and establish operating policies and limits (BNS_2025_annual_report_FY_00190).\n\n4. **Risk Measurement Techniques**: The bank employs various metrics, including VaR, stress testing, and sensitivity analysis, to measure and control market risk exposures. VaR is calculated daily at a 99% confidence level (BNS_2025_annual_report_FY_00190).\n\nFor further details, you can access the full report [here](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 3496,
+    "output_tokens": 438,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000787,
+    "seconds": 8.97,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "market risk management",
+          "bank": "BNS",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00128",
+              "text": "Market risk is the risk of loss from changes in market prices including interest rates, credit spreads, equity prices, foreign exchange rates, and\ncommodity prices, the correlations between them, and their levels of volatility.\n\n2025 Scotiabank Annual Report | 71",
+              "similarity": 0.643,
+              "file_name": "BNS_2025_annual_report.pdf",
+              "page_start": 73,
+              "fiscal_year": 2025,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "quarter": 0,
+              "page_end": 73,
+              "bank": "Bank of Nova Scotia",
+              "bank_code": "BNS",
+              "section": "Market risk",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "document_type": "annual_report"
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00189",
+              "text": "Market risk is the risk of loss from changes in market prices and rates (including interest rates, credit spreads, equity prices, foreign\nexchange rates and commodity prices), the correlations between them, and their levels of volatility. Market risk includes trading risk,\ninvestment risk, structural interest rate risk and structural foreign exchange risk.\n\nMarket risk factors\nBelow is an index of market risk disclosures:\n\nInterest rate risk\nThe risk of loss due to changes in the level and/or the volatility of interest rates. This risk affects instruments such as, but not limited to, debt\nsecurities, loans, mortgages, deposits and derivatives.\n\nInterest rate risks are managed through sensitivity analysis (including economic value of equity and net interest income), stress testing, and VaR\nlimits and mitigated through portfolio diversification and hedges using interest rate derivatives and debt securities.\n\nCredit spread risk\nThe risk of loss due to changes in the market price and volatility of credit, or the creditworthiness of issuers. This risk is mainly concentrated in loan\nand debt securities portfolios. Risk is managed through sensitivity, jump-to-default, stress testing and VaR limits and mitigated through hedges\nusing credit derivatives.\n\nForeign currency risk\nThe risk of loss resulting from changes in currency exchange rates and exchange rate volatility. Foreign currency denominated debt and other\nsecurities as well as future cash flows in foreign currencies are exposed to this type of risk. Risk is managed through sensitivity, stress testing and\nVaR limits and mitigated through hedges using foreign exchange positions and derivatives.\n\nManagement’ s Discussion and Analysis | Risk Management\n\nEquity risk\nThe risk of loss due to changes in prices, volatility or any other equity related risk factor of individual equity or equity linked securities. This risk\naffects instruments such as, but not limited to, equities, exchange traded funds, mutual funds, derivatives and other equity linked products. Risk is\nmanaged through sensitivity, stress testing and VaR limits and mitigated through hedges using physical equity and derivatives instruments.\n\nCommodity risk\nThe risk of loss due to changes in prices or volatility of metal, energy and agriculture products. Risk is managed through sensitivity, stress testing\nand VaR limits and mitigated through derivative hedges.\n\nThe following maps risk factors to trading and non-trading activities:\n\nNon-trading Funding\n\nInvestments\n\nTrading\n\nInterest rate risk\nForeign currency risk\n\nInterest rate risk\nCredit spread risk\nForeign currency risk\nEquity risk\n\nInterest rate risk\nCredit spread risk\nForeign currency risk\nEquity risk\nCommodity risk\n\nMarket risk governance",
+              "similarity": 0.638,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "bank": "Bank of Nova Scotia",
+              "page_start": 99,
+              "fiscal_year": 2025,
+              "section": "Market Risk",
+              "document_type": "annual_report",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "page_end": 99,
+              "bank_code": "BNS",
+              "quarter": 0
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00190",
+              "text": "The Board of Directors reviews and approves market risk policies and limits annually. The Bank’s Asset-Liability Committee (ALCO), Treasury Risk\nCommittee (TRC) and Market Risk Management and Policy Committee (MRMPC) oversee the application of the framework set by the Board, and\nmonitor the Bank’s market risk exposures and the activities that give rise to these exposures. The MRMPC and TRC establish specific operating\npolicies and sets limits at the product, portfolio, business unit and business line levels, and for the Bank in total. Limits are reviewed at least\nannually.\n\nGlobal Risk Management provides independent oversight of all significant market risks, supporting the MRMPC, TRC and ALCO with analysis, risk\nmeasurement, monitoring, reporting, proposals for standards and support for new product development. To ensure compliance with policies and\nlimits, market risk exposures are independently monitored on a continuing basis, either by Global Risk Management or the back offices. They\nprovide senior management, business units, the ALCO, TRC, and the MRMPC with a series of reports on market risk exposures by business line\nand risk type.\n\nMarket risk is also managed through the use of a variety of hedging instruments, including derivatives and securities. These instruments are approved for\ntrading by Global Risk Management and the effectiveness of hedging activity is captured through limits on net exposure to risk factors.\n\nThe Bank uses a variety of metrics and models to measure and control market risk exposures. These measurements are selected based on an\nassessment of the nature of risks in a particular activity. The principal measurement techniques applied to market risk exposure are Value at Risk (VaR),\nstress testing, and sensitivity analysis. The use and attributes of each of these techniques are noted in the Risk Measurement Summary.\n\nRisk measurement summary\n\nValue at risk (VaR)\nVaR is a statistical method of measuring potential loss due to market risk based upon a common confidence interval and time horizon. The Bank\ncalculates VaR daily using a 99% confidence level, and a one-day holding period for its trading portfolios. This means that once in every 100 days,\nthe trading positions are expected to lose more than the VaR estimate. The Bank calculates VaR using historical simulation based on 300 days of\nmarket data. Effective November 1, 2024, credit spread VaR also captures issuer-specific credit spread volatility which was previously included in\ndebt specific VaR.\n\n2025 Scotiabank Annual Report | 97",
+              "similarity": 0.63,
+              "bank_code": "BNS",
+              "section": "Overview",
+              "document_type": "annual_report",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "page_end": 99,
+              "fiscal_year": 2025,
+              "bank": "Bank of Nova Scotia",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "page_start": 99,
+              "quarter": 0
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00143",
+              "text": "Financial Risks:\nCredit, Liquidity, Market\nThese are risks that are directly associated with the Bank’s primary business and revenue generating activities. The Bank understands these risks\nwell and takes them on to generate sustainable, consistent and predictable earnings. Financial risks are generally quantifiable and are relatively\npredictable. The Bank has a higher risk appetite for financial risks which are a fundamental part of doing business; but only when they are well\nunderstood, within established limits, and meet the desired strategic priorities and risk return profile.\n\nNon-Financial Risks:\nOperational, Model, Data, Compliance, Money Laundering /Terrorist Financing and Sanctions, Environmental, Social & Governance (ESG), Cyber\nSecurity & Information Technology (IT), Strategic, Reputational\nThese are risks that are inherent in the Bank’s business and can have significant negative strategic, business, financial and/or reputational\nconsequences if not managed properly. In comparison to financial risks, non-financial risks are less predictable and more difficult to define and\nmeasure. The Bank has low risk appetite for non-financial risks and mitigates these accordingly.\n\nTransverse Risks:\nTransverse risks are risks that do not exist in isolation but instead manifest through other recognized risk channels or types (for example, ESG Risk,\nReputational Risk, Culture Risk, and Strategic Risk). Distinct risk events could be the result of a specific risk type or a combination of financial and\nnon-financial transverse risks. The Bank manages these risks through risk-specific teams which coordinate cross-functionally to address and\nrespond to the broader risk environment. This is supported by comprehensive risk reporting, established escalation channels, and data\nstandardization which enables effective aggregate analysis and effective decision-making.\n\nRisk Management Lifecycle\n\nEffective risk management is a continuous and integrated process that underpins the Bank’s ability to achieve its strategic objectives while\nsafeguarding its financial and operational resilience. Each component of the risk management lifecycle operates in an ongoing and iterative\nmanner, reflecting the dynamic nature of the risk environment. The Bank’s Risk Management Framework provides a standardized structure that\npromotes consistency across these components, enabling the Bank to assess, manage, and monitor risk in a disciplined and transparent way. This\nstandardization enhances the Bank’s ability to evaluate the effectiveness of its risk management practices and supports informed decision-\nmaking across the enterprise.\n\nThe primary goals of risk management are to ensure that the outcomes of risk-taking activities are consistent with the Bank’s ScotiaBond\n(Values & Behaviours), strategies and risk appetite, and that there is an appropriate balance between risk and reward to maximize shareholder\nvalue. This Framework provides the foundation for achieving these goals.\n\nThe Framework is applied on an enterprise-wide basis and consists of five key elements:\n\n• Risk Governance and Oversight\n• Risk Identification and Measurement\n• Risk Assessment and Control Management\n• Risk Monitoring and Testing\n• Risk Reporting and Escalation\n\n2025 Scotiabank Annual Report | 77",
+              "similarity": 0.592,
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "bank_code": "BNS",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "page_start": 79,
+              "section": "Risk Management",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "bank": "Bank of Nova Scotia",
+              "page_end": 79,
+              "filing_id": "BNS_2025_annual_report_FY",
+              "document_type": "annual_report"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In Scotiabank's 2025 Annual Report, market risk management is described as follows:\n\n1. **Definition of Market Risk**: Market risk is defined as the risk of loss from changes in market prices, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with their correlations and volatility levels (BNS_2025_annual_report_FY_00128).\n\n2. **Components of Market Risk**: The report identifies several types of market risk:\n   - **Interest Rate Risk**: Managed through sensitivity analysis, stress testing, and Value at Risk (VaR) limits.\n   - **Credit Spread Risk**: Managed similarly, focusing on loan and debt securities portfolios.\n   - **Foreign Currency Risk**: Managed through sensitivity analysis and hedging with foreign exchange derivatives.\n   - **Equity Risk**: Managed through sensitivity analysis and hedging with equity instruments.\n   - **Commodity Risk**: Managed through sensitivity analysis and derivative hedges (BNS_2025_annual_report_FY_00189).\n\n3. **Governance and Oversight**: The Board of Directors reviews and approves market risk policies annually. The Asset-Liability Committee (ALCO), Treasury Risk Committee (TRC), and Market Risk Management and Policy Committee (MRMPC) oversee market risk exposures and establish operating policies and limits (BNS_2025_annual_report_FY_00190).\n\n4. **Risk Measurement Techniques**: The bank employs various metrics, including VaR, stress testing, and sensitivity analysis, to measure and control market risk exposures. VaR is calculated daily at a 99% confidence level (BNS_2025_annual_report_FY_00190).\n\nFor further details, you can access the full report [here](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00128",
+        "text": "Market risk is the risk of loss from changes in market prices including interest rates, credit spreads, equity prices, foreign exchange rates, and\ncommodity prices, the correlations between them, and their levels of volatility.\n\n2025 Scotiabank Annual Report | 71",
+        "similarity": 0.643,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_start": 73,
+        "fiscal_year": 2025,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "quarter": 0,
+        "page_end": 73,
+        "bank": "Bank of Nova Scotia",
+        "bank_code": "BNS",
+        "section": "Market risk",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00189",
+        "text": "Market risk is the risk of loss from changes in market prices and rates (including interest rates, credit spreads, equity prices, foreign\nexchange rates and commodity prices), the correlations between them, and their levels of volatility. Market risk includes trading risk,\ninvestment risk, structural interest rate risk and structural foreign exchange risk.\n\nMarket risk factors\nBelow is an index of market risk disclosures:\n\nInterest rate risk\nThe risk of loss due to changes in the level and/or the volatility of interest rates. This risk affects instruments such as, but not limited to, debt\nsecurities, loans, mortgages, deposits and derivatives.\n\nInterest rate risks are managed through sensitivity analysis (including economic value of equity and net interest income), stress testing, and VaR\nlimits and mitigated through portfolio diversification and hedges using interest rate derivatives and debt securities.\n\nCredit spread risk\nThe risk of loss due to changes in the market price and volatility of credit, or the creditworthiness of issuers. This risk is mainly concentrated in loan\nand debt securities portfolios. Risk is managed through sensitivity, jump-to-default, stress testing and VaR limits and mitigated through hedges\nusing credit derivatives.\n\nForeign currency risk\nThe risk of loss resulting from changes in currency exchange rates and exchange rate volatility. Foreign currency denominated debt and other\nsecurities as well as future cash flows in foreign currencies are exposed to this type of risk. Risk is managed through sensitivity, stress testing and\nVaR limits and mitigated through hedges using foreign exchange positions and derivatives.\n\nManagement’ s Discussion and Analysis | Risk Management\n\nEquity risk\nThe risk of loss due to changes in prices, volatility or any other equity related risk factor of individual equity or equity linked securities. This risk\naffects instruments such as, but not limited to, equities, exchange traded funds, mutual funds, derivatives and other equity linked products. Risk is\nmanaged through sensitivity, stress testing and VaR limits and mitigated through hedges using physical equity and derivatives instruments.\n\nCommodity risk\nThe risk of loss due to changes in prices or volatility of metal, energy and agriculture products. Risk is managed through sensitivity, stress testing\nand VaR limits and mitigated through derivative hedges.\n\nThe following maps risk factors to trading and non-trading activities:\n\nNon-trading Funding\n\nInvestments\n\nTrading\n\nInterest rate risk\nForeign currency risk\n\nInterest rate risk\nCredit spread risk\nForeign currency risk\nEquity risk\n\nInterest rate risk\nCredit spread risk\nForeign currency risk\nEquity risk\nCommodity risk\n\nMarket risk governance",
+        "similarity": 0.638,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank": "Bank of Nova Scotia",
+        "page_start": 99,
+        "fiscal_year": 2025,
+        "section": "Market Risk",
+        "document_type": "annual_report",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_end": 99,
+        "bank_code": "BNS",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00190",
+        "text": "The Board of Directors reviews and approves market risk policies and limits annually. The Bank’s Asset-Liability Committee (ALCO), Treasury Risk\nCommittee (TRC) and Market Risk Management and Policy Committee (MRMPC) oversee the application of the framework set by the Board, and\nmonitor the Bank’s market risk exposures and the activities that give rise to these exposures. The MRMPC and TRC establish specific operating\npolicies and sets limits at the product, portfolio, business unit and business line levels, and for the Bank in total. Limits are reviewed at least\nannually.\n\nGlobal Risk Management provides independent oversight of all significant market risks, supporting the MRMPC, TRC and ALCO with analysis, risk\nmeasurement, monitoring, reporting, proposals for standards and support for new product development. To ensure compliance with policies and\nlimits, market risk exposures are independently monitored on a continuing basis, either by Global Risk Management or the back offices. They\nprovide senior management, business units, the ALCO, TRC, and the MRMPC with a series of reports on market risk exposures by business line\nand risk type.\n\nMarket risk is also managed through the use of a variety of hedging instruments, including derivatives and securities. These instruments are approved for\ntrading by Global Risk Management and the effectiveness of hedging activity is captured through limits on net exposure to risk factors.\n\nThe Bank uses a variety of metrics and models to measure and control market risk exposures. These measurements are selected based on an\nassessment of the nature of risks in a particular activity. The principal measurement techniques applied to market risk exposure are Value at Risk (VaR),\nstress testing, and sensitivity analysis. The use and attributes of each of these techniques are noted in the Risk Measurement Summary.\n\nRisk measurement summary\n\nValue at risk (VaR)\nVaR is a statistical method of measuring potential loss due to market risk based upon a common confidence interval and time horizon. The Bank\ncalculates VaR daily using a 99% confidence level, and a one-day holding period for its trading portfolios. This means that once in every 100 days,\nthe trading positions are expected to lose more than the VaR estimate. The Bank calculates VaR using historical simulation based on 300 days of\nmarket data. Effective November 1, 2024, credit spread VaR also captures issuer-specific credit spread volatility which was previously included in\ndebt specific VaR.\n\n2025 Scotiabank Annual Report | 97",
+        "similarity": 0.63,
+        "bank_code": "BNS",
+        "section": "Overview",
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_end": 99,
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_start": 99,
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00143",
+        "text": "Financial Risks:\nCredit, Liquidity, Market\nThese are risks that are directly associated with the Bank’s primary business and revenue generating activities. The Bank understands these risks\nwell and takes them on to generate sustainable, consistent and predictable earnings. Financial risks are generally quantifiable and are relatively\npredictable. The Bank has a higher risk appetite for financial risks which are a fundamental part of doing business; but only when they are well\nunderstood, within established limits, and meet the desired strategic priorities and risk return profile.\n\nNon-Financial Risks:\nOperational, Model, Data, Compliance, Money Laundering /Terrorist Financing and Sanctions, Environmental, Social & Governance (ESG), Cyber\nSecurity & Information Technology (IT), Strategic, Reputational\nThese are risks that are inherent in the Bank’s business and can have significant negative strategic, business, financial and/or reputational\nconsequences if not managed properly. In comparison to financial risks, non-financial risks are less predictable and more difficult to define and\nmeasure. The Bank has low risk appetite for non-financial risks and mitigates these accordingly.\n\nTransverse Risks:\nTransverse risks are risks that do not exist in isolation but instead manifest through other recognized risk channels or types (for example, ESG Risk,\nReputational Risk, Culture Risk, and Strategic Risk). Distinct risk events could be the result of a specific risk type or a combination of financial and\nnon-financial transverse risks. The Bank manages these risks through risk-specific teams which coordinate cross-functionally to address and\nrespond to the broader risk environment. This is supported by comprehensive risk reporting, established escalation channels, and data\nstandardization which enables effective aggregate analysis and effective decision-making.\n\nRisk Management Lifecycle\n\nEffective risk management is a continuous and integrated process that underpins the Bank’s ability to achieve its strategic objectives while\nsafeguarding its financial and operational resilience. Each component of the risk management lifecycle operates in an ongoing and iterative\nmanner, reflecting the dynamic nature of the risk environment. The Bank’s Risk Management Framework provides a standardized structure that\npromotes consistency across these components, enabling the Bank to assess, manage, and monitor risk in a disciplined and transparent way. This\nstandardization enhances the Bank’s ability to evaluate the effectiveness of its risk management practices and supports informed decision-\nmaking across the enterprise.\n\nThe primary goals of risk management are to ensure that the outcomes of risk-taking activities are consistent with the Bank’s ScotiaBond\n(Values & Behaviours), strategies and risk appetite, and that there is an appropriate balance between risk and reward to maximize shareholder\nvalue. This Framework provides the foundation for achieving these goals.\n\nThe Framework is applied on an enterprise-wide basis and consists of five key elements:\n\n• Risk Governance and Oversight\n• Risk Identification and Measurement\n• Risk Assessment and Control Management\n• Risk Monitoring and Testing\n• Risk Reporting and Escalation\n\n2025 Scotiabank Annual Report | 77",
+        "similarity": 0.592,
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_start": 79,
+        "section": "Risk Management",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank": "Bank of Nova Scotia",
+        "page_end": 79,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "document_type": "annual_report"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 8.97106090001762,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007871999999999999,
+  "input_tokens": 3496,
+  "output_tokens": 438,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.029327800031751394,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about Scotiabank's market risk management in the 2025 Annual Report are supported by specific references from the actual answer context, including definitions, components, governance, and risk measurement techniques.",
+    "relevance_reason": "The answer directly addresses the question regarding market risk management disclosed by Scotiabank in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of market risk management as disclosed in the report, including definitions, types of risks, governance, and measurement techniques, with appropriate citations for each aspect.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0011716499999999998
+}

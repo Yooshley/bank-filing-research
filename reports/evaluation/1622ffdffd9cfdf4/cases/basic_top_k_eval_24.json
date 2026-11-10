@@ -1,0 +1,188 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_24",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_24",
+    "question": "How did Scotiabank disclosures about climate risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did Scotiabank disclosures about climate risk change between 2024 and 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer how Scotiabank disclosures about climate risk changed between 2024 and 2025.",
+    "sources": [
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00013",
+        "text": "Scotiabankers also raised more than\n$14 million through our first global employee giving\ncampaign that wrapped up this year, and logged more\nthan 250,000 volunteer hours through our internal\ncommunity engagement platform in 2024. As a reflection of our efforts over the past year and\nbeyond, Scotiabank was once again named to the Dow\nJones Sustainability North America Index for the sixth\nyear in a row, ranking highest in North America among\nbanks assessed through the S&P Global Corporate\nSustainability Assessment.\n“Thank you to our shareholders for your ongoing support of the Bank and its leadership team, and to our clients for your continued business.” Recognized as one of the Best WorkplacesTM in Canada by Great Place to Work® for the\nfifth consecutive year. Named one of Canada’s Top Employers for Young People 2024 by Mediacorp Canada Inc.,\nfor the fourth consecutive year.\n\nThe Globe and Mail’s Women Lead Here list recognized Scotiabank for executive\ngender diversity for the fourth consecutive year.\n\nScotiabank was named to the Dow Jones Sustainability North America Index for the sixth year\nin a row, with a 2023 S&P Global Corporate Sustainability Assessment score ranking the Bank\nin the top 4% of banks globally and highest in North America.\n\n8 | 2024 Scotiabank Annual Report\n\nLooking Ahead\n\nThank you to our shareholders for your ongoing support\nof the Bank and its leadership team, and to our clients\nfor your continued business. Over the past twelve\nmonths, we have worked day in and day out to earn and\nmaintain your trust, and it is a trust that we will never\ntake for granted.\n\nI would also like thank our team of Scotiabankers across\nour global footprint, who bring passion, deep expertise,\nand a tireless attitude as they show up and relentlessly\ndeliver for all of their stakeholders.\n\nIn the face of continued economic uncertainty,\nongoing geopolitical conflict, and rapidly evolving\nclient preferences, your Bank continues to be resilient,\nadaptable, and positioned for the future, with an\nongoing belief in the strength of the North American\ncorridor. This past fall, Scotiabank’s entire senior\nleadership team came together in Toronto to review the\nprogress that we have made against our strategy to date,\nand to collaborate on our path forward. We left that\nsession as a team that is aligned, confident, and focused\non the journey ahead.\n\nIt remains my privilege to lead this storied institution\nthrough its next chapter, and I am looking forward to\nwhat 2025 will bring.\n\nScott Thomson\nPresident and CEO\n\nAs we look to 2025, we recognize that there is much\nmore to do. But we are already starting to see the\nbenefits of disciplined implementation and execution\nof our strategy, and we are on track to deliver on the\nmedium-term financial objectives that we laid out at\nour Investor Day last year. We will continue to reallocate\ncapital from developing to developed markets, while\nprioritizing value over volume and deepening our\nclient r elationships.\n\nScotiabank achieved the highest Gold level certification from the Canadian Council\nfor Indigenous Business’ Partnership Accreditation in Indigenous Relations.\n\nRecognized as one of the Best Workplaces in Financial Services & Insurance in Canada\nby Great Place to Work® for the seventh year in a row.\n\nRecognized as having one of the 2024 Most Trusted Executive Teams in Canada\nby Great Place to W\n\nork®.",
+        "similarity": 0.6587935090065002,
+        "fiscal_year": 2024,
+        "quarter": 0,
+        "page_start": 10,
+        "file_name": "BNS_2024_annual_report.pdf",
+        "document_type": "annual_report",
+        "bank": "Bank of Nova Scotia",
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "page_end": 11,
+        "filing_id": "BNS_2024_annual_report_FY",
+        "section": "BANK OF THE YEAR"
+      },
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00020",
+        "text": "3. Reducing Our Own Emissions:\nProvide $350 billion in climate-\nrelated finance1 by 2030, of which\nwe have provided $172 billion\nsince November 1, 2018.\n\nIntroduce solutions to minimize\nthe Bank’s operational emissions,\nsuch as securing 100% emission-\nfree electricity2 in Canada\nby 2025.\n\n1. Financing Climate Solutions:\nwork with clients to support their\nenvironmental strategies and are\nsetting 2030 sectoral emissions\nintensity reduction targets. Our\nclimate-related client\nengagement framework and\nnet-zero preparedness ratings\nhelp to facilitate client\nconversations about supporting\ntheir climate-related strategies.\n\n2. Advancing to Net-Zero:\nAchieve net-zero financed\nemissions by 2050; in\nfurtherance of this goal we will\n\n1 Climate-related finance consists of those products and services (such as lending and advisory services) as well as the types of transactions (such as sustainability-linked loans or dedicated purpose\nloans) which support, among other things, climate change mitigation, adaptation, pollution prevention, sustainable management of natural resources, biodiversity conservation and circular\neconomy. For further details, see Scotiabank’s Climate-related Finance Framework.\n\n2 Either physically or virtually. Emission-free sources includes renewable (hydro, solar, wind, geothermal, tidal) and nuclear sources, and may include the use of renewable energy certificates (RECs).\nElectricity from emission-free sources in Canada is based on provincial electricity mix sourced from Natural Resources Canada Energy Fact Book 2023–2024, pp. 62 and 63.\n\n2024 Scotiabank Annual Report | 1 3\n\n• Partnered with Teach For All, providing $1.4 million\nto enhance programs training classroom leaders in\nunderserved communities in the U.S. and Mexico.\n\nScotiaRISE helps disadvantaged people reach their full\npotential by funding programs that address education,\nemployment opportunity, and basic needs supports.\nScotiaRISE’s Latin American and Caribbean strategy puts\nadditional emphasis on advancing community-based\naction for human rights and social harmony.\n\n• Supported the CHUM Foundation with $1 million\nto improve access to healthcare services and\nIndigenous wellness supports in Canada.\n\n• Renewed partnership with Windmill Microlending,\ncontributing $2.5 million to support career\nadvancement for skilled immigrants and refugees\nin Canada.\n\nScotiabank’s Truth & Reconciliation Action Plan\nestablishes 37 meaningful commitments designed\nto progress reconciliation with Indigenous\nPeoples in Canada.\n\nThe Bank has also:\n\n• Earned Gold level Partnership Accreditation in\nIndigenous Relations recertification from the Canadian\nCouncil for Indigenous Business.\n\n• Amplified the voices of Indigenous authors and gifted\nmore than 2,800 copies of Phyllis Webstad’s Today\nis Orange Shirt Day book to Indigenous schools\nand organizations.\n\n• Supported the Moose Hide Campaign to bring\nawareness to gender-based violence and the crisis\nof murdered and missing Indigenous women, girls,\nand Two-Spirit people.\n\n• Partnered with Nch'kaỳ Development, Des Nedhe\nGroup, and Chippewas of Rama First Nation to create\nthe first-to-market majority Indigenous-owned\ninvestment dealer in Canada: Cedar Leaf Capital.\n\n14 | 2024 Scotiabank Annual Report\n\nEARNINGS PER SHARE1\n\nMD&A Highlights\n\nAdjusted1\nReported\n\n$6.47\n$5.87\n\nReported 5Y CAGR = -2.6%\nAdjusted ̃ 5Y CAGR = -2.0%",
+        "similarity": 0.6317555904388428,
+        "bank_code": "BNS",
+        "file_name": "BNS_2024_annual_report.pdf",
+        "section": "OUR CLIMATE GOALS ARE",
+        "page_end": 17,
+        "bank": "Bank of Nova Scotia",
+        "document_type": "annual_report",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "quarter": 0,
+        "page_start": 15,
+        "filing_id": "BNS_2024_annual_report_FY",
+        "fiscal_year": 2024
+      },
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00015",
+        "text": "Chair’s message\nto shareholders\n\nDear fellow shareholders,\n\nThis year, your Board continued to engage with\nshareholders on a wide range of issues — with\nparticular focus on governance, climate, and leadership\nmatters. Our commitment to year-round dialogue\nwith our shareholders is an important component of\nour stewardship process, ensuring our awareness of\nissues that are most important to our shareholders.\n\n2024 marked a pivotal year for Scotiabank with\n\nthe launch of its new strategy, underpinned by\n\na bold new vision: to be our clients’ most trusted\n\nfinancial partner. Your Board has been actively\n\nengaged in overseeing the implementation of\n\nthe strategy, and is pleased with the progress\n\nbeing made against the plan laid out at our\n\nInvestor Day one year ago.\n\n2024 PERFORMANCE\n\nYour Board played a critical role in providing oversight\nof the Bank’s progress towards its Environment, Social,\nand Governance (ESG) commitments. This includes\nour support of the Bank’s Truth & Reconciliation Action\nPlan, which details Scotiabank’s formal commitments\nand steps to achieve reconciliation and establish\nrelationships of trust with Indigenous employees,\nclients, and communities. The Bank also partnered\nwith Nch'kaỳ Development Limited Partnership,\nDes Nedhe Financial LP\n\n, and Chippewas of Rama\nFirst Nation to launch Canada’s first Indigenous-owned\nand -led investment dealer, Cedar Leaf Capital, which\nwas launched in October to foster greater Indigenous\nparticipation in the capit\n\nal markets.",
+        "similarity": 0.6303558349609375,
+        "bank_code": "BNS",
+        "filing_id": "BNS_2024_annual_report_FY",
+        "page_end": 13,
+        "section": "COMMITMENT TO GOVERNANCE",
+        "fiscal_year": 2024,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "quarter": 0,
+        "file_name": "BNS_2024_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_start": 13,
+        "bank": "Bank of Nova Scotia"
+      },
+      {
+        "chunk_id": "BNS_2024_annual_report_FY_00017",
+        "text": "On behalf of the entire Board, I would like to thank Scott\nand the Senior Management Team for their leadership,\nand the entire Scotiabank team for their tremendous\ndedication. I would also like to thank our shareholders\nfor their ongoing support and confidence in our Bank.\nWe look forward to seeing you at our upcoming Annual\nMeeting in Halifax, Nova Scotia, as we return to where\nthe Scotiabank story started.\n\nUnder the leadership of its President and CEO, Scott\nThomson, the Bank has taken important foundational\nsteps. This includes continued growth in primary\nclient relationships, strengthening of the balance\nsheet, improved business mix, and growth in deposits.\nRepositioning of the Bank’s business lines continues\nas capital is reallocated from developing towards\ndeveloped markets, with a focus on the North American\ncorridor, and we are seeing the benefits of the entire\nBank thinking and acting as one organization by making\ntrade-offs to deliver results for the whole. The Bank\nalso made important strides to drive greater value and\nproductivity by improving cost and process efficiencies,\nand it continued to enhance its compliance and risk\nmanagement programs. We recognize that the Bank\ncontinues to operate in an uncertain macroeconomic\nenvironment, and that there is more work to do in key\npriority areas to deliver on its strategy, but we believe\nthe Bank is well positioned for 2025 and we are looking\nforward to continued progress.\n\n2024 Scotiabank Annual Report | 1 1\n\nBoard of Directors\n\nCommittee Chairs\n\nAaron W. Regent\n\nNora A. Aufreiter\n\nCalin Rovinescu, C.M.\n\n• Chair of the Board\n\n• Human Capital and\nCompensation Committee\nChair and member of\nRisk Committee\n\n• Corporate Governance\nCommittee Chair and\nmember of Human Capital\nand Compensation Committee\n\n• Founder, Chairman and\nChief Executive Officer\nof Magris Performance\nMaterials Inc.\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nAugust 25, 2014\n\n• Scotiabank director since\nNovember 1, 2020\n\n• Scotiabank director since\nApril 9, 2013\n\nGuillermo E. Babatz\n\nBenita M. Warmbold\n\n• Risk Committee Chair and\nmember of Human Capital\nand Compensation Committee\n\n• Audit and Conduct Review\nCommittee Chair and\nmember of Corporate\nGovernance Committee\n\n• Managing Partner of Atik Capital, S.C.\n\n• Corporate director\n\n• Scotiabank director since\nJanuary 28, 2014\n\n• Scotiabank director since\nOctober 29, 2018\n\nScott B. Bonham\n\nMichael B. Medline\n\nUna M. Power\n\n• Corporate director\n\n• Corporate director and co-founder\nof In\ntentional Capital\n\n• Scotiabank director since April 12, 2016\n\n• President and Chief Executive Officer\nof Empire Company Limited and\nSobeys Inc.\n\n• Scotiabank director since\nJanuary 25, 2016\n\nSandra J. Stuart\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Corporate director\n\nDaniel (Don) H. Callahan\n\nLynn K. Patterson\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Corporate director and Non-Executive\nChairman of Time USA LLC\n\n• Corporate director\n\nScott Thomson\n\n• Scotiabank director since\nSeptember 1, 2020\n\n• Scotiabank director since\nJune 15, 2021",
+        "similarity": 0.6274608969688416,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf",
+        "file_name": "BNS_2024_annual_report.pdf",
+        "section": "OUR THANKS",
+        "filing_id": "BNS_2024_annual_report_FY",
+        "fiscal_year": 2024,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank_code": "BNS",
+        "page_start": 13,
+        "bank": "Bank of Nova Scotia",
+        "page_end": 14
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00015",
+        "text": "Your Board is confident in the path forward, and we\nremain committed to providing effective risk oversight\nas Scotiabank continues to drive profitable growth\nand build sustainable value for its shareholders\nover the long term. I want to extend our sincere thanks to Scott Bonham,\nMichael Penner, and Calin Rovinescu who retired from\nthe Board this year. We are grateful for their leadership,\ninsight, and many contributions to Scotiabank. I also\nwant to recognize President and CEO Scott Thomson,\nthe executive leadership team, and our global network\nof Scotiabankers for their steadfast commitment to our\nclients, shareholders, and the Bank during this period of\neconomic uncertainty. Returning to our roots On behalf of the entire Board, thank you for your\ncontinued trust and support.\n\nThis year, your Board was proud to welcome our\nshareholders to Halifax, Nova Scotia for Scotiabank’s\n193rd Annual Meeting of Shareholders. It marked our first\nAnnual Meeting outside Toronto since the onset of the\nCOVID-19 pandemic – and returning to our Atlantic roots\nfelt both timely and symbolic. Just as shareholders first\ngathered in Halifax in 1833, we came together once again\n\n12 | 2025 Scotiabank Annual Report\n\nBoard of Directors\n\nAaron W. Regent\n\n• Chair of the Board\n\n• Founder, Chairman and Chief Executive Officer of Magris Performance Materials Inc.\n\n• Scotiabank director since April 9, 2013\n\nCommittee Chairs\n\nNora A. Aufreiter\n\nLynn K. Patterson\n\nSteven C. Van Wyk\n\n• Human Capital and Compensation\nCommittee Chair and member\nof the Risk Committee\n\n• Risk Committee Chair and\nmember of the Human Capital\nand Compensation Committee\n\n• Technology Committee Chair\nand member of the Audit and\nConduct Review Committee\n\n• Corporate director\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nAugust 25, 2014\n\n• Scotiabank director since\nSeptember 1, 2020\n\n• Scotiabank director since\nNovember 15, 2024\n\nMichael B. Medline\n\nBenita M. Warmbold\n\n• Corporate Governance Committee\nChair and member of the Audit\nand Conduct Review Committee\n\n• Audit and Conduct Review\nCommittee Chair and member of\nthe Corporate Governance Committee\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Scotiabank director since\nOctober 29, 2018\n\nGuillermo E. Babatz\n\nW. Dave Dowrich\n\nSandra J. Stuart\n\n• Managing Partner of Atik Capital, S.C.\n\n• Corporate director\n\n• Scotiabank director since\nJanuary 28, 2014\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA)\n\n• Scotiabank director since June 1, 2022\n\nDaniel (Don) H. Callahan\n\nScott Thomson\n\n• Corporate director\n\nUna M. Power\n\n• President and Chief Executive Officer\nof Scotiabank\n\n• Corporate director\n\n• Scotiabank director since\nJune 15, 2021\n\n• Scotiabank director since April 12, 2016\n\n• Scotiabank director since April 12, 2016\n\nAs of December 2, 2025\n\n2025 Scotiabank Annual Report | 1 3\n\n• Scotiabank director since\nSeptember 1, 2023 • Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA) • Scotiabank director since June 1, 2022 Daniel (Don) H. Callahan Scott Thomson • Corporate director Una M. Power • President and Chief Executive Officer\nof Scotiabank • Corporate director • Scotiabank director since\nJune 15, 2021 • Scotiabank director since April 12, 2016 • Scotiabank director since April 12, 2016 As of December 2, 2025 2025 Scotiabank Annual Report | 1 3\n\nSustainability Highlights",
+        "similarity": 0.6635949015617371,
+        "section": "ASSETS",
+        "bank_code": "BNS",
+        "page_start": 14,
+        "fiscal_year": 2025,
+        "page_end": 16,
+        "quarter": 0,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "document_type": "annual_report",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank": "Bank of Nova Scotia"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00013",
+        "text": "Launched the Good Corporate Governance\nProgram to support Scotiabank Indigenous\nTalent with professional development and\nskills training, and help grow the Indigenous\nemployee boardroom talent pool. We believe the foundation we have laid over the past year positions us well Commitment #3: to accelerate execution and deliver on our medium-term targets, even as we navigate a very different economic environment. Completed annual mandatory training\nfor Scotiabank’s Board of Directors\nand Executive Team to deepen their\nknowledge and understanding of Free,\nPrior and Informed Consent (FPIC) and\nkey considerations within the political\nand business context in Canada. 2025 Scotiabank Annual Report | 9 Commitment #8: Launched our Guide to Land\nAcknowledgments & Statements of\nReconciliation for employees, and unveiled\nour first Land Acknowledgment Plaque in\nour Scotia Plaza branch in Toronto.\n\nClient primacy remains our North Star. Across all regions\nand business lines, we are deepening relationships,\nstrengthening collaboration, and working to deliver\nthe full power of Scotiabank to our clients. This client-\ncentric mindset is driving value over volume and earning\nthe continued confidence and trust of our clients,\nshareholders, and communities.\n\nCommitment #12:\n\nAs we look to 2026, we are focused on\n\nthe future - building on the strengths\n\nof our businesses, leading with\n\nLaunched the updated Building\nIndigenous Cultural Competency at\nScotiabank course for all employees\nin Canada, marking a crucial step in\nfostering a more inclusive and respectful\nenvironment for Indigenous Peoples.\n\ntransparency, and enhancing our\n\nCommitment #35:\n\ndigital capabilities to grow sustainably\n\nand create long-term value for all\n\nour stakeholders.\n\nDelivered tailored training content to\nScotiabank Global Asset Management\nemployees, to understand the investment\nlandscape for Indigenous Peoples and\nenhance economic opportunities for\nIndigenous communities.\n\nI also want to recognize and thank our extraordinary\nteam of Scotiabankers whose unwavering commitment,\ndeep expertise, and shared purpose empower us\nto keep driving forward.\n\nScotiabank’s leadership team is aligned and energized\nas we focus on the future. I am looking forward to all that\nwe will accomplish in the year ahead.\n\nScott Thomson\nPresident and CEO\n\nPhoto by Métis photographer Faithe McGuire,\nmember of the Paddle Prairie Métis Settlement in Alberta.\nIllustrations created by Ojibwe graphic designer Joshua Hunt\nfrom Migisi Sahgaigan (Eagle Lake) in Treaty 3.\n\n10 | 2025 Scotiabank Annual Report\n\nLeadership Team\n\nScott Thomson\n\nAris Bogdaneris\n\nJenny Poulos\n\nPresident and Chief Executive Officer\n\nChief Human Resources Officer\n\nGroup Head,\nCanadian Banking\n\nJacqui Allard\n\nTim Clark\n\nPhil Thomas\nGroup Head & Chief Strategy\nand Operating Officer\n\nGroup Head,\nGlobal Wealth Management\n\nGroup Head\nand Chief Information Officer\n\nRaj Viswanathan\n\nIan Arellano\n\nGroup Head and Chief Financial Officer\n\nTravis Machen\n\nExecutive Vice President\nand General Counsel\n\nCEO and Group Head,\nGlobal Banking and Markets\n\nJulie Walsh\n\nFrancisco Aristeguieta\n\nExecutive Vice President\nand Chief Compliance Officer\n\nShannon McGinnis\n\nChief Risk Officer\n\nGroup Head,\nInternational and Global\nTransaction Banking\n\nLeadership Team effective December 2, 2025.\n\n2025 Scotiabank Annual Report | 1 1\n\nAaron Regent\nChair of the Board\n\nChair’s Message\nto Shareholders\n\nDear fellow shareholders,",
+        "similarity": 0.6027127504348755,
+        "fiscal_year": 2025,
+        "page_start": 12,
+        "quarter": 0,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_end": 14,
+        "section": "ASSETS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank": "Bank of Nova Scotia",
+        "bank_code": "BNS"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00023",
+        "text": "26\nAnalysis of the aggregate credit risk exposures, including details of both\npersonal and wholesale lending.\n\n158-160\n\n27\nDiscussion of the policies for identifying impaired loans, defining\nimpairments and renegotiated loans, and explaining loan forbearance\npolicies.\n\n93, 122-125\n189\n34-35\n\n28\nReconciliations of the opening and closing balances of impaired loans and\nimpairment allowances during the year.\n\n89-91, 94\n\n29\nAnalysis of counterparty credit risk that arises from derivative transactions.\n88-90\n176-179\n108\n30\nDiscussion of credit risk mitigation, including collateral held for all sources of\ncredit risk.\n\nOther risks\n31\nQuantified measures of the management of operational risk.\n72, 112-113\n\n32\nDiscussion of publicly known risk items.\n85-87\n205-206\n\n16 | 2025 Scotiabank Annual Report\n\nManagement’s\nDiscussion & Analysis\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable readers to assess the Bank’s financial condition and\nresults of operations as at and for the year ended October 31, 2025. The MD&A should be read in conjunction with the Bank’s\n2025 Consolidated Financial Statements, including the Notes. This MD&A is dated December 2, 2025.\n\nAdditional information relating to the Bank, including the Bank’s 2025 Annual Report, are available on the Bank’s website at\nwww.scotiabank.com. As well, the Bank’s 2025 Annual Report and Annual Information Form are available on the SEDAR+\nwebsite at www.sedarplus.ca and on the EDGAR section of the SEC’s website at www.sec.gov.\n\nTable of Contents\n\nGroup Financial Condition\n\n18",
+        "similarity": 0.5854342579841614,
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "page_start": 18,
+        "section": "Credit Risk",
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "quarter": 0,
+        "page_end": 19
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00017",
+        "text": "$500 million\n\n$350 billion\n\nby 2030\n\nby 2030\n\nthrough ScotiaRISETM\n\nin climate-related finance3\n\nInvesting to strengthen economic\nresilience in our communities\n\nCollaborating to enhance\neconomic opportunity\n\nScotiabank’s Climate Action Research Fund distributed\napproximately $1 million in 2025, part of $5 million\nacross 52 climate projects since 2021.\n\nReached more than $210 million of ScotiaRISE\ninvestments since 2021 with approximately\n300 organizations operating in communities\nacross our footprint.\n\nHosted our 2nd annual Indigenous Reconciliation\nSummit, advancing the Truth & Reconciliation\nCommission of Canada’s Call to Action #92.\n\n49,700+ women entrepreneurs participated in\nScotiabank Women Initiative® programs in Canada,\nChile, Costa Rica, Jamaica, Mexico and Peru.\n\nScotiaRISE supports community programs to\nimprove people’s economic potential, including\n$2.5 million in Windmill Microlending to enhance\nsupports for skilled immigrants seeking professional\naccreditation, and $1.2 million in CNIB’s Come to Work\nprogram to boost employment opportunities.\n\nHeld our ScotiaRISE Atlantic Summit, culminating in\na $3 million investment in community programs.\n\nTo enhance access to education, ScotiaRISE funding in\nChile and Mexico supported Technovation’s program\ndeveloping youth AI and tech skills, and a $2 million\ninvestment supported the YMCA’s Back on Track\nprogram to reintegrate youth in school.\n\n1 Through the program, Scotiabank will provide low-cost, flexible financing for commercial, industrial, office and multi-residential building owners seeking to finance energy retrofits of their buildings.\n\n2 Scotiabank and its related entities or subsidiaries have issued a total Canadian Dollar Equivalent of $5.7 billion in sustainable bonds and structured notes, as defined pursuant to the Framework and\nits predecessors at the time of issuance.\n\n3 The total climate-related finance amount measured for fiscal 2025 is intended to be reported in the 2025 Sustainability Report, planned for publication in March 2026.\n\n14 | 2025 Scotiabank Annual Report\n\nEarnings Per Share\n\nMD&A Highlights\n\nAdjusted1\n$7.09\n\nReported\n$5.67\n\nReported 5Y CAGR = 1.4%\nAdjusted ̃ 5Y CAGR = 5.8%\n\n10\n\n8\n\n6\n\nMedium-Term Financial Objectives*\n\n4\n\n2\n\nKey Metrics\n\nMedium-term\nobjectives\n\n3-Year\nPerformance\n\n2025\nPerformance\n\n0\n\n25\n24\n23\n22\n21\n20\n\nEarnings Per Share Growth\n\nReported\nAdjusted ̃\n\n1\n\n1\n(3.4)%\n\n9.6%\n\n(5.9)%\n\nReported\nAdjusted1\n7%+ CAGR\n(10.9)%\n\nReturn on Equity2\n\nDividends Paid\nDollars per share\n\nReported\nAdjusted1\n14%+\n10.1%\n2\n\n11.6%\n2\n9.7%\n11.8%\n\n$4.32\n\n4.50\n\nOperating Leverage2\n\n1\n\n4.00\n\n1\n(2.2)%\n\nReported\nAdjusted1\nPositive\n(3.3)%\n\n3.0%\n\n(1.1)%\n\n3.50\n\nCommon Equity Tier 1\n(CET1) Ratio3\n12%+\n13.1%\n13.2%\n\n5Y CAGR = 3.7%\n\n3.00\n\n9.6% (5.9)% Reported\nAdjusted1\n7%+ CAGR\n(10.9)% Return on Equity2 Dividends Paid\nDollars per share Reported\nAdjusted1\n14%+\n10.1%\n2 11.6%\n2\n9.7%\n11.8% $4.32 4.50 Operating Leverage2 1 4.00 1\n(2.2)% Reported\nAdjusted1\nPositive\n(3.3)% 3.0% (1.1)% 3.50 Common Equity Tier 1\n(CET1) Ratio3\n12%+\n13.1%\n13.2% 5Y CAGR = 3.7% 3.00\n\n2.50\n\n25\n24\n23\n22\n21\n20\n\n2025 Reported Earnings by Market\n\nNet income attributable to equity holders\n\n$ 0.8 Mexico\n\nTotal Shareholder\nReturn %2\n\nU.S.A.\n\n10%\n\n14%\n\n35.7\n\n$1.1\n\n12%\n\n$0.9 English Caribbean\n\n18.8\n17.1\n\n$7.8",
+        "similarity": 0.5727220177650452,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_end": 17,
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "bank_code": "BNS",
+        "page_start": 16,
+        "section": "GOAL TO INVEST",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 1.2211137000704184
+  },
+  "latency_seconds": 2.1114027000730857,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009105,
+  "input_tokens": 5954,
+  "output_tokens": 29,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.03463539993390441,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately reflects the absence of information regarding changes in climate risk disclosures between 2024 and 2025, as supported by the provided filings.",
+    "relevance_reason": "The answer directly addresses the question about changes in climate risk disclosures, stating that there is insufficient information to determine any changes.",
+    "completeness_reason": "The answer fully covers the request by stating the limitation of available information for both years, without omitting any relevant aspects.",
+    "unsupported_claims": [],
+    "reference_limitations": "The filings do not provide comparative information on climate risk disclosures between 2024 and 2025."
+  },
+  "judge_cost_usd": 0.00259065
+}

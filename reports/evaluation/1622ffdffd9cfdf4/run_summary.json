@@ -1,0 +1,8 @@
+{
+  "operating_usd": 0.0007725,
+  "judge_usd": 0.00145455,
+  "completed_answers": 1,
+  "expected_answers": 90,
+  "status": "incomplete",
+  "recommendation": "iterate"
+}

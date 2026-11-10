@@ -1,0 +1,190 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_25",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_25",
+    "question": "How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer how CIBC disclosures about mortgage credit risk changed between 2024 and 2025. While both years include discussions on management overlays and expected credit losses (ECL), specific changes in disclosures or risk assessments between the two years are not detailed in the excerpts.",
+    "sources": [
+      {
+        "chunk_id": "CIBC_2024_annual_report_FY_00341",
+        "text": "142 CIBC 2024 ANNUAL REPORT Consolidated financial statements allowance on performing loans could exceed the amount implied by the 100% downside case scenario from the migration of additional exposures from\nstage 1 to stage 2. Actual credit losses could differ materially from those reflected in our estimates.\n\nUse of management overlays\nManagement overlays to ECL allowance estimates are adjustments which we use in circumstances where we judge that our existing inputs,\nassumptions and model techniques do not capture all relevant risk factors. The emergence of new macroeconomic or geopolitical events, along\nwith expected changes to parameters, models or data that are not incorporated in our current parameters, internal risk rating migrations, or forward-\nlooking information are examples of such circumstances. To address the uncertainties inherent in the current environment, we utilize management\noverlays with respect to the impact of certain forward-looking information and credit metrics that are not expected to be as indicative of the credit\ncondition of the portfolios as the historical experience in our models would have otherwise suggested. The use of management overlays requires the\napplication of significant judgment that impacts the amount of ECL allowances recognized. Actual credit losses could differ materially from those\nreflected in our estimates.\n\nThe following tables provide the gross carrying amount of loans, and the contractual amounts of undrawn credit facilities and other off-balance\nsheet exposures based on our risk management PD bands for retail exposures, and based on our internal risk ratings for business and government\nexposures. Refer to the “Credit risk” section of the MD&A for details on the CIBC risk categories.\n\nLoans(1)\n\n$ millions, as at October 31\n\n2024\n\n2023\n\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nResidential mortgages\n\n– Exceptionally low\n$\n160,515\n$\n6,130\n$\n–\n$\n166,645\n$\n150,022\n$\n14,999\n$\n–\n$\n165,021\n– Very low\n81,198\n5,926\n–\n87,124\n74,149\n9,107\n–\n83,256\n– Low\n10,329\n3,638\n–\n13,967\n10,817\n5,112\n–\n15,929\n– Medium\n851\n6,534\n–\n7,385\n322\n4,980\n–\n5,302\n– High\n7\n1,561\n–\n1,568\n–\n1,100\n–\n1,100\n– Default\n–\n–\n790\n790\n–\n–\n585\n585\n– Not rated\n2,757\n232\n204\n3,193\n2,630\n219\n202\n3,051\nGross residential mortgages (4)(5)\n255,657\n24,021\n994\n280,672\n237,940\n35,517\n787\n274,244\nECL allowance\n89\n126\n234\n449\n90\n142\n224\n456\nNet residential mortgages\n255,568\n23,895\n760\n280,223\n237,850\n35,375\n563\n273,788\nPersonal",
+        "similarity": 0.6415075659751892,
+        "bank_code": "CIBC",
+        "page_start": 159,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf",
+        "file_name": "CIBC_2024_annual_report.pdf",
+        "document_type": "annual_report",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "page_end": 159,
+        "fiscal_year": 2024,
+        "section": "FVOCI",
+        "quarter": 0,
+        "filing_id": "CIBC_2024_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2024_annual_report_FY_00016",
+        "text": "Luc Desjardins who retired from your Board\nin April 2024. We sincerely appreciate his years of dedicated\nservice to the Board and to CIBC stakeholders. As we look to the future, CIBC and its leadership team are\nengaging with purpose in making ambitions real and continuing\nto proactively manage the bank and execute its growth strategy. I would like to thank Victor Dodig, our President and CEO,\nand our entire CIBC team, for their contribution to the strong\nperformance of our bank in 2024. We are confident that CIBC\nis well positioned to continue to create sustainable value for all\nstakeholders in 2025 and beyond. Katharine B. Stevenson\nChair of the Board xi Enhanced Disclosure Task Force\n\nThe Enhanced Disclosure Task Force (EDTF), established by the Financial Stability Board, released its report “Enhancing the Risk Disclosures of\nBanks” in 2012, which included thirty-two disclosure recommendations. The index below provides the listing of these disclosures, along with their\nlocations. EDTF disclosures are located in our management’s discussion and analysis, consolidated financial statements, and supplementary\npackages, which may be found on our website (www.cibc.com). No information on CIBC’s website, including the supplementary packages, should\nbe considered incorporated herein by reference.\n\nPillar 3 Report and\n\nManagement’s\n\nConsolidated\n\nSupplementary\n\nTopics\nRecommendations\nDisclosures\n\ndiscussion\nand analysis\n\nfinancial\nstatements\n\nregulatory\ncapital disclosure\n\nPage references\n\nGeneral\n1\nIndex of risk information – current page\n\n2\nRisk terminology and measures\n100–103\n\n95–97\n\n3\nTop and emerging risks\n53–56\n\n4\nKey future regulatory ratio requirements\n37, 39–40, 75, 77\n164\n17, 26\n\n5\nRisk management structure\n46, 47\n\nRisk\ngovernance,\n\n6\nRisk culture and appetite\n45, 48–50\n\n7\nRisks arising from business activities\n45–52, 56\n\nrisk\nmanagement\nand business\n\nmodel\n\n8\nBank-wide stress testing\n35–36, 52, 60, 65,\n71, 73\n\n9\nMinimum capital requirements\n35–37\n164\n\nCapital\nadequacy\n\n10\nComponents of capital and\n\n39\n\n16–19\n\nand risk-\nweighted\n\nreconciliation to the consolidated\nregulatory balance sheet\n\nassets\n\n11\nRegulatory capital flow statement\n40\n\n20\n\n12\nCapital management and planning\n35, 37\n164\n\n13\nBusiness activities and risk-weighted\n\n41, 56\n\n5\n\nassets\n\n14\nRisk-weighted assets and capital\n\n38, 41\n\n3, 5, 6\n\nrequirements\n\n15\nCredit risk by major portfolios\n58–63\n\n39–53, 62\n\n16\nRisk-weighted assets flow statement\n40, 41\n\n5, 11\n\n17\nBack-testing of models\n52, 60\n\n93, 94\n\nLiquidity\n18\nLiquid assets\n74\n\nFunding\n19\nEncumbered assets\n74, 79\n\n20\nContractual maturity of assets, liabilities\n\n78–80\n\nand off-balance sheet instruments\n\n21\nFunding strategy and sources\n78",
+        "similarity": 0.6226305961608887,
+        "section": "Unclassified",
+        "fiscal_year": 2024,
+        "quarter": 0,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf",
+        "bank_code": "CIBC",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "page_end": 16,
+        "file_name": "CIBC_2024_annual_report.pdf",
+        "filing_id": "CIBC_2024_annual_report_FY",
+        "page_start": 16,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "CIBC_2024_annual_report_FY_00035",
+        "text": "In our U.S. commercial banking and wealth management businesses, loan growth has slowed,\nconsistent with industry trends, but should gather some momentum in 2025 in response to recent and expected interest rate reductions. Financial markets benefitted from the recent interest rate reductions in Canada and should be supported by further rate reductions in the\ncoming year. Canadian and U.S. wealth management businesses should continue to benefit in 2025 from a more supportive interest rate\nenvironment, and as funds mature out of term deposits and seek alternative risk assets in the face of lower yields on new term deposits. Corporate and investment banking is expected to continue to benefit from merger and acquisition activity that continues to recover from the\nlow levels in early 2023, and corporate bond issuance is expected to pick up in 2025 due to the lower interest rate path.\n\nThe economic outlook described above reflects numerous assumptions regarding the economic impact of moderating interest rates and inflationary\npressures, as well as the global economic risks emanating from the war in Ukraine, conflict in the Middle East and trade frictions between major\neconomies. As a result, actual experience may differ materially from expectations. The impact of geopolitical events on our risk environment are\ndiscussed in the “Top and emerging risks” section. Changes in the level of economic uncertainty continue to impact key accounting estimates and\nassumptions, particularly the estimation of expected credit losses (ECL). See the “Accounting and control matters” section and Note 5 to our\nconsolidated financial statements for further details.\n\nSignificant events\n\nSale of certain banking assets in the Caribbean\nCIBC Caribbean Bank Limited (formerly known as FirstCaribbean International Bank Limited) sold its banking assets in St. Vincent and Grenada in\nMarch 2023 and July 2023, respectively. CIBC Caribbean Bank Limited (CIBC Caribbean) ceased its operations in Dominica on January 31, 2023.\nThe impacts of these transactions and closures were not material.\n\nOn October 31, 2023, CIBC Caribbean announced that it had entered into an agreement to sell its banking assets in Curaçao and Sint\nMaarten. The sale of banking assets in Curaçao was completed on May 24, 2024 upon the satisfaction of the closing conditions, and was not\nmaterial. The Sint Maarten transaction is subject to closing conditions, and is expected to be finalized in the second quarter of 2025. The impact\nupon closing is not expected to be material.\n\nSettlement of Cerberus Litigation\nOn February 17, 2023, CIBC announced that we entered into an agreement with the special purpose vehicle controlled by Cerberus Capital\nManagement L.P. (“Cerberus”) that fully settled the lawsuit filed by Cerberus against CIBC, including the most recent judgment of the New York\nCourt, as discussed in Note 21 to our consolidated financial statements. Pursuant to the settlement agreement, CIBC paid US$770 million\n($1,055 million pre-tax or $762 million after-tax) to Cerberus in full satisfaction of the judgment, and both parties arranged for the immediate\ndismissal, with prejudice, of all claims, counterclaims and appeals relating to the litigation.\n\nFinancial performance overview\n\nThis section provides a review of our consolidated financial results for 2024. A review of our SBU results follows on pages 21 to 32. Refer to page 12\nfor a review of our financial performance for 2023.",
+        "similarity": 0.613671600818634,
+        "filing_id": "CIBC_2024_annual_report_FY",
+        "page_start": 21,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "document_type": "annual_report",
+        "fiscal_year": 2024,
+        "bank_code": "CIBC",
+        "section": "Management’s discussion and analysis",
+        "file_name": "CIBC_2024_annual_report.pdf",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf",
+        "page_end": 22,
+        "quarter": 0
+      },
+      {
+        "chunk_id": "CIBC_2024_annual_report_FY_00101",
+        "text": "46,811\n3,745\n43,402\n3,472\n\nTotal RWA\n$\n333,502\n$\n26,680\n$\n326,120\n$\n26,090\n\n(1) Refers to the minimum standard established by the BCBS before the application of the capital conservation buffer and any other capital buffers that may be established by\n\nregulators from time to time. It is calculated by multiplying RWA by 8%.\n(2) Credit risk includes CCR, which comprises derivative and repo-style transactions. Credit risk for CIBC Caribbean are calculated under the standardized approach.\n(3) Beginning in the first quarter of 2024, the IRB approach was applied to the majority of our credit portfolios within CIBC Bank USA, which previously followed the\n\nstandardized approach.\n(4) Includes securitization exposures that are risk-weighted at 1250%.\n(5) Beginning in the first quarter of 2024, changes were implemented as a result of the Basel III reforms related to the Fundamental Review of the Trading Book (FRTB) rules\n\nfor market risk and CVA.\n(6) Includes RWA relating to certain commercial loans which are determined using the supervisory slotting approach.\n(7) Includes residential mortgages insured by Canada Mortgage and Housing Corporation (CMHC), an agency of the Government of Canada, and government-guaranteed\n\nstudent loans.\nn/a Not applicable.\n\nCapital initiatives\nThe following were the main capital initiatives undertaken since our 2023 Annual Report:\n\nNormal course issuer bid (NCIB)\nOn September 6, 2024, we announced that the Toronto Stock Exchange had accepted the notice of our intention to commence a normal course\nissuer bid. Purchases under this bid will be completed upon the earlier of: (i) CIBC purchasing 20 million common shares; (ii) CIBC providing a\nnotice of termination; or (iii) September 9, 2025. 5,000,000 common shares have been purchased and cancelled during the fourth quarter at an\naverage price of $83.75 for a total amount of $419 million.\n\nEmployee share purchase plan\nPursuant to the employee share purchase plan, we issued 2,626,726 common shares for consideration of $173 million for the year ended\nOctober 31, 2024. Commencing October 11, 2024, employee contributions to our Canadian Employee Share Purchase Plan (ESPP) were used to\nacquire common shares in the open market. Previously, these shares were issued from Treasury.",
+        "similarity": 0.6030333042144775,
+        "quarter": 0,
+        "bank_code": "CIBC",
+        "page_end": 57,
+        "section": "Operational risk",
+        "fiscal_year": 2024,
+        "filing_id": "CIBC_2024_annual_report_FY",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2024_annual_report.pdf",
+        "page_start": 57,
+        "document_type": "annual_report",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00332",
+        "text": "Use of management overlays\nManagement overlays to ECL allowance estimates are adjustments which we use in circumstances where we judge that our existing inputs,\nassumptions and model techniques do not capture all relevant risk factors. The emergence of new macroeconomic or geopolitical events, along\nwith expected changes to parameters, models or data that are not incorporated in our current parameters, internal risk rating migrations, or forward-\nlooking information are examples of such circumstances. To address the significant uncertainties inherent in the current environment, we utilize\nmanagement overlays with respect to the impact of certain forward-looking information and credit metrics that are not expected to be as indicative\nof the credit condition of the portfolios as the historical experience in our models would have otherwise suggested. The use of management overlays\nrequires the application of significant judgment that impacts the amount of ECL allowances recognized. Actual credit losses could differ materially\nfrom those reflected in our estimates.\n\nThe following tables provide the gross carrying amount of loans, and the contractual amounts of undrawn credit facilities and other off-balance\nsheet exposures based on our risk management PD bands for retail exposures, and based on our internal risk ratings for business and government\nexposures. Refer to the “Credit risk” section of the MD&A for details on the CIBC risk categories.\n\nLoans(1)\n\n$ millions, as at October 31\n2025\n2024\n\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nResidential mortgages\n\n– Exceptionally low\n$\n171,983\n$\n227\n$\n–\n$\n172,210\n$\n160,515\n$\n6,130\n$\n–\n$\n166,645\n– Very low\n85,628\n\n1,171\n–\n86,799\n81,198\n5,926\n–\n87,124\n– Low\n10,987\n2,749\n–\n13,736\n10,329\n3,638\n–\n13,967\n– Medium\n1,041\n7,071\n–\n8,112\n851\n6,534\n–\n7,385\n– High\n11\n1,859\n–\n1,870\n7\n1,561\n–\n1,568\n– Default\n–\n–\n1,097\n1,097\n–\n–\n790\n790\n– Not rated\n2,808\n183\n218\n3,209\n2,757\n232\n204\n3,193\nGross residential mortgages (4)(5)\n272,458\n13,260\n1,315\n287,033\n255,657\n24,021\n994\n280,672\nECL allowance\n100\n168\n306\n574\n89\n126\n234\n449\nNet residential mortgages\n272,358\n13,092\n1,009\n286,459\n255,568\n23,895\n760\n280,223\nPersonal",
+        "similarity": 0.6179593801498413,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "quarter": 0,
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "page_end": 152,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "section": "FVOCI",
+        "page_start": 152,
+        "filing_id": "CIBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00114",
+        "text": "On April 23, 2025, the Canadian Securities Administrators (CSA) announced it is pausing its work on the development of a new mandatory\nclimate-related disclosure rule in order to support Canadian markets and issuers as they adapt to developments in the U.S. and globally. The CSA\nwill monitor domestic and international regulatory developments with respect to climate disclosures and expects to revisit and finalize requirements\nfor issuers.\n\nOn March 7, 2025, OSFI published updates to Guideline B-15 on Climate Risk Management (Guideline B-15), postponing scope 3 emissions\ndisclosure from fiscal year-end 2025 to 2028, aligning with the Canadian Sustainability Standards Board Standards’ transitional period. OSFI is\nexpected to continue to review Guideline B-15 as practices and standards evolve. Guideline B-15 was initially effective for us for our reporting\nperiod ending October 31, 2024 for certain disclosure elements, which were included in our 2024 Climate Report.\n\nOn June 5, 2025, the Competition Bureau issued updated guidance on environmental claims under Bill C-59, which contains anti-greenwashing\namendments to Canada’s Competition Act (Act). In addition, the Competition Bureau reaffirmed its previous communication on the private right of\naction, pursuant to which starting on June 20, 2025, individuals can seek permission to file claims with the Competition Tribunal against businesses\nunder the Act.\n\nOn October 7, 2023, California enacted climate disclosure laws, Senate Bill (SB) 253 and SB 261. SB 253 requires annual reporting of scope 1\nand 2 greenhouse gas emissions in 2026, expanding to scope 3 emissions reporting in 2027. SB 261 requires biennial climate-related financial risk\nreports, with the first report due by January 1, 2026. On November 18, 2025, the U.S. Court of Appeals for the Ninth Circuit, issued an order\ntemporarily halting the enforcement of SB 261. CIBC is preparing to meet these requirements and will continue to monitor regulatory updates.\n\nAdditionally, the European Commission adopted the European Sustainability Reporting Standards in 2023 for entities subject to the Corporate\nSustainability Reporting Directive. On June 23, 2025, the European Union announced it is negotiating its final position on the Omnibus Proposal II,\nwhich is expected to significantly narrow the scope of sustainability reporting for member states. These changes, if adopted, could impact the\nreporting requirements for CIBC and certain CIBC subsidiaries.\n\nPotential divergence among the regulators in disclosure expectations, coupled with the pace at which the regulatory landscape changes, pose\noperational risks to us. We continue to monitor these developments and evolve our approach to support future regulatory requirements.\n\nInformation and cyber security risk\nWe continue to evolve our use of technology and business processes to improve the client experience and streamline operations. Concurrently,\ncyber threats are growing in frequency and sophistication, increasing the potential for financial loss, reputational harm, regulatory exposure and\nbusiness interruption. We actively manage these risks through strategic risk reviews and enterprise-wide technology and information security\nprograms aimed at prevention, detection, response and recovery. Threats include data breaches, malware and ransomware, unauthorized access,\nsocial engineering and fraud, and denial-of-service attacks, which may result in damage to CIBC systems and information; theft, loss or disclosure\nof confidential information; unauthorized or fraudulent activity; and service disruption at CIBC or its service providers, including those that offer\ncloud services.",
+        "similarity": 0.5808312296867371,
+        "bank_code": "CIBC",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "fiscal_year": 2025,
+        "page_start": 64,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "section": "Management’s discussion and analysis",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_end": 64
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00084",
+        "text": "50,712\n4,057\n46,811\n3,745\n\nTotal RWA\n$ 357,803\n$\n28,624\n$\n333,502\n$\n26,680\n\n(1) Refers to the minimum standard established by the BCBS before the application of the capital conservation buffer and any other capital buffers that may be established by\n\nregulators from time to time. It is calculated by multiplying RWA by 8%.\n(2) Credit risk includes CCR, which comprises derivative and repo-style transactions. Credit risk for CIBC Caribbean are calculated under the standardized approach.\n(3) Includes securitization exposures that are risk-weighted at 1250%.\n(4) Includes RWA relating to certain commercial loans which are determined using the supervisory slotting approach.\n(5) Includes residential mortgages insured by Canada Mortgage and Housing Corporation (CMHC), an agency of the Government of Canada, and government-guaranteed\n\nstudent loans.\n\nCapital initiatives\nThe following were the main capital initiatives undertaken since our 2024 Annual Report:\n\nNormal course issuer bid (NCIB)\nOn September 8, 2025, we announced that the Toronto Stock Exchange had accepted the notice of our intention to commence an NCIB. Purchases\nunder this bid will be completed upon the earlier of: (i) CIBC purchasing 20 million common shares; (ii) CIBC providing a notice of termination; or\n(iii) September 9, 2026. 3,500,000 common shares were purchased and cancelled during the fourth quarter at an average price of $112.54 for a\ntotal amount of $393 million.\n\nThe following table shows common shares purchased and cancelled under current and previously expired NCIBs.\n\n$ millions, except number of shares, as at or for the year ended October 31\n2025\n2024\nTotal\n\nNumber\nof shares\nAmount\n\nTSX approval date\n\nNumber\nof shares\nAmount\n\nNumber\nof shares\nAmount\n\nSeptember 5, 2024 (1)\n15,000,000\n$\n1,338\n5,000,000\n$\n419\n20,000,000\n$\n1,757\nSeptember 5, 2025 (2)\n3,500,000\n393\n–\n–\n3,500,000\n393\n\nTotal\n18,500,000\n$\n1,731\n5,000,000\n$\n419\n23,500,000\n$\n2,150\n\n(1) Common shares were repurchased at an average price of $87.80 under this NCIB.\n(2) Common shares were repurchased at an average price of $112.54 under this NCIB.",
+        "similarity": 0.5682700276374817,
+        "document_type": "annual_report",
+        "page_end": 50,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "section": "Operational risk",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "fiscal_year": 2025,
+        "page_start": 50,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "bank_code": "CIBC"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00028",
+        "text": "Higher budget deficits could prevent a further drop in long-term rates, but fiscal stimulus and lighter\nregulatory policies will add some support for economic growth in 2026. Inflation is expected to accelerate as tariffs get passed through to\nconsumers, with the CPI averaging 3.3% in 2026. For Canadian Personal Banking, mortgage growth is expected to continue at the current rate in 2026, as lower interest rates bring buyers back\nto the market tempered by reduced consumer confidence and policy measures designed to slow population growth. We expect to see a marginal\nimprovement in activity as per capita discretionary spending accelerates in response to lower borrowing costs, offset by economic uncertainty\nresulting in a modest increase in demand for non-mortgage credit.\n\nDe-escalating tariff concerns and interest rate relief should lead to loan growth in Canadian commercial banking and corporate banking in\n2026. While loan growth in our U.S. commercial banking business had slowed due to the evolving trade policy uncertainties, we expect client\ninvestment activity will increase as the uncertainty lessens, which in turn will lead to further loan growth to the extent clients do not utilize their\ndeposit holdings.\n\nFinancial markets will benefit from interest rate reductions in both Canada and the U.S. Canadian and U.S. wealth management businesses\nhave benefitted from strong equity market performance in both countries, and greater assets under management should be supportive for 2026.\n\nCorporate and investment banking is expected to continue to benefit from merger and acquisition activity, and corporate bond issuance is\nexpected to pick up as capital spending improves with reduced uncertainties over tariffs in 2026.\n\nThe economic outlook described above reflects numerous assumptions regarding the level and duration of tariffs between the U.S., Canada and\nother major trading partners, the impact that tariffs may have on economic growth and inflation in Canada and the U.S. and fiscal and monetary\npolicies that may be enacted in response to tariffs, as well as the economic risks emanating from geopolitical events. As a result, actual experience\nmay differ materially from expectations. The impact of trade policy uncertainty and geopolitical events on our risk environment, are discussed in the\n“Top and emerging risks” section. Changes in the level of economic uncertainty continue to impact key accounting estimates and assumptions,\nparticularly the estimation of expected credit losses (ECL). See the “Accounting and control matters” section and Note 5 to our consolidated\nfinancial statements for further details.\n\nSignificant events\n\nSale of certain banking assets in the Caribbean\nOn October 31, 2023, CIBC Caribbean Bank Limited (CIBC Caribbean) announced that it had entered into an agreement to sell its banking assets in\nCuraçao and Sint Maarten. The sale of banking assets in Curaçao was completed on May 24, 2024. The sale of banking assets in Sint Maarten was\ncompleted on February 7, 2025. The impact of these transactions was not material.\n\nFinancial performance overview\n\nThis section provides a review of our consolidated financial results for 2025. A review of our SBU results follows on pages 16 to 28. Refer to page 11\nfor a review of our financial performance for 2024.\n\n2025 Financial results review\nReported net income for the year was $8,454 million, compared with $7,154 million in 2024.",
+        "similarity": 0.5639816522598267,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "page_start": 18,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_end": 19,
+        "document_type": "annual_report",
+        "section": "Management’s discussion and analysis",
+        "bank_code": "CIBC"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 1.5818762999260798
+  },
+  "latency_seconds": 3.2211674000136554,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0008772000000000001,
+  "input_tokens": 5600,
+  "output_tokens": 62,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.054074900108389556,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately reflects the lack of specific information regarding changes in CIBC's mortgage credit risk disclosures between 2024 and 2025, supported by the provided filings.",
+    "relevance_reason": "The answer directly addresses the question about changes in disclosures, stating that the necessary information is not available.",
+    "completeness_reason": "The answer comprehensively covers the request by stating the absence of specific details for both years, fulfilling the requirement to compare evidence from both years.",
+    "unsupported_claims": [],
+    "reference_limitations": "The filings do not provide specific comparative details on mortgage credit risk disclosures between 2024 and 2025."
+  },
+  "judge_cost_usd": 0.00250935,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_25",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

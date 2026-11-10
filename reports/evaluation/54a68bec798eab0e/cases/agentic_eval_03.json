@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_03",
+  "config": "agentic",
+  "question": {
+    "id": "eval_03",
+    "question": "What physical and transition climate risks did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed physical and transition climate risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What physical and transition climate risks did RBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What physical and transition climate risks did RBC disclose in its 2025 annual report?",
+    "answer": "In its 2025 annual report, RBC disclosed the following about climate-related risks:\n\n1. **Transition Risk**: This includes risks associated with the shift towards a low-carbon economy, which may arise from government policies, technological advancements, and changes in market sentiment.\n\n2. **Physical Risk**: This encompasses risks from climate-related extremes (acute physical risks) and long-term gradual climate shifts (chronic physical risks), as well as indirect effects such as public health implications.\n\nRBC is actively integrating climate-related risk considerations into its risk management practices, utilizing climate scenario analysis to inform strategic planning and stress testing (RBC_2025_annual_report_FY_00189).\n\nAdditionally, the report highlights the evolving legal and regulatory landscape regarding sustainability, which could lead to increased compliance costs and operational complexities (RBC_2025_annual_report_FY_00184).\n\nFor further details, you can access the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4748,
+    "output_tokens": 248,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000861,
+    "seconds": 4.64,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "physical and transition climate risks",
+          "bank": "RBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00189",
+              "text": "We define climate-related risk as the potential negative impacts of climate change on our financial results, financial and\noperational resilience, reputation, business model or strategy. Climate-related risk is categorized into transition risk and\nphysical risk. Transition risk is defined as the risks related to the process of adjustment towards a low-carbon economy. These\nrisks can emerge from current or future government policies, legislation, and regulation to limit carbon emissions as well as\ntechnological advancements, and changes in market and customer sentiment towards a low-carbon economy. Physical risk is\ndefined to include the risks from the increasing severity and frequency of climate-related extremes and events (i.e., acute\nphysical risks), longer-term gradual shifts of the climate (i.e., chronic physical risks) and indirect effects of climate change, such\nas public health implications (e.g., morbidity and mortality impacts).\n\nWe continue to make progress in our climate-related risk management capabilities by integrating climate-related risk\nconsiderations into our existing risk management practices. Climate scenario analysis helps to inform future strategic planning,\nevolve risk management strategies, and meet regulatory and stakeholder expectations. To help ensure that the bank is\nadequately capitalized against unexpected events resulting from climate change, we assess the impact of climate-related risks\nacross multiple Principal Risks in our existing Enterprise-Wide Stress Testing program.\n\nHuman rights and codes of conduct\nWe continue to integrate our commitment to respect human rights into operational policies and procedures across the\norganization, and we disclose the operationalization of this commitment in our various human rights related disclosures, such\nas our Approach to Human Rights – which includes our Human Rights Position Statement and outlines our commitment to\nrespect human rights as set out in the United Nations Guiding Principles on Business and Human Rights. In addition, RBC’s\nStatement Regarding Modern Slavery describes the policies and processes that are in place across our enterprise to help\nprevent and reduce the risk that modern slavery is used in our operations and supply chain.\n\nOur Code of Conduct establishes standards of desired behaviour for how we work together in a respectful, transparent and\nfair environment. In addition, our Supplier Code of Conduct sets our expectations of suppliers to, among other things, abide by\nrelevant employment, labour, non-discrimination and human rights legislation and standards, and to respect human rights.\n\nVoluntary commitments\nWe have made sustainability-related commitments that form part of our broader approach to managing E&S risks and\nopportunities.\n\nWe may be exposed to legal, regulatory or reputational impacts for making or not fully meeting our sustainability-related\ncommitments, goals and targets either as a result of our own actions or due to external factors, which could cause our actual\nresults to differ materially from our expectations expressed in such objectives. More specifically, our ability to achieve our\nsustainability-related commitments, goals and targets will depend on the collective efforts and actions across a wide range of\nstakeholders outside of our control, and there can be no assurance that they will be achieved2.\n\nIn addition, our sustainability-related commitments, goals and targets are aspirational and may need to be changed, or\nrecalibrated in response to these external factors or as data improves and as climate science, transition pathways and market\npractices regarding standards, methodologies, metrics and measurements evolve, which may result in us withdrawing from or\nmodifying our membership in certain frameworks, principles and initiatives.\n\nWe may be exposed to legal, regulatory or reputational impacts for making or not fully meeting our sustainability-related\ncommitments, goals and targets either as a result of our own actions or due to external factors, which could cause our actual\nresults to differ materially from our expectations expressed in such objectives. More specifically, our ability to achieve our\nsustainability-related commitments, goals and targets will depend on the collective efforts and actions across a wide range of\nstakeholders outside of our control, and there can be no assurance that they will be achieved2. In addition, our sustainability-related commitments, goals and targets are aspirational and may need to be changed, or\nrecalibrated in response to these external factors or as data improves and as climate science, transition pathways and market\npractices regarding standards, methodologies, metrics and measurements evolve, which may result in us withdrawing from or\nmodifying our membership in certain frameworks, principles and initiatives.\n\nLegal and regulatory developments\nApplicable environmental and social-related laws, regulations, policies, frameworks, methodologies an",
+              "similarity": 0.558,
+              "quarter": 0,
+              "filing_id": "RBC_2025_annual_report_FY",
+              "bank_code": "RBC",
+              "fiscal_year": 2025,
+              "bank": "Royal Bank of Canada",
+              "document_type": "annual_report",
+              "file_name": "RBC_2025_annual_report.pdf",
+              "page_start": 112,
+              "page_end": 112,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "section": "Climate-related risk"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00184",
+              "text": "Our diversified business model, as well as our product and geographic diversification, continue to help mitigate the risks posed\nby global uncertainty. Sustainability-related legal and regulatory activity\nApplicable sustainability-related laws, regulations, policies, frameworks, methodologies and guidance continue to evolve in\ninconsistent ways across the regions in which we operate. As such, new or heightened requirements could result in increased\nregulatory, compliance or other costs or higher capital requirements, and may subject us to different and potentially conflicting\npolicies and requirements in the various jurisdictions in which we operate. We continue to monitor the development of\napplicable laws, regulations, policies, frameworks, methodologies and guidance in this area, including but not limited to the\nevolution of sustainability disclosure requirements and climate risk management requirements for financial institutions.\n\nIn Canada, OSFI’s Guideline B-15 Climate Risk Management, issued in March 2023, sets expectations for managing and\ndisclosing climate-related risks. Subsequent updates in 2024 and 2025 aligned disclosure expectations with IFRS S2 Climate-\nrelated Disclosures issued by the International Sustainability Standards Board (ISSB) and extended certain implementation\ntimelines to fiscal 2028 and 2029. We expect to meet upcoming disclosure phases and continue to monitor further developments.\n\nIn the U.S., scrutiny of financial institutions relating to environmental and/or social matters, including climate, continues to\nbe heightened at both the federal and state levels, including through statutes, regulations and litigation. As environmental and\nsocial issues remain heavily politicized, statutes or regulations in certain states may be interpreted to prohibit governmental\nentities, such as public pension funds and issuers of municipal bonds, from doing business with certain financial institutions,\nand political pressure may be placed upon governmental entities to not do business with certain financial institutions, based on\nthe financial institutions’ perceived positions on certain environmental and/or social matters. We continue to monitor\ndevelopments in this area and assess their impacts on our businesses.\n\nIn Europe, the European Union’s Corporate Sustainability Reporting Directive (CSRD) requires reporting under the European\nSustainability Reporting Standards (ESRS). The ESRS, which were adopted by the European Commission in July 2023, set out the\nrequirements for companies to report on sustainability-related impacts, opportunities and risks. We anticipate that we will be\nsubject to reporting obligations under the CSRD from fiscal 2029 at the consolidated level, and are currently assessing the\nimpact of these requirements.\n\nWe continue to monitor the development of applicable anti-greenwashing laws and regulations as well as climate-related\nlitigation and regulatory enforcement actions related to greenwashing, including amendments to the Competition Act (Canada)\nwhich came into force on June 20, 2024, and which introduced new anti-greenwashing provisions. These provisions are in addition\nto the pre-existing provisions of the Competition Act (Canada) that prohibit the making of claims that are materially false or\nmisleading. “Greenwashing” generally refers to the practice of conveying false or misleading information about an organization’s\nproducts or services or operations to suggest that the organization is doing more to protect the environment than it is.\n\nModel risk management\nOn September 11, 2025, OSFI released its final Guideline E-23 – Model Risk Management, which sets out expectations for\nmanaging risks associated with traditional models as well as emerging technologies such as artificial intelligence and machine\nlearning.\n\nThis guideline will be effective May 1, 2027. We have assessed the requirements and do not anticipate any issues in\ncomplying with the requirements by the effective date.",
+              "similarity": 0.478,
+              "page_end": 110,
+              "file_name": "RBC_2025_annual_report.pdf",
+              "quarter": 0,
+              "document_type": "annual_report",
+              "section": "Management’s Discussion and Analysis",
+              "bank": "Royal Bank of Canada",
+              "page_start": 109,
+              "fiscal_year": 2025,
+              "filing_id": "RBC_2025_annual_report_FY",
+              "bank_code": "RBC",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00187",
+              "text": "Income and other tax expense – by geography\n(Millions of Canadian dollars) Income and other tax expense – by category\n(Millions of Canadian dollars) 8,000 8,000 7,000\n6,000\n5,000\n4,000\n3,000\n\n7,000\n6,000\n5,000\n4,000\n3,000\n\n2,000\n1,000\n\n2,000\n1,000\n\n0\n\n0\n\n2025\n2024\n\n2025\n2024\n\nOther International\nU.S.\nCanada\n\nProperty taxes\nInsurance premium taxes\nBusiness taxes\n\nPayroll taxes\n\nValue added and\nsales taxes\nCapital taxes\n\nIncome taxes\n\nFor further details on income and other tax expense, refer to the Financial performance section.\n\nEnvironmental and social risk\n\nEnvironmental and social (E&S) risk is the risk of negative impacts in the short-, medium- or long-term on our financial results,\nfinancial and operational resilience, reputation, business model or strategy resulting from E&S risk factors which can arise from\nRBC, a client or a third-party. Because different stakeholders and communities may have divergent views on E&S issues, any\nactual or perceived action or inaction by us in the management of an E&S issue may be perceived negatively by at least some\nstakeholders and, as a result, may increase our E&S risk.\n\nE&S risk factors include, but are not limited to, climate change, site contamination, waste management, land and resource\nuse, biodiversity, water quality and availability, environmental regulation, human rights (including, but not limited to, Indigenous\nPeoples’ rights) and community engagement.\n\nE&S risks are unique and transverse in nature and may impact our Principal Risks in different ways and to varying degrees,\nincluding but not limited to strategic, operational, credit and compliance risks. See the Climate-related risk section below for\nadditional information specific to climate-related risk.\n\nGovernance\nThe Board and its Committees provide oversight of the bank’s strategic approach to sustainability matters, including climate\nchange, with specific subject-matter expertise, groups and functions responsible for relevant programs, products, policies and\nperformance rooted within business segments and functions across the bank. Committees of the Board have oversight of E&S\nrisks that are specific to their respective responsibilities, including the Governance Committee, which provides oversight and\ncoordination over sustainability matters, and the Risk Committee, which oversees significant and emerging risks to the bank,\nincluding E&S risks. For further details on risk governance, refer to the Enterprise risk management – Risk governance section.\n\nRoles and responsibilities related to E&S risk management are governed by the ERMF and the three lines of defence\ngovernance model. Business segments and functional areas are responsible for incorporating E&S risk management\nrequirements within their own operations, while GRM is responsible for defining E&S risk management requirements, including\nestablishing policies, and performing effective oversight in relation to E&S risk.",
+              "similarity": 0.448,
+              "document_type": "annual_report",
+              "section": "Management’s Discussion and Analysis",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "quarter": 0,
+              "filing_id": "RBC_2025_annual_report_FY",
+              "file_name": "RBC_2025_annual_report.pdf",
+              "bank": "Royal Bank of Canada",
+              "bank_code": "RBC",
+              "page_start": 111,
+              "page_end": 111,
+              "fiscal_year": 2025
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00183",
+              "text": "Legal and regulatory environment risk Legal and regulatory environment risk is the risk that new or modified laws and regulations, and the interpretation or\napplication of laws and regulations, will negatively impact the way in which we operate, both in Canada and in the other\njurisdictions in which we conduct business. The full impact of some of these changes on our business will not be known until\nfinal rules are implemented and market practices have developed in response. We continue to respond to these and other\ndevelopments and are working to minimize any potential adverse business or economic impact. The following provides a high-\nlevel summary of some of the key regulatory changes that have potential to increase or decrease our costs, impact our\nprofitability and increase the complexity of our operations.\n\nGlobal uncertainty\nIn October 2025, the International Monetary Fund (IMF) projected global growth of 3.2% for 2025, up 0.2% from its July forecast,\nreflecting an improvement due to easing of trade tensions, which were tempered as a result of trade deals and resets. The IMF\nprojected global growth for calendar 2026 to be 3.1%. The overall global economic outlook remains fragile and tilted to the\ndownside, driven by:\n•\nFailure to reach trade agreements and reliance on ad-hoc bilateral deals, which could lead to a shift away from global\neconomic integration, negatively impact productivity and further hurt growth prospects, especially for emerging markets\nand developing economies;\n•\nSubstantive projected fiscal deficits across major economies, which could lead to upward pressure on long-term interest\nrates, financial market instability and/or deceleration in growth, along with their associated impact on consumer and\nbusiness confidence;\n•\nDiverging monetary policies in response to inflationary pressures, which could drive asset repricing, impact foreign\nexchange rates and capital flows and heighten financial market volatility;\n•\nShifting global policy priorities, including ongoing uncertainty around U.S. trade, foreign relations, defense and immigration\npolicies, which could disrupt global alliances and heighten economic, market and other risks, and intensifying political\npressures on policy institutions and policymaking, which could weaken policy credibility, reduce investor confidence and\nheighten macroeconomic vulnerabilities;\n•\nElevated asset valuations, including in technology and AI-linked sectors which could drive abrupt market corrections,\ndampen investment, tighten financial conditions and weaken business and consumer confidence;\n•\nAn aging demographic in advanced economies, as well as changing immigration policies, which could have an associated\nlong-term impact on labour supply, economic productivity and government fiscal capacity;\n•\nOngoing conflicts including those between Russia and Ukraine, in the Middle East and Asia, and rising tensions between\nChina and Taiwan, together with increased polarization and social unrest; and\n•\nExtreme weather-related events.\n\nOur diversified business model, as well as our product and geographic diversification, continue to help mitigate the risks posed\nby global uncertainty.\n\nSustainability-related legal and regulatory activity\nApplicable sustainability-related laws, regulations, policies, frameworks, methodologies and guidance continue to evolve in\ninconsistent ways across the regions in which we operate. As such, new or heightened requirements could result in increased\nregulatory, compliance or other costs or higher capital requirements, and may subject us to different and potentially conflicting\npolicies and requirements in the various jurisdictions in which we operate. We continue to monitor the development of\napplicable laws, regulations, policies, frameworks, methodologies and guidance in this area, including but not limited to the\nevolution of sustainability disclosure requirements and climate risk management requirements for financial institutions.",
+              "similarity": 0.438,
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "bank": "Royal Bank of Canada",
+              "section": "Management’s Discussion and Analysis",
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "bank_code": "RBC",
+              "page_end": 109,
+              "quarter": 0,
+              "file_name": "RBC_2025_annual_report.pdf",
+              "page_start": 109,
+              "filing_id": "RBC_2025_annual_report_FY"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In its 2025 annual report, RBC disclosed the following about climate-related risks:\n\n1. **Transition Risk**: This includes risks associated with the shift towards a low-carbon economy, which may arise from government policies, technological advancements, and changes in market sentiment.\n\n2. **Physical Risk**: This encompasses risks from climate-related extremes (acute physical risks) and long-term gradual climate shifts (chronic physical risks), as well as indirect effects such as public health implications.\n\nRBC is actively integrating climate-related risk considerations into its risk management practices, utilizing climate scenario analysis to inform strategic planning and stress testing (RBC_2025_annual_report_FY_00189).\n\nAdditionally, the report highlights the evolving legal and regulatory landscape regarding sustainability, which could lead to increased compliance costs and operational complexities (RBC_2025_annual_report_FY_00184).\n\nFor further details, you can access the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00189",
+        "text": "We define climate-related risk as the potential negative impacts of climate change on our financial results, financial and\noperational resilience, reputation, business model or strategy. Climate-related risk is categorized into transition risk and\nphysical risk. Transition risk is defined as the risks related to the process of adjustment towards a low-carbon economy. These\nrisks can emerge from current or future government policies, legislation, and regulation to limit carbon emissions as well as\ntechnological advancements, and changes in market and customer sentiment towards a low-carbon economy. Physical risk is\ndefined to include the risks from the increasing severity and frequency of climate-related extremes and events (i.e., acute\nphysical risks), longer-term gradual shifts of the climate (i.e., chronic physical risks) and indirect effects of climate change, such\nas public health implications (e.g., morbidity and mortality impacts).\n\nWe continue to make progress in our climate-related risk management capabilities by integrating climate-related risk\nconsiderations into our existing risk management practices. Climate scenario analysis helps to inform future strategic planning,\nevolve risk management strategies, and meet regulatory and stakeholder expectations. To help ensure that the bank is\nadequately capitalized against unexpected events resulting from climate change, we assess the impact of climate-related risks\nacross multiple Principal Risks in our existing Enterprise-Wide Stress Testing program.\n\nHuman rights and codes of conduct\nWe continue to integrate our commitment to respect human rights into operational policies and procedures across the\norganization, and we disclose the operationalization of this commitment in our various human rights related disclosures, such\nas our Approach to Human Rights – which includes our Human Rights Position Statement and outlines our commitment to\nrespect human rights as set out in the United Nations Guiding Principles on Business and Human Rights. In addition, RBC’s\nStatement Regarding Modern Slavery describes the policies and processes that are in place across our enterprise to help\nprevent and reduce the risk that modern slavery is used in our operations and supply chain.\n\nOur Code of Conduct establishes standards of desired behaviour for how we work together in a respectful, transparent and\nfair environment. In addition, our Supplier Code of Conduct sets our expectations of suppliers to, among other things, abide by\nrelevant employment, labour, non-discrimination and human rights legislation and standards, and to respect human rights.\n\nVoluntary commitments\nWe have made sustainability-related commitments that form part of our broader approach to managing E&S risks and\nopportunities.\n\nWe may be exposed to legal, regulatory or reputational impacts for making or not fully meeting our sustainability-related\ncommitments, goals and targets either as a result of our own actions or due to external factors, which could cause our actual\nresults to differ materially from our expectations expressed in such objectives. More specifically, our ability to achieve our\nsustainability-related commitments, goals and targets will depend on the collective efforts and actions across a wide range of\nstakeholders outside of our control, and there can be no assurance that they will be achieved2.\n\nIn addition, our sustainability-related commitments, goals and targets are aspirational and may need to be changed, or\nrecalibrated in response to these external factors or as data improves and as climate science, transition pathways and market\npractices regarding standards, methodologies, metrics and measurements evolve, which may result in us withdrawing from or\nmodifying our membership in certain frameworks, principles and initiatives.\n\nWe may be exposed to legal, regulatory or reputational impacts for making or not fully meeting our sustainability-related\ncommitments, goals and targets either as a result of our own actions or due to external factors, which could cause our actual\nresults to differ materially from our expectations expressed in such objectives. More specifically, our ability to achieve our\nsustainability-related commitments, goals and targets will depend on the collective efforts and actions across a wide range of\nstakeholders outside of our control, and there can be no assurance that they will be achieved2. In addition, our sustainability-related commitments, goals and targets are aspirational and may need to be changed, or\nrecalibrated in response to these external factors or as data improves and as climate science, transition pathways and market\npractices regarding standards, methodologies, metrics and measurements evolve, which may result in us withdrawing from or\nmodifying our membership in certain frameworks, principles and initiatives.\n\nLegal and regulatory developments\nApplicable environmental and social-related laws, regulations, policies, frameworks, methodologies an",
+        "similarity": 0.558,
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "document_type": "annual_report",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 112,
+        "page_end": 112,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "section": "Climate-related risk"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00184",
+        "text": "Our diversified business model, as well as our product and geographic diversification, continue to help mitigate the risks posed\nby global uncertainty. Sustainability-related legal and regulatory activity\nApplicable sustainability-related laws, regulations, policies, frameworks, methodologies and guidance continue to evolve in\ninconsistent ways across the regions in which we operate. As such, new or heightened requirements could result in increased\nregulatory, compliance or other costs or higher capital requirements, and may subject us to different and potentially conflicting\npolicies and requirements in the various jurisdictions in which we operate. We continue to monitor the development of\napplicable laws, regulations, policies, frameworks, methodologies and guidance in this area, including but not limited to the\nevolution of sustainability disclosure requirements and climate risk management requirements for financial institutions.\n\nIn Canada, OSFI’s Guideline B-15 Climate Risk Management, issued in March 2023, sets expectations for managing and\ndisclosing climate-related risks. Subsequent updates in 2024 and 2025 aligned disclosure expectations with IFRS S2 Climate-\nrelated Disclosures issued by the International Sustainability Standards Board (ISSB) and extended certain implementation\ntimelines to fiscal 2028 and 2029. We expect to meet upcoming disclosure phases and continue to monitor further developments.\n\nIn the U.S., scrutiny of financial institutions relating to environmental and/or social matters, including climate, continues to\nbe heightened at both the federal and state levels, including through statutes, regulations and litigation. As environmental and\nsocial issues remain heavily politicized, statutes or regulations in certain states may be interpreted to prohibit governmental\nentities, such as public pension funds and issuers of municipal bonds, from doing business with certain financial institutions,\nand political pressure may be placed upon governmental entities to not do business with certain financial institutions, based on\nthe financial institutions’ perceived positions on certain environmental and/or social matters. We continue to monitor\ndevelopments in this area and assess their impacts on our businesses.\n\nIn Europe, the European Union’s Corporate Sustainability Reporting Directive (CSRD) requires reporting under the European\nSustainability Reporting Standards (ESRS). The ESRS, which were adopted by the European Commission in July 2023, set out the\nrequirements for companies to report on sustainability-related impacts, opportunities and risks. We anticipate that we will be\nsubject to reporting obligations under the CSRD from fiscal 2029 at the consolidated level, and are currently assessing the\nimpact of these requirements.\n\nWe continue to monitor the development of applicable anti-greenwashing laws and regulations as well as climate-related\nlitigation and regulatory enforcement actions related to greenwashing, including amendments to the Competition Act (Canada)\nwhich came into force on June 20, 2024, and which introduced new anti-greenwashing provisions. These provisions are in addition\nto the pre-existing provisions of the Competition Act (Canada) that prohibit the making of claims that are materially false or\nmisleading. “Greenwashing” generally refers to the practice of conveying false or misleading information about an organization’s\nproducts or services or operations to suggest that the organization is doing more to protect the environment than it is.\n\nModel risk management\nOn September 11, 2025, OSFI released its final Guideline E-23 – Model Risk Management, which sets out expectations for\nmanaging risks associated with traditional models as well as emerging technologies such as artificial intelligence and machine\nlearning.\n\nThis guideline will be effective May 1, 2027. We have assessed the requirements and do not anticipate any issues in\ncomplying with the requirements by the effective date.",
+        "similarity": 0.478,
+        "page_end": 110,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "section": "Management’s Discussion and Analysis",
+        "bank": "Royal Bank of Canada",
+        "page_start": 109,
+        "fiscal_year": 2025,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00187",
+        "text": "Income and other tax expense – by geography\n(Millions of Canadian dollars) Income and other tax expense – by category\n(Millions of Canadian dollars) 8,000 8,000 7,000\n6,000\n5,000\n4,000\n3,000\n\n7,000\n6,000\n5,000\n4,000\n3,000\n\n2,000\n1,000\n\n2,000\n1,000\n\n0\n\n0\n\n2025\n2024\n\n2025\n2024\n\nOther International\nU.S.\nCanada\n\nProperty taxes\nInsurance premium taxes\nBusiness taxes\n\nPayroll taxes\n\nValue added and\nsales taxes\nCapital taxes\n\nIncome taxes\n\nFor further details on income and other tax expense, refer to the Financial performance section.\n\nEnvironmental and social risk\n\nEnvironmental and social (E&S) risk is the risk of negative impacts in the short-, medium- or long-term on our financial results,\nfinancial and operational resilience, reputation, business model or strategy resulting from E&S risk factors which can arise from\nRBC, a client or a third-party. Because different stakeholders and communities may have divergent views on E&S issues, any\nactual or perceived action or inaction by us in the management of an E&S issue may be perceived negatively by at least some\nstakeholders and, as a result, may increase our E&S risk.\n\nE&S risk factors include, but are not limited to, climate change, site contamination, waste management, land and resource\nuse, biodiversity, water quality and availability, environmental regulation, human rights (including, but not limited to, Indigenous\nPeoples’ rights) and community engagement.\n\nE&S risks are unique and transverse in nature and may impact our Principal Risks in different ways and to varying degrees,\nincluding but not limited to strategic, operational, credit and compliance risks. See the Climate-related risk section below for\nadditional information specific to climate-related risk.\n\nGovernance\nThe Board and its Committees provide oversight of the bank’s strategic approach to sustainability matters, including climate\nchange, with specific subject-matter expertise, groups and functions responsible for relevant programs, products, policies and\nperformance rooted within business segments and functions across the bank. Committees of the Board have oversight of E&S\nrisks that are specific to their respective responsibilities, including the Governance Committee, which provides oversight and\ncoordination over sustainability matters, and the Risk Committee, which oversees significant and emerging risks to the bank,\nincluding E&S risks. For further details on risk governance, refer to the Enterprise risk management – Risk governance section.\n\nRoles and responsibilities related to E&S risk management are governed by the ERMF and the three lines of defence\ngovernance model. Business segments and functional areas are responsible for incorporating E&S risk management\nrequirements within their own operations, while GRM is responsible for defining E&S risk management requirements, including\nestablishing policies, and performing effective oversight in relation to E&S risk.",
+        "similarity": 0.448,
+        "document_type": "annual_report",
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "page_start": 111,
+        "page_end": 111,
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00183",
+        "text": "Legal and regulatory environment risk Legal and regulatory environment risk is the risk that new or modified laws and regulations, and the interpretation or\napplication of laws and regulations, will negatively impact the way in which we operate, both in Canada and in the other\njurisdictions in which we conduct business. The full impact of some of these changes on our business will not be known until\nfinal rules are implemented and market practices have developed in response. We continue to respond to these and other\ndevelopments and are working to minimize any potential adverse business or economic impact. The following provides a high-\nlevel summary of some of the key regulatory changes that have potential to increase or decrease our costs, impact our\nprofitability and increase the complexity of our operations.\n\nGlobal uncertainty\nIn October 2025, the International Monetary Fund (IMF) projected global growth of 3.2% for 2025, up 0.2% from its July forecast,\nreflecting an improvement due to easing of trade tensions, which were tempered as a result of trade deals and resets. The IMF\nprojected global growth for calendar 2026 to be 3.1%. The overall global economic outlook remains fragile and tilted to the\ndownside, driven by:\n•\nFailure to reach trade agreements and reliance on ad-hoc bilateral deals, which could lead to a shift away from global\neconomic integration, negatively impact productivity and further hurt growth prospects, especially for emerging markets\nand developing economies;\n•\nSubstantive projected fiscal deficits across major economies, which could lead to upward pressure on long-term interest\nrates, financial market instability and/or deceleration in growth, along with their associated impact on consumer and\nbusiness confidence;\n•\nDiverging monetary policies in response to inflationary pressures, which could drive asset repricing, impact foreign\nexchange rates and capital flows and heighten financial market volatility;\n•\nShifting global policy priorities, including ongoing uncertainty around U.S. trade, foreign relations, defense and immigration\npolicies, which could disrupt global alliances and heighten economic, market and other risks, and intensifying political\npressures on policy institutions and policymaking, which could weaken policy credibility, reduce investor confidence and\nheighten macroeconomic vulnerabilities;\n•\nElevated asset valuations, including in technology and AI-linked sectors which could drive abrupt market corrections,\ndampen investment, tighten financial conditions and weaken business and consumer confidence;\n•\nAn aging demographic in advanced economies, as well as changing immigration policies, which could have an associated\nlong-term impact on labour supply, economic productivity and government fiscal capacity;\n•\nOngoing conflicts including those between Russia and Ukraine, in the Middle East and Asia, and rising tensions between\nChina and Taiwan, together with increased polarization and social unrest; and\n•\nExtreme weather-related events.\n\nOur diversified business model, as well as our product and geographic diversification, continue to help mitigate the risks posed\nby global uncertainty.\n\nSustainability-related legal and regulatory activity\nApplicable sustainability-related laws, regulations, policies, frameworks, methodologies and guidance continue to evolve in\ninconsistent ways across the regions in which we operate. As such, new or heightened requirements could result in increased\nregulatory, compliance or other costs or higher capital requirements, and may subject us to different and potentially conflicting\npolicies and requirements in the various jurisdictions in which we operate. We continue to monitor the development of\napplicable laws, regulations, policies, frameworks, methodologies and guidance in this area, including but not limited to the\nevolution of sustainability disclosure requirements and climate risk management requirements for financial institutions.",
+        "similarity": 0.438,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank_code": "RBC",
+        "page_end": 109,
+        "quarter": 0,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 109,
+        "filing_id": "RBC_2025_annual_report_FY"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 4.637534799985588,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.000861,
+  "input_tokens": 4748,
+  "output_tokens": 248,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.021346500026993454,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about RBC's climate-related risks are directly supported by the actual answer context, accurately reflecting the bank and the fiscal year 2025.",
+    "relevance_reason": "The answer directly addresses the question regarding the physical and transition climate risks disclosed by RBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including both types of climate risks and relevant management practices, as supported by the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0014751000000000002
+}

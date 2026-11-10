@@ -1,0 +1,219 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_02",
+  "config": "agentic",
+  "question": {
+    "id": "eval_02",
+    "question": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk and Value-at-Risk measures; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?",
+    "answer": "In its 2025 annual report, RBC disclosed the following regarding market risk and Value-at-Risk (VaR):\n\n1. **Market Risk Definition**: Market risk is described as the impact of market prices on RBC's financial condition, including potential gains or losses from changes in interest rates, credit spreads, equity prices, commodity prices, foreign exchange rates, and implied volatilities.\n\n2. **VaR Measurement**: \n   - VaR is calculated at the 99th percentile confidence level for price movements over a one-day holding period, using a historical simulation of the last two years of equally weighted market data.\n   - The calculations are updated daily for current risk positions, except for less material positions, which are updated at least monthly.\n   - Trading VaR captures potential loss for the trading portfolio, excluding non-trading FVTPL positions.\n   - Total VaR encompasses potential loss for all positions classified as FVTPL.\n\n3. **Limitations of VaR**: \n   - VaR does not predict future losses if market movements differ significantly from historical data.\n   - It projects potential losses over a one-day holding period and does not account for trading and hedging activities throughout the day.\n\n4. **Total Market Risk**: The total market risk was reported as $41,506 million for the fiscal year 2025, compared to $33,930 million in the previous period.\n\nFor further details, you can refer to the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (source: RBC_2025_annual_report_FY, pages 85 and 118).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 3404,
+    "output_tokens": 380,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000739,
+    "seconds": 6.31,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "market risk Value-at-Risk",
+          "bank": "RBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00135",
+              "text": "Market risk is defined to be the impact of market prices upon our financial condition. This includes potential gains or losses\ndue to changes in market-determined variables such as interest rates, credit spreads, equity prices, commodity prices, foreign\nexchange rates and implied volatilities.\n\nThe measures of financial condition impacted by market risk include the following:\n\n1.\nPositions whose revaluation gains and losses are reported in revenue, which includes:\na)\nChanges in the fair value of instruments classified or designated as FVTPL, and\nb)\nHedge ineffectiveness.\n\n2.\nCET1 capital, which includes:\na)\nAll of the above, plus\nb)\nChanges in the fair value of FVOCI securities where revaluation gains and losses are reported as OCI,\nc)\nChanges in the Canadian dollar value of investments in foreign subsidiaries, net of hedges, due to foreign exchange\ntranslation, and\nd)\nChanges in the fair value of employee benefit plan deficits.\n\n3.\nCET1 ratio, which includes:\na)\nAll of the above, plus\nb)\nChanges in RWA resulting from changes in traded market risk factors, and\nc)\nChanges in the Canadian dollar value of RWA due to foreign exchange translation.\n\n4.\nThe economic value of the Bank, which includes:\na)\nPoints 1 and 2 above, plus\nb)\nChanges in the economic value of other non-trading positions, net interest income and fee based income, as a\nresult of changes in market risk factors.\n\nMarket risk controls – FVTPL positions, including trading portfolios1\nAs an element of the ERAF, the Board approves our overall market risk appetite. The Market and Counterparty Credit Risk\nfunction within GRM is responsible for creating and managing the controls and governance procedures that are designed to\nensure that risk taken is consistent with risk appetite constraints set by the Board. These controls include limits on\nprobabilistic measures of potential loss such as Value-at-Risk and stress tests as defined below:\n\nValue-at-Risk (VaR) is a statistical measure of potential loss for a financial portfolio computed at a given level of confidence\nand over a defined holding period. We measure VaR at the 99th percentile confidence level for price movements over a\none-day holding period using historic simulation of the last two years of equally weighted historic market data. These\ncalculations are updated daily with current risk positions, with the exception of certain less material positions that are not\nactively traded which are updated on at least a monthly basis. Trading VaR captures potential loss for our trading portfolio\nthat excludes the impacts of non-trading FVTPL positions such as loan underwriting commitments. Total VaR captures\npotential loss for all positions classified as FVTPL.\n\nVaR is a statistical estimate based on historical market data and should be interpreted with knowledge of its limitations,\nwhich include the following:\n\n•\nVaR will not be predictive of future losses if the realized market movements differ significantly from the historical\nperiods used to compute it.\n•\nVaR projects potential losses over a one-day holding period and does not project potential losses for risk positions held\nover longer time periods.\n•\nVaR is measured using positions at close of business and does not include the impact of trading and hedging activity\nover the course of a day.\n\nWe validate our VaR measures through a variety of means – including subjecting the models to vetting and validation by a\ngroup of independent model developers and by back-testing the VaR against daily marked-to-market revenue to identify and\nexamine events in which actual outcomes in trading revenue exceed the VaR projections.",
+              "similarity": 0.635,
+              "file_name": "RBC_2025_annual_report.pdf",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "quarter": 0,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "bank_code": "RBC",
+              "document_type": "annual_report",
+              "page_end": 85,
+              "section": "Market risk",
+              "page_start": 85,
+              "bank": "Royal Bank of Canada",
+              "fiscal_year": 2025
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00203",
+              "text": "Interest rate\n\n$\n4,673\n\n$\n4,673 $\n1,956\nEquity\n\n3,964\n\n3,964\n3,656\nForeign exchange\n\n2,698\n\n2,698\n2,787\nCommodities\n\n1,136\n\n1,136\n1,787\nCredit\n\n10,671\n\n10,671\n8,374\nDefault risk charge\n\n13,162\n\n13,162\n10,898\nOther (3)\n\n5,202\n\n5,202\n4,472\n\nTotal market risk\n\n$\n41,506\n\n$\n41,506 $\n33,930",
+              "similarity": 0.556,
+              "page_start": 118,
+              "quarter": 0,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "page_end": 118,
+              "fiscal_year": 2025,
+              "bank_code": "RBC",
+              "section": "Market risk",
+              "document_type": "annual_report",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "bank": "Royal Bank of Canada",
+              "file_name": "RBC_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00099",
+              "text": "We are in the business of managing the risks inherent to the financial services industry as we aim to create maximum value for\nour shareholders, clients, employees and communities. The ability to manage risk is a core competency of the bank and is\nsupported by our risk-aware culture and risk management approach. Our view of risks is dynamic and reflects the pace of\nchange in the financial services industry and in the markets where we operate or have clients and counterparties.",
+              "similarity": 0.509,
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "bank_code": "RBC",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "page_start": 67,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "section": "Risk management",
+              "page_end": 67,
+              "bank": "Royal Bank of Canada",
+              "quarter": 0,
+              "file_name": "RBC_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "RBC_2025_annual_report_FY_00100",
+              "text": "Our risk management principles set an overall tone for balancing risk-reward trade-offs with the intention of ensuring the long-\nterm viability of our organization. These risk management principles also are integral to allowing RBC to preserve and reinforce\nour strong risk-aware culture and maintain a consistently ethical approach to conducting business.\n\nRisk management principles\n\n•\nAssess the impact of risks arising from choosing and executing a strategy while effectively balancing risk and reward to\nenable sustainable growth.\n•\nCollectively share the responsibility for risk management.\n•\nUndertake only risks we understand and make thoughtful and future-focused risk decisions, taking environmental and\nsocial considerations into account.\n•\nAlways uphold our Purpose and vision, and consistently abide by our values and Code of Conduct as well as applicable\nlaws, regulations and regulatory expectations to maintain our reputation and the trust of our clients, colleagues and\ncommunities.\n•\nMaintain a healthy and robust control environment to protect our stakeholders.\n•\nUse judgment and common sense.\n•\nAlways be operationally prepared and financially resilient for a potential crisis.\n\nThe dynamic nature of the financial services industry, and technological innovation, necessitate that our processes, tools and\npractices are continuously improving and responding to the changing landscape and emerging risks. We seek to accomplish this\nthrough an effective and evolving risk management approach. Our approach to managing risks is organized around the risk\nmanagement lifecycle, including defining and enabling, identifying and assessing, managing and mitigating, aggregating and\nreporting, as well as the governance of the significant risks faced by the organization. The boundaries of the Board-approved\nrisk appetite seek to ensure that risk-taking activities and exposures are aligned with the overall risk posture of the bank. We\nseek to ensure that our business activities and transactions provide an appropriate balance of return for the risks assumed and\nthe costs incurred. Our organizational design and governance processes are structured with the intent of maintaining the\nindependence of the second line of defence, performed primarily by Group Risk Management (GRM) and Regulatory Compliance,\nand are intended to contribute to an effective control environment across RBC.\n\nPrincipal Risks\nWe define risk as the potential vulnerabilities in the short-, medium- or long-term that may impact our financial results, financial\nand operational resilience, reputation, business model or strategy. Risk can be realized through losses or an undesirable\noutcome with respect to volatility of earnings in relation to expected earnings, capital adequacy or liquidity. Our Principal Risks\nreflect the key risks that most significantly affect the achievement of our strategic objectives and include credit, market,\nliquidity, insurance, operational, compliance, reputation and strategic risks. The classification of our Principal Risks provides a\ncommon language and foundation for the broader risk taxonomy and enables a disciplined identification and assessment of\nrisks. There are certain activities that we undertake that will give rise to several risks. There are also certain risks that are\ntransverse (e.g., compliance, climate and conduct risks) that can impact or manifest in other risk types.\n\nEnterprise risk management\n\nUnder the oversight of the Board and senior management, the Enterprise Risk Management Framework (ERMF) provides an\noverview of our enterprise-wide programs for managing risk, including identifying, assessing, measuring, controlling, monitoring\nand reporting on the significant risks that face the organization.",
+              "similarity": 0.49,
+              "bank_code": "RBC",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "page_end": 67,
+              "bank": "Royal Bank of Canada",
+              "section": "Overview",
+              "filing_id": "RBC_2025_annual_report_FY",
+              "page_start": 67,
+              "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+              "file_name": "RBC_2025_annual_report.pdf"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In its 2025 annual report, RBC disclosed the following regarding market risk and Value-at-Risk (VaR):\n\n1. **Market Risk Definition**: Market risk is described as the impact of market prices on RBC's financial condition, including potential gains or losses from changes in interest rates, credit spreads, equity prices, commodity prices, foreign exchange rates, and implied volatilities.\n\n2. **VaR Measurement**: \n   - VaR is calculated at the 99th percentile confidence level for price movements over a one-day holding period, using a historical simulation of the last two years of equally weighted market data.\n   - The calculations are updated daily for current risk positions, except for less material positions, which are updated at least monthly.\n   - Trading VaR captures potential loss for the trading portfolio, excluding non-trading FVTPL positions.\n   - Total VaR encompasses potential loss for all positions classified as FVTPL.\n\n3. **Limitations of VaR**: \n   - VaR does not predict future losses if market movements differ significantly from historical data.\n   - It projects potential losses over a one-day holding period and does not account for trading and hedging activities throughout the day.\n\n4. **Total Market Risk**: The total market risk was reported as $41,506 million for the fiscal year 2025, compared to $33,930 million in the previous period.\n\nFor further details, you can refer to the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (source: RBC_2025_annual_report_FY, pages 85 and 118)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00135",
+        "text": "Market risk is defined to be the impact of market prices upon our financial condition. This includes potential gains or losses\ndue to changes in market-determined variables such as interest rates, credit spreads, equity prices, commodity prices, foreign\nexchange rates and implied volatilities.\n\nThe measures of financial condition impacted by market risk include the following:\n\n1.\nPositions whose revaluation gains and losses are reported in revenue, which includes:\na)\nChanges in the fair value of instruments classified or designated as FVTPL, and\nb)\nHedge ineffectiveness.\n\n2.\nCET1 capital, which includes:\na)\nAll of the above, plus\nb)\nChanges in the fair value of FVOCI securities where revaluation gains and losses are reported as OCI,\nc)\nChanges in the Canadian dollar value of investments in foreign subsidiaries, net of hedges, due to foreign exchange\ntranslation, and\nd)\nChanges in the fair value of employee benefit plan deficits.\n\n3.\nCET1 ratio, which includes:\na)\nAll of the above, plus\nb)\nChanges in RWA resulting from changes in traded market risk factors, and\nc)\nChanges in the Canadian dollar value of RWA due to foreign exchange translation.\n\n4.\nThe economic value of the Bank, which includes:\na)\nPoints 1 and 2 above, plus\nb)\nChanges in the economic value of other non-trading positions, net interest income and fee based income, as a\nresult of changes in market risk factors.\n\nMarket risk controls – FVTPL positions, including trading portfolios1\nAs an element of the ERAF, the Board approves our overall market risk appetite. The Market and Counterparty Credit Risk\nfunction within GRM is responsible for creating and managing the controls and governance procedures that are designed to\nensure that risk taken is consistent with risk appetite constraints set by the Board. These controls include limits on\nprobabilistic measures of potential loss such as Value-at-Risk and stress tests as defined below:\n\nValue-at-Risk (VaR) is a statistical measure of potential loss for a financial portfolio computed at a given level of confidence\nand over a defined holding period. We measure VaR at the 99th percentile confidence level for price movements over a\none-day holding period using historic simulation of the last two years of equally weighted historic market data. These\ncalculations are updated daily with current risk positions, with the exception of certain less material positions that are not\nactively traded which are updated on at least a monthly basis. Trading VaR captures potential loss for our trading portfolio\nthat excludes the impacts of non-trading FVTPL positions such as loan underwriting commitments. Total VaR captures\npotential loss for all positions classified as FVTPL.\n\nVaR is a statistical estimate based on historical market data and should be interpreted with knowledge of its limitations,\nwhich include the following:\n\n•\nVaR will not be predictive of future losses if the realized market movements differ significantly from the historical\nperiods used to compute it.\n•\nVaR projects potential losses over a one-day holding period and does not project potential losses for risk positions held\nover longer time periods.\n•\nVaR is measured using positions at close of business and does not include the impact of trading and hedging activity\nover the course of a day.\n\nWe validate our VaR measures through a variety of means – including subjecting the models to vetting and validation by a\ngroup of independent model developers and by back-testing the VaR against daily marked-to-market revenue to identify and\nexamine events in which actual outcomes in trading revenue exceed the VaR projections.",
+        "similarity": 0.635,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "page_end": 85,
+        "section": "Market risk",
+        "page_start": 85,
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00203",
+        "text": "Interest rate\n\n$\n4,673\n\n$\n4,673 $\n1,956\nEquity\n\n3,964\n\n3,964\n3,656\nForeign exchange\n\n2,698\n\n2,698\n2,787\nCommodities\n\n1,136\n\n1,136\n1,787\nCredit\n\n10,671\n\n10,671\n8,374\nDefault risk charge\n\n13,162\n\n13,162\n10,898\nOther (3)\n\n5,202\n\n5,202\n4,472\n\nTotal market risk\n\n$\n41,506\n\n$\n41,506 $\n33,930",
+        "similarity": 0.556,
+        "page_start": 118,
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_end": 118,
+        "fiscal_year": 2025,
+        "bank_code": "RBC",
+        "section": "Market risk",
+        "document_type": "annual_report",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00099",
+        "text": "We are in the business of managing the risks inherent to the financial services industry as we aim to create maximum value for\nour shareholders, clients, employees and communities. The ability to manage risk is a core competency of the bank and is\nsupported by our risk-aware culture and risk management approach. Our view of risks is dynamic and reflects the pace of\nchange in the financial services industry and in the markets where we operate or have clients and counterparties.",
+        "similarity": 0.509,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_start": 67,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "section": "Risk management",
+        "page_end": 67,
+        "bank": "Royal Bank of Canada",
+        "quarter": 0,
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00100",
+        "text": "Our risk management principles set an overall tone for balancing risk-reward trade-offs with the intention of ensuring the long-\nterm viability of our organization. These risk management principles also are integral to allowing RBC to preserve and reinforce\nour strong risk-aware culture and maintain a consistently ethical approach to conducting business.\n\nRisk management principles\n\n•\nAssess the impact of risks arising from choosing and executing a strategy while effectively balancing risk and reward to\nenable sustainable growth.\n•\nCollectively share the responsibility for risk management.\n•\nUndertake only risks we understand and make thoughtful and future-focused risk decisions, taking environmental and\nsocial considerations into account.\n•\nAlways uphold our Purpose and vision, and consistently abide by our values and Code of Conduct as well as applicable\nlaws, regulations and regulatory expectations to maintain our reputation and the trust of our clients, colleagues and\ncommunities.\n•\nMaintain a healthy and robust control environment to protect our stakeholders.\n•\nUse judgment and common sense.\n•\nAlways be operationally prepared and financially resilient for a potential crisis.\n\nThe dynamic nature of the financial services industry, and technological innovation, necessitate that our processes, tools and\npractices are continuously improving and responding to the changing landscape and emerging risks. We seek to accomplish this\nthrough an effective and evolving risk management approach. Our approach to managing risks is organized around the risk\nmanagement lifecycle, including defining and enabling, identifying and assessing, managing and mitigating, aggregating and\nreporting, as well as the governance of the significant risks faced by the organization. The boundaries of the Board-approved\nrisk appetite seek to ensure that risk-taking activities and exposures are aligned with the overall risk posture of the bank. We\nseek to ensure that our business activities and transactions provide an appropriate balance of return for the risks assumed and\nthe costs incurred. Our organizational design and governance processes are structured with the intent of maintaining the\nindependence of the second line of defence, performed primarily by Group Risk Management (GRM) and Regulatory Compliance,\nand are intended to contribute to an effective control environment across RBC.\n\nPrincipal Risks\nWe define risk as the potential vulnerabilities in the short-, medium- or long-term that may impact our financial results, financial\nand operational resilience, reputation, business model or strategy. Risk can be realized through losses or an undesirable\noutcome with respect to volatility of earnings in relation to expected earnings, capital adequacy or liquidity. Our Principal Risks\nreflect the key risks that most significantly affect the achievement of our strategic objectives and include credit, market,\nliquidity, insurance, operational, compliance, reputation and strategic risks. The classification of our Principal Risks provides a\ncommon language and foundation for the broader risk taxonomy and enables a disciplined identification and assessment of\nrisks. There are certain activities that we undertake that will give rise to several risks. There are also certain risks that are\ntransverse (e.g., compliance, climate and conduct risks) that can impact or manifest in other risk types.\n\nEnterprise risk management\n\nUnder the oversight of the Board and senior management, the Enterprise Risk Management Framework (ERMF) provides an\noverview of our enterprise-wide programs for managing risk, including identifying, assessing, measuring, controlling, monitoring\nand reporting on the significant risks that face the organization.",
+        "similarity": 0.49,
+        "bank_code": "RBC",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 67,
+        "bank": "Royal Bank of Canada",
+        "section": "Overview",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_start": 67,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "file_name": "RBC_2025_annual_report.pdf"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 6.311763999983668,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007386000000000001,
+  "input_tokens": 3404,
+  "output_tokens": 380,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.017007799935527146,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [
+      "RBC_2025_annual_report_FY"
+    ],
+    "citation_identifiers_valid": false,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about market risk and Value-at-Risk measures are directly supported by the actual answer context, including the correct bank (RBC) and fiscal year (2025).",
+    "relevance_reason": "The answer directly addresses the question regarding market risk and Value-at-Risk measures disclosed by RBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including definitions, calculations, limitations, and reported figures for market risk and Value-at-Risk measures for the specified bank and period.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0012234
+}

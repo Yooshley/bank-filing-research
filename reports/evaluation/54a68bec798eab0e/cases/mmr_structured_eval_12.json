@@ -1,0 +1,157 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_12",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_12",
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk management did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "Scotiabank disclosed that market risk is the risk of loss from changes in market prices, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with the correlations between them and their levels of volatility [S2]. The bank employs a market risk management framework that includes a limit structure to control the level of risk taken, setting limits on various risk factors such as interest rates and foreign exchange rates. Tools like stress testing and sensitivity analysis are used to measure Credit Valuation Adjustment (CVA) risk, which is part of the market risk management framework. Senior management is actively involved in overseeing the implementation of policies and procedures to manage CVA risks, with regular reports produced to monitor market risk exposure [S4].",
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00015",
+        "text": "Your Board is confident in the path forward, and we\nremain committed to providing effective risk oversight\nas Scotiabank continues to drive profitable growth\nand build sustainable value for its shareholders\nover the long term. I want to extend our sincere thanks to Scott Bonham,\nMichael Penner, and Calin Rovinescu who retired from\nthe Board this year. We are grateful for their leadership,\ninsight, and many contributions to Scotiabank. I also\nwant to recognize President and CEO Scott Thomson,\nthe executive leadership team, and our global network\nof Scotiabankers for their steadfast commitment to our\nclients, shareholders, and the Bank during this period of\neconomic uncertainty. Returning to our roots On behalf of the entire Board, thank you for your\ncontinued trust and support.\n\nThis year, your Board was proud to welcome our\nshareholders to Halifax, Nova Scotia for Scotiabank’s\n193rd Annual Meeting of Shareholders. It marked our first\nAnnual Meeting outside Toronto since the onset of the\nCOVID-19 pandemic – and returning to our Atlantic roots\nfelt both timely and symbolic. Just as shareholders first\ngathered in Halifax in 1833, we came together once again\n\n12 | 2025 Scotiabank Annual Report\n\nBoard of Directors\n\nAaron W. Regent\n\n• Chair of the Board\n\n• Founder, Chairman and Chief Executive Officer of Magris Performance Materials Inc.\n\n• Scotiabank director since April 9, 2013\n\nCommittee Chairs\n\nNora A. Aufreiter\n\nLynn K. Patterson\n\nSteven C. Van Wyk\n\n• Human Capital and Compensation\nCommittee Chair and member\nof the Risk Committee\n\n• Risk Committee Chair and\nmember of the Human Capital\nand Compensation Committee\n\n• Technology Committee Chair\nand member of the Audit and\nConduct Review Committee\n\n• Corporate director\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nAugust 25, 2014\n\n• Scotiabank director since\nSeptember 1, 2020\n\n• Scotiabank director since\nNovember 15, 2024\n\nMichael B. Medline\n\nBenita M. Warmbold\n\n• Corporate Governance Committee\nChair and member of the Audit\nand Conduct Review Committee\n\n• Audit and Conduct Review\nCommittee Chair and member of\nthe Corporate Governance Committee\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Scotiabank director since\nOctober 29, 2018\n\nGuillermo E. Babatz\n\nW. Dave Dowrich\n\nSandra J. Stuart\n\n• Managing Partner of Atik Capital, S.C.\n\n• Corporate director\n\n• Scotiabank director since\nJanuary 28, 2014\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA)\n\n• Scotiabank director since June 1, 2022\n\nDaniel (Don) H. Callahan\n\nScott Thomson\n\n• Corporate director\n\nUna M. Power\n\n• President and Chief Executive Officer\nof Scotiabank\n\n• Corporate director\n\n• Scotiabank director since\nJune 15, 2021\n\n• Scotiabank director since April 12, 2016\n\n• Scotiabank director since April 12, 2016\n\nAs of December 2, 2025\n\n2025 Scotiabank Annual Report | 1 3\n\n• Scotiabank director since\nSeptember 1, 2023 • Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA) • Scotiabank director since June 1, 2022 Daniel (Don) H. Callahan Scott Thomson • Corporate director Una M. Power • President and Chief Executive Officer\nof Scotiabank • Corporate director • Scotiabank director since\nJune 15, 2021 • Scotiabank director since April 12, 2016 • Scotiabank director since April 12, 2016 As of December 2, 2025 2025 Scotiabank Annual Report | 1 3\n\nSustainability Highlights",
+        "similarity": 0.7570104598999023,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "section": "ASSETS",
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "page_end": 16,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_start": 14,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "quarter": 0,
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00128",
+        "text": "Market risk is the risk of loss from changes in market prices including interest rates, credit spreads, equity prices, foreign exchange rates, and\ncommodity prices, the correlations between them, and their levels of volatility.\n\n2025 Scotiabank Annual Report | 71",
+        "similarity": 0.6453472375869751,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "section": "Market risk",
+        "bank": "Bank of Nova Scotia",
+        "bank_code": "BNS",
+        "page_end": 73,
+        "page_start": 73,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00023",
+        "text": "26\nAnalysis of the aggregate credit risk exposures, including details of both\npersonal and wholesale lending.\n\n158-160\n\n27\nDiscussion of the policies for identifying impaired loans, defining\nimpairments and renegotiated loans, and explaining loan forbearance\npolicies.\n\n93, 122-125\n189\n34-35\n\n28\nReconciliations of the opening and closing balances of impaired loans and\nimpairment allowances during the year.\n\n89-91, 94\n\n29\nAnalysis of counterparty credit risk that arises from derivative transactions.\n88-90\n176-179\n108\n30\nDiscussion of credit risk mitigation, including collateral held for all sources of\ncredit risk.\n\nOther risks\n31\nQuantified measures of the management of operational risk.\n72, 112-113\n\n32\nDiscussion of publicly known risk items.\n85-87\n205-206\n\n16 | 2025 Scotiabank Annual Report\n\nManagement’s\nDiscussion & Analysis\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable readers to assess the Bank’s financial condition and\nresults of operations as at and for the year ended October 31, 2025. The MD&A should be read in conjunction with the Bank’s\n2025 Consolidated Financial Statements, including the Notes. This MD&A is dated December 2, 2025.\n\nAdditional information relating to the Bank, including the Bank’s 2025 Annual Report, are available on the Bank’s website at\nwww.scotiabank.com. As well, the Bank’s 2025 Annual Report and Annual Information Form are available on the SEDAR+\nwebsite at www.sedarplus.ca and on the EDGAR section of the SEC’s website at www.sec.gov.\n\nTable of Contents\n\nGroup Financial Condition\n\n18",
+        "similarity": 0.708901047706604,
+        "page_start": 18,
+        "page_end": 19,
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "section": "Credit Risk",
+        "bank_code": "BNS",
+        "bank": "Bank of Nova Scotia",
+        "quarter": 0,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00198",
+        "text": "Diversification Effect\n(10.7)\n(11.6)\nn.m.\nn.m.\n\n(15.0)\n(13.1)\nn.m.\nn.m.\n\nAll-Bank VaR\n$\n8.9\n$\n13.6\n$\n21.6\n$\n7.1\n$\n12.1\n$\n14.9\n$\n24.2\n$\n8.3\n\n(1)\nEffective November 1, 2024, credit spread VaR also captures issuer-specific credit spread volatility which was previously included in debt specific VaR.\nn.m. Not meaningful\n\n100 | 2025 Scotiabank Annual Report\n\nDescription of trading revenue components and graphical comparison of VaR to daily P&L\nChart C29 compares the daily trading revenue distribution to daily VaR results. Trading revenue includes changes in portfolio value as well as the\nimpact of new trades, commissions, fees and reserves. Some components of revenue which are calculated less frequently are pro-rated. Trading\nrevenue averaged $16.3 million per day, increased from $13.0 million in 2024. Revenue was positive on 100% of trading days during the year,\nwhich was the same as the level in 2024. The largest single-day trading revenue gain in this fiscal year was $43.4 million which occurred on\nNovember 1, 2024.\n\nC29 Daily trading revenue vs. VaR\n\n$ millions, November 1, 2024 to October 31, 2025\n\n50\n\nTrading revenue\nTotal VaR\n\n40\n\n30\n\n20\n\n10\n\n0\n\n-10\n\n-20\n\nManagement’s Discussion and Analysis | Risk Management\n\n-30\n\nCredit valuation adjustment (CVA) risk\nCredit Valuation Adjustment (CVA) is the difference between the risk free value of a portfolio and the true value of that portfolio, accounting for\nthe possible default of a counterparty. The CVA adjustment aims to identify the impact of Counterparty Risk.\n\nCVA risk management framework\nThe CVA risk management is part of the Bank’s market risk management framework. The framework includes a market risk limit structure to\ncontrol the level of risk taken by the Bank. This involves setting limits on various risk factors, such as interest rates, foreign exchange rates, and\ncounterparty credit spreads. The Bank uses various tools to measure CVA risk, including stress testing and sensitivity analysis. Regular\nmanagement reports are produced to monitor market risk exposure. These reports provide insights into the Bank’s risk profile and help in making\ninformed decisions.\n\nSenior management role in the CVA risk management framework.\nSenior management is actively involved in the risk control process. They oversee the implementation of policies and procedures to identify,\nmeasure, monitor, and control CVA risks. Updates to the CVA risk management framework are approved by senior management committees such\nas the Market Risk Management & Policy Committee (MRMPC) and the Senior Credit Committee (SCC). Material changes to policies and processes\nare reviewed and approved by senior executives. Senior management receives regular reports on CVA risk exposures and the effectiveness of\nhedging strategies. This continuous monitoring helps in making informed decisions and maintaining a robust risk management framework. Senior\nmanagement ensures that adequate resources are allocated to CVA risk management. This includes staffing independent control units and\nproviding the necessary tools and systems for effective risk management.",
+        "similarity": 0.622772216796875,
+        "page_end": 103,
+        "section": "Management’s Discussion and Analysis",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_start": 102,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank": "Bank of Nova Scotia"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00030",
+        "text": "45\nCanadian Banking\n48\nInternational Banking\n52\nGlobal Wealth Management\n56\nGlobal Banking and Markets\n59\nOther\n\n2025 Scotiabank Annual Report | 17",
+        "similarity": 0.6085872650146484,
+        "fiscal_year": 2025,
+        "bank_code": "BNS",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "section": "Overview",
+        "quarter": 0,
+        "page_start": 19,
+        "page_end": 19,
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf"
+      }
+    ],
+    "structured": {
+      "answer": "Scotiabank disclosed that market risk is the risk of loss from changes in market prices, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with the correlations between them and their levels of volatility [S2]. The bank employs a market risk management framework that includes a limit structure to control the level of risk taken, setting limits on various risk factors such as interest rates and foreign exchange rates. Tools like stress testing and sensitivity analysis are used to measure Credit Valuation Adjustment (CVA) risk, which is part of the market risk management framework. Senior management is actively involved in overseeing the implementation of policies and procedures to manage CVA risks, with regular reports produced to monitor market risk exposure [S4].",
+      "sources": [
+        {
+          "label": "S2",
+          "bank": "Bank of Nova Scotia",
+          "document": "annual_report",
+          "section": "Market risk",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Bank of Nova Scotia",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.781265199999325
+  },
+  "latency_seconds": 5.124105999944732,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00052155,
+  "input_tokens": 2577,
+  "output_tokens": 225,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.021458900067955256,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about Scotiabank's market risk management are supported by the actual answer context, including the correct bank (Scotiabank), period (2025), and relevant units.",
+    "relevance_reason": "The answer directly addresses the question regarding market risk management disclosed by Scotiabank in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of market risk management as disclosed in the 2025 annual report, including definitions, frameworks, tools, and management involvement.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.001221,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_12",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_23",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_23",
+    "question": "How did BMO disclosures about liquidity risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did BMO disclosures about liquidity risk change between 2024 and 2025?"
+  },
+  "status": "error",
+  "error": {
+    "type": "ValueError",
+    "http_status": null,
+    "code": null
+  }
+}

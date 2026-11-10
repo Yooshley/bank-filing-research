@@ -1,0 +1,208 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_22",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_22",
+    "question": "How did TD disclosures about cybersecurity risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "TD"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did TD disclosures about cybersecurity risk change between 2024 and 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "Between 2024 and 2025, TD's disclosures about cybersecurity risk evolved in several ways. In 2024, TD highlighted the risks associated with cyber-attacks, including attempts by malicious insiders and service providers, and emphasized the importance of data management and access controls to mitigate risks related to data integrity and privacy [S1]. The bank acknowledged that while it regularly reviews and enhances its controls in response to evolving threats, these measures may not fully mitigate all risks, indicating a recognition of the sophistication of cyber threats [S1]. \n\nIn 2025, TD reiterated its commitment to managing cybersecurity risks but provided additional context regarding the potential impacts of systemic cyber risks on its operations and the availability of cyber insurance. The bank noted that its investments in technology and cyber infrastructure might be inadequate to meet regulatory expectations and effectively serve clients, reflecting a more cautious outlook on its ability to manage these risks [S7]. Furthermore, it mentioned that the evolving threat environment could lead to financial losses and reputational damage, emphasizing the need for continuous investment and focus on risk management [S7]. \n\nOverall, while both years acknowledged the risks and the need for robust cybersecurity measures, the 2025 report presented a more urgent tone regarding the adequacy of current investments and the potential consequences of systemic risks.",
+    "sources": [
+      {
+        "chunk_id": "TD_2024_annual_report_FY_00267",
+        "text": "Cyber-attacks may\ninclude attempts by malicious insiders or service providers of the Bank to\ndisrupt operations, access or disclose sensitive information or other data of\nthe Bank, its customers, or its employees. Attempts to deceive employees,\ncustomers, service providers, or other users of the Bank’s systems continue\nto occur, in an effort to obtain sensitive information, gain access to\nthe Bank’s or its customers’ or employees’ data or customer or Bank funds,\nor to disrupt the Bank’s operations. While these deception attempts have\nnot resulted in materially adverse impacts on the Bank thus far, there can\nbe no assurance that future deception attempts may not be successful,\nespecially as threats become more sophisticated. In addition, the Bank’s\ncustomers may use personal devices, such as computers, smartphones,\nand tablets, which limits the Bank’s ability to mitigate certain risks\nintroduced through these personal devices.\n\nData use cases have increased due to process automation and greater\nreliance on analytics and business intelligence to support decision-making.\nThere is heightened risk and expectations for managing integrity and\nquality of customer data and privacy. This risk highlights the importance\nof data usage, data management, and access controls to mitigate data\nrisk and build and maintain the trust of our customers, shareholders, and\nregulators. Data risk spans broadly across multiple risk categories and\nbusiness segments and typically arises out of operational risks such as\ntechnology, cyber security, generative AI, fraud, and third-party risks.\n\nTD’s investments to improve its risk and control environment, modernize\nits data and technology, and operating model changes to further enhance\ndata management and protection may be inadequate to meet regulatory\nexpectations, remain competitive, serve clients effectively, and avoid\nbusiness disruptions or operational errors.\n\nModel Risk\nModel Risk is the potential for adverse consequences arising from\ndecisions based on incorrect or misused models and their outputs. Model\nuncertainty remains due to emerging risks (including elevated inflation\nand interest rates over an extended period of time), with model reliability\nimpacted across some business areas. Short- and long-term mitigants\nthat were identified and executed to help improve resilience of models\ntrained on historical data, may become less relevant under the current\nenvironment (e.g., in the case of IFRS 9 and stress testing models), and\nManagement’s efforts to assess and update models may not adequately or\nsuccessfully improve the resilience of such models.\n\nThe Bank regularly reviews external events and assesses and may enhance\nits controls and response capabilities as it considers necessary to help\nmitigate against the risk of cyber-attacks or data security or other breaches\nin response to the evolving threat environment, but these activities may\nnot mitigate all risks, and the Bank may experience loss or damage arising\nfrom such attacks or breaches. As a result, the industry and the Bank\nare susceptible to experiencing potential financial and non-financial loss\nand/or harm from these attacks or breaches. The adoption of certain\ntechnologies, such as cloud computing, AI, machine learning, robotics,\nand process automation call for continued focus and investment to\nmanage the Bank’s risks. It is possible that the Bank, or those with whom\nthe Bank does business, have not anticipated or implemented or may\nnot anticipate or implement effective measures against all such cyber\nand technology-related risks, particularly because the tactics,\ntechniques, and procedures used by threat actors change frequently\nand risks can originate from a wide variety of sources that have also\nbecome increasingly sophisticated.",
+        "similarity": 0.4947134256362915,
+        "bank": "Toronto-Dominion Bank",
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "fiscal_year": 2024,
+        "quarter": 0,
+        "file_name": "TD_2024_annual_report.pdf",
+        "page_start": 90,
+        "filing_id": "TD_2024_annual_report_FY",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q4/2024-annual-report-en.pdf",
+        "page_end": 90,
+        "section": "TOP AND EMERGING RISKS"
+      },
+      {
+        "chunk_id": "TD_2024_annual_report_FY_00144",
+        "text": "In the U.S., deliver value\nand trusted advice in\nsectors where we have\ncompetitive expertise\n\n• This quarter, TD Securities was joint lead on TD’s secondary sale of Schwab shares in a US$2.5 billion block trade,\none of the ten largest U.S. block trades since 2010\n• Demonstrated the strength of our combined TD Securities and TD Cowen franchises in the U.S.:\n• Acted as an Initial Underwriter, Joint Lead Arranger and Joint Bookrunner on the US$9.2 billion financing\npackage supporting the acquisition of Truist Insurance Holdings by Stone Point Capital and Clayton, Dubilier &\nRice; TD Securities also served as an M&A advisor on this marquee US$15.5 billion transaction\n• Joint Bookrunner on Arrowhead Pharmaceuticals’ US$450 million Underwritten Offering\n• Joint Bookrunner on Vera Therapeutics’ US$287.5 million Follow-On Offering\n• Lead Bookrunner for Avidity Biosciences’ US$461 million Follow-On Offering\n• Acting as financial advisor to Blue Owl Capital Inc. on its pending acquisition44 of IPI Partners, LLC for\napproximately US$1.0 billion\n• E-trading market leader in Muni Bond trading and expanded volume in Credit; TD ranking for corporate credit\ntrade counts on MarketAxess increased notably throughout 2024 to reach #2 in October 2024\n\nIn Europe and Asia-Pacific,\nleverage our global\ncapabilities to\nbuild connected,\nsustainable franchises\n\n• Continued strong success with global clients:\n• TD was Lead Manager on a US$5 billion 5-year Sustainable Development Bond for the International\nDevelopment Association\n• Active bookrunner on EUR 5 billion dual-tranche benchmark offering for KfW\n• Inaugural EUR-denominated 1.25 billion benchmark bond for Province of Saskatchewan\n• Inaugural EUR 500 million preferred senior benchmark for BayerLB\n• Launched cash equity trading desk in Singapore\n• Demonstrating continued strength in global coverage for key clients, TD led all 5 Australian dollar bond issuances\nfor Canadian provinces in 2024\n\n42 Source: Refinitiv; Canadian target completed and announced transactions over the last twelve months ended October 31, 2024.\n\n43 Source: Bloomberg; Calendar year-to-date through October 31, 2024.\n\n44 Deal announced on October 7, 2024.\n\nTD BANK GROUP ANNUAL REPORT 2024 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nBUSINESS HIGHLIGHTS IN 2024\n\nContinue to unlock OneTD\nopportunities to grow with\nand support our TD Retail and\nWealth partners\n\n• In partnership with other TD businesses:\n• TD Securities and TD Wealth enabled fully paid lending to enhance returns for Wealth clients\n• Launched real-time trading in partial shares for U.S. and Canadian equities, enabling investors to buy and sell\na fraction of stocks and ETFs, making investing more accessible; TD became the first bank-owned brokerage in\nCanada to provide real-time partial shares capability\n• In partnership with TD Bank, America’s Most Convenient Bank, TD Securities began to issue equity-linked\ncertificates of deposit, broadening the suite of products available to clients in the U.S.\n• Migrated U.S. retail order flow to internal execution venue, making it fully accessible to TD’s institutional clients,\nresulting in exceptional execution for both retail and institutional clients",
+        "similarity": 0.4121437072753906,
+        "file_name": "TD_2024_annual_report.pdf",
+        "section": "BUSINESS STRATEGY",
+        "bank": "Toronto-Dominion Bank",
+        "page_start": 59,
+        "page_end": 60,
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "fiscal_year": 2024,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q4/2024-annual-report-en.pdf",
+        "quarter": 0,
+        "filing_id": "TD_2024_annual_report_FY"
+      },
+      {
+        "chunk_id": "TD_2024_annual_report_FY_00387",
+        "text": "IFRS S1\nsets out the disclosure requirements for financially material information\nabout sustainability-related risks and opportunities to meet investor\ninformation needs, and IFRS S2 specifically sets the disclosure requirement\nfor Climate-related risks and opportunities. ISSB recommends an effective\ndate for annual reporting periods beginning on or after January 1, 2024,\nand this is subject to Canadian jurisdiction’s endorsement. Early application\nis permitted on or before the date of initial application of IFRS S1 and\nIFRS S2. The International Organization of Securities Commissions (IOSCO)\nhas officially endorsed IFRS S1 and IFRS S2 on July 23, 2023, and is now\ncalling its member jurisdictions to consider ways they may adopt or apply\nthe ISSB standards. The Bank is currently assessing the impact of adopting\nthese standards and monitoring communications from the Canadian\nSecurities Administrators.\n\nTD also participates in various North American working groups, and\nas a member of the Partnership for Carbon Accounting Financials,\nhelps develop and refine calculation methodologies for emerging\nclimate metrics. The Bank continues its membership in the Risk\nManagement Association Climate Risk Consortium, which focuses on\nbringing financial institutions together to advance the awareness of\nand address the risks relevant to climate change, by developing\nframeworks, and recommendations for governance, disclosure, and\nrisk management principles.\n\nTD recognizes it faces transition risk from its own activities, as well as from\nthe clients we serve. In 2020, the Bank announced a target to achieve\nnet-zero greenhouse gas (GHG) emissions associated with the Bank’s\noperations and financing activities by 2050, in alignment with the\nassociated principles of the Paris Agreement.\n\nCodes of Conduct and Human Rights\nThe Bank has several policies, including the Bank’s Code of Conduct\nand Ethics, which reflect the Bank’s commitment to manage its business\nresponsibly and in compliance with applicable laws. For additional\ninformation on the Code of Conduct and Ethics, refer to the “Legal and\nRegulatory Compliance (including Financial Crime) Risk” section above.\nIn 2024, the Bank published a refreshed Statement on Human Rights,\nwhich reflects the corporate responsibility to respect human rights as\nset out in the United Nations Guiding Principles on Business and Human\nRights (UNGP). The Bank and its applicable subsidiaries also publish\nreports pursuant to modern slavery legislation to which they are subject.\nThe Bank’s current Human Rights Statement and Modern Slavery and\nHuman Trafficking Report can be found here: https://www.td.com/ca/en/\nabout-td/for-investors/policies-and-references.\n\nIn 2023, the Bank embarked on a process to review its policies, procedures\nand training programs relating to Indigenous Peoples and free, prior\nand informed consent (FPIC) to assess the operationalization of FPIC. In\nJune 2024, the Bank reported on the outcome and progress of this policy\nand training review.\n\nTD’s Financial Consumer Protection Framework Policy aims to promote\nresponsible conduct across Canadian banks and protect financial services\ncustomers. It also includes components related to promoting transparency\nfor customers to help them make informed decisions and provisions\nrelated to fair and equitable dealing (e.g., requirements for cancelling\nagreements, access to basic banking services and complaints processes).",
+        "similarity": 0.4647432565689087,
+        "fiscal_year": 2024,
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 130,
+        "page_start": 130,
+        "document_type": "annual_report",
+        "file_name": "TD_2024_annual_report.pdf",
+        "filing_id": "TD_2024_annual_report_FY",
+        "bank_code": "TD",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q4/2024-annual-report-en.pdf",
+        "quarter": 0,
+        "section": "HOW TD MANAGES ENVIRONMENTAL AND SOCIAL RISK"
+      },
+      {
+        "chunk_id": "TD_2024_annual_report_FY_00027",
+        "text": "Risk Factors That May Affect Future Results\n84\nManaging Risk\n94",
+        "similarity": 0.41419684886932373,
+        "quarter": 0,
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2024_annual_report_FY",
+        "page_start": 20,
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "file_name": "TD_2024_annual_report.pdf",
+        "section": "RISK FACTORS AND MANAGEMENT",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q4/2024-annual-report-en.pdf",
+        "fiscal_year": 2024,
+        "page_end": 20
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00272",
+        "text": "excluding Technology, Cybersecurity and Data\n\nTechnology, Cybersecurity and Data\n\nModel\n\nInsurance\n\nLiquidity\n\nCapital Adequacy\n\nCompliance\n\nFinancial Crime\n\nReputational\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk",
+        "similarity": 0.5063825249671936,
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_end": 94,
+        "section": "Operational Risk",
+        "page_start": 94,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank_code": "TD"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00008",
+        "text": "Our Proxy Circular for the 2026 Annual Meeting\nwill set out the director candidates proposed\nfor election at the meeting, as well as provide\nadditional information about each candidate,\nincluding education, other public board\nmemberships, areas of expertise, TD Board\nCommittee memberships, stock ownership and\nattendance at Board and Committee meetings. TD’s strategic progress in 2025\ndemonstrates the underlying\nstrengths of the Bank and reflects\nthe unwavering commitment\nof our colleagues. Ayman Antoun\nCorporate Director,\nand former President,\nIBM Americas\nOakville, Ontario Our 2025 earnings performance, strong CET1 ratio and organic capital\ngeneration capability provided the Bank with the means to invest in\nour business, strengthen our risk and control environment, and create\nvalue for our shareholders. Nathalie M. Palladitcheff\nCorporate Director,\nand former Chief\nExecutive Officer,\nIvanhoé Cambridge\nMontréal, Québec\n\nFrank J. Pearn\nCorporate Director,\nand former Global\nChief Compliance\nOfficer, JPMorgan\nChase & Co.\nNaples, Florida\n\nAna Arsov\nCorporate Director,\nand former Global\nCo-Head of Financial\nInstitutions and\nGlobal Head of\nPrivate Credit,\nMoody’s Ratings\nGreenwich,\nConnecticut\n\nThis performance supported critical investments in talent, innovation and\nnew capabilities, while delivering an increase in our common share\ndividend to shareholders. We also initiated an $8 billion stock buy-back\nin 2025 following the sale of our stake in Schwab. In September, we\nannounced plans, subject to regulatory approval, to initiate a subsequent\nbuy-back of $6 billion–$7 billion in 2026, returning excess capital directly\nto shareholders, while maintaining a very strong capital position.\n\nCherie L. Brant\nPartner, Borden\nLadner Gervais LLP\nTyendinaga Mohawk\nTerritory, Ontario\n\nS. Jane Rowe\nCorporate Director,\nand former Vice Chair,\nInvestments, Ontario\nTeachers’ Pension\nPlan Board\nToronto, Ontario\n\nIn 2025, the Board welcomed five new independent directors with\nexpertise in global banking, governance, risk management and regulatory\ncompliance, reconstituted its committees, and oversaw management’s\nreview and introduction of the Bank’s new strategy. I became Chair\nof the Board on September 1, 2025, and it’s a privilege for me and my\ndirector colleagues to serve TD and our fellow shareholders.\n\nRaymond Chun\nGroup President\nand Chief Executive\nOfficer, The Toronto-\nDominion Bank\nOakville, Ontario\n\nNancy G. Tower\nCorporate Director,\nand former President\nand Chief Executive\nOfficer, Tampa\nElectric Company\nHalifax, Nova Scotia\n\nWe maintained a sharp focus on our U.S. AML remediation efforts\nthroughout 2025. Directors received regular reports, challenged\nmanagement and connected directly with the experts within the Bank\nwho are driving this important work. We are making steady progress\nand remain focused on the critical work needed to meet our obligations.\n\nAjay K. Virmani\nExecutive Chairman,\nCargojet Inc.\nOakville, Ontario\n\nMy Board colleagues and I meet regularly with TD leaders, clients and\nshareholders to gain new insights and hear different perspectives.\nThese candid conversations are very valuable and help inform the\nBoard’s work and deliberations.\n\nElio R. Luongo\nCorporate Director,\nand former Chief\nExecutive Officer\nand Senior Partner,\nKPMG Canada\nBurnaby, British\nColumbia",
+        "similarity": 0.4330176115036011,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "quarter": 0,
+        "section": "Notes to Consolidated Financial Statements",
+        "filing_id": "TD_2025_annual_report_FY",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_start": 7,
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 7,
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00251",
+        "text": "Schwab IDA Agreement Exposes the Bank to Certain Risks\nThe Bank has an insured deposit account agreement with Schwab and\nit may be affected by actions taken by Schwab, or if Schwab does not\nperform its obligations, pursuant to the Schwab IDA Agreement (as\nfurther described in the “Financial Results Overview” section of this\ndocument). Although the Schwab IDA Agreement requires Schwab to\nmake certain payments to the Bank to compensate it for specific instances\nof non-performance by Schwab, if Schwab does not make such payments,\nthe Bank’s financial results would be impacted including from a loss\nof revenues, a potential increase in the cost of funding to replace the\ndeposits, and losses primarily related to hedging.\n\nThe Bank regularly reviews external events and assesses, and may enhance,\nits controls and response capabilities as it considers necessary to help\nmitigate against the risk of cyber-attacks or data security or other breaches\nin response to the evolving threat environment, but these activities may\nnot mitigate all risks, and the Bank may experience loss or damage arising\nfrom such attacks or breaches. As a result, the industry and the Bank are\nsusceptible to experiencing potential financial and non-financial loss and/or\nharm from these attacks or breaches. The adoption of certain technologies,\nsuch as cloud computing, AI, machine learning, robotics, and process\nautomation call for continued focus and investment to manage the Bank’s\nrisks. It is possible that the Bank, or those with whom the Bank does\nbusiness, have not anticipated or implemented or may not anticipate or\nimplement effective measures against all such cyber and technology-related\nrisks, particularly because the tactics, techniques, and procedures used by\nthreat actors change frequently and risks can originate from a wide variety\nof sources that have also become increasingly sophisticated.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nFurthermore, the Bank’s owned and operated applications, platforms,\nnetworks, processes, products, and services could be subject to failures\nor disruptions, or non-compliance with regulations as a result of human\nerror, natural disasters, utility or infrastructure disruptions, pandemics or\nother public health emergencies, malicious insiders or service providers,\ncyber-attacks or other criminal or terrorist acts, which may impact\nthe Bank’s operations. Such adverse effects could limit the Bank’s ability\nto deliver products and services to customers, and/or damage the Bank’s\nreputation, which in turn could lead to financial loss. Cyber insurance\nproviders continue to be concerned about systemic cyber risk, causing\ncoverage term changes across the industry. This has the potential to\nimpact the Bank’s ability to mitigate risks through cyber insurance and may\nlimit the amount of coverage available for financial losses.\n\nThe Bank’s investments in its technology and cyber infrastructure, including\nthe investment in its risk and control environment, may be inadequate to\nmeet regulatory expectations, remain competitive, serve clients effectively,\nand avoid business disruptions or operational errors.",
+        "similarity": 0.4977301359176636,
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_end": 88,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "fiscal_year": 2025,
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2025_annual_report_FY",
+        "section": "TOP AND EMERGING RISKS",
+        "bank_code": "TD",
+        "page_start": 87
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00639",
+        "text": "In\naddition, some actions seek very large or indeterminate damages. Based\non the Bank’s current knowledge, and subject to the factors listed above\nas well as other uncertainties inherent in litigation and regulatory matters,\nother than as described below, since October 31, 2025, no other legal\nor regulatory matter has arisen or progressed to the point that it would\nreasonably be expected to result in a material financial impact to the Bank. TD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nthe Bank, its affiliates, or their employees that may be a violation of U.S.\nfederal law. The Bank is focused on meeting the terms of the consent\norders and plea agreements, including meeting its requirements to\nremediate the Bank’s U.S. BSA/AML compliance programs. During the first\nfiscal quarter of 2025, the Bank fully paid the remainder of the monetary\npenalty owed pursuant to the consent orders and plea agreements that\nwere entered into as part of the Global Resolution. The payment was\ncovered by provisions previously taken by the Bank for this matter.\n\n(DPA) with the U.S. DOJ related to the actions of a former TDS trader.\nPursuant to the terms of the DPA, TDS-US agreed to pay total monetary\nsanctions of approximately US$15.5 million, which consists of a criminal\npenalty, forfeiture and victim compensation. TDS-US and, in certain\ninstances, TD Group US Holdings LLC, further agreed to abide by certain\ncooperation, reporting and compliance obligations in connection with\nthe DPA. These include, but are not limited to: (i) an ongoing obligation\nto cooperate with DOJ investigations; (ii) an ongoing obligation to report\nevidence or allegations of violations by TDS-US of certain federal statutes;\n(iii) the implementation and maintenance of a corporate compliance\nprogram that meets certain enumerated standards; and (iv) an ongoing\nobligation to regularly report to the DOJ on its efforts to bolster its\ncompliance program. TDS-US also resolved investigations by the U.S.\nSecurities and Exchange Commission (SEC) and the Financial Industry\nRegulatory Authority (FINRA) relating to the actions of the former TDS-US\ntrader. As part of the resolutions, TDS-US agreed to pay approximately\nUS$7 million in total monetary sanctions to the SEC and US$6 million\nto FINRA.",
+        "similarity": 0.43263721466064453,
+        "section": "PROVISIONS, CONTINGENT LIABILITIES, COMMITMENTS, GUARANTEES, PLEDGED ASSETS, AND COLLATERAL",
+        "page_start": 229,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "document_type": "annual_report",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_end": 230,
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2025,
+        "bank_code": "TD",
+        "quarter": 0
+      }
+    ],
+    "structured": {
+      "answer": "Between 2024 and 2025, TD's disclosures about cybersecurity risk evolved in several ways. In 2024, TD highlighted the risks associated with cyber-attacks, including attempts by malicious insiders and service providers, and emphasized the importance of data management and access controls to mitigate risks related to data integrity and privacy [S1]. The bank acknowledged that while it regularly reviews and enhances its controls in response to evolving threats, these measures may not fully mitigate all risks, indicating a recognition of the sophistication of cyber threats [S1]. \n\nIn 2025, TD reiterated its commitment to managing cybersecurity risks but provided additional context regarding the potential impacts of systemic cyber risks on its operations and the availability of cyber insurance. The bank noted that its investments in technology and cyber infrastructure might be inadequate to meet regulatory expectations and effectively serve clients, reflecting a more cautious outlook on its ability to manage these risks [S7]. Furthermore, it mentioned that the evolving threat environment could lead to financial losses and reputational damage, emphasizing the need for continuous investment and focus on risk management [S7]. \n\nOverall, while both years acknowledged the risks and the need for robust cybersecurity measures, the 2025 report presented a more urgent tone regarding the adequacy of current investments and the potential consequences of systemic risks.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "TOP AND EMERGING RISKS",
+          "year": 2024
+        },
+        {
+          "label": "S7",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "TOP AND EMERGING RISKS",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 1.6328818999463692
+  },
+  "latency_seconds": 7.366180400014855,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009110999999999999,
+  "input_tokens": 4698,
+  "output_tokens": 344,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.04850549984257668,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's disclosures regarding cybersecurity risk in 2024 and 2025 are supported by the actual answer context, accurately reflecting the bank's statements from both years.",
+    "relevance_reason": "The answer directly addresses the question about changes in TD's disclosures regarding cybersecurity risk between 2024 and 2025, providing a clear comparison.",
+    "completeness_reason": "The answer comprehensively covers the requested aspects, detailing the disclosures from both years without omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00226695
+}

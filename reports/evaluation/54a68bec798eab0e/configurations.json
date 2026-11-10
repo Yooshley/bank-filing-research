@@ -1,0 +1,27 @@
+{
+  "basic_top_k": {
+    "retrieval": "top_k",
+    "total_evidence_budget": 8,
+    "prompt": "basic"
+  },
+  "mmr_structured": {
+    "retrieval": "mmr",
+    "total_evidence_budget": 8,
+    "fetch_k_per_scope": 30,
+    "lambda": 0.7,
+    "prompt": "step_by_step",
+    "source_metadata": "resolved from retrieved records"
+  },
+  "agentic": {
+    "retrieval": "model-selected tools",
+    "default_k_per_tool": 4,
+    "maximum_k_per_tool": 8,
+    "maximum_iterations": 8,
+    "bank_code": "BNS",
+    "document_type_enum": [
+      "annual_report",
+      "AIF",
+      "quarterly"
+    ]
+  }
+}

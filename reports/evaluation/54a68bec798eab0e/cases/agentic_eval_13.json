@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_13",
+  "config": "agentic",
+  "question": {
+    "id": "eval_13",
+    "question": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed housing and mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?",
+    "answer": "In CIBC's 2025 annual report, the following housing and mortgage credit risks were disclosed:\n\n1. **Credit Quality of Portfolios**: The report details the credit quality of retail portfolios, including real estate secured personal lending, which comprises residential mortgages and personal loans secured by residential property. This portfolio is considered lower risk due to first charge on most properties. However, there are risks associated with higher loan-to-value (LTV) ratios, particularly for uninsured mortgages. The report notes that if mortgage insurers deny claims or become insolvent, losses could occur (CIBC_2025_annual_report_FY_00151).\n\n2. **Management Overlays**: CIBC employs management overlays to adjust expected credit loss (ECL) allowance estimates in response to new macroeconomic or geopolitical events. This indicates that existing models may not fully capture all relevant risk factors, which could lead to significant differences between estimated and actual credit losses (CIBC_2025_annual_report_FY_00332).\n\n3. **Regulatory Considerations**: The report mentions that under the Bank Act (Canada), banks are limited to providing residential real estate loans of no more than 80% of collateral value, with exceptions for insured mortgages. This regulatory framework aims to mitigate risks associated with high LTV ratios (CIBC_2025_annual_report_FY_00151).\n\n4. **Stress Testing**: CIBC conducts stress testing and scenario analyses to assess the impact of various stressed conditions on its mortgage portfolio. This process helps in managing credit exposure and determining limits based on risk appetite (CIBC_2025_annual_report_FY_00144).\n\nFor further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4090,
+    "output_tokens": 424,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000868,
+    "seconds": 7.45,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "housing and mortgage credit risks",
+          "bank": "CIBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00151",
+              "text": "Total\n$\n406,405\n$\n67,929\n$\n25,582\n$\n20,094\n$\n22,814\n$\n542,824\n$\n504,932\n\nCredit quality of portfolios\nCredit quality of the retail portfolios\nThe following table presents the credit quality of our retail portfolios under the IRB approach.\n\n$ millions, as at October 31\n2025\n2024\n\nEAD\n\nOther\n\npersonal lending\n\nQualifying\nrevolving retail\n\nretail\n\nSME\nretail\n\nRisk level\n\nTotal\nTotal\nReal estate secured\n\n$\n57,310\n$\n3,603\n\nExceptionally low\n$\n208,494\n\n$\n395\n$\n269,802\n$\n264,361\nVery low\n73,973\n\n11,977\n3,832\n869\n90,651\n83,228\nLow\n32,030\n15,414\n7,201\n1,548\n56,193\n55,896\nMedium\n16,695\n7,840\n3,570\n990\n29,095\n28,540\nHigh\n1,286\n2,589\n1,332\n189\n5,396\n4,189\nDefault\n1,034\n\n70\n93\n64\n1,261\n957\n\nTotal\n$\n333,512\n$\n95,200\n$\n19,631\n$\n4,055\n$\n452,398\n$\n437,171\n\nReal estate secured personal lending\nReal estate secured personal lending comprises residential mortgages, and personal loans and lines secured by residential property (HELOC). This\nportfolio is lower risk compared with other retail portfolios, as we have a first charge on the majority of the properties and a second lien on only a\nsmall portion of the portfolio. We use the same lending criteria in the adjudication of both first lien and second lien loans.\n\nUnder the Bank Act (Canada), banks are limited to providing residential real estate loans of no more than 80% of the collateral value. An\nexception is made for mortgage loans with a higher LTV ratio if they are insured by either CMHC or a private mortgage insurer. Mortgage insurance\nprotects banks from the risk of default by the borrower, over the term of the coverage. Mortgage insurers are subject to regulatory capital\nrequirements, which aim to ensure that they are well capitalized. If a private mortgage insurer becomes insolvent, the Government of Canada has,\nprovided certain conditions are met, obligations in respect of policies underwritten by certain insolvent private mortgage insurers as more fully\ndescribed in the Protection of Residential Mortgage or Hypothecary Insurance Act (PRMHIA). There is a possibility that losses could be incurred in\nrespect of insured mortgages if, among other things, CMHC or the applicable private mortgage insurer denies a claim, or further, if a private\nmortgage insurer becomes insolvent and either the conditions under the PRMHIA are not met or the Government of Canada denies the claim.\n\nThe following disclosures are required by OSFI pursuant to the Guideline B-20 “Residential Mortgage Underwriting Practices and Procedures”\n(Guideline B-20).\n\nThe following table provides details on our residential mortgage and HELOC portfolios:\n\nResidential mortgages (1)(2)\nHELOC (3)\nTotal\n\n$ billions, as at October 31, 2025\n\nInsured\nUninsured\nUninsured\nInsured\nUninsured",
+              "similarity": 0.545,
+              "fiscal_year": 2025,
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "bank_code": "CIBC",
+              "document_type": "annual_report",
+              "quarter": 0,
+              "bank": "Canadian Imperial Bank of Commerce",
+              "section": "Management’s discussion and analysis",
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "page_end": 74,
+              "page_start": 73,
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00332",
+              "text": "Use of management overlays\nManagement overlays to ECL allowance estimates are adjustments which we use in circumstances where we judge that our existing inputs,\nassumptions and model techniques do not capture all relevant risk factors. The emergence of new macroeconomic or geopolitical events, along\nwith expected changes to parameters, models or data that are not incorporated in our current parameters, internal risk rating migrations, or forward-\nlooking information are examples of such circumstances. To address the significant uncertainties inherent in the current environment, we utilize\nmanagement overlays with respect to the impact of certain forward-looking information and credit metrics that are not expected to be as indicative\nof the credit condition of the portfolios as the historical experience in our models would have otherwise suggested. The use of management overlays\nrequires the application of significant judgment that impacts the amount of ECL allowances recognized. Actual credit losses could differ materially\nfrom those reflected in our estimates.\n\nThe following tables provide the gross carrying amount of loans, and the contractual amounts of undrawn credit facilities and other off-balance\nsheet exposures based on our risk management PD bands for retail exposures, and based on our internal risk ratings for business and government\nexposures. Refer to the “Credit risk” section of the MD&A for details on the CIBC risk categories.\n\nLoans(1)\n\n$ millions, as at October 31\n2025\n2024\n\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nResidential mortgages\n\n– Exceptionally low\n$\n171,983\n$\n227\n$\n–\n$\n172,210\n$\n160,515\n$\n6,130\n$\n–\n$\n166,645\n– Very low\n85,628\n\n1,171\n–\n86,799\n81,198\n5,926\n–\n87,124\n– Low\n10,987\n2,749\n–\n13,736\n10,329\n3,638\n–\n13,967\n– Medium\n1,041\n7,071\n–\n8,112\n851\n6,534\n–\n7,385\n– High\n11\n1,859\n–\n1,870\n7\n1,561\n–\n1,568\n– Default\n–\n–\n1,097\n1,097\n–\n–\n790\n790\n– Not rated\n2,808\n183\n218\n3,209\n2,757\n232\n204\n3,193\nGross residential mortgages (4)(5)\n272,458\n13,260\n1,315\n287,033\n255,657\n24,021\n994\n280,672\nECL allowance\n100\n168\n306\n574\n89\n126\n234\n449\nNet residential mortgages\n272,358\n13,092\n1,009\n286,459\n255,568\n23,895\n760\n280,223\nPersonal",
+              "similarity": 0.533,
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "section": "FVOCI",
+              "page_start": 152,
+              "bank_code": "CIBC",
+              "document_type": "annual_report",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "page_end": 152,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "bank": "Canadian Imperial Bank of Commerce"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00144",
+              "text": "A regulatory floor is applied to\nall real estate secured exposures with the exception of insured mortgages. Higher regulatory floors are applied to unsecured accounts. EAD for revolving products is estimated as a percentage of the authorized credit limit based on the observed EAD rates over an extended\nperiod using historical data. We simulate the EAD rate in a significant downturn based on the relationship(s) between the EAD rate and PD and/\nor the observed EAD rate in periods with above-average EAD rates. For term loan products, EAD is set equal to the outstanding balance. A\nregulatory floor is applied to the percentage of the undrawn exposure that is included in EAD. We apply appropriate adjustments to PD, LGD and EAD to address various types of estimation uncertainty including sampling error and\ntrending.\n\nBack-testing\nWe monitor the three key risk parameters – PD, EAD and LGD – on a quarterly basis for our business and government portfolios and on a\nmonthly basis for our retail portfolios. Every quarter, the back-testing results are reported to OSFI and are presented to the business and Risk\nManagement senior management for review and challenge. For each parameter, we identify any portfolios whose realized values are\nsignificantly above or significantly below expectations and then test to see if this deviation is explainable by changes in the economy. If the\nresults indicate that a parameter model may be losing its predictive power, we prioritize that model for review and update.\n\nStress testing\nAs part of our regular credit portfolio management process, we conduct stress testing and scenario analyses on our portfolio to quantitatively\nassess the impact of various historical, as well as hypothetical, stressed conditions, versus limits determined in accordance with our risk\nappetite. Scenarios are selected to test our exposures to specific industries (e.g., oil and gas and real estate), products (e.g., mortgages and\ncards), or geographic regions (e.g., Europe and the Caribbean). Results from stress testing are a key input into management decision making,\nincluding the determination of limits and strategies for managing our credit exposure. See the “Real estate secured personal lending” section for\nfurther discussion on our residential mortgage portfolio stress testing.\n\nExposure to credit risk\nThe portfolios are categorized based upon how we manage the business and the associated risks. Gross credit exposure amounts presented in\nthe table below represent our estimate of EAD, which is net of derivative master netting agreements and CVA but is before allowance for credit\nlosses or credit risk mitigation for IRB approaches. Gross credit exposure amounts relating to our business and government portfolios are\nreduced for collateral held for repo-style transactions, which reflects the EAD value of such collateral. Non-trading equity exposures are not\nincluded in the table below as they have been deemed immaterial under the OSFI guidelines, and hence are subject to 100% risk-weighting.\n\n$ millions, as at October 31\n2025\n2024\n\nStandardized\n\nStandardized\n\nIRB\napproach\n\napproach\nTotal\n\nIRB\napproach\n\napproach\nTotal\n\nBusiness and government portfolios\nCorporate\n\nDrawn\n$\n206,412\n$\n7,218 $\n213,630 $\n186,995\n$\n6,717 $\n193,712\nUndrawn commitments\n58,702",
+              "similarity": 0.527,
+              "bank_code": "CIBC",
+              "section": "Management’s discussion and analysis",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "page_end": 71,
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "page_start": 70,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "document_type": "annual_report"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00015",
+              "text": "26\nAnalysis of credit risk exposures\n58–64, 77\n133–140, 146, 148,\n149, 171, 175\n12–13, 59–86, 90–93\n\n27\nImpaired loan and forbearance\n\n55, 62, 83\n116–117, 140\n\ntechniques\n\n28\nReconciliation of impaired loans and\n\n62\n135\n\nthe allowance for credit losses\n\n29\nCounterparty credit risk arising from\n\nderivatives\n\n55, 59\n126, 128, 146,\n148–150\n73–74, 76, 93, 35 (1)\n\n30\nCredit risk mitigation\n55, 59\n148–150\n31, 73, 75, 93\n\nOther risks\n31\nOther risks\n77–81\n\n32\nDiscussion of publicly known risk\n\n50–52, 77\n169\n\nevents\n\n(1) Included in supplementary financial information package.\n\nix",
+              "similarity": 0.492,
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "page_end": 13,
+              "quarter": 0,
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "bank_code": "CIBC",
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "section": "Credit risk",
+              "page_start": 13
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In CIBC's 2025 annual report, the following housing and mortgage credit risks were disclosed:\n\n1. **Credit Quality of Portfolios**: The report details the credit quality of retail portfolios, including real estate secured personal lending, which comprises residential mortgages and personal loans secured by residential property. This portfolio is considered lower risk due to first charge on most properties. However, there are risks associated with higher loan-to-value (LTV) ratios, particularly for uninsured mortgages. The report notes that if mortgage insurers deny claims or become insolvent, losses could occur (CIBC_2025_annual_report_FY_00151).\n\n2. **Management Overlays**: CIBC employs management overlays to adjust expected credit loss (ECL) allowance estimates in response to new macroeconomic or geopolitical events. This indicates that existing models may not fully capture all relevant risk factors, which could lead to significant differences between estimated and actual credit losses (CIBC_2025_annual_report_FY_00332).\n\n3. **Regulatory Considerations**: The report mentions that under the Bank Act (Canada), banks are limited to providing residential real estate loans of no more than 80% of collateral value, with exceptions for insured mortgages. This regulatory framework aims to mitigate risks associated with high LTV ratios (CIBC_2025_annual_report_FY_00151).\n\n4. **Stress Testing**: CIBC conducts stress testing and scenario analyses to assess the impact of various stressed conditions on its mortgage portfolio. This process helps in managing credit exposure and determining limits based on risk appetite (CIBC_2025_annual_report_FY_00144).\n\nFor further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00151",
+        "text": "Total\n$\n406,405\n$\n67,929\n$\n25,582\n$\n20,094\n$\n22,814\n$\n542,824\n$\n504,932\n\nCredit quality of portfolios\nCredit quality of the retail portfolios\nThe following table presents the credit quality of our retail portfolios under the IRB approach.\n\n$ millions, as at October 31\n2025\n2024\n\nEAD\n\nOther\n\npersonal lending\n\nQualifying\nrevolving retail\n\nretail\n\nSME\nretail\n\nRisk level\n\nTotal\nTotal\nReal estate secured\n\n$\n57,310\n$\n3,603\n\nExceptionally low\n$\n208,494\n\n$\n395\n$\n269,802\n$\n264,361\nVery low\n73,973\n\n11,977\n3,832\n869\n90,651\n83,228\nLow\n32,030\n15,414\n7,201\n1,548\n56,193\n55,896\nMedium\n16,695\n7,840\n3,570\n990\n29,095\n28,540\nHigh\n1,286\n2,589\n1,332\n189\n5,396\n4,189\nDefault\n1,034\n\n70\n93\n64\n1,261\n957\n\nTotal\n$\n333,512\n$\n95,200\n$\n19,631\n$\n4,055\n$\n452,398\n$\n437,171\n\nReal estate secured personal lending\nReal estate secured personal lending comprises residential mortgages, and personal loans and lines secured by residential property (HELOC). This\nportfolio is lower risk compared with other retail portfolios, as we have a first charge on the majority of the properties and a second lien on only a\nsmall portion of the portfolio. We use the same lending criteria in the adjudication of both first lien and second lien loans.\n\nUnder the Bank Act (Canada), banks are limited to providing residential real estate loans of no more than 80% of the collateral value. An\nexception is made for mortgage loans with a higher LTV ratio if they are insured by either CMHC or a private mortgage insurer. Mortgage insurance\nprotects banks from the risk of default by the borrower, over the term of the coverage. Mortgage insurers are subject to regulatory capital\nrequirements, which aim to ensure that they are well capitalized. If a private mortgage insurer becomes insolvent, the Government of Canada has,\nprovided certain conditions are met, obligations in respect of policies underwritten by certain insolvent private mortgage insurers as more fully\ndescribed in the Protection of Residential Mortgage or Hypothecary Insurance Act (PRMHIA). There is a possibility that losses could be incurred in\nrespect of insured mortgages if, among other things, CMHC or the applicable private mortgage insurer denies a claim, or further, if a private\nmortgage insurer becomes insolvent and either the conditions under the PRMHIA are not met or the Government of Canada denies the claim.\n\nThe following disclosures are required by OSFI pursuant to the Guideline B-20 “Residential Mortgage Underwriting Practices and Procedures”\n(Guideline B-20).\n\nThe following table provides details on our residential mortgage and HELOC portfolios:\n\nResidential mortgages (1)(2)\nHELOC (3)\nTotal\n\n$ billions, as at October 31, 2025\n\nInsured\nUninsured\nUninsured\nInsured\nUninsured",
+        "similarity": 0.545,
+        "fiscal_year": 2025,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "section": "Management’s discussion and analysis",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_end": 74,
+        "page_start": 73,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00332",
+        "text": "Use of management overlays\nManagement overlays to ECL allowance estimates are adjustments which we use in circumstances where we judge that our existing inputs,\nassumptions and model techniques do not capture all relevant risk factors. The emergence of new macroeconomic or geopolitical events, along\nwith expected changes to parameters, models or data that are not incorporated in our current parameters, internal risk rating migrations, or forward-\nlooking information are examples of such circumstances. To address the significant uncertainties inherent in the current environment, we utilize\nmanagement overlays with respect to the impact of certain forward-looking information and credit metrics that are not expected to be as indicative\nof the credit condition of the portfolios as the historical experience in our models would have otherwise suggested. The use of management overlays\nrequires the application of significant judgment that impacts the amount of ECL allowances recognized. Actual credit losses could differ materially\nfrom those reflected in our estimates.\n\nThe following tables provide the gross carrying amount of loans, and the contractual amounts of undrawn credit facilities and other off-balance\nsheet exposures based on our risk management PD bands for retail exposures, and based on our internal risk ratings for business and government\nexposures. Refer to the “Credit risk” section of the MD&A for details on the CIBC risk categories.\n\nLoans(1)\n\n$ millions, as at October 31\n2025\n2024\n\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nResidential mortgages\n\n– Exceptionally low\n$\n171,983\n$\n227\n$\n–\n$\n172,210\n$\n160,515\n$\n6,130\n$\n–\n$\n166,645\n– Very low\n85,628\n\n1,171\n–\n86,799\n81,198\n5,926\n–\n87,124\n– Low\n10,987\n2,749\n–\n13,736\n10,329\n3,638\n–\n13,967\n– Medium\n1,041\n7,071\n–\n8,112\n851\n6,534\n–\n7,385\n– High\n11\n1,859\n–\n1,870\n7\n1,561\n–\n1,568\n– Default\n–\n–\n1,097\n1,097\n–\n–\n790\n790\n– Not rated\n2,808\n183\n218\n3,209\n2,757\n232\n204\n3,193\nGross residential mortgages (4)(5)\n272,458\n13,260\n1,315\n287,033\n255,657\n24,021\n994\n280,672\nECL allowance\n100\n168\n306\n574\n89\n126\n234\n449\nNet residential mortgages\n272,358\n13,092\n1,009\n286,459\n255,568\n23,895\n760\n280,223\nPersonal",
+        "similarity": 0.533,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "section": "FVOCI",
+        "page_start": 152,
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_end": 152,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank": "Canadian Imperial Bank of Commerce"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00144",
+        "text": "A regulatory floor is applied to\nall real estate secured exposures with the exception of insured mortgages. Higher regulatory floors are applied to unsecured accounts. EAD for revolving products is estimated as a percentage of the authorized credit limit based on the observed EAD rates over an extended\nperiod using historical data. We simulate the EAD rate in a significant downturn based on the relationship(s) between the EAD rate and PD and/\nor the observed EAD rate in periods with above-average EAD rates. For term loan products, EAD is set equal to the outstanding balance. A\nregulatory floor is applied to the percentage of the undrawn exposure that is included in EAD. We apply appropriate adjustments to PD, LGD and EAD to address various types of estimation uncertainty including sampling error and\ntrending.\n\nBack-testing\nWe monitor the three key risk parameters – PD, EAD and LGD – on a quarterly basis for our business and government portfolios and on a\nmonthly basis for our retail portfolios. Every quarter, the back-testing results are reported to OSFI and are presented to the business and Risk\nManagement senior management for review and challenge. For each parameter, we identify any portfolios whose realized values are\nsignificantly above or significantly below expectations and then test to see if this deviation is explainable by changes in the economy. If the\nresults indicate that a parameter model may be losing its predictive power, we prioritize that model for review and update.\n\nStress testing\nAs part of our regular credit portfolio management process, we conduct stress testing and scenario analyses on our portfolio to quantitatively\nassess the impact of various historical, as well as hypothetical, stressed conditions, versus limits determined in accordance with our risk\nappetite. Scenarios are selected to test our exposures to specific industries (e.g., oil and gas and real estate), products (e.g., mortgages and\ncards), or geographic regions (e.g., Europe and the Caribbean). Results from stress testing are a key input into management decision making,\nincluding the determination of limits and strategies for managing our credit exposure. See the “Real estate secured personal lending” section for\nfurther discussion on our residential mortgage portfolio stress testing.\n\nExposure to credit risk\nThe portfolios are categorized based upon how we manage the business and the associated risks. Gross credit exposure amounts presented in\nthe table below represent our estimate of EAD, which is net of derivative master netting agreements and CVA but is before allowance for credit\nlosses or credit risk mitigation for IRB approaches. Gross credit exposure amounts relating to our business and government portfolios are\nreduced for collateral held for repo-style transactions, which reflects the EAD value of such collateral. Non-trading equity exposures are not\nincluded in the table below as they have been deemed immaterial under the OSFI guidelines, and hence are subject to 100% risk-weighting.\n\n$ millions, as at October 31\n2025\n2024\n\nStandardized\n\nStandardized\n\nIRB\napproach\n\napproach\nTotal\n\nIRB\napproach\n\napproach\nTotal\n\nBusiness and government portfolios\nCorporate\n\nDrawn\n$\n206,412\n$\n7,218 $\n213,630 $\n186,995\n$\n6,717 $\n193,712\nUndrawn commitments\n58,702",
+        "similarity": 0.527,
+        "bank_code": "CIBC",
+        "section": "Management’s discussion and analysis",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "page_end": 71,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "page_start": 70,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00015",
+        "text": "26\nAnalysis of credit risk exposures\n58–64, 77\n133–140, 146, 148,\n149, 171, 175\n12–13, 59–86, 90–93\n\n27\nImpaired loan and forbearance\n\n55, 62, 83\n116–117, 140\n\ntechniques\n\n28\nReconciliation of impaired loans and\n\n62\n135\n\nthe allowance for credit losses\n\n29\nCounterparty credit risk arising from\n\nderivatives\n\n55, 59\n126, 128, 146,\n148–150\n73–74, 76, 93, 35 (1)\n\n30\nCredit risk mitigation\n55, 59\n148–150\n31, 73, 75, 93\n\nOther risks\n31\nOther risks\n77–81\n\n32\nDiscussion of publicly known risk\n\n50–52, 77\n169\n\nevents\n\n(1) Included in supplementary financial information package.\n\nix",
+        "similarity": 0.492,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 13,
+        "quarter": 0,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "bank_code": "CIBC",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "section": "Credit risk",
+        "page_start": 13
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 7.450716699939221,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0008678999999999999,
+  "input_tokens": 4090,
+  "output_tokens": 424,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.011246599955484271,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about CIBC's housing and mortgage credit risks in the 2025 annual report are directly supported by the provided evidence, including specific references to credit quality, management overlays, regulatory considerations, and stress testing.",
+    "relevance_reason": "The answer directly addresses the question regarding the housing and mortgage credit risks disclosed by CIBC in its 2025 annual report, providing relevant details.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including all relevant risks and their descriptions as found in the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00133665
+}

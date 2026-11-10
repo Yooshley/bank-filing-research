@@ -1,0 +1,347 @@
+id,bank,question,style,answer,seconds,input_tokens,output_tokens
+q01,RBC,What credit risks and loan-loss provisions does RBC discuss?,basic,"Royal Bank of Canada (RBC) discusses several aspects of credit risks and loan-loss provisions in their filings:
+
+1. **Credit Risk Management**: RBC establishes risk limits at various levels, including single name limits, regional, country, and industrial sector limits, as well as regulatory large exposure limits. They actively manage credit exposures to align with their risk appetite and to avoid undue concentration risk, which is defined as the risk arising from large exposures that are highly correlated and could be similarly affected by changes in economic or political conditions [S1].
+
+2. **Loan Forbearance**: RBC has specialized groups and formalized policies for managing high-risk, delinquent, or defaulted borrowers. They strive to identify borrowers in financial difficulty early and may modify loan terms to minimize losses. Forbearance agreements can include concessions such as rate reductions, payment deferrals, and term extensions for both retail and wholesale borrowers [S1].
+
+3. **Credit Risk Exposure**: The bank provides a quantitative summary of its credit risk exposures, which reflects the exposure at default (EAD) under Basel regulatory definitions. This includes detailed tables showing credit risk exposure by portfolio, sector, and geography [S1], [S4].
+
+4. **Impaired Loans**: RBC has policies for identifying impaired loans, although specific details on the provisions for loan losses are not provided in the excerpts [S2], [S3].
+
+Overall, RBC emphasizes proactive management of credit risk through established limits, borrower support mechanisms like forbearance, and regular reviews of credit concentration limits to adapt to changing environments. However, the provided filings do not contain enough information to detail specific loan-loss provisions.",5.05,2704,333
+q01,RBC,What credit risks and loan-loss provisions does RBC discuss?,few_shot,"The filing discusses several aspects of credit risk management, including the establishment of credit concentration limits, which are regularly reviewed to align with business, economic, financial, and regulatory environments. It defines concentration risk as the risk arising from large exposures that are highly correlated, potentially affecting obligors' ability to meet obligations due to changes in various risk drivers [S1].
+
+Additionally, the bank has specialized groups and formalized policies for managing high-risk, delinquent, or defaulted borrowers. They aim to identify borrowers in financial difficulty early and may enter into forbearance agreements, which can include concessions such as rate reductions, payment deferrals, and term extensions [S1].
+
+However, the provided filings do not contain enough information to answer the question regarding loan-loss provisions, as no specific amounts or details about provisions are mentioned.",3.79,2805,163
+q01,RBC,What credit risks and loan-loss provisions does RBC discuss?,step_by_step,"Royal Bank of Canada (RBC) discusses several aspects of credit risks and loan-loss provisions in their filings. They establish risk limits at various levels, including single name, regional, country, and industrial sector limits, to manage credit exposures and ensure alignment with their risk appetite while avoiding undue concentration risk [S1], [S4]. Concentration risk is defined as the risk arising from large exposures that are highly correlated, which could affect obligors' ability to meet obligations due to changes in economic or political factors [S1].
+
+RBC also addresses loan forbearance, indicating that they may modify loan terms for borrowers in financial difficulty to minimize losses. This can include concessions such as rate reductions, payment deferrals, and term extensions for both retail and wholesale borrowers [S1], [S4]. 
+
+The bank's credit risk exposure is categorized under Basel regulatory classes, reflecting their view of credit risk by industry, and they provide detailed tables of credit risk exposures by portfolio, sector, and geography for the years ending October 31, 2024, and 2025 [S1], [S4]. 
+
+However, the provided filings do not contain specific information regarding loan-loss provisions.",3.82,2748,240
+q02,RBC,How does RBC describe its market risk exposure?,basic,"RBC describes its market risk exposure through various measures and controls related to trading revenue and interest rate risk. In the context of trading, RBC reports that it had no net trading losses in both 2025 and 2024, with trading revenue (teb) for 2025 reaching a maximum of $50 million and an average daily revenue of $21 million, while for 2024, the largest reported trading revenue was $44 million with an average daily revenue of $17 million [S2], [S5]. 
+
+Additionally, RBC outlines its exposure to Interest Rate Risk in the Banking Book (IRRBB), which arises primarily from traditional customer-originated banking products such as deposits and loans. This risk includes related hedges and interest rate risk from securities held for liquidity management purposes. RBC regularly measures and reports IRRBB sensitivities, which are subject to limits and controls with independent oversight from the Governance Risk Management (GRM) [S2], [S5]. 
+
+The bank assesses two primary metrics to monitor and control IRRBB: Net Interest Income (NII) risk and Economic Value of Equity (EVE) risk, under various market scenarios, including interest rate volatility shocks and changes in yield curves [S2], [S5].",3.09,3489,255
+q02,RBC,How does RBC describe its market risk exposure?,few_shot,"The filing describes RBC's market risk exposure through various measures and controls related to Interest Rate Risk in the Banking Book (IRRBB) and trading activities. IRRBB arises primarily from traditional customer-originated banking products such as deposits and loans, and includes related hedges and interest rate risk from securities held for liquidity management purposes. Factors contributing to IRRBB include mismatches between asset and liability repricing dates and changes in asset and liability rates in response to market rate scenarios. RBC regularly measures and reports IRRBB sensitivities, which are subject to limits and controls with independent oversight from Governance Risk Management (GRM) [S2].
+
+Additionally, the filing mentions that RBC assesses two primary metrics to monitor and control IRRBB: Net Interest Income (NII) risk and Economic Value of Equity (EVE) risk, under various market shocks and scenarios [S2]. The bank also reports that it incurred no net trading losses in the periods reviewed, indicating effective management of trading risks [S3].",3.36,3590,203
+q02,RBC,How does RBC describe its market risk exposure?,step_by_step,"RBC describes its market risk exposure through various measures and controls, particularly focusing on Interest Rate Risk in the Banking Book (IRRBB) and trading revenue. IRRBB arises from traditional customer-originated banking products such as deposits and loans, and includes related hedges and interest rate risk from securities held for liquidity management purposes. The bank regularly measures and reports IRRBB sensitivities, which are subject to limits and controls with independent oversight from Governance Risk Management (GRM). The Board approves the risk appetite for IRRBB, and reports are reviewed regularly by GRM, the Asset Liability Committee (ALCO), and the Board [S2].
+
+Additionally, RBC reports trading revenue, which for the year ended October 31, 2025, had no net trading losses, with the largest reported trading revenue being $50 million and an average daily revenue of $21 million [S2]. The bank also monitors and controls market risk through Value at Risk (VaR) metrics, with average Trading VaR reported at $25 million for Q1 2025, reflecting changes in exposure primarily in the fixed income portfolio [S3].",2.67,3533,229
+q03,RBC,What climate-related risks does RBC identify?,basic,"RBC identifies climate-related risks as being categorized into two main types: transition risk and physical risk. 
+
+1. **Transition Risk**: This includes risks related to the adjustment towards a low-carbon economy, which can arise from government policies, legislation, regulation aimed at limiting carbon emissions, technological advancements, and changes in market and customer sentiment towards a low-carbon economy.
+
+2. **Physical Risk**: This encompasses risks from the increasing severity and frequency of climate-related extreme events (acute physical risks) and longer-term gradual shifts in climate (chronic physical risks). It also includes indirect effects of climate change, such as public health implications [S1], [S5]. 
+
+RBC continues to integrate climate-related risk considerations into its risk management practices and utilizes climate scenario analysis to inform strategic planning and risk management strategies [S5].",2.81,4068,166
+q03,RBC,What climate-related risks does RBC identify?,few_shot,"The filing identifies two main categories of climate-related risks: transition risk and physical risk. Transition risk relates to the adjustments required for a low-carbon economy, which can arise from government policies, legislation, technological advancements, and changes in market and consumer sentiment. Physical risk includes the risks associated with the increasing severity and frequency of climate-related extreme events (acute physical risks) and longer-term gradual shifts in climate (chronic physical risks) [S1][S5].",5.2,4169,92
+q03,RBC,What climate-related risks does RBC identify?,step_by_step,"RBC identifies climate-related risks as transition risk and physical risk. Transition risk relates to the adjustments towards a low-carbon economy, which can arise from government policies, legislation, technological advancements, and changes in market and customer sentiment. Physical risk includes the risks from increasing severity and frequency of climate-related extremes (acute physical risks) and longer-term gradual shifts in climate (chronic physical risks) [S1], [S5].",1.64,4112,85
+q04,TD,What cybersecurity and operational risks does TD discuss?,basic,"Toronto-Dominion Bank discusses several cybersecurity and operational risks in its filings:
+
+1. **Operational Risk excluding Data, Technology and Cybersecurity**: This includes the risk of loss resulting from inadequate or failed internal processes, people, or external events, as well as losses related to legal risk events and regulatory fines [S1].
+
+2. **Operational Risk – Data, Technology and Cybersecurity**: This refers to the potential for loss resulting from inadequate or ineffectual data, technology, or cybersecurity controls originating from internal or external events [S1].
+
+3. **Data Risk**: The Bank highlights the importance of managing the integrity and quality of customer data and privacy, noting that data risk spans multiple risk categories and business segments. It arises from operational risks such as technology, cybersecurity, AI, fraud, and third-party risks [S3][S5].
+
+4. **Cyber-attacks**: The filings mention the risk of cyber-attacks, which may include attempts by malicious insiders or service providers to disrupt operations or access sensitive information. Although such attempts have not resulted in materially adverse impacts thus far, the Bank acknowledges the increasing sophistication of these threats [S5].
+
+5. **Insider Risk**: This is the risk associated with individuals who misuse their authorized access to the Bank's systems for improper activities, which could negatively affect the Bank and its stakeholders [S3].
+
+6. **Model Risk**: The potential for adverse consequences arising from decisions based on incorrect or misused models is also discussed, particularly in the context of evolving risks such as geopolitical events and economic changes that could impact model performance [S3].
+
+Overall, TD emphasizes the need for effective controls and investments to mitigate these risks and maintain trust with customers and regulators.",4.38,2510,348
+q04,TD,What cybersecurity and operational risks does TD discuss?,few_shot,"The filing discusses several cybersecurity and operational risks faced by TD. These include:
+
+1. **Operational Risk excluding Data, Technology and Cybersecurity**: This risk involves potential losses resulting from inadequate or failed internal processes, people, or external events, including legal risk events and regulatory fines [S1].
+
+2. **Operational Risk – Data, Technology and Cybersecurity**: This risk pertains to potential losses from inadequate or ineffective data, technology, or cybersecurity controls, which can originate from internal or external events [S1].
+
+3. **Data Risk**: There is a heightened risk associated with managing the integrity and quality of customer data and privacy, which spans multiple risk categories and business segments. This risk arises from operational risks such as technology, cybersecurity, AI, fraud, and third-party risks [S3].
+
+4. **Cyber-attacks**: The filing mentions the risk of cyber-attacks, which may include attempts by malicious insiders or service providers to disrupt operations or access sensitive information. Although there have not been materially adverse impacts from such attempts thus far, the potential for future successful attacks remains a concern [S5].
+
+5. **Insider Risk**: This risk involves individuals with authorized access misusing their knowledge or authority for improper activities that could negatively affect the Bank [S3].
+
+6. **Model Risk**: This risk arises from decisions based on incorrect or misused models, which can be impacted by external events and may not adequately reflect the current environment [S3].
+
+Overall, TD emphasizes the importance of effective controls to mitigate these risks and maintain trust with customers, shareholders, and regulators.",4.46,2611,321
+q04,TD,What cybersecurity and operational risks does TD discuss?,step_by_step,"Toronto-Dominion Bank discusses several cybersecurity and operational risks, including:
+
+1. **Operational Risk excluding Data, Technology and Cybersecurity**: This involves the risk of loss resulting from inadequate or failed internal processes, people, or external events, including losses related to legal risk events and regulatory fines [S1].
+
+2. **Operational Risk – Data, Technology and Cybersecurity**: This refers to the potential for loss resulting from inadequate or ineffectual data, technology, or cybersecurity controls originating from internal or external events [S1].
+
+3. **Data Risk**: The Bank highlights the importance of managing the integrity and quality of customer data and privacy, which spans across multiple risk categories and business segments. This risk arises from operational risks such as technology, cybersecurity, AI, fraud, and third-party risks [S3], [S5].
+
+4. **Cyber-attacks**: The Bank acknowledges the risk of cyber-attacks, which may include attempts by malicious insiders or service providers to disrupt operations or access sensitive information. While there have not been materially adverse impacts thus far, the Bank recognizes the evolving sophistication of threats [S5].
+
+5. **Insider Risk**: This risk is associated with individuals who misuse their authorized access to the Bank's systems for improper activities, potentially leading to data breaches or operational disruptions [S3].
+
+6. **Model Risk**: The potential for adverse consequences arising from decisions based on incorrect or misused models, which may be impacted by geopolitical events and other uncertainties [S3].
+
+Overall, TD emphasizes the need for effective controls and investments to mitigate these risks and maintain trust with customers and regulators.",4.95,2554,328
+q05,TD,What risks does TD identify in its residential mortgage lending?,basic,"TD identifies several risks in its residential mortgage lending, particularly related to economic conditions. The Bank regularly performs stress tests on its real estate lending portfolio to assess vulnerabilities to severe downturns in economic conditions. Factors considered during these stress tests include severe changes in house prices, interest rates, and unemployment levels, which can impact credit losses and the Bank's overall profitability. Additionally, the Bank examines various portfolio segments, including dwelling type and geographical regions, to identify specific vulnerabilities that may exist within its lending portfolio [S1], [S2], [S5].",1.97,3920,110
+q05,TD,What risks does TD identify in its residential mortgage lending?,few_shot,"The filing identifies risks associated with residential mortgage lending, including potential losses caused by borrowers' default, which are mitigated through default insurance. Additionally, the Bank performs stress tests on its real estate lending portfolio to assess vulnerabilities to severe downturns in economic conditions, considering factors such as changes in house prices, interest rates, and unemployment levels [S1], [S2], [S3], [S5].",1.76,4021,82
+q05,TD,What risks does TD identify in its residential mortgage lending?,step_by_step,"TD identifies several risks in its residential mortgage lending, including vulnerabilities to severe downturns in economic conditions, which are assessed through stress tests. Factors considered in these stress tests include severe changes in house prices, interest rates, and unemployment levels. The Bank examines various portfolio segments, including dwelling type and geographical regions, to determine specific vulnerabilities that may exist within its real estate secured lending portfolio [S1], [S2], [S5].",1.63,3964,87
+q06,TD,How does TD discuss liquidity and funding risk?,basic,"TD discusses liquidity and funding risk through a disciplined liquidity management program that is subject to risk governance and oversight. The program is designed to ensure that the Bank can operate through significant liquidity events without relying on extraordinary central bank assistance. TD emphasizes maintaining a stable and diversified funding profile that aligns with its assets and contingent obligations [S1], [S2], [S3].
+
+The Bank employs both quantitative and qualitative measures to manage liquidity risk, targeting a 90-day survival horizon under stress scenarios and ensuring compliance with regulatory requirements such as the Liquidity Coverage Ratio (LCR) and the Net Stable Funding Ratio (NSFR) [S2], [S3]. Additionally, TD maintains a Contingency Funding Plan (CFP) to prepare for potential liquidity stress events [S2].
+
+TD's liquidity risk management is governed by a three lines of defence model, involving Treasury, Risk Management, and Internal Audit, which ensures independent oversight and effective challenge of liquidity risk management practices [S4], [S5]. The Bank also considers regional regulatory metrics and potential restrictions on liquidity transferability when calculating its liquidity positions [S3], [S5]. 
+
+Overall, TD's approach to liquidity and funding risk is comprehensive, focusing on maintaining adequate liquidity levels, managing funding sources effectively, and ensuring compliance with both internal and regulatory standards.",3.26,2079,264
+q06,TD,How does TD discuss liquidity and funding risk?,few_shot,"TD discusses liquidity and funding risk by outlining its disciplined liquidity management program, which is designed to ensure sufficient liquidity to operate through significant liquidity events without relying on extraordinary central bank assistance. The bank emphasizes maintaining a stable and diversified funding profile that aligns with its assets and contingent obligations [S1], [S2], [S3].
+
+TD employs both quantitative and qualitative measures to manage liquidity risk, targeting a 90-day survival horizon under stress scenarios and ensuring compliance with regulatory requirements such as the Liquidity Coverage Ratio (LCR) and the Net Stable Funding Ratio (NSFR) [S2], [S3]. The bank also maintains a Contingency Funding Plan to prepare for potential liquidity stress events [S2].
+
+The governance of liquidity risk management involves multiple layers, including the Asset Liability Committee (ALCO) and the GLF Committee, which monitor and oversee liquidity risks [S5]. Additionally, TD's liquidity management framework incorporates internal measures that complement regulatory requirements, ensuring that the bank's liquidity is managed to higher internal standards than the regulatory minimums [S3], [S5].",3.93,2180,218
+q06,TD,How does TD discuss liquidity and funding risk?,step_by_step,"TD discusses liquidity and funding risk through a disciplined liquidity management program that is subject to risk governance and oversight. The program is designed to maintain sufficient liquidity to operate through significant liquidity events without relying on extraordinary central bank assistance. TD emphasizes a stable and diversified funding profile, aligning funding with assets and contingent obligations, and targets a 90-day survival horizon under stress scenarios while maintaining minimum surpluses over regulatory requirements [S1][S2][S3].
+
+The Bank employs both quantitative and qualitative measures to manage liquidity risk, including internal measures that complement regulatory requirements such as the Liquidity Coverage Ratio (LCR) and the Net Stable Funding Ratio (NSFR) [S3][S5]. Additionally, TD maintains a Contingency Funding Plan to prepare for potential liquidity stress events and has a three lines of defence governance model for liquidity risk management [S2][S4][S5]. 
+
+The Bank's liquidity management framework is overseen by the Asset Liability Committee (ALCO) and involves various segments of the organization to ensure effective measurement and governance of liquidity risk [S5].",2.52,2123,217
+q07,BMO,What liquidity risk management measures does BMO describe?,basic,"BMO describes several liquidity risk management measures, including:
+
+1. **Liquidity and Funding Risk Management Framework**: This framework is defined and authorized in alignment with corporate policies approved by the Board of Directors and management. It includes key management principles, liquidity and funding metrics, and related limits, as well as roles and responsibilities for managing liquidity and funding risk across the enterprise [S4], [S5].
+
+2. **Robust Limit Structure**: BMO has established a robust limit structure to manage liquidity and funding risk. These limits define BMO’s risk appetite for key measures such as the Stress Net Liquidity Position (Stress NLP), regulatory liquidity ratios, and secured and unsecured funding appetite for both trading and structural activities. They also establish tolerances for concentrations of maturities and requirements for counterparty liability diversification [S4], [S5].
+
+3. **Contingency Plan**: An enterprise-wide contingency plan is in place to facilitate effective risk management in the event of a disruption. Early warning indicators identified in this plan are regularly monitored to detect signs of rising liquidity or funding risk [S4], [S5].
+
+4. **Measurement of Liquidity Risk Under Stress**: BMO uses Stress NLP as a key measure of liquidity risk, which represents the amount by which liquid assets exceed potential funding needs under severe systemic and enterprise-specific stress scenarios. This involves quantifying potential funding needs based on various business activities and deposit classifications [S4], [S5].
+
+5. **Regular Review and Compliance**: Liquidity and funding positions are managed on both a consolidated and key legal entity basis, with policies and limits informed by applicable laws and regulations. Positions are regularly reviewed to confirm compliance [S4], [S5].
+
+These measures collectively aim to ensure that BMO can meet its financial commitments even in times of stress, thereby maintaining enterprise soundness and depositor confidence.",5.1,3862,376
+q07,BMO,What liquidity risk management measures does BMO describe?,few_shot,"BMO describes several liquidity risk management measures, including:
+
+1. Maintaining a level of liquid assets and funding capacity sufficient to meet financial commitments, even in times of stress [S1], [S2].
+2. A robust limit structure that defines BMO’s risk appetite for key measures such as Stress Net Liquidity Position (Stress NLP), regulatory liquidity ratios, and secured and unsecured funding appetite [S4], [S5].
+3. An enterprise-wide contingency plan to facilitate effective risk management during disruptions, with early warning indicators monitored to detect rising levels of liquidity or funding risk [S4], [S5].
+4. Regular reviews of liquidity and funding positions at both consolidated and key legal entity levels to ensure compliance with applicable laws and regulations [S4], [S5].
+5. Measurement of liquidity risk under stress scenarios using Stress NLP, which assesses potential funding needs arising from various obligations and market conditions [S4], [S5]. 
+
+These measures are designed to ensure that BMO can effectively manage liquidity and funding risk across the enterprise.",2.76,3963,210
+q07,BMO,What liquidity risk management measures does BMO describe?,step_by_step,"BMO describes several liquidity risk management measures, including:
+
+1. Maintaining a level of liquid assets and funding capacity sufficient to meet financial commitments, even in times of stress [S1], [S2].
+2. A robust limit structure that defines BMO’s risk appetite for key measures such as Stress Net Liquidity Position (Stress NLP), regulatory liquidity ratios, and secured and unsecured funding appetite [S4], [S5].
+3. An enterprise-wide contingency plan to facilitate effective risk management during disruptions, with early warning indicators monitored for rising levels of liquidity or funding risk [S4], [S5].
+4. Regular reviews of liquidity and funding positions at both consolidated and key legal entity levels to ensure compliance with applicable laws and regulations [S4], [S5].
+5. Measurement of liquidity risk under stress using Stress NLP, which assesses potential funding needs under severe systemic and enterprise-specific stress scenarios [S4], [S5]. 
+
+These measures are part of BMO's Liquidity and Funding Risk Management Framework, which is aligned with corporate policies approved by the Board of Directors [S4].",3.16,3906,221
+q08,BMO,What does BMO say about interest-rate risk?,basic,"BMO describes interest rate risk as a component of structural market risk that arises when changes in interest rates affect the market value, cash flows, and earnings of assets and liabilities related to its banking activities. The objective of managing structural interest rate risk is to maintain high-quality earnings and maximize sustainable product spreads while managing the risk to the economic value of net assets due to interest rate changes. 
+
+BMO identifies two primary types of structural interest rate risk: interest rate mismatch risk and product-embedded option risk. Interest rate mismatch risk occurs when there are differences in the scheduled maturities, repricing dates, or reference rates of assets, liabilities, and derivatives. Product-embedded option risk arises when product features allow customers to alter the timing of cash flows, such as loan prepayments or deposit redemption privileges.
+
+To measure structural interest rate risk, BMO employs simulations, sensitivity analyses, stress testing, and gap analysis. Earnings sensitivity measures the potential impact of interest rate changes on projected pre-tax net income over the next 12 months, while economic value sensitivity measures the impact on the market value of a portfolio of assets and liabilities in response to interest rate movements [S1], [S2], [4].",3.34,3375,239
+q08,BMO,What does BMO say about interest-rate risk?,few_shot,"BMO describes structural interest rate risk as arising when changes in interest rates affect the market value, cash flows, and earnings of assets and liabilities related to its banking activities. The objective of managing this risk is to maintain high-quality earnings and maximize sustainable product spreads while managing the risk to the economic value of net assets due to interest rate changes. Structural interest rate risk includes interest rate mismatch risk and product-embedded option risk, which are managed through various strategies, including interest rate swaps and hedging programs. The bank measures this risk using simulations, sensitivity analyses, stress testing, and gap analysis [S1], [S2], [S4].",2.58,3476,129
+q08,BMO,What does BMO say about interest-rate risk?,step_by_step,"BMO states that structural interest rate risk arises when changes in interest rates affect the market value, cash flows, and earnings of assets and liabilities related to banking activities. The objective of managing this risk is to maintain high-quality earnings and maximize sustainable product spreads while managing risk to the economic value of net assets. Structural interest rate risk primarily includes interest rate mismatch risk and product-embedded option risk. Interest rate mismatch risk occurs due to differences in scheduled maturities, repricing dates, or reference rates of assets, liabilities, and derivatives. Product-embedded option risk arises when product features allow customers to alter the timing of cash flows in response to market conditions. BMO measures structural interest rate risk using simulations, sensitivity analyses, stress testing, and gap analysis, among other metrics. Earnings sensitivity measures the impact of potential interest rate changes on projected pre-tax net income, while economic value sensitivity measures the impact on the market value of a portfolio of assets and liabilities in response to interest rate movements [S1], [S2], [S4].",2.74,3419,207
+q09,BMO,What operational risks does BMO disclose?,basic,"BMO discloses several operational risks, including:
+
+1. **Anti-Money Laundering, Terrorist Financing and Sanctions Risk**: This risk involves the potential for the bank's products or services to be used for money laundering, financing terrorism, or violating economic sanctions. BMO emphasizes compliance with relevant laws and regulations to mitigate these risks [S3].
+
+2. **Internal and External Fraud Risk**: This risk arises from the possibility of fraudulent activities, either from within the organization (internal fraud) or from external parties (external fraud). BMO has a fraud risk management program to proactively manage these risks [S4].
+
+3. **Physical Security and Property Risk**: This involves risks related to the safety and security of the bank's premises, customers, employees, and third parties against various threats, including criminal activities and natural disasters [S4].
+
+4. **Technology Risk**: This risk pertains to the inadequacy, misuse, disruption, or failure of information technology systems, which could hinder the bank's ability to meet business needs. BMO invests in technology risk management measures to protect its systems and data [S4].
+
+5. **Third-Party Risk**: This risk is associated with the potential failure of third-party entities to deliver goods or services, protect data, or otherwise negatively impact BMO's operations. BMO has a Third-Party Risk Management program to oversee these risks [S4].
+
+6. **Culture and Behaviour Risk**: This risk arises when the actual culture within the organization does not align with BMO's desired culture, potentially leading to unwanted behaviors that could hinder achieving expected outcomes [S4].
+
+These operational risks are part of BMO's broader Enterprise-Wide Risk Management framework, which aims to maintain an operational risk profile consistent with the bank's risk appetite [S2].",4.04,3512,367
+q09,BMO,What operational risks does BMO disclose?,few_shot,"The filing discloses several operational risks that BMO faces, including:
+
+1. **Anti-Money Laundering, Terrorist Financing and Sanctions Risk**: Risks associated with laundering the proceeds of crime, financing terrorist activity, or violating economic sanctions [S3].
+
+2. **Internal and External Fraud Risk**: The risk of loss from fraudulent activities, either from within the organization (internal fraud) or from external parties (external fraud) [S4].
+
+3. **Physical Security and Property Risk**: Risks related to the protection of the bank, its customers, employees, and third parties from loss or damage due to various threats [S4].
+
+4. **Technology Risk**: Risks arising from inadequacies or failures in information technology systems and infrastructure, which could impact business operations [S4].
+
+5. **Third-Party Risk**: The risk of loss associated with third parties failing to deliver services or protect data, which could negatively impact BMO [S4].
+
+6. **Culture and Behaviour Risk**: The risk that the actual culture within the organization does not align with BMO's desired culture, potentially leading to unwanted behaviors [S4].
+
+These risks are part of BMO's broader operational non-financial risk profile, which is managed through various programs and frameworks [S1], [S5].",3.28,3613,267
+q09,BMO,What operational risks does BMO disclose?,step_by_step,"BMO discloses several operational risks, including:
+
+1. **Anti-Money Laundering, Terrorist Financing and Sanctions Risk**: Risks associated with laundering the proceeds of crime, financing terrorist activity, or violating economic sanctions. BMO emphasizes compliance with relevant laws and regulations to manage these risks effectively [S3].
+
+2. **Internal and External Fraud Risk**: This risk arises from intentional acts designed to deceive others, leading to potential losses. BMO categorizes fraud risk into internal (committed by employees or contractors) and external (perpetrated by outside parties) [S4].
+
+3. **Physical Security and Property Risk**: This involves protecting the bank, its customers, employees, and third parties from loss or damage due to various threats, including criminal activities and natural disasters [S4].
+
+4. **Technology Risk**: The risk related to the inadequacy or failure of information technology systems, which could hinder the bank's ability to meet business needs. BMO invests in technology to manage these risks [S4].
+
+5. **Third-Party Risk**: The risk of loss associated with third parties failing to deliver services or protect data, which is managed through a Third-Party Risk Management program [S4].
+
+6. **Culture and Behaviour Risk**: This risk arises when the actual culture of the organization does not align with its desired culture, potentially leading to unwanted behaviors [S4].
+
+These operational risks are part of BMO's broader Operational Non-Financial Risk Management (ONFRM) framework, which aims to maintain an operational risk profile consistent with the bank's risk appetite [S5].",3.92,3556,331
+q10,Scotiabank,What physical and transition climate risks does Scotiabank discuss?,basic,"Scotiabank discusses several physical and transition climate risks in its filings:
+
+1. **Physical Risks**: The Bank highlights the potential impacts of diverse physical risks due to climate change, which include damage to properties and disruptions to operations that can negatively impact profitability. The increased intensity and frequency of severe weather events are specifically mentioned as contributing factors to these physical risks [S1].
+
+2. **Transition Risks**: The Bank notes that rising costs of climate change and new climate guidelines increase regulatory oversight and stakeholder expectations. There is also mention of the changing corporate and political environment in the US and Canada, which could result in reduced support for climate-related regulation and funding for climate initiatives. This creates uncertainty that could limit clients’ ability or willingness to reduce emissions [S1]. Additionally, making exaggerated or misleading sustainability claims or ""greenwashing"" can create legal and reputational risks under current laws and evolving climate regulations [S1].
+
+Overall, Scotiabank's approach to managing these risks includes compliance with evolving climate regulations, mechanisms to identify and mitigate potential losses, and a public ESG policy that restricts lending to certain high-risk sectors [S1][S2].",3.59,2050,232
+q10,Scotiabank,What physical and transition climate risks does Scotiabank discuss?,few_shot,"The filing discusses several physical and transition climate risks. Physical risks include the rising costs associated with climate change and the increased intensity and frequency of severe weather events, which can lead to damage to properties and disruptions to operations, negatively impacting profitability. Transition risks involve the potential for reduced support for climate-related regulation and funding for climate initiatives, which could create uncertainty that limits clients' ability or willingness to reduce emissions. Additionally, there are legal and reputational risks associated with making exaggerated or misleading sustainability claims, also known as ""greenwashing"" [S1].",2.4,2151,109
+q10,Scotiabank,What physical and transition climate risks does Scotiabank discuss?,step_by_step,"Scotiabank discusses several physical and transition climate risks. Physical risks include the rising costs associated with climate change, the increased intensity and frequency of severe weather events, and the potential damage to properties and disruptions to operations that can negatively impact profitability. Transition risks involve the changing corporate and political environment, which could result in reduced support for climate-related regulation and funding for climate initiatives, creating uncertainty that may limit clients’ ability or willingness to reduce emissions. Additionally, the Bank highlights legal and reputational risks associated with making exaggerated or misleading sustainability claims or ""greenwashing"" due to data collection and reporting challenges [S1].",1.86,2094,123
+q11,Scotiabank,What credit risks does Scotiabank report?,basic,"Scotiabank reports several types of credit risks, including:
+
+1. **Aggregate Credit Risk Exposures**: This includes details of both personal and wholesale lending, providing an analysis of the overall credit risk the bank faces [S1], [S2], [S3], [S4], [S5].
+
+2. **Impaired Loans**: The bank discusses its policies for identifying impaired loans, defining impairments, and renegotiated loans, as well as explaining loan forbearance policies [S1], [S2], [S3], [S4], [S5].
+
+3. **Reconciliations of Impaired Loans**: Scotiabank provides reconciliations of the opening and closing balances of impaired loans and impairment allowances during the year [S1], [S2], [S3], [S4], [S5].
+
+4. **Counterparty Credit Risk**: The bank analyzes counterparty credit risk that arises from derivative transactions [S1], [S2], [S3], [S4], [S5].
+
+5. **Credit Risk Mitigation**: There is a discussion on credit risk mitigation strategies, including collateral held for all sources of credit risk [S1], [S2], [S3], [S4], [S5].
+
+These elements collectively provide a comprehensive view of the credit risks that Scotiabank manages.",4.06,2571,285
+q11,Scotiabank,What credit risks does Scotiabank report?,few_shot,"The filings describe several credit risks that Scotiabank reports, including:
+
+1. Aggregate credit risk exposures, which encompass both personal and wholesale lending [S1], [S2], [S3], [S4], [S5].
+2. Impaired loans, including policies for identifying impaired loans, defining impairments, and discussing loan forbearance policies [S1], [S2], [S3], [S4], [S5].
+3. Counterparty credit risk arising from derivative transactions [S1], [S2], [S3], [S4], [S5].
+4. Credit risk mitigation strategies, including collateral held for all sources of credit risk [S1], [S2], [S3], [S4], [S5]. 
+
+These elements collectively highlight the various dimensions of credit risk that the bank monitors and manages.",2.53,2672,177
+q11,Scotiabank,What credit risks does Scotiabank report?,step_by_step,"Scotiabank reports on several credit risks, including:
+
+1. Aggregate credit risk exposures, detailing both personal and wholesale lending [S1, S2].
+2. Policies for identifying impaired loans, defining impairments and renegotiated loans, and explaining loan forbearance policies [S1, S2].
+3. Reconciliations of the opening and closing balances of impaired loans and impairment allowances during the year [S1, S2].
+4. Counterparty credit risk arising from derivative transactions [S1, S2].
+5. Credit risk mitigation strategies, including collateral held for all sources of credit risk [S1, S2].
+
+These aspects are discussed in the annual reports for 2024 and 2025, as well as in quarterly reports for 2024 and 2025.",1.99,2615,163
+q12,Scotiabank,What market risks does Scotiabank describe?,basic,"Scotiabank describes several types of market risks, including:
+
+1. **Interest Rate Risk**: This is the risk of loss due to changes in the level, slope, and curvature of the yield curve, as well as the volatility of interest rates and changes in customers’ preferences, such as mortgage prepayment rates.
+
+2. **Foreign Currency Risk**: This risk arises from changes in spot and forward rates. For example, as of January 31, 2024, a one percent increase (or decrease) in the Canadian dollar against all currencies in which the Bank operates could decrease (or increase) the Bank’s before-tax annual earnings by approximately $61 million.
+
+3. **Equity Risk**: This is the risk of loss due to adverse movements in equity prices, which the Bank is exposed to through its investment equity portfolios.
+
+4. **Commodity Price Risk**: Although not detailed in the excerpts, commodity prices are mentioned as part of the broader market risk context.
+
+These risks are influenced by changes in market prices and rates, the correlations among them, and their levels of volatility [S1], [S2], [S3], [S4], [S5].",3.04,3191,240
+q12,Scotiabank,What market risks does Scotiabank describe?,few_shot,"The filing describes several market risks that Scotiabank faces, including:
+
+1. **Interest Rate Risk**: The risk of loss due to changes in the level, slope, and curvature of the yield curve, as well as the volatility of interest rates and changes in customer preferences, such as mortgage prepayment rates.
+
+2. **Foreign Currency Risk**: The risk of loss due to changes in spot and forward rates. The filing notes that a one percent increase or decrease in the Canadian dollar against all currencies could significantly impact the Bank's before-tax annual earnings and unrealized foreign currency translation losses.
+
+3. **Equity Risk**: The risk of loss due to adverse movements in equity prices, which the Bank is exposed to through its investment equity portfolios.
+
+4. **Market Risk in Trading Activities**: This includes the Value at Risk (VaR) as a key measure of market risk in the Bank’s trading activities, which encompasses various risk factors such as credit spread, interest rate, equities, and foreign exchange [S1], [S2], [S3], [S4], [S5].",4.42,3292,224
+q12,Scotiabank,What market risks does Scotiabank describe?,step_by_step,"Scotiabank describes several market risks, including:
+
+1. **Interest Rate Risk**: The risk of loss due to changes in the level, slope, and curvature of the yield curve, the volatility of interest rates, and changes in customers’ preferences (e.g., mortgage prepayment rates) [S2], [S3].
+
+2. **Foreign Currency Risk**: The risk of loss due to changes in spot and forward rates. As of January 31, 2024, a one percent increase (decrease) in the Canadian dollar against all currencies would decrease (increase) the Bank’s before-tax annual earnings by approximately $61 million [S4].
+
+3. **Equity Risk**: The risk of loss due to adverse movements in equity prices, with exposure through investment equity portfolios [S4].
+
+4. **Commodity Price Risk**: Implicitly included in the broader definition of market risk, which encompasses changes in market prices including commodity prices [S1], [S5].
+
+Overall, market risk arises from changes in market prices and rates, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with the correlations among them and their levels of volatility [S1], [S5].",3.36,3235,252
+q13,CIBC,What housing and mortgage credit risks does CIBC identify?,basic,"CIBC identifies several housing and mortgage credit risks, including:
+
+1. **High Mortgage Debt Levels**: Mortgage debt continues to trend at historically high levels, which poses a risk to borrowers' ability to manage their debt, especially as interest rates rise and mortgages renew at higher rates [S4].
+
+2. **Rising Mortgage Service Ratios**: As mortgages renew at higher rates and income growth decelerates, mortgage service ratios could increase, potentially leading to higher delinquency rates [S4].
+
+3. **Consumer Debt Trends**: The household debt-to-income ratio has shown a downward trend, but mortgage service ratios may still increase due to economic conditions, which could elevate non-mortgage debt levels and unsecured delinquency rates [S4].
+
+4. **Impact of Economic Conditions**: Sustained high interest rates are expected to maintain pressure on property sales and mortgage growth, which could lead to increased serious arrears rates as delinquencies rise from earlier cohorts of loans [S4].
+
+5. **Regulatory Changes**: Changes in capital adequacy requirements and guidelines from OSFI, such as those affecting mortgages in negative amortization, could increase risk-weighted assets (RWA) and impact the bank's capital requirements [S4].
+
+6. **Potential Losses from Insured Mortgages**: There is a risk of losses related to insured mortgages if claims are denied by mortgage insurers or if those insurers become insolvent, which could affect the bank's exposure to mortgage defaults [S3][S5].
+
+These risks highlight the importance of monitoring economic conditions, borrower behavior, and regulatory changes in the housing and mortgage markets.",4.44,3755,328
+q13,CIBC,What housing and mortgage credit risks does CIBC identify?,few_shot,"The filing identifies several housing and mortgage credit risks, including:
+
+1. **High Mortgage Debt Levels**: Mortgage debt continues to trend at historically high levels, which could lead to increased mortgage service ratios as mortgages renew at higher rates and income growth decelerates from a slowing labor market [S4].
+
+2. **Rising Delinquencies**: There is a potential for rising delinquencies from fiscal 2021–2022 cohorts maturing, which could elevate non-mortgage debt levels and unsecured delinquency and loss rates typical of the credit cycle [S4].
+
+3. **Impact of Economic Conditions**: Sustained high interest rates may maintain pressure on sales and mortgage growth, potentially leading to increased serious arrears rates [S4].
+
+4. **Regulatory Changes**: Effective November 1, 2023, OSFI revised its Capital Adequacy Requirements and Mortgage Insurer Capital Adequacy Test guidelines, which could increase risk-weighted assets (RWA) for mortgages that have been in negative amortization for three consecutive months with loan-to-value (LTV) over 65% [S4].
+
+5. **Insurance Risk**: There is a possibility of incurring losses in respect of insured mortgages if mortgage insurers deny claims or become insolvent, particularly if conditions under the Protection of Residential Mortgage or Hypothecary Insurance Act (PRMHIA) are not met [S3][S5].
+
+These factors contribute to the overall risk profile associated with housing and mortgage credit for CIBC.",3.82,3856,307
+q13,CIBC,What housing and mortgage credit risks does CIBC identify?,step_by_step,"CIBC identifies several housing and mortgage credit risks, including:
+
+1. **High Mortgage Debt Levels**: Mortgage debt continues to trend at historically high levels, which could lead to increased mortgage service ratios as mortgages renew at higher rates, particularly as income growth decelerates from a slowing labor market [S4].
+
+2. **Rising Delinquencies**: There is a potential for rising delinquencies from fiscal 2021–2022 cohorts maturing, which could elevate non-mortgage debt levels and unsecured delinquency and loss rates typical of the credit cycle [S4].
+
+3. **Impact of Economic Conditions**: Sustained high interest rates are expected to maintain pressure on sales and mortgage growth, which could negatively impact serious arrears rates [S4].
+
+4. **Regulatory Changes**: Effective November 1, 2023, OSFI revised its Capital Adequacy Requirements and Mortgage Insurer Capital Adequacy Test guidelines, which could increase risk-weighted assets (RWA) for mortgages that have been in negative amortization for three consecutive months with loan-to-value (LTV) over 65% [S4].
+
+5. **Potential Losses from Insured Mortgages**: There is a possibility of incurring losses in respect of insured mortgages if mortgage insurers deny claims or if a private mortgage insurer becomes insolvent and conditions under the Protection of Residential Mortgage or Hypothecary Insurance Act (PRMHIA) are not met [S3][S5]. 
+
+These risks highlight the complexities and challenges in managing housing and mortgage credit portfolios in the current economic environment.",4.15,3799,323
+q14,CIBC,What cyber and technology-related risks does CIBC disclose?,basic,"CIBC discloses several cyber and technology-related risks, including:
+
+1. **Information Security Risk (including Cyber Security)**: This risk pertains to the confidentiality, integrity, and availability of CIBC-owned information and information entrusted to CIBC by clients, employees, shareholders, business partners, and third parties. If this information is lost, disclosed, accessed, modified, or disrupted without authorization, it could cause damage to CIBC’s business and its customers [S2].
+
+2. **Technology Risk**: This involves the risk of financial losses, operational disruptions, or damage to organizational reputation due to compromised availability, stability, resilience, capacity, performance, currency, or integrity of technology [S2].
+
+3. **Cyber Threats**: CIBC acknowledges the increasing cyber threats that pose financial, reputational, and business interruption risks. The bank actively manages these risks through strategic risk reviews and enterprise-wide technology and information security programs aimed at maintaining overall cyber-resilience [S5].
+
+4. **Cyber Incident Response**: CIBC has well-defined protocols and playbooks for responding to security incidents or breaches. They also perform cyber security preparedness, testing, and recovery exercises to validate their defenses and benchmark against best practices [S5].
+
+5. **Cyber Insurance Coverage**: CIBC maintains cyber insurance coverage to help mitigate potential losses associated with cyber incidents, although this coverage is subject to various terms and provisions [S5].
+
+Overall, CIBC emphasizes the importance of monitoring the evolving cyber threat landscape and continuously refining their security measures to minimize the impact of potential technology or cyber incidents.",4.45,2376,316
+q14,CIBC,What cyber and technology-related risks does CIBC disclose?,few_shot,"The filings disclose several cyber and technology-related risks faced by CIBC:
+
+1. **Information Security Risk (including Cyber Security)**: This risk pertains to the confidentiality, integrity, and availability of CIBC-owned information and information entrusted to CIBC by clients and other stakeholders. If this information is lost, disclosed, accessed, modified, or disrupted without authorization, it could cause damage to CIBC's business and its customers [S1][S2].
+
+2. **Technology Risk**: This risk involves potential financial losses, operational disruptions, or damage to organizational reputation due to compromised availability, stability, resilience, capacity, performance, currency, or integrity of technology [S1][S2].
+
+3. **Cyber Threats**: CIBC acknowledges the increasing cyber threats that pose financial, reputational, and business interruption risks. The bank actively manages these risks through strategic risk reviews and enterprise-wide technology and information security programs aimed at maintaining cyber resilience [S5].
+
+4. **Cyber Incident Response**: CIBC has established cyber incident response protocols and playbooks to address security incidents or breaches. They also have cyber insurance coverage to mitigate potential losses associated with cyber incidents, although they recognize that it is not possible to identify all cyber risks or prevent all potential incidents [S5].
+
+Overall, CIBC identifies a range of risks related to information security, technology integrity, and the evolving landscape of cyber threats.",3.43,2477,280
+q14,CIBC,What cyber and technology-related risks does CIBC disclose?,step_by_step,"CIBC discloses several cyber and technology-related risks, including:
+
+1. **Information Security Risk (including Cyber Security)**: This risk pertains to the confidentiality, integrity, and availability of CIBC-owned information and information entrusted to CIBC by clients, employees, and third parties. If this information is lost, disclosed, accessed, modified, or disrupted without authorization, it could cause damage to CIBC’s business and its customers [S1][S2].
+
+2. **Technology Risk**: This risk involves potential financial losses, operational disruptions, or damage to organizational reputation due to compromised availability, stability, resilience, capacity, performance, currency, or integrity of technology [S1][S2].
+
+3. **Cyber Threats**: CIBC acknowledges the increasing cyber threats that pose financial, reputational, and business interruption risks. The bank actively manages these risks through strategic risk reviews and enterprise-wide technology and information security programs aimed at maintaining cyber resilience [S5].
+
+4. **Cyber Incident Response**: CIBC has well-defined protocols and playbooks for responding to security incidents or breaches. They also have cyber insurance coverage to mitigate potential losses associated with cyber incidents, although they recognize that it is not possible to identify all cyber risks or prevent all potential incidents [S5].
+
+These disclosures highlight CIBC's awareness and proactive management of cyber and technology-related risks.",3.63,2420,274
+q15,CIBC,How does CIBC describe its liquidity risk management?,basic,"CIBC describes its liquidity risk management as an approach that supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The management strategies, objectives, and practices are regularly reviewed to adapt to changes in the liquidity environment, including regulatory, business, and market developments. CIBC ensures that liquidity risk remains within its risk appetite.
+
+The bank manages liquidity risk in a way that allows it to withstand a liquidity stress event without adversely impacting its operations. Actual and anticipated cash flows from on- and off-balance sheet exposures are routinely measured and monitored to ensure compliance with established limits. Stress testing is incorporated into the management and measurement of liquidity risk, aiding in the development of liquidity assumptions and the design of contingency funding plans.
+
+CIBC employs a three lines of defence model for managing liquidity risk. The Treasurer is responsible for the ongoing management of liquidity risk, supported by the Liquidity and Non-Trading Market Risk group, which provides independent oversight. Internal audit serves as the third line of defence, offering assurance on the effectiveness of governance practices and risk management processes.
+
+The Global Asset Liability Committee (GALCO) governs liquidity risk management, ensuring that methodologies, assumptions, and key metrics are regularly reviewed. The Liquidity Risk Management Committee, a subcommittee of GALCO, monitors global liquidity risk and ensures that CIBC's liquidity risk profile is comprehensively measured and managed in alignment with its strategic direction and regulatory requirements. The Risk Management Committee (RMC) provides governance through bi-annual reviews of the liquidity risk management policy and recommends liquidity risk tolerance to the Board through an annual risk appetite statement [S1], [S2], [S3], [S4], [S5].",4.46,3851,339
+q15,CIBC,How does CIBC describe its liquidity risk management?,few_shot,"CIBC describes its liquidity risk management as an approach that supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The bank regularly reviews its management strategies, objectives, and practices to align with changes in the liquidity environment, including regulatory, business, and market developments. CIBC manages liquidity risk to withstand a liquidity stress event without adversely impacting its operations. The management of liquidity risk follows a three lines of defence model, with the Treasurer responsible for measurement and reporting, the Liquidity and Non-Trading Market Risk group providing independent oversight, and internal audit offering assurance on governance practices and risk management processes. Additionally, CIBC's liquidity risk management policy establishes requirements to meet anticipated liquidity needs in both normal and stressed conditions by maintaining sufficient unencumbered liquid assets and diversified funding sources [S1][S2][S3][S4][S5].",3.41,3952,176
+q15,CIBC,How does CIBC describe its liquidity risk management?,step_by_step,"CIBC describes its liquidity risk management as an approach that supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The management strategies, objectives, and practices are regularly reviewed to adapt to changes in the liquidity environment, including regulatory, business, and market developments. CIBC aims to manage liquidity risk in a way that allows it to withstand a liquidity stress event without adversely impacting its operations. The management of liquidity risk follows a three lines of defence model, with the Treasurer responsible for measurement and reporting, the Liquidity and Non-Trading Market Risk group providing independent oversight, and internal audit offering assurance on governance and risk management processes. Additionally, the Global Asset Liability Committee (GALCO) governs liquidity risk management methodologies and ensures alignment with CIBC's strategic direction and regulatory requirements [S1], [S2], [S3], [S4], [S5].",2.23,3895,179

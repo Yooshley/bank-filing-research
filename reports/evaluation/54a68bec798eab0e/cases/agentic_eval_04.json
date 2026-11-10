@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_04",
+  "config": "agentic",
+  "question": {
+    "id": "eval_04",
+    "question": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed cybersecurity and operational risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?",
+    "answer": "In TD's 2025 annual report, the following cybersecurity and operational risks were disclosed:\n\n1. **Operational Risk**: Defined as the risk of loss from inadequate or failed internal processes, people, systems, or external events. This includes legal risks and regulatory fines. The report emphasizes that operational risk is inherent in all business activities and can lead to financial loss, reputational harm, or regulatory penalties (TD_2025_annual_report_FY_00316).\n\n2. **Technology and Cybersecurity Risks**: The report highlights that the Bank manages technology and cybersecurity risks to protect against unauthorized access to its technology, infrastructure, systems, information, and data. It mentions the implementation of industry-accepted practices for technology risk and cyber threat management to enhance detection and response capabilities (TD_2025_annual_report_FY_00318).\n\n3. **Governance and Oversight**: The report outlines that the Platforms and Technology Risk Oversight Committee provides oversight regarding technology and cybersecurity risks, including threats like cyber terrorism, fraud, and data theft. This committee makes recommendations to senior management and the Board of Directors (TD_2025_annual_report_FY_00318).\n\nFor further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 3199,
+    "output_tokens": 325,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000675,
+    "seconds": 6.02,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "cybersecurity operational risks",
+          "bank": "TD",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00316",
+              "text": "Operational risk is the risk of loss resulting from inadequate or failed\ninternal processes, people and systems or from external events and also\nincludes losses related to legal risk events and regulatory fines.\n\nIn addition to the framework, Operational Risk Management owns and\nmaintains, or has oversight of, the Bank’s operational risk policies including\nthose that govern business continuity and crisis management, process &\nexecution risk, third-party risk management, data risk management, fraud\nrisk management, change governance, operational resilience, technology\nand cybersecurity risk management, people risk management and insider\nrisk management.\n\nOperational risk is inherent in all of the Bank’s business activities, including\nthe practices and controls used to manage other risks such as credit,\nmarket, and liquidity risk. Failure to manage operational risk can result in\nfinancial loss (direct or indirect), reputational harm, or regulatory censure\nand penalties.\n\nSenior management of individual business segments and corporate\nfunctions are responsible for the day-to-day management of operational\nrisk following the Bank’s established operational risk framework, policies\nand the three lines of defence model. An independent risk management\noversight function supports each business segment and corporate function\nto monitor and challenge the implementation and use of the operational\nrisk management programs according to the nature and scope of the\noperational risks inherent in their area. Senior executives in each business\nsegment and corporate area participate in a Risk Management Committee\nthat oversees operational risk issues and initiatives.\n\nThe Bank seeks to actively identify, mitigate and manage operational risk\nin order to create and sustain shareholder value, successfully execute\nthe Bank’s business strategies, operate efficiently, and provide reliable,\nsecure and convenient access to financial services. The Bank maintains\na formal enterprise-wide operational risk management framework that\nemphasizes a strong risk management and internal control culture\nthroughout TD to help support operational resilience and the Bank’s ability\nto withstand disruptions.\n\nUltimately, every employee has a role to play in managing operational risk.\nIn addition to policies and procedures guiding employee activities, training\nis available to all employees regarding specific types of operational risks\nand their role in helping to protect the Bank.",
+              "similarity": 0.586,
+              "section": "Operational Risk",
+              "filing_id": "TD_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "page_end": 110,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "bank_code": "TD",
+              "file_name": "TD_2025_annual_report.pdf",
+              "page_start": 110,
+              "bank": "Toronto-Dominion Bank"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00272",
+              "text": "excluding Technology, Cybersecurity and Data\n\nTechnology, Cybersecurity and Data\n\nModel\n\nInsurance\n\nLiquidity\n\nCapital Adequacy\n\nCompliance\n\nFinancial Crime\n\nReputational\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk",
+              "similarity": 0.567,
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "file_name": "TD_2025_annual_report.pdf",
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "bank": "Toronto-Dominion Bank",
+              "page_end": 94,
+              "filing_id": "TD_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "bank_code": "TD",
+              "page_start": 94,
+              "section": "Operational Risk"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00317",
+              "text": "Operational Risk Management is an independent function that owns and\nmaintains the Bank’s Operational Risk Framework. This framework sets\nout the enterprise-wide governance processes, policies, and practices\nto identify, assess, measure, control, monitor, escalate, report, and\ncommunicate on operational risk. Operational Risk Management is\ndesigned to provide appropriate monitoring and reporting of the Bank’s\noperational risk profile and exposures to senior management through\nthe Operational Risk Oversight Committee (OROC), the Enterprise Risk\nManagement Committee (ERMC), and the Risk Committee of the Board.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nTechnology and Cybersecurity\nThe Bank leverages technology to support its operations including\nnew markets, competitive products, delivery channels, as well as other\nopportunities.",
+              "similarity": 0.56,
+              "file_name": "TD_2025_annual_report.pdf",
+              "quarter": 0,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "section": "WHO MANAGES OPERATIONAL RISK",
+              "page_start": 110,
+              "bank_code": "TD",
+              "page_end": 111,
+              "document_type": "annual_report",
+              "filing_id": "TD_2025_annual_report_FY",
+              "fiscal_year": 2025,
+              "bank": "Toronto-Dominion Bank"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00318",
+              "text": "The Operational Risk Framework aligns with the Bank’s Enterprise Risk\nFramework and risk appetite. The Framework outlines the internal\nrisk and control environment to manage operational risk and includes\nthe operational risk appetite, governance processes, and policies. The\nframework incorporates sound industry practices and is designed to meet\nregulatory requirements. Key components of the framework include:\n\nThe Bank manages technology and cybersecurity risks to support\nday-to-day operations; and protect against unauthorized access to\nthe Bank’s technology, infrastructure, systems, information, and data.\nTo enable this, the Bank monitors, manages, and continues to enhance\nits ability to mitigate these risks through enterprise-wide programs and\nthe implementation of industry-accepted technology risk and cyber threat\nmanagement practices to help support rapid detection and response.\n\nGovernance and Organization\nOperational risk governance emphasizes and balances strong\nindependent oversight with clear ownership for risk and control within\neach business segment and corporate function. Management reporting\nand organizational structures emphasize accountability, ownership,\nand effective oversight of each business segment’s and each corporate\nfunction’s operational risk exposures. In addition, the expectations of the\nRisk Committee and senior management for managing operational risk\nare set out by enterprise-wide policies and practices.\n\nThe Bank’s Platforms and Technology Risk Oversight Committee provides\nsenior executive oversight, direction and guidance regarding management\nof risks relating to technology and cybersecurity, including cyber threats,\ncyber resiliency, cyber terrorism/activism, cyber fraud, cyber extortion,\nidentity theft and data theft. This Committee endorses actions and\nmakes recommendations to the CEO and the ERMC as appropriate,\nincluding in some instances, supporting onward recommendations to\nthe Risk Committee and the Board of Directors. Together with the Bank’s\nOperational Risk Framework, technology and cybersecurity programs also\ninclude resiliency planning and testing, as well as disciplined technology\noperations practices.\n\nRisk and Control Self‐Assessment\nInternal controls are one of the primary methods of safeguarding\nthe Bank’s employees, customers, assets, and information, and in\npreventing and detecting errors and fraud. Management undertakes\ncomprehensive assessments of key risk exposures and the internal controls\nin place to reduce or offset these risks. Senior management reviews\nthe results of these assessments to assess whether management of the\nrisk and internal controls are effective, appropriate, and compliant with\nthe Bank’s policies.\n\nData Management\nThe Bank manages data risk through the Data Risk Management\nFramework which describes the governance, policies, and processes that\nTD’s business and corporate segments, including oversight functions\nemploy to help manage and govern data risk within the Bank’s risk appetite.\n\nOperational Risk Event Monitoring\nTo reduce the Bank’s exposure to future loss, the Bank must remain aware\nof and respond to its own and industry operational risks. The Bank’s\npolicies and processes require that operational risk events be identified,\ntracked, and reported to the appropriate level of management to facilitate\nthe Bank’s analysis and management of its risks and inform the assessment\nof suitable corrective and preventative action. The Bank also reviews,\nanalyzes, and benchmarks itself against operational risk losses that\nhave occurred at other institutions using information acquired through\nrecognized industry data providers.\n\nThe Bank’s data assets are governed and managed with a view to preserve\nvalue and support business objectives. Inconsistent or inadequate data\ngovernance and management practices may compromise the Bank’s\ndata and information assets which could result in financial, regulatory\nor reputational impacts. The Bank’s Enterprise Data Management Office\ndevelops and implements enterprise-wide standards and practices that\ndescribe how data and information assets should be created, used, or\nmaintained on behalf of the Bank.",
+              "similarity": 0.552,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "filing_id": "TD_2025_annual_report_FY",
+              "bank_code": "TD",
+              "document_type": "annual_report",
+              "page_end": 111,
+              "quarter": 0,
+              "page_start": 111,
+              "bank": "Toronto-Dominion Bank",
+              "file_name": "TD_2025_annual_report.pdf",
+              "section": "HOW TD MANAGES OPERATIONAL RISK",
+              "fiscal_year": 2025
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In TD's 2025 annual report, the following cybersecurity and operational risks were disclosed:\n\n1. **Operational Risk**: Defined as the risk of loss from inadequate or failed internal processes, people, systems, or external events. This includes legal risks and regulatory fines. The report emphasizes that operational risk is inherent in all business activities and can lead to financial loss, reputational harm, or regulatory penalties (TD_2025_annual_report_FY_00316).\n\n2. **Technology and Cybersecurity Risks**: The report highlights that the Bank manages technology and cybersecurity risks to protect against unauthorized access to its technology, infrastructure, systems, information, and data. It mentions the implementation of industry-accepted practices for technology risk and cyber threat management to enhance detection and response capabilities (TD_2025_annual_report_FY_00318).\n\n3. **Governance and Oversight**: The report outlines that the Platforms and Technology Risk Oversight Committee provides oversight regarding technology and cybersecurity risks, including threats like cyber terrorism, fraud, and data theft. This committee makes recommendations to senior management and the Board of Directors (TD_2025_annual_report_FY_00318).\n\nFor further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00316",
+        "text": "Operational risk is the risk of loss resulting from inadequate or failed\ninternal processes, people and systems or from external events and also\nincludes losses related to legal risk events and regulatory fines.\n\nIn addition to the framework, Operational Risk Management owns and\nmaintains, or has oversight of, the Bank’s operational risk policies including\nthose that govern business continuity and crisis management, process &\nexecution risk, third-party risk management, data risk management, fraud\nrisk management, change governance, operational resilience, technology\nand cybersecurity risk management, people risk management and insider\nrisk management.\n\nOperational risk is inherent in all of the Bank’s business activities, including\nthe practices and controls used to manage other risks such as credit,\nmarket, and liquidity risk. Failure to manage operational risk can result in\nfinancial loss (direct or indirect), reputational harm, or regulatory censure\nand penalties.\n\nSenior management of individual business segments and corporate\nfunctions are responsible for the day-to-day management of operational\nrisk following the Bank’s established operational risk framework, policies\nand the three lines of defence model. An independent risk management\noversight function supports each business segment and corporate function\nto monitor and challenge the implementation and use of the operational\nrisk management programs according to the nature and scope of the\noperational risks inherent in their area. Senior executives in each business\nsegment and corporate area participate in a Risk Management Committee\nthat oversees operational risk issues and initiatives.\n\nThe Bank seeks to actively identify, mitigate and manage operational risk\nin order to create and sustain shareholder value, successfully execute\nthe Bank’s business strategies, operate efficiently, and provide reliable,\nsecure and convenient access to financial services. The Bank maintains\na formal enterprise-wide operational risk management framework that\nemphasizes a strong risk management and internal control culture\nthroughout TD to help support operational resilience and the Bank’s ability\nto withstand disruptions.\n\nUltimately, every employee has a role to play in managing operational risk.\nIn addition to policies and procedures guiding employee activities, training\nis available to all employees regarding specific types of operational risks\nand their role in helping to protect the Bank.",
+        "similarity": 0.586,
+        "section": "Operational Risk",
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "page_end": 110,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 110,
+        "bank": "Toronto-Dominion Bank"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00272",
+        "text": "excluding Technology, Cybersecurity and Data\n\nTechnology, Cybersecurity and Data\n\nModel\n\nInsurance\n\nLiquidity\n\nCapital Adequacy\n\nCompliance\n\nFinancial Crime\n\nReputational\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk",
+        "similarity": 0.567,
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "file_name": "TD_2025_annual_report.pdf",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 94,
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "page_start": 94,
+        "section": "Operational Risk"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00317",
+        "text": "Operational Risk Management is an independent function that owns and\nmaintains the Bank’s Operational Risk Framework. This framework sets\nout the enterprise-wide governance processes, policies, and practices\nto identify, assess, measure, control, monitor, escalate, report, and\ncommunicate on operational risk. Operational Risk Management is\ndesigned to provide appropriate monitoring and reporting of the Bank’s\noperational risk profile and exposures to senior management through\nthe Operational Risk Oversight Committee (OROC), the Enterprise Risk\nManagement Committee (ERMC), and the Risk Committee of the Board.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nTechnology and Cybersecurity\nThe Bank leverages technology to support its operations including\nnew markets, competitive products, delivery channels, as well as other\nopportunities.",
+        "similarity": 0.56,
+        "file_name": "TD_2025_annual_report.pdf",
+        "quarter": 0,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "WHO MANAGES OPERATIONAL RISK",
+        "page_start": 110,
+        "bank_code": "TD",
+        "page_end": 111,
+        "document_type": "annual_report",
+        "filing_id": "TD_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "bank": "Toronto-Dominion Bank"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00318",
+        "text": "The Operational Risk Framework aligns with the Bank’s Enterprise Risk\nFramework and risk appetite. The Framework outlines the internal\nrisk and control environment to manage operational risk and includes\nthe operational risk appetite, governance processes, and policies. The\nframework incorporates sound industry practices and is designed to meet\nregulatory requirements. Key components of the framework include:\n\nThe Bank manages technology and cybersecurity risks to support\nday-to-day operations; and protect against unauthorized access to\nthe Bank’s technology, infrastructure, systems, information, and data.\nTo enable this, the Bank monitors, manages, and continues to enhance\nits ability to mitigate these risks through enterprise-wide programs and\nthe implementation of industry-accepted technology risk and cyber threat\nmanagement practices to help support rapid detection and response.\n\nGovernance and Organization\nOperational risk governance emphasizes and balances strong\nindependent oversight with clear ownership for risk and control within\neach business segment and corporate function. Management reporting\nand organizational structures emphasize accountability, ownership,\nand effective oversight of each business segment’s and each corporate\nfunction’s operational risk exposures. In addition, the expectations of the\nRisk Committee and senior management for managing operational risk\nare set out by enterprise-wide policies and practices.\n\nThe Bank’s Platforms and Technology Risk Oversight Committee provides\nsenior executive oversight, direction and guidance regarding management\nof risks relating to technology and cybersecurity, including cyber threats,\ncyber resiliency, cyber terrorism/activism, cyber fraud, cyber extortion,\nidentity theft and data theft. This Committee endorses actions and\nmakes recommendations to the CEO and the ERMC as appropriate,\nincluding in some instances, supporting onward recommendations to\nthe Risk Committee and the Board of Directors. Together with the Bank’s\nOperational Risk Framework, technology and cybersecurity programs also\ninclude resiliency planning and testing, as well as disciplined technology\noperations practices.\n\nRisk and Control Self‐Assessment\nInternal controls are one of the primary methods of safeguarding\nthe Bank’s employees, customers, assets, and information, and in\npreventing and detecting errors and fraud. Management undertakes\ncomprehensive assessments of key risk exposures and the internal controls\nin place to reduce or offset these risks. Senior management reviews\nthe results of these assessments to assess whether management of the\nrisk and internal controls are effective, appropriate, and compliant with\nthe Bank’s policies.\n\nData Management\nThe Bank manages data risk through the Data Risk Management\nFramework which describes the governance, policies, and processes that\nTD’s business and corporate segments, including oversight functions\nemploy to help manage and govern data risk within the Bank’s risk appetite.\n\nOperational Risk Event Monitoring\nTo reduce the Bank’s exposure to future loss, the Bank must remain aware\nof and respond to its own and industry operational risks. The Bank’s\npolicies and processes require that operational risk events be identified,\ntracked, and reported to the appropriate level of management to facilitate\nthe Bank’s analysis and management of its risks and inform the assessment\nof suitable corrective and preventative action. The Bank also reviews,\nanalyzes, and benchmarks itself against operational risk losses that\nhave occurred at other institutions using information acquired through\nrecognized industry data providers.\n\nThe Bank’s data assets are governed and managed with a view to preserve\nvalue and support business objectives. Inconsistent or inadequate data\ngovernance and management practices may compromise the Bank’s\ndata and information assets which could result in financial, regulatory\nor reputational impacts. The Bank’s Enterprise Data Management Office\ndevelops and implements enterprise-wide standards and practices that\ndescribe how data and information assets should be created, used, or\nmaintained on behalf of the Bank.",
+        "similarity": 0.552,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "page_end": 111,
+        "quarter": 0,
+        "page_start": 111,
+        "bank": "Toronto-Dominion Bank",
+        "file_name": "TD_2025_annual_report.pdf",
+        "section": "HOW TD MANAGES OPERATIONAL RISK",
+        "fiscal_year": 2025
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 6.0258940000785515,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0006748500000000001,
+  "input_tokens": 3199,
+  "output_tokens": 325,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.0109695999417454,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's cybersecurity and operational risks are directly supported by the actual answer context from the 2025 annual report, including specific references to operational risk, technology and cybersecurity risks, and governance oversight.",
+    "relevance_reason": "The answer directly addresses the question regarding the cybersecurity and operational risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including specific risks and governance structures mentioned in the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0010602
+}

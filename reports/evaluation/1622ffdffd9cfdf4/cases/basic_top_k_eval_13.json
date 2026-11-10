@@ -1,0 +1,135 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_13",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_13",
+    "question": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed housing and mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, CIBC disclosed several housing and mortgage credit risks, primarily related to the use of management overlays and the credit quality of its residential mortgage portfolio.\n\n1. **Management Overlays**: CIBC employs management overlays to adjust its expected credit loss (ECL) allowance estimates in situations where existing inputs and assumptions may not fully capture relevant risk factors. This includes uncertainties arising from macroeconomic or geopolitical events, changes in parameters, and internal risk rating migrations. The bank acknowledges that actual credit losses could differ significantly from its estimates due to these overlays, indicating a recognition of potential risks in the current environment [S1].\n\n2. **Credit Quality of Residential Mortgages**: As of October 31, 2025, CIBC reported a gross carrying amount of residential mortgages totaling $287.033 billion, with a breakdown across various risk levels. The bank categorized its residential mortgages into different stages based on credit risk, with a notable amount in Stage 1 (low risk) and Stage 2 (moderate risk). The ECL allowance for residential mortgages was $574 million, reflecting the bank's assessment of potential credit losses [S1].\n\n3. **Real Estate Secured Lending**: CIBC highlighted that its real estate secured personal lending, which includes residential mortgages and home equity lines of credit (HELOC), is considered lower risk compared to other retail portfolios. This is due to the first charge on most properties and the adherence to lending criteria that limit loans to a maximum of 80% of the collateral value, unless insured. However, risks remain, particularly if mortgage insurers deny claims or become insolvent [S2].\n\n4. **Regulatory Compliance**: The bank's practices are also influenced by regulatory guidelines, such as the Bank Act (Canada) and OSFI's Guideline B-20, which govern residential mortgage underwriting practices. These regulations aim to mitigate risks associated with high loan-to-value (LTV) ratios and ensure that mortgage insurers are adequately capitalized [S2].\n\nOverall, CIBC's disclosures indicate a proactive approach to managing housing and mortgage credit risks, while also acknowledging the uncertainties and potential for losses in the current economic climate.",
+    "sources": [
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00332",
+        "text": "Use of management overlays\nManagement overlays to ECL allowance estimates are adjustments which we use in circumstances where we judge that our existing inputs,\nassumptions and model techniques do not capture all relevant risk factors. The emergence of new macroeconomic or geopolitical events, along\nwith expected changes to parameters, models or data that are not incorporated in our current parameters, internal risk rating migrations, or forward-\nlooking information are examples of such circumstances. To address the significant uncertainties inherent in the current environment, we utilize\nmanagement overlays with respect to the impact of certain forward-looking information and credit metrics that are not expected to be as indicative\nof the credit condition of the portfolios as the historical experience in our models would have otherwise suggested. The use of management overlays\nrequires the application of significant judgment that impacts the amount of ECL allowances recognized. Actual credit losses could differ materially\nfrom those reflected in our estimates.\n\nThe following tables provide the gross carrying amount of loans, and the contractual amounts of undrawn credit facilities and other off-balance\nsheet exposures based on our risk management PD bands for retail exposures, and based on our internal risk ratings for business and government\nexposures. Refer to the “Credit risk” section of the MD&A for details on the CIBC risk categories.\n\nLoans(1)\n\n$ millions, as at October 31\n2025\n2024\n\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nResidential mortgages\n\n– Exceptionally low\n$\n171,983\n$\n227\n$\n–\n$\n172,210\n$\n160,515\n$\n6,130\n$\n–\n$\n166,645\n– Very low\n85,628\n\n1,171\n–\n86,799\n81,198\n5,926\n–\n87,124\n– Low\n10,987\n2,749\n–\n13,736\n10,329\n3,638\n–\n13,967\n– Medium\n1,041\n7,071\n–\n8,112\n851\n6,534\n–\n7,385\n– High\n11\n1,859\n–\n1,870\n7\n1,561\n–\n1,568\n– Default\n–\n–\n1,097\n1,097\n–\n–\n790\n790\n– Not rated\n2,808\n183\n218\n3,209\n2,757\n232\n204\n3,193\nGross residential mortgages (4)(5)\n272,458\n13,260\n1,315\n287,033\n255,657\n24,021\n994\n280,672\nECL allowance\n100\n168\n306\n574\n89\n126\n234\n449\nNet residential mortgages\n272,358\n13,092\n1,009\n286,459\n255,568\n23,895\n760\n280,223\nPersonal",
+        "similarity": 0.6466994881629944,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "page_start": 152,
+        "section": "FVOCI",
+        "page_end": 152,
+        "document_type": "annual_report",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "bank_code": "CIBC"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00151",
+        "text": "Total\n$\n406,405\n$\n67,929\n$\n25,582\n$\n20,094\n$\n22,814\n$\n542,824\n$\n504,932\n\nCredit quality of portfolios\nCredit quality of the retail portfolios\nThe following table presents the credit quality of our retail portfolios under the IRB approach.\n\n$ millions, as at October 31\n2025\n2024\n\nEAD\n\nOther\n\npersonal lending\n\nQualifying\nrevolving retail\n\nretail\n\nSME\nretail\n\nRisk level\n\nTotal\nTotal\nReal estate secured\n\n$\n57,310\n$\n3,603\n\nExceptionally low\n$\n208,494\n\n$\n395\n$\n269,802\n$\n264,361\nVery low\n73,973\n\n11,977\n3,832\n869\n90,651\n83,228\nLow\n32,030\n15,414\n7,201\n1,548\n56,193\n55,896\nMedium\n16,695\n7,840\n3,570\n990\n29,095\n28,540\nHigh\n1,286\n2,589\n1,332\n189\n5,396\n4,189\nDefault\n1,034\n\n70\n93\n64\n1,261\n957\n\nTotal\n$\n333,512\n$\n95,200\n$\n19,631\n$\n4,055\n$\n452,398\n$\n437,171\n\nReal estate secured personal lending\nReal estate secured personal lending comprises residential mortgages, and personal loans and lines secured by residential property (HELOC). This\nportfolio is lower risk compared with other retail portfolios, as we have a first charge on the majority of the properties and a second lien on only a\nsmall portion of the portfolio. We use the same lending criteria in the adjudication of both first lien and second lien loans.\n\nUnder the Bank Act (Canada), banks are limited to providing residential real estate loans of no more than 80% of the collateral value. An\nexception is made for mortgage loans with a higher LTV ratio if they are insured by either CMHC or a private mortgage insurer. Mortgage insurance\nprotects banks from the risk of default by the borrower, over the term of the coverage. Mortgage insurers are subject to regulatory capital\nrequirements, which aim to ensure that they are well capitalized. If a private mortgage insurer becomes insolvent, the Government of Canada has,\nprovided certain conditions are met, obligations in respect of policies underwritten by certain insolvent private mortgage insurers as more fully\ndescribed in the Protection of Residential Mortgage or Hypothecary Insurance Act (PRMHIA). There is a possibility that losses could be incurred in\nrespect of insured mortgages if, among other things, CMHC or the applicable private mortgage insurer denies a claim, or further, if a private\nmortgage insurer becomes insolvent and either the conditions under the PRMHIA are not met or the Government of Canada denies the claim.\n\nThe following disclosures are required by OSFI pursuant to the Guideline B-20 “Residential Mortgage Underwriting Practices and Procedures”\n(Guideline B-20).\n\nThe following table provides details on our residential mortgage and HELOC portfolios:\n\nResidential mortgages (1)(2)\nHELOC (3)\nTotal\n\n$ billions, as at October 31, 2025\n\nInsured\nUninsured\nUninsured\nInsured\nUninsured",
+        "similarity": 0.5886311531066895,
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "page_start": 73,
+        "page_end": 74,
+        "document_type": "annual_report",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "quarter": 0,
+        "section": "Management’s discussion and analysis",
+        "filing_id": "CIBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00215",
+        "text": "CIBC’s management has used the Internal Control – Integrated Framework that was published in 2013 by the COSO as the basis to evaluate\nthe effectiveness of CIBC’s internal control over financial reporting. As at October 31, 2025, management assessed the effectiveness of CIBC’s internal control over financial reporting and concluded that such\ninternal control was effective. Ernst & Young LLP, the shareholders’ auditor, has audited the consolidated financial statements of CIBC for the year ended October 31, 2025,\nand has also issued a report on internal control over financial reporting under standards of the Public Company Accounting Oversight Board\n(United States). Changes in internal control over financial reporting\nThere have been no changes in CIBC’s internal control over financial reporting during the year ended October 31, 2025, that have materially\naffected, or are reasonably likely to materially affect, its internal control.\n\nSupplementary annual financial information\n\nAverage balance sheet, net interest income and margin\n\nAverage balance (1)\nInterest\nAverage rate\n\n$ millions, for the year ended October 31\n2025\n2024\n2023\n2025\n2024\n2023 2025\n2024\n2023\n\nDomestic assets (2)\nCash and deposits with banks\n$\n12,308 $\n12,159 $\n23,261 $\n465 $\n774 $\n1,265\n3.78 % 6.37 % 5.44 %\nSecurities\n130,315\n114,317\n99,012\n5,428\n5,473\n4,629\n4.17\n4.79\n4.68\nSecurities borrowed or purchased under resale\n\nagreements\n40,434\n30,394\n30,377\n1,827\n1,691\n1,646\n4.52\n5.56\n5.42\n\nCredit card\n19,912\n18,687\n16,335\n2,804\n2,480\n2,080 14.08\n13.27\n12.73\nBusiness and government\n111,409\n103,026\n97,113\n6,099\n6,831\n5,888\n5.47\n6.63\n6.06\n\nLoans\nResidential mortgages\n277,571\n269,759\n265,871\n11,204\n12,454\n11,236\n4.04\n4.62\n4.23\nPersonal\n44,493\n43,476\n43,029\n3,124\n3,638\n3,382\n7.02\n8.37\n7.86\n\nTotal loans\n453,385\n434,948\n422,348\n23,231\n25,403\n22,586\n5.12\n5.84\n5.35\n\nOther interest-bearing assets\n6,235\n4,699\n5,556\n293\n254\n254\n4.70\n5.41\n4.57\nDerivative instruments\n13,612\n14,484\n15,569\n–\n–\n–\n–\n–\n–\nCustomers’ liability under acceptances\n11\n5,907\n11,497\n–\n–\n–\n–\n–\n–\nOther non-interest-bearing assets\n29,779\n21,076\n23,779\n–\n–\n–\n–\n–\n–\n\nTotal domestic assets\n686,079\n637,984\n631,399\n31,244\n33,595\n30,380\n4.55\n5.27\n4.81",
+        "similarity": 0.5792627930641174,
+        "page_end": 101,
+        "document_type": "annual_report",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "quarter": 0,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_start": 100,
+        "section": "Management’s discussion and analysis",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "fiscal_year": 2025,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "bank_code": "CIBC"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00420",
+        "text": "Financial institutions\n$\n48,031\n$\n36,436\n$\n7,959 $\n92,426\n$\n46,567\n$\n31,083\n$\n6,522 $\n84,172\nGovernments\n11,022\n129\n126\n11,277\n10,913\n153\n15\n11,081\nRetail\n211,289\n1,250\n684\n213,223\n199,324\n1,125\n525\n200,974\nCorporate\n85,458\n60,355\n18,144\n163,957\n80,644\n49,994\n13,546\n144,184 Total\n$\n355,800\n$\n98,170\n$\n26,913 $\n480,883\n$\n337,448\n$\n82,355\n$\n20,608 $\n440,411\n\n(1) Major assets consist of cash and deposits with banks, loans and acceptances net of allowance for credit losses, securities, securities borrowed or purchased under resale\n\nagreements, and derivative instruments.\n(2) Includes Canadian currency of $630.8 billion (2024: $596.4 billion) and foreign currencies of $432.7 billion (2024: $401.5 billion).\n(3) No industry or foreign jurisdiction accounted for 10% or more of loans and acceptances, net of allowance for credit losses, with the exception of the U.S., which accounted\n\nfor 17% as at October 31, 2025 (2024: 15%), the real estate and construction sector, which across all jurisdictions accounted for 10% as at October 31, 2025 (2024: 10%)\nand the financial institutions sector, which across all jurisdictions accounted for 10% as at October 31, 2025 (2024: 8%). Canadian residential mortgages accounted for\n48% as at October 31, 2025 (2024: 49%) of loans and acceptances, net of allowance for credit losses.\n\nSee Note 12 for derivative instruments by country and counterparty type of ultimate risk. In addition, see Note 20 for details on the client securities\nlending of the joint ventures which CIBC has with The Bank of New York Mellon.\n\nAlso see the shaded sections in “MD&A – Management of risk” for a detailed discussion on our credit risk.\n\n171 CIBC 2025 ANNUAL REPORT\n\nConsolidated financial statements\n\nNote 23\nRelated-party transactions\n\nIn the ordinary course of business, we provide banking services and enter into transactions with related parties on terms similar to those offered to\nunrelated parties. Related parties include key management personnel(1), their close family members, and entities that they or their close family\nmembers control or jointly control. Related parties also include associates and joint ventures accounted for under the equity method, and post-\nemployment benefit plans for CIBC employees. Loans to these related parties are made in the ordinary course of business and on substantially the\nsame terms as for comparable transactions with unrelated parties. As CIBC’s subsidiaries are consolidated, transactions with these entities have\nbeen eliminated and are not reported as related-party transactions. We offer a subsidy on annual fees and preferential interest rates on credit card\nbalances to senior officers, which is the same offer extended to all employees of CIBC.",
+        "similarity": 0.5689465403556824,
+        "section": "USD – CAD",
+        "page_start": 184,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "page_end": 185,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "quarter": 0,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "fiscal_year": 2025,
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "file_name": "CIBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00084",
+        "text": "50,712\n4,057\n46,811\n3,745\n\nTotal RWA\n$ 357,803\n$\n28,624\n$\n333,502\n$\n26,680\n\n(1) Refers to the minimum standard established by the BCBS before the application of the capital conservation buffer and any other capital buffers that may be established by\n\nregulators from time to time. It is calculated by multiplying RWA by 8%.\n(2) Credit risk includes CCR, which comprises derivative and repo-style transactions. Credit risk for CIBC Caribbean are calculated under the standardized approach.\n(3) Includes securitization exposures that are risk-weighted at 1250%.\n(4) Includes RWA relating to certain commercial loans which are determined using the supervisory slotting approach.\n(5) Includes residential mortgages insured by Canada Mortgage and Housing Corporation (CMHC), an agency of the Government of Canada, and government-guaranteed\n\nstudent loans.\n\nCapital initiatives\nThe following were the main capital initiatives undertaken since our 2024 Annual Report:\n\nNormal course issuer bid (NCIB)\nOn September 8, 2025, we announced that the Toronto Stock Exchange had accepted the notice of our intention to commence an NCIB. Purchases\nunder this bid will be completed upon the earlier of: (i) CIBC purchasing 20 million common shares; (ii) CIBC providing a notice of termination; or\n(iii) September 9, 2026. 3,500,000 common shares were purchased and cancelled during the fourth quarter at an average price of $112.54 for a\ntotal amount of $393 million.\n\nThe following table shows common shares purchased and cancelled under current and previously expired NCIBs.\n\n$ millions, except number of shares, as at or for the year ended October 31\n2025\n2024\nTotal\n\nNumber\nof shares\nAmount\n\nTSX approval date\n\nNumber\nof shares\nAmount\n\nNumber\nof shares\nAmount\n\nSeptember 5, 2024 (1)\n15,000,000\n$\n1,338\n5,000,000\n$\n419\n20,000,000\n$\n1,757\nSeptember 5, 2025 (2)\n3,500,000\n393\n–\n–\n3,500,000\n393\n\nTotal\n18,500,000\n$\n1,731\n5,000,000\n$\n419\n23,500,000\n$\n2,150\n\n(1) Common shares were repurchased at an average price of $87.80 under this NCIB.\n(2) Common shares were repurchased at an average price of $112.54 under this NCIB.",
+        "similarity": 0.560081422328949,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "bank_code": "CIBC",
+        "page_end": 50,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "page_start": 50,
+        "section": "Operational risk",
+        "filing_id": "CIBC_2025_annual_report_FY"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.5914156000362709
+  },
+  "latency_seconds": 6.085859199985862,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00080265,
+  "input_tokens": 3591,
+  "output_tokens": 440,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.02336170000489801,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about CIBC's housing and mortgage credit risks in the 2025 annual report are directly supported by the actual answer context, including specific figures and descriptions of risks.",
+    "relevance_reason": "The answer directly addresses the question regarding the housing and mortgage credit risks disclosed by CIBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including management overlays, credit quality, real estate secured lending, and regulatory compliance, all relevant to the specified bank and period.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0015484499999999998
+}

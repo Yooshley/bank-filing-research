@@ -1,0 +1,176 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_02",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_02",
+    "question": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk and Value-at-Risk measures; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, RBC disclosed the following market risk and Value-at-Risk (VaR) measures:\n\n1. **Market Risk Measures for FVTPL Positions** (as of October 31, 2025):\n   - **Equity:** High of $30 million, Low of $11 million, Average of $16 million.\n   - **Foreign Exchange:** High of $13 million, Low of $2 million, Average of $4 million.\n   - **Commodities:** High of $11 million, Low of $3 million, Average of $7 million.\n   - **Interest Rate:** High of $33 million, Low of $17 million, Average of $23 million.\n   - **Credit Specific:** High of $10 million, Low of $5 million, Average of $7 million.\n   - **Diversification:** Average of $(32) million (not meaningful).\n\n2. **Trading VaR:**\n   - As of October 31, 2025, the Trading VaR was $30 million, with an average of $25 million, a high of $35 million, and a low of $18 million. This represents a decrease of $4 million from the previous year, primarily due to changes in the fixed income portfolio.\n\n3. **Total VaR:**\n   - The Total VaR was $40 million, with an average of $36 million, a high of $56 million, and a low of $22 million. This reflects a significant decrease of $34 million from the previous year, attributed to the management of capital volatility related to the HSBC Canada transaction.\n\nRBC incurred no net trading losses in 2025, and the average daily trading revenue was $21 million, with the largest reported trading revenue being $50 million for the year ended October 31, 2025 [S1].",
+    "sources": [
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00137",
+        "text": "These measures are computed on all positions that are FVTPL for financial reporting purposes, with the exception of those in a\ndesignated hedging relationship and those in RBC Insurance.\n\nMarket risk measures – FVTPL positions\n\nMarket risk measures*\nTable 48\n\nOctober 31, 2025\nOctober 31, 2024\n\nFor the year ended\n\nFor the year ended\n\n(Millions of Canadian dollars)\nAs at\nAverage\nHigh\nLow\nAs at\nAverage\nHigh\nLow\n\nEquity\n$\n17 $\n16 $\n30 $\n11 $\n23 $\n14 $\n26 $\n6\nForeign exchange\n5\n4\n13\n2\n6\n5\n10\n2\nCommodities\n8\n7\n11\n3\n11\n6\n11\n4\nInterest rate (1)\n33\n23\n33\n17\n23\n30\n44\n19\nCredit specific (2)\n5\n7\n10\n5\n8\n8\n9\n7\nDiversification (3)\n(38)\n(32)\nn.m.\nn.m.\n(37)\n(34)\nn.m.\nn.m.\n\nTrading VaR\n$\n30 $\n25 $\n35 $\n18 $\n34 $\n29 $\n41 $\n20\n\nTotal VaR\n$\n40 $\n36 $\n56 $\n22 $\n34 $\n70 $ 138 $\n26\n\n*\nThis table represents an integral part of our 2025 Annual Consolidated Financial Statements.\n(1)\nGeneral credit spread risk and funding spread risk associated with uncollateralized derivatives are included under interest rate VaR.\n(2)\nCredit specific risk captures issuer-specific credit spread volatility.\n(3)\nTrading VaR is less than the sum of the individual risk factor VaR results due to risk factor diversification.\nn.m. not meaningful\n\n2025 vs. 2024\nAverage Trading VaR of $25 million decreased $4 million from last year, primarily driven by exposure changes in our fixed income\nportfolio, partially offset by exposure changes in our equity portfolio.\n\nAverage total VaR of $36 million decreased $34 million, primarily driven by the impact of management of closing capital\nvolatility related to the HSBC Canada transaction last year.\n\nThe following chart displays a bar graph of our daily trading revenue and a line graph of our daily market risk Trading VaR. We\nincurred no net trading losses in 2025.\n\nTrading revenue (teb), (1) and Trading VaR (Millions of Canadian dollars)\n\n60\n\n50\n\n40\n\n30\n\n20\n\n10\n\n0\n\n-10\n\n-20\n\n-30\n\n-40\n\nNov 1, 2024\n\nJan 31, 2025\n\nJuly 31, 2025\n\nOct 31, 2025\n\nApr 30, 2025\n\nTrading Revenue (teb) (1)\nTrading VaR\n\n(1)\nTrading revenue (teb) in the chart above excludes the impact of loan underwriting commitments.\n\n84\n\nThe following chart displays the distribution of daily trading revenue in 2025 and 2024 with no net trading losses in both years.\nThe largest reported trading revenue was $50 million with an average daily revenue of $21 million.\n\nTrading revenue for the year ended October 31, 2025 (teb), (1)\n\nFrequency in Number of Days\n\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n\n(teb), (1)\n\nDaily net trading revenue (C$ millions)\n\n2025\n2024\n\n(1)\nTrading revenue (teb) amounts in the chart above exclude the impact of loan underwriting commitments and structured entities.",
+        "similarity": 0.6001647710800171,
+        "page_start": 86,
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank": "Royal Bank of Canada",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "page_end": 87,
+        "section": "Management’s Discussion and Analysis"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00116",
+        "text": "Resulting\nimplications from failing to manage data and privacy risks could include financial loss, theft of\nintellectual property and/or confidential information, litigation, enhanced regulatory attention and\npenalties, reputational damage and damaged client and employee trust. With the proliferation of AI,\nprivacy regulators globally have begun issuing guidance around ensuring appropriate use of AI when\nprocessing personal information, in addition to guardrails around transparency and ensuring the rights\nof the individual are respected in the context of AI systems. Adherence to these guidelines and\nguardrails and trusted integration into existing privacy programs continues to be a focal area for RBC. For details on how we are managing these risks, refer to the Operational risk section. Top & emerging risks\nDescription Regulatory changes\n\nThe ongoing introduction of new or revised regulations requires enhanced focus across the organization\non meeting additional or modified regulatory requirements and expectations across the multiple\njurisdictions in which we operate. Regulatory reforms that have been implemented or are being\nimplemented across multiple jurisdictions, such as in areas of digital and operational resilience, data\nand technology reforms, including AI, cyber security, capital, anti-money laundering and consumer\nprotection continue to impact our operations and strategies. For more details, refer to the Overview of\nother risks – Legal and regulatory environment risk section.\n\nCulture and conduct risks\n\nOur Purpose, vision, values and risk management principles define RBC’s culture. We demonstrate our\nculture through our conduct – the behaviours, decisions and actions or inactions of the organization and\nour employees. Culture and conduct risks are considered top risks for the financial services industry due\nto the impact that our choices, behaviours and overall risk governance can have on outcomes for our\nclients, shareholders and other stakeholders. We embed client considerations into our decision-making\nprocesses and continue to focus on the fair treatment of clients which also aligns with regulatory\ndirection. We seek to be responsive to evolving employee needs while expecting employees to always\nact with integrity.\n\nRegulators continue to focus on conduct risks, and heightened expectations generally from regulators\ncould lead to investigations, remediation requirements, higher compliance costs and enforcement\nactions and fines, and potential criminal prosecutions or imposition of sanctions, which may involve\nprohibitions or restrictions on some of our activities. While we take steps to continue to strengthen our\nconduct practices and prevent and detect risk outcomes that are not in keeping with our responsibilities\nto our stakeholders, such outcomes may not always be prevented or detected. Additionally, RBC\ncontinues to focus efforts on enhancing and fostering a strong risk culture. A strong risk culture\nreinforces risk-aware mindsets, competencies and behaviours by promoting responsible risk-taking\ndecisions across the bank. For more details, refer to the Culture and conduct risk section.\n\nThe shaded text along with the tables specifically marked with an asterisk (*) in the following sections of the MD&A represent\nour disclosures on credit, market and liquidity and funding risks in accordance with IFRS 7, Financial Instruments: Disclosures,\nand include discussion on how we measure our risks and the objectives, policies and methodologies for managing these\nrisks. Therefore, these shaded text and marked tables represent an integral part of our 2025 Annual Consolidated Financial\nStatements.\n\nPrincipal Risks",
+        "similarity": 0.5990570783615112,
+        "bank": "Royal Bank of Canada",
+        "page_start": 74,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "fiscal_year": 2025,
+        "section": "Management’s Discussion and Analysis",
+        "page_end": 74,
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00004",
+        "text": "Source: Bloomberg, as at October 31, 2025. Please refer to\npage 26.\n8\n\u0007Beginning in fiscal 2026, the achievement of top half total shareholder returns (TSR) will no longer be a medium-term objective. TSR performance relative to peers will continue to\nbe a part of our overall evaluation of shareholder outcomes and in our compensation programs. However, we believe the achievement of our financial performance objectives is a\nbetter indication of our execution against strategic priorities.\n9\nCompound annual growth rate.\n10 Excludes Corporate Support. Royal Bank of Canada Annual Report 2025 | 3 Dear fellow shareholders,\n\nIn 2025, we advanced our position as one of the world’s\nmost trusted and successful financial institutions. Our\nperformance and strategic ambitions were a big part of\nthe story, but it’s the way we achieved our results that\ncontinues to define our success.\n\nA message from\nDave McKay,\nPresident & CEO\n\nRBC is a global team of 100,000+ colleagues who are\nunified by our Purpose: to help clients thrive and\ncommunities prosper. We strive to bring trusted advice\nand real care to every interaction — from guiding clients\nthrough major financial decisions and life moments, to\nhelping businesses and entrepreneurs bring new ideas\nto life. I receive feedback from clients all the time, and so\nmuch of it reinforces the important moments where our\npeople shape a client’s future for the better.\n\nIn a rapidly changing economy and more complex world,\nwe believe that combining personalized insights and\nadvice with global connectivity and scale is the foundation\nfor how RBC will continue to create long-term value for\nour 19+ million clients. This was at the heart of our all-\nbank Investor Day this year, where we shared our plan to\nexpand our global reach and capabilities and continue\nto transform the bank to exceed expectations for clients\nand shareholders.\n\nOur relentless client focus is shaping everything we do —\nfrom the way we’re expanding our global franchises to how\nwe’re deepening relationships and delivering value in new\nways. You’ll see that focus reflected in our 2025 results and\nthe momentum that is carrying us forward.\n\nOur 2025 results\n\nRBC is an all-weather bank, with the financial and strategic\nstrength to support our clients and deliver value to\nshareholders through all economic cycles. This year, we\ndemonstrated that by delivering exceptional financial\nresults across our businesses during a year of significant\nmacroeconomic uncertainty and market volatility.\n\nWe generated earnings of $20.4 billion and a Return on\nEquity of 16.3 per cent in 2025 as we continued to deepen\nclient relationships and build new ones across our market-\nleading franchises.\n\nIn 2025, we advanced our\nposition as one of the world’s\nmost trusted and successful\nfinancial institutions.\n“\n\nOur share price increased by 22 per cent year-over-year,\nand we returned $11.3 billion to our shareholders through\ncommon dividends and share buybacks. I’m proud that\nwe’re delivering results that our shareholders have come\nto expect, while maintaining strong governance and a\nprudent approach to risk and cost management.\n\n”\n\nWe entered the 2026 fiscal year as the 11th largest bank\nglobally and 6th largest in North America by market\n\n4 | Royal Bank of Canada Annual Report 2025\n\ncapitalization.1 Our financial strength remains one of\nour greatest advantages, underpinning our strong credit\nratings and giving us the capacity to fund future growth\nand pursue big opportunities.",
+        "similarity": 0.5668142437934875,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "page_start": 6,
+        "page_end": 7,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "bank": "Royal Bank of Canada"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00242",
+        "text": "and business\nmodel\n\n5\nRisk management organization\n65-69\n–\n6\nRisk culture\n65-69\n–\n7\nRisk in the context of our business activities\n120\n–\n8\nStress testing\n68, 83\n–\n\n110-116\n–\n\n9\nMinimum Basel III capital ratios and\n\nDomestic systemically important bank\nsurcharge\n\n10\nComposition of capital and reconciliation\n\n–\n*\n\nof the accounting balance sheet to the\nregulatory balance sheet\n\n11\nFlow statement of the movements in\n\n–\n19\n\nregulatory capital\n\nCapital adequacy\nand risk-weighted\nassets (RWA)\n\n12\nCapital strategic planning\n110-116\n–\n13\nRWA by business segments\n–\n20\n14\nAnalysis of capital requirement, and related\n\n72-76\n*\n\nmeasurement model information\n\n15\nRWA credit risk and related risk\n\n–\n*\n\nmeasurements\n\n16\nMovement of RWA by risk type\n–\n20\n17\nBasel back-testing\n67, 72-74\n31\n\n90-91, 96-97\n–\n\nQuantitative and qualitative analysis of our\n\nLiquidity\n18\n\nliquidity reserve\n\n19\nEncumbered and unencumbered assets by\n\n92, 95\n–\n\nbalance sheet category, and contractual\nobligations for rating downgrades\n\n20\nMaturity analysis of consolidated total\n\n99-100\n–\n\nFunding\n\nassets, liabilities and off-balance sheet\ncommitments analyzed by remaining\ncontractual maturity at the balance sheet\ndate\n\n21\nSources of funding and funding strategy\n92-94\n–\n\n22\nRelationship between the market risk\n\n87-88\n–\n\nmeasures for trading and non-trading\nportfolios and the balance sheet",
+        "similarity": 0.5453182458877563,
+        "section": "risk management",
+        "page_end": 138,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC",
+        "page_start": 138,
+        "quarter": 0,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00138",
+        "text": "(1)\nTrading revenue (teb) in the chart above excludes the impact of loan underwriting commitments. 84 The following chart displays the distribution of daily trading revenue in 2025 and 2024 with no net trading losses in both years. The largest reported trading revenue was $50 million with an average daily revenue of $21 million. Trading revenue for the year ended October 31, 2025 (teb), (1) Frequency in Number of Days 0\n10\n20\n30\n40\n50\n60\n70\n80\n90 (teb), (1) Daily net trading revenue (C$ millions) 2025\n2024 (1)\nTrading revenue (teb) amounts in the chart above exclude the impact of loan underwriting commitments and structured entities.\n\nMarket risk measures for assets and liabilities of RBC Insurance\nWe offer a range of insurance products to clients and hold investments to meet future obligations to policyholders. The\ninvestments which support actuarial liabilities are predominantly fixed income assets measured at FVTPL. Consequently,\nchanges in the fair values of these assets are largely offset by changes in the discount rates used in the measurement of\ninsurance and reinsurance contract assets and liabilities, and the impacts of both are reflected in Insurance investment\nresult in the Consolidated Statements of Income. As at October 31, 2025, we held assets in support of $22 billion of insurance\ncontract liabilities net of insurance contract assets and reinsurance contracts held balances (October 31, 2024 – $20 billion).\n\nMarket risk controls – Interest Rate Risk in the Banking Book (IRRBB) positions2\nIRRBB arises primarily from traditional customer-originated banking products such as deposits and loans, and includes\nrelated hedges and interest rate risk from securities held for liquidity and cash management purposes. Factors contributing\nto IRRBB include mismatches between asset and liability repricing dates, relative changes in asset and liability rates in\nresponse to market rate scenarios, and other product features affecting the expected timing of cash flows, such as options to\npre-pay loans or redeem term deposits prior to contractual maturity. IRRBB sensitivities are regularly measured and\nreported, and subject to limits and controls with independent oversight from GRM.\n\nThe Board approves the risk appetite for IRRBB, and the Asset Liability Committee (ALCO) and GRM provide ongoing\ngovernance through IRRBB risk policies, limits, operating standards and other controls. IRRBB reports are reviewed regularly\nby GRM, ALCO, the GRC, the Risk Committee of the Board and the Board.\n\nIRRBB measurement\nTo monitor and control IRRBB, we assess two primary metrics, Net Interest Income (NII) risk and Economic Value of Equity\n(EVE) risk, under a range of market shocks, scenarios and time horizons. Market scenarios include currency-specific parallel\nand non-parallel yield curve changes, interest rate volatility shocks and interest rate scenarios prescribed by regulators.",
+        "similarity": 0.5869883298873901,
+        "document_type": "annual_report",
+        "page_start": 87,
+        "page_end": 87,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank_code": "RBC",
+        "quarter": 0,
+        "fiscal_year": 2025
+      }
+    ],
+    "structured": {
+      "answer": "In its 2025 annual report, RBC disclosed the following market risk and Value-at-Risk (VaR) measures:\n\n1. **Market Risk Measures for FVTPL Positions** (as of October 31, 2025):\n   - **Equity:** High of $30 million, Low of $11 million, Average of $16 million.\n   - **Foreign Exchange:** High of $13 million, Low of $2 million, Average of $4 million.\n   - **Commodities:** High of $11 million, Low of $3 million, Average of $7 million.\n   - **Interest Rate:** High of $33 million, Low of $17 million, Average of $23 million.\n   - **Credit Specific:** High of $10 million, Low of $5 million, Average of $7 million.\n   - **Diversification:** Average of $(32) million (not meaningful).\n\n2. **Trading VaR:**\n   - As of October 31, 2025, the Trading VaR was $30 million, with an average of $25 million, a high of $35 million, and a low of $18 million. This represents a decrease of $4 million from the previous year, primarily due to changes in the fixed income portfolio.\n\n3. **Total VaR:**\n   - The Total VaR was $40 million, with an average of $36 million, a high of $56 million, and a low of $22 million. This reflects a significant decrease of $34 million from the previous year, attributed to the management of capital volatility related to the HSBC Canada transaction.\n\nRBC incurred no net trading losses in 2025, and the average daily trading revenue was $21 million, with the largest reported trading revenue being $50 million for the year ended October 31, 2025 [S1].",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        },
+        {
+          "label": "S2",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        },
+        {
+          "label": "S3",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "risk management",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.8409293999429792
+  },
+  "latency_seconds": 10.872701199958101,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00088005,
+  "input_tokens": 3631,
+  "output_tokens": 559,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.03507890005130321,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about RBC's market risk and Value-at-Risk measures are directly supported by the actual answer context, including specific figures and descriptions for the fiscal year 2025.",
+    "relevance_reason": "The answer directly addresses the question regarding market risk and Value-at-Risk measures disclosed by RBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all requested aspects, including specific market risk measures and Value-at-Risk figures for RBC for the year 2025, with no omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00149625
+}

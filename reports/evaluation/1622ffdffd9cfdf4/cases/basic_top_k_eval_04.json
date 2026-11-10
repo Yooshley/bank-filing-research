@@ -1,0 +1,135 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_04",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_04",
+    "question": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed cybersecurity and operational risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, TD disclosed several cybersecurity and operational risks:\n\n1. **Cybersecurity Risks**: TD highlighted the evolving threat environment related to cyber-attacks and data security breaches. The Bank acknowledged that despite regular reviews and enhancements to its controls and response capabilities, it may still experience losses or damages from such attacks. The sophistication of threat actors and the rapid changes in their tactics pose ongoing challenges. Additionally, the Bank's reliance on technologies like cloud computing, AI, and automation necessitates continuous investment to manage these risks effectively [S2].\n\n2. **Operational Risks**: The report indicated that TD's operations could be affected by various factors, including human error, natural disasters, utility disruptions, pandemics, and malicious insider actions. Such disruptions could limit the Bank's ability to deliver services and damage its reputation, potentially leading to financial losses. The Bank also noted that its investments in technology and cyber infrastructure might not be sufficient to meet regulatory expectations or avoid operational errors [S2].\n\n3. **Insider Risk**: There is a risk associated with individuals who misuse their authorized access to the Bank's systems and information. This could lead to data breaches, fraud, and operational disruptions. The report emphasized that despite investments in insider risk management, the risk of insider fraudulent activity remains [S3].\n\n4. **Data Risk**: The increased use of data analytics and automation has heightened the risks associated with data integrity, quality, and privacy. Effective controls are necessary to mitigate these risks and maintain trust with customers and regulators [S3].\n\n5. **Model Risk**: The potential for adverse consequences from decisions based on incorrect or misused models was also noted. The Bank is aware that geopolitical events could impact model performance, and while mitigants have been identified, there is no guarantee that they will adequately improve predictiveness [S3].\n\nOverall, TD's 2025 annual report reflects a comprehensive approach to identifying and managing cybersecurity and operational risks, acknowledging the complexities and challenges inherent in the current environment.",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00272",
+        "text": "excluding Technology, Cybersecurity and Data\n\nTechnology, Cybersecurity and Data\n\nModel\n\nInsurance\n\nLiquidity\n\nCapital Adequacy\n\nCompliance\n\nFinancial Crime\n\nReputational\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk",
+        "similarity": 0.5244146585464478,
+        "quarter": 0,
+        "page_start": 94,
+        "bank_code": "TD",
+        "page_end": 94,
+        "section": "Operational Risk",
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00251",
+        "text": "Schwab IDA Agreement Exposes the Bank to Certain Risks\nThe Bank has an insured deposit account agreement with Schwab and\nit may be affected by actions taken by Schwab, or if Schwab does not\nperform its obligations, pursuant to the Schwab IDA Agreement (as\nfurther described in the “Financial Results Overview” section of this\ndocument). Although the Schwab IDA Agreement requires Schwab to\nmake certain payments to the Bank to compensate it for specific instances\nof non-performance by Schwab, if Schwab does not make such payments,\nthe Bank’s financial results would be impacted including from a loss\nof revenues, a potential increase in the cost of funding to replace the\ndeposits, and losses primarily related to hedging.\n\nThe Bank regularly reviews external events and assesses, and may enhance,\nits controls and response capabilities as it considers necessary to help\nmitigate against the risk of cyber-attacks or data security or other breaches\nin response to the evolving threat environment, but these activities may\nnot mitigate all risks, and the Bank may experience loss or damage arising\nfrom such attacks or breaches. As a result, the industry and the Bank are\nsusceptible to experiencing potential financial and non-financial loss and/or\nharm from these attacks or breaches. The adoption of certain technologies,\nsuch as cloud computing, AI, machine learning, robotics, and process\nautomation call for continued focus and investment to manage the Bank’s\nrisks. It is possible that the Bank, or those with whom the Bank does\nbusiness, have not anticipated or implemented or may not anticipate or\nimplement effective measures against all such cyber and technology-related\nrisks, particularly because the tactics, techniques, and procedures used by\nthreat actors change frequently and risks can originate from a wide variety\nof sources that have also become increasingly sophisticated.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nFurthermore, the Bank’s owned and operated applications, platforms,\nnetworks, processes, products, and services could be subject to failures\nor disruptions, or non-compliance with regulations as a result of human\nerror, natural disasters, utility or infrastructure disruptions, pandemics or\nother public health emergencies, malicious insiders or service providers,\ncyber-attacks or other criminal or terrorist acts, which may impact\nthe Bank’s operations. Such adverse effects could limit the Bank’s ability\nto deliver products and services to customers, and/or damage the Bank’s\nreputation, which in turn could lead to financial loss. Cyber insurance\nproviders continue to be concerned about systemic cyber risk, causing\ncoverage term changes across the industry. This has the potential to\nimpact the Bank’s ability to mitigate risks through cyber insurance and may\nlimit the amount of coverage available for financial losses.\n\nThe Bank’s investments in its technology and cyber infrastructure, including\nthe investment in its risk and control environment, may be inadequate to\nmeet regulatory expectations, remain competitive, serve clients effectively,\nand avoid business disruptions or operational errors.",
+        "similarity": 0.5234667062759399,
+        "bank_code": "TD",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 88,
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "section": "TOP AND EMERGING RISKS",
+        "page_start": 87,
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00253",
+        "text": "In addition to the risk of material loss\n(financial loss, misappropriation of confidential information or other assets\nof the Bank or its customers and counterparties) that could result from\nexternal fraud activity, the Bank could face legal action and customer and\nmarket confidence in the Bank could be impacted by external fraud activity. Data use cases have increased due to process automation and greater\nreliance on analytics and business intelligence to support decision-making. There are heightened risks and expectations for managing integrity and\nquality of customer data and privacy. This risk highlights the importance of\neffective controls to mitigate data risk and build and maintain the trust of\nour customers, shareholders, and regulators. Data risk spans broadly across\nmultiple risk categories and business segments and typically arises out of\noperational risks such as technology, cybersecurity, AI, fraud, third-party,\nmodel, people and process risks.\n\nInsider Risk\nInsider risk is the risk associated with an individual who has, or had,\nauthorized access to TD’s people, processes, technology, information, and\nfacilities who intentionally or recklessly misuses their access, knowledge,\nor authority for improper, unlawful or unethical activities that could\nnegatively affect the Bank including employees or customers.\n\nTD’s investments to improve its risk and control environment, modernize\nits data and technology, and operating model changes to further enhance\ndata management and protection may be insufficient to meet regulatory\nexpectations, remain competitive, serve clients effectively, and avoid\nbusiness disruptions or operational errors.\n\nThe financial industry continues to observe an increased number of insider\nrisk cases, leading to new or emerging threats. These cases may lead to\ndata or privacy breaches, intellectual property theft, fraud, operational\ndisruptions, and regulatory and compliance risks.\n\nModel Risk\nModel Risk is the potential for adverse consequences arising from\ndecisions based on incorrect or misused models and their outputs. Model\nuncertainty remains due to geopolitical events that could impact model\nperformance (i.e., data used to calibrate models is not reflective of current\nenvironment and structural economic changes). Short- and long-term\nmitigants have been identified and executed to help improve resilience\nof models trained on historical data; however, management’s efforts to\nassess and update models may not adequately or successfully improve the\npredictiveness of such models.\n\nThe Bank closely monitors the internal threat environment across all\ntypologies and continues to invest in TD’s insider risk management\nprogram, both in the first line preventative, detective and resolution\ntools and process, as well as in the second line oversight activity.\nNotwithstanding these investments, the risk of insider fraudulent activity\nis not fully mitigated and the Bank could be exposed to potential adverse\nregulatory, financial, operational, legal, and reputational impacts and\nlosses as a result of insider events.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nConduct Risk\nConduct risk is the risk arising from employee conduct or business\npractices causing unfair outcomes to persons to whom we offer or sell\nour products or services, or harm to market integrity. Conduct risk may\narise from the failure to comply with laws, regulatory requirements and\nstandards, or the TD Code of Conduct and Ethics.",
+        "similarity": 0.5177257061004639,
+        "page_end": 89,
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf",
+        "quarter": 0,
+        "bank": "Toronto-Dominion Bank",
+        "section": "TOP AND EMERGING RISKS",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "fiscal_year": 2025,
+        "page_start": 88,
+        "filing_id": "TD_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00639",
+        "text": "In\naddition, some actions seek very large or indeterminate damages. Based\non the Bank’s current knowledge, and subject to the factors listed above\nas well as other uncertainties inherent in litigation and regulatory matters,\nother than as described below, since October 31, 2025, no other legal\nor regulatory matter has arisen or progressed to the point that it would\nreasonably be expected to result in a material financial impact to the Bank. TD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nthe Bank, its affiliates, or their employees that may be a violation of U.S.\nfederal law. The Bank is focused on meeting the terms of the consent\norders and plea agreements, including meeting its requirements to\nremediate the Bank’s U.S. BSA/AML compliance programs. During the first\nfiscal quarter of 2025, the Bank fully paid the remainder of the monetary\npenalty owed pursuant to the consent orders and plea agreements that\nwere entered into as part of the Global Resolution. The payment was\ncovered by provisions previously taken by the Bank for this matter.\n\n(DPA) with the U.S. DOJ related to the actions of a former TDS trader.\nPursuant to the terms of the DPA, TDS-US agreed to pay total monetary\nsanctions of approximately US$15.5 million, which consists of a criminal\npenalty, forfeiture and victim compensation. TDS-US and, in certain\ninstances, TD Group US Holdings LLC, further agreed to abide by certain\ncooperation, reporting and compliance obligations in connection with\nthe DPA. These include, but are not limited to: (i) an ongoing obligation\nto cooperate with DOJ investigations; (ii) an ongoing obligation to report\nevidence or allegations of violations by TDS-US of certain federal statutes;\n(iii) the implementation and maintenance of a corporate compliance\nprogram that meets certain enumerated standards; and (iv) an ongoing\nobligation to regularly report to the DOJ on its efforts to bolster its\ncompliance program. TDS-US also resolved investigations by the U.S.\nSecurities and Exchange Commission (SEC) and the Financial Industry\nRegulatory Authority (FINRA) relating to the actions of the former TDS-US\ntrader. As part of the resolutions, TDS-US agreed to pay approximately\nUS$7 million in total monetary sanctions to the SEC and US$6 million\nto FINRA.",
+        "similarity": 0.5083996653556824,
+        "bank_code": "TD",
+        "section": "PROVISIONS, CONTINGENT LIABILITIES, COMMITMENTS, GUARANTEES, PLEDGED ASSETS, AND COLLATERAL",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "page_start": 229,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 230,
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00010",
+        "text": "8.3 4.72 2024 2023\n2025 2023\n2024\n2025 2023\n2024\n2025 Dividend History Balance Sheet and\nCapital Position $4.20 2 (as at October 31, 2025) ~8% Annualized Growth $2.1 trillion $2.16 Assets $1.3 trillion Deposits 2025\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024 169-year 4.6% 25.9% 3 14.7% Total Shareholder Return 3 (5-year CAGR4) Continuous\nDividend History 2025 Dividend\nYield CET1 Ratio5\n\n1 Adjusted results are non-GAAP financial measures. Refer to “Non-GAAP and Other Financial Measures” in the “Financial Results Overview” section of the\n\n2025 Management’s Discussion and Analysis (MD&A).\n2 10-year CAGR is the compound annual growth rate calculated from 2015 to 2025.\n3 For additional information about this metric, refer to the Glossary in the 2025 MD&A.\n4 5-year CAGR is the compound annual growth rate calculated from 2020 to 2025.\n5 This measure has been calculated in accordance with OSFI’s Capital Adequacy Requirements and Liquidity Adequacy Requirements guidelines.\n\nTD BANK GROUP ANNUAL REPORT 2025\n\nManaging Risk\nat TD\n\nTD’s Risk Appetite\n\nA Closer Look: Progress\non TD’s Anti-Money\nLaundering (AML) Program\n\nIn 2025, TD stayed focused on delivering\nagainst its top priority, advancing\nremediation efforts and strengthening\nits AML program across the Bank.\n\nKey achievements on the remediation\nof TD’s U.S. AML program include:\n\nWe take risks required to build our business,\nbut only if those risks:\n1\n\nFit our business strategy\nand can be understood\nand managed.\n2\nDo not expose the enterprise to\n\n• Continued strengthening\nleadership and talent.\n\n• Enhanced client onboarding\nprocedures and strengthened\ncash deposit requirements.\n\nthe TD brand.\n\nany significant single loss events;\nTD does not “bet the bank” on any\nsingle acquisition, business, product\nor decision.\n3\nDo not risk harming\n\n• Improved investigative procedures\nwith updated guidelines and\nstreamlined workflow.\n\nTD’s Risk Culture\n\n• Implemented role-based targeted\ntraining and enhanced Bank-wide\ngeneral training to reinforce\nunderstanding and accountability.\n\n• Deployed a new transaction\nmonitoring platform with enhanced\nscenario coverage and capabilities.\n\nA strong risk culture is fundamental to TD’s success.\nIt shapes how the Bank seizes opportunities, navigates\nchallenges and maintains its focus on the future.\nDoing the right thing is at the heart of our risk culture\nand reflects who we are as a Bank.\n\n• Implemented specialized artificial\nintelligence (AI) and machine\nlearning capabilities.\n\n• Continued making progress on\nlookback reviews.\n\nThe Bank fosters an environment where colleagues\nfeel empowered to take ownership, escalate\nissues and continuously build their risk knowledge.\nEvery day, TD colleagues across the enterprise do\nthe right thing and Own it, Raise it and Know it.\n\nThese behaviours underpin a strong risk culture\nand are critical to achieving our vision, remaining\nsuccessful in a complex and competitive operating\nenvironment and driving better outcomes for\nclients, colleagues and communities.",
+        "similarity": 0.5010751485824585,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "file_name": "TD_2025_annual_report.pdf",
+        "section": "Notes to Consolidated Financial Statements",
+        "page_end": 9,
+        "page_start": 8,
+        "bank_code": "TD",
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "fiscal_year": 2025
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 1.4909331999951974
+  },
+  "latency_seconds": 6.874499799916521,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0006807,
+  "input_tokens": 2918,
+  "output_tokens": 405,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.07478230004198849,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's cybersecurity and operational risks in the 2025 annual report are supported by the actual answer context, including specific risks mentioned and the correct bank and year.",
+    "relevance_reason": "The answer directly addresses the question regarding the cybersecurity and operational risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including multiple types of risks and their implications as disclosed in the report.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00129105
+}

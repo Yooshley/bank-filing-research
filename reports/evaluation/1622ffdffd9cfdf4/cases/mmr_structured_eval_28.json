@@ -1,0 +1,143 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_28",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_28",
+    "question": "Did the bank improve its risk profile?",
+    "question_type": "edge",
+    "banks": [],
+    "risk": "ambiguous",
+    "scopes": [],
+    "expected_behavior": "Ask which bank and period; do not pick an arbitrary bank or claim improvement.",
+    "reference_query": "Did the bank improve its risk profile?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "Yes, the Toronto-Dominion Bank improved its risk profile by updating its Enterprise Risk Framework in the third quarter of 2025. This included elevating Financial Crime Risk to a stand-alone Major Risk Category and dividing Operational Risk into two distinct categories. Additionally, a new Executive Committee was formed to oversee enforcement commitments and progress on required remediations, indicating a proactive approach to risk management and governance [S1].",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_quarterly_Q3_00095",
+        "text": "Growing profitability in financial results based on balanced revenue, expense and capital growth services involves selectively taking and managing risks within the\nBank’s risk appetite. The Bank’s goal is to earn a stable and sustainable rate of return for every dollar of risk it takes, while putting significant emphasis on\ninvesting in its businesses to meet its future strategic objectives.\n\nThe Bank’s businesses and operations are exposed to a broad number of risks that have been identified and defined in the Enterprise Risk Framework. The\nBank’s tolerance to those risks is defined in the Enterprise Risk Appetite which has been developed within a comprehensive framework that takes into\nconsideration current conditions in which the Bank operates and the impact that emerging risks will have on TD’s strategy and risk profile. The Bank’s risk appetite\nstates that it takes risks required to build its business, but only if those risks: (1) fit the business strategy and can be understood and managed; (2) do not expose\nthe enterprise to any significant single loss events; TD does not ‘bet the bank’ on any single acquisition, business, product or decision; and (3) do not risk harming\nthe TD brand. Each business is responsible for setting and aligning its individual risk appetites with that of the enterprise based on a thorough examination of the\nspecific risks to which it is exposed.\n\nThe Bank considers it critical to regularly assess its operating environment and highlight top and emerging risks. These are risks with a potential to have a\nmaterial effect on the Bank and where the attention of senior leaders is focused due to the potential magnitude or immediacy of their impact.\n\nRisks are identified, discussed, and actioned by senior leaders and reported quarterly to the Risk Committee. Specific plans to mitigate top and emerging risks\nare prepared, monitored, and adjusted as required.\n\nThe Bank’s risk governance structure and risk management approach have not substantially changed from that described in the Bank’s 2024 MD&A. In the third\nquarter of 2025, the Bank updated its Enterprise Risk Framework and made the following changes to better reflect the Bank’s priorities and structure:\n\n•\nFinancial Crime Risk was elevated to a stand-alone Major Risk Category (previously part of Legal and Regulatory Compliance Risk)\n\n•\nOperational Risk was divided into two Major Risk Categories, 1) Operational Risk – Data, Technology and Cybersecurity and 2) Operational\n\nRisk excluding Data, Technology and Cybersecurity\n\n•\nThe Bank also convened a new Executive Committee, the Remediation Subcommittee of the Enterprise Risk Management Committee, dedicated to\noverseeing the Bank’s enforcement commitments and progress on required remediations.\nThese changes resulted in two new Major Risk Categories and updates to the definitions as noted below:\n\nMajor Risk Categories\n\nStrategic\n\nRisk\n\nCredit\n\nRisk\n\nMarket\n\nRisk",
+        "similarity": 0.6945408582687378,
+        "fiscal_year": 2025,
+        "section": "EXECUTIVE SUMMARY",
+        "page_end": 35,
+        "bank_code": "TD",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q3/q3-2025-report-to-shareholders-en.pdf",
+        "filing_id": "TD_2025_quarterly_Q3",
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 3,
+        "page_start": 34,
+        "file_name": "TD_2025_Q3_quarterly.pdf",
+        "document_type": "quarterly"
+      },
+      {
+        "chunk_id": "BNS_2024_quarterly_Q3_00074",
+        "text": "The Bank’s risk management policies and practices have not substantially changed from those outlined in the Bank’s 2023 Annual Report. For a\ncomplete discussion of the risk management policies and practices and additional information on risk factors, refer to the “Risk Management” section\nin the 2023 Annual Report.\n\n36 Scotiabank Third Quarter Report 2024\n\nSignificant developments that took place during this quarter are as follows:",
+        "similarity": 0.6401997208595276,
+        "fiscal_year": 2024,
+        "quarter": 3,
+        "filing_id": "BNS_2024_quarterly_Q3",
+        "section": "Risk Management",
+        "bank": "Bank of Nova Scotia",
+        "file_name": "BNS_2024_Q3_quarterly.pdf",
+        "bank_code": "BNS",
+        "page_start": 36,
+        "page_end": 37,
+        "document_type": "quarterly",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q3/Q324_Shareholders_Report-EN.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00314",
+        "text": "|\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nEVE Sensitivity1,2\nNII Sensitivity1,2,3\nEVE Sensitivity1\nNII Sensitivity1,3\n\nCanadian\n\nCanadian\n\ndollar4\n\nU.S.\ndollar\nTotal\n\ndollar4\n\nU.S.\ndollar\nTotal\nTotal\nTotal\n\nBefore‐tax impact of\n\n100 bps increase in rates\n$ (957)\n$ (1,558)\n$ (2,515)\n$ 400\n$ 390\n$ 790\n$ (2,489)\n$ 720\n100 bps decrease in rates\n865\n1,227\n2,092\n(441)\n(419)\n(860)\n1,914\n(983)\n\n1 Does not include exposures from Wholesale Banking.\n\n3 Represents the twelve-month NII exposure to an immediate and sustained shock in\nrates, and may include adjustments for non-recurring items.\n\n4 Includes other currency exposures.\n\n2 Effective July 31, 2025, the sensitivity measures are reported by currency to better\ndifferentiate NIIS to movements in underlying rates.\n\nthe Bank’s NII of $860 million, a decrease of $123 million from last year.\nThe year-over-year increase in EVE Sensitivity is primarily attributed to\nan increase in net fixed rate assets held, commensurate with growth in\nbook capital. Year-over-year changes in NII Sensitivity are largely related\nto Treasury hedging alongside marginal changes in product mix. As\nat October 31, 2025, reported EVE and NII Sensitivities remain within\nthe Bank’s risk appetite and established Board limits.\n\nAs at October 31, 2025, an immediate and sustained 100 bps increase\nin interest rates would have a negative impact to the Bank’s EVE of\n$2,515 million, an increase of $26 million from last year, and a positive\nimpact to the Bank’s NII of $790 million, an increase of $70 million\nfrom last year. An immediate and sustained 100 bps decrease in interest\nrates would have a positive impact to the Bank’s EVE of $2,092 million,\nan increase of $178 million from last year, and a negative impact to\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nManaging Non‐trading Foreign Exchange Risk\nForeign exchange risk refers to losses that could result from changes\nin foreign-currency exchange rates. Assets and liabilities that are\ndenominated in foreign currencies create foreign exchange risk.\n\nthat are in excess of loan balances; (2) to provide a sufficient pool of\nliquid assets to meet deposit and loan fluctuations and overall liquidity\nmanagement objectives; (3) to provide eligible securities to meet collateral\nand cash management requirements; and (4) to manage the target interest\nrate risk profile of the balance sheet. The Risk Committee reviews and\napproves the Enterprise Investment Policy that sets out limits for the Bank’s\ninvestment portfolio. In addition, the Wholesale Banking and Insurance\nbusinesses also hold investments that are managed separately.\n\nThe Bank is exposed to non-trading foreign exchange risk primarily from\nits investments in foreign operations. When the Bank’s foreign currency\nassets are greater or less than its liabilities in that currency, they create a\nforeign currency open position. An adverse change in foreign exchange\nrates can impact the Bank’s reported net income and shareholders’ equity,\nand its capital ratios.\n\nthat are in excess of loan balances; (2) to provide a sufficient pool of\nliquid assets to meet deposit and loan fluctuations and overall liquidity\nmanagement objectives; (3) to provide eligible securities to meet collateral\nand cash management requirements; and (4) to manage the target interest\nrate risk profile of the balance sheet. The Risk Committee reviews and\napproves the Enterprise Investment Policy that sets out limits for the Bank’s\ninvestment portfolio. In addition, the Wholesale Banking and Insurance\nbusinesses also hold investments that are managed separately. The Bank is exposed to non-trading foreign exchange risk primarily from\nits investments in foreign operations. When the Bank’s foreign currency\nassets are greater or less than its liabilities in that currency, they create a\nforeign currency open position. An adverse change in foreign exchange\nrates can impact the Bank’s reported net income and shareholders’ equity,\nand its capital ratios.\n\nTo minimize the impact of an adverse foreign exchange rate change on\ncertain capital ratios, the Bank’s net investments in foreign operations are\nhedged so that changes in certain capital ratios fall within risk appetite,\nin response to movement in foreign exchange rates. The Bank does\nnot generally hedge the earnings of foreign subsidiaries which results\nin changes to the Bank’s consolidated earnings when relevant foreign\nexchange rates change.",
+        "similarity": 0.634688138961792,
+        "file_name": "TD_2025_annual_report.pdf",
+        "bank_code": "TD",
+        "section": "STRUCTURAL INTEREST RATE SENSITIVITY MEASURES",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 110,
+        "document_type": "annual_report",
+        "filing_id": "TD_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "page_start": 109
+      },
+      {
+        "chunk_id": "TD_2024_annual_report_FY_00325",
+        "text": "The Bank is also exposed to market risk arising from its investment\nportfolio and other non-trading portfolios. Risk Management reviews\nand approves policies and procedures, which are established to monitor,\nmeasure, and mitigate these risks.",
+        "similarity": 0.6482858657836914,
+        "quarter": 0,
+        "section": "MARKET RISK IN OTHER WHOLESALE BANKING ACTIVITIES",
+        "file_name": "TD_2024_annual_report.pdf",
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2024,
+        "filing_id": "TD_2024_annual_report_FY",
+        "bank_code": "TD",
+        "page_end": 110,
+        "page_start": 110,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q4/2024-annual-report-en.pdf",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BNS_2024_quarterly_Q2_00006",
+        "text": "By their very nature, forward-looking statements require us to make assumptions and are subject to inherent risks and uncertainties, which give rise\nto the possibility that our predictions, forecasts, projections, expectations or conclusions will not prove to be accurate, that our assumptions may not\nbe correct and that our financial performance objectives, vision and strategic goals will not be achieved. We caution readers not to place undue reliance on these statements as a number of risk factors, many of which are beyond our control and effects\nof which can be difficult to predict, could cause our actual results to differ materially from the expectations, targets, estimates or intentions expressed\nin such forward-looking statements.\n\nThe future outcomes that relate to forward-looking statements may be influenced by many factors, including but not limited to: general economic and\nmarket conditions in the countries in which we operate and globally; changes in currency and interest rates; increased funding costs and market volatility due\nto market illiquidity and competition for funding; the failure of third parties to comply with their obligations to the Bank and its affiliates; changes in monetary,\nfiscal, or economic policy and tax legislation and interpretation; changes in laws and regulations or in supervisory expectations or requirements, including\ncapital, interest rate and liquidity requirements and guidance, and the effect of such changes on funding costs; geopolitical risk; changes to our credit ratings;\nthe possible effects on our business of war or terrorist actions and unforeseen consequences arising from such actions; technological changes and technology\nresiliency; operational and infrastructure risks; reputational risks; the accuracy and completeness of information the Bank receives on customers and\ncounterparties; the timely development and introduction of new products and services, and the extent to which products or services previously sold by the\nBank require the Bank to incur liabilities or absorb losses not contemplated at their origination; our ability to execute our strategic plans, including the\nsuccessful completion of acquisitions and dispositions, including obtaining regulatory approvals; critical accounting estimates and the effect of changes to\naccounting standards, rules and interpretations on these estimates; global capital markets activity; the Bank’s ability to attract, develop and retain key\nexecutives; the evolution of various types of fraud or other criminal behaviour to which the Bank is exposed; anti-money laundering; disruptions or attacks\n(including cyberattacks) on the Bank’s information technology, internet connectivity, network accessibility, or other voice or data communications systems or\nservices; which may result in data breaches, unauthorized access to sensitive information, and potential incidents of identity theft; increased competition in\nthe geographic and in business areas in which we operate, including through internet and mobile banking and non-traditional competitors; exposure related\nto significant litigation and regulatory matters; climate change and other environmental and social risks, including sustainability that may arise, including from\nthe Bank’s business activities; the occurrence of natural and unnatural catastrophic events and claims resulting from such events; inflationary pressures;\nCanadian housing and household indebtedness; the emergence or continuation of widespread health emergencies or pandemics, including their impact on\nthe global economy, financial market conditions and the Bank’s business, results of operations, financial condition and prospects; and the Bank’s anticipation\nof and success in managing the risks implied by the foregoing. A substantial amount of the Bank’s business involves making loans or otherwise committing\nresources to specific companies, industries or countries. Unforeseen events affecting such borrowers, industries or countries could have a material adverse\neffect on the Bank’s financial results, businesses, financial condition or liquidity. These and other factors may cause the Bank’s actual performance to differ\nmaterially from that contemplated by forward-looking statements. The Bank cautions that the preceding list is not exhaustive of all possible risk factors and\nother factors could also adversely affect the Bank’s results, for more information, please see the “Risk Management” section of the Bank’s 2023 Annual\nReport, as may be updated by quarterly reports.",
+        "similarity": 0.6389769315719604,
+        "page_end": 3,
+        "quarter": 2,
+        "bank": "Bank of Nova Scotia",
+        "section": "Credit Risk",
+        "filing_id": "BNS_2024_quarterly_Q2",
+        "file_name": "BNS_2024_Q2_quarterly.pdf",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q2/Q224_Shareholders_Report-EN.pdf",
+        "page_start": 3,
+        "document_type": "quarterly",
+        "bank_code": "BNS",
+        "fiscal_year": 2024
+      }
+    ],
+    "structured": {
+      "answer": "Yes, the Toronto-Dominion Bank improved its risk profile by updating its Enterprise Risk Framework in the third quarter of 2025. This included elevating Financial Crime Risk to a stand-alone Major Risk Category and dividing Operational Risk into two distinct categories. Additionally, a new Executive Committee was formed to oversee enforcement commitments and progress on required remediations, indicating a proactive approach to risk management and governance [S1].",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Toronto-Dominion Bank",
+          "document": "quarterly",
+          "section": "EXECUTIVE SUMMARY",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.04651529993861914
+  },
+  "latency_seconds": 2.349868399905972,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00052905,
+  "input_tokens": 3007,
+  "output_tokens": 130,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.02321230003144592,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 2,
+    "relevance": 2,
+    "completeness": 2,
+    "faithfulness_reason": "The claim that the Toronto-Dominion Bank improved its risk profile is not fully supported by the evidence provided. While the update to the Enterprise Risk Framework is mentioned, the context does not explicitly state that this constitutes an improvement in the risk profile, leading to a material unsupported claim.",
+    "relevance_reason": "The answer does not directly address the question of whether the bank improved its risk profile in a clear manner, as it assumes improvement without sufficient evidence or context to support that conclusion.",
+    "completeness_reason": "The answer lacks a comprehensive overview of the bank's risk profile changes and does not provide a balanced view of the risks involved, leading to substantial omissions in addressing the question.",
+    "unsupported_claims": [
+      "The bank improved its risk profile without sufficient evidence to support this claim.",
+      "The assertion of a proactive approach to risk management is not substantiated by the evidence provided."
+    ],
+    "reference_limitations": "The reference packet does not provide exhaustive evidence to confirm the claims made in the answer."
+  },
+  "judge_cost_usd": 0.0007438499999999999
+}

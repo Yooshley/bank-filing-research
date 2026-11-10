@@ -1,0 +1,220 @@
+[
+  {
+    "id": "q01",
+    "query": "What credit risks and provisions for credit losses did RBC report in 2025?",
+    "bank_code": "RBC",
+    "fiscal_year": 2025,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "RBC"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2025
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q02",
+    "query": "What market risks and Value-at-Risk measures did RBC disclose in 2024?",
+    "bank_code": "RBC",
+    "fiscal_year": 2024,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "RBC"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2024
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q03",
+    "query": "What cybersecurity and operational risks did TD disclose in 2025?",
+    "bank_code": "TD",
+    "fiscal_year": 2025,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "TD"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2025
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q04",
+    "query": "What mortgage credit exposures did TD discuss in Q1 2025?",
+    "bank_code": "TD",
+    "fiscal_year": 2025,
+    "quarter": 1,
+    "document_type": "quarterly",
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "TD"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2025
+          }
+        },
+        {
+          "quarter": {
+            "$eq": 1
+          }
+        },
+        {
+          "document_type": {
+            "$eq": "quarterly"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q05",
+    "query": "What liquidity risks and LCR measures did BMO report in 2025?",
+    "bank_code": "BMO",
+    "fiscal_year": 2025,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "BMO"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2025
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q06",
+    "query": "What credit risks did BMO disclose in its 2024 AIF?",
+    "bank_code": "BMO",
+    "fiscal_year": 2024,
+    "document_type": "AIF",
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "BMO"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2024
+          }
+        },
+        {
+          "document_type": {
+            "$eq": "AIF"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q07",
+    "query": "What physical and transition climate risks did Scotiabank disclose in 2025?",
+    "bank_code": "BNS",
+    "fiscal_year": 2025,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "BNS"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2025
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q08",
+    "query": "What risks arise from Scotiabank international operations in 2024?",
+    "bank_code": "BNS",
+    "fiscal_year": 2024,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "BNS"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2024
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q09",
+    "query": "What mortgage and housing credit risks did CIBC report in 2025?",
+    "bank_code": "CIBC",
+    "fiscal_year": 2025,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "CIBC"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2025
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "q10",
+    "query": "What funding and liquidity risks did CIBC disclose in 2024?",
+    "bank_code": "CIBC",
+    "fiscal_year": 2024,
+    "where": {
+      "$and": [
+        {
+          "bank_code": {
+            "$eq": "CIBC"
+          }
+        },
+        {
+          "fiscal_year": {
+            "$eq": 2024
+          }
+        }
+      ]
+    }
+  }
+]

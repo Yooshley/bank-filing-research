@@ -1,0 +1,137 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_11",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_11",
+    "question": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed credit risk and loan-loss provisions; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, Scotiabank disclosed the following information regarding credit risk and loan-loss provisions:\n\n1. **Total Allowance for Credit Losses**: As of October 31, 2025, the total allowance for credit losses was $7,654 million, an increase from $6,736 million in the previous year. The allowance for credit losses on loans specifically was $7,463 million, which represented an increase of $927 million from October 31, 2024 [S2].\n\n2. **Allowance for Credit Losses by Business Line**:\n   - Canadian Banking: $3,104 million\n   - International Banking: $4,083 million\n   - Global Wealth Management: $52 million\n   - Global Banking and Markets: $223 million\n   - Other: $1 million [S2].\n\n3. **Provisions for Credit Losses**: The provision for credit losses on impaired loans was reported at $4,133 million, compared to $3,930 million in the previous year. The provision for credit losses ratio on impaired loans was 54 basis points, an increase from 52 basis points [S3].\n\n4. **Breakdown of Provisions**:\n   - Canadian Banking: Total provision of $2,293 million (Retail: $1,710 million; Commercial: $583 million).\n   - International Banking: Total provision of $2,308 million (Retail: $1,938 million; Commercial: $370 million).\n   - Global Wealth Management: $14 million.\n   - Global Banking and Markets: $97 million [S3].\n\n5. **Allowance for Credit Losses on Impaired Loans**: This allowance increased by $287 million to $2,341 million from $2,054 million the previous year, primarily due to higher provisions in Canadian and International Banking [S2].\n\nOverall, Scotiabank's disclosures indicate a significant increase in both the total allowance for credit losses and provisions for credit losses, reflecting a response to credit quality migration and a deteriorating macroeconomic outlook.",
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00023",
+        "text": "26\nAnalysis of the aggregate credit risk exposures, including details of both\npersonal and wholesale lending.\n\n158-160\n\n27\nDiscussion of the policies for identifying impaired loans, defining\nimpairments and renegotiated loans, and explaining loan forbearance\npolicies.\n\n93, 122-125\n189\n34-35\n\n28\nReconciliations of the opening and closing balances of impaired loans and\nimpairment allowances during the year.\n\n89-91, 94\n\n29\nAnalysis of counterparty credit risk that arises from derivative transactions.\n88-90\n176-179\n108\n30\nDiscussion of credit risk mitigation, including collateral held for all sources of\ncredit risk.\n\nOther risks\n31\nQuantified measures of the management of operational risk.\n72, 112-113\n\n32\nDiscussion of publicly known risk items.\n85-87\n205-206\n\n16 | 2025 Scotiabank Annual Report\n\nManagement’s\nDiscussion & Analysis\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable readers to assess the Bank’s financial condition and\nresults of operations as at and for the year ended October 31, 2025. The MD&A should be read in conjunction with the Bank’s\n2025 Consolidated Financial Statements, including the Notes. This MD&A is dated December 2, 2025.\n\nAdditional information relating to the Bank, including the Bank’s 2025 Annual Report, are available on the Bank’s website at\nwww.scotiabank.com. As well, the Bank’s 2025 Annual Report and Annual Information Form are available on the SEDAR+\nwebsite at www.sedarplus.ca and on the EDGAR section of the SEC’s website at www.sec.gov.\n\nTable of Contents\n\nGroup Financial Condition\n\n18",
+        "similarity": 0.7853701114654541,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_end": 19,
+        "section": "Credit Risk",
+        "bank": "Bank of Nova Scotia",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "page_start": 18
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00179",
+        "text": "2026 Q2 2030 Q1 2025 Q4 2028 Q2 2026 Q4 2029 Q3 2026 Q3 2028 Q3 2024 Q4 2029 Q1 2029 Q4 2028 Q4 2030 Q2 2024 Q3 2028 Q1 2026 Q1 2030 Q1 2026 Q2 2028 Q2 2026 Q4 2026 Q3 2028 Q3 2028 Q4 T44 Allowance for credit losses by business line As at October 31 ($ millions)\n2025\n2024 Canadian Banking\nRetail\n$ 2,301\n$ 1,977\nCommercial\n803\n614 $ 3,104\n$ 2,591 International Banking\nRetail\n\nCaribbean and Central America\n$\n381\n$\n424\nMexico\n782\n598\nPeru\n524\n607\nChile\n757\n617\nColombia\n376\n354\nOther\n103\n92\nCommercial\n1,160\n1,006\n\n$ 4,083\n$ 3,698\n\nGlobal Wealth Management\n$\n52\n$\n47\nGlobal Banking and Markets\n$\n223\n$\n198\nOther\n$\n1\n$\n2\n\nAllowance for credit losses on loans\n$ 7,463\n$ 6,536\n\nAllowance for credit losses on:\n\nAcceptances\n$\n1\n$\n1\nOff-balance sheet exposures\n175\n186\nDebt securities and deposits with financial institutions\n15\n13\n\nTotal Allowance for credit losses\n$ 7,654\n$ 6,736\n\n92 | 2025 Scotiabank Annual Report\n\nAllowance for credit losses\nThe total allowance for credit losses as at October 31, 2025 was $7,654 million compared to $6,736 million in the prior year. The allowance for\ncredit losses ratio was 98 basis points, an increase of 10 basis points. The allowance for credit losses for loans was $7,463 million, an increase of\n$927 million from October 31, 2024.\n\nThe allowance for credit losses on performing loans was higher at $5,122 million compared to $4,482 million as at October 31, 2024. The allowance\nfor performing loans ratio was 68 basis points, an increase of seven basis points. The increase was driven by credit quality migration and\ndeterioration in the macroeconomic outlook in Canadian Banking and International retail portfolio growth. This also reflects the continued\nuncertainty related to U.S. tariffs, primarily impacting the Canadian Banking portfolios. The impact of foreign currency translation increased the\nallowance by $151 million.\n\nThe allowance for credit losses on impaired loans increased by $287 million to $2,341 million from $2,054 million last year. The allowance for\ncredit losses on impaired loans ratio was 30 basis points, an increase of three basis points. The increase was due primarily to higher provisions in\nCanadian and International Banking, and the impact of foreign currency translation of $104 million.",
+        "similarity": 0.696744441986084,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_end": 95,
+        "document_type": "annual_report",
+        "bank": "Bank of Nova Scotia",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank_code": "BNS",
+        "page_start": 94,
+        "section": "Management’s Discussion and Analysis"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00060",
+        "text": "The provision increased by $460 million driven by\nthe impact of credit migration, an unfavourable macroeconomic outlook primarily driven by the U.S. tariffs, as well as business growth, mainly in\nthe International retail portfolio. The provision for credit losses on impaired loans was $4,133 million compared to $3,930 million. The provision for credit losses ratio on impaired\nloans was 54 basis points compared to 52 basis points. The increase in provision this year was due primarily to higher formations in Canadian\nBanking. Management’ s Discussion and Analysis | Group Financial Performance T16 Provision for credit losses by business line 2025\n2024 Impaired For the fiscal years ($ millions) Performing\n(Stage 1 and 2) Impaired\n(Stage 3)\nTotal\n\nPerforming\n(Stage 1 and 2)\n\n(Stage 3)\nTotal\n\nCanadian Banking\n\nRetail\n$ 291\n$ 1,419\n$ 1,710\n$ 109\n$ 1,257\n$ 1,366\nCommercial\n108\n475\n583\n18\n307\n325\n\nTotal\n399\n1,894\n2,293\n127\n1,564\n1,691\nInternational Banking\n\nRetail\n66\n1,872\n1,938\n(138)\n2,040\n1,902\nCommercial\n62\n308\n370\n89\n297\n386\n\nTotal\n128\n2,180\n2,308\n(49)\n2,337\n2,288\nGlobal Wealth Management\n9\n5\n14\n3\n24\n27\nGlobal Banking and Markets\n43\n54\n97\n43\n5\n48\nOther\n1\n–\n1\n–\n–\n–\n\nProvision for credit losses on loans, acceptances and off-balance\n\nsheet exposures\n$ 580\n$ 4,133\n$ 4,713\n$ 124\n$ 3,930\n$ 4,054\n\nInternational Banking\n$\n1\n\n$\n–\n$\n1\n$\n(3)\n$\n–\n$\n(3)\nGlobal Wealth Management\n–\n–\n–\n–\n–\n–\nGlobal Banking and Markets\n–\n–\n–\n(1)\n–\n(1)\nOther\n–\n–\n–\n1\n–\n1\n\nProvision for credit losses on debt securities and deposits with\n\nbanks\n$\n1\n\n$\n–\n$\n1\n$\n(3)\n$\n–\n$\n(3)\n\nTotal provision for credit losses\n$ 581\n$ 4,133\n$ 4,714\n$ 121\n$ 3,930\n$ 4,051\n\n2025 Scotiabank Annual Report | 35\n\nT16A Provision for credit losses against impaired financial instruments by business line\n\nFor the fiscal years ($ millions)\n2025\n2024\n\nCanadian Banking\nRetail\n$ 1,419\n$\n1,257\nCommercial\n475\n307\n\n$ 1,894\n$\n1,564\n\nInternational Banking\nCaribbean and Central America\n$\n212\n$\n194\nLatin America\n\nMexico\n489\n404\nPeru\n392\n554\nChile\n639\n587\nColombia\n392\n532\nOther Latin America\n56\n66\n\nTotal Latin America\n1,968\n2,143\n\n$ 2,180\n$\n2,337\n\nGlobal Wealth Management\n$\n5\n$\n24\nGlobal Banking and Markets\nCanada\n$\n12\n$\n(12)\nU.S.\n44\n24\nAsia and Europe\n(2)\n(7)",
+        "similarity": 0.6840496063232422,
+        "section": "Management’s Discussion and Analysis",
+        "page_end": 38,
+        "quarter": 0,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_start": 37,
+        "bank": "Bank of Nova Scotia",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank_code": "BNS",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "file_name": "BNS_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00015",
+        "text": "Your Board is confident in the path forward, and we\nremain committed to providing effective risk oversight\nas Scotiabank continues to drive profitable growth\nand build sustainable value for its shareholders\nover the long term. I want to extend our sincere thanks to Scott Bonham,\nMichael Penner, and Calin Rovinescu who retired from\nthe Board this year. We are grateful for their leadership,\ninsight, and many contributions to Scotiabank. I also\nwant to recognize President and CEO Scott Thomson,\nthe executive leadership team, and our global network\nof Scotiabankers for their steadfast commitment to our\nclients, shareholders, and the Bank during this period of\neconomic uncertainty. Returning to our roots On behalf of the entire Board, thank you for your\ncontinued trust and support.\n\nThis year, your Board was proud to welcome our\nshareholders to Halifax, Nova Scotia for Scotiabank’s\n193rd Annual Meeting of Shareholders. It marked our first\nAnnual Meeting outside Toronto since the onset of the\nCOVID-19 pandemic – and returning to our Atlantic roots\nfelt both timely and symbolic. Just as shareholders first\ngathered in Halifax in 1833, we came together once again\n\n12 | 2025 Scotiabank Annual Report\n\nBoard of Directors\n\nAaron W. Regent\n\n• Chair of the Board\n\n• Founder, Chairman and Chief Executive Officer of Magris Performance Materials Inc.\n\n• Scotiabank director since April 9, 2013\n\nCommittee Chairs\n\nNora A. Aufreiter\n\nLynn K. Patterson\n\nSteven C. Van Wyk\n\n• Human Capital and Compensation\nCommittee Chair and member\nof the Risk Committee\n\n• Risk Committee Chair and\nmember of the Human Capital\nand Compensation Committee\n\n• Technology Committee Chair\nand member of the Audit and\nConduct Review Committee\n\n• Corporate director\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nAugust 25, 2014\n\n• Scotiabank director since\nSeptember 1, 2020\n\n• Scotiabank director since\nNovember 15, 2024\n\nMichael B. Medline\n\nBenita M. Warmbold\n\n• Corporate Governance Committee\nChair and member of the Audit\nand Conduct Review Committee\n\n• Audit and Conduct Review\nCommittee Chair and member of\nthe Corporate Governance Committee\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Scotiabank director since\nOctober 29, 2018\n\nGuillermo E. Babatz\n\nW. Dave Dowrich\n\nSandra J. Stuart\n\n• Managing Partner of Atik Capital, S.C.\n\n• Corporate director\n\n• Scotiabank director since\nJanuary 28, 2014\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA)\n\n• Scotiabank director since June 1, 2022\n\nDaniel (Don) H. Callahan\n\nScott Thomson\n\n• Corporate director\n\nUna M. Power\n\n• President and Chief Executive Officer\nof Scotiabank\n\n• Corporate director\n\n• Scotiabank director since\nJune 15, 2021\n\n• Scotiabank director since April 12, 2016\n\n• Scotiabank director since April 12, 2016\n\nAs of December 2, 2025\n\n2025 Scotiabank Annual Report | 1 3\n\n• Scotiabank director since\nSeptember 1, 2023 • Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA) • Scotiabank director since June 1, 2022 Daniel (Don) H. Callahan Scott Thomson • Corporate director Una M. Power • President and Chief Executive Officer\nof Scotiabank • Corporate director • Scotiabank director since\nJune 15, 2021 • Scotiabank director since April 12, 2016 • Scotiabank director since April 12, 2016 As of December 2, 2025 2025 Scotiabank Annual Report | 1 3\n\nSustainability Highlights",
+        "similarity": 0.6814262270927429,
+        "bank": "Bank of Nova Scotia",
+        "page_start": 14,
+        "document_type": "annual_report",
+        "page_end": 16,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank_code": "BNS",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "section": "ASSETS"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00183",
+        "text": "The allowance for credit losses on\nimpaired loans was $3 million, a decrease of $20 million from last year, due to higher write-\noffs. Risk diversification\nThe Bank’s exposure to various countries and types of borrowers are well diversified (see T64\nand T67). Chart C27 shows loans and acceptances by geography. Ontario represents the\nlargest Canadian exposure at 37% of the total. Latin America was 19% of the total exposure\nand the U.S. was 8%. Chart C28 shows loans and acceptances by type of borrower (see T67). Excluding loans to\nhouseholds, the largest industry exposures were real estate and construction (8%), financial\nservices (4% including banks and non-banks) and wholesale and retail (4%).\n\nRisk mitigation\nTo mitigate exposures in its performing corporate portfolios, the Bank uses diversification by\ncompany, industry, and country, with loan sales and credit derivatives used sparingly. In 2025,\nloan sales totaled $0.6 billion, compared to $1.1 billion in 2024. As at October 31, 2025, no\ncredit derivatives were used to mitigate loan exposures in the portfolios (October 31, 2024 –\nnil). The Bank actively monitors industry and country concentrations. As in the case with all\nindustry exposures, the Bank continues to closely follow developing trends and takes\nadditional steps to mitigate risk as warranted.\n\nOverview of loan portfolio\nThe Bank has a well-diversified portfolio by product, business and geography. Details of certain\nportfolios of current focus are highlighted below.\n\n94 | 2025 Scotiabank Annual Report\n\nReal estate secured lending\nA large portion of the Bank’s lending portfolio is comprised of residential mortgages and consumer loans, which are well diversified by borrower.\nAs at October 31, 2025, these loans accounted for $499 billion or 64% of the Bank’s total loans and acceptances outstanding (October 31, 2024 –\n$475 billion or 62%). Of these, $394 billion or 79% are real estate secured loans (October 31, 2024 – $374 billion or 79%). The tables below\nprovide more details by portfolio.\n\nInsured and uninsured residential mortgages and home equity lines of credit\nThe following table presents amounts of insured and uninsured residential mortgages and home equity lines of credit (HELOCs), by geographic\narea.\n\nT46 Insured and uninsured residential mortgages and HELOCs, by geographic areas(1)\n\n2025\n\nResidential mortgages\nHome equity lines of credit\n\nAs at October 31\nInsured(2)\nUninsured\nTotal\nInsured(2)\nUninsured\nTotal\n\n($ millions)\nAmount\n%\nAmount\n%\nAmount\n% Amount %\nAmount\n%\nAmount\n%\n\nCanada:(3)",
+        "similarity": 0.6754000186920166,
+        "section": "Management’s Discussion and Analysis",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_start": 96,
+        "bank": "Bank of Nova Scotia",
+        "document_type": "annual_report",
+        "bank_code": "BNS",
+        "page_end": 97
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.7782939999597147
+  },
+  "latency_seconds": 7.864250299986452,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007865999999999999,
+  "input_tokens": 3556,
+  "output_tokens": 422,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.03006129991263151,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about Scotiabank's credit risk and loan-loss provisions are directly supported by the actual answer context, including specific figures and comparisons to previous years, accurately reflecting the 2025 annual report.",
+    "relevance_reason": "The answer directly addresses the question regarding credit risk and loan-loss provisions disclosed by Scotiabank in its 2025 annual report, providing detailed and relevant information.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including total allowances, breakdowns by business line, provisions for credit losses, and comparisons to prior years, as supported by the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00154725,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_11",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

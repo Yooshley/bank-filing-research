@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_10",
+  "config": "agentic",
+  "question": {
+    "id": "eval_10",
+    "question": "What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "climate",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed physical and transition climate risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?",
+    "answer": "In Scotiabank's 2025 Annual Report, the bank disclosed both physical and transition climate risks:\n\n1. **Physical Risks**: The report highlights the increased intensity and frequency of severe weather events as a significant concern. These physical risks can lead to damage to properties and disruptions to operations, negatively impacting profitability. The bank has mechanisms in place to identify, mitigate, and assess potential losses from such risks, including disaster recovery planning to ensure uninterrupted operations during localized disasters and weather-related events (BNS_2025_annual_report_FY_00163).\n\n2. **Transition Risks**: The report discusses the rising costs associated with climate change and new climate guidelines, which increase regulatory oversight and stakeholder expectations. There is also mention of potential legal and reputational risks related to misleading sustainability claims or \"greenwashing.\" The changing political environment in the U.S. and Canada could limit clients' ability or willingness to reduce emissions, creating uncertainty (BNS_2025_annual_report_FY_00163).\n\nThe bank's approach to managing these risks is governed by its ESG Risk Management Framework, which integrates ESG risk considerations into decision-making processes across various business strategies (BNS_2025_annual_report_FY_00229).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4608,
+    "output_tokens": 284,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000862,
+    "seconds": 5.43,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "climate risks",
+          "bank": "BNS",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00163",
+              "text": "It could also\nlead to headwinds for the Bank in its priority markets, particularly the North American corridor, as political relationships change and policy\nuncertainty accelerates, requiring strategic adjustments. Government Affairs, Compliance, Global AML and Economics teams continue to monitor the changing political and economic landscape across\nthe Bank’s operating footprint, communicating broadly to clients and employees, and supporting stress testing and scenario analysis. These\nteams regularly update the Bank’s leadership to support a continuous understanding of the evolving environment and its impact on the Bank’s\nrisk profile, strategy and business performance. In Canada, recent legislative efforts, such as the One Canadian Economy Act, may help advance\nmajor projects and stimulate economic activity, potentially supporting loan demand and employment. 2025 Scotiabank Annual Report | 85\n\nClimate Change\nRising costs of climate change and new climate guidelines increase regulatory oversight and stakeholder expectations to demonstrate strong\ngovernance in managing climate risks. The increased intensity and frequency of severe weather events highlights the potential impacts of diverse\nphysical risks due to climate change, which include damage to properties and disruptions to operations that can negatively impact profitability.\nThe changing corporate and political environment in the US and Canada could result in reduced support for climate-related regulation and\nfunding for climate initiatives, creating uncertainty that could limit clients’ ability or willingness to reduce emissions. Under current laws and\nevolving climate regulations, which include management of nature-related risks and their impacts, making exaggerated or misleading\nsustainability claims or “greenwashing”, either intentionally or due to data collection and reporting challenges, can create legal and reputational\nrisks. For further details please refer to the ESG Risk section on page 113.\n\nThe Bank continues to maintain compliance with evolving climate regulations across its global footprint. To manage physical risks, there are\nseveral mechanisms to identify, mitigate, and assess potential Bank losses, while disaster recovery planning is focused on ensuring uninterrupted\noperations for localized disasters and weather-related events. The Bank has a public ESG policy that restricts lending to the Oil & Gas industry\nwithin the Arctic, thermal coal mining or coal power generation and new nature-related sustainability policies for activities in UNESCO World\nHeritage sites and RAMSAR wetlands.\n\nGeopolitical Tensions\nThe potential for political miscalculations and conflict escalations remains a key concern. Geopolitical uncertainty and a fracturing global economy\ncontinues as many geopolitical conflicts remain unresolved, including U.S.-China tensions, the continuing war in Ukraine, and the ongoing conflict\nin the Middle East. Geopolitical tensions are accelerating in complexity and speed with risk increasingly manifesting in interconnected ways that\ncould disrupt global trade, supply chains or operations, and cause market volatility. Financial institutions have limited influence over broad\ngeopolitical dynamics and resulting impacts could require strategic adjustments to manage changes to client and investor confidence and to\naddress a higher risk of financial instability.\n\nThe Bank seeks to grow and do business in countries that have a track record of economic growth and institutional stability, while continuing to invest in\nits priority markets within the North American corridor. The Bank monitors geopolitical developments through various pillars and threat intelligence\ncoordination, and monitors regions with geopolitical conflicts to ensure operations, including sanctions related controls continue to be fully compliant\nwith evolving laws. The Bank’s stress testing programs help evaluate the potential impacts of severe economic scenarios, and the Bank can draw from its\nextensive experience operating in emerging markets across the globe to manage volatility, and right scaling exposure when necessary. As well, the Bank’s\nstrong and varied client base, robust liquidity levels and diversified funding programs help manage disruptions or market dislocations.",
+              "similarity": 0.511,
+              "file_name": "BNS_2025_annual_report.pdf",
+              "bank_code": "BNS",
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "page_end": 88,
+              "quarter": 0,
+              "page_start": 87,
+              "bank": "Bank of Nova Scotia",
+              "section": "Management’s Discussion and Analysis",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "filing_id": "BNS_2025_annual_report_FY"
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00229",
+              "text": "The Bank’s approach for the effective management of ESG risk is governed by our ESG Risk Management Framework in a manner consistent with\nthe Enterprise-wide Risk Management Framework. The ESG Risk Management Framework describes the guiding principles, program elements,\nand roles and responsibilities relating to the Bank’s management of ESG risk and establishes the minimum requirements for the integration of ESG\nrisk considerations into the decision-making processes across other risk types and business strategies, activities and internal operations. This\nframework assists the Bank as we continue to advance our capabilities in managing ESG risks in a manner that is consistent with regulatory\nrequirements, industry standards, best practices, and risk appetite.\n\nThe ESG Risk Management framework is supported by additional policies, processes, and guidelines, designed to help mitigate ESG Risk or\nadvance responsible practices. For example, Scotiabank is a signatory to the Equator Principles (EPs) framework, which enables the Bank, in\npartnership with our clients, to identify, assess, manage and report environmental and social risks and impacts associated with the large-scale\ninfrastructure and industrial development projects. We also have policies in place related to our financing activities to oil and gas projects in the\nArctic Circle, and to projects related to thermal coal mining and power, UNESCO World Heritage Sites and Wetlands of International Importance,\nand illegal logging and wildlife trade. Our approach to respecting and promoting human rights is communicated in our Code and in the Global\nHuman Rights Statement. The Bank has set a number of enterprise-wide commitments that aim to address climate-related risks and\nopportunities, such as our commitment to provide $350 billion in climate-related finance by 2030 to support clients in their strategies to address\nclimate change and other environmental goals. Our Climate Related Finance Framework outlines the financial product and services we offer in\nsupport of this commitment. Additional information on the Bank’s approach to climate change risk management and strategy will be provided in\nour 2025 Sustainability Report.\n\nData Management Risk\n\nData Management Risk is the risk of exposure to the financial and non-financial consequences caused by people, inadequate processes and\nsystems related to data governance, data quality, data architecture and/or data ethics.\n\nThe Data Risk Management Framework provides an overview of the key governance components for the data management risk and oversight\nactivities across the Bank. The Data Risk Management Policy defines key guiding principles for managing data risk, including the interaction model\nand roles and responsibilities for key stakeholders involved in managing data management risk across the Bank.\n\nModel Risk\n\nModel risk is the risk of adverse financial (e.g. inadequate capital, financial losses, inadequate liquidity, underfunding of defined benefit\npension plans) operational, and/or reputational consequences arising from the design, development, implementation and/or use of a\nmodel. It can originate from, among other things, inappropriate specification; incorrect parameter estimates; flawed hypotheses and/or\nassumptions; mathematical computation errors; inaccurate, inappropriate or incomplete data; inappropriate, improper or unintended\nusage; and inadequate monitoring and/or controls.\n\nModel risk is managed through a structured framework that outlines minimum compliance requirements aligned with OSFI’s revised E-23 Model\nRisk Management Guideline. This framework spans the entire model lifecycle – from identification and assessment to monitoring and remediation.\n\nAll models that meet the Bank’s definition – including those developed internally or sourced from vendors – are governed by the Model Risk\nManagement Framework (MRMF). The MRMF is supported by a suite of policies, standards, and guidelines that ensure consistent and effective\nmodel risk management across the organization, including well-defined roles and responsibilities for key stakeholders across the lifecycle.",
+              "similarity": 0.455,
+              "file_name": "BNS_2025_annual_report.pdf",
+              "bank": "Bank of Nova Scotia",
+              "page_end": 116,
+              "page_start": 116,
+              "section": "Risk Management",
+              "document_type": "annual_report",
+              "quarter": 0,
+              "bank_code": "BNS",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "fiscal_year": 2025,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf"
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00227",
+              "text": "This risk can adversely impact the Bank, clients, employees, or integrity of\nfinancial markets. Conduct risk is influenced by organizational culture and is manifested in employee conduct. Privacy risk arises when there are contraventions of applicable privacy laws, regulations, standards, and regulatory expectations; when ethical or\noperational standards set out in our Code or other policies, procedures, manuals, or guidelines are not followed; and when employees fail to treat client,\nemployee, and third-party Personally Identifiable Information (“PII”) in accordance with established security safeguards. ABAC risk arises when there are contraventions of applicable ABAC laws, regulations, standards, and regulatory expectations, as well as ethical or\noperational standards set out in our Code or other frameworks, policies, standards, operating procedures, or guidelines related to bribery and corruption.\n\nThe Audit and Conduct Review Committee of the Board (the “ACRC”) approves the Compliance Risk Summary Framework, which provides an\noverview of the key governance components, responsibilities, and programs that enable the Bank to effectively manage Compliance Risk as a core\ncomponent of its enterprise-wide Compliance program. The Bank is required to comply with E-13 guidelines as set out by OSFI with respect to the\nmanagement of regulatory compliance risk. Regulatory compliance management at the Bank is governed by the Compliance Management\nFramework (“CMF”). The CMF’s primary objective is to provide assurance that the Bank’s business activities are conducted in compliance with all\napplicable regulations and within the Bank’s risk appetite.\n\nEnvironmental, Social and Governance Risk\n\nEnvironmental, Social and Governance (ESG) Risk is the risk that an environmental (including climate risk), social, or governance event, or\ncondition, which if occurs could cause an actual or potential negative impact to the Bank.\n\nThe Bank considers Environmental Risk to be the potential adverse impacts to the Bank because of climate change and/or damage to the natural\nenvironment or biodiversity, such as land, water, plants, natural resources, ecosystems, and the atmosphere. The physical and transition risks\nassociated with climate change are a component of Environmental Risk.\n\nSocial Risk is the risk of potential adverse impacts to the Bank that can arise due to the mismanagement of social considerations that can cause actual or\nperceived negative impacts on people and communities. Social considerations include, but are not limited to, human rights (including human trafficking\nand modern slavery); Indigenous rights; labour standards and working conditions; inclusion; community health, safety, and security; disadvantaged and\nvulnerable groups; cultural property and heritage; and land acquisition and involuntary resettlement.\n\nCorporate governance refers to the oversight mechanisms and the way in which the Bank is governed. It encompasses the Bank’s policies and\nprocesses, how decisions are made, and how it deals with the various interests of, and relationships with, its many stakeholders, including\nshareholders, customers, employees, regulators, and the broader community. Governance Risk is the risk of potential adverse impacts to the Bank\nstemming from poor or ineffective corporate governance mechanisms and controls.\n\n2025 Scotiabank Annual Report | 113",
+              "similarity": 0.444,
+              "section": "Operational Risk",
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "page_end": 115,
+              "quarter": 0,
+              "bank_code": "BNS",
+              "document_type": "annual_report",
+              "bank": "Bank of Nova Scotia",
+              "fiscal_year": 2025,
+              "page_start": 115,
+              "file_name": "BNS_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "BNS_2025_annual_report_FY_00156",
+              "text": "Enterprise-wide\nstress testing is also integrated with both the strategic and financial planning processes, as well as financial crisis management planning. The\ndevelopment, approval and on-going review of the Bank’s stress testing programs are subject to policy, and the oversight of the Stress &\nScenarios Committee (SSC) or other management committees as appropriate. The SSC is also responsible for reviewing and approving stress\ntesting, climate risk, and expected credit loss scenarios for implementation and use. Each stress testing program is developed with input from a\nbroad base of stakeholders, and results are integrated into management decision making processes for capital adequacy and/or allocation,\nfunding requirements and strategy, risk appetite setting, and limit determinations. The stress testing programs are designed to capture a number\nof stress scenarios with differing severities and time horizons.\n\nOther stress tests are conducted, as required, at the enterprise-wide level and within specific functional areas to test the decision-making\nprocesses of the senior management team and key personnel, by simulating a potential stress scenario. Simulated stress scenarios may include\nseveral complexities and disruptions through which senior management are engaged to make certain key decisions. Generally, the objectives of\nthe simulations can include testing (1) the executability of activation protocols, (2) operational readiness, (3) the flexibility of the executive\ndecision-making process, and (4) the process by which actions to be taken are prioritized. The exercises may also be designed to test the\napplicability and relevance of available data and the timeliness of reporting for decision making under stressed/crisis conditions.\n\nScenario Analysis\nScenario analysis is a forward-looking Operational Risk Management (“ORM”) tool utilized by the Bank to actively manage risk by assessing low\nlikelihood, high impact, hypothetical events. Through this process, hypothetical events are analyzed to allow for the identification of potential\noperational risks or threats and an assessment of the adequacy of controls. The output of this analysis may lead to a mitigation of risk exposures,\nand ultimately, a reduction in operational losses. This also allows for assessments related to material catastrophic risk exposures (e.g. technology\nor fraud scenarios, as well as physical risks related to climate change, earthquake, hurricane, forest fire, pandemics, and significant adverse\nevents).\n\nRisk Assessment and Control Management\n\nEffective risk assessment and control management is foundational to the Bank’s Risk Management Framework, it enables the organization\nto identify, evaluate, manage and control risks in alignment with its strategic objectives and risk appetite.\n\nRisk Assessments\nThe Bank has developed key risk assessment processes to comprehensively assess materiality of risks and effectiveness of controls to ensure risks\nare effectively managed.\n\nRisk Response Strategies\nRisk response is the process for designing and implementing actions to address risk issues to ensure risks are managed proactively and effectively\nto minimize any impact on the Bank. Key strategies include:\n\n• Risk Mitigation: Involves taking steps to reduce the likelihood or impact of a risk. This process begins when the Risk Owner’s management\nacknowledges the risk and determines a corrective action plan.\n\n82 | 2025 Scotiabank Annual Report\n\n• Risk Avoidance: Risks are avoided when management determines that the risk is outside of the risk appetite or that a cost-effective solution is\nnot available and decides not to pursue the activity which creates the risk.\n• Risk Transfer: Risks are transferred when management acknowledges the risk and determines that the risk is more appropriately covered by\ninsurance.",
+              "similarity": 0.412,
+              "document_type": "annual_report",
+              "bank": "Bank of Nova Scotia",
+              "filing_id": "BNS_2025_annual_report_FY",
+              "page_end": 85,
+              "page_start": 84,
+              "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+              "file_name": "BNS_2025_annual_report.pdf",
+              "bank_code": "BNS",
+              "section": "Management’s Discussion and Analysis",
+              "quarter": 0,
+              "fiscal_year": 2025
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In Scotiabank's 2025 Annual Report, the bank disclosed both physical and transition climate risks:\n\n1. **Physical Risks**: The report highlights the increased intensity and frequency of severe weather events as a significant concern. These physical risks can lead to damage to properties and disruptions to operations, negatively impacting profitability. The bank has mechanisms in place to identify, mitigate, and assess potential losses from such risks, including disaster recovery planning to ensure uninterrupted operations during localized disasters and weather-related events (BNS_2025_annual_report_FY_00163).\n\n2. **Transition Risks**: The report discusses the rising costs associated with climate change and new climate guidelines, which increase regulatory oversight and stakeholder expectations. There is also mention of potential legal and reputational risks related to misleading sustainability claims or \"greenwashing.\" The changing political environment in the U.S. and Canada could limit clients' ability or willingness to reduce emissions, creating uncertainty (BNS_2025_annual_report_FY_00163).\n\nThe bank's approach to managing these risks is governed by its ESG Risk Management Framework, which integrates ESG risk considerations into decision-making processes across various business strategies (BNS_2025_annual_report_FY_00229)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00163",
+        "text": "It could also\nlead to headwinds for the Bank in its priority markets, particularly the North American corridor, as political relationships change and policy\nuncertainty accelerates, requiring strategic adjustments. Government Affairs, Compliance, Global AML and Economics teams continue to monitor the changing political and economic landscape across\nthe Bank’s operating footprint, communicating broadly to clients and employees, and supporting stress testing and scenario analysis. These\nteams regularly update the Bank’s leadership to support a continuous understanding of the evolving environment and its impact on the Bank’s\nrisk profile, strategy and business performance. In Canada, recent legislative efforts, such as the One Canadian Economy Act, may help advance\nmajor projects and stimulate economic activity, potentially supporting loan demand and employment. 2025 Scotiabank Annual Report | 85\n\nClimate Change\nRising costs of climate change and new climate guidelines increase regulatory oversight and stakeholder expectations to demonstrate strong\ngovernance in managing climate risks. The increased intensity and frequency of severe weather events highlights the potential impacts of diverse\nphysical risks due to climate change, which include damage to properties and disruptions to operations that can negatively impact profitability.\nThe changing corporate and political environment in the US and Canada could result in reduced support for climate-related regulation and\nfunding for climate initiatives, creating uncertainty that could limit clients’ ability or willingness to reduce emissions. Under current laws and\nevolving climate regulations, which include management of nature-related risks and their impacts, making exaggerated or misleading\nsustainability claims or “greenwashing”, either intentionally or due to data collection and reporting challenges, can create legal and reputational\nrisks. For further details please refer to the ESG Risk section on page 113.\n\nThe Bank continues to maintain compliance with evolving climate regulations across its global footprint. To manage physical risks, there are\nseveral mechanisms to identify, mitigate, and assess potential Bank losses, while disaster recovery planning is focused on ensuring uninterrupted\noperations for localized disasters and weather-related events. The Bank has a public ESG policy that restricts lending to the Oil & Gas industry\nwithin the Arctic, thermal coal mining or coal power generation and new nature-related sustainability policies for activities in UNESCO World\nHeritage sites and RAMSAR wetlands.\n\nGeopolitical Tensions\nThe potential for political miscalculations and conflict escalations remains a key concern. Geopolitical uncertainty and a fracturing global economy\ncontinues as many geopolitical conflicts remain unresolved, including U.S.-China tensions, the continuing war in Ukraine, and the ongoing conflict\nin the Middle East. Geopolitical tensions are accelerating in complexity and speed with risk increasingly manifesting in interconnected ways that\ncould disrupt global trade, supply chains or operations, and cause market volatility. Financial institutions have limited influence over broad\ngeopolitical dynamics and resulting impacts could require strategic adjustments to manage changes to client and investor confidence and to\naddress a higher risk of financial instability.\n\nThe Bank seeks to grow and do business in countries that have a track record of economic growth and institutional stability, while continuing to invest in\nits priority markets within the North American corridor. The Bank monitors geopolitical developments through various pillars and threat intelligence\ncoordination, and monitors regions with geopolitical conflicts to ensure operations, including sanctions related controls continue to be fully compliant\nwith evolving laws. The Bank’s stress testing programs help evaluate the potential impacts of severe economic scenarios, and the Bank can draw from its\nextensive experience operating in emerging markets across the globe to manage volatility, and right scaling exposure when necessary. As well, the Bank’s\nstrong and varied client base, robust liquidity levels and diversified funding programs help manage disruptions or market dislocations.",
+        "similarity": 0.511,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank_code": "BNS",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "page_end": 88,
+        "quarter": 0,
+        "page_start": 87,
+        "bank": "Bank of Nova Scotia",
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "filing_id": "BNS_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00229",
+        "text": "The Bank’s approach for the effective management of ESG risk is governed by our ESG Risk Management Framework in a manner consistent with\nthe Enterprise-wide Risk Management Framework. The ESG Risk Management Framework describes the guiding principles, program elements,\nand roles and responsibilities relating to the Bank’s management of ESG risk and establishes the minimum requirements for the integration of ESG\nrisk considerations into the decision-making processes across other risk types and business strategies, activities and internal operations. This\nframework assists the Bank as we continue to advance our capabilities in managing ESG risks in a manner that is consistent with regulatory\nrequirements, industry standards, best practices, and risk appetite.\n\nThe ESG Risk Management framework is supported by additional policies, processes, and guidelines, designed to help mitigate ESG Risk or\nadvance responsible practices. For example, Scotiabank is a signatory to the Equator Principles (EPs) framework, which enables the Bank, in\npartnership with our clients, to identify, assess, manage and report environmental and social risks and impacts associated with the large-scale\ninfrastructure and industrial development projects. We also have policies in place related to our financing activities to oil and gas projects in the\nArctic Circle, and to projects related to thermal coal mining and power, UNESCO World Heritage Sites and Wetlands of International Importance,\nand illegal logging and wildlife trade. Our approach to respecting and promoting human rights is communicated in our Code and in the Global\nHuman Rights Statement. The Bank has set a number of enterprise-wide commitments that aim to address climate-related risks and\nopportunities, such as our commitment to provide $350 billion in climate-related finance by 2030 to support clients in their strategies to address\nclimate change and other environmental goals. Our Climate Related Finance Framework outlines the financial product and services we offer in\nsupport of this commitment. Additional information on the Bank’s approach to climate change risk management and strategy will be provided in\nour 2025 Sustainability Report.\n\nData Management Risk\n\nData Management Risk is the risk of exposure to the financial and non-financial consequences caused by people, inadequate processes and\nsystems related to data governance, data quality, data architecture and/or data ethics.\n\nThe Data Risk Management Framework provides an overview of the key governance components for the data management risk and oversight\nactivities across the Bank. The Data Risk Management Policy defines key guiding principles for managing data risk, including the interaction model\nand roles and responsibilities for key stakeholders involved in managing data management risk across the Bank.\n\nModel Risk\n\nModel risk is the risk of adverse financial (e.g. inadequate capital, financial losses, inadequate liquidity, underfunding of defined benefit\npension plans) operational, and/or reputational consequences arising from the design, development, implementation and/or use of a\nmodel. It can originate from, among other things, inappropriate specification; incorrect parameter estimates; flawed hypotheses and/or\nassumptions; mathematical computation errors; inaccurate, inappropriate or incomplete data; inappropriate, improper or unintended\nusage; and inadequate monitoring and/or controls.\n\nModel risk is managed through a structured framework that outlines minimum compliance requirements aligned with OSFI’s revised E-23 Model\nRisk Management Guideline. This framework spans the entire model lifecycle – from identification and assessment to monitoring and remediation.\n\nAll models that meet the Bank’s definition – including those developed internally or sourced from vendors – are governed by the Model Risk\nManagement Framework (MRMF). The MRMF is supported by a suite of policies, standards, and guidelines that ensure consistent and effective\nmodel risk management across the organization, including well-defined roles and responsibilities for key stakeholders across the lifecycle.",
+        "similarity": 0.455,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank": "Bank of Nova Scotia",
+        "page_end": 116,
+        "page_start": 116,
+        "section": "Risk Management",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank_code": "BNS",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00227",
+        "text": "This risk can adversely impact the Bank, clients, employees, or integrity of\nfinancial markets. Conduct risk is influenced by organizational culture and is manifested in employee conduct. Privacy risk arises when there are contraventions of applicable privacy laws, regulations, standards, and regulatory expectations; when ethical or\noperational standards set out in our Code or other policies, procedures, manuals, or guidelines are not followed; and when employees fail to treat client,\nemployee, and third-party Personally Identifiable Information (“PII”) in accordance with established security safeguards. ABAC risk arises when there are contraventions of applicable ABAC laws, regulations, standards, and regulatory expectations, as well as ethical or\noperational standards set out in our Code or other frameworks, policies, standards, operating procedures, or guidelines related to bribery and corruption.\n\nThe Audit and Conduct Review Committee of the Board (the “ACRC”) approves the Compliance Risk Summary Framework, which provides an\noverview of the key governance components, responsibilities, and programs that enable the Bank to effectively manage Compliance Risk as a core\ncomponent of its enterprise-wide Compliance program. The Bank is required to comply with E-13 guidelines as set out by OSFI with respect to the\nmanagement of regulatory compliance risk. Regulatory compliance management at the Bank is governed by the Compliance Management\nFramework (“CMF”). The CMF’s primary objective is to provide assurance that the Bank’s business activities are conducted in compliance with all\napplicable regulations and within the Bank’s risk appetite.\n\nEnvironmental, Social and Governance Risk\n\nEnvironmental, Social and Governance (ESG) Risk is the risk that an environmental (including climate risk), social, or governance event, or\ncondition, which if occurs could cause an actual or potential negative impact to the Bank.\n\nThe Bank considers Environmental Risk to be the potential adverse impacts to the Bank because of climate change and/or damage to the natural\nenvironment or biodiversity, such as land, water, plants, natural resources, ecosystems, and the atmosphere. The physical and transition risks\nassociated with climate change are a component of Environmental Risk.\n\nSocial Risk is the risk of potential adverse impacts to the Bank that can arise due to the mismanagement of social considerations that can cause actual or\nperceived negative impacts on people and communities. Social considerations include, but are not limited to, human rights (including human trafficking\nand modern slavery); Indigenous rights; labour standards and working conditions; inclusion; community health, safety, and security; disadvantaged and\nvulnerable groups; cultural property and heritage; and land acquisition and involuntary resettlement.\n\nCorporate governance refers to the oversight mechanisms and the way in which the Bank is governed. It encompasses the Bank’s policies and\nprocesses, how decisions are made, and how it deals with the various interests of, and relationships with, its many stakeholders, including\nshareholders, customers, employees, regulators, and the broader community. Governance Risk is the risk of potential adverse impacts to the Bank\nstemming from poor or ineffective corporate governance mechanisms and controls.\n\n2025 Scotiabank Annual Report | 113",
+        "similarity": 0.444,
+        "section": "Operational Risk",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_end": 115,
+        "quarter": 0,
+        "bank_code": "BNS",
+        "document_type": "annual_report",
+        "bank": "Bank of Nova Scotia",
+        "fiscal_year": 2025,
+        "page_start": 115,
+        "file_name": "BNS_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00156",
+        "text": "Enterprise-wide\nstress testing is also integrated with both the strategic and financial planning processes, as well as financial crisis management planning. The\ndevelopment, approval and on-going review of the Bank’s stress testing programs are subject to policy, and the oversight of the Stress &\nScenarios Committee (SSC) or other management committees as appropriate. The SSC is also responsible for reviewing and approving stress\ntesting, climate risk, and expected credit loss scenarios for implementation and use. Each stress testing program is developed with input from a\nbroad base of stakeholders, and results are integrated into management decision making processes for capital adequacy and/or allocation,\nfunding requirements and strategy, risk appetite setting, and limit determinations. The stress testing programs are designed to capture a number\nof stress scenarios with differing severities and time horizons.\n\nOther stress tests are conducted, as required, at the enterprise-wide level and within specific functional areas to test the decision-making\nprocesses of the senior management team and key personnel, by simulating a potential stress scenario. Simulated stress scenarios may include\nseveral complexities and disruptions through which senior management are engaged to make certain key decisions. Generally, the objectives of\nthe simulations can include testing (1) the executability of activation protocols, (2) operational readiness, (3) the flexibility of the executive\ndecision-making process, and (4) the process by which actions to be taken are prioritized. The exercises may also be designed to test the\napplicability and relevance of available data and the timeliness of reporting for decision making under stressed/crisis conditions.\n\nScenario Analysis\nScenario analysis is a forward-looking Operational Risk Management (“ORM”) tool utilized by the Bank to actively manage risk by assessing low\nlikelihood, high impact, hypothetical events. Through this process, hypothetical events are analyzed to allow for the identification of potential\noperational risks or threats and an assessment of the adequacy of controls. The output of this analysis may lead to a mitigation of risk exposures,\nand ultimately, a reduction in operational losses. This also allows for assessments related to material catastrophic risk exposures (e.g. technology\nor fraud scenarios, as well as physical risks related to climate change, earthquake, hurricane, forest fire, pandemics, and significant adverse\nevents).\n\nRisk Assessment and Control Management\n\nEffective risk assessment and control management is foundational to the Bank’s Risk Management Framework, it enables the organization\nto identify, evaluate, manage and control risks in alignment with its strategic objectives and risk appetite.\n\nRisk Assessments\nThe Bank has developed key risk assessment processes to comprehensively assess materiality of risks and effectiveness of controls to ensure risks\nare effectively managed.\n\nRisk Response Strategies\nRisk response is the process for designing and implementing actions to address risk issues to ensure risks are managed proactively and effectively\nto minimize any impact on the Bank. Key strategies include:\n\n• Risk Mitigation: Involves taking steps to reduce the likelihood or impact of a risk. This process begins when the Risk Owner’s management\nacknowledges the risk and determines a corrective action plan.\n\n82 | 2025 Scotiabank Annual Report\n\n• Risk Avoidance: Risks are avoided when management determines that the risk is outside of the risk appetite or that a cost-effective solution is\nnot available and decides not to pursue the activity which creates the risk.\n• Risk Transfer: Risks are transferred when management acknowledges the risk and determines that the risk is more appropriately covered by\ninsurance.",
+        "similarity": 0.412,
+        "document_type": "annual_report",
+        "bank": "Bank of Nova Scotia",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_end": 85,
+        "page_start": 84,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "bank_code": "BNS",
+        "section": "Management’s Discussion and Analysis",
+        "quarter": 0,
+        "fiscal_year": 2025
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 5.441121999989264,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0008615999999999999,
+  "input_tokens": 4608,
+  "output_tokens": 284,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.019080500002019107,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about Scotiabank's physical and transition climate risks are directly supported by the actual answer context from the 2025 Annual Report, including specific risks and management strategies.",
+    "relevance_reason": "The answer directly addresses the question regarding the physical and transition climate risks disclosed by Scotiabank in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including both types of risks and the bank's management strategies, as supported by the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0014646
+}

@@ -1,0 +1,266 @@
+{
+  "case_id": "1622ffdffd9cfdf4/agentic/eval_07",
+  "config": "agentic",
+  "question": {
+    "id": "eval_07",
+    "question": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity risk controls and liquidity coverage measures; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?",
+    "answer": "I could not find specific disclosures regarding liquidity risk controls and liquidity coverage measures in BMO's 2025 annual report or AIF. The relevant sections may not have been retrieved or may not exist in the documents. \n\nFor further details, you can refer to the full documents:\n- [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)\n- [BMO 2025 AIF](https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf)",
+    "iterations": 4,
+    "tool_calls": 3,
+    "tools_used": [
+      "search_filings",
+      "get_filing_list",
+      "search_filings"
+    ],
+    "input_tokens": 5310,
+    "output_tokens": 216,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000926,
+    "seconds": 7.49,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "liquidity risk controls liquidity coverage measures",
+          "bank": "BMO",
+          "fiscal_year": 2025,
+          "document_type": "annual report"
+        },
+        "observation": {
+          "passages": [],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "get_filing_list",
+        "arguments": {
+          "bank": "BMO",
+          "fiscal_year": 2025
+        },
+        "observation": {
+          "filings": [
+            {
+              "filing_id": "BMO_2025_AIF_FY",
+              "bank_code": "BMO",
+              "document_type": "AIF",
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "file_name": "BMO_2025_AIF.pdf",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf"
+            },
+            {
+              "filing_id": "BMO_2025_annual_report_FY",
+              "bank_code": "BMO",
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf"
+            }
+          ],
+          "count": 2
+        },
+        "public_action_summary": "Tool requested: get_filing_list"
+      },
+      {
+        "iteration": 3,
+        "action": "search_filings",
+        "arguments": {
+          "query": "liquidity risk controls liquidity coverage measures",
+          "bank": "BMO",
+          "fiscal_year": 2025,
+          "document_type": "AIF"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BMO_2025_AIF_FY_00031",
+              "text": "A description of certain key factors and risks faced by the Bank and its businesses can be found in the “Enterprise-Wide Risk Management” section on pages 67 to 107 of\nthe 2025 MD&A, which pages the Bank incorporates herein by reference.",
+              "similarity": 0.383,
+              "bank_code": "BMO",
+              "quarter": 0,
+              "page_end": 7,
+              "section": "Risk Factors",
+              "file_name": "BMO_2025_AIF.pdf",
+              "page_start": 7,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+              "filing_id": "BMO_2025_AIF_FY",
+              "document_type": "AIF",
+              "fiscal_year": 2025,
+              "bank": "Bank of Montreal"
+            },
+            {
+              "chunk_id": "BMO_2025_AIF_FY_00027",
+              "text": "They are both supervised and regulated by the Office of the Comptroller of the Currency (OCC). The Federal Reserve generally needs to approve acquiring\n(a) more than 5% of voting shares, (b) control, or (c) all (or substantially all) of the assets of a bank holding company, bank, or savings association. The Bank is also subject to the Dodd-Frank Wall Street Reform and Consumer Protection Act (Dodd-Frank) and related regulations. Dodd-Frank provides for consumer\nprotections, regulation of over-the-counter derivatives markets, restrictions on proprietary trading and the ownership and sponsorship of private investment funds by banks and their affiliates\n(referred to as the Volcker Rule), imposition of heightened prudential standards, and broader application of leverage and risk-based capital requirements.\n\nBank of Montreal is subject to the Federal Reserve’s rule regarding the supervision and regulation of foreign banking organizations (FBO Rule), promulgated to implement\nDodd Frank’s requirements for enhanced prudential standards for the U.S. operations of non-U.S. banks, such as BMO. The rule establishes requirements relating to an intermediate holding\ncompany structure, risk-based capital and leverage requirements, capital stress testing requirements, U.S. risk management and risk governance, liquidity risk management and liquidity stress\ntesting frameworks.\n\nBMO Financial Corp. (BFC) is a Category III institution under the Enhanced Prudential Standards issued by the Federal Reserve Board (FRB) and is required to meet certain\nregulatory standards related to capital, liquidity and risk management, including complying with FRB single counterparty credit limits. BFC is also subject to the Comprehensive Capital\nAnalysis and Review and Dodd-Frank Act Stress Test requirements of the FRB on an annual basis.\n\nOCC guidelines establish heightened standards for large national banks with average total consolidated assets of US$50 billion or more, including BBNA. The guidelines set\nout minimum standards for the design and implementation of a bank’s risk governance framework and minimum standards for oversight of that framework by a bank’s board of directors. The\nframework must ensure the bank’s risk profile is easily distinguished and separate from that of its parent for risk management purposes. A bank’s board of directors is responsible for informed\noversight of, and providing credible challenge to, management’s risk management recommendations and decisions.\n\nAdditional information about supervision and regulation in the United States is found under the headings “Regulatory Capital Requirements”, “Regulatory Capital\nDevelopments” and “Regulatory Capital and Total Loss Absorbing Capacity Review” in the Enterprise-Wide Capital Management section on pages 59 to 61, “Regulatory Environment and\nChanges” in the Risks That May Affect Future Results section on page 69, “Legal and Regulatory Compliance Risk” on pages 102 to 103, and “Other Regulatory Developments” on page 111\nof the 2025 MD&A, which pages the Bank incorporates herein by reference.\n\nThis Supervision and Regulation in the United States section contains forward-looking statements. Please see the Caution Regarding Forward-Looking Statements on page 2.\n\nInternational Supervision and Regulation",
+              "similarity": 0.352,
+              "file_name": "BMO_2025_AIF.pdf",
+              "page_start": 6,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+              "section": "DESCRIPTION OF THE BUSINESS",
+              "page_end": 6,
+              "quarter": 0,
+              "document_type": "AIF",
+              "filing_id": "BMO_2025_AIF_FY",
+              "fiscal_year": 2025,
+              "bank_code": "BMO",
+              "bank": "Bank of Montreal"
+            },
+            {
+              "chunk_id": "BMO_2025_AIF_FY_00030",
+              "text": "Commercial Banking offers a range of commercial products and services, including a\nvariety of financing options, treasury and payment solutions and risk management products. U.S. Private Wealth provides a suite of financial services and wealth management solutions to\nmass affluent, high net worth and ultra-high net worth individuals, families and business owners. Wealth Management serves a range of clients across Canada, from individuals and families to business owners and institutions, and offers a wide spectrum of wealth, asset\nmanagement and insurance products and services. BMO competes with domestic banks, insurance companies, trust companies, global private banks, investment counselling and advisory\nfirms, and investment fund and asset management companies, among others. Private Wealth provides full-service investing, banking and wealth advisory services to mass affluent, high net\nworth and ultra-high net worth clients in Canada. BMO InvestorLine provides a range of digital\n\ninvesting services that compete with online brokerages and digital advice providers in Canada. Global Asset Management provides investment management services in Canada to institutional,\nretail and high net worth investors, offering a range of innovative, client-focused solutions and strategies to help clients meet their investment objectives. BMO Insurance competes with\nCanadian insurance companies in providing individual life, critical illness, annuity products, segregated funds and pension de-risking solutions.\n\nCapital Markets offers a range of products and services to corporate, institutional and government clients, including investment and corporate banking services, as well as\nglobal markets sales and trading solutions. It primarily focuses on the North American market and select global markets and competes with a diverse range of competitors, including large\nmoney centre banks and boutique investment firms. Investment and Corporate Banking offers debt and equity capital-raising services to clients, as well as loan origination and syndication,\nbalance sheet management solutions and treasury management services. It also provides clients with strategic advice on mergers and acquisitions, restructurings and recapitalizations, trade\nfinance and risk mitigation services, along with a wide range of banking and other operating services tailored to North American and international financial institutions. Global Markets offers\nresearch and access to financial markets for institutional, corporate and retail clients through an integrated suite of sales and trading solutions related to debt, foreign exchange, interest rates,\ncredit, equities, securitization and commodities. New product development and origination services are also offered, as well as risk management and advisory services for hedging strategies,\nincluding in interest rates, foreign exchange rates and commodities prices. In addition, Global Markets provides funding and liquidity management services to clients.\n\n1 Top 10 U.S. Banks by assets as at October 31, 2025: JP Morgan, Bank of America, Citibank, Wells Fargo, U.S. Bank, PNC Bank, Truist Bank, The Toronto-Dominion Bank,\nCapital One, Bank of Montreal.\n\nSustainability and Climate Governance\n\nThe Bank publishes Sustainability and Climate Reporting, including Public Accountability Statements, outlining how the Bank is addressing environmental, social, and\ngovernance topics. Other related information is available on the Bank’s website, www.bmo.com. The information on the Bank’s website does not form a part of this Annual Information Form.\nAdditional information about the Bank’s environmental and social risk governance and management is under the heading “Environmental and Social Risk” in the Risks That May Affect\nFuture Results section on pages 68 to 69 and “Environmental and Social Risk” in the Enterprise-Wide Risk Management section on pages 105 to 107 of the 2025 MD&A, which pages the\nBank incorporates herein by reference.",
+              "similarity": 0.328,
+              "section": "DESCRIPTION OF THE BUSINESS",
+              "bank": "Bank of Montreal",
+              "page_end": 7,
+              "document_type": "AIF",
+              "file_name": "BMO_2025_AIF.pdf",
+              "page_start": 6,
+              "filing_id": "BMO_2025_AIF_FY",
+              "quarter": 0,
+              "bank_code": "BMO",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+              "fiscal_year": 2025
+            },
+            {
+              "chunk_id": "BMO_2025_AIF_FY_00019",
+              "text": "By their nature, forward-looking statements require us to make assumptions and are subject to inherent risks and uncertainties, both general and specific in nature. There is\nsignificant risk that predictions, forecasts, conclusions or projections will not prove to be accurate, that our assumptions may not be correct, and that actual results may differ materially from\nsuch predictions, forecasts, conclusions or projections. We caution readers of this document not to place undue reliance on our forward-looking statements, as a number of factors – many of\nwhich are beyond our control and the effects of which can be difficult to predict – could cause actual future results, conditions, actions or events to differ materially from the targets,\nexpectations, estimates or intentions expressed in the forward-looking statements.\n\nThe future outcomes that relate to forward-looking statements may be influenced by many factors, including, but not limited to: general economic and market conditions in the\ncountries in which we operate, including labour challenges and changes in foreign exchange and interest rates; political conditions, including changes relating to, or affecting, economic or\ntrade matters, including tariffs, countermeasures and tariff mitigation policies; changes to our credit ratings; cyber and information security, including the threat of data breaches, hacking,\nidentity theft and corporate espionage, as well as the possibility of denial of service resulting from efforts targeted at causing system failure and service disruption; technology resilience,\ninnovation and competition; failure of third parties to comply with their obligations to us; disruptions of global supply chains; environmental and social risk, including climate change; the\nCanadian housing market and consumer leverage; inflationary pressures; changes in laws, including tax legislation and interpretation, or in supervisory expectations or requirements,\nincluding capital, interest rate and liquidity requirements and guidance, including if the bank were designated a global systemically important bank, and the effect of such changes on funding\ncosts and capital requirements; changes in monetary, fiscal or economic policy; weak, volatile or illiquid capital or credit markets; the level of competition in the geographic and business\nareas in which we operate; exposure to, and the resolution of, significant litigation or regulatory matters, our ability to successfully appeal adverse outcomes of such matters and the timing,\ndetermination and recovery of amounts related to such matters; the accuracy and completeness of the information we obtain with respect to our customers and counterparties; our ability to\nsuccessfully execute our strategic plans, complete acquisitions or dispositions and integrate acquisitions, including obtaining regulatory approvals, and realize any anticipated benefits from\nsuch plans and transactions; critical accounting estimates and judgments, and the effects of changes in accounting standards, rules and interpretations on these estimates; operational and\ninfrastructure risks, including with respect to reliance on third parties; global capital markets activities; the emergence or continuation of widespread health emergencies or pandemics, and\ntheir impact on local, national or international economies, as well as their heightening of certain risks that may affect our future results; the possible effects on our business of war or\nterrorist activities; natural disasters, such as earthquakes or flooding, and disruptions to public infrastructure, such as transportation, communications, power or water supply; and our\nability to anticipate and effectively manage risks arising from all of the foregoing factors.",
+              "similarity": 0.321,
+              "page_end": 3,
+              "fiscal_year": 2025,
+              "document_type": "AIF",
+              "page_start": 3,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+              "quarter": 0,
+              "filing_id": "BMO_2025_AIF_FY",
+              "file_name": "BMO_2025_AIF.pdf",
+              "bank_code": "BMO",
+              "section": "EXPLANATORY NOTES AND CAUTIONS",
+              "bank": "Bank of Montreal"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 4,
+        "action": "final_answer",
+        "answer": "I could not find specific disclosures regarding liquidity risk controls and liquidity coverage measures in BMO's 2025 annual report or AIF. The relevant sections may not have been retrieved or may not exist in the documents. \n\nFor further details, you can refer to the full documents:\n- [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)\n- [BMO 2025 AIF](https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf)"
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_AIF_FY_00031",
+        "text": "A description of certain key factors and risks faced by the Bank and its businesses can be found in the “Enterprise-Wide Risk Management” section on pages 67 to 107 of\nthe 2025 MD&A, which pages the Bank incorporates herein by reference.",
+        "similarity": 0.383,
+        "bank_code": "BMO",
+        "quarter": 0,
+        "page_end": 7,
+        "section": "Risk Factors",
+        "file_name": "BMO_2025_AIF.pdf",
+        "page_start": 7,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+        "filing_id": "BMO_2025_AIF_FY",
+        "document_type": "AIF",
+        "fiscal_year": 2025,
+        "bank": "Bank of Montreal"
+      },
+      {
+        "chunk_id": "BMO_2025_AIF_FY_00027",
+        "text": "They are both supervised and regulated by the Office of the Comptroller of the Currency (OCC). The Federal Reserve generally needs to approve acquiring\n(a) more than 5% of voting shares, (b) control, or (c) all (or substantially all) of the assets of a bank holding company, bank, or savings association. The Bank is also subject to the Dodd-Frank Wall Street Reform and Consumer Protection Act (Dodd-Frank) and related regulations. Dodd-Frank provides for consumer\nprotections, regulation of over-the-counter derivatives markets, restrictions on proprietary trading and the ownership and sponsorship of private investment funds by banks and their affiliates\n(referred to as the Volcker Rule), imposition of heightened prudential standards, and broader application of leverage and risk-based capital requirements.\n\nBank of Montreal is subject to the Federal Reserve’s rule regarding the supervision and regulation of foreign banking organizations (FBO Rule), promulgated to implement\nDodd Frank’s requirements for enhanced prudential standards for the U.S. operations of non-U.S. banks, such as BMO. The rule establishes requirements relating to an intermediate holding\ncompany structure, risk-based capital and leverage requirements, capital stress testing requirements, U.S. risk management and risk governance, liquidity risk management and liquidity stress\ntesting frameworks.\n\nBMO Financial Corp. (BFC) is a Category III institution under the Enhanced Prudential Standards issued by the Federal Reserve Board (FRB) and is required to meet certain\nregulatory standards related to capital, liquidity and risk management, including complying with FRB single counterparty credit limits. BFC is also subject to the Comprehensive Capital\nAnalysis and Review and Dodd-Frank Act Stress Test requirements of the FRB on an annual basis.\n\nOCC guidelines establish heightened standards for large national banks with average total consolidated assets of US$50 billion or more, including BBNA. The guidelines set\nout minimum standards for the design and implementation of a bank’s risk governance framework and minimum standards for oversight of that framework by a bank’s board of directors. The\nframework must ensure the bank’s risk profile is easily distinguished and separate from that of its parent for risk management purposes. A bank’s board of directors is responsible for informed\noversight of, and providing credible challenge to, management’s risk management recommendations and decisions.\n\nAdditional information about supervision and regulation in the United States is found under the headings “Regulatory Capital Requirements”, “Regulatory Capital\nDevelopments” and “Regulatory Capital and Total Loss Absorbing Capacity Review” in the Enterprise-Wide Capital Management section on pages 59 to 61, “Regulatory Environment and\nChanges” in the Risks That May Affect Future Results section on page 69, “Legal and Regulatory Compliance Risk” on pages 102 to 103, and “Other Regulatory Developments” on page 111\nof the 2025 MD&A, which pages the Bank incorporates herein by reference.\n\nThis Supervision and Regulation in the United States section contains forward-looking statements. Please see the Caution Regarding Forward-Looking Statements on page 2.\n\nInternational Supervision and Regulation",
+        "similarity": 0.352,
+        "file_name": "BMO_2025_AIF.pdf",
+        "page_start": 6,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+        "section": "DESCRIPTION OF THE BUSINESS",
+        "page_end": 6,
+        "quarter": 0,
+        "document_type": "AIF",
+        "filing_id": "BMO_2025_AIF_FY",
+        "fiscal_year": 2025,
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal"
+      },
+      {
+        "chunk_id": "BMO_2025_AIF_FY_00030",
+        "text": "Commercial Banking offers a range of commercial products and services, including a\nvariety of financing options, treasury and payment solutions and risk management products. U.S. Private Wealth provides a suite of financial services and wealth management solutions to\nmass affluent, high net worth and ultra-high net worth individuals, families and business owners. Wealth Management serves a range of clients across Canada, from individuals and families to business owners and institutions, and offers a wide spectrum of wealth, asset\nmanagement and insurance products and services. BMO competes with domestic banks, insurance companies, trust companies, global private banks, investment counselling and advisory\nfirms, and investment fund and asset management companies, among others. Private Wealth provides full-service investing, banking and wealth advisory services to mass affluent, high net\nworth and ultra-high net worth clients in Canada. BMO InvestorLine provides a range of digital\n\ninvesting services that compete with online brokerages and digital advice providers in Canada. Global Asset Management provides investment management services in Canada to institutional,\nretail and high net worth investors, offering a range of innovative, client-focused solutions and strategies to help clients meet their investment objectives. BMO Insurance competes with\nCanadian insurance companies in providing individual life, critical illness, annuity products, segregated funds and pension de-risking solutions.\n\nCapital Markets offers a range of products and services to corporate, institutional and government clients, including investment and corporate banking services, as well as\nglobal markets sales and trading solutions. It primarily focuses on the North American market and select global markets and competes with a diverse range of competitors, including large\nmoney centre banks and boutique investment firms. Investment and Corporate Banking offers debt and equity capital-raising services to clients, as well as loan origination and syndication,\nbalance sheet management solutions and treasury management services. It also provides clients with strategic advice on mergers and acquisitions, restructurings and recapitalizations, trade\nfinance and risk mitigation services, along with a wide range of banking and other operating services tailored to North American and international financial institutions. Global Markets offers\nresearch and access to financial markets for institutional, corporate and retail clients through an integrated suite of sales and trading solutions related to debt, foreign exchange, interest rates,\ncredit, equities, securitization and commodities. New product development and origination services are also offered, as well as risk management and advisory services for hedging strategies,\nincluding in interest rates, foreign exchange rates and commodities prices. In addition, Global Markets provides funding and liquidity management services to clients.\n\n1 Top 10 U.S. Banks by assets as at October 31, 2025: JP Morgan, Bank of America, Citibank, Wells Fargo, U.S. Bank, PNC Bank, Truist Bank, The Toronto-Dominion Bank,\nCapital One, Bank of Montreal.\n\nSustainability and Climate Governance\n\nThe Bank publishes Sustainability and Climate Reporting, including Public Accountability Statements, outlining how the Bank is addressing environmental, social, and\ngovernance topics. Other related information is available on the Bank’s website, www.bmo.com. The information on the Bank’s website does not form a part of this Annual Information Form.\nAdditional information about the Bank’s environmental and social risk governance and management is under the heading “Environmental and Social Risk” in the Risks That May Affect\nFuture Results section on pages 68 to 69 and “Environmental and Social Risk” in the Enterprise-Wide Risk Management section on pages 105 to 107 of the 2025 MD&A, which pages the\nBank incorporates herein by reference.",
+        "similarity": 0.328,
+        "section": "DESCRIPTION OF THE BUSINESS",
+        "bank": "Bank of Montreal",
+        "page_end": 7,
+        "document_type": "AIF",
+        "file_name": "BMO_2025_AIF.pdf",
+        "page_start": 6,
+        "filing_id": "BMO_2025_AIF_FY",
+        "quarter": 0,
+        "bank_code": "BMO",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "BMO_2025_AIF_FY_00019",
+        "text": "By their nature, forward-looking statements require us to make assumptions and are subject to inherent risks and uncertainties, both general and specific in nature. There is\nsignificant risk that predictions, forecasts, conclusions or projections will not prove to be accurate, that our assumptions may not be correct, and that actual results may differ materially from\nsuch predictions, forecasts, conclusions or projections. We caution readers of this document not to place undue reliance on our forward-looking statements, as a number of factors – many of\nwhich are beyond our control and the effects of which can be difficult to predict – could cause actual future results, conditions, actions or events to differ materially from the targets,\nexpectations, estimates or intentions expressed in the forward-looking statements.\n\nThe future outcomes that relate to forward-looking statements may be influenced by many factors, including, but not limited to: general economic and market conditions in the\ncountries in which we operate, including labour challenges and changes in foreign exchange and interest rates; political conditions, including changes relating to, or affecting, economic or\ntrade matters, including tariffs, countermeasures and tariff mitigation policies; changes to our credit ratings; cyber and information security, including the threat of data breaches, hacking,\nidentity theft and corporate espionage, as well as the possibility of denial of service resulting from efforts targeted at causing system failure and service disruption; technology resilience,\ninnovation and competition; failure of third parties to comply with their obligations to us; disruptions of global supply chains; environmental and social risk, including climate change; the\nCanadian housing market and consumer leverage; inflationary pressures; changes in laws, including tax legislation and interpretation, or in supervisory expectations or requirements,\nincluding capital, interest rate and liquidity requirements and guidance, including if the bank were designated a global systemically important bank, and the effect of such changes on funding\ncosts and capital requirements; changes in monetary, fiscal or economic policy; weak, volatile or illiquid capital or credit markets; the level of competition in the geographic and business\nareas in which we operate; exposure to, and the resolution of, significant litigation or regulatory matters, our ability to successfully appeal adverse outcomes of such matters and the timing,\ndetermination and recovery of amounts related to such matters; the accuracy and completeness of the information we obtain with respect to our customers and counterparties; our ability to\nsuccessfully execute our strategic plans, complete acquisitions or dispositions and integrate acquisitions, including obtaining regulatory approvals, and realize any anticipated benefits from\nsuch plans and transactions; critical accounting estimates and judgments, and the effects of changes in accounting standards, rules and interpretations on these estimates; operational and\ninfrastructure risks, including with respect to reliance on third parties; global capital markets activities; the emergence or continuation of widespread health emergencies or pandemics, and\ntheir impact on local, national or international economies, as well as their heightening of certain risks that may affect our future results; the possible effects on our business of war or\nterrorist activities; natural disasters, such as earthquakes or flooding, and disruptions to public infrastructure, such as transportation, communications, power or water supply; and our\nability to anticipate and effectively manage risks arising from all of the foregoing factors.",
+        "similarity": 0.321,
+        "page_end": 3,
+        "fiscal_year": 2025,
+        "document_type": "AIF",
+        "page_start": 3,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf",
+        "quarter": 0,
+        "filing_id": "BMO_2025_AIF_FY",
+        "file_name": "BMO_2025_AIF.pdf",
+        "bank_code": "BMO",
+        "section": "EXPLANATORY NOTES AND CAUTIONS",
+        "bank": "Bank of Montreal"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 7.48838610004168,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009261000000000001,
+  "input_tokens": 5310,
+  "output_tokens": 216,
+  "embedding_tokens": 0,
+  "chat_calls": 4,
+  "query_embedding_seconds": 0.04135909990873188,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 2,
+    "relevance": 3,
+    "completeness": 2,
+    "faithfulness_reason": "The answer claims a lack of specific disclosures regarding liquidity risk controls and measures, which contradicts the evidence that details BMO's liquidity and funding risk management practices in its 2025 annual report.",
+    "relevance_reason": "The answer partially addresses the question by stating that specific disclosures were not found, but it does not provide any relevant information from the retrieved evidence that discusses liquidity risk controls or measures.",
+    "completeness_reason": "The answer fails to cover the aspects of liquidity risk controls and measures that are present in the reference evidence, leading to substantial omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": "The answer does not acknowledge the relevant sections in the retrieved documents that discuss liquidity risk management, which were available but not referenced."
+  },
+  "judge_cost_usd": 0.00116085
+}

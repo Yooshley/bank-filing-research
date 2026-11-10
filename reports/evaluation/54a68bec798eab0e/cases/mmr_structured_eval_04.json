@@ -1,0 +1,150 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_04",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_04",
+    "question": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "operational",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed cybersecurity and operational risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What cybersecurity and operational risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, TD disclosed several cybersecurity and operational risks. The bank highlighted that it regularly reviews external events and assesses its controls and response capabilities to mitigate risks of cyber-attacks or data security breaches. However, it acknowledged that these measures may not fully mitigate all risks, and the bank could still experience financial and non-financial losses due to such attacks or breaches. The report emphasized that the tactics used by threat actors are constantly evolving, making it challenging to anticipate and implement effective measures against all cyber and technology-related risks. Additionally, the bank's operations could be impacted by failures or disruptions due to various factors, including human error, natural disasters, and cyber-attacks, which could limit its ability to deliver products and services and damage its reputation, potentially leading to financial loss. The report also noted concerns from cyber insurance providers regarding systemic cyber risk, which could affect the bank's ability to obtain adequate cyber insurance coverage. Finally, TD expressed that its investments in technology and cyber infrastructure might be inadequate to meet regulatory expectations and avoid operational errors or business disruptions [S3].",
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00272",
+        "text": "excluding Technology, Cybersecurity and Data\n\nTechnology, Cybersecurity and Data\n\nModel\n\nInsurance\n\nLiquidity\n\nCapital Adequacy\n\nCompliance\n\nFinancial Crime\n\nReputational\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk\n\nRisk",
+        "similarity": 0.5244146585464478,
+        "document_type": "annual_report",
+        "page_start": 94,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "fiscal_year": 2025,
+        "filing_id": "TD_2025_annual_report_FY",
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 94,
+        "section": "Operational Risk",
+        "bank_code": "TD",
+        "quarter": 0,
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00639",
+        "text": "In\naddition, some actions seek very large or indeterminate damages. Based\non the Bank’s current knowledge, and subject to the factors listed above\nas well as other uncertainties inherent in litigation and regulatory matters,\nother than as described below, since October 31, 2025, no other legal\nor regulatory matter has arisen or progressed to the point that it would\nreasonably be expected to result in a material financial impact to the Bank. TD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nthe Bank, its affiliates, or their employees that may be a violation of U.S.\nfederal law. The Bank is focused on meeting the terms of the consent\norders and plea agreements, including meeting its requirements to\nremediate the Bank’s U.S. BSA/AML compliance programs. During the first\nfiscal quarter of 2025, the Bank fully paid the remainder of the monetary\npenalty owed pursuant to the consent orders and plea agreements that\nwere entered into as part of the Global Resolution. The payment was\ncovered by provisions previously taken by the Bank for this matter.\n\n(DPA) with the U.S. DOJ related to the actions of a former TDS trader.\nPursuant to the terms of the DPA, TDS-US agreed to pay total monetary\nsanctions of approximately US$15.5 million, which consists of a criminal\npenalty, forfeiture and victim compensation. TDS-US and, in certain\ninstances, TD Group US Holdings LLC, further agreed to abide by certain\ncooperation, reporting and compliance obligations in connection with\nthe DPA. These include, but are not limited to: (i) an ongoing obligation\nto cooperate with DOJ investigations; (ii) an ongoing obligation to report\nevidence or allegations of violations by TDS-US of certain federal statutes;\n(iii) the implementation and maintenance of a corporate compliance\nprogram that meets certain enumerated standards; and (iv) an ongoing\nobligation to regularly report to the DOJ on its efforts to bolster its\ncompliance program. TDS-US also resolved investigations by the U.S.\nSecurities and Exchange Commission (SEC) and the Financial Industry\nRegulatory Authority (FINRA) relating to the actions of the former TDS-US\ntrader. As part of the resolutions, TDS-US agreed to pay approximately\nUS$7 million in total monetary sanctions to the SEC and US$6 million\nto FINRA.",
+        "similarity": 0.5083996653556824,
+        "page_start": 229,
+        "section": "PROVISIONS, CONTINGENT LIABILITIES, COMMITMENTS, GUARANTEES, PLEDGED ASSETS, AND COLLATERAL",
+        "bank": "Toronto-Dominion Bank",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 230,
+        "bank_code": "TD",
+        "quarter": 0,
+        "filing_id": "TD_2025_annual_report_FY",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00251",
+        "text": "Schwab IDA Agreement Exposes the Bank to Certain Risks\nThe Bank has an insured deposit account agreement with Schwab and\nit may be affected by actions taken by Schwab, or if Schwab does not\nperform its obligations, pursuant to the Schwab IDA Agreement (as\nfurther described in the “Financial Results Overview” section of this\ndocument). Although the Schwab IDA Agreement requires Schwab to\nmake certain payments to the Bank to compensate it for specific instances\nof non-performance by Schwab, if Schwab does not make such payments,\nthe Bank’s financial results would be impacted including from a loss\nof revenues, a potential increase in the cost of funding to replace the\ndeposits, and losses primarily related to hedging.\n\nThe Bank regularly reviews external events and assesses, and may enhance,\nits controls and response capabilities as it considers necessary to help\nmitigate against the risk of cyber-attacks or data security or other breaches\nin response to the evolving threat environment, but these activities may\nnot mitigate all risks, and the Bank may experience loss or damage arising\nfrom such attacks or breaches. As a result, the industry and the Bank are\nsusceptible to experiencing potential financial and non-financial loss and/or\nharm from these attacks or breaches. The adoption of certain technologies,\nsuch as cloud computing, AI, machine learning, robotics, and process\nautomation call for continued focus and investment to manage the Bank’s\nrisks. It is possible that the Bank, or those with whom the Bank does\nbusiness, have not anticipated or implemented or may not anticipate or\nimplement effective measures against all such cyber and technology-related\nrisks, particularly because the tactics, techniques, and procedures used by\nthreat actors change frequently and risks can originate from a wide variety\nof sources that have also become increasingly sophisticated.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\nFurthermore, the Bank’s owned and operated applications, platforms,\nnetworks, processes, products, and services could be subject to failures\nor disruptions, or non-compliance with regulations as a result of human\nerror, natural disasters, utility or infrastructure disruptions, pandemics or\nother public health emergencies, malicious insiders or service providers,\ncyber-attacks or other criminal or terrorist acts, which may impact\nthe Bank’s operations. Such adverse effects could limit the Bank’s ability\nto deliver products and services to customers, and/or damage the Bank’s\nreputation, which in turn could lead to financial loss. Cyber insurance\nproviders continue to be concerned about systemic cyber risk, causing\ncoverage term changes across the industry. This has the potential to\nimpact the Bank’s ability to mitigate risks through cyber insurance and may\nlimit the amount of coverage available for financial losses.\n\nThe Bank’s investments in its technology and cyber infrastructure, including\nthe investment in its risk and control environment, may be inadequate to\nmeet regulatory expectations, remain competitive, serve clients effectively,\nand avoid business disruptions or operational errors.",
+        "similarity": 0.5234667062759399,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank_code": "TD",
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "page_end": 88,
+        "fiscal_year": 2025,
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 87,
+        "section": "TOP AND EMERGING RISKS",
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00223",
+        "text": "$ 11,281\n\n1 Effective the first quarter of 2025, Risk-weighted assets associated with investments in insurance subsidiaries are allocated to the Corporate segment.\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n|\nT A B L E 4 0",
+        "similarity": 0.4516490697860718,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 80,
+        "bank_code": "TD",
+        "bank": "Toronto-Dominion Bank",
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_start": 79,
+        "quarter": 0,
+        "section": "Operational Risk",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00030",
+        "text": "Risk Factors That May Affect Future Results\n82\nManaging Risk\n92",
+        "similarity": 0.42066729068756104,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank_code": "TD",
+        "page_start": 20,
+        "bank": "Toronto-Dominion Bank",
+        "quarter": 0,
+        "section": "RISK FACTORS AND MANAGEMENT",
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "page_end": 20
+      }
+    ],
+    "structured": {
+      "answer": "In its 2025 annual report, TD disclosed several cybersecurity and operational risks. The bank highlighted that it regularly reviews external events and assesses its controls and response capabilities to mitigate risks of cyber-attacks or data security breaches. However, it acknowledged that these measures may not fully mitigate all risks, and the bank could still experience financial and non-financial losses due to such attacks or breaches. The report emphasized that the tactics used by threat actors are constantly evolving, making it challenging to anticipate and implement effective measures against all cyber and technology-related risks. Additionally, the bank's operations could be impacted by failures or disruptions due to various factors, including human error, natural disasters, and cyber-attacks, which could limit its ability to deliver products and services and damage its reputation, potentially leading to financial loss. The report also noted concerns from cyber insurance providers regarding systemic cyber risk, which could affect the bank's ability to obtain adequate cyber insurance coverage. Finally, TD expressed that its investments in technology and cyber infrastructure might be inadequate to meet regulatory expectations and avoid operational errors or business disruptions [S3].",
+      "sources": [
+        {
+          "label": "S3",
+          "bank": "Toronto-Dominion Bank",
+          "document": "annual_report",
+          "section": "TOP AND EMERGING RISKS",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 1.70761909999419
+  },
+  "latency_seconds": 5.750328700058162,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00043065,
+  "input_tokens": 1803,
+  "output_tokens": 267,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.06846510001923889,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's cybersecurity and operational risks are supported by the actual answer context from the 2025 annual report, including specific risks and the bank's acknowledgment of potential losses.",
+    "relevance_reason": "The answer directly addresses the question regarding the cybersecurity and operational risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including specific risks and their implications as outlined in the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0010541999999999997,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_04",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

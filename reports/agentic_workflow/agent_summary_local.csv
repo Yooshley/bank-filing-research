@@ -1,0 +1,6 @@
+id,question,iterations,tool_calls,tools_used,input_tokens,output_tokens,embedding_tokens,estimated_cost_usd,seconds
+q01,What new risks did RBC add in 2024 that were not in 2023?,4,4,"get_filing_list, get_filing_list, search_filings, search_filings",9129,471,0,0.001652,9.11
+q02,How does TD's credit risk language compare to BMO's in their most recent annual reports?,3,4,"get_filing_list, get_filing_list, compare_sections, compare_sections",7209,874,0,0.001606,12.55
+q03,Which of the Big Five banks has the most detailed climate risk disclosure?,7,9,"get_filing_list, get_filing_list, get_filing_list, get_filing_list, get_filing_list, search_filings, search_filings, search_filings, search_filings",31166,1086,0,0.005326,20.93
+q04,How did Scotiabank's provision for credit losses change over the past 4 quarters?,2,1,get_filing_list,900,58,0,0.00017,2.2
+q05,Which banks mention AI risk or OSFI E-23 in their most recent filings?,2,2,"search_filings, search_filings",8762,539,0,0.001638,5.47

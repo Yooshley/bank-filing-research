@@ -1,0 +1,135 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_12",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_12",
+    "question": "What market risk management did Scotiabank disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BNS"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed market risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What market risk management did Scotiabank disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer this question.",
+    "sources": [
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00015",
+        "text": "Your Board is confident in the path forward, and we\nremain committed to providing effective risk oversight\nas Scotiabank continues to drive profitable growth\nand build sustainable value for its shareholders\nover the long term. I want to extend our sincere thanks to Scott Bonham,\nMichael Penner, and Calin Rovinescu who retired from\nthe Board this year. We are grateful for their leadership,\ninsight, and many contributions to Scotiabank. I also\nwant to recognize President and CEO Scott Thomson,\nthe executive leadership team, and our global network\nof Scotiabankers for their steadfast commitment to our\nclients, shareholders, and the Bank during this period of\neconomic uncertainty. Returning to our roots On behalf of the entire Board, thank you for your\ncontinued trust and support.\n\nThis year, your Board was proud to welcome our\nshareholders to Halifax, Nova Scotia for Scotiabank’s\n193rd Annual Meeting of Shareholders. It marked our first\nAnnual Meeting outside Toronto since the onset of the\nCOVID-19 pandemic – and returning to our Atlantic roots\nfelt both timely and symbolic. Just as shareholders first\ngathered in Halifax in 1833, we came together once again\n\n12 | 2025 Scotiabank Annual Report\n\nBoard of Directors\n\nAaron W. Regent\n\n• Chair of the Board\n\n• Founder, Chairman and Chief Executive Officer of Magris Performance Materials Inc.\n\n• Scotiabank director since April 9, 2013\n\nCommittee Chairs\n\nNora A. Aufreiter\n\nLynn K. Patterson\n\nSteven C. Van Wyk\n\n• Human Capital and Compensation\nCommittee Chair and member\nof the Risk Committee\n\n• Risk Committee Chair and\nmember of the Human Capital\nand Compensation Committee\n\n• Technology Committee Chair\nand member of the Audit and\nConduct Review Committee\n\n• Corporate director\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nAugust 25, 2014\n\n• Scotiabank director since\nSeptember 1, 2020\n\n• Scotiabank director since\nNovember 15, 2024\n\nMichael B. Medline\n\nBenita M. Warmbold\n\n• Corporate Governance Committee\nChair and member of the Audit\nand Conduct Review Committee\n\n• Audit and Conduct Review\nCommittee Chair and member of\nthe Corporate Governance Committee\n\n• Corporate director\n\n• Corporate director\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Scotiabank director since\nOctober 29, 2018\n\nGuillermo E. Babatz\n\nW. Dave Dowrich\n\nSandra J. Stuart\n\n• Managing Partner of Atik Capital, S.C.\n\n• Corporate director\n\n• Scotiabank director since\nJanuary 28, 2014\n\n• Scotiabank director since\nSeptember 1, 2023\n\n• Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA)\n\n• Scotiabank director since June 1, 2022\n\nDaniel (Don) H. Callahan\n\nScott Thomson\n\n• Corporate director\n\nUna M. Power\n\n• President and Chief Executive Officer\nof Scotiabank\n\n• Corporate director\n\n• Scotiabank director since\nJune 15, 2021\n\n• Scotiabank director since April 12, 2016\n\n• Scotiabank director since April 12, 2016\n\nAs of December 2, 2025\n\n2025 Scotiabank Annual Report | 1 3\n\n• Scotiabank director since\nSeptember 1, 2023 • Senior Executive Vice President\nand Chief Financial Officer of\nTeachers Insurance and Annuity\nAssociation of America (TIAA) • Scotiabank director since June 1, 2022 Daniel (Don) H. Callahan Scott Thomson • Corporate director Una M. Power • President and Chief Executive Officer\nof Scotiabank • Corporate director • Scotiabank director since\nJune 15, 2021 • Scotiabank director since April 12, 2016 • Scotiabank director since April 12, 2016 As of December 2, 2025 2025 Scotiabank Annual Report | 1 3\n\nSustainability Highlights",
+        "similarity": 0.7570104598999023,
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "page_start": 14,
+        "document_type": "annual_report",
+        "bank_code": "BNS",
+        "section": "ASSETS",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_end": 16,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00023",
+        "text": "26\nAnalysis of the aggregate credit risk exposures, including details of both\npersonal and wholesale lending.\n\n158-160\n\n27\nDiscussion of the policies for identifying impaired loans, defining\nimpairments and renegotiated loans, and explaining loan forbearance\npolicies.\n\n93, 122-125\n189\n34-35\n\n28\nReconciliations of the opening and closing balances of impaired loans and\nimpairment allowances during the year.\n\n89-91, 94\n\n29\nAnalysis of counterparty credit risk that arises from derivative transactions.\n88-90\n176-179\n108\n30\nDiscussion of credit risk mitigation, including collateral held for all sources of\ncredit risk.\n\nOther risks\n31\nQuantified measures of the management of operational risk.\n72, 112-113\n\n32\nDiscussion of publicly known risk items.\n85-87\n205-206\n\n16 | 2025 Scotiabank Annual Report\n\nManagement’s\nDiscussion & Analysis\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable readers to assess the Bank’s financial condition and\nresults of operations as at and for the year ended October 31, 2025. The MD&A should be read in conjunction with the Bank’s\n2025 Consolidated Financial Statements, including the Notes. This MD&A is dated December 2, 2025.\n\nAdditional information relating to the Bank, including the Bank’s 2025 Annual Report, are available on the Bank’s website at\nwww.scotiabank.com. As well, the Bank’s 2025 Annual Report and Annual Information Form are available on the SEDAR+\nwebsite at www.sedarplus.ca and on the EDGAR section of the SEC’s website at www.sec.gov.\n\nTable of Contents\n\nGroup Financial Condition\n\n18",
+        "similarity": 0.708901047706604,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "document_type": "annual_report",
+        "section": "Credit Risk",
+        "quarter": 0,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "page_start": 18,
+        "page_end": 19,
+        "bank_code": "BNS"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00014",
+        "text": "Chief Human Resources Officer Group Head,\nCanadian Banking Jacqui Allard Tim Clark Phil Thomas\nGroup Head & Chief Strategy\nand Operating Officer Group Head,\nGlobal Wealth Management Group Head\nand Chief Information Officer Raj Viswanathan Ian Arellano Group Head and Chief Financial Officer Travis Machen Executive Vice President\nand General Counsel CEO and Group Head,\nGlobal Banking and Markets Julie Walsh Francisco Aristeguieta Executive Vice President\nand Chief Compliance Officer Shannon McGinnis Chief Risk Officer Group Head,\nInternational and Global\nTransaction Banking Leadership Team effective December 2, 2025. 2025 Scotiabank Annual Report | 1 1 Aaron Regent\nChair of the Board Chair’s Message\nto Shareholders Dear fellow shareholders,\n\nto reflect on our progress, reaffirm our purpose, and\ncelebrate the region that continues to shape our identity\nand values.\n\nThis was a very good year for your Bank as it\n\ncontinued to deliver against its strategic objectives.\n\nPlanning for the future\n\nThe Bank has built positive momentum heading\n\ninto 2026, and your Board is looking forward to\n\ncontinued progress in the year ahead.\n\nStrong progress\n\nA new Technology Committee was established\nthis year to oversee the Bank’s technology strategy,\ntechnology-based risk management, and technology\ninvestment and innovation. As this space continues to\nundergo rapid change, oversight of cybersecurity and\nthe ethical use of data and artificial intelligence are\nkey areas of focus for the Committee. We also welcomed\nSteven Van Wyk to the Board, whose global experience\nand deep expertise in technology and financial services\nbring valuable perspective to our table.\n\nIn this period of transformation for the Bank, a strong\nand unified culture is more essential than ever.\nYour Board continues to support and champion the\nBank’s culture ambition, ScotiaBond, which is helping\nalign the organization around the right values and\nbehaviors to guide it into the future.\n\nScotiabank delivered 10% adjusted earnings growth\nwhile prudently building allowances for credit losses,\nstrengthening its balance sheet and capital position, and\nmaintaining a strong liquidity profile. Your Board is also\npleased to see the discipline with which the Bank has\nshifted its business from volume to value – from leading\nwith its loan book to building deeper, more meaningful\nrelationships with clients, improving products\nand services, and diversifying its business mix to\nadvance Scotiabank’s North Star of client primacy.\n\nOur thanks\n\nAt the same time, after a long period of relative\nunderperformance, the Bank’s share price is\nmeaningfully up as it returned capital to shareholders\nthrough a dividend increase and share repurchases.\nYour Board is confident in the path forward, and we\nremain committed to providing effective risk oversight\nas Scotiabank continues to drive profitable growth\nand build sustainable value for its shareholders\nover the long term.\n\nI want to extend our sincere thanks to Scott Bonham,\nMichael Penner, and Calin Rovinescu who retired from\nthe Board this year. We are grateful for their leadership,\ninsight, and many contributions to Scotiabank. I also\nwant to recognize President and CEO Scott Thomson,\nthe executive leadership team, and our global network\nof Scotiabankers for their steadfast commitment to our\nclients, shareholders, and the Bank during this period of\neconomic uncertainty.\n\nReturning to our roots\n\nOn behalf of the entire Board, thank you for your\ncontinued trust and support.",
+        "similarity": 0.6749825477600098,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "bank": "Bank of Nova Scotia",
+        "fiscal_year": 2025,
+        "file_name": "BNS_2025_annual_report.pdf",
+        "quarter": 0,
+        "page_start": 14,
+        "bank_code": "BNS",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "page_end": 14,
+        "section": "ASSETS",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00013",
+        "text": "Launched the Good Corporate Governance\nProgram to support Scotiabank Indigenous\nTalent with professional development and\nskills training, and help grow the Indigenous\nemployee boardroom talent pool. We believe the foundation we have laid over the past year positions us well Commitment #3: to accelerate execution and deliver on our medium-term targets, even as we navigate a very different economic environment. Completed annual mandatory training\nfor Scotiabank’s Board of Directors\nand Executive Team to deepen their\nknowledge and understanding of Free,\nPrior and Informed Consent (FPIC) and\nkey considerations within the political\nand business context in Canada. 2025 Scotiabank Annual Report | 9 Commitment #8: Launched our Guide to Land\nAcknowledgments & Statements of\nReconciliation for employees, and unveiled\nour first Land Acknowledgment Plaque in\nour Scotia Plaza branch in Toronto.\n\nClient primacy remains our North Star. Across all regions\nand business lines, we are deepening relationships,\nstrengthening collaboration, and working to deliver\nthe full power of Scotiabank to our clients. This client-\ncentric mindset is driving value over volume and earning\nthe continued confidence and trust of our clients,\nshareholders, and communities.\n\nCommitment #12:\n\nAs we look to 2026, we are focused on\n\nthe future - building on the strengths\n\nof our businesses, leading with\n\nLaunched the updated Building\nIndigenous Cultural Competency at\nScotiabank course for all employees\nin Canada, marking a crucial step in\nfostering a more inclusive and respectful\nenvironment for Indigenous Peoples.\n\ntransparency, and enhancing our\n\nCommitment #35:\n\ndigital capabilities to grow sustainably\n\nand create long-term value for all\n\nour stakeholders.\n\nDelivered tailored training content to\nScotiabank Global Asset Management\nemployees, to understand the investment\nlandscape for Indigenous Peoples and\nenhance economic opportunities for\nIndigenous communities.\n\nI also want to recognize and thank our extraordinary\nteam of Scotiabankers whose unwavering commitment,\ndeep expertise, and shared purpose empower us\nto keep driving forward.\n\nScotiabank’s leadership team is aligned and energized\nas we focus on the future. I am looking forward to all that\nwe will accomplish in the year ahead.\n\nScott Thomson\nPresident and CEO\n\nPhoto by Métis photographer Faithe McGuire,\nmember of the Paddle Prairie Métis Settlement in Alberta.\nIllustrations created by Ojibwe graphic designer Joshua Hunt\nfrom Migisi Sahgaigan (Eagle Lake) in Treaty 3.\n\n10 | 2025 Scotiabank Annual Report\n\nLeadership Team\n\nScott Thomson\n\nAris Bogdaneris\n\nJenny Poulos\n\nPresident and Chief Executive Officer\n\nChief Human Resources Officer\n\nGroup Head,\nCanadian Banking\n\nJacqui Allard\n\nTim Clark\n\nPhil Thomas\nGroup Head & Chief Strategy\nand Operating Officer\n\nGroup Head,\nGlobal Wealth Management\n\nGroup Head\nand Chief Information Officer\n\nRaj Viswanathan\n\nIan Arellano\n\nGroup Head and Chief Financial Officer\n\nTravis Machen\n\nExecutive Vice President\nand General Counsel\n\nCEO and Group Head,\nGlobal Banking and Markets\n\nJulie Walsh\n\nFrancisco Aristeguieta\n\nExecutive Vice President\nand Chief Compliance Officer\n\nShannon McGinnis\n\nChief Risk Officer\n\nGroup Head,\nInternational and Global\nTransaction Banking\n\nLeadership Team effective December 2, 2025.\n\n2025 Scotiabank Annual Report | 1 1\n\nAaron Regent\nChair of the Board\n\nChair’s Message\nto Shareholders\n\nDear fellow shareholders,",
+        "similarity": 0.6595472097396851,
+        "document_type": "annual_report",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_start": 12,
+        "filing_id": "BNS_2025_annual_report_FY",
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "bank_code": "BNS",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "section": "ASSETS",
+        "page_end": 14,
+        "bank": "Bank of Nova Scotia"
+      },
+      {
+        "chunk_id": "BNS_2025_annual_report_FY_00128",
+        "text": "Market risk is the risk of loss from changes in market prices including interest rates, credit spreads, equity prices, foreign exchange rates, and\ncommodity prices, the correlations between them, and their levels of volatility.\n\n2025 Scotiabank Annual Report | 71",
+        "similarity": 0.6453472375869751,
+        "quarter": 0,
+        "section": "Market risk",
+        "filing_id": "BNS_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "bank": "Bank of Nova Scotia",
+        "bank_code": "BNS",
+        "file_name": "BNS_2025_annual_report.pdf",
+        "page_end": 73,
+        "page_start": 73,
+        "source_url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf",
+        "document_type": "annual_report"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.6782009999733418
+  },
+  "latency_seconds": 1.3771814000792801,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0004713,
+  "input_tokens": 3090,
+  "output_tokens": 13,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.0196382999420166,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer accurately reflects the absence of information regarding market risk management in Scotiabank's 2025 annual report, with no unsupported claims.",
+    "relevance_reason": "The response directly addresses the question about market risk management disclosures for Scotiabank in 2025.",
+    "completeness_reason": "The answer fully covers the request by stating the lack of information without omitting any relevant aspects.",
+    "unsupported_claims": [],
+    "reference_limitations": "The provided filings do not contain enough information to answer this question."
+  },
+  "judge_cost_usd": 0.0013095
+}

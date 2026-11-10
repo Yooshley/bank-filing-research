@@ -1,0 +1,230 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_18",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_18",
+    "question": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "BMO",
+      "CIBC"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports."
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "BMO and CIBC both emphasize the importance of liquidity risk management in their 2025 annual reports, but they outline different governance structures and approaches. \n\n**BMO's Approach:** BMO defines liquidity and funding risk as the potential for financial loss if unable to meet financial commitments in a timely manner. They maintain a level of liquid assets sufficient to meet commitments even in stress scenarios. BMO's governance involves the Corporate Treasury group as the first line of defense, responsible for ongoing risk management, while the Enterprise Risk and Portfolio Management (ERPM) acts as the second line of defense. Senior management oversight is provided by the Risk Management Committee (RMC) and Asset Liability Committee (ALCO), which review significant policies and developments related to liquidity risk management [S1], [S4]. BMO integrates stress testing into their liquidity risk management, using results to inform limit-setting and business plans [S2]. \n\n**CIBC's Approach:** CIBC describes liquidity risk as the risk of insufficient cash to meet obligations and emphasizes that their management strategies align with their business strategy and regulatory expectations. CIBC employs a three lines of defense model: the Treasurer manages liquidity risk as the first line, the Liquidity and Non-Trading Market Risk group provides independent oversight as the second line, and internal audit serves as the third line. CIBC's governance includes the Liquidity Risk Management Committee, which monitors global liquidity risk and ensures alignment with strategic direction and regulatory requirements [S5], [S7]. CIBC also incorporates stress testing into their liquidity management, using results to inform liquidity assumptions and contingency planning [S5]. \n\nIn summary, while both banks recognize the critical nature of liquidity risk management and utilize stress testing, BMO focuses on a centralized governance structure with specific committees for oversight, whereas CIBC employs a more distributed governance model with defined roles across three lines of defense.",
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00021",
+        "text": "67\nEnterprise-Wide Risk Management\n\n23\nNon-GAAP and Other Financial Measures\n\n27\nEconomic Developments and Outlook\n\n28\n2025 Financial Performance Review\n\n108\nAccounting Matters and Disclosure and Internal Control\n108\nCritical Accounting Estimates and Judgments\n111\nFuture Changes in Accounting Policies\n111\nOther Regulatory Developments\n111\nTransactions with Related Parties\n112\nShareholders’ Auditors’ Services and Fees\n113\nManagement’s Annual Report on Disclosure Controls and\nProcedures and Internal Control over Financial Reporting\n\n114\nSupplemental Information\n\n122\nGlossary of Financial Terms\n\n34\n2025 Operating Segments Performance Review\n34\nHow BMO Reports Operating Segments Results\n35\nCanadian Personal and Commercial Banking\n39\nU.S. Banking\n43\nWealth Management\n47\nCapital Markets\n50\nCorporate Services, including Technology and Operations\n52\nSummary Quarterly Earnings Trends\n\nRegulatory Filings\nBMO’s continuous disclosure materials, including our interim consolidated financial statements and interim MD&A, audited annual consolidated financial statements and\nannual MD&A, Annual Information Form and Notice of Annual Meeting of Shareholders and Management Proxy Circular, are available on our website at www.bmo.com/\ninvestorrelations, on the Canadian Securities Administrators’ website at www.sedarplus.ca and on the EDGAR section of the U.S. Securities and Exchange Commission’s\n(SEC) website at www.sec.gov. BMO’s Chief Executive Officer and Chief Financial Officer certify the appropriateness and fairness of BMO’s annual and interim consolidated\nfinancial statements, annual MD&A and Annual Information Form, the effectiveness of BMO’s disclosure controls and procedures and the effectiveness of, and any material\nweaknesses relating to, BMO’s internal control over financial reporting. Information contained in, or otherwise accessible through, our website (www.bmo.com) or any\nthird-party websites mentioned herein, does not form part of this document.\n\nCaution\nThe About BMO, Financial Objectives and Value Measures, Economic Developments and Outlook, Provision for Income Taxes and Other Taxes, 2026 Areas of Focus, Business\nEnvironment and Outlook, Enterprise-Wide Capital Management, Off-Balance Sheet Arrangements, Enterprise-Wide Risk Management, Future Changes in Accounting\nPolicies and Other Regulatory Developments sections contain certain forward-looking statements. By their nature, forward-looking statements require us to make\nassumptions and are subject to inherent risks and uncertainties. Refer to the Caution Regarding Forward-Looking Statements section for a discussion of such risks and\nuncertainties and the material factors and assumptions related to the statements set forth in such sections.\n\n16 BMO Financial Group 208th Annual Report 2025\n\nFactors That May Affect Future Results\nAs noted in the following Caution Regarding Forward-Looking Statements section, all forward-looking statements and information, by their nature,\nare subject to inherent risks and uncertainties, both general and specific, which may cause actual results to differ materially from the expectations\nexpressed in any forward-looking statement. The Enterprise-Wide Risk Management section describes a number of risks, including credit and\ncounterparty, market, insurance, liquidity and funding, operational non-financial, legal and regulatory compliance, strategic, environmental and social,\nand reputation risk. Should our risk management framework prove ineffective, there could be a material impact on our financial position and results.",
+        "similarity": 0.7514029145240784,
+        "quarter": 0,
+        "bank": "Bank of Montreal",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank_code": "BMO",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "page_start": 18,
+        "page_end": 19,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "section": "MD&A",
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00182",
+        "text": "Stress testing results are evaluated against our stated risk appetite and are considered in management’s decisions on limit-setting and internal\ntransfer cost of liquidity, and also help to inform and shape the design of business plans and contingency plans. The liquidity and funding risk\nprogram is integrated with enterprise-wide stress testing.\n\nIn addition to stress NLP, we regularly monitor positions in relation to the limits and liquidity ratios noted in the Liquidity and Funding Risk\nManagement section above. These include regulatory metrics such as LCR, net cumulative cash flow and NSFR.\n\nUnencumbered Liquid Assets\nUnencumbered liquid assets comprise high-quality assets that are marketable, can be pledged as security for borrowings and can be converted to\ncash in a time frame that meets liquidity and funding requirements. Liquid assets are primarily held in our trading businesses, as well as in\nsupplemental liquidity pools that are maintained for contingent liquidity risk management purposes. The liquidity values recognized for different asset\nclasses under BMO’s liquidity and funding risk program reflect management’s assessment of the liquidity values of those assets under a severe stress\nscenario. Liquid assets held in our trading businesses comprise cash on deposit with central banks, short-term deposits with other financial\ninstitutions, highly-rated debt securities, equity securities and short-term reverse repurchase agreements. Supplemental liquidity pool assets primarily\ncomprise cash on deposit with central banks, securities, and short-term reverse repurchase agreements for highly-rated Canadian federal and\nprovincial government debt and U.S. federal government and agency debt. Substantially all supplemental liquidity pool assets meet the definition of\nhigh-quality liquid assets under Basel III. The size of the supplemental liquidity pool is integrated with our assessment of liquidity risk. In order to\ncomply with local regulatory requirements, certain legal entities maintain their own minimum liquidity positions. There may be legal and regulatory\nrestrictions on BMO’s ability to use liquid assets held at one legal entity to support the liquidity requirements of another legal entity.",
+        "similarity": 0.6464879512786865,
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank": "Bank of Montreal",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_end": 92,
+        "quarter": 0,
+        "page_start": 92,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00236",
+        "text": "(3) Includes fees paid for specified procedures on BMO’s Proxy Circular and other services, and French translation of financial statements, related continuous disclosures and other public documents containing financial information. (4) Includes fees paid for tax compliance services provided to various BMO-managed investment company complexes. (5) Includes other fees paid by BMO-managed investment company complexes, and for ESG-related services. 112 BMO Financial Group 208th Annual Report 2025 Management’s Annual Report on Disclosure Controls and Procedures\nand Internal Control over Financial Reporting Disclosure Controls and Procedures\nDisclosure controls and procedures are designed to provide reasonable assurance that all relevant information is gathered and reported to senior\nmanagement, including the Chief Executive Officer (CEO) and the Chief Financial Officer (CFO), on a timely basis, so that appropriate decisions can be\nmade regarding public disclosure.\n\nAs at October 31, 2025, under the supervision of the CEO and the CFO, the management of BMO Financial Group (BMO) evaluated the\neffectiveness of the design and operation of its disclosure controls and procedures, as defined in Canada by National Instrument 52-109, Certification\nof Disclosure in Issuers’ Annual and Interim Filings, and in the United States by Rule 13a-15(e) of the Securities Exchange Act of 1934 (the Exchange\nAct). Based on this evaluation, the CEO and the CFO have concluded that BMO’s disclosure controls and procedures were effective as at\nOctober 31, 2025.\n\nInternal Control over Financial Reporting\nInternal control over financial reporting is a process designed under the supervision of the CEO and the CFO to provide reasonable assurance regarding\nthe reliability of financial reporting and the preparation of consolidated financial statements in accordance with IFRS and the requirements of the\nSecurities and Exchange Commission (SEC) in the United States, as applicable. Management is responsible for establishing and maintaining adequate\ninternal control over financial reporting for BMO.\n\nInternal control over financial reporting at BMO includes policies and procedures that:\n\n‰ Pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets\n\nof BMO.\n‰ Are designed to provide reasonable assurance that transactions are recorded as necessary to permit preparation of the consolidated financial\n\nstatements in accordance with IFRS and the requirements of the SEC in the United States, as applicable, and that receipts and expenditures of\nBMO are being made only in accordance with authorizations by management and directors of BMO.\n‰ Are designed to provide reasonable assurance that any unauthorized acquisition, use or disposition of BMO’s assets that could have a material\n\neffect on the consolidated financial statements is prevented or detected in a timely manner.\n\nBecause of its inherent limitations, internal control over financial reporting can provide only reasonable assurance and may not prevent or detect\nmisstatements. Furthermore, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become\ninadequate because of changes in conditions, or that the degree of compliance with the related policies and procedures may deteriorate.\n\nBMO’s management, under the supervision of the CEO and the CFO, has evaluated the effectiveness of internal control over financial reporting\nusing the framework and criteria established in Internal Control – Integrated Framework, issued by the Committee of Sponsoring Organizations of the\nTreadway Commission in May 2013 (2013 COSO Framework). Based on this evaluation, management has concluded that internal control over financial\nreporting was effective as at October 31, 2025.",
+        "similarity": 0.7163954377174377,
+        "bank": "Bank of Montreal",
+        "document_type": "annual_report",
+        "section": "MD&A",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank_code": "BMO",
+        "quarter": 0,
+        "page_start": 115,
+        "fiscal_year": 2025,
+        "page_end": 115
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00180",
+        "text": "Total Liabilities\n1,388,702 158,739\n1,166,934\n63,029\n1,325,361 134,966 1,138,917\n51,478 (1) Primarily comprises balance sheet items that are subject to the trading and underwriting RMF and recorded at fair value through profit or loss. (2) Primarily comprises balance sheet items that are subject to the structural balance sheet insurance RMF and secured financing transactions. Material presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements. 88 BMO Financial Group 208th Annual Report 2025 Liquidity and Funding Risk\n\nLiquidity and Funding Risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at\nreasonable prices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and\npledging commitments.\n\nManaging liquidity and funding risk is integral to maintaining enterprise soundness and safety, depositor confidence and earnings stability. It is BMO’s\npolicy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of stress.\n\nLiquidity and Funding Risk Governance\nThe Corporate Treasury group and the operating segments, as the first line of defence, are responsible for the ongoing identification, assessment,\nmeasurement, management and reporting of liquidity and funding risk. The Corporate Treasury group is responsible for monitoring and reporting on\nexposures to liquidity and funding risk across the enterprise; develops and recommends for approval the Liquidity and Funding Risk Management\nFramework and the related Risk Appetite Statement and limits; monitors adherence to relevant corporate policies; and assesses the impact of market\nevents on liquidity and funding requirements on an ongoing basis.\n\nEnterprise Risk and Portfolio Management (ERPM), as the second line of defence, exercises oversight, conducts independent risk assessment and\nprovides effective challenge of liquidity and funding management frameworks, policies, limits, monitoring and reporting across the enterprise.\n\nThe Risk Management Committee (RMC) and Asset Liability Committee (ALCO) provide senior management oversight, and review and discuss\nsignificant liquidity and funding policies, issues and developments that arise in the pursuit of BMO’s strategic priorities. The Risk Review Committee\n(RRC) provides oversight of the management of liquidity and funding risk, annually approves the applicable policies, limits and contingency plan, and\nregularly reviews liquidity and funding positions.",
+        "similarity": 0.6903709173202515,
+        "fiscal_year": 2025,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank_code": "BMO",
+        "document_type": "annual_report",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "market risk",
+        "bank": "Bank of Montreal",
+        "page_end": 91,
+        "quarter": 0,
+        "page_start": 91
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00171",
+        "text": "Liquidity risk is the risk of having insufficient cash or its equivalent in a timely and cost-effective manner to meet financial obligations as they\ncome due. Common sources of liquidity risk inherent in banking services include unanticipated withdrawals of deposits, the inability to replace\nmaturing debt, credit and liquidity commitments, and additional pledging or other collateral requirements.\n\nOur approach to liquidity risk management supports our business strategy, aligns with our risk appetite and adheres to regulatory\nexpectations.\n\nOur management strategies, objectives and practices are regularly reviewed to align with changes to the liquidity environment, including\nregulatory, business and/or market developments. Liquidity risk remains within CIBC’s risk appetite.\n\nGovernance and management\nWe manage liquidity risk in a manner that enables us to withstand a liquidity stress event without an adverse impact on the viability of our\noperations. Actual and anticipated cash flows generated from on- and off-balance sheet exposures are routinely measured and monitored to ensure\ncompliance with established limits. We incorporate stress testing into the management and measurement of liquidity risk. Stress test results assist\nwith the development of our liquidity assumptions, identification of potential constraints to funding planning, and contribute to the design of our\ncontingency funding plan.\n\nLiquidity risk is managed using the three lines of defence model, and the ongoing management of liquidity risk is the responsibility of the\nTreasurer, supported by guidance from GALCO.\n\nThe Treasurer is responsible for managing the activities and processes required for measurement and the reporting and monitoring of CIBC’s\nliquidity risk position as the first line of defence.\n\nThe Liquidity and Non-Trading Market Risk group provides independent oversight of the measurement, monitoring and control of liquidity risk,\nas the second line of defence.\n\nInternal audit is the third line of defence providing reasonable assurance to senior management and the Audit Committee of the Board on the\neffectiveness of CIBC’s governance practices, risk management processes, and internal control as part of its risk-based audit plan and in\naccordance with its mandate as described in the Internal Audit Charter.\n\nThe GALCO governs CIBC’s liquidity risk management, ensuring the liquidity risk management methodologies, assumptions, and key metrics\nare regularly reviewed and aligned with CIBC’s requirements. The Liquidity Risk Management Committee, a subcommittee of GALCO, monitors\nglobal liquidity risk and is responsible for ensuring that CIBC’s liquidity risk profile is comprehensively measured and managed in alignment with\nCIBC’s strategic direction, risk appetite and regulatory requirements.\n\nThe RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually.\n\nPolicies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy.\n\nOur pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.",
+        "similarity": 0.6962527632713318,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "page_start": 83,
+        "section": "Liquidity risk",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank_code": "CIBC",
+        "page_end": 83,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00438",
+        "text": "(8) Certain prior year information has been restated. See the “External reporting changes” section for additional details. The following table provides a breakdown of revenue from our reporting segments: $ millions, for the year ended October 31\n2025\n2024\nCanadian Personal and Business Banking (1)\n$\n12,031\n$\n10,942 Canadian Commercial Banking and Wealth Management (1) Commercial banking\n$\n2,710\n$\n2,465\nWealth management\n4,192\n3,553\n$\n6,902\n$\n6,018 U.S. Commercial Banking and Wealth Management (1) Commercial banking\n$\n2,224\n$\n1,971\nWealth management\n992\n849\n$\n3,216\n$\n2,820\n\nCapital Markets (1)(2)\n\nGlobal markets\n$\n3,996\n$\n3,055\nCorporate and investment banking\n2,152\n1,745\n$\n6,148\n$\n4,800\n\nCorporate and Other (2)\n\nInternational banking\n$\n905\n$\n980\nOther\nminus 69\n46\n$\n836\n$\n1,026\n\n(1) Certain prior year information has been restated. See the “External reporting changes” section for additional details.\n(2) Capital Markets net interest income includes TEB adjustments of nil (2024: $16 million) with an equivalent offset in Corporate and Other. TEB adjustment and related offset\n\nare no longer applied since the third quarter of 2024 upon the enactment of Bill C-59 in June 2024, which eliminated the dividend received deduction for Canadian banks.\n\nConsolidated financial statements\n\nNote 30\nFuture accounting policy changes\n\nIFRS 18 “Presentation and Disclosure in Financial Statements” (IFRS 18)\nOn April 9, 2024, the IASB issued IFRS 18, which replaces IAS 1 “Presentation of Financial Statements”. IFRS 18 is effective for reporting periods\nbeginning on or after January 1, 2027, which for CIBC will be for the fiscal year beginning November 1, 2027, with the requirement to restate\ncomparative financial periods. Early adoption is permitted. IFRS 18 is a result of the IASB’s Primary Financial Statements project, which aimed to\nimprove the comparability and transparency of communication in financial statements. It introduces a number of new requirements including a more\nstructured consolidated statement of income, new disclosure for certain management-defined performance measures and new guidance on how to\naggregate and disaggregate information on the face of the consolidated financial statements and notes. We are currently evaluating the impact that\nadopting this standard will have on our consolidated financial statements.",
+        "similarity": 0.6013737320899963,
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "page_start": 191,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "section": "credit risk",
+        "page_end": 192,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "filing_id": "CIBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00214",
+        "text": "The policy requires the Audit Committee’s\npre-approval of all work performed by the shareholders’ auditor and prohibits CIBC from engaging the shareholders’ auditor for “prohibited”\nservices. The Audit Committee is accountable for the oversight of the work of the shareholders’ auditor and for an annual assessment of the\nengagement team’s qualifications, performance and independence, including lead audit partner rotation. The Audit Committee is also responsible\nfor conducting a periodic comprehensive review of the external auditor at least every five years. The Audit Committee’s oversight activities over the\nshareholders’ auditor are disclosed in our Management Proxy Circular. Controls and procedures\nDisclosure controls and procedures\nCIBC’s disclosure controls and procedures are designed to provide reasonable assurance that relevant information is accumulated and\ncommunicated to CIBC’s management, including the President and CEO and the Chief Financial Officer (CFO), to allow timely decisions regarding\nrequired disclosure.\n\nCIBC’s management, with the participation of the President and CEO and the CFO, has evaluated the effectiveness of CIBC’s disclosure controls\nand procedures as at October 31, 2025 (as defined in the rules of the SEC and the CSA). Based on that evaluation, the President and CEO and the\nCFO have concluded that such disclosure controls and procedures were effective.\n\nManagement’s annual report on internal control over financial reporting\nCIBC’s management is responsible for establishing and maintaining adequate internal control over financial reporting for CIBC.\n\nInternal control over financial reporting is a process designed by, or under the supervision of, the President and CEO and the CFO and\neffected by the Board, management and other personnel to provide reasonable assurance regarding the reliability of financial reporting and the\npreparation of financial statements for external purposes in accordance with IFRS as issued by the IASB. CIBC’s internal control over financial\nreporting includes those policies and procedures that: (i) pertain to the maintenance of records, that, in reasonable detail, accurately and fairly\nreflect the transactions and dispositions of the assets of CIBC; (ii) provide reasonable assurance that transactions are recorded as necessary to\npermit preparation of financial statements in accordance with IFRS as issued by the IASB, and that receipts and expenditures of CIBC are being\nmade only in accordance with authorizations of CIBC’s management and directors; and (iii) provide reasonable assurance regarding prevention or\ntimely detection of unauthorized acquisition, use or disposition of CIBC’s assets that could have a material effect on the consolidated financial\nstatements.\n\nAll internal control systems, no matter how well designed, have inherent limitations and may not prevent or detect misstatements on a timely\nbasis. Therefore, even those systems determined to be effective can provide only reasonable assurance with respect to financial statement\npreparation and presentation.\n\nCIBC’s management has used the Internal Control – Integrated Framework that was published in 2013 by the COSO as the basis to evaluate\nthe effectiveness of CIBC’s internal control over financial reporting.\n\nAs at October 31, 2025, management assessed the effectiveness of CIBC’s internal control over financial reporting and concluded that such\ninternal control was effective.\n\nErnst & Young LLP, the shareholders’ auditor, has audited the consolidated financial statements of CIBC for the year ended October 31, 2025,\nand has also issued a report on internal control over financial reporting under standards of the Public Company Accounting Oversight Board\n(United States).\n\nChanges in internal control over financial reporting\nThere have been no changes in CIBC’s internal control over financial reporting during the year ended October 31, 2025, that have materially\naffected, or are reasonably likely to materially affect, its internal control.",
+        "similarity": 0.638638436794281,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_end": 100,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "page_start": 100,
+        "section": "Management’s discussion and analysis",
+        "quarter": 0,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "bank_code": "CIBC",
+        "file_name": "CIBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00023",
+        "text": "CIBC 119.5%\nS&P/TSX Composite Index 70.7%\nS&P/TSX Composite Banks Index 73.7% CIBC 199.8%\nS&P/TSX Composite Index 125.4%\nS&P/TSX Composite Banks Index 159.1% CET1 ratio (%) 13.3 13.3\n\nBalance sheet strength\nMaintaining a strong balance sheet is foundational to our long-term success. Our goal is to maintain strong\ncapital and liquidity positions. We look to constantly balance our objectives of holding a prudent amount of\nexcess capital for unexpected events and environmental uncertainties, investing in our core businesses,\ngrowing through acquisitions and returning capital to our shareholders.\n\n1.\nCommon Equity Tier 1 (CET1) ratio\n\nWe actively manage our capital to maintain a strong and efficient capital base while supporting our business\ngrowth and returning capital to our shareholders. For the year ended October 31, 2025, our CET1(3) ratio was\n13.3%, compared with 13.3% in 2024, well above the current regulatory requirement set by the Office of the\nSuperintendent of Financial Institutions (OSFI).\n\n25\n\n24\n\nLCR\n\nGoing forward, we will continue to maintain a strong buffer to regulatory requirements.\n\n(%)\n\n2.\nLiquidity coverage ratio (LCR)\n\n132\n\n129\n\nOur ability to meet our near-term financial obligations is measured through the LCR. It measures unencumbered\nhigh-quality liquid assets (HQLA) that can be converted into cash to meet liquidity needs in a 30-calendar-day\nliquidity stress scenario. The LCR standard requires that, absent a situation of financial stress, the value of the\nratio be no lower than 100%.\n\nFor the quarter ended October 31, 2025, our three-month daily average LCR(3) was 132% compared to 129% for\nthe same period last year.\n\n25\n\n24\n\n(1) Adjusted measures are non-GAAP measures. For additional information and a reconciliation of reported results to adjusted results, where applicable, see the “Non-GAAP\n\nmeasures” section.\n(2) Average balances are calculated as a weighted average of daily closing balances.\n(3) Our capital ratios are calculated pursuant to OSFI’s Capital Adequacy Requirements (CAR) Guideline and the LCR is calculated pursuant to OSFI’s Liquidity Adequacy\n\nRequirements (LAR) Guideline, which are both based on Basel Committee on Banking Supervision (BCBS) standards. For additional information, see the “Capital\nmanagement” and “Liquidity risk” sections.\n\nFinancial highlights\n\nAs at or for the year ended October 31\n2025\n2024\n\nFinancial results ($ millions)\nNet interest income\n$\n15,769\n$\n13,695\nNon-interest income\n13,364\n11,911\nTotal revenue\n29,133\n25,606\nProvision for credit losses\n2,342\n2,001\nNon-interest expenses\n15,852\n14,439\nIncome before income taxes\n10,939\n9,166\nIncome taxes\n2,485\n2,012\nNet income\n$\n8,454\n$\n7,154\nNet income attributable to non-controlling interests\n25\n39\nPreferred shareholders and other equity instrument holders\n364\n263\nCommon shareholders\n8,065\n6,852\nNet income attributable to equity shareholders\n$\n8,429\n$\n7,115",
+        "similarity": 0.6186413168907166,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "section": "Management’s discussion and analysis",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "page_end": 17,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "bank_code": "CIBC",
+        "document_type": "annual_report",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "page_start": 16
+      }
+    ],
+    "structured": {
+      "answer": "BMO and CIBC both emphasize the importance of liquidity risk management in their 2025 annual reports, but they outline different governance structures and approaches. \n\n**BMO's Approach:** BMO defines liquidity and funding risk as the potential for financial loss if unable to meet financial commitments in a timely manner. They maintain a level of liquid assets sufficient to meet commitments even in stress scenarios. BMO's governance involves the Corporate Treasury group as the first line of defense, responsible for ongoing risk management, while the Enterprise Risk and Portfolio Management (ERPM) acts as the second line of defense. Senior management oversight is provided by the Risk Management Committee (RMC) and Asset Liability Committee (ALCO), which review significant policies and developments related to liquidity risk management [S1], [S4]. BMO integrates stress testing into their liquidity risk management, using results to inform limit-setting and business plans [S2]. \n\n**CIBC's Approach:** CIBC describes liquidity risk as the risk of insufficient cash to meet obligations and emphasizes that their management strategies align with their business strategy and regulatory expectations. CIBC employs a three lines of defense model: the Treasurer manages liquidity risk as the first line, the Liquidity and Non-Trading Market Risk group provides independent oversight as the second line, and internal audit serves as the third line. CIBC's governance includes the Liquidity Risk Management Committee, which monitors global liquidity risk and ensures alignment with strategic direction and regulatory requirements [S5], [S7]. CIBC also incorporates stress testing into their liquidity management, using results to inform liquidity assumptions and contingency planning [S5]. \n\nIn summary, while both banks recognize the critical nature of liquidity risk management and utilize stress testing, BMO focuses on a centralized governance structure with specific committees for oversight, whereas CIBC employs a more distributed governance model with defined roles across three lines of defense.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "MD&A",
+          "year": 2025
+        },
+        {
+          "label": "S2",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "market risk",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "Liquidity risk",
+          "year": 2025
+        },
+        {
+          "label": "S7",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "Management’s discussion and analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 2.381204599980265
+  },
+  "latency_seconds": 9.909048700006679,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0011682,
+  "input_tokens": 5624,
+  "output_tokens": 541,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.06746460008434951,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 4,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer accurately reflects the liquidity risk management approaches of both BMO and CIBC, but some details may not be fully supported by the provided evidence, leading to minor imprecision.",
+    "relevance_reason": "The answer mostly addresses the comparison of liquidity risk controls between BMO and CIBC, but it could be more focused on specific similarities and differences as requested.",
+    "completeness_reason": "The answer provides a general overview but lacks specific quantitative metrics or detailed comparisons that could enhance the completeness of the response.",
+    "unsupported_claims": [],
+    "reference_limitations": "The evidence provided does not include specific quantitative metrics or detailed comparisons for liquidity risk management, which limits the ability to fully support the claims made."
+  },
+  "judge_cost_usd": 0.0025323000000000003
+}

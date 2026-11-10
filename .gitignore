@@ -1,0 +1,45 @@
+# Credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+
+# Python and notebook runtime files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Rebuildable data, model indexes and local experiment storage
+/data/raw/
+/data/processed/
+/data/download_report.json
+/models/
+/mlruns/
+/mlartifacts/
+*.db-wal
+*.db-shm
+
+# Local study materials and cleanup backups
+/.local/
+/reports/.mcr_qa/
+/reports/*MCR*.docx
+/reports/build_mcr_guide.py
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log

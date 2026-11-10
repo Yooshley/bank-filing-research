@@ -1,0 +1,240 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_23",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_23",
+    "question": "How did BMO disclosures about liquidity risk change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did BMO disclosures about liquidity risk change between 2024 and 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "BMO's disclosures about liquidity risk between 2024 and 2025 show several changes. In 2024, BMO reported net unencumbered liquid assets of $396.3 billion, which was an increase from $357.9 billion in 2023, primarily due to higher securities balances, although cash balances were lower [S2]. In 2025, the total of unencumbered liquid assets decreased slightly to $393.5 billion [S6]. Additionally, BMO's funding strategy in 2025 emphasized the importance of maintaining a large and stable base of customer deposits, which amounted to $715.0 billion, up from $711.7 billion in 2024 [S6]. This indicates a shift towards a stronger reliance on customer deposits to support liquidity, reducing dependence on wholesale funding. Furthermore, total secured and unsecured wholesale funding decreased from $259.0 billion in 2024 to $258.6 billion in 2025, reflecting net maturities during the year [S6]. Overall, while BMO maintained a robust liquidity position, there was a slight decrease in unencumbered liquid assets and a strategic emphasis on customer deposits in 2025 compared to 2024.",
+    "sources": [
+      {
+        "chunk_id": "BMO_2024_annual_report_FY_00020",
+        "text": "26\n2024 Financial Performance Review\n\n110\nAccounting Matters and Disclosure and Internal Control\n110\nCritical Accounting Estimates and Judgments\n113\nChanges in Accounting Policies in 2024\n113\nFuture Changes in Accounting Policies\n114\nOther Regulatory Developments\n114\nTransactions with Related Parties\n115\nShareholders’ Auditors’ Services and Fees\n116\nManagement’s Annual Report on Disclosure Controls and Procedures\nand Internal Control over Financial Reporting\n\n117\nSupplemental Information\n\n125\nGlossary of Financial Terms\n\n33\n2024 Operating Groups Performance Review\n33\nSummary\n34\nPersonal and Commercial Banking\n35\nCanadian Personal and Commercial Banking\n39\nU.S. Personal and Commercial Banking\n43\nBMO Wealth Management\n47\nBMO Capital Markets\n50\nCorporate Services, including Technology and Operations\n52\nSummary Quarterly Earnings Trends\n\n53\nReview of Fourth Quarter 2024 Performance\n\nRegulatory Filings\nBMO’s continuous disclosure materials, including our interim consolidated financial statements and interim MD&A, audited annual consolidated financial statements and\nannual MD&A, Annual Information Form and Notice of Annual Meeting of Shareholders and Management Proxy Circular, are available on our website at www.bmo.com/\ninvestorrelations, on the Canadian Securities Administrators’ website at www.sedarplus.ca and on the EDGAR section of the U.S. Securities and Exchange Commission’s\n(SEC) website at www.sec.gov. BMO’s Chief Executive Officer and Chief Financial Officer certify the appropriateness and fairness of BMO’s annual and interim consolidated\nfinancial statements, annual MD&A and Annual Information Form, the effectiveness of BMO’s disclosure controls and procedures and the effectiveness of, and any material\nweaknesses relating to, BMO’s internal control over financial reporting. Information contained in, or otherwise accessible through, our website (www.bmo.com) or any\nthird-party websites mentioned herein, does not form part of this document.\n\nCaution\nThe About BMO, Financial Objectives and Value Measures, Economic Developments and Outlook, Provision for Income Taxes and Other Taxes, 2025 Areas of Focus, Business\nEnvironment and Outlook, Enterprise-Wide Capital Management, Off-Balance Sheet Arrangements, Enterprise-Wide Risk Management, Future Changes in Accounting\nPolicies and Other Regulatory Developments sections contain certain forward-looking statements. By their nature, forward-looking statements require us to make\nassumptions and are subject to inherent risks and uncertainties. Refer to the Caution Regarding Forward-Looking Statements section for a discussion of such risks and\nuncertainties and the material factors and assumptions related to the statements set forth in such sections.\n\n14 BMO Financial Group 207th Annual Report 2024\n\nFactors That May Affect Future Results\nAs noted in the following Caution Regarding Forward-Looking Statements section, all forward-looking statements and information, by their nature,\nare subject to inherent risks and uncertainties, both general and specific, which may cause actual results to differ materially from the expectations\nexpressed in any forward-looking statement. The Enterprise-Wide Risk Management section describes a number of risks, including credit and\ncounterparty, market, insurance, liquidity and funding, operational non-financial, legal and regulatory, strategic, environmental and social, and\nreputation risk. Should our risk management framework prove ineffective, there could be a material impact on our financial position and results.",
+        "similarity": 0.6277220249176025,
+        "filing_id": "BMO_2024_annual_report_FY",
+        "page_end": 17,
+        "fiscal_year": 2024,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2024.pdf",
+        "file_name": "BMO_2024_annual_report.pdf",
+        "section": "MD&A",
+        "bank": "Bank of Montreal",
+        "bank_code": "BMO",
+        "page_start": 16,
+        "document_type": "annual_report",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BMO_2024_annual_report_FY_00192",
+        "text": "Unencumbered Liquid Assets\nUnencumbered liquid assets include high-quality assets that are marketable, can be pledged as security for borrowings, and can be converted to cash\nin a time frame that meets liquidity and funding requirements. Liquid assets are primarily held in our trading businesses, as well as in supplemental\nliquidity pools that are maintained for contingent liquidity risk management purposes. The liquidity values recognized for different asset classes under\nBMO’s risk management framework reflect management’s assessment of the liquidity values of those assets under a severe stress scenario. Liquid\nassets held in our trading businesses comprise cash on deposit with central banks, short-term deposits with other financial institutions, highly-rated\ndebt securities, equity securities and short-term reverse repurchase agreements. Supplemental liquidity pool assets primarily comprise cash on\ndeposit with central banks, securities, and short-term reverse repurchase agreements for highly-rated Canadian federal and provincial government\ndebt and U.S. federal government and agency debt. Substantially all supplemental liquidity pool assets meet the definition of high-quality liquid\nassets under Basel III. The size of the supplemental liquidity pool is integrated with our assessment of liquidity risk. In order to comply with local\nregulatory requirements, certain legal entities maintain their own minimum liquidity positions. There may be legal and regulatory restrictions on\nBMO’s ability to use liquid assets held at one legal entity to support the liquidity requirements of another legal entity.\n\nIn the normal course of business, we may encumber a portion of cash and securities holdings as collateral in support of trading activities and\nparticipation in clearing and payment systems in Canada and abroad. In addition, we may receive liquid assets as collateral and may re-pledge these\nassets in exchange for cash or as collateral in support of trading activities. Net unencumbered liquid assets, defined as on-balance sheet assets, such\nas BMO-owned cash and securities and securities borrowed or purchased under resale agreements, plus other off-balance sheet eligible collateral\nreceived, less assets encumbered as collateral, totalled $396.3 billion as at October 31, 2024, compared with $357.9 billion as at October 31, 2023.\n\nThe increase in unencumbered liquid assets was primarily due to higher securities balances, partially offset by lower cash balances. Net\nunencumbered liquid assets are primarily held at the parent bank level, at BMO Bank N.A. and in our broker/dealer operations. In addition to liquid\nassets, we have access to the Bank of Canada’s lending assistance programs, the Federal Reserve Bank discount window in the United States, the\nBank of England’s Sterling Monetary Framework and European Central Bank standby liquidity facilities. We do not consider central bank facilities a\nsource of available liquidity when assessing the soundness of our liquidity position.",
+        "similarity": 0.6231427192687988,
+        "page_start": 94,
+        "bank": "Bank of Montreal",
+        "filing_id": "BMO_2024_annual_report_FY",
+        "document_type": "annual_report",
+        "file_name": "BMO_2024_annual_report.pdf",
+        "page_end": 94,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2024.pdf",
+        "bank_code": "BMO",
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "quarter": 0,
+        "fiscal_year": 2024
+      },
+      {
+        "chunk_id": "BMO_2024_annual_report_FY_00133",
+        "text": "Text and tables presented in a blue-tinted font in the Enterprise-Wide Risk Management section of the MD&A form an integral part of the 2024 audited annual consolidated\nfinancial statements. They present required disclosures as set out by the International Accounting Standards Board in IFRS 7, Financial Instruments – Disclosures, which\npermits cross-referencing between the notes to the consolidated financial statements and the MD&A. Refer to Notes 1 and 5 of the audited annual consolidated financial\nstatements.\n\nRisks That May Affect Future Results\n\nTop and Emerging Risks That May Affect Future Results\nBMO’s overall risk profile can be impacted by evolving internal and external events. These events have the potential to affect our business and our\noperational and financial results. Our risk management life cycle is a continuous process designed to identify, assess, manage, monitor and report on\nrisks arising from these events. These event-related risks are raised for discussion with the Board of Directors, senior management and business\nleaders at several forums, incorporating both bottom-up and top-down approaches. Risks are examined and assessed by scenario analysis. Our\nexposure to certain events is addressed through action plans developed based on these risk assessments.\n\nThe following risks are considered to have the potential to materially impact BMO’s financial results, operational efficiency, strategic direction\nor reputation.\n\nGeneral Economic Conditions\nThe prevailing economic conditions in Canada, the United States and other jurisdictions in which we conduct business affect our financial results and\nbusiness operations. These conditions include the level of economic growth, interest rates and central bank actions, inflation, labour markets and\nunemployment rates, and the activity level and volatility of financial markets. The Canadian economy lost momentum in fiscal 2024, in response to\nhigher interest rates, but has shown continued resilience as a result of high levels of household savings, expansionary fiscal policies, and robust\npopulation growth driven by immigration. Changes to Canada’s immigration policies are expected to slow population growth. Although the labour\nmarket has weakened in both countries, employment growth remains positive. Inflation has moderated, although some price pressures in the\nservices sector persist. The inflation rate has continued to moderate after reaching a four-decade high in fiscal 2022 in response to weaker labour\nmarkets, lower commodity prices and improved global supply chains. Policy rates are easing in Canada and the United States; however, longer-term\nborrowing costs, though falling, remain elevated. With the upcoming renegotiation of the Canada-United States-Mexico Trade Agreement in 2026,\nthere is a risk that the free trade agreement may end, which could result in disruptive and costly tariffs on trade flows among the three nations.\nThese factors represent risks for market stability and economic growth. Changes in economic conditions can affect consumer spending, housing\nprices, business investment and capital markets activity, and in turn, affect our business, including the demand for our lending and deposit products,\nnet interest income, fee revenue, operating expenses, credit losses and asset values. In fiscal 2024, the above factors had, and may continue to have,\nan impact on consumers and the operations of our clients, as well as a negative effect on our earnings, including lower loan and deposit demand, and\nhigher provisions for credit losses.\n\nManagement regularly monitors the economic environment in which we operate, in order to identify significant changes in key economic\nindicators, so that we can assess BMO’s portfolio and business strategies, and develop contingency plans to address any adverse developments.\n\n68 BMO Financial Group 207th Annual Report 2024",
+        "similarity": 0.5958822965621948,
+        "fiscal_year": 2024,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2024.pdf",
+        "bank": "Bank of Montreal",
+        "quarter": 0,
+        "page_end": 70,
+        "bank_code": "BMO",
+        "filing_id": "BMO_2024_annual_report_FY",
+        "document_type": "annual_report",
+        "file_name": "BMO_2024_annual_report.pdf",
+        "section": "MD&A",
+        "page_start": 70
+      },
+      {
+        "chunk_id": "BMO_2024_annual_report_FY_00226",
+        "text": "The program takes a risk-based approach to identify,\nassess and manage any risks related to compliance with applicable laws and regulations, and directs operating groups and Corporate Services to\nmaintain policies, procedures and controls that address these laws and regulations. Under the direction of the Chief Compliance Officer, we identify\nand report on gaps and deficiencies, and we track remedial action plans. The CAMLO also regularly reports to the ACRC. All BMO employees must regularly complete legal and regulatory training on topics such as anti-corruption, anti-money laundering, competition/\nantitrust and privacy policies, standards and directives. This is carried out in conjunction with our Code of Conduct training, which tests employees’\nknowledge and understanding of the behaviour required of BMO employees.\n\nWe continue to respond to other global regulatory developments, including the impact of changes in capital and liquidity requirements. These\ndevelopments include sustainability and climate change related developments, consumer protection measures and specific financial reforms and\nprivacy matters, which are discussed further below. For additional discussion of regulatory developments related to capital management and liquidity\nand funding risk, refer to the Enterprise-Wide Capital Management section and the Liquidity and Funding Risk section. For a discussion of the impact of\ncertain other regulatory developments, refer to: Critical Accounting Estimates and Judgments – Income Taxes and Deferred Tax Assets; Risks That May\nAffect Future Results – Fiscal and Monetary Policies and Other Economic Conditions in the Countries in which BMO Conducts Business; Tax Legislation\nand Interpretations; and Other Regulatory Developments.\n\nSustainability and Climate Change Matters\nWe continue to monitor the rulemaking activities of regulatory authorities, and we are participating in programs and consultations that focus on risk\nmanagement and disclosures related to sustainability matters, as well as trends in climate-related litigation. Globally, we are also tracking the\nemergence and finalization of formal supervisory regulatory frameworks governing the analysis and reporting of risks related to sustainability and\nclimate change, including frameworks in Canada, the United States, the United Kingdom and the European Union. In addition, current and emerging\nregulatory requirements in certain U.S. states may apply restrictions or sanctions on financial institutions that impose any environmental standards\nthat exceed the legal or regulatory requirements of the states in which they operate. Trends in litigation and regulatory investigation are evolving,\nand legislation and regulatory guidance pertaining to disclosure practices or financing activities related to climate or sustainability matters, as well as\nallegations of “greenwashing”, also continue to evolve. We are monitoring these trends and assessing their potential impact in the context of BMO’s\nclimate-related sustainable finance and responsible investment activities, environmental and social risk management, and disclosure practices related\nto climate or sustainability matters. For further discussion, refer to the Environmental and Social Risk section.\n\nBMO Financial Group 207th Annual Report 2024 105",
+        "similarity": 0.6166194081306458,
+        "quarter": 0,
+        "section": "MD&A",
+        "filing_id": "BMO_2024_annual_report_FY",
+        "page_start": 107,
+        "file_name": "BMO_2024_annual_report.pdf",
+        "page_end": 107,
+        "fiscal_year": 2024,
+        "document_type": "annual_report",
+        "bank": "Bank of Montreal",
+        "bank_code": "BMO",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2024.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00126",
+        "text": "Text and tables presented in a blue-tinted font in the Enterprise-Wide Risk Management section of the MD&A form an integral part of the 2025 audited annual consolidated\nfinancial statements. They present required disclosures as set out by the International Accounting Standards Board in IFRS 7, Financial Instruments: Disclosures,\nwhich permits cross-referencing between the notes to the consolidated financial statements and the MD&A. Refer to Notes 1 and 4 of the audited annual consolidated\nfinancial statements.\n\nRisks That May Affect Future Results\n\nTop and Emerging Risks That May Affect Future Results\nBMO’s risk profile can be impacted by evolving internal and external events. Our risk management life cycle is a continuous process designed to\nidentify, assess, measure, manage and report on risks arising from these events. These event-related risks are presented to the Board of Directors,\nsenior management and business leaders for discussion at several forums, incorporating both bottom-up and top-down approaches. Risks are\nexamined and assessed through various review processes, including but not limited to regulatory and internal stress testing and scenario analysis.\nWe manage our exposure to events through action plans developed based on these risk assessments.\n\nThe following risks have the potential to materially impact BMO’s operations and financial results.\n\nGeneral Economic Conditions\nBMO’s operations and financial results are impacted by prevailing economic conditions and the evolution of those conditions, including the rate of\nGDP growth, monetary and fiscal policies, interest rates, unemployment rates, inflation, immigration levels and market volatility. As we operate in\nvarious jurisdictions, foreign exchange fluctuations, particularly between the Canadian dollar and the U.S. dollar, can impact our earnings. Evolving\ntrade policies, including the impact of tariffs, may also affect the environment in which the bank and its clients operate. These factors, as well as\neconomic uncertainty, can constrain business investment and consumer spending.\n\nThe Canadian economy weakened in fiscal 2025, primarily due to the impact of changes in U.S. trade policies on certain Canadian exports,\nalthough the United States-Mexico-Canada Agreement (USMCA) exempts the majority of Canadian exports from the new U.S. tariffs. Canadian and U.S.\nunemployment rates increased in fiscal 2025, amid softening labour market conditions, which contributed to higher delinquencies and credit losses in\nthe bank’s consumer lending portfolios. Although the inflation rate moderated in response to weaker labour markets and lower commodity prices, a\nheightened sense of economic uncertainty and the impact of tariffs may increase inflationary pressures. There is also a risk of asset overvaluation in\nequity and credit markets which could lead to outsized asset value declines, with negative wealth and sentiment effects on our customers and the\nbroader economy. Refer to the Economic Developments and Outlook section for further discussion on the impact of rates and fiscal policies, and for\ntrade disputes, refer to the Escalating Trade Disputes and Geopolitical Developments section.\n\nWe have processes and controls in place to assess the impact of multiple stressed economic scenarios, including extensive regulatory and\ninternal stress testing that has delivered actionable insight into the potential impacts on BMO’s operations and financial results, as well as possible\nmitigating actions. In addition, baseline forecasts and economic indicators are used to forecast and monitor economic conditions in order to identify\npotential stresses on the bank and inform precautionary actions.",
+        "similarity": 0.6384034156799316,
+        "page_end": 69,
+        "document_type": "annual_report",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "quarter": 0,
+        "page_start": 69,
+        "fiscal_year": 2025,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal",
+        "section": "MD&A",
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00186",
+        "text": "Funding Strategy\nBMO’s funding strategy requires that secured and unsecured wholesale funding used to support loans and less liquid assets must have a term\n(typically two to ten years) that will support the effective term to maturity of these assets. Secured and unsecured wholesale funding for liquid\ntrading assets is largely shorter-term (maturing in one year or less), is aligned with the liquidity of the assets being funded and is subject to limits on\naggregate maturities across different periods. Supplemental liquidity pools are funded largely with wholesale term funding.\n\nWe maintain a large and stable base of customer deposits that, in combination with our strong capital position, is a source of strength. This\nsupports the maintenance of a sound liquidity position and reduces our reliance on wholesale funding. Customer deposits totalled $715.0 billion as\nat October 31, 2025, increasing from $711.7 billion in fiscal 2024.\n\nTotal secured and unsecured wholesale funding outstanding, which largely consists of negotiable marketable securities, was $258.6 billion as at\nOctober 31, 2025, with $68.2 billion sourced as secured funding and $190.4 billion sourced as unsecured funding. Total wholesale funding outstanding\ndecreased from $259.0 billion as at October 31, 2024, primarily due to net maturities of wholesale funding during the year, partially offset by the\nimpact of the stronger U.S. dollar. The mix and maturities of BMO’s wholesale term funding are outlined later in this section. Additional information\non deposit maturities can also be found in the Contractual Maturities of Assets and Liabilities and Off-Balance Sheet Commitments section. We\nmaintain a sizeable portfolio of unencumbered liquid assets, totalling $393.5 billion as at October 31, 2025 and $396.3 billion as at October 31, 2024,\nthat can be monetized to meet potential funding requirements, as described in the Unencumbered Liquid Assets section above.\n\nWholesale Funding Maturities (1)\n\nTABLE 50\n\nAs at October 31, 2025\nAs at October 31, 2024\n\nLess than\n\nSubtotal less\n\n(Canadian $ in millions)\n\n1 month\n1 to 3\nmonths\n\n3 to 6\nmonths\n\n6 to 12\nmonths\n\nthan 1 year\n\n1 to 2\nyears\n\nOver\n2 years\nTotal\nTotal",
+        "similarity": 0.6056148409843445,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 94,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "bank": "Bank of Montreal",
+        "page_start": 94,
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00385",
+        "text": "Certain comparative figures have been reclassified to conform with the current year’s presentation.\n\nNotes\n\nBMO Financial Group 208th Annual Report 2025 181",
+        "similarity": 0.5641604661941528,
+        "section": "FVTPL.",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "document_type": "annual_report",
+        "bank_code": "BMO",
+        "page_end": 183,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "page_start": 183,
+        "bank": "Bank of Montreal",
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "file_name": "BMO_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00021",
+        "text": "67\nEnterprise-Wide Risk Management\n\n23\nNon-GAAP and Other Financial Measures\n\n27\nEconomic Developments and Outlook\n\n28\n2025 Financial Performance Review\n\n108\nAccounting Matters and Disclosure and Internal Control\n108\nCritical Accounting Estimates and Judgments\n111\nFuture Changes in Accounting Policies\n111\nOther Regulatory Developments\n111\nTransactions with Related Parties\n112\nShareholders’ Auditors’ Services and Fees\n113\nManagement’s Annual Report on Disclosure Controls and\nProcedures and Internal Control over Financial Reporting\n\n114\nSupplemental Information\n\n122\nGlossary of Financial Terms\n\n34\n2025 Operating Segments Performance Review\n34\nHow BMO Reports Operating Segments Results\n35\nCanadian Personal and Commercial Banking\n39\nU.S. Banking\n43\nWealth Management\n47\nCapital Markets\n50\nCorporate Services, including Technology and Operations\n52\nSummary Quarterly Earnings Trends\n\nRegulatory Filings\nBMO’s continuous disclosure materials, including our interim consolidated financial statements and interim MD&A, audited annual consolidated financial statements and\nannual MD&A, Annual Information Form and Notice of Annual Meeting of Shareholders and Management Proxy Circular, are available on our website at www.bmo.com/\ninvestorrelations, on the Canadian Securities Administrators’ website at www.sedarplus.ca and on the EDGAR section of the U.S. Securities and Exchange Commission’s\n(SEC) website at www.sec.gov. BMO’s Chief Executive Officer and Chief Financial Officer certify the appropriateness and fairness of BMO’s annual and interim consolidated\nfinancial statements, annual MD&A and Annual Information Form, the effectiveness of BMO’s disclosure controls and procedures and the effectiveness of, and any material\nweaknesses relating to, BMO’s internal control over financial reporting. Information contained in, or otherwise accessible through, our website (www.bmo.com) or any\nthird-party websites mentioned herein, does not form part of this document.\n\nCaution\nThe About BMO, Financial Objectives and Value Measures, Economic Developments and Outlook, Provision for Income Taxes and Other Taxes, 2026 Areas of Focus, Business\nEnvironment and Outlook, Enterprise-Wide Capital Management, Off-Balance Sheet Arrangements, Enterprise-Wide Risk Management, Future Changes in Accounting\nPolicies and Other Regulatory Developments sections contain certain forward-looking statements. By their nature, forward-looking statements require us to make\nassumptions and are subject to inherent risks and uncertainties. Refer to the Caution Regarding Forward-Looking Statements section for a discussion of such risks and\nuncertainties and the material factors and assumptions related to the statements set forth in such sections.\n\n16 BMO Financial Group 208th Annual Report 2025\n\nFactors That May Affect Future Results\nAs noted in the following Caution Regarding Forward-Looking Statements section, all forward-looking statements and information, by their nature,\nare subject to inherent risks and uncertainties, both general and specific, which may cause actual results to differ materially from the expectations\nexpressed in any forward-looking statement. The Enterprise-Wide Risk Management section describes a number of risks, including credit and\ncounterparty, market, insurance, liquidity and funding, operational non-financial, legal and regulatory compliance, strategic, environmental and social,\nand reputation risk. Should our risk management framework prove ineffective, there could be a material impact on our financial position and results.",
+        "similarity": 0.6285972595214844,
+        "page_end": 19,
+        "quarter": 0,
+        "section": "MD&A",
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO",
+        "document_type": "annual_report",
+        "bank": "Bank of Montreal",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "page_start": 18
+      }
+    ],
+    "structured": {
+      "answer": "BMO's disclosures about liquidity risk between 2024 and 2025 show several changes. In 2024, BMO reported net unencumbered liquid assets of $396.3 billion, which was an increase from $357.9 billion in 2023, primarily due to higher securities balances, although cash balances were lower [S2]. In 2025, the total of unencumbered liquid assets decreased slightly to $393.5 billion [S6]. Additionally, BMO's funding strategy in 2025 emphasized the importance of maintaining a large and stable base of customer deposits, which amounted to $715.0 billion, up from $711.7 billion in 2024 [S6]. This indicates a shift towards a stronger reliance on customer deposits to support liquidity, reducing dependence on wholesale funding. Furthermore, total secured and unsecured wholesale funding decreased from $259.0 billion in 2024 to $258.6 billion in 2025, reflecting net maturities during the year [S6]. Overall, while BMO maintained a robust liquidity position, there was a slight decrease in unencumbered liquid assets and a strategic emphasis on customer deposits in 2025 compared to 2024.",
+      "sources": [
+        {
+          "label": "S2",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+          "year": 2024
+        },
+        {
+          "label": "S6",
+          "bank": "Bank of Montreal",
+          "document": "annual_report",
+          "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": [
+        "The provided filings do not contain enough information to detail all aspects of liquidity risk disclosures for both years."
+      ]
+    },
+    "retrieval_seconds": 1.4956095999805257,
+    "model_source_metadata": [
+      {
+        "label": "S2",
+        "bank": "Bank of Montreal",
+        "document": "annual_report",
+        "section": "MD&A",
+        "year": 2024
+      },
+      {
+        "label": "S6",
+        "bank": "Bank of Montreal",
+        "document": "annual_report",
+        "section": "MD&A",
+        "year": 2025
+      }
+    ],
+    "metadata_corrections": [
+      {
+        "label": "S2",
+        "field": "section",
+        "model_value": "MD&A",
+        "source_value": "MANAGEMENT’S DISCUSSION AND ANALYSIS"
+      },
+      {
+        "label": "S6",
+        "field": "section",
+        "model_value": "MD&A",
+        "source_value": "MANAGEMENT’S DISCUSSION AND ANALYSIS"
+      }
+    ]
+  },
+  "latency_seconds": 6.720263900002465,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0005925,
+  "input_tokens": 5094,
+  "output_tokens": 338,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.04809860000386834,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about BMO's liquidity risk disclosures for 2024 and 2025 are supported by the actual answer context, including specific figures and strategic shifts.",
+    "relevance_reason": "The answer directly addresses the question regarding changes in BMO's liquidity risk disclosures between 2024 and 2025.",
+    "completeness_reason": "The answer comprehensively covers all requested aspects, including specific figures for unencumbered liquid assets and customer deposits for both years, as well as strategic changes in funding strategy.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0021617999999999997
+}

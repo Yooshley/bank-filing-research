@@ -1,0 +1,50 @@
+{
+  "case_id": "1622ffdffd9cfdf4/basic_top_k/eval_26",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_26",
+    "question": "What were Bank of Atlantis credit losses in 2025?",
+    "question_type": "edge",
+    "banks": [],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "ATLANTIS"
+      }
+    ],
+    "expected_behavior": "State that this bank is outside the corpus; do not fabricate figures.",
+    "reference_query": "What were Bank of Atlantis credit losses in 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provided filings do not contain enough information to answer this question.",
+    "sources": [],
+    "retrieval_seconds": 0.02868240000680089,
+    "structured": null
+  },
+  "latency_seconds": 0.028723299968987703,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "embedding_tokens": 0,
+  "chat_calls": 0,
+  "query_embedding_seconds": 0.021430399967357516,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "The answer correctly states that there is insufficient information to provide a response regarding Bank of Atlantis credit losses in 2025, aligning with the expected behavior.",
+    "relevance_reason": "The answer directly addresses the question by indicating the lack of information available.",
+    "completeness_reason": "The answer fully covers the request by stating the limitation of available data without omitting any relevant aspects.",
+    "unsupported_claims": [],
+    "reference_limitations": "No relevant filings or data regarding Bank of Atlantis were provided."
+  },
+  "judge_cost_usd": 0.00015689999999999996
+}

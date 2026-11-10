@@ -1,0 +1,370 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_17",
+  "config": "agentic",
+  "question": {
+    "id": "eval_17",
+    "question": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "TD",
+      "BMO"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports."
+  },
+  "status": "complete",
+  "generation": {
+    "question": "Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.",
+    "answer": "### Comparison of TD and BMO Disclosures on Residential Mortgage Credit Risk (2025 Annual Reports)\n\n#### TD Bank (Toronto-Dominion Bank)\n1. **Portfolio Management**:\n   - TD manages residential real estate secured lending, which includes mortgages and home equity lines of credit (HELOCs). The bank retains first lien on most properties, with a policy that limits combined exposure on uninsured facilities to 80% of collateral value at origination. Higher loan-to-value ratios require default insurance (TD_2025_annual_report_FY_00166).\n   \n2. **Risk Assessment**:\n   - The bank conducts regular stress tests on its real estate lending portfolio to evaluate vulnerability to economic downturns, considering factors like house prices, interest rates, and unemployment (TD_2025_annual_report_FY_00165).\n\n3. **Credit Risk Exposure**:\n   - TD employs predictive credit scoring techniques for managing retail exposures, including residential mortgages. The bank categorizes credit risk exposures into retail and non-retail portfolios, with specific models for each (TD_2025_annual_report_FY_00293).\n\n4. **Financial Metrics**:\n   - As of October 31, 2025, TD reported residential mortgages totaling CAD 315,063 million, with an allowance for loan losses of CAD 3,847 million (TD_2025_annual_report_FY_00538).\n\n#### BMO Bank (Bank of Montreal)\n1. **Portfolio Overview**:\n   - BMO's residential real estate secured lending includes mortgages and HELOCs, with a focus on stress testing these portfolios to assess potential credit losses under various adverse scenarios (BMO_2025_annual_report_FY_00159).\n\n2. **Credit Risk Management**:\n   - The bank emphasizes a diversified loan portfolio and employs conservative underwriting standards. It regularly performs stress tests on its residential mortgage and HELOC portfolios (BMO_2025_annual_report_FY_00159).\n\n3. **Financial Metrics**:\n   - BMO reported residential mortgages totaling CAD 903 million as of October 31, 2025, with an allowance for credit losses of CAD 974 million (BMO_2025_annual_report_FY_00320).\n\n### Summary\nBoth banks disclose comprehensive strategies for managing residential mortgage credit risk, including stress testing and risk assessment methodologies. TD provides detailed insights into its credit risk exposure and management practices, while BMO highlights its diversified portfolio and conservative underwriting. The financial metrics indicate that TD has a significantly larger residential mortgage portfolio compared to BMO.\n\nFor further details, you can access the full reports:\n- [TD Annual Report 2025](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)\n- [BMO Annual Report 2025](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)",
+    "iterations": 2,
+    "tool_calls": 2,
+    "tools_used": [
+      "search_filings",
+      "search_filings"
+    ],
+    "input_tokens": 6743,
+    "output_tokens": 695,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.001428,
+    "seconds": 19.61,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "residential mortgage credit risk",
+          "bank": "TD",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00165",
+              "text": "Canada\n4.4%\n4.4%\nUnited States\n(7.9)\n3.3\nInternational\n16.4\n0.5\nOther loans\n–\n(100.0) Total\n0.4%\n3.9% 1 Primarily based on the geographic location of the customer’s address. 2 Includes loans that are measured at FVOCI. 4 The states included in New England are as follows: Connecticut, Maine,\nMassachusetts, New Hampshire, and Vermont. 3 The territories are included as follows: Yukon is included in British Columbia; Nunavut\nis included in Ontario; and Northwest Territories is included in the Prairies region. 5 Includes loans attributable to other states/regions including those outside TD’s core\nU.S. geographic footprint.\n\nratio loans. The insurance is provided by either government-backed\nentities or approved private mortgage insurers. In the U.S., for residential\nmortgage originations, mortgage insurance is usually obtained from either\ngovernment-backed entities or approved private mortgage insurers when\nthe loan-to-value exceeds 80% of the collateral value at origination.\n\nThe Bank regularly performs stress tests on its real estate lending\nportfolio as part of its overall stress testing program. This is done with a\nview to determine the extent to which the portfolio would be vulnerable\nto a severe downturn in economic conditions. The effect of severe changes\nin house prices, interest rates, and unemployment levels are among\nthe factors considered when assessing the impact on credit losses and\nthe Bank’s overall profitability. A variety of portfolio segments, including\ndwelling type and geographical regions, are examined during the exercise\nto determine whether specific vulnerabilities exist.",
+              "similarity": 0.549,
+              "file_name": "TD_2025_annual_report.pdf",
+              "fiscal_year": 2025,
+              "page_start": 64,
+              "bank": "Toronto-Dominion Bank",
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "section": "CONCENTRATION OF CREDIT RISK",
+              "quarter": 0,
+              "filing_id": "TD_2025_annual_report_FY",
+              "page_end": 64,
+              "document_type": "annual_report",
+              "bank_code": "TD"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00293",
+              "text": "For products secured by residential real estate, such\nas mortgages and HELOCs, downturn LGD reflects the potential impact\nof a severe housing downturn. EAD estimates similarly reflect a\ndownturn scenario. The following table maps PD ranges to risk levels: To continue to qualify to use the IRB approaches for credit risk, the Bank\nmust meet the ongoing conditions and requirements established by OSFI\nand the Basel Framework. The Bank regularly assesses its compliance with\nthese requirements. Risk Assessment\nPD Segment\nPD Range Low Risk\n1\n0.00 to 0.15% Normal Risk\n2\n0.16 to 0.41\n3\n0.42 to 1.10 Medium Risk\n4\n1.11 to 2.93\n5\n2.94 to 4.74\n\nCredit Risk Exposures Subject to the IRB Approaches\nBanks that adopt the IRB approaches to credit risk must report credit risk\nexposures by counterparty type, each having different underlying risk\ncharacteristics. These counterparty types may differ from the presentation\nin the Bank’s 2025 Consolidated Financial Statements. The Bank’s credit\nrisk exposures are divided into two main portfolios, retail and non-retail.\n\nHigh Risk\n6\n4.75 to 7.59\n7\n7.60 to 18.24\n8\n18.25 to 99.99\n\nDefault\n9\n100.00\n\nRetail Exposures\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. There are three sub-types of retail exposures: residential\nsecured (for example, mortgages and HELOCs), qualifying revolving\nretail (for example, credit cards, unsecured lines of credit, and overdraft\nprotection products), and other retail (for example, personal loans,\nincluding secured automobile loans, student lines of credit, and small\nbusiness banking credit products).\n\nNon‐Retail Exposures\nIn the non-retail portfolio, the Bank manages exposures on an individual\nborrower basis, using industry and sector-specific credit risk models, and\nexpert judgment. The Bank has categorized non-retail credit risk exposures\naccording to the following Basel counterparty types: corporate, including\nwholesale and commercial customers, sovereign, and bank. Under the IRB\napproaches, CMHC-insured mortgages are considered sovereign risk and\nare therefore classified as non-retail.\n\nThe Bank calculates RWA for its retail exposures using the AIRB\napproach. All retail PD, LGD, and EAD parameter models are based on the\ninternal default and loss performance history for each of the three retail\nexposure sub-types. These parameters are also used in the calculation of\nregulatory capital, economic capital, and allowance for credit losses.\n\nAccount-level PD, LGD, and EAD models are built for each product\nportfolio and calibrated based on the observed account-level default and\nloss performance for the portfolio.",
+              "similarity": 0.539,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "filing_id": "TD_2025_annual_report_FY",
+              "section": "HOW TD MANAGES CREDIT RISK",
+              "bank_code": "TD",
+              "page_end": 102,
+              "bank": "Toronto-Dominion Bank",
+              "file_name": "TD_2025_annual_report.pdf",
+              "page_start": 102,
+              "quarter": 0,
+              "document_type": "annual_report",
+              "fiscal_year": 2025
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00166",
+              "text": "Retail real estate secured lending includes mortgages and lines of credit\nto North American consumers to satisfy financing needs including home\npurchases and refinancing. While the Bank retains first lien on the\nmajority of properties held as security, there is a small portion of loans\nwith second liens, but most of these are behind a TD mortgage or home\nequity line of credit that is in first position. In Canada, credit policies are\ndesigned so that the combined exposure of all uninsured facilities on\none property does not exceed 80% of the collateral value at origination.\nLending at a higher loan-to-value ratio is permitted by legislation but\nrequires default insurance. This insurance is contractual coverage for\nthe life of eligible facilities and protects the Bank’s real estate secured\nlending portfolio against potential losses caused by borrowers’ default.\nThe Bank may also purchase default insurance on lower loan-to-value\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n1,2\n\n|\nT A B L E 2 7",
+              "similarity": 0.538,
+              "page_end": 65,
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "bank_code": "TD",
+              "quarter": 0,
+              "bank": "Toronto-Dominion Bank",
+              "section": "REAL ESTATE SECURED LENDING",
+              "filing_id": "TD_2025_annual_report_FY",
+              "page_start": 64,
+              "file_name": "TD_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00538",
+              "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+              "similarity": 0.537,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "bank_code": "TD",
+              "page_start": 186,
+              "fiscal_year": 2025,
+              "bank": "Toronto-Dominion Bank",
+              "filing_id": "TD_2025_annual_report_FY",
+              "file_name": "TD_2025_annual_report.pdf",
+              "page_end": 187,
+              "quarter": 0,
+              "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+              "document_type": "annual_report"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "residential mortgage credit risk",
+          "bank": "BMO",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00159",
+              "text": "Portfolio Review\nTotal enterprise-wide outstanding credit risk exposures were $1,189.6 billion as at October 31, 2025, with $596.4 billion recorded in\nCanada, $542.7 billion in the United States and $50.5 billion in other jurisdictions. This represented an increase of $37.1 billion or 3% from the\nprior year.\n\nBMO’s loan book continues to be well-diversified by industry and geographic region. Total gross loans and acceptances were largely unchanged\nat $682.9 billion as at October 31, 2025. The geographic mix of BMO’s Canadian and U.S. portfolios represented 58.3% and 40.0% of total loans,\nrespectively, compared with 57.5% and 40.7% in the prior year. The loan portfolio is well-diversified, with the consumer loan portfolio\nrepresenting 44.1% of the total portfolio, an increase from 43.6% in the prior year, and business and government loans representing 55.9% of\nthe total portfolio, a slight decrease from 56.4% in the prior year.\n\nCommercial Real Estate Lending\nCommercial real estate (CRE) lending refers to loans made for the purpose of financing buildings or land intended to generate a profit, derived either\nfrom the sale of property or from rental income. CRE primarily refers to two distinct types of real estate businesses: income-producing real estate\n(office, industrial and retail space, and multi-family residential buildings with more than four dwelling units), including the construction of these\nassets; and development of land and construction of properties for sale (subdivisions, condominiums and other types of property). Our primary focus\nis income-producing commercial real estate portfolios with stable operating performance, diversified holdings, modest leverage and continued access\nto capital, including those legally structured as real estate investment trusts (REITs), real estate investment funds and real estate operating companies\n(REOCs), as well as pension funds and other established owners of income-producing commercial real estate.\n\nOur CRE portfolio was $77.0 billion as at October 31, 2025 ($75.4 billion as at October 31, 2024) and accounted for 11% of total gross loans and\nacceptances (11% as at October 31, 2024). The portfolio is well-managed, with consistent and conservative underwriting standards, strict lending\ncriteria and structural resilience. Our CRE portfolio is well-diversified across businesses, property types and geographic regions. The exposure is\nmonitored with an overall limit, as well as lower limits on each segment, to mitigate risks. As at October 31, 2025, impaired loans represented 1%\nof the portfolio (1% as at October 31, 2024).\n\nResidential Real Estate\nResidential real estate secured lending comprises residential mortgages and home equity lines of credit (HELOCs) we extend to individuals, and\nsecured by residential real estate, which is defined as residential structures with one to four dwelling units.\n\nWe regularly perform stress tests on our residential mortgage and HELOC portfolios to assess the potential effects of high-impact events. These\nstress tests incorporate scenarios ranging from moderately to severely adverse. The credit losses forecast in these tests vary with the severity of the\nscenario and are currently considered to be manageable.\n\nThe following tables provide a breakdown of residential mortgages and HELOCs by geographic region, as well as insured and uninsured balances.\nResidential mortgages and HELOCs are secured by residential properties.\n\nCanadian Real Estate Secured Lending\n\nTABLE 36\n\nTotal amortizing",
+              "similarity": 0.587,
+              "bank_code": "BMO",
+              "bank": "Bank of Montreal",
+              "quarter": 0,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "page_start": 82,
+              "document_type": "annual_report",
+              "page_end": 82,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "section": "MD&A",
+              "fiscal_year": 2025
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00019",
+              "text": "26. Analysis of credit risk profile, exposures and concentration\n62-63,76-83,\n145-152,163-164\n24-45\n16-81\n27. Policies to identify impaired loans and renegotiated loans\n146,151\n28. Reconciliation of opening and closing balances of impaired loans and\nallowance for credit losses\n82,148\n29. Counterparty credit risk arising from derivative transactions\n76-78,83,163-164\n55-73\n30. Credit risk mitigation\n76-78,147,154,\n196-197\n21,51-52,68\n\nOther Risks\n31. Discussion of other risks\n70-73,98-107\n32. Publicly known risk events involving material or potentially material\nloss events\n98-107,197-198\n\nBMO Financial Group 208th Annual Report 2025 15",
+              "similarity": 0.534,
+              "page_start": 17,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "page_end": 17,
+              "bank": "Bank of Montreal",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "fiscal_year": 2025,
+              "bank_code": "BMO",
+              "section": "Credit Risk",
+              "quarter": 0,
+              "filing_id": "BMO_2025_annual_report_FY"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00320",
+              "text": "Residential mortgages\n$\n903\n$\n12\n$\n891\n$\n657\n$\n10\n$\n647\nConsumer instalment and other personal\n627\n160\n467\n577\n168\n409\nBusiness and government (2)\n5,561\n802\n4,759\n4,609\n475\n4,134 Total\n$\n7,091\n$\n974\n$\n6,117\n$\n5,843\n$\n653\n$\n5,190 By geographic region (3) Canada\n$\n3,550\n$\n663\n$\n2,887\n$\n2,513\n$\n461\n$\n2,052\nUnited States\n3,540\n311\n3,229\n3,327\n192\n3,135\nOther countries\n1\n–\n1\n3\n–\n3 Total\n$\n7,091\n$\n974\n$\n6,117\n$\n5,843\n$\n653\n$\n5,190\n\n(1) Excludes ACL on impaired loans of $56 million for other credit instruments, which is included in other liabilities ($78 million as at October 31, 2024).\n(2) Includes customers’ liability under acceptances.\n(3) Geographic region is based upon the country of ultimate risk.\n\nLoans Past Due Not Impaired\nLoans that are past due but not classified as impaired are loans for which customers have failed to make payments when contractually due but for\nwhich we expect the full amount of principal and interest payments to be collected. The following table presents loans that are past due but not\nclassified as impaired as at October 31, 2025 and 2024. Loans for which payment is less than 30 days past due have been excluded, as they are not\ngenerally representative of the borrowers’ ability to meet their payment obligations.\n\n(Canadian $ in millions)\n2025\n2024\n\n30 to 89 days\n90 days or more (1)\nTotal\n30 to 89 days\n90 days or more (1)\nTotal\n\nResidential mortgages\n$\n854\n$\n7\n$\n861\n$\n696\n$\n15\n$\n711\nCredit cards, consumer instalment and other personal\n661\n171\n832\n734\n173\n907\nBusiness and government\n616\n8\n624\n689\n16\n705\n\nTotal\n$\n2,131\n$\n186\n$\n2,317\n$\n2,119\n$\n204\n$\n2,323\n\n(1) Fully secured loans with amounts between 90 and 180 days past due that we have not classified as impaired totalled $7 million as at October 31, 2025 ($16 million as at October 31, 2024).\n\nECL Sensitivity and Key Economic Variables\nThe allowance for performing loans is sensitive to changes in both economic forecasts and the probability weight assigned to each forecast scenario.\nMany of the factors have a high degree of interdependency, although there is no single factor to which loan loss allowances as a whole are sensitive.\n\nThe upside scenario as at October 31, 2025 assumes a materially stronger economic environment than the base case forecast, with lower\nunemployment rates.\n\nAs at October 31, 2025, our base case scenario depicts an economic environment with somewhat higher unemployment rates in the near term,\nlargely in response to tariffs, and a moderate economic recovery over the medium term as trade policy uncertainty diminishes and interest rates\ndecline further. Our base case forecast as at October 31, 2024 depicted a stronger economic environment prior to new tariffs taking effect.",
+              "similarity": 0.53,
+              "section": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "bank": "Bank of Montreal",
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "page_end": 152,
+              "quarter": 0,
+              "bank_code": "BMO",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "page_start": 152
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00325",
+              "text": "Market risk is the potential for financial loss as a result of the impact to capital and earnings arising from adverse changes in market variables that\nmay affect the bank’s trading, underwriting and banking book positions, such as interest rates, foreign exchange rates, credit spreads, equity and\ncommodity prices and their implied volatilities.\n\nOur market risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk Management section\nof our Management’s Discussion and Analysis.\n\nLiquidity and Funding Risk\nLiquidity and funding risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at reasonable\nprices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and pledging\ncommitments. It is our policy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of\nstress. Managing liquidity and funding risk is essential to maintaining enterprise soundness and safety, depositor confidence and earnings stability.\n\nOur liquidity and funding risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk\nManagement section of our Management’s Discussion and Analysis.\n\nNote 5: Transfers of Financial Assets\n\nTransfers of Financial Assets that do not Qualify for Derecognition\n\nLoan Securitization\nWe sell Canadian residential and commercial mortgages to third-party Canadian securitization programs, including the Canada Mortgage Bond\nprogram, and directly to third-party investors under the National Housing Act Mortgage-Backed Securities (NHA MBS) program. We assess whether\nsubstantially all of the risks and rewards of, or control over, the loans have been transferred in order to determine whether they qualify for\nderecognition. Under these programs, we are entitled to payment over time of the excess of the sum of interest and fees collected from customers in\nconnection with the mortgages that were sold, over the yield paid to investors, less credit losses and other costs. We also act as counterparty in\ninterest rate swap agreements, where we pay the interest due to Canada Mortgage Bond holders and receive the interest on the underlying\nmortgages, which are converted into MBS through the NHA MBS program and sold to Canada Housing Trust.\n\nFor some of these sales, we continue to be exposed to substantially all of the prepayment, interest rate and credit risk associated with the\nsecuritized mortgages, so they did not qualify for derecognition. We continue to recognize the mortgages in our Consolidated Balance Sheet and the\nrelated cash proceeds are recognized as secured financing as part of securitization and structured entities’ liabilities in our Consolidated Balance Sheet.\nThe interest and fees collected, net of the yield paid to investors, are recorded in net interest income using the effective interest method over the term\nof the securitization. Credit losses associated with the mortgages are recorded in the PCL. During the year ended October 31, 2025, we sold\n$4,621 million of mortgages to these programs ($3,687 million in 2024).\n\nNotes\n\n152 BMO Financial Group 208th Annual Report 2025\n\nThe following table presents the carrying values and fair values of transferred assets that did not qualify for derecognition and the associated\nliabilities relating to loan securitizations:\n\n(Canadian $ in millions)\n2025\n2024\n\nCarrying value (1)\nFair value\nCarrying value (1)\nFair value",
+              "similarity": 0.518,
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "page_end": 155,
+              "section": "Market Risk",
+              "page_start": 154,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "bank_code": "BMO",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "bank": "Bank of Montreal"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "### Comparison of TD and BMO Disclosures on Residential Mortgage Credit Risk (2025 Annual Reports)\n\n#### TD Bank (Toronto-Dominion Bank)\n1. **Portfolio Management**:\n   - TD manages residential real estate secured lending, which includes mortgages and home equity lines of credit (HELOCs). The bank retains first lien on most properties, with a policy that limits combined exposure on uninsured facilities to 80% of collateral value at origination. Higher loan-to-value ratios require default insurance (TD_2025_annual_report_FY_00166).\n   \n2. **Risk Assessment**:\n   - The bank conducts regular stress tests on its real estate lending portfolio to evaluate vulnerability to economic downturns, considering factors like house prices, interest rates, and unemployment (TD_2025_annual_report_FY_00165).\n\n3. **Credit Risk Exposure**:\n   - TD employs predictive credit scoring techniques for managing retail exposures, including residential mortgages. The bank categorizes credit risk exposures into retail and non-retail portfolios, with specific models for each (TD_2025_annual_report_FY_00293).\n\n4. **Financial Metrics**:\n   - As of October 31, 2025, TD reported residential mortgages totaling CAD 315,063 million, with an allowance for loan losses of CAD 3,847 million (TD_2025_annual_report_FY_00538).\n\n#### BMO Bank (Bank of Montreal)\n1. **Portfolio Overview**:\n   - BMO's residential real estate secured lending includes mortgages and HELOCs, with a focus on stress testing these portfolios to assess potential credit losses under various adverse scenarios (BMO_2025_annual_report_FY_00159).\n\n2. **Credit Risk Management**:\n   - The bank emphasizes a diversified loan portfolio and employs conservative underwriting standards. It regularly performs stress tests on its residential mortgage and HELOC portfolios (BMO_2025_annual_report_FY_00159).\n\n3. **Financial Metrics**:\n   - BMO reported residential mortgages totaling CAD 903 million as of October 31, 2025, with an allowance for credit losses of CAD 974 million (BMO_2025_annual_report_FY_00320).\n\n### Summary\nBoth banks disclose comprehensive strategies for managing residential mortgage credit risk, including stress testing and risk assessment methodologies. TD provides detailed insights into its credit risk exposure and management practices, while BMO highlights its diversified portfolio and conservative underwriting. The financial metrics indicate that TD has a significantly larger residential mortgage portfolio compared to BMO.\n\nFor further details, you can access the full reports:\n- [TD Annual Report 2025](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)\n- [BMO Annual Report 2025](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)"
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00165",
+        "text": "Canada\n4.4%\n4.4%\nUnited States\n(7.9)\n3.3\nInternational\n16.4\n0.5\nOther loans\n–\n(100.0) Total\n0.4%\n3.9% 1 Primarily based on the geographic location of the customer’s address. 2 Includes loans that are measured at FVOCI. 4 The states included in New England are as follows: Connecticut, Maine,\nMassachusetts, New Hampshire, and Vermont. 3 The territories are included as follows: Yukon is included in British Columbia; Nunavut\nis included in Ontario; and Northwest Territories is included in the Prairies region. 5 Includes loans attributable to other states/regions including those outside TD’s core\nU.S. geographic footprint.\n\nratio loans. The insurance is provided by either government-backed\nentities or approved private mortgage insurers. In the U.S., for residential\nmortgage originations, mortgage insurance is usually obtained from either\ngovernment-backed entities or approved private mortgage insurers when\nthe loan-to-value exceeds 80% of the collateral value at origination.\n\nThe Bank regularly performs stress tests on its real estate lending\nportfolio as part of its overall stress testing program. This is done with a\nview to determine the extent to which the portfolio would be vulnerable\nto a severe downturn in economic conditions. The effect of severe changes\nin house prices, interest rates, and unemployment levels are among\nthe factors considered when assessing the impact on credit losses and\nthe Bank’s overall profitability. A variety of portfolio segments, including\ndwelling type and geographical regions, are examined during the exercise\nto determine whether specific vulnerabilities exist.",
+        "similarity": 0.549,
+        "file_name": "TD_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "page_start": 64,
+        "bank": "Toronto-Dominion Bank",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "CONCENTRATION OF CREDIT RISK",
+        "quarter": 0,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_end": 64,
+        "document_type": "annual_report",
+        "bank_code": "TD"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00293",
+        "text": "For products secured by residential real estate, such\nas mortgages and HELOCs, downturn LGD reflects the potential impact\nof a severe housing downturn. EAD estimates similarly reflect a\ndownturn scenario. The following table maps PD ranges to risk levels: To continue to qualify to use the IRB approaches for credit risk, the Bank\nmust meet the ongoing conditions and requirements established by OSFI\nand the Basel Framework. The Bank regularly assesses its compliance with\nthese requirements. Risk Assessment\nPD Segment\nPD Range Low Risk\n1\n0.00 to 0.15% Normal Risk\n2\n0.16 to 0.41\n3\n0.42 to 1.10 Medium Risk\n4\n1.11 to 2.93\n5\n2.94 to 4.74\n\nCredit Risk Exposures Subject to the IRB Approaches\nBanks that adopt the IRB approaches to credit risk must report credit risk\nexposures by counterparty type, each having different underlying risk\ncharacteristics. These counterparty types may differ from the presentation\nin the Bank’s 2025 Consolidated Financial Statements. The Bank’s credit\nrisk exposures are divided into two main portfolios, retail and non-retail.\n\nHigh Risk\n6\n4.75 to 7.59\n7\n7.60 to 18.24\n8\n18.25 to 99.99\n\nDefault\n9\n100.00\n\nRetail Exposures\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. There are three sub-types of retail exposures: residential\nsecured (for example, mortgages and HELOCs), qualifying revolving\nretail (for example, credit cards, unsecured lines of credit, and overdraft\nprotection products), and other retail (for example, personal loans,\nincluding secured automobile loans, student lines of credit, and small\nbusiness banking credit products).\n\nNon‐Retail Exposures\nIn the non-retail portfolio, the Bank manages exposures on an individual\nborrower basis, using industry and sector-specific credit risk models, and\nexpert judgment. The Bank has categorized non-retail credit risk exposures\naccording to the following Basel counterparty types: corporate, including\nwholesale and commercial customers, sovereign, and bank. Under the IRB\napproaches, CMHC-insured mortgages are considered sovereign risk and\nare therefore classified as non-retail.\n\nThe Bank calculates RWA for its retail exposures using the AIRB\napproach. All retail PD, LGD, and EAD parameter models are based on the\ninternal default and loss performance history for each of the three retail\nexposure sub-types. These parameters are also used in the calculation of\nregulatory capital, economic capital, and allowance for credit losses.\n\nAccount-level PD, LGD, and EAD models are built for each product\nportfolio and calibrated based on the observed account-level default and\nloss performance for the portfolio.",
+        "similarity": 0.539,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "section": "HOW TD MANAGES CREDIT RISK",
+        "bank_code": "TD",
+        "page_end": 102,
+        "bank": "Toronto-Dominion Bank",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_start": 102,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00166",
+        "text": "Retail real estate secured lending includes mortgages and lines of credit\nto North American consumers to satisfy financing needs including home\npurchases and refinancing. While the Bank retains first lien on the\nmajority of properties held as security, there is a small portion of loans\nwith second liens, but most of these are behind a TD mortgage or home\nequity line of credit that is in first position. In Canada, credit policies are\ndesigned so that the combined exposure of all uninsured facilities on\none property does not exceed 80% of the collateral value at origination.\nLending at a higher loan-to-value ratio is permitted by legislation but\nrequires default insurance. This insurance is contractual coverage for\nthe life of eligible facilities and protects the Bank’s real estate secured\nlending portfolio against potential losses caused by borrowers’ default.\nThe Bank may also purchase default insurance on lower loan-to-value\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n1,2\n\n|\nT A B L E 2 7",
+        "similarity": 0.538,
+        "page_end": 65,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank_code": "TD",
+        "quarter": 0,
+        "bank": "Toronto-Dominion Bank",
+        "section": "REAL ESTATE SECURED LENDING",
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 64,
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00538",
+        "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+        "similarity": 0.537,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "bank_code": "TD",
+        "page_start": 186,
+        "fiscal_year": 2025,
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_end": 187,
+        "quarter": 0,
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00159",
+        "text": "Portfolio Review\nTotal enterprise-wide outstanding credit risk exposures were $1,189.6 billion as at October 31, 2025, with $596.4 billion recorded in\nCanada, $542.7 billion in the United States and $50.5 billion in other jurisdictions. This represented an increase of $37.1 billion or 3% from the\nprior year.\n\nBMO’s loan book continues to be well-diversified by industry and geographic region. Total gross loans and acceptances were largely unchanged\nat $682.9 billion as at October 31, 2025. The geographic mix of BMO’s Canadian and U.S. portfolios represented 58.3% and 40.0% of total loans,\nrespectively, compared with 57.5% and 40.7% in the prior year. The loan portfolio is well-diversified, with the consumer loan portfolio\nrepresenting 44.1% of the total portfolio, an increase from 43.6% in the prior year, and business and government loans representing 55.9% of\nthe total portfolio, a slight decrease from 56.4% in the prior year.\n\nCommercial Real Estate Lending\nCommercial real estate (CRE) lending refers to loans made for the purpose of financing buildings or land intended to generate a profit, derived either\nfrom the sale of property or from rental income. CRE primarily refers to two distinct types of real estate businesses: income-producing real estate\n(office, industrial and retail space, and multi-family residential buildings with more than four dwelling units), including the construction of these\nassets; and development of land and construction of properties for sale (subdivisions, condominiums and other types of property). Our primary focus\nis income-producing commercial real estate portfolios with stable operating performance, diversified holdings, modest leverage and continued access\nto capital, including those legally structured as real estate investment trusts (REITs), real estate investment funds and real estate operating companies\n(REOCs), as well as pension funds and other established owners of income-producing commercial real estate.\n\nOur CRE portfolio was $77.0 billion as at October 31, 2025 ($75.4 billion as at October 31, 2024) and accounted for 11% of total gross loans and\nacceptances (11% as at October 31, 2024). The portfolio is well-managed, with consistent and conservative underwriting standards, strict lending\ncriteria and structural resilience. Our CRE portfolio is well-diversified across businesses, property types and geographic regions. The exposure is\nmonitored with an overall limit, as well as lower limits on each segment, to mitigate risks. As at October 31, 2025, impaired loans represented 1%\nof the portfolio (1% as at October 31, 2024).\n\nResidential Real Estate\nResidential real estate secured lending comprises residential mortgages and home equity lines of credit (HELOCs) we extend to individuals, and\nsecured by residential real estate, which is defined as residential structures with one to four dwelling units.\n\nWe regularly perform stress tests on our residential mortgage and HELOC portfolios to assess the potential effects of high-impact events. These\nstress tests incorporate scenarios ranging from moderately to severely adverse. The credit losses forecast in these tests vary with the severity of the\nscenario and are currently considered to be manageable.\n\nThe following tables provide a breakdown of residential mortgages and HELOCs by geographic region, as well as insured and uninsured balances.\nResidential mortgages and HELOCs are secured by residential properties.\n\nCanadian Real Estate Secured Lending\n\nTABLE 36\n\nTotal amortizing",
+        "similarity": 0.587,
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal",
+        "quarter": 0,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "page_start": 82,
+        "document_type": "annual_report",
+        "page_end": 82,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "MD&A",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00019",
+        "text": "26. Analysis of credit risk profile, exposures and concentration\n62-63,76-83,\n145-152,163-164\n24-45\n16-81\n27. Policies to identify impaired loans and renegotiated loans\n146,151\n28. Reconciliation of opening and closing balances of impaired loans and\nallowance for credit losses\n82,148\n29. Counterparty credit risk arising from derivative transactions\n76-78,83,163-164\n55-73\n30. Credit risk mitigation\n76-78,147,154,\n196-197\n21,51-52,68\n\nOther Risks\n31. Discussion of other risks\n70-73,98-107\n32. Publicly known risk events involving material or potentially material\nloss events\n98-107,197-198\n\nBMO Financial Group 208th Annual Report 2025 15",
+        "similarity": 0.534,
+        "page_start": 17,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_end": 17,
+        "bank": "Bank of Montreal",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank_code": "BMO",
+        "section": "Credit Risk",
+        "quarter": 0,
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00320",
+        "text": "Residential mortgages\n$\n903\n$\n12\n$\n891\n$\n657\n$\n10\n$\n647\nConsumer instalment and other personal\n627\n160\n467\n577\n168\n409\nBusiness and government (2)\n5,561\n802\n4,759\n4,609\n475\n4,134 Total\n$\n7,091\n$\n974\n$\n6,117\n$\n5,843\n$\n653\n$\n5,190 By geographic region (3) Canada\n$\n3,550\n$\n663\n$\n2,887\n$\n2,513\n$\n461\n$\n2,052\nUnited States\n3,540\n311\n3,229\n3,327\n192\n3,135\nOther countries\n1\n–\n1\n3\n–\n3 Total\n$\n7,091\n$\n974\n$\n6,117\n$\n5,843\n$\n653\n$\n5,190\n\n(1) Excludes ACL on impaired loans of $56 million for other credit instruments, which is included in other liabilities ($78 million as at October 31, 2024).\n(2) Includes customers’ liability under acceptances.\n(3) Geographic region is based upon the country of ultimate risk.\n\nLoans Past Due Not Impaired\nLoans that are past due but not classified as impaired are loans for which customers have failed to make payments when contractually due but for\nwhich we expect the full amount of principal and interest payments to be collected. The following table presents loans that are past due but not\nclassified as impaired as at October 31, 2025 and 2024. Loans for which payment is less than 30 days past due have been excluded, as they are not\ngenerally representative of the borrowers’ ability to meet their payment obligations.\n\n(Canadian $ in millions)\n2025\n2024\n\n30 to 89 days\n90 days or more (1)\nTotal\n30 to 89 days\n90 days or more (1)\nTotal\n\nResidential mortgages\n$\n854\n$\n7\n$\n861\n$\n696\n$\n15\n$\n711\nCredit cards, consumer instalment and other personal\n661\n171\n832\n734\n173\n907\nBusiness and government\n616\n8\n624\n689\n16\n705\n\nTotal\n$\n2,131\n$\n186\n$\n2,317\n$\n2,119\n$\n204\n$\n2,323\n\n(1) Fully secured loans with amounts between 90 and 180 days past due that we have not classified as impaired totalled $7 million as at October 31, 2025 ($16 million as at October 31, 2024).\n\nECL Sensitivity and Key Economic Variables\nThe allowance for performing loans is sensitive to changes in both economic forecasts and the probability weight assigned to each forecast scenario.\nMany of the factors have a high degree of interdependency, although there is no single factor to which loan loss allowances as a whole are sensitive.\n\nThe upside scenario as at October 31, 2025 assumes a materially stronger economic environment than the base case forecast, with lower\nunemployment rates.\n\nAs at October 31, 2025, our base case scenario depicts an economic environment with somewhat higher unemployment rates in the near term,\nlargely in response to tariffs, and a moderate economic recovery over the medium term as trade policy uncertainty diminishes and interest rates\ndecline further. Our base case forecast as at October 31, 2024 depicted a stronger economic environment prior to new tariffs taking effect.",
+        "similarity": 0.53,
+        "section": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank": "Bank of Montreal",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "page_end": 152,
+        "quarter": 0,
+        "bank_code": "BMO",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_start": 152
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00325",
+        "text": "Market risk is the potential for financial loss as a result of the impact to capital and earnings arising from adverse changes in market variables that\nmay affect the bank’s trading, underwriting and banking book positions, such as interest rates, foreign exchange rates, credit spreads, equity and\ncommodity prices and their implied volatilities.\n\nOur market risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk Management section\nof our Management’s Discussion and Analysis.\n\nLiquidity and Funding Risk\nLiquidity and funding risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at reasonable\nprices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and pledging\ncommitments. It is our policy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of\nstress. Managing liquidity and funding risk is essential to maintaining enterprise soundness and safety, depositor confidence and earnings stability.\n\nOur liquidity and funding risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk\nManagement section of our Management’s Discussion and Analysis.\n\nNote 5: Transfers of Financial Assets\n\nTransfers of Financial Assets that do not Qualify for Derecognition\n\nLoan Securitization\nWe sell Canadian residential and commercial mortgages to third-party Canadian securitization programs, including the Canada Mortgage Bond\nprogram, and directly to third-party investors under the National Housing Act Mortgage-Backed Securities (NHA MBS) program. We assess whether\nsubstantially all of the risks and rewards of, or control over, the loans have been transferred in order to determine whether they qualify for\nderecognition. Under these programs, we are entitled to payment over time of the excess of the sum of interest and fees collected from customers in\nconnection with the mortgages that were sold, over the yield paid to investors, less credit losses and other costs. We also act as counterparty in\ninterest rate swap agreements, where we pay the interest due to Canada Mortgage Bond holders and receive the interest on the underlying\nmortgages, which are converted into MBS through the NHA MBS program and sold to Canada Housing Trust.\n\nFor some of these sales, we continue to be exposed to substantially all of the prepayment, interest rate and credit risk associated with the\nsecuritized mortgages, so they did not qualify for derecognition. We continue to recognize the mortgages in our Consolidated Balance Sheet and the\nrelated cash proceeds are recognized as secured financing as part of securitization and structured entities’ liabilities in our Consolidated Balance Sheet.\nThe interest and fees collected, net of the yield paid to investors, are recorded in net interest income using the effective interest method over the term\nof the securitization. Credit losses associated with the mortgages are recorded in the PCL. During the year ended October 31, 2025, we sold\n$4,621 million of mortgages to these programs ($3,687 million in 2024).\n\nNotes\n\n152 BMO Financial Group 208th Annual Report 2025\n\nThe following table presents the carrying values and fair values of transferred assets that did not qualify for derecognition and the associated\nliabilities relating to loan securitizations:\n\n(Canadian $ in millions)\n2025\n2024\n\nCarrying value (1)\nFair value\nCarrying value (1)\nFair value",
+        "similarity": 0.518,
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_end": 155,
+        "section": "Market Risk",
+        "page_start": 154,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank_code": "BMO",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank": "Bank of Montreal"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 19.611397600034252,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00142845,
+  "input_tokens": 6743,
+  "output_tokens": 695,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.04484220000449568,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 4,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer contains mostly accurate claims about TD and BMO's disclosures, but some financial metrics for BMO are inaccurately reported (e.g., residential mortgages total).",
+    "relevance_reason": "The answer mostly addresses the comparison of disclosures on residential mortgage credit risk, but lacks specific details on certain aspects of BMO's disclosures.",
+    "completeness_reason": "The answer omits some details from BMO's disclosures and does not fully compare all aspects requested, particularly in financial metrics and risk management practices.",
+    "unsupported_claims": [
+      "BMO reported residential mortgages totaling CAD 903 million as of October 31, 2025, with an allowance for credit losses of CAD 974 million."
+    ],
+    "reference_limitations": "The answer does not provide complete financial metrics for BMO, and some figures are inaccurately reported."
+  },
+  "judge_cost_usd": 0.0023022
+}

@@ -1,0 +1,43 @@
+{
+  "corpus_hash": "e40ed97c537c0308bce374e8bb770a3f3e2d393e0a55464f9cc52a1071c7a730",
+  "chunks_path": "data/processed/chunks.jsonl",
+  "chroma_path": "models/chroma",
+  "run_id": "7a385bf2ff5747a66583",
+  "query_set_hash": "a69fdc11a0e859b44918658da3db63ea7cfafef0293a7abcf996c3dbde497f93",
+  "top_k": 5,
+  "fetch_k": 30,
+  "mmr_lambda": 0.5,
+  "default_provider": "local",
+  "metadata_nulls": {
+    "quarter": 0,
+    "page_start": 0,
+    "page_end": 0,
+    "source_url": "",
+    "filing_date": ""
+  },
+  "providers": {
+    "local": {
+      "spec": {
+        "provider": "local",
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": null,
+        "preprocessing": "token_id_windows_weighted_mean_v2",
+        "max_seq_length": 256
+      },
+      "embedding_key": "e19d8e96a717d9aa904e9c04ec39542d2c7b5dcd58a4cdc56dec32fc591cd3f8",
+      "collection": "bank_filings_local_e19d8e96a717d9aa904e9c04",
+      "dimensions": 384,
+      "insert_seconds": 99.74261210000259
+    }
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "chromadb": "1.5.9",
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.19.0",
+    "openai": "3.31.0",
+    "tiktoken": "0.14.0"
+  },
+  "python": "3.11.9",
+  "precision_complete": true
+}

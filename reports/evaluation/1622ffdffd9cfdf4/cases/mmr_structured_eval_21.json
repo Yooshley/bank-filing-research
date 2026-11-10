@@ -1,0 +1,210 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_21",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_21",
+    "question": "How did RBC disclosures about provision for credit losses change between 2024 and 2025?",
+    "question_type": "trend",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Compare evidence from both years. Do not infer a new risk merely from its absence in a retrieved sample.",
+    "reference_query": "How did RBC disclosures about provision for credit losses change between 2024 and 2025?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In 2024, RBC's provision for credit losses (PCL) on performing assets fluctuated due to changes in credit quality and macroeconomic conditions, with initial PCL on performing loans from the HSBC Canada transaction included in the second quarter. PCL on impaired assets was low initially but trended upwards later in the year [S1]. In 2025, the disclosures continued to emphasize the use of forward-looking information for estimating expected credit losses, with a consistent approach to assessing significant increases in credit risk based on macroeconomic variables [S5]. However, specific figures or changes in PCL amounts between 2024 and 2025 are not provided in the excerpts, indicating that the filings do not contain enough information to quantify the changes in PCL between these years.",
+    "sources": [
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00093",
+        "text": "Commercial Banking revenue has benefitted from volume growth in loans and deposits over the period. HSBC Canada\nrevenue has been included since the transaction closed on March 28, 2024. Wealth Management revenue has generally benefitted from growth in average fee-based client assets, which was impacted\nby market conditions. On July 3, 2023, we completed the sale of the European asset servicing activities of RBC Investor Services\nand its associated Malaysian centre of excellence. The fourth quarter of 2023 reflected impairment losses on our interest in an\nassociated company. As part of our adoption of IFRS 17, effective November 1, 2023, fluctuations in Insurance revenue are reflective of market\nconditions and insurance experience, while new business gains are deferred through CSM.\n\nCapital Markets revenue is influenced, to a large extent, by market conditions that impact client activity. While investment\nbanking fee pools were muted in 2023, we saw an increase in activity beginning the second quarter of 2024, during which we also\nimproved market share across all major products. Sales & trading activity increased in 2023 and carried strong momentum into 2024.\n\nPCL is comprised of provisions taken on performing assets and provisions taken on impaired assets. PCL on performing\nassets fluctuated over the period as it is impacted by changes in credit quality, macroeconomic conditions and exposures.\nProvisions on performing assets over the period have generally been reflective of unfavourable changes in credit quality. During\nthe early part of the period, there were unfavourable changes in our macroeconomic forecast. Starting in 2024, we have seen\nimprovements in our macroeconomic forecast. The second quarter of 2024 includes initial PCL on performing loans purchased in\nthe HSBC Canada transaction. PCL on impaired assets was low during the early part of the period, but has generally trended\nupwards over the remainder of the period.\n\nNon-interest expense has been impacted by fluctuations in variable compensation over the period, commensurate with\nfluctuations in revenue and earnings. Changes in the fair value of our U.S. share-based compensation plans, which are largely\noffset in revenue, have also contributed to fluctuations over the period and are impacted by market conditions. While we\ncontinue to focus on efficiency management activities, expenses over the period also reflect investments in staff and technology.\n\n62\n\nBeginning in fiscal 2023, expenses have also included HSBC Canada transaction and integration costs. HSBC Canada non-interest\nexpenses have been included since the transaction closed on March 28, 2024.\n\nOur effective income tax rate has fluctuated over the period, mostly due to varying levels of tax adjustments and changes in\nearnings mix. The first quarter of 2023 reflects the impact of the CRD and other tax related adjustments. The fourth quarter of\n2023 reflects the recognition of deferred tax assets relating to realized losses in City National associated with the intercompany\nsale of certain debt securities.\n\nFinancial condition\n\nCondensed balance sheets\n\nTable 38\n\nAs at October 31 (Millions of Canadian dollars)\n2024\n2023 (1)\n\nAssets\n\nCash and due from banks\n$\n56,723\n$\n61,989\nInterest-bearing deposits with banks\n66,020\n71,086\nSecurities, net of applicable allowance (2)\n439,918\n409,730\nAssets purchased under reverse repurchase agreements and securities borrowed\n350,803\n340,191\nLoans",
+        "similarity": 0.5419766902923584,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "bank": "Royal Bank of Canada",
+        "page_end": 63,
+        "fiscal_year": 2024,
+        "page_start": 62,
+        "quarter": 0,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "section": "Management’s Discussion and Analysis"
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00252",
+        "text": "balances of impaired loans and\nimpairment allowances during the year\n\n29\nQuantification of gross notional exposure\n\n80\n32\n\nfor OTC derivatives or exchange-traded\nderivatives\n\n78-79\n*\n\n30\nCredit risk mitigation, including collateral\n\nheld for all sources of credit risk\n\nOther\n31\nOther risk types\n104-113\n–\n32\nPublicly known risk events\n108-109, 236-237\n–\n\n*\nThese disclosure requirements are satisfied or partially satisfied by disclosures provided in our Pillar 3 Report for the quarter ended October 31, 2024 and for the year\nended October 31, 2023.\n\n140\nIndex for Enhanced Disclosure Task Force recommendations",
+        "similarity": 0.505487322807312,
+        "page_end": 140,
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2024,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "quarter": 0,
+        "section": "Credit risk",
+        "page_start": 140
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00443",
+        "text": "Securities lending indemnifications\n81,347\n95,055\nPerformance guarantees\n12,283\n7,503\nSponsored member guarantees\n50,241\n14,043\nOther\n446\n203 Our credit review process, our policy for requiring collateral security, and the types of collateral security held are generally the\nsame for guarantees and commitments as for loans. Our clients generally have the right to request settlement of, or draw on, our\nguarantees and commitments within one year. However, certain guarantees can only be drawn if specified conditions are met. These conditions, along with collateral requirements, are described below. We believe that it is highly unlikely that all or\nsubstantially all of the guarantees and commitments will be drawn or settled within one year, and contracts may expire without\nbeing drawn or settled.\n\nFinancial guarantees\nFinancial standby letters of credit\nFinancial standby letters of credit represent irrevocable assurances that we will make payments in the event that a client cannot\nmeet its payment obligations to the third party. For certain guarantees, the guaranteed party can request payment from us even\nthough the client has not defaulted on its obligations. These guarantees generally have a term of five to seven years.\n\nOur policy for requiring collateral security with respect to these instruments and the types of collateral security held is\ngenerally the same as for loans. When collateral security is taken, it is determined on an account-by-account basis according to\nthe risk of the borrower and the specifics of the transaction. Collateral security may include cash, securities and other assets\npledged.\n\nCommitments to extend credit\nBackstop liquidity facilities\nBackstop liquidity facilities are provided to ABCP conduit programs administered by us and third parties as an alternative source\nof financing in the event that such programs are unable to access commercial paper markets, or in limited circumstances, when\npredetermined performance measures of the financial assets acquired or financed by these programs are not met. We also\nprovide backstop liquidity facilities to certain third-party commercial mortgage securitization vehicles. The average remaining\nterm of these liquidity facilities is approximately four years.\n\nThe terms of the backstop liquidity facilities do not require us to advance money to these programs in the event of\nbankruptcy or insolvency and generally do not require us to purchase non-performing or defaulted assets.\n\nCredit enhancements\nWe provide partial credit enhancement to multi-seller ABCP programs administered by us to protect commercial paper investors\nin the event that the collections on the underlying assets together with the transaction-specific credit enhancements or the\nliquidity facilities prove to be insufficient to pay for maturing commercial paper. Each of the asset pools is structured to achieve\na high investment grade credit profile through credit enhancements required to be provided by the third-party sellers related to\neach transaction. The average remaining term of the credit facilities provided by RBC is approximately three years.\n\nDocumentary and commercial letters of credit\nDocumentary and commercial letters of credit, which are written undertakings by us on behalf of a client authorizing a third party\nto draw drafts on us up to a stipulated amount under specific terms and conditions, where some are collateralized based on the\nunderlying agreement with the client and others are collateralized by cash deposits or other assets of the client.\n\nOther commitments to extend credit\nCommitments to extend credit represent unused portions of authorizations to extend credit in the form of loans, reverse\nrepurchase agreements, bankers’ acceptances or letters of credit where we do not have the ability to unilaterally withdraw the\ncredit extended to the borrower.\n\n234\nConsolidated Financial Statements",
+        "similarity": 0.5270224213600159,
+        "bank": "Royal Bank of Canada",
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "page_start": 234,
+        "quarter": 0,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "section": "Market risk",
+        "page_end": 234,
+        "file_name": "RBC_2024_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00290",
+        "text": "After a financial asset has transferred to Stage 2, if\nits credit risk is no longer considered to have significantly increased relative to its initial recognition, the financial asset will\nmove back to Stage 1. For certain instruments with low credit risk as at the reporting date, it is presumed that credit risk has not increased\nsignificantly relative to initial recognition. Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased under\nreverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have been\nidentified as having low credit risk.\n\nUse of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices, and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\n158\nConsolidated Financial Statements\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario based\non reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are designed to\ncapture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of additional\ndownside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.",
+        "similarity": 0.5337658524513245,
+        "bank": "Royal Bank of Canada",
+        "page_end": 159,
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "quarter": 0,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "fiscal_year": 2024,
+        "page_start": 158,
+        "section": "FVOCI"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00280",
+        "text": "Credit risk is considered to be low if the instrument has a low risk of default, and the\nborrower has the ability to fulfill their contractual obligations both in the near term and in the longer term, including periods of\nadverse changes in the economic or business environment. Certain interest-bearing deposits with banks, assets purchased\nunder reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to our multi-seller conduits have\nbeen identified as having low credit risk. Use of forward-looking information\nThe measurement of expected credit losses for each stage and the assessment of significant increase in credit risk considers\ninformation about past events and current conditions as well as reasonable and supportable projections of future events and\neconomic conditions. The estimation and application of forward-looking information requires significant judgment.\n\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year period, subsequently reverting to long-run averages.\nMacroeconomic variables used in our expected credit loss models include, but are not limited to, unemployment rates, gross\ndomestic product growth rates, equity return indices, commodity prices and Canadian housing prices. Depending on their usage\nin the models, macroeconomic variables may be projected at a country, province/state or more granular level.\n\nOur estimation of expected credit losses in Stage 1 and Stage 2 is a discounted probability-weighted estimate that considers\na minimum of three future macroeconomic scenarios. Our base case scenario is based on macroeconomic forecasts published\nby our internal economics group. The published forecasts are developed from models based on historical macroeconomic data,\nderived from public sources and financial markets. Upside and downside scenarios vary relative to our base case scenario\nbased on reasonably possible alternative macroeconomic conditions. Additional and more severe downside scenarios are\ndesigned to capture a broader range of potential credit losses in certain sectors. Scenario design, including the identification of\nadditional downside scenarios, occurs at least on an annual basis and more frequently if conditions warrant.\n\nScenarios are designed to capture a wide range of possible outcomes and weighted according to our best estimate of the\nrelative likelihood of the range of outcomes that each scenario represents. Scenario weights take into account historical\nfrequency, current trends, and forward-looking conditions and are updated on a quarterly basis. All scenarios considered are\napplied to all portfolios subject to expected credit losses with the same probabilities.\n\nOur assessment of significant increases in credit risk is based on changes in probability-weighted forward-looking lifetime\nPDs as at the reporting date, using the same macroeconomic scenarios as the calculation of expected credit losses.\n\nDefinition of default\nThe definition of default used in the measurement of expected credit losses is consistent with the definition of default used for\nour internal credit risk management purposes. Our definition of default may differ across products and consider both\nquantitative and qualitative factors, such as the terms of financial covenants and days past due. For retail and wholesale\nborrowers, except as detailed below, default occurs when the borrower is more than 90 days past due on any material obligation\nto us, and/or we consider the borrower unlikely to make their payments in full without recourse action on our part, such as\ntaking formal possession of any collateral held. For certain credit card balances, default occurs when payments are 180 days\n\n154\nConsolidated Financial Statements",
+        "similarity": 0.5413417816162109,
+        "page_end": 156,
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_start": 156,
+        "section": "FVOCI",
+        "document_type": "annual_report",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00466",
+        "text": "2026 Quarterly earnings release\ndates\n\nFirst quarter\nFebruary 26\nSecond quarter May 28\nThird quarter\nAugust 27\nFourth quarter\nDecember 3\n\nCo-Transfer Agent (U.S.):\nComputershare Trust\nCompany, N.A.\n150 Royall Street, Suite 101\nCanton, Massachusetts 02021\nU.S.A.\n\n2026 Annual Meeting\nThe Annual Meeting of Common\nShareholders will be held on\nThursday, April 9, 2026.\n\nEligible dividend designation\nFor purposes of the Income Tax\nAct (Canada) and any\ncorresponding provincial and\nterritorial tax legislation, all\ndividends (and deemed\ndividends) paid by RBC to\nCanadian residents on both its\ncommon and preferred shares,\nare designated as “eligible\ndividends”, unless stated\notherwise.\n\nFinancial analysts, portfolio\nmanagers, institutional investors\nFor financial information inquiries,\nplease contact:\nInvestor Relations\nRoyal Bank of Canada\n200 Bay Street\nSouth Tower\nToronto, Ontario M5J 2J5\nCanada\nemail: invesrel@rbc.com\nor visit our website at\nrbc.com/investorrelations\n\nDividend dates for 2025\nSubject to approval by the Board of Directors\n\nRecord\ndates\n\nPayment\ndates\n\nCo-Transfer Agent (U.K.):\nComputershare Investor\nServices PLC\nSecurities Services – Registrars\nP.O. Box 82, The Pavilions,\nBridgwater Road,\nBristol BS99 6ZZ\nU.K.\n\nCommon and preferred shares\n\nseries BH1, BI1 and BO\n\nStock exchange listings\n(Symbol: RY)\n\nFebruary 24\nMay 23\nAugust 22\nNovember 24\n\nJanuary 27\nApril 24\nJuly 24\nOctober 27\n\nPreferred shares series BT\n\nFebruary 17\nAugust 15\n\nFebruary 24\nAugust 22\n\nPreferred shares series BU\n\nFebruary 17\nAugust 15\n\nFebruary 24\nAugust 22\n\nCommon shares are listed on:\nCanada – Toronto Stock\nExchange (TSX)\nU.S. – New York Stock Exchange\n(NYSE)\n\nPreferred shares series BW\n\nMay 16\nNovember 17\n\nMay 23\nNovember 24\n\nPreferred shares BH1, BI1 and BO\nare listed on the TSX.\n\nGovernance\nSummaries of the significant ways in which corporate governance\npractices followed by RBC differ from corporate governance practices\nrequired to be followed by U.S. domestic companies under the NYSE\nlisting standards are available on our website at rbc.com/governance.\n\n1 On October 24, 2025, we announced our intention to redeem all of our issued and outstanding Non-Cumulative Fixed Rate First Preferred Shares Series BH and\nSeries BI. The final dividend for the Series BH and Series BI shares will be payable on the redemption date December 8, 2025, to shareholders of record at the\nclose of business on November 10, 2025.\n\nInformation contained in or otherwise accessible through the websites mentioned in this report to shareholders does not form a part of this report. All references\nto websites are inactive textual references and are for your information only.\n\n®/TM Trademarks of Royal Bank of Canada. ‡ All other trademarks are the property of their respective owner(s).\n\nShareholder Information\n\nrbc.com/ar2025\n\n81104 (12/2025)",
+        "similarity": 0.5106970071792603,
+        "page_end": 246,
+        "fiscal_year": 2025,
+        "page_start": 245,
+        "quarter": 0,
+        "section": "SHARE INFORMATION",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "document_type": "annual_report",
+        "bank": "Royal Bank of Canada",
+        "bank_code": "RBC"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00098",
+        "text": "Non-RBC managed investment funds\nWe invest in hedge funds primarily to provide clients with desired exposures to reference funds. As we make investments in the\nreference funds, exposures to the funds are simultaneously transferred to clients through derivative transactions. Our maximum\nexposure to loss in the reference funds is limited to our investments in the funds. As at October 31, 2025, our maximum exposure\nto loss was $3 billion (October 31, 2024 – $3 billion), largely flat from last year.\n\nWe also provide liquidity facilities to certain third-party investment funds. The funds issue unsecured variable-rate\npreferred shares and invest in portfolios of tax-exempt bonds. As at October 31, 2025, our maximum exposure to loss on these\nfunds was $954 million (October 31, 2024 – $948 million), largely flat from last year.\n\nThird-party securitization vehicles\nWe hold interests in certain unconsolidated third-party securitization vehicles, which are structured entities. We, as well as\nother financial institutions, are obligated to provide funding to these entities up to our maximum commitment level and are\nexposed to credit losses on the underlying assets after various credit enhancements. As at October 31, 2025, our maximum\nexposure to loss in these entities was $26 billion (October 31, 2024 – $21 billion). The increase in our maximum exposure to loss\ncompared to last year reflects an increase in client activity with third-party securitization vehicles. Interest and non-interest\nincome earned in respect of these investments was $878 million (October 31, 2024 – $698 million).\n\nOther\nOther unconsolidated structured entities include managed investment funds, alternative asset entities, arrangements to pass\ncredit risk to third parties, credit investment products and tax credit funds. Refer to Note 8 of our 2025 Annual Consolidated\nFinancial Statements for more details regarding our other unconsolidated structured entities.\n\nGuarantees, retail and commercial commitments\nWe provide our clients with guarantees and commitments that expose us to liquidity and funding risks. Our maximum potential\namount of future payments in relation to our commitments and guarantee products as at October 31, 2025 amounted to\n$630 billion compared to $551 billion last year. The increase compared to last year was primarily driven by growth in other\ncommitments to extend credit and sponsored member guarantees. Refer to Liquidity and funding risk section and Note 23 of our\n2025 Annual Consolidated Financial Statements for details regarding our guarantees and commitments.\n\n64",
+        "similarity": 0.5038139820098877,
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025,
+        "bank_code": "RBC",
+        "quarter": 0,
+        "page_end": 66,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_start": 66,
+        "section": "Management’s Discussion and Analysis",
+        "document_type": "annual_report",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "filing_id": "RBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00004",
+        "text": "Source: Bloomberg, as at October 31, 2025. Please refer to\npage 26.\n8\n\u0007Beginning in fiscal 2026, the achievement of top half total shareholder returns (TSR) will no longer be a medium-term objective. TSR performance relative to peers will continue to\nbe a part of our overall evaluation of shareholder outcomes and in our compensation programs. However, we believe the achievement of our financial performance objectives is a\nbetter indication of our execution against strategic priorities.\n9\nCompound annual growth rate.\n10 Excludes Corporate Support. Royal Bank of Canada Annual Report 2025 | 3 Dear fellow shareholders,\n\nIn 2025, we advanced our position as one of the world’s\nmost trusted and successful financial institutions. Our\nperformance and strategic ambitions were a big part of\nthe story, but it’s the way we achieved our results that\ncontinues to define our success.\n\nA message from\nDave McKay,\nPresident & CEO\n\nRBC is a global team of 100,000+ colleagues who are\nunified by our Purpose: to help clients thrive and\ncommunities prosper. We strive to bring trusted advice\nand real care to every interaction — from guiding clients\nthrough major financial decisions and life moments, to\nhelping businesses and entrepreneurs bring new ideas\nto life. I receive feedback from clients all the time, and so\nmuch of it reinforces the important moments where our\npeople shape a client’s future for the better.\n\nIn a rapidly changing economy and more complex world,\nwe believe that combining personalized insights and\nadvice with global connectivity and scale is the foundation\nfor how RBC will continue to create long-term value for\nour 19+ million clients. This was at the heart of our all-\nbank Investor Day this year, where we shared our plan to\nexpand our global reach and capabilities and continue\nto transform the bank to exceed expectations for clients\nand shareholders.\n\nOur relentless client focus is shaping everything we do —\nfrom the way we’re expanding our global franchises to how\nwe’re deepening relationships and delivering value in new\nways. You’ll see that focus reflected in our 2025 results and\nthe momentum that is carrying us forward.\n\nOur 2025 results\n\nRBC is an all-weather bank, with the financial and strategic\nstrength to support our clients and deliver value to\nshareholders through all economic cycles. This year, we\ndemonstrated that by delivering exceptional financial\nresults across our businesses during a year of significant\nmacroeconomic uncertainty and market volatility.\n\nWe generated earnings of $20.4 billion and a Return on\nEquity of 16.3 per cent in 2025 as we continued to deepen\nclient relationships and build new ones across our market-\nleading franchises.\n\nIn 2025, we advanced our\nposition as one of the world’s\nmost trusted and successful\nfinancial institutions.\n“\n\nOur share price increased by 22 per cent year-over-year,\nand we returned $11.3 billion to our shareholders through\ncommon dividends and share buybacks. I’m proud that\nwe’re delivering results that our shareholders have come\nto expect, while maintaining strong governance and a\nprudent approach to risk and cost management.\n\n”\n\nWe entered the 2026 fiscal year as the 11th largest bank\nglobally and 6th largest in North America by market\n\n4 | Royal Bank of Canada Annual Report 2025\n\ncapitalization.1 Our financial strength remains one of\nour greatest advantages, underpinning our strong credit\nratings and giving us the capacity to fund future growth\nand pursue big opportunities.",
+        "similarity": 0.5229976177215576,
+        "bank_code": "RBC",
+        "page_start": 6,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "page_end": 7,
+        "section": "Management’s Discussion and Analysis",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "quarter": 0
+      }
+    ],
+    "structured": {
+      "answer": "In 2024, RBC's provision for credit losses (PCL) on performing assets fluctuated due to changes in credit quality and macroeconomic conditions, with initial PCL on performing loans from the HSBC Canada transaction included in the second quarter. PCL on impaired assets was low initially but trended upwards later in the year [S1]. In 2025, the disclosures continued to emphasize the use of forward-looking information for estimating expected credit losses, with a consistent approach to assessing significant increases in credit risk based on macroeconomic variables [S5]. However, specific figures or changes in PCL amounts between 2024 and 2025 are not provided in the excerpts, indicating that the filings do not contain enough information to quantify the changes in PCL between these years.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "Management’s Discussion and Analysis",
+          "year": 2024
+        },
+        {
+          "label": "S5",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "FVOCI",
+          "year": 2025
+        }
+      ],
+      "confidence": "medium",
+      "caveats": [
+        "Specific figures or changes in PCL amounts between 2024 and 2025 are not provided in the excerpts."
+      ]
+    },
+    "retrieval_seconds": 2.165033300057985
+  },
+  "latency_seconds": 7.761013300041668,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009915,
+  "input_tokens": 5598,
+  "output_tokens": 253,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.04996699991170317,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 3,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer provides a general overview of the changes in RBC's provision for credit losses (PCL) between 2024 and 2025, but lacks specific numerical data or direct comparisons of PCL amounts, which are critical for a complete assessment.",
+    "relevance_reason": "The answer addresses the question about changes in disclosures regarding PCL, but it does not provide a direct comparison of figures or specific changes, which limits its relevance.",
+    "completeness_reason": "The answer summarizes the changes in disclosures but does not include specific figures or detailed comparisons between the two years, leading to substantial omissions in the response.",
+    "unsupported_claims": [],
+    "reference_limitations": "The filings do not provide specific numerical changes in PCL amounts between 2024 and 2025, limiting the ability to quantify the changes."
+  },
+  "judge_cost_usd": 0.00255885
+}

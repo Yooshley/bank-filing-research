@@ -1,0 +1,2 @@
+,model,dimensions,seconds,cost_usd
+local,sentence-transformers/all-MiniLM-L6-v2,384,125.5,0.0

@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_05",
+  "config": "agentic",
+  "question": {
+    "id": "eval_05",
+    "question": "What residential mortgage credit risks did TD disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "TD"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "TD",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed residential mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What residential mortgage credit risks did TD disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What residential mortgage credit risks did TD disclose in its 2025 annual report?",
+    "answer": "In TD's 2025 annual report, the following residential mortgage credit risks were disclosed:\n\n1. **Stress Testing**: TD regularly performs stress tests on its real estate lending portfolio to assess vulnerability to severe economic downturns, considering factors like house prices, interest rates, and unemployment levels (TD_2025_annual_report_FY_00165).\n\n2. **Loan-to-Value Ratios**: The bank's credit policies limit the combined exposure of all uninsured facilities on a property to 80% of its collateral value at origination. Higher loan-to-value ratios require default insurance, which protects against potential losses from borrower defaults (TD_2025_annual_report_FY_00166).\n\n3. **Loss Given Default (LGD) and Exposure at Default (EAD)**: The report mentions that downturn LGD reflects the potential impact of a severe housing downturn, and EAD estimates are based on downturn scenarios (TD_2025_annual_report_FY_00293).\n\n4. **Credit Risk Management**: The bank manages retail exposures, including residential mortgages, using predictive credit scoring techniques and categorizes them based on risk levels (TD_2025_annual_report_FY_00538).\n\nFor further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 3611,
+    "output_tokens": 333,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000741,
+    "seconds": 6.1,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "residential mortgage credit risks",
+          "bank": "TD",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00165",
+              "text": "Canada\n4.4%\n4.4%\nUnited States\n(7.9)\n3.3\nInternational\n16.4\n0.5\nOther loans\n–\n(100.0) Total\n0.4%\n3.9% 1 Primarily based on the geographic location of the customer’s address. 2 Includes loans that are measured at FVOCI. 4 The states included in New England are as follows: Connecticut, Maine,\nMassachusetts, New Hampshire, and Vermont. 3 The territories are included as follows: Yukon is included in British Columbia; Nunavut\nis included in Ontario; and Northwest Territories is included in the Prairies region. 5 Includes loans attributable to other states/regions including those outside TD’s core\nU.S. geographic footprint.\n\nratio loans. The insurance is provided by either government-backed\nentities or approved private mortgage insurers. In the U.S., for residential\nmortgage originations, mortgage insurance is usually obtained from either\ngovernment-backed entities or approved private mortgage insurers when\nthe loan-to-value exceeds 80% of the collateral value at origination.\n\nThe Bank regularly performs stress tests on its real estate lending\nportfolio as part of its overall stress testing program. This is done with a\nview to determine the extent to which the portfolio would be vulnerable\nto a severe downturn in economic conditions. The effect of severe changes\nin house prices, interest rates, and unemployment levels are among\nthe factors considered when assessing the impact on credit losses and\nthe Bank’s overall profitability. A variety of portfolio segments, including\ndwelling type and geographical regions, are examined during the exercise\nto determine whether specific vulnerabilities exist.",
+              "similarity": 0.554,
+              "bank": "Toronto-Dominion Bank",
+              "page_start": 64,
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "document_type": "annual_report",
+              "bank_code": "TD",
+              "file_name": "TD_2025_annual_report.pdf",
+              "page_end": 64,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "section": "CONCENTRATION OF CREDIT RISK",
+              "filing_id": "TD_2025_annual_report_FY"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00293",
+              "text": "For products secured by residential real estate, such\nas mortgages and HELOCs, downturn LGD reflects the potential impact\nof a severe housing downturn. EAD estimates similarly reflect a\ndownturn scenario. The following table maps PD ranges to risk levels: To continue to qualify to use the IRB approaches for credit risk, the Bank\nmust meet the ongoing conditions and requirements established by OSFI\nand the Basel Framework. The Bank regularly assesses its compliance with\nthese requirements. Risk Assessment\nPD Segment\nPD Range Low Risk\n1\n0.00 to 0.15% Normal Risk\n2\n0.16 to 0.41\n3\n0.42 to 1.10 Medium Risk\n4\n1.11 to 2.93\n5\n2.94 to 4.74\n\nCredit Risk Exposures Subject to the IRB Approaches\nBanks that adopt the IRB approaches to credit risk must report credit risk\nexposures by counterparty type, each having different underlying risk\ncharacteristics. These counterparty types may differ from the presentation\nin the Bank’s 2025 Consolidated Financial Statements. The Bank’s credit\nrisk exposures are divided into two main portfolios, retail and non-retail.\n\nHigh Risk\n6\n4.75 to 7.59\n7\n7.60 to 18.24\n8\n18.25 to 99.99\n\nDefault\n9\n100.00\n\nRetail Exposures\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. There are three sub-types of retail exposures: residential\nsecured (for example, mortgages and HELOCs), qualifying revolving\nretail (for example, credit cards, unsecured lines of credit, and overdraft\nprotection products), and other retail (for example, personal loans,\nincluding secured automobile loans, student lines of credit, and small\nbusiness banking credit products).\n\nNon‐Retail Exposures\nIn the non-retail portfolio, the Bank manages exposures on an individual\nborrower basis, using industry and sector-specific credit risk models, and\nexpert judgment. The Bank has categorized non-retail credit risk exposures\naccording to the following Basel counterparty types: corporate, including\nwholesale and commercial customers, sovereign, and bank. Under the IRB\napproaches, CMHC-insured mortgages are considered sovereign risk and\nare therefore classified as non-retail.\n\nThe Bank calculates RWA for its retail exposures using the AIRB\napproach. All retail PD, LGD, and EAD parameter models are based on the\ninternal default and loss performance history for each of the three retail\nexposure sub-types. These parameters are also used in the calculation of\nregulatory capital, economic capital, and allowance for credit losses.\n\nAccount-level PD, LGD, and EAD models are built for each product\nportfolio and calibrated based on the observed account-level default and\nloss performance for the portfolio.",
+              "similarity": 0.531,
+              "fiscal_year": 2025,
+              "bank_code": "TD",
+              "document_type": "annual_report",
+              "page_start": 102,
+              "quarter": 0,
+              "section": "HOW TD MANAGES CREDIT RISK",
+              "bank": "Toronto-Dominion Bank",
+              "filing_id": "TD_2025_annual_report_FY",
+              "file_name": "TD_2025_annual_report.pdf",
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "page_end": 102
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00166",
+              "text": "Retail real estate secured lending includes mortgages and lines of credit\nto North American consumers to satisfy financing needs including home\npurchases and refinancing. While the Bank retains first lien on the\nmajority of properties held as security, there is a small portion of loans\nwith second liens, but most of these are behind a TD mortgage or home\nequity line of credit that is in first position. In Canada, credit policies are\ndesigned so that the combined exposure of all uninsured facilities on\none property does not exceed 80% of the collateral value at origination.\nLending at a higher loan-to-value ratio is permitted by legislation but\nrequires default insurance. This insurance is contractual coverage for\nthe life of eligible facilities and protects the Bank’s real estate secured\nlending portfolio against potential losses caused by borrowers’ default.\nThe Bank may also purchase default insurance on lower loan-to-value\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n1,2\n\n|\nT A B L E 2 7",
+              "similarity": 0.531,
+              "filing_id": "TD_2025_annual_report_FY",
+              "page_start": 64,
+              "document_type": "annual_report",
+              "bank": "Toronto-Dominion Bank",
+              "page_end": 65,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "section": "REAL ESTATE SECURED LENDING",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "bank_code": "TD",
+              "file_name": "TD_2025_annual_report.pdf"
+            },
+            {
+              "chunk_id": "TD_2025_annual_report_FY_00538",
+              "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+              "similarity": 0.528,
+              "fiscal_year": 2025,
+              "bank_code": "TD",
+              "bank": "Toronto-Dominion Bank",
+              "page_start": 186,
+              "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+              "page_end": 187,
+              "file_name": "TD_2025_annual_report.pdf",
+              "filing_id": "TD_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "quarter": 0,
+              "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In TD's 2025 annual report, the following residential mortgage credit risks were disclosed:\n\n1. **Stress Testing**: TD regularly performs stress tests on its real estate lending portfolio to assess vulnerability to severe economic downturns, considering factors like house prices, interest rates, and unemployment levels (TD_2025_annual_report_FY_00165).\n\n2. **Loan-to-Value Ratios**: The bank's credit policies limit the combined exposure of all uninsured facilities on a property to 80% of its collateral value at origination. Higher loan-to-value ratios require default insurance, which protects against potential losses from borrower defaults (TD_2025_annual_report_FY_00166).\n\n3. **Loss Given Default (LGD) and Exposure at Default (EAD)**: The report mentions that downturn LGD reflects the potential impact of a severe housing downturn, and EAD estimates are based on downturn scenarios (TD_2025_annual_report_FY_00293).\n\n4. **Credit Risk Management**: The bank manages retail exposures, including residential mortgages, using predictive credit scoring techniques and categorizes them based on risk levels (TD_2025_annual_report_FY_00538).\n\nFor further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00165",
+        "text": "Canada\n4.4%\n4.4%\nUnited States\n(7.9)\n3.3\nInternational\n16.4\n0.5\nOther loans\n–\n(100.0) Total\n0.4%\n3.9% 1 Primarily based on the geographic location of the customer’s address. 2 Includes loans that are measured at FVOCI. 4 The states included in New England are as follows: Connecticut, Maine,\nMassachusetts, New Hampshire, and Vermont. 3 The territories are included as follows: Yukon is included in British Columbia; Nunavut\nis included in Ontario; and Northwest Territories is included in the Prairies region. 5 Includes loans attributable to other states/regions including those outside TD’s core\nU.S. geographic footprint.\n\nratio loans. The insurance is provided by either government-backed\nentities or approved private mortgage insurers. In the U.S., for residential\nmortgage originations, mortgage insurance is usually obtained from either\ngovernment-backed entities or approved private mortgage insurers when\nthe loan-to-value exceeds 80% of the collateral value at origination.\n\nThe Bank regularly performs stress tests on its real estate lending\nportfolio as part of its overall stress testing program. This is done with a\nview to determine the extent to which the portfolio would be vulnerable\nto a severe downturn in economic conditions. The effect of severe changes\nin house prices, interest rates, and unemployment levels are among\nthe factors considered when assessing the impact on credit losses and\nthe Bank’s overall profitability. A variety of portfolio segments, including\ndwelling type and geographical regions, are examined during the exercise\nto determine whether specific vulnerabilities exist.",
+        "similarity": 0.554,
+        "bank": "Toronto-Dominion Bank",
+        "page_start": 64,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf",
+        "page_end": 64,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "CONCENTRATION OF CREDIT RISK",
+        "filing_id": "TD_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00293",
+        "text": "For products secured by residential real estate, such\nas mortgages and HELOCs, downturn LGD reflects the potential impact\nof a severe housing downturn. EAD estimates similarly reflect a\ndownturn scenario. The following table maps PD ranges to risk levels: To continue to qualify to use the IRB approaches for credit risk, the Bank\nmust meet the ongoing conditions and requirements established by OSFI\nand the Basel Framework. The Bank regularly assesses its compliance with\nthese requirements. Risk Assessment\nPD Segment\nPD Range Low Risk\n1\n0.00 to 0.15% Normal Risk\n2\n0.16 to 0.41\n3\n0.42 to 1.10 Medium Risk\n4\n1.11 to 2.93\n5\n2.94 to 4.74\n\nCredit Risk Exposures Subject to the IRB Approaches\nBanks that adopt the IRB approaches to credit risk must report credit risk\nexposures by counterparty type, each having different underlying risk\ncharacteristics. These counterparty types may differ from the presentation\nin the Bank’s 2025 Consolidated Financial Statements. The Bank’s credit\nrisk exposures are divided into two main portfolios, retail and non-retail.\n\nHigh Risk\n6\n4.75 to 7.59\n7\n7.60 to 18.24\n8\n18.25 to 99.99\n\nDefault\n9\n100.00\n\nRetail Exposures\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. There are three sub-types of retail exposures: residential\nsecured (for example, mortgages and HELOCs), qualifying revolving\nretail (for example, credit cards, unsecured lines of credit, and overdraft\nprotection products), and other retail (for example, personal loans,\nincluding secured automobile loans, student lines of credit, and small\nbusiness banking credit products).\n\nNon‐Retail Exposures\nIn the non-retail portfolio, the Bank manages exposures on an individual\nborrower basis, using industry and sector-specific credit risk models, and\nexpert judgment. The Bank has categorized non-retail credit risk exposures\naccording to the following Basel counterparty types: corporate, including\nwholesale and commercial customers, sovereign, and bank. Under the IRB\napproaches, CMHC-insured mortgages are considered sovereign risk and\nare therefore classified as non-retail.\n\nThe Bank calculates RWA for its retail exposures using the AIRB\napproach. All retail PD, LGD, and EAD parameter models are based on the\ninternal default and loss performance history for each of the three retail\nexposure sub-types. These parameters are also used in the calculation of\nregulatory capital, economic capital, and allowance for credit losses.\n\nAccount-level PD, LGD, and EAD models are built for each product\nportfolio and calibrated based on the observed account-level default and\nloss performance for the portfolio.",
+        "similarity": 0.531,
+        "fiscal_year": 2025,
+        "bank_code": "TD",
+        "document_type": "annual_report",
+        "page_start": 102,
+        "quarter": 0,
+        "section": "HOW TD MANAGES CREDIT RISK",
+        "bank": "Toronto-Dominion Bank",
+        "filing_id": "TD_2025_annual_report_FY",
+        "file_name": "TD_2025_annual_report.pdf",
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_end": 102
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00166",
+        "text": "Retail real estate secured lending includes mortgages and lines of credit\nto North American consumers to satisfy financing needs including home\npurchases and refinancing. While the Bank retains first lien on the\nmajority of properties held as security, there is a small portion of loans\nwith second liens, but most of these are behind a TD mortgage or home\nequity line of credit that is in first position. In Canada, credit policies are\ndesigned so that the combined exposure of all uninsured facilities on\none property does not exceed 80% of the collateral value at origination.\nLending at a higher loan-to-value ratio is permitted by legislation but\nrequires default insurance. This insurance is contractual coverage for\nthe life of eligible facilities and protects the Bank’s real estate secured\nlending portfolio against potential losses caused by borrowers’ default.\nThe Bank may also purchase default insurance on lower loan-to-value\n\nTD BANK GROUP ANNUAL REPORT 2025 MANAGEMENT’S DISCUSSION AND ANALYSIS\n\n1,2\n\n|\nT A B L E 2 7",
+        "similarity": 0.531,
+        "filing_id": "TD_2025_annual_report_FY",
+        "page_start": 64,
+        "document_type": "annual_report",
+        "bank": "Toronto-Dominion Bank",
+        "page_end": 65,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "section": "REAL ESTATE SECURED LENDING",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "bank_code": "TD",
+        "file_name": "TD_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "TD_2025_annual_report_FY_00538",
+        "text": "|\n\nBusiness and government loans and loans at FVOCI are grouped together\nas reflected below for presentation in the “Loans by Risk Rating” table.\n\n(a) LOANS\nThe following table provides details regarding the Bank’s loans as at\nOctober 31, 2025 and October 31, 2024.\n\nLoans – Business and Government\n\nLoans\n\n(millions of Canadian dollars)\nAs at October 31\n\n(millions of Canadian dollars)\nAs at October 31\n\n2025\n2024\n\n2025\n2024\n\nLoans at amortized cost\n$ 345,943\n$ 356,973\nLoans at FVOCI (Note 5)\n288\n230\n\nLoans\n346,231\n357,203\n\nAllowance for loan losses\n3,847\n3,583\n\nResidential mortgages\n$ 315,063\n$ 331,649\nConsumer instalment and other personal\n259,033\n228,382\nCredit card\n41,662\n40,639\nBusiness and government\n345,943\n356,973\n\nLoans, net of allowance\n$ 342,384\n$ 353,620\n\n961,701\n957,643\n\nLoans at FVOCI1\n288\n230\n\nTotal loans\n961,989\n957,873\n\nTotal allowance for loan losses\n8,689\n8,094\n\nTotal loans, net of allowance\n$ 953,300\n$ 949,779\n\n1 Included in Financial assets at fair value through other comprehensive income on the\nConsolidated Balance Sheet.\n\n(b) CREDIT QUALITY OF LOANS\nIn the retail portfolio, including individuals and small businesses, the Bank\nmanages exposures on a pooled basis, using predictive credit scoring\ntechniques. For non-retail exposures, each borrower is assigned a BRR\nthat reflects the PD of the borrower using proprietary industry and sector\nspecific risk models and expert judgment. Refer to the shaded areas of the\n“Managing Risk” section of the 2025 MD&A for further details, including\nthe mapping of PD ranges to risk levels for retail exposures as well as\nthe Bank’s 21-point BRR scale to risk levels and external ratings for\nnon-retail exposures.\n\nTD BANK GROUP ANNUAL REPORT 2025 FINANCIAL RESULTS\n\nThe following tables provide the gross carrying amounts of loans and\ncredit risk exposures on loan commitments and financial guarantee\ncontracts by internal risk rating for credit risk management purposes,\npresenting separately those that are subject to Stage 1, Stage 2, and\nStage 3 allowances.\n\nLoans by Risk Rating\n\n(millions of Canadian dollars)\nAs at\n\nOctober 31, 2025\nOctober 31, 2024\n\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nResidential mortgages1,2,3",
+        "similarity": 0.528,
+        "fiscal_year": 2025,
+        "bank_code": "TD",
+        "bank": "Toronto-Dominion Bank",
+        "page_start": 186,
+        "source_url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf",
+        "page_end": 187,
+        "file_name": "TD_2025_annual_report.pdf",
+        "filing_id": "TD_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "section": "LOANS, IMPAIRED LOANS, AND ALLOWANCE FOR CREDIT LOSSES"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 6.105291799991392,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007414499999999998,
+  "input_tokens": 3611,
+  "output_tokens": 333,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.02265950001310557,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about TD's residential mortgage credit risks are directly supported by the actual answer context, citing the correct bank (Toronto-Dominion Bank) and fiscal year (2025).",
+    "relevance_reason": "The answer directly addresses the question regarding the residential mortgage credit risks disclosed by TD in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of the requested information, including stress testing, loan-to-value ratios, loss given default, and credit risk management, with appropriate citations from the report.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0012146999999999998
+}

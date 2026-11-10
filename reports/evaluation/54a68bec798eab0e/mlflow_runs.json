@@ -1,0 +1,14 @@
+[
+  {
+    "config": "basic_top_k",
+    "run_id": "f4f3cb4822184646b7411e114d77c210"
+  },
+  {
+    "config": "mmr_structured",
+    "run_id": "6e5a69e8fa264472ab0df4887c3b259c"
+  },
+  {
+    "config": "agentic",
+    "run_id": "3d3ce32953e24d329c6a3ebb066fc641"
+  }
+]

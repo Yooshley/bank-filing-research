@@ -1,0 +1,162 @@
+{
+  "case_id": "1622ffdffd9cfdf4/mmr_structured/eval_13",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_13",
+    "question": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "CIBC"
+    ],
+    "risk": "credit",
+    "scopes": [
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed housing and mortgage credit risks; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "CIBC disclosed several housing and mortgage credit risks in its 2025 annual report. Key points include:\n\n1. **Management Overlays**: CIBC uses management overlays to adjust expected credit loss (ECL) allowance estimates in response to significant uncertainties in the macroeconomic environment, which may not be fully captured by existing models. This indicates a recognition of potential risks that could lead to actual credit losses differing materially from estimates [S1].\n\n2. **Mortgage Debt Service Ratios**: The report noted that mortgage debt service ratios remain at historically high levels, which could pose risks as mortgages renew at higher rates amidst decelerating income growth due to a slowing labor market [S4]. \n\n3. **Consumer Debt and Housing Market**: The household debt-to-income ratio is below 2016 levels, but mortgage service ratios are elevated. Property sales have slowed to their most recessed levels since 2020, indicating a challenging housing market environment [S4]. \n\n4. **Regulatory Scrutiny**: There is an increasing level of scrutiny from regulators regarding mortgage underwriting practices, which could impact business processes and compliance costs [S4]. \n\n5. **Insured Mortgages Risks**: CIBC highlighted the risk of losses on insured mortgages if claims are denied by the Canada Mortgage and Housing Corporation (CMHC) or if private mortgage insurers become insolvent [S5]. \n\n6. **Economic Conditions**: The report expressed concerns about stagflation, with rising inflation and lower growth forecasts, which could limit central banks' options and affect the housing market [S4]. \n\nOverall, CIBC's disclosures reflect a cautious approach to managing housing and mortgage credit risks amid a complex economic landscape.",
+    "sources": [
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00332",
+        "text": "Use of management overlays\nManagement overlays to ECL allowance estimates are adjustments which we use in circumstances where we judge that our existing inputs,\nassumptions and model techniques do not capture all relevant risk factors. The emergence of new macroeconomic or geopolitical events, along\nwith expected changes to parameters, models or data that are not incorporated in our current parameters, internal risk rating migrations, or forward-\nlooking information are examples of such circumstances. To address the significant uncertainties inherent in the current environment, we utilize\nmanagement overlays with respect to the impact of certain forward-looking information and credit metrics that are not expected to be as indicative\nof the credit condition of the portfolios as the historical experience in our models would have otherwise suggested. The use of management overlays\nrequires the application of significant judgment that impacts the amount of ECL allowances recognized. Actual credit losses could differ materially\nfrom those reflected in our estimates.\n\nThe following tables provide the gross carrying amount of loans, and the contractual amounts of undrawn credit facilities and other off-balance\nsheet exposures based on our risk management PD bands for retail exposures, and based on our internal risk ratings for business and government\nexposures. Refer to the “Credit risk” section of the MD&A for details on the CIBC risk categories.\n\nLoans(1)\n\n$ millions, as at October 31\n2025\n2024\n\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nStage 1\nStage 2\nStage 3 (2)(3)\nTotal\nResidential mortgages\n\n– Exceptionally low\n$\n171,983\n$\n227\n$\n–\n$\n172,210\n$\n160,515\n$\n6,130\n$\n–\n$\n166,645\n– Very low\n85,628\n\n1,171\n–\n86,799\n81,198\n5,926\n–\n87,124\n– Low\n10,987\n2,749\n–\n13,736\n10,329\n3,638\n–\n13,967\n– Medium\n1,041\n7,071\n–\n8,112\n851\n6,534\n–\n7,385\n– High\n11\n1,859\n–\n1,870\n7\n1,561\n–\n1,568\n– Default\n–\n–\n1,097\n1,097\n–\n–\n790\n790\n– Not rated\n2,808\n183\n218\n3,209\n2,757\n232\n204\n3,193\nGross residential mortgages (4)(5)\n272,458\n13,260\n1,315\n287,033\n255,657\n24,021\n994\n280,672\nECL allowance\n100\n168\n306\n574\n89\n126\n234\n449\nNet residential mortgages\n272,358\n13,092\n1,009\n286,459\n255,568\n23,895\n760\n280,223\nPersonal",
+        "similarity": 0.6466994881629944,
+        "page_start": 152,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "fiscal_year": 2025,
+        "bank_code": "CIBC",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "section": "FVOCI",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "page_end": 152,
+        "filing_id": "CIBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00114",
+        "text": "On April 23, 2025, the Canadian Securities Administrators (CSA) announced it is pausing its work on the development of a new mandatory\nclimate-related disclosure rule in order to support Canadian markets and issuers as they adapt to developments in the U.S. and globally. The CSA\nwill monitor domestic and international regulatory developments with respect to climate disclosures and expects to revisit and finalize requirements\nfor issuers.\n\nOn March 7, 2025, OSFI published updates to Guideline B-15 on Climate Risk Management (Guideline B-15), postponing scope 3 emissions\ndisclosure from fiscal year-end 2025 to 2028, aligning with the Canadian Sustainability Standards Board Standards’ transitional period. OSFI is\nexpected to continue to review Guideline B-15 as practices and standards evolve. Guideline B-15 was initially effective for us for our reporting\nperiod ending October 31, 2024 for certain disclosure elements, which were included in our 2024 Climate Report.\n\nOn June 5, 2025, the Competition Bureau issued updated guidance on environmental claims under Bill C-59, which contains anti-greenwashing\namendments to Canada’s Competition Act (Act). In addition, the Competition Bureau reaffirmed its previous communication on the private right of\naction, pursuant to which starting on June 20, 2025, individuals can seek permission to file claims with the Competition Tribunal against businesses\nunder the Act.\n\nOn October 7, 2023, California enacted climate disclosure laws, Senate Bill (SB) 253 and SB 261. SB 253 requires annual reporting of scope 1\nand 2 greenhouse gas emissions in 2026, expanding to scope 3 emissions reporting in 2027. SB 261 requires biennial climate-related financial risk\nreports, with the first report due by January 1, 2026. On November 18, 2025, the U.S. Court of Appeals for the Ninth Circuit, issued an order\ntemporarily halting the enforcement of SB 261. CIBC is preparing to meet these requirements and will continue to monitor regulatory updates.\n\nAdditionally, the European Commission adopted the European Sustainability Reporting Standards in 2023 for entities subject to the Corporate\nSustainability Reporting Directive. On June 23, 2025, the European Union announced it is negotiating its final position on the Omnibus Proposal II,\nwhich is expected to significantly narrow the scope of sustainability reporting for member states. These changes, if adopted, could impact the\nreporting requirements for CIBC and certain CIBC subsidiaries.\n\nPotential divergence among the regulators in disclosure expectations, coupled with the pace at which the regulatory landscape changes, pose\noperational risks to us. We continue to monitor these developments and evolve our approach to support future regulatory requirements.\n\nInformation and cyber security risk\nWe continue to evolve our use of technology and business processes to improve the client experience and streamline operations. Concurrently,\ncyber threats are growing in frequency and sophistication, increasing the potential for financial loss, reputational harm, regulatory exposure and\nbusiness interruption. We actively manage these risks through strategic risk reviews and enterprise-wide technology and information security\nprograms aimed at prevention, detection, response and recovery. Threats include data breaches, malware and ransomware, unauthorized access,\nsocial engineering and fraud, and denial-of-service attacks, which may result in damage to CIBC systems and information; theft, loss or disclosure\nof confidential information; unauthorized or fraudulent activity; and service disruption at CIBC or its service providers, including those that offer\ncloud services.",
+        "similarity": 0.5281563997268677,
+        "page_start": 64,
+        "quarter": 0,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "section": "Management’s discussion and analysis",
+        "fiscal_year": 2025,
+        "page_end": 64,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank_code": "CIBC",
+        "bank": "Canadian Imperial Bank of Commerce"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00084",
+        "text": "50,712\n4,057\n46,811\n3,745\n\nTotal RWA\n$ 357,803\n$\n28,624\n$\n333,502\n$\n26,680\n\n(1) Refers to the minimum standard established by the BCBS before the application of the capital conservation buffer and any other capital buffers that may be established by\n\nregulators from time to time. It is calculated by multiplying RWA by 8%.\n(2) Credit risk includes CCR, which comprises derivative and repo-style transactions. Credit risk for CIBC Caribbean are calculated under the standardized approach.\n(3) Includes securitization exposures that are risk-weighted at 1250%.\n(4) Includes RWA relating to certain commercial loans which are determined using the supervisory slotting approach.\n(5) Includes residential mortgages insured by Canada Mortgage and Housing Corporation (CMHC), an agency of the Government of Canada, and government-guaranteed\n\nstudent loans.\n\nCapital initiatives\nThe following were the main capital initiatives undertaken since our 2024 Annual Report:\n\nNormal course issuer bid (NCIB)\nOn September 8, 2025, we announced that the Toronto Stock Exchange had accepted the notice of our intention to commence an NCIB. Purchases\nunder this bid will be completed upon the earlier of: (i) CIBC purchasing 20 million common shares; (ii) CIBC providing a notice of termination; or\n(iii) September 9, 2026. 3,500,000 common shares were purchased and cancelled during the fourth quarter at an average price of $112.54 for a\ntotal amount of $393 million.\n\nThe following table shows common shares purchased and cancelled under current and previously expired NCIBs.\n\n$ millions, except number of shares, as at or for the year ended October 31\n2025\n2024\nTotal\n\nNumber\nof shares\nAmount\n\nTSX approval date\n\nNumber\nof shares\nAmount\n\nNumber\nof shares\nAmount\n\nSeptember 5, 2024 (1)\n15,000,000\n$\n1,338\n5,000,000\n$\n419\n20,000,000\n$\n1,757\nSeptember 5, 2025 (2)\n3,500,000\n393\n–\n–\n3,500,000\n393\n\nTotal\n18,500,000\n$\n1,731\n5,000,000\n$\n419\n23,500,000\n$\n2,150\n\n(1) Common shares were repurchased at an average price of $87.80 under this NCIB.\n(2) Common shares were repurchased at an average price of $112.54 under this NCIB.",
+        "similarity": 0.560081422328949,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "page_end": 50,
+        "page_start": 50,
+        "quarter": 0,
+        "document_type": "annual_report",
+        "fiscal_year": 2025,
+        "bank_code": "CIBC",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "section": "Operational risk",
+        "file_name": "CIBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00111",
+        "text": "Concerns around stagflation, with lower growth forecasts and rising inflation expectations, could leave central banks\nwith limited options to manage both inflation and economic growth. Our Capital Markets business maintains a defensive risk posture to manage\nmarket risks, while supporting elevated levels of client activity. The impact of macroeconomic uncertainty on the U.S. dollar and long-term bond yields and changes in client sentiment due to\nmacroeconomic volatility, recessionary conditions, or risks associated with banks, could lead to rising liquidity premiums and wider issuance\nspreads in the funding market. We continue to regularly monitor economic developments and proactively prepare mitigation plans. Further details on tariffs and our economic\noutlook are provided in the “Economic and market environment – Outlook for calendar year 2026” section.\n\nCanadian consumer debt and the housing market\nThe latest household debt-to-income ratio data from Statistics Canada continued to remain below 2016 levels due to growth in disposable income\nand slower debt growth. The debt-to-service ratio stabilized in recent quarters after decreasing to 2017 levels, partially due to interest rate cuts\ncombined with the rise in disposable income. Mortgage debt service ratios remain at historically high levels, while non-mortgage debt-to-income\nand service ratios remain at historical lows as clients maintain lower utilization and higher payment rates. Mortgage service ratios could remain\nelevated as mortgages continue to renew at higher rates and income growth decelerates from a slowing labour market. Property sales have slowed\nin 2025 and are the most recessed levels since 2020.\n\nWhile the interest rate cuts in the second half of 2024 and throughout 2025 will provide some relief, the levels are still high and there is an\nexpected lag on performance relief from each incremental cut. Further interest rate cuts could result in an increase in sales activity and housing\nprices, however, the risk and uncertainties of the current environment have slowed housing sales, as well as challenged the unemployment and\ninterest rate expectations. Real estate secured lending losses remain low, supported by strong housing prices, and while there was some\nweakening to the non-seasonally adjusted House Price Index (HPI) in the second and third quarters which was partially reversed in the fourth\nquarter, the level remains above late 2022 and early 2023.\n\nUnemployment rates in fiscal 2025 are at the highest level since 2016 (excluding the increase in 2020 and 2021 resulting from the COVID-19\npandemic) and are expected to slightly improve in fiscal 2026, but remain relatively elevated in the current macroeconomic environment.\nUnemployment rates at high levels could elevate non-mortgage debt levels, and has increased unsecured payment pressures, typical of the credit\ncycle.\n\nRegulators continue to apply higher levels of scrutiny on guidelines and oversight. Further augmentations to regulatory expectations could\nimpact business processes, increase the cost of compliance, and raise the risk of fines for non-compliance.",
+        "similarity": 0.5374429821968079,
+        "section": "Management’s discussion and analysis",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "page_end": 63,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank_code": "CIBC",
+        "page_start": 63,
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "file_name": "CIBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00152",
+        "text": "There is a possibility that losses could be incurred in\nrespect of insured mortgages if, among other things, CMHC or the applicable private mortgage insurer denies a claim, or further, if a private\nmortgage insurer becomes insolvent and either the conditions under the PRMHIA are not met or the Government of Canada denies the claim. The following disclosures are required by OSFI pursuant to the Guideline B-20 “Residential Mortgage Underwriting Practices and Procedures”\n(Guideline B-20). The following table provides details on our residential mortgage and HELOC portfolios: Residential mortgages (1)(2)\nHELOC (3)\nTotal $ billions, as at October 31, 2025 Insured\nUninsured\nUninsured\nInsured\nUninsured\n\nOntario (4)\n$\n16.2\n10 %\n$\n138.4\n90 %\n$\n11.3\n100 %\n$\n16.2\n10 % $\n149.7\n90 %\nBritish Columbia and territories (5)\n5.0\n10\n46.1\n90\n4.1\n100\n5.0\n9\n50.2\n91\nAlberta\n8.6\n33\n17.2\n67\n1.8\n100\n8.6\n31\n19.0\n69\nQuebec\n4.9\n19\n20.7\n81\n1.3\n100\n4.9\n18\n22.0\n82\nCentral prairie provinces\n2.3\n35\n4.3\n65\n0.5\n100\n2.3\n32\n4.8\n68\nAtlantic provinces\n2.3\n26\n6.5\n74\n0.7\n100\n2.3\n24\n7.2\n76\n\nCanadian portfolio (6)(7)\n39.3\n14\n233.2\n86\n19.7\n100\n39.3\n13\n252.9\n87\nU.S. portfolio (6)\n–\n–\n2.8\n100\n0.1\n100\n–\n–\n2.9\n100\nOther international portfolio (6)\n–\n–\n3.4\n100\n–\n–\n–\n–\n3.4\n100\n\nTotal portfolio\n$\n39.3\n14 %\n$\n239.4\n86 %\n$\n19.8\n100 %\n$\n39.3\n13 % $\n259.2\n87 %\n\nOctober 31, 2024\n$\n42.3\n15 %\n$\n231.4\n85 %\n$\n19.6\n100 %\n$\n42.3\n14 % $\n251.0\n86 %\n\n(1)\n\nBalances reflect principal values.\n(2) As at October 31, 2025, our Canadian condominium mortgages were $44.2 billion (2024: $42.0 billion), of which 15% (2024: 16%) were insured.\n(3) We did not have any insured HELOCs as at October 31, 2025 and 2024.\n(4) Includes $7.0 billion (2024: $7.6 billion) of insured residential mortgages, $85.6 billion (2024: $83.2 billion) of uninsured residential mortgages, and $6.7 billion (2024:\n\n$6.5 billion) of HELOCs in the Greater Toronto Area (GTA).\n(5) Includes $2.2 billion (2024: $2.4 billion) of insured residential mortgages, $31.3 billion (2024: $30.9 billion) of uninsured residential mortgages, and $2.6 billion (2024:\n\n$2.5 billion) of HELOCs in the Greater Vancouver Area (GVA).\n(6) Geographic location is based on the address of the property.\n(7) 51% (2024: 55%) of insurance on Canadian residential mortgages is provided by CMHC and the remaining by two private Canadian insurers, both rated at least AA (low)\n\nby Morningstar DBRS.\n\nThe average LTV ratios(1) for our uninsured residential mortgages and HELOCs originated and acquired during the year are provided in the following\ntable:\n\nFor the year ended October 31\n2025\n2024\n\nResidential\n\nResidential\n\nmortgages",
+        "similarity": 0.5464481115341187,
+        "section": "Management’s discussion and analysis",
+        "page_start": 74,
+        "quarter": 0,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "fiscal_year": 2025,
+        "page_end": 74,
+        "bank_code": "CIBC",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "file_name": "CIBC_2025_annual_report.pdf"
+      }
+    ],
+    "structured": {
+      "answer": "CIBC disclosed several housing and mortgage credit risks in its 2025 annual report. Key points include:\n\n1. **Management Overlays**: CIBC uses management overlays to adjust expected credit loss (ECL) allowance estimates in response to significant uncertainties in the macroeconomic environment, which may not be fully captured by existing models. This indicates a recognition of potential risks that could lead to actual credit losses differing materially from estimates [S1].\n\n2. **Mortgage Debt Service Ratios**: The report noted that mortgage debt service ratios remain at historically high levels, which could pose risks as mortgages renew at higher rates amidst decelerating income growth due to a slowing labor market [S4]. \n\n3. **Consumer Debt and Housing Market**: The household debt-to-income ratio is below 2016 levels, but mortgage service ratios are elevated. Property sales have slowed to their most recessed levels since 2020, indicating a challenging housing market environment [S4]. \n\n4. **Regulatory Scrutiny**: There is an increasing level of scrutiny from regulators regarding mortgage underwriting practices, which could impact business processes and compliance costs [S4]. \n\n5. **Insured Mortgages Risks**: CIBC highlighted the risk of losses on insured mortgages if claims are denied by the Canada Mortgage and Housing Corporation (CMHC) or if private mortgage insurers become insolvent [S5]. \n\n6. **Economic Conditions**: The report expressed concerns about stagflation, with rising inflation and lower growth forecasts, which could limit central banks' options and affect the housing market [S4]. \n\nOverall, CIBC's disclosures reflect a cautious approach to managing housing and mortgage credit risks amid a complex economic landscape.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "FVOCI",
+          "year": 2025
+        },
+        {
+          "label": "S4",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "Management’s discussion and analysis",
+          "year": 2025
+        },
+        {
+          "label": "S5",
+          "bank": "Canadian Imperial Bank of Commerce",
+          "document": "annual_report",
+          "section": "Management’s discussion and analysis",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 0.7376246000640094
+  },
+  "latency_seconds": 6.814586899941787,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00086145,
+  "input_tokens": 3891,
+  "output_tokens": 463,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.017463300027884543,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about CIBC's housing and mortgage credit risks in the 2025 annual report are directly supported by the actual answer context, including specific risks and their implications.",
+    "relevance_reason": "The answer directly addresses the question regarding housing and mortgage credit risks disclosed by CIBC in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all relevant aspects of the disclosed risks, including management overlays, mortgage debt service ratios, consumer debt, regulatory scrutiny, insured mortgage risks, and economic conditions, as supported by the reference evidence.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.00154935
+}

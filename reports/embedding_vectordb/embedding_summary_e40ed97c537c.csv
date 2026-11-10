@@ -1,0 +1,2 @@
+provider,model,dimensions,chunks,load_seconds,embedding_seconds,cache_hit,current_run_seconds,original_api_cost_usd,current_api_cost_usd
+local,sentence-transformers/all-MiniLM-L6-v2,384,10406,0.8668210999967414,46.80543639999814,True,0.036455800000112504,0.0,0.0

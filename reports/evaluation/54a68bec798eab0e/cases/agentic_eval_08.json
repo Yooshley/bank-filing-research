@@ -1,0 +1,217 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_08",
+  "config": "agentic",
+  "question": {
+    "id": "eval_08",
+    "question": "What interest-rate risk management did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "market",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed interest-rate risk management; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What interest-rate risk management did BMO disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "question": "What interest-rate risk management did BMO disclose in its 2025 annual report?",
+    "answer": "In its 2025 annual report, BMO disclosed the following about its interest-rate risk management:\n\n1. **Structural Market Risk**: BMO's Corporate Treasury group manages structural market risk, which includes interest rate risk from banking activities. The Market Risk group provides independent oversight. Limits on earnings at risk and economic value sensitivity to interest rate changes are approved by the Board of Directors.\n\n2. **Risk Measurement**: Structural interest rate risk is assessed through simulations, earnings sensitivity analysis, economic value sensitivity, stress testing, and gap analysis. Earnings sensitivity measures the impact of interest rate changes on projected pre-tax net income, while economic value sensitivity assesses the market value of assets and liabilities.\n\n3. **Interest Rate Mismatch and Product-Embedded Options**: The bank manages interest rate mismatch risk through interest rate swaps and securities to align with a target maturity profile. Product-embedded option risk arises from features allowing customers to alter cash flow timings, which are modeled and hedged to limit exposure.\n\n4. **Sensitivity Analysis**: The report includes sensitivity metrics for structural earnings and economic value to immediate changes in interest rates, indicating how these changes affect the bank's financial position.\n\n5. **Hedging Arrangements**: BMO entered into hedging arrangements to mitigate the impact of interest rate changes on earnings, particularly in its insurance business.\n\nFor detailed information, refer to the BMO 2025 Annual Report, pages 88-89 and 175-176 (source: [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf), chunks BMO_2025_annual_report_FY_00174, BMO_2025_annual_report_FY_00175, BMO_2025_annual_report_FY_00367).",
+    "iterations": 2,
+    "tool_calls": 1,
+    "tools_used": [
+      "search_filings"
+    ],
+    "input_tokens": 4543,
+    "output_tokens": 402,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.000923,
+    "seconds": 7.03,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "interest-rate risk management",
+          "bank": "BMO",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00174",
+              "text": "Structural (Non-Trading) Market Risk\nStructural market risk comprises interest rate risk arising from our banking activities, such as those involving loans and deposits, and foreign\nexchange risk arising from our foreign currency operations and exposures.\n\nStructural Market Risk Governance\nBMO’s Corporate Treasury group is responsible for the ongoing management of structural market risk across the enterprise, with independent\noversight provided by the Market Risk group. In addition to the limits approved by our Board of Directors on earnings at risk and the sensitivity of\neconomic value to changes in interest rates, more granular management limits are in place to guide the daily management of this risk.\n\nThe RRC oversees structural market risk management, regularly reviews structural market risk positions and annually approves the structural\nmarket risk plan and limits. The RMC and the Asset Liability Committee (ALCO) provide ongoing senior management oversight of risk positions and\nrelated activities.\n\nStructural Market Risk Measurement\n\nInterest Rate Risk\nStructural interest rate risk arises when changes in interest rates affect the market value, cash flows and earnings of assets and liabilities related to\nour banking activities. The objective of structural interest rate risk management is to maintain high-quality earnings and maximize sustainable\nproduct spreads, while managing risk to the economic value of our net assets arising from changes in interest rates.\n\nStructural interest rate risk primarily comprises interest rate mismatch risk and product-embedded option risk.\nInterest rate mismatch risk arises when there are differences in the scheduled maturities, repricing dates or reference rates of assets, liabilities\nand derivatives. The net interest rate mismatch, representing residual assets funded by common shareholders’ equity, is managed to align with a\ntarget maturity profile through interest rate swaps and securities.\n\nProduct-embedded option risk arises when product features allow customers to alter the timing of cash flows, such as scheduled maturity or\nrepricing dates, usually in response to changes in market conditions. Product-embedded options include loan prepayments, deposit redemption\nprivileges and committed rates on unadvanced mortgages. These options and associated customer behaviour are captured in risk modelling, and\nhedging programs may be used to limit the level of exposure to this risk.\n\nStructural interest rate risk is measured using simulations, analyses of the sensitivity of earnings and economic value, stress testing and gap\nanalysis, in addition to other risk metrics.\n\nEarnings Sensitivity is a measure of the impact of potential changes in interest rates on the projected 12-month pre-tax net income from a portfolio\nof assets, liabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero.\n\nEconomic Value Sensitivity is a measure of the impact of potential changes in interest rates on the market value of a portfolio of assets,\nliabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero.",
+              "similarity": 0.704,
+              "section": "MD&A",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "page_start": 88,
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "page_end": 88,
+              "bank": "Bank of Montreal",
+              "bank_code": "BMO"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00175",
+              "text": "These options and associated customer behaviour are captured in risk modelling, and\nhedging programs may be used to limit the level of exposure to this risk. Structural interest rate risk is measured using simulations, analyses of the sensitivity of earnings and economic value, stress testing and gap\nanalysis, in addition to other risk metrics. Earnings Sensitivity is a measure of the impact of potential changes in interest rates on the projected 12-month pre-tax net income from a portfolio\nof assets, liabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero. Economic Value Sensitivity is a measure of the impact of potential changes in interest rates on the market value of a portfolio of assets,\nliabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero.\n\nThe models that measure structural interest rate risk incorporate projected changes in interest rates and predict the likely reaction of our customers to\nthese changes. For customer loans and deposits with scheduled maturity and repricing dates (such as mortgages and term deposits), the models\nmeasure the extent to which customers are likely to use embedded options to alter those scheduled dates. For customer loans and deposits without\nscheduled maturity and repricing dates (such as credit card loans and chequing accounts), exposure is measured using models that adjust for elasticity\nin product pricing and reflect historical and forecasted trends in balances. The results generated by these structural market risk models are inherently\nuncertain, as they reflect potential future pricing and customer behaviour, which may differ from actual experience. These models have been\ndeveloped using statistical analysis and are independently validated and periodically updated through regular model performance assessment, back-\ntesting and ongoing dialogue with the lines of business. Models developed to predict customer behaviour are also used to support product pricing.\n\nMaterial presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements.\n\n86 BMO Financial Group 208th Annual Report 2025\n\nAll models are subject to BMO’s model risk program, which is described in more detail in the Risk Management Framework section.\n\nThe sensitivity of structural interest rate earnings and economic value to an immediate parallel increase or decrease of 100 basis points in the\nyield curve is disclosed in the table below.\n\nThe sensitivity of structural economic value to rising interest rates primarily reflects a lower market value for fixed-rate loans. The sensitivity of\nstructural economic value to falling interest rates primarily reflects the impact of a higher market value for fixed-rate loans and minimum modelled\nclient deposit rates. The exposure of structural economic value to rising interest rates and the benefit of falling interest rates increased relative to\nOctober 31, 2024, largely due to asset portfolio lengthening in response to a steeper curve. Structural earnings sensitivity quantifies the potential\nimpact of interest rate changes on structural balance sheet pre-tax net income over the next 12 months. The sensitivity of structural earnings to\nfalling interest rates primarily reflects the risk of fixed-rate and floating-rate loans repricing at lower rates and the more limited ability to reduce\ndeposit pricing as rates fall. The benefit of rising interest rates to structural earnings primarily reflected the positive impact of reinvesting our net\nequity and non-rate sensitive deposits into assets with higher-term rates. The benefit of rising interest rates to structural earnings remained relatively\nunchanged compared with October 31, 2024. The exposure of falling interest rates to structural earnings increased relative to October 31, 2024,\nprimarily due to the impact of lower modelled prepayment penalty fees collected on certain prepayable instruments.",
+              "similarity": 0.586,
+              "page_end": 89,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "bank": "Bank of Montreal",
+              "section": "MD&A",
+              "page_start": 88,
+              "bank_code": "BMO"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00325",
+              "text": "Market risk is the potential for financial loss as a result of the impact to capital and earnings arising from adverse changes in market variables that\nmay affect the bank’s trading, underwriting and banking book positions, such as interest rates, foreign exchange rates, credit spreads, equity and\ncommodity prices and their implied volatilities.\n\nOur market risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk Management section\nof our Management’s Discussion and Analysis.\n\nLiquidity and Funding Risk\nLiquidity and funding risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at reasonable\nprices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and pledging\ncommitments. It is our policy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of\nstress. Managing liquidity and funding risk is essential to maintaining enterprise soundness and safety, depositor confidence and earnings stability.\n\nOur liquidity and funding risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk\nManagement section of our Management’s Discussion and Analysis.\n\nNote 5: Transfers of Financial Assets\n\nTransfers of Financial Assets that do not Qualify for Derecognition\n\nLoan Securitization\nWe sell Canadian residential and commercial mortgages to third-party Canadian securitization programs, including the Canada Mortgage Bond\nprogram, and directly to third-party investors under the National Housing Act Mortgage-Backed Securities (NHA MBS) program. We assess whether\nsubstantially all of the risks and rewards of, or control over, the loans have been transferred in order to determine whether they qualify for\nderecognition. Under these programs, we are entitled to payment over time of the excess of the sum of interest and fees collected from customers in\nconnection with the mortgages that were sold, over the yield paid to investors, less credit losses and other costs. We also act as counterparty in\ninterest rate swap agreements, where we pay the interest due to Canada Mortgage Bond holders and receive the interest on the underlying\nmortgages, which are converted into MBS through the NHA MBS program and sold to Canada Housing Trust.\n\nFor some of these sales, we continue to be exposed to substantially all of the prepayment, interest rate and credit risk associated with the\nsecuritized mortgages, so they did not qualify for derecognition. We continue to recognize the mortgages in our Consolidated Balance Sheet and the\nrelated cash proceeds are recognized as secured financing as part of securitization and structured entities’ liabilities in our Consolidated Balance Sheet.\nThe interest and fees collected, net of the yield paid to investors, are recorded in net interest income using the effective interest method over the term\nof the securitization. Credit losses associated with the mortgages are recorded in the PCL. During the year ended October 31, 2025, we sold\n$4,621 million of mortgages to these programs ($3,687 million in 2024).\n\nNotes\n\n152 BMO Financial Group 208th Annual Report 2025\n\nThe following table presents the carrying values and fair values of transferred assets that did not qualify for derecognition and the associated\nliabilities relating to loan securitizations:\n\n(Canadian $ in millions)\n2025\n2024\n\nCarrying value (1)\nFair value\nCarrying value (1)\nFair value",
+              "similarity": 0.556,
+              "quarter": 0,
+              "bank_code": "BMO",
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "page_end": 155,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "page_start": 154,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "section": "Market Risk",
+              "bank": "Bank of Montreal"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00367",
+              "text": "Insurance Risk Management\nInsurance market risk includes interest rate and equity market risk arising from the activities of our BMO Insurance business. During the year, we\nentered into hedging arrangements to offset the impact of changes in interest rates on our earnings. The impact of insurance market risk on earnings\nis recorded in non-interest revenue, insurance investment results, in our Consolidated Statement of Income.\n\nThe table below reflects the estimated immediate impact on, or sensitivity of, income before taxes to certain changes in interest rates, and includes\nthe estimated impact of the above hedging arrangements and our exposure to equity price risk arising from our investment in equity securities.\n\n(Canadian $ in millions)\n2025\n2024\n\nInterest Rate Sensitivity (1) (2)\n50 basis point increase\n$\n2\n$\n6\n50 basis point decrease\n(6)\n(9)\n\nEquity Market Sensitivity (3)\n10% increase\n$\n6\n$\n28\n10% decrease\n(7)\n(26)\n\n(1) Estimated impact on, or sensitivity of, income before taxes to a 50 basis point increase or decrease in interest rates.\n(2) Interest rate sensitivities assume a parallel shift in assumed interest rates across the entire yield curve as at the end of the period with no change in the ultimate risk-free rate.\n(3) Estimated impact on, or sensitivity of, income before taxes to a 10% increase or decrease in our exposure to equity price risk arising from our investment in equity securities at the reporting date,\n\nassuming all other variables remain constant.\n\nThe table below presents the sensitivity of earnings to increases or decreases in policy-related assumptions.\n\n(Canadian $ in millions)\n2025\n2024\n\nContractual service margin\nProfit or loss\nContractual service margin\nProfit or loss\nGross\nNet\nGross\nNet\nGross\nNet\nGross\nNet\n\nPolicy-related Assumptions\nMortality rates (1% increase) (1)\n$\n(8)\n$\n15\n$\n1 $\n2\n$\n(17)\n$\n10\n$\n1\n$\n1\nLapse rates (10% increase) (2)\n(45)\n38\n(82)\n(74)\n(151)\n(52)\n(10)\n(4)\nExpenses (5% increase) (3)\n(14)\n(14)\n(1)\n(1)\n(15)\n(15)\n–\n–\n\n(1) Mortality relates to the occurrence of death and is a key assumption for our life insurance business.\n(2) Policies are terminated through lapses and surrenders, where lapses represent the termination of policies due to non-payment of premiums and surrenders represent the voluntary termination of\n\npolicies by policyholders.\n(3) Directly attributable operating expense assumptions reflect the projected cost of maintaining and servicing in-force policies, including associated directly attributable overhead expenses.\n\nNotes\n\nBMO Financial Group 208th Annual Report 2025 173\n\nNote 15: Subordinated Debt\n\nSubordinated debt represents our direct unsecured obligations to our debt holders in the form of notes and debentures, and forms part of our\nregulatory capital. Subordinated debt is recorded at amortized cost using the effective interest rate method. Where appropriate, we enter into fair\nvalue hedges to hedge the risks caused by changes in interest rates (refer to Note 7). The rights of the holders of our notes and debentures are\nsubordinate to the claims of depositors and certain other creditors. We require approval from OSFI before we can redeem, cancel, exchange or modify\nany part of our subordinated debt.",
+              "similarity": 0.554,
+              "page_start": 175,
+              "bank": "Bank of Montreal",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "section": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS",
+              "bank_code": "BMO",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "page_end": 176,
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "document_type": "annual_report"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "In its 2025 annual report, BMO disclosed the following about its interest-rate risk management:\n\n1. **Structural Market Risk**: BMO's Corporate Treasury group manages structural market risk, which includes interest rate risk from banking activities. The Market Risk group provides independent oversight. Limits on earnings at risk and economic value sensitivity to interest rate changes are approved by the Board of Directors.\n\n2. **Risk Measurement**: Structural interest rate risk is assessed through simulations, earnings sensitivity analysis, economic value sensitivity, stress testing, and gap analysis. Earnings sensitivity measures the impact of interest rate changes on projected pre-tax net income, while economic value sensitivity assesses the market value of assets and liabilities.\n\n3. **Interest Rate Mismatch and Product-Embedded Options**: The bank manages interest rate mismatch risk through interest rate swaps and securities to align with a target maturity profile. Product-embedded option risk arises from features allowing customers to alter cash flow timings, which are modeled and hedged to limit exposure.\n\n4. **Sensitivity Analysis**: The report includes sensitivity metrics for structural earnings and economic value to immediate changes in interest rates, indicating how these changes affect the bank's financial position.\n\n5. **Hedging Arrangements**: BMO entered into hedging arrangements to mitigate the impact of interest rate changes on earnings, particularly in its insurance business.\n\nFor detailed information, refer to the BMO 2025 Annual Report, pages 88-89 and 175-176 (source: [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf), chunks BMO_2025_annual_report_FY_00174, BMO_2025_annual_report_FY_00175, BMO_2025_annual_report_FY_00367)."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00174",
+        "text": "Structural (Non-Trading) Market Risk\nStructural market risk comprises interest rate risk arising from our banking activities, such as those involving loans and deposits, and foreign\nexchange risk arising from our foreign currency operations and exposures.\n\nStructural Market Risk Governance\nBMO’s Corporate Treasury group is responsible for the ongoing management of structural market risk across the enterprise, with independent\noversight provided by the Market Risk group. In addition to the limits approved by our Board of Directors on earnings at risk and the sensitivity of\neconomic value to changes in interest rates, more granular management limits are in place to guide the daily management of this risk.\n\nThe RRC oversees structural market risk management, regularly reviews structural market risk positions and annually approves the structural\nmarket risk plan and limits. The RMC and the Asset Liability Committee (ALCO) provide ongoing senior management oversight of risk positions and\nrelated activities.\n\nStructural Market Risk Measurement\n\nInterest Rate Risk\nStructural interest rate risk arises when changes in interest rates affect the market value, cash flows and earnings of assets and liabilities related to\nour banking activities. The objective of structural interest rate risk management is to maintain high-quality earnings and maximize sustainable\nproduct spreads, while managing risk to the economic value of our net assets arising from changes in interest rates.\n\nStructural interest rate risk primarily comprises interest rate mismatch risk and product-embedded option risk.\nInterest rate mismatch risk arises when there are differences in the scheduled maturities, repricing dates or reference rates of assets, liabilities\nand derivatives. The net interest rate mismatch, representing residual assets funded by common shareholders’ equity, is managed to align with a\ntarget maturity profile through interest rate swaps and securities.\n\nProduct-embedded option risk arises when product features allow customers to alter the timing of cash flows, such as scheduled maturity or\nrepricing dates, usually in response to changes in market conditions. Product-embedded options include loan prepayments, deposit redemption\nprivileges and committed rates on unadvanced mortgages. These options and associated customer behaviour are captured in risk modelling, and\nhedging programs may be used to limit the level of exposure to this risk.\n\nStructural interest rate risk is measured using simulations, analyses of the sensitivity of earnings and economic value, stress testing and gap\nanalysis, in addition to other risk metrics.\n\nEarnings Sensitivity is a measure of the impact of potential changes in interest rates on the projected 12-month pre-tax net income from a portfolio\nof assets, liabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero.\n\nEconomic Value Sensitivity is a measure of the impact of potential changes in interest rates on the market value of a portfolio of assets,\nliabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero.",
+        "similarity": 0.704,
+        "section": "MD&A",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "page_start": 88,
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 88,
+        "bank": "Bank of Montreal",
+        "bank_code": "BMO"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00175",
+        "text": "These options and associated customer behaviour are captured in risk modelling, and\nhedging programs may be used to limit the level of exposure to this risk. Structural interest rate risk is measured using simulations, analyses of the sensitivity of earnings and economic value, stress testing and gap\nanalysis, in addition to other risk metrics. Earnings Sensitivity is a measure of the impact of potential changes in interest rates on the projected 12-month pre-tax net income from a portfolio\nof assets, liabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero. Economic Value Sensitivity is a measure of the impact of potential changes in interest rates on the market value of a portfolio of assets,\nliabilities and off-balance sheet positions in response to prescribed parallel interest rate movements, with interest rates floored at zero.\n\nThe models that measure structural interest rate risk incorporate projected changes in interest rates and predict the likely reaction of our customers to\nthese changes. For customer loans and deposits with scheduled maturity and repricing dates (such as mortgages and term deposits), the models\nmeasure the extent to which customers are likely to use embedded options to alter those scheduled dates. For customer loans and deposits without\nscheduled maturity and repricing dates (such as credit card loans and chequing accounts), exposure is measured using models that adjust for elasticity\nin product pricing and reflect historical and forecasted trends in balances. The results generated by these structural market risk models are inherently\nuncertain, as they reflect potential future pricing and customer behaviour, which may differ from actual experience. These models have been\ndeveloped using statistical analysis and are independently validated and periodically updated through regular model performance assessment, back-\ntesting and ongoing dialogue with the lines of business. Models developed to predict customer behaviour are also used to support product pricing.\n\nMaterial presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements.\n\n86 BMO Financial Group 208th Annual Report 2025\n\nAll models are subject to BMO’s model risk program, which is described in more detail in the Risk Management Framework section.\n\nThe sensitivity of structural interest rate earnings and economic value to an immediate parallel increase or decrease of 100 basis points in the\nyield curve is disclosed in the table below.\n\nThe sensitivity of structural economic value to rising interest rates primarily reflects a lower market value for fixed-rate loans. The sensitivity of\nstructural economic value to falling interest rates primarily reflects the impact of a higher market value for fixed-rate loans and minimum modelled\nclient deposit rates. The exposure of structural economic value to rising interest rates and the benefit of falling interest rates increased relative to\nOctober 31, 2024, largely due to asset portfolio lengthening in response to a steeper curve. Structural earnings sensitivity quantifies the potential\nimpact of interest rate changes on structural balance sheet pre-tax net income over the next 12 months. The sensitivity of structural earnings to\nfalling interest rates primarily reflects the risk of fixed-rate and floating-rate loans repricing at lower rates and the more limited ability to reduce\ndeposit pricing as rates fall. The benefit of rising interest rates to structural earnings primarily reflected the positive impact of reinvesting our net\nequity and non-rate sensitive deposits into assets with higher-term rates. The benefit of rising interest rates to structural earnings remained relatively\nunchanged compared with October 31, 2024. The exposure of falling interest rates to structural earnings increased relative to October 31, 2024,\nprimarily due to the impact of lower modelled prepayment penalty fees collected on certain prepayable instruments.",
+        "similarity": 0.586,
+        "page_end": 89,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "bank": "Bank of Montreal",
+        "section": "MD&A",
+        "page_start": 88,
+        "bank_code": "BMO"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00325",
+        "text": "Market risk is the potential for financial loss as a result of the impact to capital and earnings arising from adverse changes in market variables that\nmay affect the bank’s trading, underwriting and banking book positions, such as interest rates, foreign exchange rates, credit spreads, equity and\ncommodity prices and their implied volatilities.\n\nOur market risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk Management section\nof our Management’s Discussion and Analysis.\n\nLiquidity and Funding Risk\nLiquidity and funding risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at reasonable\nprices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and pledging\ncommitments. It is our policy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of\nstress. Managing liquidity and funding risk is essential to maintaining enterprise soundness and safety, depositor confidence and earnings stability.\n\nOur liquidity and funding risk management practices and key measures are disclosed in the blue-tinted font in the Enterprise-Wide Risk\nManagement section of our Management’s Discussion and Analysis.\n\nNote 5: Transfers of Financial Assets\n\nTransfers of Financial Assets that do not Qualify for Derecognition\n\nLoan Securitization\nWe sell Canadian residential and commercial mortgages to third-party Canadian securitization programs, including the Canada Mortgage Bond\nprogram, and directly to third-party investors under the National Housing Act Mortgage-Backed Securities (NHA MBS) program. We assess whether\nsubstantially all of the risks and rewards of, or control over, the loans have been transferred in order to determine whether they qualify for\nderecognition. Under these programs, we are entitled to payment over time of the excess of the sum of interest and fees collected from customers in\nconnection with the mortgages that were sold, over the yield paid to investors, less credit losses and other costs. We also act as counterparty in\ninterest rate swap agreements, where we pay the interest due to Canada Mortgage Bond holders and receive the interest on the underlying\nmortgages, which are converted into MBS through the NHA MBS program and sold to Canada Housing Trust.\n\nFor some of these sales, we continue to be exposed to substantially all of the prepayment, interest rate and credit risk associated with the\nsecuritized mortgages, so they did not qualify for derecognition. We continue to recognize the mortgages in our Consolidated Balance Sheet and the\nrelated cash proceeds are recognized as secured financing as part of securitization and structured entities’ liabilities in our Consolidated Balance Sheet.\nThe interest and fees collected, net of the yield paid to investors, are recorded in net interest income using the effective interest method over the term\nof the securitization. Credit losses associated with the mortgages are recorded in the PCL. During the year ended October 31, 2025, we sold\n$4,621 million of mortgages to these programs ($3,687 million in 2024).\n\nNotes\n\n152 BMO Financial Group 208th Annual Report 2025\n\nThe following table presents the carrying values and fair values of transferred assets that did not qualify for derecognition and the associated\nliabilities relating to loan securitizations:\n\n(Canadian $ in millions)\n2025\n2024\n\nCarrying value (1)\nFair value\nCarrying value (1)\nFair value",
+        "similarity": 0.556,
+        "quarter": 0,
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 155,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_start": 154,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "Market Risk",
+        "bank": "Bank of Montreal"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00367",
+        "text": "Insurance Risk Management\nInsurance market risk includes interest rate and equity market risk arising from the activities of our BMO Insurance business. During the year, we\nentered into hedging arrangements to offset the impact of changes in interest rates on our earnings. The impact of insurance market risk on earnings\nis recorded in non-interest revenue, insurance investment results, in our Consolidated Statement of Income.\n\nThe table below reflects the estimated immediate impact on, or sensitivity of, income before taxes to certain changes in interest rates, and includes\nthe estimated impact of the above hedging arrangements and our exposure to equity price risk arising from our investment in equity securities.\n\n(Canadian $ in millions)\n2025\n2024\n\nInterest Rate Sensitivity (1) (2)\n50 basis point increase\n$\n2\n$\n6\n50 basis point decrease\n(6)\n(9)\n\nEquity Market Sensitivity (3)\n10% increase\n$\n6\n$\n28\n10% decrease\n(7)\n(26)\n\n(1) Estimated impact on, or sensitivity of, income before taxes to a 50 basis point increase or decrease in interest rates.\n(2) Interest rate sensitivities assume a parallel shift in assumed interest rates across the entire yield curve as at the end of the period with no change in the ultimate risk-free rate.\n(3) Estimated impact on, or sensitivity of, income before taxes to a 10% increase or decrease in our exposure to equity price risk arising from our investment in equity securities at the reporting date,\n\nassuming all other variables remain constant.\n\nThe table below presents the sensitivity of earnings to increases or decreases in policy-related assumptions.\n\n(Canadian $ in millions)\n2025\n2024\n\nContractual service margin\nProfit or loss\nContractual service margin\nProfit or loss\nGross\nNet\nGross\nNet\nGross\nNet\nGross\nNet\n\nPolicy-related Assumptions\nMortality rates (1% increase) (1)\n$\n(8)\n$\n15\n$\n1 $\n2\n$\n(17)\n$\n10\n$\n1\n$\n1\nLapse rates (10% increase) (2)\n(45)\n38\n(82)\n(74)\n(151)\n(52)\n(10)\n(4)\nExpenses (5% increase) (3)\n(14)\n(14)\n(1)\n(1)\n(15)\n(15)\n–\n–\n\n(1) Mortality relates to the occurrence of death and is a key assumption for our life insurance business.\n(2) Policies are terminated through lapses and surrenders, where lapses represent the termination of policies due to non-payment of premiums and surrenders represent the voluntary termination of\n\npolicies by policyholders.\n(3) Directly attributable operating expense assumptions reflect the projected cost of maintaining and servicing in-force policies, including associated directly attributable overhead expenses.\n\nNotes\n\nBMO Financial Group 208th Annual Report 2025 173\n\nNote 15: Subordinated Debt\n\nSubordinated debt represents our direct unsecured obligations to our debt holders in the form of notes and debentures, and forms part of our\nregulatory capital. Subordinated debt is recorded at amortized cost using the effective interest rate method. Where appropriate, we enter into fair\nvalue hedges to hedge the risks caused by changes in interest rates (refer to Note 7). The rights of the holders of our notes and debentures are\nsubordinate to the claims of depositors and certain other creditors. We require approval from OSFI before we can redeem, cancel, exchange or modify\nany part of our subordinated debt.",
+        "similarity": 0.554,
+        "page_start": 175,
+        "bank": "Bank of Montreal",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS",
+        "bank_code": "BMO",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "page_end": 176,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "document_type": "annual_report"
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 7.0333519000560045,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.00092265,
+  "input_tokens": 4543,
+  "output_tokens": 402,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.01840749999973923,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about BMO's interest-rate risk management in the 2025 annual report are directly supported by the provided evidence, including specific practices and metrics used.",
+    "relevance_reason": "The answer directly addresses the question regarding BMO's interest-rate risk management disclosed in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of interest-rate risk management disclosed in the referenced sections of the 2025 annual report, including governance, measurement, and hedging strategies.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0013454999999999997
+}

@@ -1,0 +1,1040 @@
+case_id,config,question_id,question,answer,human_faithfulness,human_relevance,human_completeness,notes
+54a68bec798eab0e/agentic/eval_01,agentic,eval_01,What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?,"In RBC's 2025 annual report, the following credit risks and provisions for credit losses were disclosed:
+
+1. **Credit Risk Assessment**: RBC considers credit risk to be low for instruments with a low risk of default and the borrower's ability to meet obligations. The assessment includes forward-looking information and macroeconomic variables such as unemployment rates and GDP growth.
+
+2. **Expected Credit Losses (ECL)**: The ECL measurement involves significant judgment and is based on a discounted probability-weighted estimate considering multiple macroeconomic scenarios. The bank uses parameters like Probability of Default (PD), Loss Given Default (LGD), and Exposure at Default (EAD) to estimate credit losses.
+
+3. **Stages of Credit Losses**: Credit losses are categorized into three stages:
+   - **Stage 1**: Performing assets with expected losses over 12 months.
+   - **Stage 2**: Underperforming assets with expected losses over their lifetime.
+   - **Stage 3**: Non-performing assets.
+
+4. **Provisions for Credit Losses**: The report details movements in the allowance for credit losses (ACL), including provisions, write-offs, and recoveries. For example, the balance at the end of the period for wholesale credit losses was reported as $896 million, with significant movements due to originations and changes in risk parameters.
+
+5. **Management of Credit Risk**: RBC actively manages credit exposures and limits to avoid undue concentration risk across sectors and products. They have specialized groups for managing high-risk borrowers and may enter forbearance agreements to assist clients in financial difficulty.
+
+For detailed figures and further specifics, refer to the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (source: RBC_2025_annual_report_FY, sections FVOCI and Management’s Discussion and Analysis).",,,,
+54a68bec798eab0e/agentic/eval_02,agentic,eval_02,What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed the following regarding market risk and Value-at-Risk (VaR):
+
+1. **Market Risk Definition**: Market risk is described as the impact of market prices on RBC's financial condition, including potential gains or losses from changes in interest rates, credit spreads, equity prices, commodity prices, foreign exchange rates, and implied volatilities.
+
+2. **VaR Measurement**: 
+   - VaR is calculated at the 99th percentile confidence level for price movements over a one-day holding period, using a historical simulation of the last two years of equally weighted market data.
+   - The calculations are updated daily for current risk positions, except for less material positions, which are updated at least monthly.
+   - Trading VaR captures potential loss for the trading portfolio, excluding non-trading FVTPL positions.
+   - Total VaR encompasses potential loss for all positions classified as FVTPL.
+
+3. **Limitations of VaR**: 
+   - VaR does not predict future losses if market movements differ significantly from historical data.
+   - It projects potential losses over a one-day holding period and does not account for trading and hedging activities throughout the day.
+
+4. **Total Market Risk**: The total market risk was reported as $41,506 million for the fiscal year 2025, compared to $33,930 million in the previous period.
+
+For further details, you can refer to the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (source: RBC_2025_annual_report_FY, pages 85 and 118).",,,,
+54a68bec798eab0e/agentic/eval_03,agentic,eval_03,What physical and transition climate risks did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed the following about climate-related risks:
+
+1. **Transition Risk**: This includes risks associated with the shift towards a low-carbon economy, which may arise from government policies, technological advancements, and changes in market sentiment.
+
+2. **Physical Risk**: This encompasses risks from climate-related extremes (acute physical risks) and long-term gradual climate shifts (chronic physical risks), as well as indirect effects such as public health implications.
+
+RBC is actively integrating climate-related risk considerations into its risk management practices, utilizing climate scenario analysis to inform strategic planning and stress testing (RBC_2025_annual_report_FY_00189).
+
+Additionally, the report highlights the evolving legal and regulatory landscape regarding sustainability, which could lead to increased compliance costs and operational complexities (RBC_2025_annual_report_FY_00184).
+
+For further details, you can access the full report [here](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf).",,,,
+54a68bec798eab0e/agentic/eval_04,agentic,eval_04,What cybersecurity and operational risks did TD disclose in its 2025 annual report?,"In TD's 2025 annual report, the following cybersecurity and operational risks were disclosed:
+
+1. **Operational Risk**: Defined as the risk of loss from inadequate or failed internal processes, people, systems, or external events. This includes legal risks and regulatory fines. The report emphasizes that operational risk is inherent in all business activities and can lead to financial loss, reputational harm, or regulatory penalties (TD_2025_annual_report_FY_00316).
+
+2. **Technology and Cybersecurity Risks**: The report highlights that the Bank manages technology and cybersecurity risks to protect against unauthorized access to its technology, infrastructure, systems, information, and data. It mentions the implementation of industry-accepted practices for technology risk and cyber threat management to enhance detection and response capabilities (TD_2025_annual_report_FY_00318).
+
+3. **Governance and Oversight**: The report outlines that the Platforms and Technology Risk Oversight Committee provides oversight regarding technology and cybersecurity risks, including threats like cyber terrorism, fraud, and data theft. This committee makes recommendations to senior management and the Board of Directors (TD_2025_annual_report_FY_00318).
+
+For further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",,,,
+54a68bec798eab0e/agentic/eval_05,agentic,eval_05,What residential mortgage credit risks did TD disclose in its 2025 annual report?,"In TD's 2025 annual report, the following residential mortgage credit risks were disclosed:
+
+1. **Stress Testing**: TD regularly performs stress tests on its real estate lending portfolio to assess vulnerability to severe economic downturns, considering factors like house prices, interest rates, and unemployment levels (TD_2025_annual_report_FY_00165).
+
+2. **Loan-to-Value Ratios**: The bank's credit policies limit the combined exposure of all uninsured facilities on a property to 80% of its collateral value at origination. Higher loan-to-value ratios require default insurance, which protects against potential losses from borrower defaults (TD_2025_annual_report_FY_00166).
+
+3. **Loss Given Default (LGD) and Exposure at Default (EAD)**: The report mentions that downturn LGD reflects the potential impact of a severe housing downturn, and EAD estimates are based on downturn scenarios (TD_2025_annual_report_FY_00293).
+
+4. **Credit Risk Management**: The bank manages retail exposures, including residential mortgages, using predictive credit scoring techniques and categorizes them based on risk levels (TD_2025_annual_report_FY_00538).
+
+For further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",,,,
+54a68bec798eab0e/agentic/eval_06,agentic,eval_06,What liquidity and funding risks did TD disclose in its 2025 annual report?,"In TD's 2025 annual report, the following liquidity and funding risks were disclosed:
+
+1. **Insufficient Cash or Collateral**: There is a risk of having insufficient cash or collateral to meet financial obligations, which may arise from deposit withdrawals, debt maturities, or commitments to provide credit. The report highlights the potential inability to raise funding or monetize assets at a non-distressed price (TD_2025_annual_report_FY_00328).
+
+2. **Stress Testing**: The Bank conducts internal stress testing to manage liquidity risk, considering severe combined stress events that could lead to elevated liquidity requirements and loss of confidence in the Bank's ability to meet obligations. Scenarios include loss of access to wholesale funding, accelerated deposit attrition, increased utilization of credit facilities, and heightened collateral requirements due to credit rating downgrades (TD_2025_annual_report_FY_00328).
+
+3. **Liquidity Management Policies**: TD maintains liquidity risk management policies that require sufficient liquid assets to support business growth and cover stressed liquidity requirements for up to 90 days. The Bank targets a 90-day survival horizon under stress scenarios and emphasizes a stable, diversified deposit base as a core funding source (TD_2025_annual_report_FY_00327).
+
+4. **Contingency Funding Plan**: The Bank has a contingency funding plan to enhance preparedness for potential liquidity stress events, which is part of its integrated liquidity risk management program (TD_2025_annual_report_FY_00327).
+
+5. **Unencumbered Liquid Assets**: The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events, with eligibility considering stressed market values and operational impediments (TD_2025_annual_report_FY_00331).
+
+For further details, you can refer to the full report [here](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",,,,
+54a68bec798eab0e/agentic/eval_07,agentic,eval_07,What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?,"In its 2025 annual report, BMO disclosed several liquidity risk controls and liquidity coverage measures:
+
+1. **Liquidity and Funding Risk Management Framework**: BMO's program is defined by corporate policies approved by the Board of Directors, which include key management principles, liquidity metrics, and limits. This framework establishes roles and responsibilities for managing liquidity risk across the enterprise (BMO_2025_annual_report_FY_00181).
+
+2. **Limit Structure**: A robust limit structure is in place to manage liquidity and funding risk, defining BMO's risk appetite for key measures such as the Stress Net Liquidity Position (stress NLP), regulatory liquidity ratios, and funding appetites (BMO_2025_annual_report_FY_00181).
+
+3. **Contingency Planning**: BMO has an enterprise-wide contingency plan to manage risks during disruptions, with early warning indicators monitored regularly (BMO_2025_annual_report_FY_00181).
+
+4. **Liquidity Metrics**: BMO reported that its liquidity metrics, including the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025 (BMO_2025_annual_report_FY_00181).
+
+5. **Stress Testing**: The liquidity risk management program is integrated with enterprise-wide stress testing, evaluating stress NLP against risk appetite and informing limit-setting and business plans (BMO_2025_annual_report_FY_00182).
+
+6. **Unencumbered Liquid Assets**: BMO maintains high-quality liquid assets that can be pledged as security and converted to cash quickly. These assets are primarily held in trading businesses and supplemental liquidity pools (BMO_2025_annual_report_FY_00182).
+
+For further details, you can refer to the full report [here](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf).",,,,
+54a68bec798eab0e/agentic/eval_08,agentic,eval_08,What interest-rate risk management did BMO disclose in its 2025 annual report?,"In its 2025 annual report, BMO disclosed the following about its interest-rate risk management:
+
+1. **Structural Market Risk**: BMO's Corporate Treasury group manages structural market risk, which includes interest rate risk from banking activities. The Market Risk group provides independent oversight. Limits on earnings at risk and economic value sensitivity to interest rate changes are approved by the Board of Directors.
+
+2. **Risk Measurement**: Structural interest rate risk is assessed through simulations, earnings sensitivity analysis, economic value sensitivity, stress testing, and gap analysis. Earnings sensitivity measures the impact of interest rate changes on projected pre-tax net income, while economic value sensitivity assesses the market value of assets and liabilities.
+
+3. **Interest Rate Mismatch and Product-Embedded Options**: The bank manages interest rate mismatch risk through interest rate swaps and securities to align with a target maturity profile. Product-embedded option risk arises from features allowing customers to alter cash flow timings, which are modeled and hedged to limit exposure.
+
+4. **Sensitivity Analysis**: The report includes sensitivity metrics for structural earnings and economic value to immediate changes in interest rates, indicating how these changes affect the bank's financial position.
+
+5. **Hedging Arrangements**: BMO entered into hedging arrangements to mitigate the impact of interest rate changes on earnings, particularly in its insurance business.
+
+For detailed information, refer to the BMO 2025 Annual Report, pages 88-89 and 175-176 (source: [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf), chunks BMO_2025_annual_report_FY_00174, BMO_2025_annual_report_FY_00175, BMO_2025_annual_report_FY_00367).",,,,
+54a68bec798eab0e/agentic/eval_09,agentic,eval_09,What operational and technology risks did BMO disclose in its 2025 annual report?,"In its 2025 annual report, BMO disclosed the following operational and technology risks:
+
+1. **Operational Non-Financial Risk (ONFR)**: This encompasses a wide range of non-financial risks, including those related to business change, customer trust, reputation, and data. These risks can lead to financial loss due to inadequate or failed internal processes, human error, misconduct, or external events. BMO has established a Risk Management Framework (RMF) to manage these risks, which includes internal controls and governance processes (BMO_2025_annual_report_FY_00201).
+
+2. **Governance of Operational Non-Financial Risk**: The Enterprise Operational Risk Committee (EORC) oversees operational non-financial risk management. It monitors the bank's resilience capabilities and supports proactive risk management to prevent failures. The governance includes regular analysis and reporting of operational risk profiles to various committees (BMO_2025_annual_report_FY_00202).
+
+3. **Operational Resilience**: BMO emphasizes the importance of operational resilience, which is the ability to protect and sustain core business products and services during normal operations and in times of stress or disruption. This resilience is supported by effective management of ONFR (BMO_2025_annual_report_FY_00202).
+
+4. **Strategic Risk**: Although primarily a strategic risk, it includes operational aspects. This risk arises from ineffective strategies or inadequate responses to changes in the business environment, which can lead to financial loss or reputational damage (BMO_2025_annual_report_FY_00216).
+
+These disclosures highlight BMO's comprehensive approach to managing operational and technology risks, focusing on governance, resilience, and strategic alignment. For further details, you can refer to the full report [here](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf).",,,,
+54a68bec798eab0e/agentic/eval_10,agentic,eval_10,What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?,"In Scotiabank's 2025 Annual Report, the bank disclosed both physical and transition climate risks:
+
+1. **Physical Risks**: The report highlights the increased intensity and frequency of severe weather events as a significant concern. These physical risks can lead to damage to properties and disruptions to operations, negatively impacting profitability. The bank has mechanisms in place to identify, mitigate, and assess potential losses from such risks, including disaster recovery planning to ensure uninterrupted operations during localized disasters and weather-related events (BNS_2025_annual_report_FY_00163).
+
+2. **Transition Risks**: The report discusses the rising costs associated with climate change and new climate guidelines, which increase regulatory oversight and stakeholder expectations. There is also mention of potential legal and reputational risks related to misleading sustainability claims or ""greenwashing."" The changing political environment in the U.S. and Canada could limit clients' ability or willingness to reduce emissions, creating uncertainty (BNS_2025_annual_report_FY_00163).
+
+The bank's approach to managing these risks is governed by its ESG Risk Management Framework, which integrates ESG risk considerations into decision-making processes across various business strategies (BNS_2025_annual_report_FY_00229).",,,,
+54a68bec798eab0e/agentic/eval_11,agentic,eval_11,What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?,"In Scotiabank's 2025 annual report, the following details regarding credit risk and loan-loss provisions were disclosed:
+
+### Credit Risk
+- **Overall Loan Book**: Increased to **$779 billion** as of October 31, 2025, from **$768 billion** in 2024. This increase was primarily driven by residential mortgages, which amounted to **$370 billion** (84% in Canada). The corporate loan book comprised **36%** of the total, with **50%** of these loans rated as investment grade.
+- **Regional Exposure**: The loan portfolio is diversified across regions, with **68%** in Canada, **8%** in the United States, **7%** in Chile, **6%** in Mexico, and **11%** in other areas.
+- **Credit Risk Management**: The bank employs a comprehensive credit risk management framework, including policies for risk appetite, credit risk rating systems, and methodologies for calculating the allowance for credit losses (source: BNS_2025_annual_report_FY_00168, BNS_2025_annual_report_FY_00169).
+
+### Loan-Loss Provisions
+- **Total Allowance for Credit Losses**: As of October 31, 2025, the total allowance for credit losses on loans was **$7,463 million**, broken down as follows:
+  - **Stage 1**: $1,860 million
+  - **Stage 2**: $3,262 million
+  - **Stage 3**: $2,341 million
+- **Provision for Credit Losses**: The total provision for credit losses for the year was **$4,714 million**, which includes:
+  - New provisions: **$4,883 million**
+  - Reversals: **$(130) million**
+  - Recoveries: **$(620) million** (source: BNS_2025_annual_report_FY_00390, BNS_2025_annual_report_FY_00248).
+
+For further details, you can refer to the full report [here](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf).",,,,
+54a68bec798eab0e/agentic/eval_12,agentic,eval_12,What market risk management did Scotiabank disclose in its 2025 annual report?,"In Scotiabank's 2025 Annual Report, market risk management is described as follows:
+
+1. **Definition of Market Risk**: Market risk is defined as the risk of loss from changes in market prices, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with their correlations and volatility levels (BNS_2025_annual_report_FY_00128).
+
+2. **Components of Market Risk**: The report identifies several types of market risk:
+   - **Interest Rate Risk**: Managed through sensitivity analysis, stress testing, and Value at Risk (VaR) limits.
+   - **Credit Spread Risk**: Managed similarly, focusing on loan and debt securities portfolios.
+   - **Foreign Currency Risk**: Managed through sensitivity analysis and hedging with foreign exchange derivatives.
+   - **Equity Risk**: Managed through sensitivity analysis and hedging with equity instruments.
+   - **Commodity Risk**: Managed through sensitivity analysis and derivative hedges (BNS_2025_annual_report_FY_00189).
+
+3. **Governance and Oversight**: The Board of Directors reviews and approves market risk policies annually. The Asset-Liability Committee (ALCO), Treasury Risk Committee (TRC), and Market Risk Management and Policy Committee (MRMPC) oversee market risk exposures and establish operating policies and limits (BNS_2025_annual_report_FY_00190).
+
+4. **Risk Measurement Techniques**: The bank employs various metrics, including VaR, stress testing, and sensitivity analysis, to measure and control market risk exposures. VaR is calculated daily at a 99% confidence level (BNS_2025_annual_report_FY_00190).
+
+For further details, you can access the full report [here](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf).",,,,
+54a68bec798eab0e/agentic/eval_13,agentic,eval_13,What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?,"In CIBC's 2025 annual report, the following housing and mortgage credit risks were disclosed:
+
+1. **Credit Quality of Portfolios**: The report details the credit quality of retail portfolios, including real estate secured personal lending, which comprises residential mortgages and personal loans secured by residential property. This portfolio is considered lower risk due to first charge on most properties. However, there are risks associated with higher loan-to-value (LTV) ratios, particularly for uninsured mortgages. The report notes that if mortgage insurers deny claims or become insolvent, losses could occur (CIBC_2025_annual_report_FY_00151).
+
+2. **Management Overlays**: CIBC employs management overlays to adjust expected credit loss (ECL) allowance estimates in response to new macroeconomic or geopolitical events. This indicates that existing models may not fully capture all relevant risk factors, which could lead to significant differences between estimated and actual credit losses (CIBC_2025_annual_report_FY_00332).
+
+3. **Regulatory Considerations**: The report mentions that under the Bank Act (Canada), banks are limited to providing residential real estate loans of no more than 80% of collateral value, with exceptions for insured mortgages. This regulatory framework aims to mitigate risks associated with high LTV ratios (CIBC_2025_annual_report_FY_00151).
+
+4. **Stress Testing**: CIBC conducts stress testing and scenario analyses to assess the impact of various stressed conditions on its mortgage portfolio. This process helps in managing credit exposure and determining limits based on risk appetite (CIBC_2025_annual_report_FY_00144).
+
+For further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf).",,,,
+54a68bec798eab0e/agentic/eval_14,agentic,eval_14,What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?,"In its 2025 annual report, CIBC disclosed several cybersecurity and technology risks:
+
+1. **Cybersecurity Risks**:
+   - CIBC highlighted the increasing frequency and sophistication of cyber threats, which pose risks such as financial loss, reputational harm, regulatory exposure, and business interruption. Specific threats mentioned include data breaches, malware, ransomware, unauthorized access, social engineering, fraud, and denial-of-service attacks. These risks could lead to damage to CIBC's systems, theft or loss of confidential information, unauthorized activity, and service disruptions (CIBC_2025_annual_report_FY_00115).
+
+2. **Technology Risks**:
+   - The bank noted that evolving technology solutions, while enhancing capabilities and efficiencies, also increase complexity in management and resilience across various platforms. CIBC is focused on maintaining a robust control environment to manage risks associated with technology development, deployment, and operations (CIBC_2025_annual_report_FY_00116).
+
+3. **AI and Data Risks**:
+   - CIBC acknowledged risks associated with the use of AI, including potential bias and ethical concerns. The bank has implemented an AI Framework and governance practices to manage these risks. Additionally, they are investing in data management and governance to support strategic objectives and mitigate operational risks (CIBC_2025_annual_report_FY_00117).
+
+4. **Third-party Risks**:
+   - The report also discussed risks arising from third-party relationships, which can introduce potential disruptions due to reliance on external entities for services and technology (CIBC_2025_annual_report_FY_00116).
+
+For further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf).",,,,
+54a68bec798eab0e/agentic/eval_15,agentic,eval_15,What liquidity risk management did CIBC disclose in its 2025 annual report?,"In its 2025 annual report, CIBC disclosed the following about its liquidity risk management:
+
+1. **Definition and Sources of Liquidity Risk**: Liquidity risk is defined as the risk of having insufficient cash or equivalents to meet financial obligations timely and cost-effectively. Common sources include unexpected withdrawals, inability to replace maturing debt, and collateral requirements.
+
+2. **Management Approach**: CIBC's liquidity risk management aligns with its business strategy and regulatory expectations. The strategies and practices are regularly reviewed to adapt to changes in the liquidity environment.
+
+3. **Governance Structure**: Liquidity risk is managed using a three lines of defense model:
+   - The Treasurer manages measurement and reporting.
+   - The Liquidity and Non-Trading Market Risk group provides independent oversight.
+   - Internal audit offers assurance on governance and risk management effectiveness.
+
+4. **Policies and Contingency Planning**: CIBC maintains a liquidity risk management policy to meet anticipated needs in normal and stressed conditions, ensuring sufficient unencumbered liquid assets and diversified funding sources. A detailed global contingency funding plan is in place for emergency situations.
+
+5. **Risk Measurement and Stress Testing**: CIBC uses both regulatory and internally developed metrics to measure liquidity risk. Stress testing is a key component, assessing liquidity needs under various scenarios to ensure preparedness for potential liquidity shortfalls.
+
+6. **Risk Appetite**: The liquidity risk tolerance is defined by an annual risk appetite statement approved by the Board, which includes qualitative and quantitative metrics.
+
+For further details, you can refer to the full report [here](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf) (CIBC_2025_annual_report_FY, pages 83-83).",,,,
+54a68bec798eab0e/agentic/eval_16,agentic,eval_16,Compare RBC and TD disclosures on credit risk management in their 2025 annual reports.,"### Comparison of Credit Risk Management Disclosures in 2025 Annual Reports
+
+#### Royal Bank of Canada (RBC)
+- **Overview**: RBC defines credit risk as the potential loss from an obligor's inability to meet contractual obligations. The management of credit risk is structured around a three lines of defense model, with responsibilities shared across the organization.
+- **Key Points**:
+  - **Risk Appetite**: The Board approves credit risk appetite, supported by risk limits and approval authorities.
+  - **Management Objectives**: Objectives include maintaining credit quality, managing risks in transactions, avoiding excessive concentrations, and ongoing monitoring.
+  - **Concentration Risk**: Defined as the risk from overexposure in specific sectors or products, with limits reviewed regularly.
+  - **Loan Forbearance**: Policies are in place for managing high-risk borrowers, including potential modifications to loan terms.
+  - **Credit Risk Exposure**: Detailed tables present credit risk exposures by portfolio, sector, and geography.
+
+**Source**: RBC 2025 Annual Report, pages 74-79. [Link to report](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf)
+
+#### Toronto-Dominion Bank (TD)
+- **Overview**: TD emphasizes an enterprise-wide approach to credit risk management, integrating control functions within each business while reporting to Risk Management.
+- **Key Points**:
+  - **Credit Risk Strategy**: Limits are set on credit exposure to specific industries to ensure a diversified portfolio.
+  - **Risk Management Oversight**: Risk Management develops policies and oversees credit risk, including stress testing of portfolios.
+  - **Credit Risk Models**: Used to establish borrower and facility risk ratings, with ongoing monitoring of risk parameters.
+  - **Entity Risk**: Limits are also set for exposure to specific entities, with oversight from the Risk Committee of the Board.
+  - **Mitigation Techniques**: Includes collateral management, credit derivatives, and guarantees to reduce credit risk.
+
+**Source**: TD 2025 Annual Report, pages 101-104. [Link to report](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)
+
+### Summary
+Both banks have comprehensive frameworks for managing credit risk, with RBC focusing on a structured governance model and TD emphasizing integration within business units. RBC provides detailed objectives and monitoring practices, while TD highlights its risk rating systems and stress testing methodologies.",,,,
+54a68bec798eab0e/agentic/eval_17,agentic,eval_17,Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.,"### Comparison of TD and BMO Disclosures on Residential Mortgage Credit Risk (2025 Annual Reports)
+
+#### TD Bank (Toronto-Dominion Bank)
+1. **Portfolio Management**:
+   - TD manages residential real estate secured lending, which includes mortgages and home equity lines of credit (HELOCs). The bank retains first lien on most properties, with a policy that limits combined exposure on uninsured facilities to 80% of collateral value at origination. Higher loan-to-value ratios require default insurance (TD_2025_annual_report_FY_00166).
+   
+2. **Risk Assessment**:
+   - The bank conducts regular stress tests on its real estate lending portfolio to evaluate vulnerability to economic downturns, considering factors like house prices, interest rates, and unemployment (TD_2025_annual_report_FY_00165).
+
+3. **Credit Risk Exposure**:
+   - TD employs predictive credit scoring techniques for managing retail exposures, including residential mortgages. The bank categorizes credit risk exposures into retail and non-retail portfolios, with specific models for each (TD_2025_annual_report_FY_00293).
+
+4. **Financial Metrics**:
+   - As of October 31, 2025, TD reported residential mortgages totaling CAD 315,063 million, with an allowance for loan losses of CAD 3,847 million (TD_2025_annual_report_FY_00538).
+
+#### BMO Bank (Bank of Montreal)
+1. **Portfolio Overview**:
+   - BMO's residential real estate secured lending includes mortgages and HELOCs, with a focus on stress testing these portfolios to assess potential credit losses under various adverse scenarios (BMO_2025_annual_report_FY_00159).
+
+2. **Credit Risk Management**:
+   - The bank emphasizes a diversified loan portfolio and employs conservative underwriting standards. It regularly performs stress tests on its residential mortgage and HELOC portfolios (BMO_2025_annual_report_FY_00159).
+
+3. **Financial Metrics**:
+   - BMO reported residential mortgages totaling CAD 903 million as of October 31, 2025, with an allowance for credit losses of CAD 974 million (BMO_2025_annual_report_FY_00320).
+
+### Summary
+Both banks disclose comprehensive strategies for managing residential mortgage credit risk, including stress testing and risk assessment methodologies. TD provides detailed insights into its credit risk exposure and management practices, while BMO highlights its diversified portfolio and conservative underwriting. The financial metrics indicate that TD has a significantly larger residential mortgage portfolio compared to BMO.
+
+For further details, you can access the full reports:
+- [TD Annual Report 2025](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf)
+- [BMO Annual Report 2025](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)",,,,
+54a68bec798eab0e/agentic/eval_18,agentic,eval_18,Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.,"### Comparison of Liquidity Risk Controls in BMO and CIBC's 2025 Annual Reports
+
+#### BMO (Bank of Montreal)
+- **Governance and Management**: BMO's liquidity and funding risk management is governed by policies approved by the Board of Directors. The Corporate Treasury group is responsible for ongoing management, while the Enterprise Risk and Portfolio Management (ERPM) provides oversight. The Risk Management Committee (RMC) and Asset Liability Committee (ALCO) oversee significant policies and developments.
+- **Risk Measurement**: BMO employs a Stress Net Liquidity Position (stress NLP) as a key measure of liquidity risk, assessing potential funding needs under severe stress scenarios. They monitor liquidity metrics such as the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR).
+- **Contingency Planning**: An enterprise-wide contingency plan is in place, with early warning indicators monitored regularly.
+- **Liquidity Position**: BMO maintained a strong liquidity position in 2025, with metrics exceeding internal targets and regulatory requirements. Customer deposits grew while wholesale funding decreased.
+
+**Source**: BMO 2025 Annual Report, MD&A section, pages 91-92. [Link to report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)
+
+#### CIBC (Canadian Imperial Bank of Commerce)
+- **Governance and Management**: CIBC manages liquidity risk through a three lines of defence model. The Treasurer oversees liquidity management, supported by the Liquidity and Non-Trading Market Risk group for independent oversight. The Governance and Asset Liability Committee (GALCO) governs liquidity risk management methodologies.
+- **Risk Measurement**: CIBC uses both regulatory-driven and internally developed metrics, including the Liquidity Horizon, which measures future cash flows under stress scenarios. They also conduct stress testing to assess liquidity needs.
+- **Policies**: CIBC has a detailed global contingency funding plan and maintains local liquidity practices for branches and subsidiaries. Their pledging policy sets limits for asset pledging to ensure liquidity.
+- **Liquidity Position**: CIBC's liquidity risk management aligns with their risk appetite and regulatory expectations, ensuring they can withstand liquidity stress events.
+
+**Source**: CIBC 2025 Annual Report, Liquidity Risk section, pages 83-84. [Link to report](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)
+
+### Summary
+Both banks have robust frameworks for managing liquidity risk, with clear governance structures and comprehensive measurement strategies. BMO emphasizes its strong liquidity position and specific metrics like stress NLP, while CIBC highlights its three lines of defence model and detailed contingency planning.",,,,
+54a68bec798eab0e/agentic/eval_19,agentic,eval_19,Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports.,"### Comparison of Scotiabank (BNS) and RBC Disclosures on Climate Risks in 2025 Annual Reports
+
+#### Physical Climate Risks
+
+**Scotiabank (BNS)**
+- Scotiabank identifies physical climate risks as potential impacts from climate change, including damage to properties and disruptions to operations. They emphasize the increased intensity and frequency of severe weather events and the need for compliance with evolving climate regulations. The bank has mechanisms in place for identifying and mitigating these risks, including disaster recovery planning. They also restrict lending to certain high-risk sectors, such as oil and gas in the Arctic and thermal coal mining.
+  - Source: [BNS 2025 Annual Report, Management’s Discussion and Analysis, pages 87-88](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf) (Chunk ID: BNS_2025_annual_report_FY_00163)
+
+**RBC**
+- RBC defines physical climate risks as the potential negative impacts from climate-related extremes and events, including acute and chronic risks. They integrate climate-related risk considerations into their risk management practices and conduct climate scenario analysis to inform strategic planning. RBC also assesses the impact of these risks through their Enterprise-Wide Stress Testing program.
+  - Source: [RBC 2025 Annual Report, Climate-related risk section, page 112](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (Chunk ID: RBC_2025_annual_report_FY_00189)
+
+#### Transition Climate Risks
+
+**Scotiabank (BNS)**
+- Scotiabank discusses transition risks related to the shift towards a low-carbon economy, highlighting the potential for regulatory changes and the impact on client willingness to reduce emissions. They mention the importance of governance in managing these risks and their commitment to providing significant climate-related finance by 2030.
+  - Source: [BNS 2025 Annual Report, Management’s Discussion and Analysis, pages 87-88](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf) (Chunk ID: BNS_2025_annual_report_FY_00163)
+
+**RBC**
+- RBC categorizes transition risks as those arising from the adjustment to a low-carbon economy, including regulatory changes and shifts in market sentiment. They emphasize their ongoing efforts to integrate these risks into their existing risk management frameworks and the importance of scenario analysis for strategic planning.
+  - Source: [RBC 2025 Annual Report, Climate-related risk section, page 112](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf) (Chunk ID: RBC_2025_annual_report_FY_00189)
+
+### Summary
+Both banks recognize the significance of physical and transition climate risks, with Scotiabank focusing on regulatory compliance and specific lending restrictions, while RBC emphasizes integration into risk management practices and scenario analysis. The disclosures reflect a commitment to addressing climate-related challenges, albeit with different approaches and emphases.",,,,
+54a68bec798eab0e/agentic/eval_20,agentic,eval_20,Compare how all five Canadian banks describe AI model risk or OSFI E-23 in their 2025 annual reports.,"Here is a comparison of how the five Canadian banks describe AI model risk or OSFI E-23 in their 2025 annual reports:
+
+### 1. **Royal Bank of Canada (RBC)**
+- **Description**: RBC defines model risk as the risk of adverse consequences arising from the misspecification or misuse of models throughout their lifecycle. They emphasize the importance of governance and oversight, detailing a structured model risk management lifecycle that includes validation, performance monitoring, and re-validation.
+- **Key Points**: 
+  - Models include AI and machine learning methods.
+  - Governance spans all stages of the model lifecycle.
+  - Independent validation is crucial for ensuring model efficacy.
+- **Source**: [RBC 2025 Annual Report](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf), page 106 (chunk ID: RBC_2025_annual_report_FY_00176).
+
+### 2. **Toronto-Dominion Bank (TD)**
+- **Description**: TD outlines a comprehensive Model Risk Management Framework that encompasses the entire model lifecycle, including AI models. They highlight the importance of independent validation and ongoing monitoring, with specific accountability for AI risk management residing with senior management.
+- **Key Points**: 
+  - AI risk includes potential harm from the development and use of AI models.
+  - Emphasizes a three lines of defense approach for AI risk management.
+  - Models are subject to rigorous validation processes.
+- **Source**: [TD 2025 Annual Report](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf), page 112 (chunk ID: TD_2025_annual_report_FY_00323).
+
+### 3. **Bank of Montreal (BMO)**
+- **Description**: BMO discusses model risk as arising from flawed or improperly implemented models, including those using AI. They have a structured model risk management program that includes governance, validation, and ongoing monitoring.
+- **Key Points**: 
+  - AI risk is linked to the potential for biased outputs and ethical concerns.
+  - BMO has implemented an AI risk directive to guide responsible AI use.
+  - The model risk management program is aligned with regulatory expectations.
+- **Source**: [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf), page 103 (chunk ID: BMO_2025_annual_report_FY_00210).
+
+### 4. **Bank of Nova Scotia (BNS)**
+- **Description**: BNS identifies model risk as the risk of adverse outcomes from the design and use of models, including those that leverage AI. They emphasize the importance of data quality and governance in managing these risks.
+- **Key Points**: 
+  - Rapid AI adoption introduces operational and regulatory risks.
+  - BNS is modernizing its data management processes to mitigate risks associated with AI.
+  - They have a structured framework for managing model risk in line with OSFI guidelines.
+- **Source**: [BNS 2025 Annual Report](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf), page 116 (chunk ID: BNS_2025_annual_report_FY_00229).
+
+### 5. **Canadian Imperial Bank of Commerce (CIBC)**
+- **Description**: CIBC highlights the risks associated with AI, including bias and ethical concerns. They have established an AI Framework and governance practices to manage these risks, aligning with OSFI's E-23 guidelines.
+- **Key Points**: 
+  - Emphasizes the need for transparency in AI models.
+  - CIBC's model risk management includes independent validation and ongoing monitoring.
+  - They are preparing for the implementation of OSFI's revised E-23 guidelines.
+- **Source**: [CIBC 2025 Annual Report](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf), page 65 (chunk ID: CIBC_2025_annual_report_FY_00117).
+
+### Summary
+All banks recognize the importance of managing AI model risk and have established frameworks that align with OSFI's guidelines. They emphasize governance, validation, and the need for transparency in AI applications. Each bank has tailored its approach to address specific risks associated with AI and model usage, reflecting their unique operational contexts and regulatory environments.",,,,
+54a68bec798eab0e/agentic/eval_21,agentic,eval_21,How did RBC disclosures about provision for credit losses change between 2024 and 2025?,"The disclosures regarding the provision for credit losses at RBC changed between the fiscal years 2024 and 2025 as follows:
+
+### Annual Report Comparisons:
+1. **2024 Annual Report**:
+   - **Total Provision for Credit Losses**: 
+     - The balance at the beginning of the period was **$2,326 million**.
+     - The balance at the end of the period was **$2,793 million**.
+     - Key components included:
+       - Originations: **$737 million**
+       - Write-offs: **$763 million**
+       - Recoveries: **$63 million**.
+   - **Source**: [RBC 2024 Annual Report](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf), Chunk ID: RBC_2024_annual_report_FY_00357.
+
+2. **2025 Annual Report**:
+   - **Total Provision for Credit Losses**:
+     - The balance at the beginning of the period was **$2,793 million**.
+     - The balance at the end of the period was **$3,319 million**.
+     - Key components included:
+       - Originations: **$755 million**
+       - Write-offs: **$1,237 million**
+       - Recoveries: **$74 million**.
+   - **Source**: [RBC 2025 Annual Report](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf), Chunk ID: RBC_2025_annual_report_FY_00345.
+
+### Key Changes:
+- The total provision for credit losses increased from **$2,793 million** in 2024 to **$3,319 million** in 2025.
+- There was a significant increase in write-offs from **$763 million** in 2024 to **$1,237 million** in 2025.
+- Recoveries decreased slightly from **$63 million** in 2024 to **$74 million** in 2025.
+
+### AIF Comparisons:
+1. **2024 AIF**:
+   - The report discussed the complexity of measuring expected credit losses and highlighted the importance of various risk factors.
+   - **Source**: [RBC 2024 AIF](https://www.rbc.com/investor-relations/_assets-custom/pdf/aif2024.pdf), Chunk ID: RBC_2024_AIF_FY_00024.
+
+2. **2025 AIF**:
+   - Similar discussions on the complexity of measuring expected credit losses were present, emphasizing the same risk factors.
+   - **Source**: [RBC 2025 AIF](https://www.rbc.com/investor-relations/_assets-custom/pdf/aif2025.pdf), Chunk ID: RBC_2025_AIF_FY_00023.
+
+### Conclusion:
+The provision for credit losses at RBC increased significantly from 2024 to 2025, with notable changes in write-offs and recoveries. The discussions in the AIFs remained consistent regarding the complexity of measuring expected credit losses.",,,,
+54a68bec798eab0e/agentic/eval_22,agentic,eval_22,How did TD disclosures about cybersecurity risk change between 2024 and 2025?,"The disclosures regarding cybersecurity risk for TD Bank between the fiscal years 2024 and 2025 show both continuity and some evolution in the language and focus of the reports.
+
+### Annual Report Comparisons:
+1. **2024 Annual Report**:
+   - Discusses various cyber threats including cyber-attacks, data breaches, and the risks posed by third-party service providers. It emphasizes the potential for financial and non-financial losses due to these threats and highlights the importance of investments in technology and cybersecurity infrastructure.
+   - Key excerpt: ""The Bank’s technologies, systems and networks... continue to be subject to cyber-attacks... The Bank has experienced service disruptions due to technology failure or connectivity issues triggered by a third party..."" (TD_2024_annual_report_FY, page 90).
+
+2. **2025 Annual Report**:
+   - Maintains a similar focus on cybersecurity risks but introduces a more structured approach to risk management, including specific mention of the evolving threat landscape and the need for continuous investment in cybersecurity measures.
+   - Key excerpt: ""The Bank regularly reviews external events and assesses, and may enhance, its controls and response capabilities... the adoption of certain technologies... calls for continued focus and investment to manage the Bank’s risks."" (TD_2025_annual_report_FY, page 88).
+
+### AIF Comparisons:
+1. **2024 AIF**:
+   - Identifies cybersecurity as a significant operational risk, mentioning the potential impacts of cyber threats on the Bank's operations and reputation.
+   - Key excerpt: ""Technology and cyber security risk (including cyber-attacks, data security breaches or technology failures) on the Bank’s technologies, systems and networks..."" (TD_2024_AIF_FY, page 4).
+
+2. **2025 AIF**:
+   - Continues to highlight cybersecurity risks but expands on the implications of these risks, including the potential for legal action and impacts on customer confidence.
+   - Key excerpt: ""Technology and cyber security risk... could lead to financial loss, misappropriation of confidential information... and impact customer and market confidence."" (TD_2025_AIF_FY, page 3).
+
+### Summary of Changes:
+- **Continuity**: Both years emphasize the importance of cybersecurity and the potential risks associated with it.
+- **Evolution**: The 2025 disclosures reflect a more proactive stance on risk management, highlighting the need for ongoing investment and adaptation to new threats, as well as the broader implications of cybersecurity risks on customer trust and regulatory compliance.
+
+These insights are based on the most recent filings available for TD Bank for the fiscal years 2024 and 2025. For further details, you can refer to the full reports: [2024 Annual Report](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2024/q4/2024-annual-report-en.pdf) and [2025 Annual Report](https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf).",,,,
+54a68bec798eab0e/agentic/eval_23,agentic,eval_23,How did BMO disclosures about liquidity risk change between 2024 and 2025?,"The disclosures regarding liquidity risk for BMO between the fiscal years 2024 and 2025 show some continuity in structure and content, but there are notable updates and clarifications.
+
+### AIF Disclosures:
+1. **2024 AIF**:
+   - The liquidity risk section refers to the ""Enterprise-Wide Risk Management"" section for detailed factors and risks (BMO_2024_AIF_FY, page 7). It emphasizes the importance of forward-looking statements and the inherent risks associated with them (BMO_2024_AIF_FY, page 3).
+   - It mentions that liquidity and funding risk management policies are in place, including limits on liquidity metrics and stress testing (BMO_2024_AIF_FY, page 3).
+
+2. **2025 AIF**:
+   - Similar to 2024, it directs readers to the ""Enterprise-Wide Risk Management"" section but updates the page references (BMO_2025_AIF_FY, page 7).
+   - The 2025 report continues to highlight the importance of forward-looking statements and includes additional context regarding the impact of being designated a global systemically important bank on liquidity requirements (BMO_2025_AIF_FY, page 3).
+
+### Annual Report Disclosures:
+1. **2024 Annual Report**:
+   - The report outlines the governance structure for liquidity and funding risk management, detailing the roles of various committees and the importance of maintaining a strong liquidity position (BMO_2024_annual_report_FY, page 93).
+   - It describes the Stress Net Liquidity Position (Stress NLP) as a key measure and discusses the management of liquidity metrics, which exceeded internal targets (BMO_2024_annual_report_FY, page 93).
+
+2. **2025 Annual Report**:
+   - The 2025 report reiterates the governance structure and emphasizes the integration of stress testing results into management decisions (BMO_2025_annual_report_FY, page 91).
+   - It notes changes in customer deposits and loans, indicating a decline in loans while deposits grew, which reflects a shift in liquidity dynamics (BMO_2025_annual_report_FY, page 91).
+   - The report also expands on the types of unencumbered liquid assets and their management under stress scenarios, providing more detail on the liquidity values recognized for different asset classes (BMO_2025_annual_report_FY, page 92).
+
+### Summary of Changes:
+- **Continuity**: Both years maintain a focus on governance, stress testing, and the importance of liquidity metrics.
+- **Updates**: The 2025 disclosures provide more specific context regarding regulatory impacts and changes in liquidity dynamics, such as the growth in customer deposits and the decline in loans.
+
+For further details, you can access the full reports:
+- [BMO 2024 AIF](https://www.bmo.com/ir/archive/en/bmo_AIF2024.pdf)
+- [BMO 2025 AIF](https://www.bmo.com/ir/archive/en/bmo_AIF2025.pdf)
+- [BMO 2024 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2024.pdf)
+- [BMO 2025 Annual Report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)",,,,
+54a68bec798eab0e/agentic/eval_24,agentic,eval_24,How did Scotiabank disclosures about climate risk change between 2024 and 2025?,"Scotiabank's disclosures regarding climate risk between the fiscal years 2024 and 2025 show some continuity in themes but also notable updates.
+
+### Key Changes in Climate Risk Disclosures:
+
+1. **Risk Description and Management**:
+   - **2024**: The bank highlighted the impacts of climate change, including rising costs and regulatory expectations. It mentioned the increased intensity of severe weather events and the potential for legal and reputational risks due to misleading sustainability claims. The bank also outlined its mechanisms for identifying and mitigating physical risks, including disaster recovery planning and exclusionary lending policies (e.g., to the Oil & Gas industry in the Arctic) (BNS_2024_annual_report_FY, pages 82-83; BNS_2024_annual_report_FY, pages 110-111).
+   - **2025**: The bank reiterated the importance of managing climate risks and noted the changing political environment's impact on climate-related regulations. It emphasized ongoing compliance with evolving climate regulations and maintained its public ESG policy. The bank also continued to restrict lending to high-risk sectors and reiterated its commitment to provide $350 billion in climate-related finance by 2030 (BNS_2025_annual_report_FY, pages 87-88; BNS_2025_annual_report_FY, pages 115-116).
+
+2. **Framework and Commitments**:
+   - **2024**: Scotiabank discussed its ESG Risk Management Framework and its commitment to integrating ESG considerations into decision-making processes (BNS_2024_annual_report_FY, pages 110-111).
+   - **2025**: The bank expanded on its ESG Risk Management Framework, detailing its guiding principles and commitments to address climate-related risks and opportunities. It reaffirmed its membership in the Net Zero Banking Alliance and its commitment to interim emissions reduction targets (BNS_2025_annual_report_FY, pages 116-117).
+
+### Summary of Findings:
+- Both years emphasized the importance of climate risk management and the bank's commitment to sustainability.
+- The 2025 disclosures reflect a more proactive stance in response to evolving regulatory landscapes and stakeholder expectations, particularly regarding financial commitments to climate initiatives.
+
+For further details, you can access the full reports:
+- [2024 Annual Report](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf)
+- [2025 Annual Report](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf)",,,,
+54a68bec798eab0e/agentic/eval_25,agentic,eval_25,How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?,"The disclosures regarding mortgage credit risk for CIBC between the fiscal years 2024 and 2025 show some notable changes:
+
+1. **Credit Quality of Portfolios**:
+   - In 2024, the gross residential mortgages were reported as follows:
+     - Exceptionally low: $206,683 million
+     - Very low: $67,795 million
+     - Low: $34,319 million
+     - Medium: $16,249 million
+     - High: $1,168 million
+     - Default: $724 million
+     - Total: $326,938 million (CIBC_2024_annual_report_FY_00156, 2024, Annual Report, [source](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf))
+
+   - In 2025, the gross residential mortgages were reported as:
+     - Exceptionally low: $171,983 million
+     - Very low: $85,628 million
+     - Low: $10,987 million
+     - Medium: $1,041 million
+     - High: $11 million
+     - Default: $1,097 million
+     - Total: $272,458 million (CIBC_2025_annual_report_FY_00332, 2025, Annual Report, [source](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf))
+
+   This indicates a decrease in the total gross residential mortgages from $326,938 million in 2024 to $272,458 million in 2025.
+
+2. **Use of Management Overlays**:
+   - In 2025, CIBC introduced the concept of management overlays to their expected credit loss (ECL) allowance estimates, which are adjustments made in circumstances where existing inputs and models do not capture all relevant risk factors. This was not explicitly mentioned in the 2024 disclosures (CIBC_2025_annual_report_FY_00332, 2025, Annual Report, [source](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)).
+
+3. **Regulatory and Risk Management Practices**:
+   - The 2025 report emphasizes the use of management overlays and the impact of macroeconomic conditions on credit risk assessments, which reflects a more proactive approach to managing credit risk compared to 2024 (CIBC_2025_annual_report_FY_00332, 2025, Annual Report, [source](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)).
+
+Overall, the disclosures indicate a shift towards a more nuanced approach to credit risk management in 2025, with a focus on adjusting estimates based on current economic conditions and a notable decrease in the total gross residential mortgages reported.",,,,
+54a68bec798eab0e/agentic/eval_26,agentic,eval_26,What were Bank of Atlantis credit losses in 2025?,"In 2025, Scotiabank reported the following credit losses:
+
+1. **Annual Report (Q4 2025)**:
+   - Total provision for credit losses was **$1,113 million**, an increase from **$1,030 million** in Q4 2024.
+   - Provision for credit losses on performing loans was **$71 million**, compared to a reversal of **$13 million** in the previous year.
+   - Provision for credit losses on impaired loans was **$1,042 million**, slightly down from **$1,043 million** in Q4 2024. (Source: BNS_2025_annual_report_FY, page 41)
+
+2. **Quarterly Reports**:
+   - **Q1 2025**: Provision for credit losses was **$1,180 million**. (Source: BNS_2025_quarterly_Q1, page 66)
+   - **Q2 2025**: Provision for credit losses was **$805 million**, compared to **$428 million** in Q2 2024. (Source: BNS_2025_quarterly_Q2, page 23)
+   - **Q3 2025**: Provision for credit losses was **$562 million**, compared to **$580 million** in Q3 2024. (Source: BNS_2025_quarterly_Q3, page 28)
+
+The total provision for credit losses across the quarters indicates a significant increase in credit losses, particularly in Q1 and Q2, reflecting a deteriorating macroeconomic outlook.",,,,
+54a68bec798eab0e/agentic/eval_27,agentic,eval_27,What will RBC provision for credit losses be in 2030?,"I cannot provide future projections or estimates for RBC's provision for credit losses in 2030 as I only have access to historical filings and reports. For future financial data, you may need to refer to RBC's forecasts or analyst reports.",,,,
+54a68bec798eab0e/agentic/eval_28,agentic,eval_28,Did the bank improve its risk profile?,"To assess whether Scotiabank (BNS) improved its risk profile, I compared the risk management disclosures from the most recent annual reports for fiscal years 2024 and 2025.
+
+### Key Findings:
+
+1. **Risk Management Framework**:
+   - **2024**: The report emphasized the importance of a comprehensive risk management framework, detailing processes for risk identification, assessment, and monitoring. It highlighted the need for regular reporting to senior management and the Board to ensure compliance with risk appetite and policies (BNS_2024_annual_report_FY, pages 79-80).
+   - **2025**: The framework was described as a key source of information for governance and oversight, with a focus on aligning local frameworks with the overarching Enterprise Risk Management Framework. It reiterated the principles of balancing risk and reward, understanding risks, and maintaining operational resilience (BNS_2025_annual_report_FY, pages 78-79).
+
+2. **Risk Appetite**:
+   - **2024**: The bank had a higher risk appetite for financial risks, which are quantifiable and predictable, while maintaining a low appetite for non-financial risks (BNS_2024_annual_report_FY, page 77).
+   - **2025**: This approach continued, with a clear distinction between financial and non-financial risks, and an emphasis on managing transverse risks that manifest through other recognized risk channels (BNS_2025_annual_report_FY, page 79).
+
+3. **ESG Risk Management**:
+   - **2024**: There was no specific mention of an ESG risk management framework.
+   - **2025**: The introduction of an ESG Risk Management Framework was noted, indicating a proactive approach to integrating ESG considerations into risk management processes (BNS_2025_annual_report_FY, page 116).
+
+### Conclusion:
+The comparison indicates that Scotiabank has maintained and possibly enhanced its risk management framework from 2024 to 2025, particularly with the introduction of a structured approach to ESG risks. However, without earlier filings for comparison, it is not possible to definitively state that the risk profile has improved overall. The focus on integrating ESG considerations suggests a responsiveness to evolving risk landscapes, which could be seen as an improvement in risk management practices.
+
+For further details, you can access the reports:
+- [2024 Annual Report](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2024/q4/Annual_Report_2024_English.pdf)
+- [2025 Annual Report](https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Annual_Report_2025_EN.pdf)",,,,
+54a68bec798eab0e/agentic/eval_29,agentic,eval_29,Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?,"Dans son rapport annuel 2025, la RBC décrit plusieurs risques de crédit, notamment :
+
+1. **Définition du risque de crédit** : Il s'agit du risque de perte associé à l'incapacité ou au refus d'un débiteur de respecter ses obligations contractuelles. Cela inclut le risque de défaut d'un débiteur principal et le risque de crédit de contrepartie provenant d'activités de trading et non de trading (source : RBC_2025_annual_report_FY_00117).
+
+2. **Gestion du risque de crédit** : La RBC utilise un modèle de gouvernance en trois lignes de défense pour gérer le risque de crédit, avec des limites d'exposition et des autorités d'approbation des risques établies par le conseil d'administration (source : RBC_2025_annual_report_FY_00117).
+
+3. **Limites de concentration** : Des limites de concentration sont mises en place pour éviter une surexposition dans des secteurs industriels, des pays ou des produits de crédit spécifiques, afin de réduire le risque de détérioration du crédit et de défaut (source : RBC_2025_annual_report_FY_00126).
+
+4. **Forbearance des prêts** : La RBC a des politiques pour gérer les emprunteurs en difficulté, permettant des modifications des conditions de prêt pour minimiser les pertes (source : RBC_2025_annual_report_FY_00126).
+
+5. **Risque de contrepartie** : Le risque de contrepartie est atténué par l'utilisation d'accords de financement de titres standardisés et de contreparties centrales (CCP) (source : RBC_2025_annual_report_FY_00123).
+
+6. **Risque de crédit au détail** : La RBC utilise des systèmes de notation de crédit pour évaluer le risque des emprunteurs et des transactions dans le secteur de détail, en s'appuyant sur des données internes et externes (source : RBC_2025_annual_report_FY_00123).
+
+Ces éléments montrent une approche structurée et proactive de la RBC pour gérer les risques de crédit dans ses opérations. Pour plus de détails, vous pouvez consulter le rapport complet [ici](https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf).",,,,
+54a68bec798eab0e/agentic/eval_30,agentic,eval_30,Calculate the percentage change in RBC provision for credit losses from 2024 to 2025.,"In the RBC annual reports for the fiscal years 2024 and 2025, the provision for credit losses is as follows:
+
+- **Fiscal Year 2024**: The total provision for credit losses was **$2,793 million** (RBC_2024_annual_report_FY_00356).
+- **Fiscal Year 2025**: The total provision for credit losses was **$3,319 million** (RBC_2025_annual_report_FY_00345).
+
+To calculate the percentage change:
+
+\[
+\text{Percentage Change} = \left( \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \right) \times 100
+\]
+
+Substituting the values:
+
+\[
+\text{Percentage Change} = \left( \frac{3,319 - 2,793}{2,793} \right) \times 100 \approx 18.8\%
+\]
+
+Thus, the percentage change in RBC's provision for credit losses from 2024 to 2025 is approximately **18.8%**.",,,,
+54a68bec798eab0e/basic_top_k/eval_01,basic_top_k,eval_01,What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed several aspects related to credit risks and provisions for credit losses:
+
+1. **Credit Risk Assessment**: RBC considers credit risk to be low for instruments with a low risk of default, where borrowers can fulfill their obligations even during adverse economic conditions. Instruments identified as having low credit risk include certain interest-bearing deposits, assets purchased under reverse repurchase agreements, insurance policy loans, and liquidity facilities extended to multi-seller conduits [S1].
+
+2. **Expected Credit Losses (ECL)**: The measurement of expected credit losses involves significant judgment and considers past events, current conditions, and reasonable projections of future economic conditions. RBC uses macroeconomic variables such as unemployment rates, GDP growth rates, and housing prices to model expected credit losses for different stages of credit risk [S1].
+
+3. **Provisions for Credit Losses**: The report provides detailed figures on provisions for credit losses, including transfers between stages (Stage 1, Stage 2, and Stage 3), originations, maturities, and changes in risk parameters. For example, the balance at the end of the period for wholesale credit losses was reported as $3,319 million, with significant write-offs and recoveries noted [S2].
+
+4. **Internal Risk Ratings**: RBC assigns internal risk ratings that reflect the credit quality of borrowers, which are crucial for estimating probability of default (PD) parameters. Changes in these ratings can significantly impact expected credit losses [S2].
+
+5. **Management of Credit Risk**: RBC actively manages credit exposures and limits to align with its risk appetite and to mitigate concentration risks across various sectors and products. The bank has specialized groups to manage high-risk borrowers and may enter into forbearance agreements to assist clients in financial difficulty [S5].
+
+6. **Judgment in Credit Risk Assessment**: The assessment of significant increases in credit risk is performed at least quarterly and involves evaluating changes in PD and other qualitative factors. Instruments that are 30 days past due are generally considered to have experienced a significant increase in credit risk [S4].
+
+Overall, RBC's approach to credit risk and provisions for credit losses is comprehensive, involving detailed assessments, modeling based on macroeconomic conditions, and active management of borrower relationships.",,,,
+54a68bec798eab0e/basic_top_k/eval_02,basic_top_k,eval_02,What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed the following market risk and Value-at-Risk (VaR) measures:
+
+1. **Market Risk Measures for FVTPL Positions**:
+   - **Equity**: 
+     - As at October 31, 2025: $17 million
+     - Average: $16 million
+     - High: $30 million
+     - Low: $11 million
+   - **Foreign Exchange**: 
+     - As at October 31, 2025: $5 million
+     - Average: $4 million
+     - High: $13 million
+     - Low: $2 million
+   - **Commodities**: 
+     - As at October 31, 2025: $8 million
+     - Average: $7 million
+     - High: $11 million
+     - Low: $3 million
+   - **Interest Rate**: 
+     - As at October 31, 2025: $33 million
+     - Average: $23 million
+     - High: $33 million
+     - Low: $17 million
+   - **Credit Specific**: 
+     - As at October 31, 2025: $5 million
+     - Average: $7 million
+     - High: $10 million
+     - Low: $5 million
+   - **Diversification**: 
+     - As at October 31, 2025: $(38) million
+     - Average: $(32) million
+
+2. **Value-at-Risk (VaR)**:
+   - **Trading VaR**: 
+     - As at October 31, 2025: $30 million
+     - Average: $25 million
+     - High: $35 million
+     - Low: $18 million
+   - **Total VaR**: 
+     - As at October 31, 2025: $40 million
+     - Average: $36 million
+     - High: $56 million
+     - Low: $22 million
+
+The report noted that the average Trading VaR decreased by $4 million from the previous year, primarily due to changes in the fixed income portfolio, while the average Total VaR decreased by $34 million, attributed to management actions related to capital volatility from the HSBC Canada transaction [S1]. 
+
+Additionally, RBC measures interest rate risk in the banking book (IRRBB) using two primary metrics: Net Interest Income (NII) risk and Economic Value of Equity (EVE) risk. For example, a 100 basis points increase in rates would have a negative impact on EVE of $2,648 million, while a decrease of the same magnitude would result in a positive impact of $1,932 million [S5]. 
+
+Overall, these measures reflect RBC's approach to managing market risk and the potential financial impacts of market fluctuations.",,,,
+54a68bec798eab0e/basic_top_k/eval_03,basic_top_k,eval_03,What physical and transition climate risks did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed the following physical and transition climate risks:
+
+1. **Transition Risk**: This includes risks associated with the adjustment towards a low-carbon economy, which may arise from government policies, legislation, technological advancements, and shifts in market and customer sentiment towards sustainability. Transition risks can lead to increased regulatory, compliance, or other costs, as well as higher capital requirements due to evolving sustainability-related laws and regulations [S1], [S2].
+
+2. **Physical Risk**: RBC defines physical risks as those stemming from the increasing severity and frequency of climate-related extremes (acute physical risks) and longer-term gradual shifts in climate (chronic physical risks). These risks also encompass indirect effects of climate change, such as public health implications [S1].
+
+RBC is actively integrating climate-related risk considerations into its risk management practices and is conducting climate scenario analysis to inform strategic planning and risk management strategies [S1].",,,,
+54a68bec798eab0e/basic_top_k/eval_04,basic_top_k,eval_04,What cybersecurity and operational risks did TD disclose in its 2025 annual report?,"In its 2025 annual report, TD disclosed several cybersecurity and operational risks:
+
+1. **Cybersecurity Risks**: TD highlighted the evolving threat environment related to cyber-attacks and data security breaches. The Bank acknowledged that despite regular reviews and enhancements to its controls and response capabilities, it may still experience losses or damages from such attacks. The sophistication of threat actors and the rapid changes in their tactics pose ongoing challenges. Additionally, the Bank's reliance on technologies like cloud computing, AI, and automation necessitates continuous investment to manage these risks effectively [S2].
+
+2. **Operational Risks**: The report indicated that TD's operations could be affected by various factors, including human error, natural disasters, utility disruptions, pandemics, and malicious insider actions. Such disruptions could limit the Bank's ability to deliver services and damage its reputation, potentially leading to financial losses. The Bank also noted that its investments in technology and cyber infrastructure might not be sufficient to meet regulatory expectations or avoid operational errors [S2].
+
+3. **Insider Risk**: There is a risk associated with individuals who misuse their authorized access to the Bank's systems and information. This could lead to data breaches, fraud, and operational disruptions. The report emphasized that despite investments in insider risk management, the risk of insider fraudulent activity remains [S3].
+
+4. **Data Risk**: The increased use of data analytics and automation has heightened the risks associated with data integrity, quality, and privacy. Effective controls are necessary to mitigate these risks and maintain trust with customers and regulators [S3].
+
+5. **Model Risk**: The potential for adverse consequences from decisions based on incorrect or misused models was also noted. The Bank is aware that geopolitical events could impact model performance, and while mitigants have been identified, there is no guarantee that they will adequately improve predictiveness [S3].
+
+Overall, TD's 2025 annual report reflects a comprehensive approach to identifying and managing cybersecurity and operational risks, acknowledging the complexities and challenges inherent in the current environment.",,,,
+54a68bec798eab0e/basic_top_k/eval_05,basic_top_k,eval_05,What residential mortgage credit risks did TD disclose in its 2025 annual report?,"In its 2025 annual report, TD disclosed several residential mortgage credit risks, including:
+
+1. **Risk Ratings**: Residential mortgages were categorized into different risk levels. As of October 31, 2025, the breakdown was as follows:
+   - Low Risk: $221,168 million (Stage 1), $765 million (Stage 2)
+   - Normal Risk: $70,217 million (Stage 1), $8,391 million (Stage 2)
+   - Medium Risk: $351 million (Stage 1), $9,490 million (Stage 2)
+   - High Risk: $3 million (Stage 1), $3,700 million (Stage 2)
+   - Default: $587 million (Stage 3) [S2].
+
+2. **Allowance for Loan Losses**: The total allowance for loan losses related to residential mortgages was $357 million, with specific allowances for different stages: $102 million (Stage 1), $175 million (Stage 2), and $80 million (Stage 3) [S2].
+
+3. **Loans Past Due but Not Impaired**: As of October 31, 2025, residential mortgages that were past due but not impaired totaled $536 million, with $407 million in the 31-60 days category and $129 million in the 61-89 days category [S4].
+
+4. **Impaired Loans**: The report indicated that there were impaired loans with a balance of $273 million, which did not have a related allowance for loan losses because the realizable value of the collateral exceeded the loan amount [S5].
+
+5. **Collateral**: As of October 31, 2025, the collateral held against total gross impaired loans represented 84% of total gross impaired loans, indicating a significant level of collateralization [S4].
+
+These disclosures highlight the various credit risks associated with residential mortgages, including the categorization of loans by risk, the allowances set aside for potential losses, and the status of loans that are past due but not yet impaired.",,,,
+54a68bec798eab0e/basic_top_k/eval_06,basic_top_k,eval_06,What liquidity and funding risks did TD disclose in its 2025 annual report?,"In its 2025 annual report, TD disclosed several liquidity and funding risks:
+
+1. **Liquidity Risk Management Framework**: TD employs a three lines of defence governance model for liquidity risk management. The first line of defence is Treasury, which manages liquidity risk, while the second line is Risk Management, providing independent oversight. The third line is Internal Audit, which is independent of the business activities that generate liquidity risks [S2].
+
+2. **Unencumbered Liquid Assets**: The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events. The eligibility of these liquid assets is assessed based on estimated stressed market values, trading market depth, and any operational, legal, or other impediments to their sale, rehypothecation, or pledging [S2].
+
+3. **Economic and Trade Uncertainty**: The operating environment has improved, but risks remain due to economic and trade uncertainties, as well as geopolitical and sustainability considerations. These factors could impact corporate and investor sentiment and market conditions, making it difficult to forecast results in Wholesale Banking [S5].
+
+The provided filings do not contain enough information to elaborate further on specific liquidity and funding risks beyond these points.",,,,
+54a68bec798eab0e/basic_top_k/eval_07,basic_top_k,eval_07,What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?,"In its 2025 annual report, BMO disclosed several liquidity risk controls and liquidity coverage measures:
+
+1. **Liquidity and Funding Risk Governance**: BMO's Corporate Treasury group is responsible for the ongoing identification, assessment, measurement, management, and reporting of liquidity and funding risk. This group develops and recommends the Liquidity and Funding Risk Management Framework and monitors adherence to corporate policies. The second line of defense, Enterprise Risk and Portfolio Management (ERPM), provides oversight and conducts independent risk assessments [S1].
+
+2. **Limit Structure**: BMO has established a robust limit structure to manage liquidity and funding risk. This includes limits for the Stress Net Liquidity Position (stress NLP), regulatory liquidity ratios, secured and unsecured funding appetite, and requirements for counterparty liability diversification. These limits help ensure that liquidity and funding risk is appropriately managed [S2].
+
+3. **Contingency Planning**: An enterprise-wide contingency plan is in place to facilitate effective risk management during disruptions. Early warning indicators are monitored to detect rising levels of liquidity or funding risk [S2].
+
+4. **Liquidity Metrics**: BMO reported that its liquidity metrics, including the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025 [S2].
+
+5. **Stress Testing**: The liquidity and funding risk program is integrated with enterprise-wide stress testing. Stress NLP is used as a key measure of liquidity risk, assessing potential funding needs under severe stress scenarios [S4].
+
+6. **Unencumbered Liquid Assets**: BMO maintains unencumbered liquid assets, which are high-quality, marketable assets that can be converted to cash quickly. These assets are primarily held in trading businesses and supplemental liquidity pools for contingent liquidity risk management [S4].
+
+Overall, BMO's approach to liquidity risk management emphasizes governance, robust limit structures, contingency planning, and the use of stress testing to ensure resilience in its liquidity position.",,,,
+54a68bec798eab0e/basic_top_k/eval_08,basic_top_k,eval_08,What interest-rate risk management did BMO disclose in its 2025 annual report?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_09,basic_top_k,eval_09,What operational and technology risks did BMO disclose in its 2025 annual report?,"In its 2025 annual report, BMO disclosed several operational and technology risks, including:
+
+1. **Operational Resilience**: BMO emphasizes the importance of operational resilience, which is the ability to protect and sustain core business products and services during normal operations and in times of operational stress or disruption. This resilience is supported by effective management of operational non-financial risk management (ONFRM) [S4].
+
+2. **Third-Party Risk**: The bank noted that its relationships with third parties, while beneficial for delivering innovative solutions, can introduce risks that threaten operational resilience. These risks include potential compromises of customer data and disruptions in the availability of critical products and services [S5].
+
+3. **Emerging Technologies**: BMO is investing in new technologies, including artificial intelligence, to meet evolving customer expectations. However, the adoption of these technologies may introduce complex regulatory, strategic, and reputational risks [S5].
+
+4. **Environmental and Social Risks**: The bank is exposed to risks related to environmental factors, such as extreme weather events that could disrupt operations and impact customers. Additionally, there are risks associated with borrowers facing financial losses due to climate-related changes [S5].
+
+5. **Legal and Regulatory Compliance Risks**: BMO faces risks from potential non-compliance with legal and regulatory requirements, which could lead to financial losses, regulatory sanctions, and damage to reputation [S3].
+
+These disclosures highlight BMO's proactive approach to identifying and managing various operational and technology-related risks as part of its overall risk management framework.",,,,
+54a68bec798eab0e/basic_top_k/eval_10,basic_top_k,eval_10,What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_11,basic_top_k,eval_11,What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?,"In its 2025 annual report, Scotiabank disclosed the following information regarding credit risk and loan-loss provisions:
+
+1. **Total Allowance for Credit Losses**: As of October 31, 2025, the total allowance for credit losses was $7,654 million, an increase from $6,736 million in the previous year. The allowance for credit losses on loans specifically was $7,463 million, which represented an increase of $927 million from October 31, 2024 [S2].
+
+2. **Allowance for Credit Losses by Business Line**:
+   - Canadian Banking: $3,104 million
+   - International Banking: $4,083 million
+   - Global Wealth Management: $52 million
+   - Global Banking and Markets: $223 million
+   - Other: $1 million [S2].
+
+3. **Provisions for Credit Losses**: The provision for credit losses on impaired loans was reported at $4,133 million, compared to $3,930 million in the previous year. The provision for credit losses ratio on impaired loans was 54 basis points, an increase from 52 basis points [S3].
+
+4. **Breakdown of Provisions**:
+   - Canadian Banking: Total provision of $2,293 million (Retail: $1,710 million; Commercial: $583 million).
+   - International Banking: Total provision of $2,308 million (Retail: $1,938 million; Commercial: $370 million).
+   - Global Wealth Management: $14 million.
+   - Global Banking and Markets: $97 million [S3].
+
+5. **Allowance for Credit Losses on Impaired Loans**: This allowance increased by $287 million to $2,341 million from $2,054 million the previous year, primarily due to higher provisions in Canadian and International Banking [S2].
+
+Overall, Scotiabank's disclosures indicate a significant increase in both the total allowance for credit losses and provisions for credit losses, reflecting a response to credit quality migration and a deteriorating macroeconomic outlook.",,,,
+54a68bec798eab0e/basic_top_k/eval_12,basic_top_k,eval_12,What market risk management did Scotiabank disclose in its 2025 annual report?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_13,basic_top_k,eval_13,What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?,"In its 2025 annual report, CIBC disclosed several housing and mortgage credit risks, primarily related to the use of management overlays and the credit quality of its residential mortgage portfolio.
+
+1. **Management Overlays**: CIBC employs management overlays to adjust its expected credit loss (ECL) allowance estimates in situations where existing inputs and assumptions may not fully capture relevant risk factors. This includes uncertainties arising from macroeconomic or geopolitical events, changes in parameters, and internal risk rating migrations. The bank acknowledges that actual credit losses could differ significantly from its estimates due to these overlays, indicating a recognition of potential risks in the current environment [S1].
+
+2. **Credit Quality of Residential Mortgages**: As of October 31, 2025, CIBC reported a gross carrying amount of residential mortgages totaling $287.033 billion, with a breakdown across various risk levels. The bank categorized its residential mortgages into different stages based on credit risk, with a notable amount in Stage 1 (low risk) and Stage 2 (moderate risk). The ECL allowance for residential mortgages was $574 million, reflecting the bank's assessment of potential credit losses [S1].
+
+3. **Real Estate Secured Lending**: CIBC highlighted that its real estate secured personal lending, which includes residential mortgages and home equity lines of credit (HELOC), is considered lower risk compared to other retail portfolios. This is due to the first charge on most properties and the adherence to lending criteria that limit loans to a maximum of 80% of the collateral value, unless insured. However, risks remain, particularly if mortgage insurers deny claims or become insolvent [S2].
+
+4. **Regulatory Compliance**: The bank's practices are also influenced by regulatory guidelines, such as the Bank Act (Canada) and OSFI's Guideline B-20, which govern residential mortgage underwriting practices. These regulations aim to mitigate risks associated with high loan-to-value (LTV) ratios and ensure that mortgage insurers are adequately capitalized [S2].
+
+Overall, CIBC's disclosures indicate a proactive approach to managing housing and mortgage credit risks, while also acknowledging the uncertainties and potential for losses in the current economic climate.",,,,
+54a68bec798eab0e/basic_top_k/eval_14,basic_top_k,eval_14,What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?,"In its 2025 annual report, CIBC disclosed several cybersecurity and technology risks, including:
+
+1. **Information Security Risk (including Cyber Security)**: CIBC highlighted the risk to the confidentiality, integrity, and availability of information it owns and that which is entrusted to it. This risk includes potential damage to CIBC's business and its customers if information is lost, disclosed, accessed, modified, or destroyed without authorization. The report notes that cyber threats are increasing in frequency and sophistication, which raises the potential for financial loss, reputational harm, regulatory exposure, and business interruption. Specific threats mentioned include data breaches, malware, ransomware, unauthorized access, social engineering, fraud, and denial-of-service attacks. CIBC actively manages these risks through strategic reviews and enterprise-wide security programs aimed at prevention, detection, response, and recovery [S1], [S3].
+
+2. **Technology Risk**: CIBC described technology risk as the potential for financial losses, operational disruptions, or damage to its reputation due to compromised availability, stability, resilience, capacity, performance, currency, or integrity of technology. The bank is evolving its technology services to improve client experience while managing the inherent risks associated with a large enterprise technology environment [S1], [S3].
+
+3. **Third-Party Risk**: The report also addressed risks arising from third-party relationships, which are increasingly important to CIBC's business model. These relationships can introduce risks of failure or disruption due to breakdowns in processes or technology, or external events affecting third parties. CIBC has established a Third Party Risk Management program to identify and manage these risks throughout the lifecycle of business arrangements [S1], [S4].
+
+Overall, CIBC's disclosures indicate a comprehensive approach to managing cybersecurity and technology risks, emphasizing the importance of evolving practices and maintaining robust controls in a rapidly changing environment.",,,,
+54a68bec798eab0e/basic_top_k/eval_15,basic_top_k,eval_15,What liquidity risk management did CIBC disclose in its 2025 annual report?,"In its 2025 annual report, CIBC disclosed several key aspects of its liquidity risk management:
+
+1. **Definition and Sources of Liquidity Risk**: CIBC defines liquidity risk as the risk of having insufficient cash or its equivalent to meet financial obligations in a timely and cost-effective manner. Common sources include unanticipated withdrawals of deposits and the inability to replace maturing debt [S1].
+
+2. **Management Approach**: CIBC's liquidity risk management approach supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The management strategies are regularly reviewed to adapt to changes in the liquidity environment [S1].
+
+3. **Governance Structure**: Liquidity risk is managed using a three lines of defence model:
+   - The Treasurer manages the measurement and reporting of liquidity risk as the first line of defence.
+   - The Liquidity and Non-Trading Market Risk group provides independent oversight as the second line of defence.
+   - Internal audit serves as the third line of defence, ensuring the effectiveness of governance practices and risk management processes [S1].
+
+4. **Policies and Contingency Planning**: CIBC maintains a liquidity risk management policy that ensures sufficient unencumbered liquid assets and diversified funding sources. It also has a detailed global contingency funding plan to address liquidity shortfalls in emergencies [S2].
+
+5. **Risk Measurement and Stress Testing**: CIBC uses both regulatory-driven and internally developed metrics to measure liquidity risk exposure. This includes the Liquidity Horizon, which assesses future cash flows under stress scenarios. Stress testing is a key component, modeling various scenarios to evaluate liquidity needs [S2].
+
+6. **Risk Appetite and Reporting**: The liquidity risk tolerance is defined by an annual risk appetite statement approved by the Board. CIBC regularly monitors its liquidity position and reports on metrics such as the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR) [S2][S3].
+
+7. **Funding Strategy**: CIBC funds its operations primarily through client-sourced deposits and a variety of wholesale funding sources. The bank continuously evaluates opportunities to diversify its funding products and investor segments [S3].
+
+Overall, CIBC's liquidity risk management framework is designed to ensure that it can meet its obligations while maintaining compliance with regulatory requirements and aligning with its strategic goals.",,,,
+54a68bec798eab0e/basic_top_k/eval_16,basic_top_k,eval_16,Compare RBC and TD disclosures on credit risk management in their 2025 annual reports.,"The provided excerpts from the 2025 annual reports of Royal Bank of Canada (RBC) and Toronto-Dominion Bank (TD) offer insights into their credit risk management practices.
+
+### RBC's Credit Risk Management
+RBC defines credit risk as the potential loss associated with an obligor's inability or unwillingness to fulfill contractual obligations. The management of credit risk is structured around a three lines of defense governance model, with responsibilities shared across the organization. Key elements of RBC's credit risk management include:
+
+- Establishing a Board-approved credit risk appetite and risk limits.
+- Empowering the Chief Risk Officer (CRO) to delegate credit risk approval authorities.
+- Setting objectives to ensure credit quality is maintained, managing risks in transactions and portfolios, avoiding excessive concentrations of correlated credit risks, and applying consistent credit risk exposure measurements.
+- Utilizing credit risk rating systems and ongoing monitoring to detect and prevent inappropriate credit risks.
+- Employing credit risk mitigation techniques such as hedging and insurance [S3].
+
+### TD's Credit Risk Management
+TD's approach to credit risk management is integrated into its overall strategic risk management framework. The CEO, supported by the Senior Executive Team (SET) and the Enterprise Risk Management Committee (ERMC), oversees the management of strategic risk, which includes credit risk. Key aspects of TD's credit risk management include:
+
+- Established policies and procedures for assessing credit performance and managing retail credit exposures.
+- Ongoing reviews by Retail Risk Management to evaluate the effectiveness of credit decisions and identify emerging issues.
+- Compliance with the Basel Framework to ensure capital requirements adequately capture risks [S5].
+
+### Comparison
+1. **Governance Structure**: Both banks utilize a governance model for credit risk management, but RBC emphasizes a three lines of defense model, while TD integrates credit risk management within its broader strategic risk framework led by the CEO and SET.
+
+2. **Risk Appetite and Limits**: RBC explicitly mentions the establishment of a Board-approved credit risk appetite and risk limits, whereas TD focuses on policies and procedures for assessing credit performance without detailing a formal risk appetite framework.
+
+3. **Monitoring and Review**: RBC highlights ongoing credit risk monitoring and the use of credit risk rating systems, while TD emphasizes the role of Retail Risk Management in reviewing credit decisions and tracking policy exceptions.
+
+4. **Mitigation Techniques**: RBC discusses various credit risk mitigation techniques, including hedging and insurance, while TD's focus is more on the governance and oversight of credit risk models and decision strategies.
+
+In summary, both banks have structured approaches to credit risk management, but they differ in their governance frameworks, emphasis on risk appetite, and specific monitoring practices. The provided filings do not contain enough information to make a comprehensive comparison of their credit risk management effectiveness or outcomes.",,,,
+54a68bec798eab0e/basic_top_k/eval_17,basic_top_k,eval_17,Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.,"The provided excerpts from the 2025 annual reports of Toronto-Dominion Bank (TD) and Bank of Montreal (BMO) offer insights into their disclosures regarding residential mortgage credit risk.
+
+### TD Bank Disclosures
+1. **Loan Composition and Allowance for Losses**: As of October 31, 2025, TD reported residential mortgages totaling $315,063 million, with an allowance for loan losses of $3,847 million across all loans. The total loans amounted to $961,989 million, with a total allowance for loan losses of $8,689 million [S1].
+
+2. **Credit Quality Management**: TD employs predictive credit scoring techniques for managing retail exposures, including residential mortgages. They utilize a Borrower Risk Rating (BRR) system that reflects the probability of default (PD) based on proprietary models and expert judgment. The bank updates risk parameter estimates quarterly and assesses the predictive power of their models against actual performance [S3][S4].
+
+3. **Risk Mitigation Techniques**: TD uses automated valuation models (AVMs) and appraisals to support property values when adjudicating loans secured by residential properties. They have specific guidelines for using AVMs and periodically validate them through third-party appraisals [S3].
+
+4. **Risk Parameters**: The bank's approach to estimating PD and Loss Given Default (LGD) incorporates economic indicators and is fully automated, ensuring that manual overrides do not occur. This systematic approach aims to maintain accuracy in risk assessments [S4].
+
+### BMO Disclosures
+1. **Market Conditions and Risks**: BMO highlights challenges in the Canadian housing market, including high household debt and potential increases in credit losses due to economic conditions such as rising unemployment. They stress test customers' ability to service mortgage debt at higher interest rates, which helps mitigate risks in their mortgage portfolio [S6].
+
+2. **Underwriting Practices**: BMO emphasizes prudent underwriting practices and low loan-to-value ratios as key factors in managing credit risk. They note that even in adverse economic conditions, their portfolio is expected to withstand significant housing price declines due to insurance coverage and equity levels held by borrowers [S6].
+
+3. **Risk Management Framework**: BMO's enterprise-wide risk management framework integrates various risks, including credit risk. They monitor off-balance sheet credit instruments to avoid undue concentrations in specific regions or industries, indicating a proactive approach to managing credit risk [S8].
+
+### Comparison
+- **Risk Assessment and Management**: Both banks utilize sophisticated risk assessment techniques, but TD focuses on automated models and a structured BRR system, while BMO emphasizes stress testing and prudent underwriting practices.
+- **Market Conditions**: BMO provides a broader context regarding external economic factors affecting credit risk, such as household debt and unemployment, which are not explicitly mentioned in TD's disclosures.
+- **Mitigation Strategies**: TD's use of AVMs and appraisals for property valuation contrasts with BMO's focus on low loan-to-value ratios and insurance coverage as risk mitigants.
+
+In summary, while both banks address residential mortgage credit risk comprehensively, their approaches and the emphasis on different aspects of risk management reflect their unique strategies and market conditions.",,,,
+54a68bec798eab0e/basic_top_k/eval_18,basic_top_k,eval_18,Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.,"In comparing the liquidity risk controls disclosed by Bank of Montreal (BMO) and Canadian Imperial Bank of Commerce (CIBC) in their 2025 annual reports, several key differences and similarities can be noted.
+
+**BMO's Liquidity Risk Controls:**
+1. **Definition and Governance**: BMO defines liquidity and funding risk as the potential for financial loss if unable to meet financial commitments in a timely manner. The governance structure includes the Corporate Treasury group as the first line of defense, responsible for ongoing identification, assessment, measurement, management, and reporting of liquidity risk. The second line of defense is provided by Enterprise Risk and Portfolio Management (ERPM), which conducts independent risk assessments and oversight [S3].
+
+2. **Management Framework**: BMO has established a Liquidity and Funding Risk Management Framework, which includes a Risk Appetite Statement and limits. Senior management oversight is provided by the Risk Management Committee (RMC) and the Asset Liability Committee (ALCO), which review significant policies and issues related to liquidity and funding [S3].
+
+3. **Stress Testing**: BMO incorporates stress testing into its liquidity risk management, although specific details on the scenarios or methodologies used are not provided in the excerpts [S3].
+
+**CIBC's Liquidity Risk Controls:**
+1. **Definition and Governance**: CIBC similarly defines liquidity risk as the risk of insufficient cash to meet obligations. The governance structure follows a three lines of defense model, with the Treasurer managing liquidity risk as the first line, the Liquidity and Non-Trading Market Risk group providing independent oversight as the second line, and internal audit serving as the third line [S5], [S6].
+
+2. **Management Framework**: CIBC's liquidity risk management policy aims to meet anticipated liquidity needs in both normal and stressed conditions. It emphasizes maintaining sufficient unencumbered liquid assets and diversified funding sources. CIBC also has a detailed global contingency funding plan to address liquidity shortfalls [S6].
+
+3. **Stress Testing**: CIBC places significant emphasis on stress testing, using both name-specific and market-wide scenarios to assess liquidity needs under various conditions. This process informs their liquidity assumptions and contingency funding plans [S6].
+
+**Comparison Summary:**
+- Both banks recognize liquidity risk as a critical aspect of their operations and have established governance frameworks to manage it effectively.
+- BMO's governance involves specific committees like the RMC and ALCO, while CIBC utilizes a three lines of defense model with a focus on the Treasurer's role.
+- CIBC appears to provide more detailed information regarding its stress testing methodologies and contingency plans compared to BMO, which lacks specific details in the provided excerpts.
+- Both banks assert that their liquidity risk management practices align with regulatory expectations and their respective risk appetites.
+
+Overall, while both BMO and CIBC have robust frameworks for managing liquidity risk, CIBC's disclosures provide a more comprehensive view of its stress testing and contingency planning processes.",,,,
+54a68bec798eab0e/basic_top_k/eval_19,basic_top_k,eval_19,Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports.,"In comparing Scotiabank and RBC's disclosures on physical and transition climate risks in their 2025 annual reports, several key points emerge:
+
+**Scotiabank (BNS)**:
+1. **Physical Risks**: Scotiabank acknowledges the rising costs associated with climate change and the increased frequency of severe weather events, which pose physical risks such as property damage and operational disruptions that could negatively impact profitability. The bank has mechanisms in place to identify, mitigate, and assess potential losses from these physical risks, and emphasizes disaster recovery planning to ensure uninterrupted operations during localized disasters and weather-related events [S1].
+   
+2. **Transition Risks**: The bank highlights the regulatory landscape, noting that evolving climate regulations and stakeholder expectations necessitate strong governance in managing climate risks. Scotiabank also mentions the potential for reduced support for climate-related regulations in the changing political environment, which could create uncertainty for clients regarding their ability to reduce emissions [S1].
+
+3. **Governance and Compliance**: Scotiabank maintains compliance with evolving climate regulations and has a public ESG policy that restricts lending to certain high-risk sectors, such as oil and gas in the Arctic and thermal coal mining [S1].
+
+**Royal Bank of Canada (RBC)**:
+1. **Physical and Transition Risks**: RBC discusses the evolving nature of sustainability-related laws and regulations, which could lead to increased compliance costs and capital requirements. The bank is actively monitoring these developments, particularly in Canada, where OSFI's Guideline B-15 on Climate Risk Management sets expectations for managing and disclosing climate-related risks [S5].
+
+2. **Regulatory Environment**: RBC emphasizes the complexity of the regulatory landscape across different jurisdictions, including the U.S. and Europe, where scrutiny of financial institutions regarding environmental and social matters is increasing. The bank is preparing for upcoming disclosure obligations under the European Union’s Corporate Sustainability Reporting Directive (CSRD) [S5].
+
+3. **Commitment to Sustainability**: RBC outlines its commitment to transitioning to a low-carbon economy, including increased lending to renewable energy sectors and investments in climate solutions. The bank has set specific goals for tripling its lending to renewable energy by 2030 and allocating $1 billion to climate solutions by the same year [S8].
+
+In summary, both banks recognize the importance of managing physical and transition climate risks, but they approach these challenges with different emphases. Scotiabank focuses on the operational impacts of climate change and compliance with regulations, while RBC highlights the evolving regulatory landscape and its proactive commitments to sustainability and renewable energy financing.",,,,
+54a68bec798eab0e/basic_top_k/eval_20,basic_top_k,eval_20,Compare how all five Canadian banks describe AI model risk or OSFI E-23 in their 2025 annual reports.,"The provided excerpts from the 2025 annual reports of the five Canadian banks do not contain sufficient information to allow for a comprehensive comparison of how each bank describes AI model risk or OSFI E-23. Here is what is available:
+
+1. **Royal Bank of Canada (RBC)**: The excerpt does not mention AI model risk or OSFI E-23 at all, focusing instead on various product categories and market share information [S1].
+
+2. **Toronto-Dominion Bank (TD)**: The excerpt discusses the bank's risk management processes, including stress testing and monitoring of risks, but does not specifically address AI model risk or OSFI E-23 [S2].
+
+3. **Bank of Montreal (BMO)**: The excerpt focuses on governance and risk management frameworks but does not provide any details regarding AI model risk or OSFI E-23 [S3].
+
+4. **Bank of Nova Scotia (BNS)**: The excerpt mentions various types of risks, including operational and strategic risks, but does not specifically address AI model risk or OSFI E-23 [S4].
+
+5. **Canadian Imperial Bank of Commerce (CIBC)**: This bank explicitly discusses AI model risk, noting the potential benefits and risks associated with AI technologies. CIBC mentions the publication of OSFI's Guideline E-23 on Model Risk Management, which will include AI and Machine Learning methodologies, and emphasizes their commitment to responsible use and risk mitigation in this area [S5].
+
+In summary, only CIBC provides specific information regarding AI model risk and OSFI E-23, while the other banks do not address these topics in the provided excerpts.",,,,
+54a68bec798eab0e/basic_top_k/eval_21,basic_top_k,eval_21,How did RBC disclosures about provision for credit losses change between 2024 and 2025?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_22,basic_top_k,eval_22,How did TD disclosures about cybersecurity risk change between 2024 and 2025?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_23,basic_top_k,eval_23,How did BMO disclosures about liquidity risk change between 2024 and 2025?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_24,basic_top_k,eval_24,How did Scotiabank disclosures about climate risk change between 2024 and 2025?,The provided filings do not contain enough information to answer how Scotiabank disclosures about climate risk changed between 2024 and 2025.,,,,
+54a68bec798eab0e/basic_top_k/eval_25,basic_top_k,eval_25,How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?,"The provided filings do not contain enough information to answer how CIBC disclosures about mortgage credit risk changed between 2024 and 2025. While both years include discussions on management overlays and expected credit losses (ECL), specific changes in disclosures or risk assessments between the two years are not detailed in the excerpts.",,,,
+54a68bec798eab0e/basic_top_k/eval_26,basic_top_k,eval_26,What were Bank of Atlantis credit losses in 2025?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_27,basic_top_k,eval_27,What will RBC provision for credit losses be in 2030?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/basic_top_k/eval_28,basic_top_k,eval_28,Did the bank improve its risk profile?,"The provided filings indicate that the Toronto-Dominion Bank (TD) has made updates to its risk management framework in 2025, which may suggest an improvement in its risk profile. Specifically, the bank elevated Financial Crime Risk to a stand-alone Major Risk Category and divided Operational Risk into two distinct categories: one focusing on Data, Technology, and Cybersecurity, and the other excluding those elements. Additionally, a new Executive Committee, the Remediation Subcommittee, was established to oversee enforcement commitments and progress on required remediations [S1], [S2].
+
+These changes reflect a proactive approach to managing risks and adapting to emerging threats, which could be interpreted as an improvement in the bank's risk profile. However, the filings do not provide explicit metrics or comparisons to previous periods that would definitively confirm an overall improvement in the risk profile. Therefore, while there are indications of enhanced risk management practices, the evidence is not sufficient to conclusively state that the bank's risk profile has improved.",,,,
+54a68bec798eab0e/basic_top_k/eval_29,basic_top_k,eval_29,Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?,"Dans son rapport annuel 2025, la RBC décrit plusieurs risques de crédit, notamment :
+
+1. **Concentration de crédit** : La RBC établit des limites de concentration de crédit pour éviter une surexposition dans des secteurs industriels, des pays ou des produits de crédit spécifiques. Cela vise à réduire le risque de détérioration du crédit et de défaut, qui peut être corrélé dans ces cas [S1].
+
+2. **Gestion des relations avec les emprunteurs** : La banque met en œuvre des politiques de tolérance pour les emprunteurs en difficulté financière, ce qui peut inclure des modifications des termes de leurs prêts pour minimiser les pertes. Cela implique des accords de tolérance où la banque peut renoncer à faire valoir ses droits sur des garanties en échange de concessions de la part de l'emprunteur [S1].
+
+3. **Exposition au risque de crédit** : La RBC définit le risque de crédit comme le risque de perte associé à l'incapacité ou au refus d'un débiteur de respecter ses obligations contractuelles. Cela inclut le risque de contrepartie provenant d'activités de trading et non de trading [S2].
+
+4. **Surveillance et administration continue** : La banque souligne l'importance de la surveillance continue et de l'administration des risques de crédit, ainsi que l'utilisation de systèmes et de contrôles efficaces pour détecter et prévenir les risques de crédit inappropriés [S2].
+
+5. **Provisions pour prêts dépréciés** : La RBC a observé une augmentation des provisions pour prêts dépréciés, en particulier dans certains secteurs de services et de produits de financement, ce qui reflète une détérioration de la qualité du crédit dans ces domaines [S5].
+
+Ces éléments montrent que la RBC prend des mesures proactives pour gérer et atténuer les risques de crédit dans son portefeuille.",,,,
+54a68bec798eab0e/basic_top_k/eval_30,basic_top_k,eval_30,Calculate the percentage change in RBC provision for credit losses from 2024 to 2025.,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/mmr_structured/eval_01,mmr_structured,eval_01,What credit risks and provisions for credit losses did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed that credit risk is considered low for certain instruments, such as interest-bearing deposits with banks and liquidity facilities extended to multi-seller conduits, indicating a low risk of default and the borrowers' ability to meet obligations even during adverse economic conditions [S1]. The bank employs a forward-looking approach to measure expected credit losses (ECL), which includes assessing macroeconomic variables like unemployment rates and GDP growth to estimate credit loss allowances for different stages of credit risk [S1]. 
+
+RBC's definition of default aligns with its internal credit risk management, where default is defined as being more than 90 days past due on any material obligation or when the borrower is unlikely to fulfill payments without recourse [S1]. 
+
+The report also highlights the gross impaired loans (GIL) for the year ended October 31, 2025, which totaled $5,867 million, a decrease from $8,682 million in 2024. This indicates a reduction in impaired loans across various segments, including personal banking and commercial banking [S5]. 
+
+Overall, RBC's approach to credit risk management involves significant judgment and the use of multiple macroeconomic scenarios to estimate ECL, reflecting a comprehensive strategy to mitigate credit risks [S1].",,,,
+54a68bec798eab0e/mmr_structured/eval_02,mmr_structured,eval_02,What market risk and Value-at-Risk measures did RBC disclose in its 2025 annual report?,"In its 2025 annual report, RBC disclosed the following market risk and Value-at-Risk (VaR) measures:
+
+1. **Market Risk Measures for FVTPL Positions** (as of October 31, 2025):
+   - **Equity:** High of $30 million, Low of $11 million, Average of $16 million.
+   - **Foreign Exchange:** High of $13 million, Low of $2 million, Average of $4 million.
+   - **Commodities:** High of $11 million, Low of $3 million, Average of $7 million.
+   - **Interest Rate:** High of $33 million, Low of $17 million, Average of $23 million.
+   - **Credit Specific:** High of $10 million, Low of $5 million, Average of $7 million.
+   - **Diversification:** Average of $(32) million (not meaningful).
+
+2. **Trading VaR:**
+   - As of October 31, 2025, the Trading VaR was $30 million, with an average of $25 million, a high of $35 million, and a low of $18 million. This represents a decrease of $4 million from the previous year, primarily due to changes in the fixed income portfolio.
+
+3. **Total VaR:**
+   - The Total VaR was $40 million, with an average of $36 million, a high of $56 million, and a low of $22 million. This reflects a significant decrease of $34 million from the previous year, attributed to the management of capital volatility related to the HSBC Canada transaction.
+
+RBC incurred no net trading losses in 2025, and the average daily trading revenue was $21 million, with the largest reported trading revenue being $50 million for the year ended October 31, 2025 [S1].",,,,
+54a68bec798eab0e/mmr_structured/eval_03,mmr_structured,eval_03,What physical and transition climate risks did RBC disclose in its 2025 annual report?,"RBC disclosed that climate-related risk is categorized into transition risk and physical risk. Transition risk involves the potential negative impacts related to the adjustment towards a low-carbon economy, which can arise from government policies, technological advancements, and changes in market sentiment. Physical risk includes risks from climate-related extremes and events (acute physical risks), as well as longer-term gradual shifts in climate (chronic physical risks) and indirect effects such as public health implications [S1].",,,,
+54a68bec798eab0e/mmr_structured/eval_04,mmr_structured,eval_04,What cybersecurity and operational risks did TD disclose in its 2025 annual report?,"In its 2025 annual report, TD disclosed several cybersecurity and operational risks. The bank highlighted that it regularly reviews external events and assesses its controls and response capabilities to mitigate risks of cyber-attacks or data security breaches. However, it acknowledged that these measures may not fully mitigate all risks, and the bank could still experience financial and non-financial losses due to such attacks or breaches. The report emphasized that the tactics used by threat actors are constantly evolving, making it challenging to anticipate and implement effective measures against all cyber and technology-related risks. Additionally, the bank's operations could be impacted by failures or disruptions due to various factors, including human error, natural disasters, and cyber-attacks, which could limit its ability to deliver products and services and damage its reputation, potentially leading to financial loss. The report also noted concerns from cyber insurance providers regarding systemic cyber risk, which could affect the bank's ability to obtain adequate cyber insurance coverage. Finally, TD expressed that its investments in technology and cyber infrastructure might be inadequate to meet regulatory expectations and avoid operational errors or business disruptions [S3].",,,,
+54a68bec798eab0e/mmr_structured/eval_05,mmr_structured,eval_05,What residential mortgage credit risks did TD disclose in its 2025 annual report?,"In its 2025 annual report, TD disclosed several residential mortgage credit risks: 1. The bank manages residential mortgage exposures using predictive credit scoring techniques and categorizes them into different risk levels based on probability of default (PD) ranges, with a focus on downturn loss given default (LGD) reflecting potential impacts from severe housing downturns [S5]. 2. As of October 31, 2025, TD reported that residential mortgages past due but not impaired amounted to $536 million, indicating potential credit risk exposure [S4]. 3. The bank retains first lien on most properties securing residential mortgages, but there is a small portion with second liens, which could increase risk if the primary mortgage defaults [S3]. 4. TD's credit policies limit the combined exposure of uninsured facilities on a property to 80% of its collateral value at origination, but higher loan-to-value ratios are allowed with default insurance, which mitigates some risk [S3]. 5. The bank sold US$8.6 billion of U.S. residential mortgage loans in March 2025, resulting in a pre-tax loss, indicating potential restructuring risks in its mortgage portfolio [S4].",,,,
+54a68bec798eab0e/mmr_structured/eval_06,mmr_structured,eval_06,What liquidity and funding risks did TD disclose in its 2025 annual report?,"In its 2025 annual report, TD disclosed several liquidity and funding risks. The Bank's unencumbered liquid assets are intended to address potential funding needs arising from stress events, with eligibility for these assets considering stressed market values and operational impediments to their sale or pledging [S3]. Additionally, TD employs a three lines of defence governance model for liquidity risk management, where Treasury manages liquidity risk, supported by independent oversight from Risk Management and Internal Audit [S3]. Furthermore, the report indicates that TD's funded exposure through liquidity facilities for ABCP funding increased significantly from $15,419 million in 2024 to $38,464 million in 2025, reflecting a substantial rise in the Bank's exposure to liquidity risks associated with these conduits [S4].",,,,
+54a68bec798eab0e/mmr_structured/eval_07,mmr_structured,eval_07,What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?,"BMO disclosed several liquidity risk controls and liquidity coverage measures in its 2025 annual report. The bank's liquidity and funding risk management program is defined and authorized in alignment with corporate policies approved by the Board of Directors. Key management principles, liquidity and funding metrics, and related limits are established to manage liquidity and funding risk across the enterprise. BMO maintains a robust limit structure that defines its risk appetite for key measures such as Stress Net Liquidity Position (stress NLP) and regulatory liquidity ratios. An enterprise-wide contingency plan is in place to manage risks during disruptions, with early warning indicators monitored regularly to detect rising liquidity or funding risks [S4]. 
+
+BMO's Liquidity Coverage Ratio (LCR) is calculated daily and measures the ratio of high-quality liquid assets (HQLA) to total net stressed cash outflows over the next 30 days. As of October 31, 2025, BMO's average daily LCR was 132%, which is above the regulatory minimum of 100%, indicating a surplus of $60.7 billion. This ratio remained unchanged from the previous fiscal year, reflecting a decrease in net cash outflows that offset lower HQLA [S2]. 
+
+Overall, BMO's liquidity metrics, including the LCR and Net Stable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025, demonstrating a strong liquidity position [S4].",,,,
+54a68bec798eab0e/mmr_structured/eval_08,mmr_structured,eval_08,What interest-rate risk management did BMO disclose in its 2025 annual report?,"BMO disclosed that its structural earnings sensitivity quantifies the potential impact of interest rate changes on structural balance sheet pre-tax net income over the next 12 months. The sensitivity to falling interest rates increased relative to October 31, 2024, primarily due to lower modelled prepayment penalty fees collected on certain prepayable instruments. During 2025, both economic value sensitivity and earnings sensitivity remained within the limits established by the Board of Directors. The report also included specific figures for economic value sensitivity and earnings sensitivity under different interest rate scenarios, indicating potential losses and gains associated with 100 basis point increases and decreases in interest rates. For example, a 100 basis point increase in rates would result in a total economic value sensitivity loss of 1,736 million CAD, while a decrease would yield a gain of 1,063 million CAD. The report also detailed the net loans and acceptances by interest rate sensitivity, showing the amounts that will reprice or repay within specified time frames, which is crucial for understanding interest rate risk management strategies employed by BMO.",,,,
+54a68bec798eab0e/mmr_structured/eval_09,mmr_structured,eval_09,What operational and technology risks did BMO disclose in its 2025 annual report?,"BMO disclosed several operational and technology risks in its 2025 annual report, including: 1. **Cyber and Information Security Risk**: BMO faces risks due to its reliance on internet and cloud technologies, which makes it vulnerable to cyber attacks. These attacks could compromise the confidentiality, integrity, or availability of its systems and data, potentially leading to identity theft, fraud, business losses, and reputational harm. The bank is investing in its Financial Crimes Unit and security infrastructure to address these threats [S2]. 2. **Technology Resilience and Innovation**: The bank emphasizes the importance of maintaining operational resilience during disruptions to critical processes and IT systems. This is crucial for providing consistent service to customers. BMO is also adapting to rapid technological advancements, including AI and digital currencies, which introduce new risks and competitive pressures [S2]. 3. **Operational Resilience**: BMO's operational resilience program aims to protect and sustain core business services during normal operations and disruptions. This involves effective management of operational non-financial risks and adherence to regulatory obligations [S4]. 4. **Emerging Risks**: The bank acknowledges that evolving internal and external events can impact its risk profile, necessitating continuous assessment and management of these risks through various processes, including stress testing and scenario analysis [S5].",,,,
+54a68bec798eab0e/mmr_structured/eval_10,mmr_structured,eval_10,What physical and transition climate risks did Scotiabank disclose in its 2025 annual report?,"Scotiabank disclosed several physical and transition climate risks in its 2025 annual report. The report highlights that the increased intensity and frequency of severe weather events pose diverse physical risks, including damage to properties and disruptions to operations, which can negatively impact profitability [S2]. Additionally, the changing corporate and political environment, particularly in the US and Canada, could lead to reduced support for climate-related regulation and funding for climate initiatives, creating uncertainty that may limit clients' ability or willingness to reduce emissions [S2]. The Bank has mechanisms in place to identify, mitigate, and assess potential losses from physical risks, and it maintains compliance with evolving climate regulations across its global footprint [S2]. Furthermore, the report mentions that rising costs associated with climate change and new climate guidelines increase regulatory oversight and stakeholder expectations for strong governance in managing climate risks [S2].",,,,
+54a68bec798eab0e/mmr_structured/eval_11,mmr_structured,eval_11,What credit risk and loan-loss provisions did Scotiabank disclose in its 2025 annual report?,"In its 2025 annual report, Scotiabank disclosed an allowance for credit losses on loans of $7,463 million, which represents an increase of $927 million from the previous year. The total allowance for credit losses was $7,654 million, up from $6,736 million in 2024. The allowance for credit losses ratio was 98 basis points, an increase of 10 basis points from the prior year. The allowance for credit losses on performing loans was $5,122 million, while the allowance for credit losses on impaired loans was $2,341 million, reflecting increases due to higher provisions in Canadian and International Banking and macroeconomic factors affecting credit quality migration. The impact of foreign currency translation also contributed to these increases, adding $151 million to the allowance for performing loans and $104 million to the allowance for impaired loans [S2].",,,,
+54a68bec798eab0e/mmr_structured/eval_12,mmr_structured,eval_12,What market risk management did Scotiabank disclose in its 2025 annual report?,"Scotiabank disclosed that market risk is the risk of loss from changes in market prices, including interest rates, credit spreads, equity prices, foreign exchange rates, and commodity prices, along with the correlations between them and their levels of volatility [S2]. The bank employs a market risk management framework that includes a limit structure to control the level of risk taken, setting limits on various risk factors such as interest rates and foreign exchange rates. Tools like stress testing and sensitivity analysis are used to measure Credit Valuation Adjustment (CVA) risk, which is part of the market risk management framework. Senior management is actively involved in overseeing the implementation of policies and procedures to manage CVA risks, with regular reports produced to monitor market risk exposure [S4].",,,,
+54a68bec798eab0e/mmr_structured/eval_13,mmr_structured,eval_13,What housing and mortgage credit risks did CIBC disclose in its 2025 annual report?,"CIBC disclosed several housing and mortgage credit risks in its 2025 annual report. Key points include:
+
+1. **Management Overlays**: CIBC uses management overlays to adjust expected credit loss (ECL) allowance estimates in response to significant uncertainties in the macroeconomic environment, which may not be fully captured by existing models. This indicates a recognition of potential risks that could lead to actual credit losses differing materially from estimates [S1].
+
+2. **Mortgage Debt Service Ratios**: The report noted that mortgage debt service ratios remain at historically high levels, which could pose risks as mortgages renew at higher rates amidst decelerating income growth due to a slowing labor market [S4]. 
+
+3. **Consumer Debt and Housing Market**: The household debt-to-income ratio is below 2016 levels, but mortgage service ratios are elevated. Property sales have slowed to their most recessed levels since 2020, indicating a challenging housing market environment [S4]. 
+
+4. **Regulatory Scrutiny**: There is an increasing level of scrutiny from regulators regarding mortgage underwriting practices, which could impact business processes and compliance costs [S4]. 
+
+5. **Insured Mortgages Risks**: CIBC highlighted the risk of losses on insured mortgages if claims are denied by the Canada Mortgage and Housing Corporation (CMHC) or if private mortgage insurers become insolvent [S5]. 
+
+6. **Economic Conditions**: The report expressed concerns about stagflation, with rising inflation and lower growth forecasts, which could limit central banks' options and affect the housing market [S4]. 
+
+Overall, CIBC's disclosures reflect a cautious approach to managing housing and mortgage credit risks amid a complex economic landscape.",,,,
+54a68bec798eab0e/mmr_structured/eval_14,mmr_structured,eval_14,What cybersecurity and technology risks did CIBC disclose in its 2025 annual report?,"CIBC disclosed several cybersecurity and technology risks in its 2025 annual report, including:
+
+1. **Information Security Risk (including Cyber Security)**: This risk pertains to the confidentiality, integrity, and availability of information owned by CIBC and entrusted to it by clients and other stakeholders. Potential threats include data breaches, malware, ransomware, unauthorized access, social engineering, and denial-of-service attacks, which could lead to financial loss, reputational harm, and service disruptions [S1], [S3].
+
+2. **Technology Risk**: This involves the risk of financial losses or operational disruptions due to compromised technology systems. The complexity of managing technology across various platforms, including those hosted in the cloud, increases the risk profile. CIBC emphasizes the need for well-designed technology processes to manage these risks effectively [S1], [S3].
+
+3. **Data Risk**: This risk arises from inadequate management of the data life cycle, potentially impairing CIBC's ability to deliver accurate data, which is critical for financial reporting and regulatory compliance [S1].
+
+4. **Fraud Risk**: This includes risks related to intentional acts designed to deceive others for financial gain, which can be perpetrated by both internal and external parties [S1].
+
+5. **Third-party Risk**: This risk arises from reliance on third-party arrangements, which can introduce vulnerabilities into CIBC's operations [S1].
+
+CIBC actively manages these risks through strategic reviews and enterprise-wide security programs aimed at prevention, detection, response, and recovery [S3].",,,,
+54a68bec798eab0e/mmr_structured/eval_15,mmr_structured,eval_15,What liquidity risk management did CIBC disclose in its 2025 annual report?,"CIBC disclosed that its liquidity risk management approach supports its business strategy, aligns with its risk appetite, and adheres to regulatory expectations. The bank manages liquidity risk to withstand stress events without adversely impacting operations. It routinely measures and monitors cash flows from on- and off-balance sheet exposures to ensure compliance with established limits and incorporates stress testing into its management practices. The governance structure includes a three lines of defence model, with the Treasurer responsible for measurement and reporting, the Liquidity and Non-Trading Market Risk group providing oversight, and internal audit ensuring effectiveness. CIBC's liquidity risk management policy establishes requirements to meet anticipated liquidity needs in both normal and stressed conditions, maintaining sufficient unencumbered liquid assets and diversified funding sources. The bank also has a pledging policy to ensure liquid assets are available for liquidity purposes. As of October 31, 2025, CIBC's Net Stable Funding Ratio (NSFR) was reported at 116%, an increase from 115% in the prior quarter, attributed to increases in operational deposits and wholesale funding, partially offset by an increase in loans. CIBC funds its operations primarily through client-sourced deposits and a variety of wholesale funding sources, regularly evaluating the stability of these deposits and monitoring wholesale funding levels to align with its liquidity risk profile.",,,,
+54a68bec798eab0e/mmr_structured/eval_16,mmr_structured,eval_16,Compare RBC and TD disclosures on credit risk management in their 2025 annual reports.,"RBC and TD both emphasize the importance of credit risk management in their 2025 annual reports, but they approach it with different frameworks and details.
+
+**RBC's Approach:**
+RBC defines credit risk as the risk of loss associated with an obligor’s potential inability or unwillingness to fulfill its contractual obligations. They manage credit risk through a governance model that includes a Board-approved credit risk appetite, risk approval authorities, and ongoing monitoring. Their objectives include ensuring credit quality, managing risks in transactions, avoiding excessive concentrations, and applying consistent credit risk exposure measurements. They also utilize credit risk mitigation techniques such as hedging and securitization [S4].
+
+**TD's Approach:**
+TD outlines its credit risk management within the context of its overall strategic risk management. The CEO, supported by senior executives, defines the strategy, which includes the governance of credit risk through established policies and procedures. TD employs predictive credit scoring techniques for retail exposures and assigns risk ratings for non-retail exposures based on proprietary models and expert judgment. They also emphasize the importance of ongoing reviews and assessments of credit decisions and risk controls [S5][S8].
+
+In summary, while both banks recognize the significance of credit risk management, RBC focuses on a structured governance model and risk appetite framework, whereas TD integrates credit risk management into its broader strategic risk management processes with a strong emphasis on predictive modeling and ongoing performance assessments.",,,,
+54a68bec798eab0e/mmr_structured/eval_17,mmr_structured,eval_17,Compare TD and BMO disclosures on residential mortgage credit risk in their 2025 annual reports.,"In their 2025 annual reports, TD and BMO provide insights into their residential mortgage credit risk management, but they approach the disclosures differently.
+
+**TD Bank**:
+1. **Loan Portfolio**: As of October 31, 2025, TD reported residential mortgages totaling $315,063 million, down from $331,649 million in 2024 [S1].
+2. **Credit Quality Management**: TD employs predictive credit scoring techniques for managing retail exposures, including residential mortgages. They utilize property characteristics, loan-to-value ratios, and customer equity in their Probability of Default (PD) and Loss Given Default (LGD) models [S3].
+3. **Risk Rating System**: Each borrower is assigned a Borrower Risk Rating (BRR) based on proprietary models and expert judgment, which reflects the PD of the borrower [S3].
+4. **Stress Testing**: TD conducts regular assessments of credit risk exposures and employs a comprehensive model validation process to ensure the accuracy of their risk assessments [S3].
+
+**BMO**:
+1. **Loan Portfolio**: BMO's total gross loans and acceptances were reported at $682.9 billion, with residential mortgages and home equity lines of credit (HELOCs) included in this category [S6].
+2. **Stress Testing**: BMO performs stress tests on their residential mortgage and HELOC portfolios to evaluate potential credit losses under various adverse scenarios. They assert that the forecasted credit losses are manageable even under severe conditions [S6].
+3. **Risk Management Practices**: BMO emphasizes low loan-to-value ratios and prudent underwriting practices to mitigate risks associated with their mortgage portfolio. They also highlight the importance of insurance coverage and equity levels held by borrowers [S7].
+4. **Credit Quality Monitoring**: BMO's internal risk rating system aligns with external rating agencies, and they regularly update their PD, LGD, and Exposure at Default (EAD) parameters to reflect downturn conditions [S8].
+
+In summary, both banks focus on rigorous risk management practices, including stress testing and borrower assessments, but TD provides more detailed insights into their specific methodologies and borrower risk ratings, while BMO emphasizes the overall management of credit risk and the resilience of their mortgage portfolio under stress scenarios.",,,,
+54a68bec798eab0e/mmr_structured/eval_18,mmr_structured,eval_18,Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.,"BMO and CIBC both emphasize the importance of liquidity risk management in their 2025 annual reports, but they outline different governance structures and approaches. 
+
+**BMO's Approach:** BMO defines liquidity and funding risk as the potential for financial loss if unable to meet financial commitments in a timely manner. They maintain a level of liquid assets sufficient to meet commitments even in stress scenarios. BMO's governance involves the Corporate Treasury group as the first line of defense, responsible for ongoing risk management, while the Enterprise Risk and Portfolio Management (ERPM) acts as the second line of defense. Senior management oversight is provided by the Risk Management Committee (RMC) and Asset Liability Committee (ALCO), which review significant policies and developments related to liquidity risk management [S1], [S4]. BMO integrates stress testing into their liquidity risk management, using results to inform limit-setting and business plans [S2]. 
+
+**CIBC's Approach:** CIBC describes liquidity risk as the risk of insufficient cash to meet obligations and emphasizes that their management strategies align with their business strategy and regulatory expectations. CIBC employs a three lines of defense model: the Treasurer manages liquidity risk as the first line, the Liquidity and Non-Trading Market Risk group provides independent oversight as the second line, and internal audit serves as the third line. CIBC's governance includes the Liquidity Risk Management Committee, which monitors global liquidity risk and ensures alignment with strategic direction and regulatory requirements [S5], [S7]. CIBC also incorporates stress testing into their liquidity management, using results to inform liquidity assumptions and contingency planning [S5]. 
+
+In summary, while both banks recognize the critical nature of liquidity risk management and utilize stress testing, BMO focuses on a centralized governance structure with specific committees for oversight, whereas CIBC employs a more distributed governance model with defined roles across three lines of defense.",,,,
+54a68bec798eab0e/mmr_structured/eval_19,mmr_structured,eval_19,Compare Scotiabank and RBC disclosures on physical and transition climate risks in their 2025 annual reports.,"Scotiabank's 2025 annual report highlights the rising costs of climate change and the increased regulatory oversight related to climate risks, emphasizing the potential impacts of physical risks such as severe weather events on profitability. The bank has mechanisms in place to identify and mitigate these risks, including disaster recovery planning and a public ESG policy that restricts lending to certain high-risk sectors like Oil & Gas in the Arctic and thermal coal mining [S1]. Scotiabank also acknowledges the uncertainty created by changing political environments in the U.S. and Canada regarding climate-related regulations, which could affect clients' willingness to reduce emissions [S1]. 
+
+In contrast, RBC's 2025 annual report discusses the evolving landscape of sustainability-related laws and regulations, noting that these changes could lead to increased compliance costs and regulatory scrutiny. RBC is actively monitoring developments in climate risk management requirements and aims to meet upcoming disclosure phases set by OSFI and the ISSB [S5]. The bank also emphasizes its commitment to supporting the transition to a low-carbon economy, with specific goals for increasing lending to renewable energy sectors and investing in climate solutions [S7]. 
+
+Overall, while both banks recognize the importance of managing climate risks, Scotiabank focuses more on the immediate impacts of physical risks and regulatory uncertainties, whereas RBC emphasizes its proactive approach to compliance and its strategic goals for supporting the transition to a low-carbon economy.",,,,
+54a68bec798eab0e/mmr_structured/eval_20,mmr_structured,eval_20,Compare how all five Canadian banks describe AI model risk or OSFI E-23 in their 2025 annual reports.,"The five Canadian banks describe AI model risk and OSFI E-23 in their 2025 annual reports as follows:
+
+1. **Royal Bank of Canada (RBC)**: The provided excerpt does not contain specific information regarding AI model risk or OSFI E-23. Therefore, it is unclear how RBC addresses these topics in their report. [S1]
+
+2. **Toronto-Dominion Bank (TD)**: The excerpt does not mention AI model risk or OSFI E-23. Thus, there is no information available on how TD addresses these issues in their report. [S2]
+
+3. **Bank of Montreal (BMO)**: The excerpt does not provide details on AI model risk or OSFI E-23. Consequently, it is not possible to ascertain BMO's stance on these matters from the provided information. [S3]
+
+4. **Bank of Nova Scotia (BNS)**: The excerpt does not include any references to AI model risk or OSFI E-23. Therefore, there is no information available regarding BNS's approach to these topics. [S4]
+
+5. **Canadian Imperial Bank of Commerce (CIBC)**: CIBC acknowledges the risks associated with AI, noting that AI systems can inherit or amplify bias and raise concerns about fairness or ethical use. They emphasize the importance of transparency in AI models and mention that OSFI's Guideline E-23 on Model Risk Management will include AI and Machine Learning methodologies, effective May 1, 2027. CIBC has published an AI Framework and implemented governance and risk management practices to address these risks. [S5]
+
+In summary, only CIBC explicitly discusses AI model risk and OSFI E-23 in their 2025 annual report, while the other banks do not provide relevant information in the excerpts provided.",,,,
+54a68bec798eab0e/mmr_structured/eval_21,mmr_structured,eval_21,How did RBC disclosures about provision for credit losses change between 2024 and 2025?,"In 2024, RBC's provision for credit losses (PCL) on performing assets fluctuated due to changes in credit quality and macroeconomic conditions, with initial PCL on performing loans from the HSBC Canada transaction included in the second quarter. PCL on impaired assets was low initially but trended upwards later in the year [S1]. In 2025, the disclosures continued to emphasize the use of forward-looking information for estimating expected credit losses, with a consistent approach to assessing significant increases in credit risk based on macroeconomic variables [S5]. However, specific figures or changes in PCL amounts between 2024 and 2025 are not provided in the excerpts, indicating that the filings do not contain enough information to quantify the changes in PCL between these years.",,,,
+54a68bec798eab0e/mmr_structured/eval_22,mmr_structured,eval_22,How did TD disclosures about cybersecurity risk change between 2024 and 2025?,"Between 2024 and 2025, TD's disclosures about cybersecurity risk evolved in several ways. In 2024, TD highlighted the risks associated with cyber-attacks, including attempts by malicious insiders and service providers, and emphasized the importance of data management and access controls to mitigate risks related to data integrity and privacy [S1]. The bank acknowledged that while it regularly reviews and enhances its controls in response to evolving threats, these measures may not fully mitigate all risks, indicating a recognition of the sophistication of cyber threats [S1]. 
+
+In 2025, TD reiterated its commitment to managing cybersecurity risks but provided additional context regarding the potential impacts of systemic cyber risks on its operations and the availability of cyber insurance. The bank noted that its investments in technology and cyber infrastructure might be inadequate to meet regulatory expectations and effectively serve clients, reflecting a more cautious outlook on its ability to manage these risks [S7]. Furthermore, it mentioned that the evolving threat environment could lead to financial losses and reputational damage, emphasizing the need for continuous investment and focus on risk management [S7]. 
+
+Overall, while both years acknowledged the risks and the need for robust cybersecurity measures, the 2025 report presented a more urgent tone regarding the adequacy of current investments and the potential consequences of systemic risks.",,,,
+54a68bec798eab0e/mmr_structured/eval_23,mmr_structured,eval_23,How did BMO disclosures about liquidity risk change between 2024 and 2025?,"BMO's disclosures about liquidity risk between 2024 and 2025 show several changes. In 2024, BMO reported net unencumbered liquid assets of $396.3 billion, which was an increase from $357.9 billion in 2023, primarily due to higher securities balances, although cash balances were lower [S2]. In 2025, the total of unencumbered liquid assets decreased slightly to $393.5 billion [S6]. Additionally, BMO's funding strategy in 2025 emphasized the importance of maintaining a large and stable base of customer deposits, which amounted to $715.0 billion, up from $711.7 billion in 2024 [S6]. This indicates a shift towards a stronger reliance on customer deposits to support liquidity, reducing dependence on wholesale funding. Furthermore, total secured and unsecured wholesale funding decreased from $259.0 billion in 2024 to $258.6 billion in 2025, reflecting net maturities during the year [S6]. Overall, while BMO maintained a robust liquidity position, there was a slight decrease in unencumbered liquid assets and a strategic emphasis on customer deposits in 2025 compared to 2024.",,,,
+54a68bec798eab0e/mmr_structured/eval_24,mmr_structured,eval_24,How did Scotiabank disclosures about climate risk change between 2024 and 2025?,"Between 2024 and 2025, Scotiabank's disclosures about climate risk evolved significantly. In 2024, the bank emphasized its commitment to climate-related finance, pledging to provide $350 billion by 2030, with $172 billion already provided since 2018. They also highlighted their membership in the Net Zero Banking Alliance (NZBA) and their commitment to set interim emissions reduction targets for high-emitting sectors [S2], [S4]. 
+
+In 2025, Scotiabank continued to reinforce its climate commitments, maintaining the $350 billion climate-related finance goal and reporting on its investments in climate projects through the Climate Action Research Fund, which distributed approximately $1 million in 2025 [S5], [S8]. The bank also acknowledged the rising costs of climate change and the need for strong governance in managing climate risks, indicating an increased focus on regulatory compliance and the impacts of climate change on profitability [S6]. 
+
+Overall, the disclosures in 2025 reflect a deeper integration of climate risk management into the bank's strategic framework, with a clear acknowledgment of the evolving regulatory landscape and the associated risks and opportunities.",,,,
+54a68bec798eab0e/mmr_structured/eval_25,mmr_structured,eval_25,How did CIBC disclosures about mortgage credit risk change between 2024 and 2025?,"CIBC's disclosures about mortgage credit risk between 2024 and 2025 show several notable changes:
+
+1. **Gross Residential Mortgages**: In 2025, the gross carrying amount of residential mortgages increased to $287,033 million from $280,672 million in 2024, indicating growth in the mortgage portfolio [S5].
+
+2. **Stage Distribution**: The distribution of mortgages across different stages changed significantly. For example, Stage 1 mortgages increased from $255,657 million in 2024 to $272,458 million in 2025, while Stage 2 mortgages decreased from $24,021 million to $13,260 million. Stage 3 mortgages also saw an increase from $994 million to $1,315 million [S5].
+
+3. **Expected Credit Loss (ECL) Allowance**: The ECL allowance for residential mortgages rose from $449 million in 2024 to $574 million in 2025, reflecting a higher anticipated risk associated with the mortgage portfolio [S5].
+
+4. **Management Overlays**: Both years emphasized the use of management overlays to adjust ECL allowance estimates due to uncertainties in the economic environment. However, the 2025 report highlighted the significant uncertainties inherent in the current environment more explicitly, suggesting a heightened awareness of risk factors compared to 2024 [S1][S5].
+
+Overall, CIBC's disclosures indicate an increase in both the volume of residential mortgages and the associated credit risk provisions, alongside a consistent approach to managing uncertainties through overlays.",,,,
+54a68bec798eab0e/mmr_structured/eval_26,mmr_structured,eval_26,What were Bank of Atlantis credit losses in 2025?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/mmr_structured/eval_27,mmr_structured,eval_27,What will RBC provision for credit losses be in 2030?,The provided filings do not contain enough information to answer this question.,,,,
+54a68bec798eab0e/mmr_structured/eval_28,mmr_structured,eval_28,Did the bank improve its risk profile?,"Yes, the Toronto-Dominion Bank improved its risk profile by updating its Enterprise Risk Framework in the third quarter of 2025. This included elevating Financial Crime Risk to a stand-alone Major Risk Category and dividing Operational Risk into two distinct categories. Additionally, a new Executive Committee was formed to oversee enforcement commitments and progress on required remediations, indicating a proactive approach to risk management and governance [S1].",,,,
+54a68bec798eab0e/mmr_structured/eval_29,mmr_structured,eval_29,Quels risques de crédit la RBC décrit-elle dans son rapport annuel 2025 ?,"La RBC décrit plusieurs risques de crédit dans son rapport annuel 2025. Parmi ceux-ci, elle mentionne la gestion des limites de crédit qui sont établies à différents niveaux, y compris par nom unique, secteur industriel, et exposition réglementaire. La banque gère activement les expositions et les limites de crédit pour éviter les risques de concentration, qui peuvent découler d'une sur-exposition dans certains secteurs ou pays, augmentant ainsi le risque de détérioration du crédit et de défaut [S1]. De plus, la RBC a des politiques formalisées pour gérer les emprunteurs à risque élevé, en cherchant à identifier les emprunteurs en difficulté financière tôt et en modifiant les termes de leurs prêts pour minimiser les pertes [S1]. En 2025, la banque a également observé une augmentation des provisions sur les prêts dépréciés, principalement en raison de quelques comptes dans les secteurs des autres services et des produits de financement [S4].",,,,
+54a68bec798eab0e/mmr_structured/eval_30,mmr_structured,eval_30,Calculate the percentage change in RBC provision for credit losses from 2024 to 2025.,"The provision for credit losses for Royal Bank of Canada (RBC) for the year ended October 31, 2024, was $2,793 million [S1]. For the year ended October 31, 2025, the provision for credit losses was $3,546 million [S5]. The percentage change from 2024 to 2025 is calculated as follows:
+
+\[ \text{Percentage Change} = \frac{(3546 - 2793)}{2793} \times 100 = 27.0\% \] 
+
+Thus, the percentage change in RBC provision for credit losses from 2024 to 2025 is 27.0%.",,,,

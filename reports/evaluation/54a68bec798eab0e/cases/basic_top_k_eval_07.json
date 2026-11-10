@@ -1,0 +1,137 @@
+{
+  "case_id": "54a68bec798eab0e/basic_top_k/eval_07",
+  "config": "basic_top_k",
+  "question": {
+    "id": "eval_07",
+    "question": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?",
+    "question_type": "factual",
+    "banks": [
+      "BMO"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Identify the disclosed liquidity risk controls and liquidity coverage measures; cite the correct bank/year. Do not invent amounts absent from evidence.",
+    "reference_query": "What liquidity risk controls and liquidity coverage measures did BMO disclose in its 2025 annual report?"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "In its 2025 annual report, BMO disclosed several liquidity risk controls and liquidity coverage measures:\n\n1. **Liquidity and Funding Risk Governance**: BMO's Corporate Treasury group is responsible for the ongoing identification, assessment, measurement, management, and reporting of liquidity and funding risk. This group develops and recommends the Liquidity and Funding Risk Management Framework and monitors adherence to corporate policies. The second line of defense, Enterprise Risk and Portfolio Management (ERPM), provides oversight and conducts independent risk assessments [S1].\n\n2. **Limit Structure**: BMO has established a robust limit structure to manage liquidity and funding risk. This includes limits for the Stress Net Liquidity Position (stress NLP), regulatory liquidity ratios, secured and unsecured funding appetite, and requirements for counterparty liability diversification. These limits help ensure that liquidity and funding risk is appropriately managed [S2].\n\n3. **Contingency Planning**: An enterprise-wide contingency plan is in place to facilitate effective risk management during disruptions. Early warning indicators are monitored to detect rising levels of liquidity or funding risk [S2].\n\n4. **Liquidity Metrics**: BMO reported that its liquidity metrics, including the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025 [S2].\n\n5. **Stress Testing**: The liquidity and funding risk program is integrated with enterprise-wide stress testing. Stress NLP is used as a key measure of liquidity risk, assessing potential funding needs under severe stress scenarios [S4].\n\n6. **Unencumbered Liquid Assets**: BMO maintains unencumbered liquid assets, which are high-quality, marketable assets that can be converted to cash quickly. These assets are primarily held in trading businesses and supplemental liquidity pools for contingent liquidity risk management [S4].\n\nOverall, BMO's approach to liquidity risk management emphasizes governance, robust limit structures, contingency planning, and the use of stress testing to ensure resilience in its liquidity position.",
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00180",
+        "text": "Total Liabilities\n1,388,702 158,739\n1,166,934\n63,029\n1,325,361 134,966 1,138,917\n51,478 (1) Primarily comprises balance sheet items that are subject to the trading and underwriting RMF and recorded at fair value through profit or loss. (2) Primarily comprises balance sheet items that are subject to the structural balance sheet insurance RMF and secured financing transactions. Material presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements. 88 BMO Financial Group 208th Annual Report 2025 Liquidity and Funding Risk\n\nLiquidity and Funding Risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at\nreasonable prices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and\npledging commitments.\n\nManaging liquidity and funding risk is integral to maintaining enterprise soundness and safety, depositor confidence and earnings stability. It is BMO’s\npolicy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of stress.\n\nLiquidity and Funding Risk Governance\nThe Corporate Treasury group and the operating segments, as the first line of defence, are responsible for the ongoing identification, assessment,\nmeasurement, management and reporting of liquidity and funding risk. The Corporate Treasury group is responsible for monitoring and reporting on\nexposures to liquidity and funding risk across the enterprise; develops and recommends for approval the Liquidity and Funding Risk Management\nFramework and the related Risk Appetite Statement and limits; monitors adherence to relevant corporate policies; and assesses the impact of market\nevents on liquidity and funding requirements on an ongoing basis.\n\nEnterprise Risk and Portfolio Management (ERPM), as the second line of defence, exercises oversight, conducts independent risk assessment and\nprovides effective challenge of liquidity and funding management frameworks, policies, limits, monitoring and reporting across the enterprise.\n\nThe Risk Management Committee (RMC) and Asset Liability Committee (ALCO) provide senior management oversight, and review and discuss\nsignificant liquidity and funding policies, issues and developments that arise in the pursuit of BMO’s strategic priorities. The Risk Review Committee\n(RRC) provides oversight of the management of liquidity and funding risk, annually approves the applicable policies, limits and contingency plan, and\nregularly reviews liquidity and funding positions.",
+        "similarity": 0.715729832649231,
+        "quarter": 0,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "section": "market risk",
+        "bank_code": "BMO",
+        "bank": "Bank of Montreal",
+        "page_end": 91,
+        "fiscal_year": 2025,
+        "page_start": 91,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "document_type": "annual_report",
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00181",
+        "text": "Liquidity and Funding Risk Management\nBMO’s liquidity and funding risk program is defined and authorized in alignment with corporate policies approved by our Board of Directors and\nstandards approved by management. These policies and standards set out key management principles, liquidity and funding metrics and related\nlimits, as well as roles and responsibilities in the management of liquidity and funding risk across the enterprise.\n\nWe have a robust limit structure in place in order to manage liquidity and funding risk. These limits define BMO’s risk appetite for the key Stress\nNet Liquidity Position (stress NLP) measure, regulatory liquidity ratios, secured and unsecured funding appetite (for both trading and structural\nactivities), as well as enterprise collateral pledging. Limits also establish the tolerance for concentrations of maturities, as well as requirements for\ncounterparty liability diversification, business pledging activity, and the size and type of committed and uncommitted credit and liquidity facilities that\nmay be outstanding.\n\nOperating within these limits helps to confirm that liquidity and funding risk is appropriately managed. An enterprise-wide contingency plan\nintended to facilitate effective risk management in the event of a disruption is also in place. Early warning indicators identified in the contingency\nplan are regularly monitored in order to detect any signs of rising levels of liquidity or funding risk in the market, or any exposure to other risks\nspecific to BMO.\n\nBMO legal entities include regulated and foreign subsidiaries and branches, and as a result, movements of funds between entities in the\ncorporate group are subject to, among other things, the liquidity, funding and capital adequacy requirements of these entities. As such, liquidity and\nfunding positions are managed on both a consolidated and key legal entity basis. Liquidity and funding risk management policies and limits, informed\nby the laws and regulations that apply to each entity, are in place for key legal entities, and positions are regularly reviewed at the key legal entity\nlevel to confirm compliance with applicable laws and regulations.\n\nBMO continued to maintain a strong liquidity position during fiscal 2025. Customer deposits continued to grow, while customer loans declined\nduring the year. Wholesale funding decreased, reflecting net maturities. Our liquidity metrics, including the Liquidity Coverage Ratio (LCR) and Net\nStable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025.\n\nLiquidity and Funding Risk Measurement\nA key component of liquidity risk management is the measurement of liquidity risk under stress. We use stress NLP as a key measure of liquidity risk.\nStress NLP represents the amount by which liquid assets exceed potential funding needs under severe systemic and enterprise-specific stress\nscenarios, and a combination thereof. Potential funding needs may arise from obligations to repay retail, commercial and wholesale deposits that are\nwithdrawn or not renewed, or to fund drawdowns on available credit and liquidity lines, as well as from obligations to pledge collateral due to ratings\ndowngrades or market volatility, along with the ongoing need to fund new assets and strategic investments. Potential funding needs are quantified\nby applying factors to various business activities based on management’s view of the relative level of liquidity risk related to each activity. These\nfactors vary by deposit classification (e.g., retail, small business, non-financial corporate or wholesale counterparties) and deposit type (e.g., insured,\nuninsured, operational or non-operational deposits), as well as by commitment type (e.g., committed or uncommitted credit or liquidity facilities by\ncounterparty type). Stress scenarios also consider the time horizon over which liquid assets can be monetized and management’s assessment of the\nliquidity value of those assets under conditions of market stress. These potential funding needs are assessed under severe systemic and enterprise-\nspecific stress scenarios, and a combination thereof.\n\nPotential funding needs are quantified\nby applying factors to various business activities based on management’s view of the relative level of liquidity risk related to each activity. These\nfactors vary by deposit classification (e.g., retail, small business, non-financial corporate or wholesale counterparties) and deposit type (e.g., insured,\nuninsured, operational or non-operational deposits), as well as by commitment type (e.g., committed or uncommitted credit or liquidity facilities by\ncounterparty type). Stress scenarios also consider the time horizon over which liquid assets can be monetized and management’s assessment of the\nliquidity value of those assets under conditions of market stress. These potential funding needs are assessed under severe systemic and enterprise-\nspecific stress scenarios, and a combination thereof.\n\nMaterial presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements.\n\nBMO Financial Group 208th Annual Report 2025 89",
+        "similarity": 0.7000429034233093,
+        "bank_code": "BMO",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "section": "MD&A",
+        "fiscal_year": 2025,
+        "page_end": 91,
+        "quarter": 0,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank": "Bank of Montreal",
+        "document_type": "annual_report",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_start": 91
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00021",
+        "text": "67\nEnterprise-Wide Risk Management\n\n23\nNon-GAAP and Other Financial Measures\n\n27\nEconomic Developments and Outlook\n\n28\n2025 Financial Performance Review\n\n108\nAccounting Matters and Disclosure and Internal Control\n108\nCritical Accounting Estimates and Judgments\n111\nFuture Changes in Accounting Policies\n111\nOther Regulatory Developments\n111\nTransactions with Related Parties\n112\nShareholders’ Auditors’ Services and Fees\n113\nManagement’s Annual Report on Disclosure Controls and\nProcedures and Internal Control over Financial Reporting\n\n114\nSupplemental Information\n\n122\nGlossary of Financial Terms\n\n34\n2025 Operating Segments Performance Review\n34\nHow BMO Reports Operating Segments Results\n35\nCanadian Personal and Commercial Banking\n39\nU.S. Banking\n43\nWealth Management\n47\nCapital Markets\n50\nCorporate Services, including Technology and Operations\n52\nSummary Quarterly Earnings Trends\n\nRegulatory Filings\nBMO’s continuous disclosure materials, including our interim consolidated financial statements and interim MD&A, audited annual consolidated financial statements and\nannual MD&A, Annual Information Form and Notice of Annual Meeting of Shareholders and Management Proxy Circular, are available on our website at www.bmo.com/\ninvestorrelations, on the Canadian Securities Administrators’ website at www.sedarplus.ca and on the EDGAR section of the U.S. Securities and Exchange Commission’s\n(SEC) website at www.sec.gov. BMO’s Chief Executive Officer and Chief Financial Officer certify the appropriateness and fairness of BMO’s annual and interim consolidated\nfinancial statements, annual MD&A and Annual Information Form, the effectiveness of BMO’s disclosure controls and procedures and the effectiveness of, and any material\nweaknesses relating to, BMO’s internal control over financial reporting. Information contained in, or otherwise accessible through, our website (www.bmo.com) or any\nthird-party websites mentioned herein, does not form part of this document.\n\nCaution\nThe About BMO, Financial Objectives and Value Measures, Economic Developments and Outlook, Provision for Income Taxes and Other Taxes, 2026 Areas of Focus, Business\nEnvironment and Outlook, Enterprise-Wide Capital Management, Off-Balance Sheet Arrangements, Enterprise-Wide Risk Management, Future Changes in Accounting\nPolicies and Other Regulatory Developments sections contain certain forward-looking statements. By their nature, forward-looking statements require us to make\nassumptions and are subject to inherent risks and uncertainties. Refer to the Caution Regarding Forward-Looking Statements section for a discussion of such risks and\nuncertainties and the material factors and assumptions related to the statements set forth in such sections.\n\n16 BMO Financial Group 208th Annual Report 2025\n\nFactors That May Affect Future Results\nAs noted in the following Caution Regarding Forward-Looking Statements section, all forward-looking statements and information, by their nature,\nare subject to inherent risks and uncertainties, both general and specific, which may cause actual results to differ materially from the expectations\nexpressed in any forward-looking statement. The Enterprise-Wide Risk Management section describes a number of risks, including credit and\ncounterparty, market, insurance, liquidity and funding, operational non-financial, legal and regulatory compliance, strategic, environmental and social,\nand reputation risk. Should our risk management framework prove ineffective, there could be a material impact on our financial position and results.",
+        "similarity": 0.6859447956085205,
+        "bank_code": "BMO",
+        "page_end": 19,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "fiscal_year": 2025,
+        "page_start": 18,
+        "bank": "Bank of Montreal",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "section": "MD&A",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00182",
+        "text": "Stress testing results are evaluated against our stated risk appetite and are considered in management’s decisions on limit-setting and internal\ntransfer cost of liquidity, and also help to inform and shape the design of business plans and contingency plans. The liquidity and funding risk\nprogram is integrated with enterprise-wide stress testing.\n\nIn addition to stress NLP, we regularly monitor positions in relation to the limits and liquidity ratios noted in the Liquidity and Funding Risk\nManagement section above. These include regulatory metrics such as LCR, net cumulative cash flow and NSFR.\n\nUnencumbered Liquid Assets\nUnencumbered liquid assets comprise high-quality assets that are marketable, can be pledged as security for borrowings and can be converted to\ncash in a time frame that meets liquidity and funding requirements. Liquid assets are primarily held in our trading businesses, as well as in\nsupplemental liquidity pools that are maintained for contingent liquidity risk management purposes. The liquidity values recognized for different asset\nclasses under BMO’s liquidity and funding risk program reflect management’s assessment of the liquidity values of those assets under a severe stress\nscenario. Liquid assets held in our trading businesses comprise cash on deposit with central banks, short-term deposits with other financial\ninstitutions, highly-rated debt securities, equity securities and short-term reverse repurchase agreements. Supplemental liquidity pool assets primarily\ncomprise cash on deposit with central banks, securities, and short-term reverse repurchase agreements for highly-rated Canadian federal and\nprovincial government debt and U.S. federal government and agency debt. Substantially all supplemental liquidity pool assets meet the definition of\nhigh-quality liquid assets under Basel III. The size of the supplemental liquidity pool is integrated with our assessment of liquidity risk. In order to\ncomply with local regulatory requirements, certain legal entities maintain their own minimum liquidity positions. There may be legal and regulatory\nrestrictions on BMO’s ability to use liquid assets held at one legal entity to support the liquidity requirements of another legal entity.",
+        "similarity": 0.6773989796638489,
+        "bank_code": "BMO",
+        "document_type": "annual_report",
+        "page_start": 92,
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "page_end": 92,
+        "fiscal_year": 2025,
+        "bank": "Bank of Montreal",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "quarter": 0
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00124",
+        "text": "Our customer base is broadly diversified, and we do not anticipate events or conditions that would cause a significant\nnumber of customers to fail to perform in accordance with the terms of their contracts. We use the credit adjudication process in deciding whether to\nenter into these arrangements, just as we do when extending credit in the form of a loan. We monitor off-balance sheet credit instruments in order\nto avoid undue concentrations in any single geographic region or industry. For the credit commitments outlined in the preceding paragraphs, in the absence of an event that triggers a default, early termination by BMO\nmay result in a breach of contract. Further information on these instruments can be found in Note 24 of the audited annual consolidated financial statements.\n\nCaution\nThis Off-Balance Sheet Arrangements section contains forward-looking statements. Please refer to the Caution Regarding Forward-Looking Statements.\n\n66 BMO Financial Group 208th Annual Report 2025\n\nEnterprise-Wide Risk Management\n\nAs a diversified financial services company providing banking, wealth management, capital markets and insurance services,\nBMO is exposed to a variety of risks that are inherent in each of these business activities. A disciplined and integrated\napproach to managing risk is fundamental to the success of our operations. Our Risk Management Framework provides a\nconsistent, enterprise-wide approach to risk management and oversight that underpins our strategy, enables informed\ndecision-making and drives resilience and efficiency.\n\nEnterprise-Wide Risk Management outlines BMO’s approach to managing the key financial risks and other related risks that are inherent in these\nbusiness activities, as discussed in the following sections:\n\n67\nRisks That May Affect Future Results\n70\nRisk Management Framework\n76\nCredit and Counterparty Risk\n84",
+        "similarity": 0.660113513469696,
+        "page_start": 68,
+        "fiscal_year": 2025,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "quarter": 0,
+        "bank": "Bank of Montreal",
+        "document_type": "annual_report",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "bank_code": "BMO",
+        "page_end": 69,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "section": "MD&A"
+      }
+    ],
+    "structured": null,
+    "retrieval_seconds": 0.6841871999204159
+  },
+  "latency_seconds": 5.720948299975134,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0007220999999999999,
+  "input_tokens": 3206,
+  "output_tokens": 402,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.02200009999796748,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All claims about BMO's liquidity risk controls and measures are directly supported by the actual answer context from the 2025 annual report, including governance, limit structures, contingency planning, liquidity metrics, stress testing, and unencumbered liquid assets.",
+    "relevance_reason": "The answer directly addresses the question regarding liquidity risk controls and coverage measures disclosed by BMO in its 2025 annual report.",
+    "completeness_reason": "The answer comprehensively covers all aspects of liquidity risk controls and measures as disclosed in the reference material, including governance, metrics, and stress testing, without omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0013497,
+  "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_07",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

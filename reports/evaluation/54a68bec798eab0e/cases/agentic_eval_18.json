@@ -1,0 +1,368 @@
+{
+  "case_id": "54a68bec798eab0e/agentic/eval_18",
+  "config": "agentic",
+  "question": {
+    "id": "eval_18",
+    "question": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.",
+    "question_type": "comparative",
+    "banks": [
+      "BMO",
+      "CIBC"
+    ],
+    "risk": "liquidity",
+    "scopes": [
+      {
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Describe supported similarities and differences with evidence from both banks; state missing evidence.",
+    "reference_query": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports."
+  },
+  "status": "complete",
+  "generation": {
+    "question": "Compare BMO and CIBC disclosures on liquidity risk controls in their 2025 annual reports.",
+    "answer": "### Comparison of Liquidity Risk Controls in BMO and CIBC's 2025 Annual Reports\n\n#### BMO (Bank of Montreal)\n- **Governance and Management**: BMO's liquidity and funding risk management is governed by policies approved by the Board of Directors. The Corporate Treasury group is responsible for ongoing management, while the Enterprise Risk and Portfolio Management (ERPM) provides oversight. The Risk Management Committee (RMC) and Asset Liability Committee (ALCO) oversee significant policies and developments.\n- **Risk Measurement**: BMO employs a Stress Net Liquidity Position (stress NLP) as a key measure of liquidity risk, assessing potential funding needs under severe stress scenarios. They monitor liquidity metrics such as the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR).\n- **Contingency Planning**: An enterprise-wide contingency plan is in place, with early warning indicators monitored regularly.\n- **Liquidity Position**: BMO maintained a strong liquidity position in 2025, with metrics exceeding internal targets and regulatory requirements. Customer deposits grew while wholesale funding decreased.\n\n**Source**: BMO 2025 Annual Report, MD&A section, pages 91-92. [Link to report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)\n\n#### CIBC (Canadian Imperial Bank of Commerce)\n- **Governance and Management**: CIBC manages liquidity risk through a three lines of defence model. The Treasurer oversees liquidity management, supported by the Liquidity and Non-Trading Market Risk group for independent oversight. The Governance and Asset Liability Committee (GALCO) governs liquidity risk management methodologies.\n- **Risk Measurement**: CIBC uses both regulatory-driven and internally developed metrics, including the Liquidity Horizon, which measures future cash flows under stress scenarios. They also conduct stress testing to assess liquidity needs.\n- **Policies**: CIBC has a detailed global contingency funding plan and maintains local liquidity practices for branches and subsidiaries. Their pledging policy sets limits for asset pledging to ensure liquidity.\n- **Liquidity Position**: CIBC's liquidity risk management aligns with their risk appetite and regulatory expectations, ensuring they can withstand liquidity stress events.\n\n**Source**: CIBC 2025 Annual Report, Liquidity Risk section, pages 83-84. [Link to report](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)\n\n### Summary\nBoth banks have robust frameworks for managing liquidity risk, with clear governance structures and comprehensive measurement strategies. BMO emphasizes its strong liquidity position and specific metrics like stress NLP, while CIBC highlights its three lines of defence model and detailed contingency planning.",
+    "iterations": 2,
+    "tool_calls": 2,
+    "tools_used": [
+      "search_filings",
+      "search_filings"
+    ],
+    "input_tokens": 6702,
+    "output_tokens": 651,
+    "embedding_tokens": 0,
+    "estimated_cost_usd": 0.001396,
+    "seconds": 9.74,
+    "trace": [
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "liquidity risk controls",
+          "bank": "BMO",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00181",
+              "text": "Liquidity and Funding Risk Management\nBMO’s liquidity and funding risk program is defined and authorized in alignment with corporate policies approved by our Board of Directors and\nstandards approved by management. These policies and standards set out key management principles, liquidity and funding metrics and related\nlimits, as well as roles and responsibilities in the management of liquidity and funding risk across the enterprise.\n\nWe have a robust limit structure in place in order to manage liquidity and funding risk. These limits define BMO’s risk appetite for the key Stress\nNet Liquidity Position (stress NLP) measure, regulatory liquidity ratios, secured and unsecured funding appetite (for both trading and structural\nactivities), as well as enterprise collateral pledging. Limits also establish the tolerance for concentrations of maturities, as well as requirements for\ncounterparty liability diversification, business pledging activity, and the size and type of committed and uncommitted credit and liquidity facilities that\nmay be outstanding.\n\nOperating within these limits helps to confirm that liquidity and funding risk is appropriately managed. An enterprise-wide contingency plan\nintended to facilitate effective risk management in the event of a disruption is also in place. Early warning indicators identified in the contingency\nplan are regularly monitored in order to detect any signs of rising levels of liquidity or funding risk in the market, or any exposure to other risks\nspecific to BMO.\n\nBMO legal entities include regulated and foreign subsidiaries and branches, and as a result, movements of funds between entities in the\ncorporate group are subject to, among other things, the liquidity, funding and capital adequacy requirements of these entities. As such, liquidity and\nfunding positions are managed on both a consolidated and key legal entity basis. Liquidity and funding risk management policies and limits, informed\nby the laws and regulations that apply to each entity, are in place for key legal entities, and positions are regularly reviewed at the key legal entity\nlevel to confirm compliance with applicable laws and regulations.\n\nBMO continued to maintain a strong liquidity position during fiscal 2025. Customer deposits continued to grow, while customer loans declined\nduring the year. Wholesale funding decreased, reflecting net maturities. Our liquidity metrics, including the Liquidity Coverage Ratio (LCR) and Net\nStable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025.\n\nLiquidity and Funding Risk Measurement\nA key component of liquidity risk management is the measurement of liquidity risk under stress. We use stress NLP as a key measure of liquidity risk.\nStress NLP represents the amount by which liquid assets exceed potential funding needs under severe systemic and enterprise-specific stress\nscenarios, and a combination thereof. Potential funding needs may arise from obligations to repay retail, commercial and wholesale deposits that are\nwithdrawn or not renewed, or to fund drawdowns on available credit and liquidity lines, as well as from obligations to pledge collateral due to ratings\ndowngrades or market volatility, along with the ongoing need to fund new assets and strategic investments. Potential funding needs are quantified\nby applying factors to various business activities based on management’s view of the relative level of liquidity risk related to each activity. These\nfactors vary by deposit classification (e.g., retail, small business, non-financial corporate or wholesale counterparties) and deposit type (e.g., insured,\nuninsured, operational or non-operational deposits), as well as by commitment type (e.g., committed or uncommitted credit or liquidity facilities by\ncounterparty type). Stress scenarios also consider the time horizon over which liquid assets can be monetized and management’s assessment of the\nliquidity value of those assets under conditions of market stress. These potential funding needs are assessed under severe systemic and enterprise-\nspecific stress scenarios, and a combination thereof.\n\nPotential funding needs are quantified\nby applying factors to various business activities based on management’s view of the relative level of liquidity risk related to each activity. These\nfactors vary by deposit classification (e.g., retail, small business, non-financial corporate or wholesale counterparties) and deposit type (e.g., insured,\nuninsured, operational or non-operational deposits), as well as by commitment type (e.g., committed or uncommitted credit or liquidity facilities by\ncounterparty type). Stress scenarios also consider the time horizon over which liquid assets can be monetized and management’s assessment of the\nliquidity value of those assets under conditions of market stress. These potential funding needs are assessed under severe systemic and enterprise-\nspecific stress scenarios, and a combination thereof.\n\nM",
+              "similarity": 0.685,
+              "page_start": 91,
+              "bank_code": "BMO",
+              "page_end": 91,
+              "bank": "Bank of Montreal",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "section": "MD&A",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "quarter": 0,
+              "filing_id": "BMO_2025_annual_report_FY",
+              "document_type": "annual_report",
+              "fiscal_year": 2025
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00180",
+              "text": "Total Liabilities\n1,388,702 158,739\n1,166,934\n63,029\n1,325,361 134,966 1,138,917\n51,478 (1) Primarily comprises balance sheet items that are subject to the trading and underwriting RMF and recorded at fair value through profit or loss. (2) Primarily comprises balance sheet items that are subject to the structural balance sheet insurance RMF and secured financing transactions. Material presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements. 88 BMO Financial Group 208th Annual Report 2025 Liquidity and Funding Risk\n\nLiquidity and Funding Risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at\nreasonable prices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and\npledging commitments.\n\nManaging liquidity and funding risk is integral to maintaining enterprise soundness and safety, depositor confidence and earnings stability. It is BMO’s\npolicy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of stress.\n\nLiquidity and Funding Risk Governance\nThe Corporate Treasury group and the operating segments, as the first line of defence, are responsible for the ongoing identification, assessment,\nmeasurement, management and reporting of liquidity and funding risk. The Corporate Treasury group is responsible for monitoring and reporting on\nexposures to liquidity and funding risk across the enterprise; develops and recommends for approval the Liquidity and Funding Risk Management\nFramework and the related Risk Appetite Statement and limits; monitors adherence to relevant corporate policies; and assesses the impact of market\nevents on liquidity and funding requirements on an ongoing basis.\n\nEnterprise Risk and Portfolio Management (ERPM), as the second line of defence, exercises oversight, conducts independent risk assessment and\nprovides effective challenge of liquidity and funding management frameworks, policies, limits, monitoring and reporting across the enterprise.\n\nThe Risk Management Committee (RMC) and Asset Liability Committee (ALCO) provide senior management oversight, and review and discuss\nsignificant liquidity and funding policies, issues and developments that arise in the pursuit of BMO’s strategic priorities. The Risk Review Committee\n(RRC) provides oversight of the management of liquidity and funding risk, annually approves the applicable policies, limits and contingency plan, and\nregularly reviews liquidity and funding positions.",
+              "similarity": 0.681,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "quarter": 0,
+              "fiscal_year": 2025,
+              "page_start": 91,
+              "document_type": "annual_report",
+              "page_end": 91,
+              "section": "market risk",
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "bank": "Bank of Montreal",
+              "bank_code": "BMO",
+              "filing_id": "BMO_2025_annual_report_FY"
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00182",
+              "text": "Stress testing results are evaluated against our stated risk appetite and are considered in management’s decisions on limit-setting and internal\ntransfer cost of liquidity, and also help to inform and shape the design of business plans and contingency plans. The liquidity and funding risk\nprogram is integrated with enterprise-wide stress testing.\n\nIn addition to stress NLP, we regularly monitor positions in relation to the limits and liquidity ratios noted in the Liquidity and Funding Risk\nManagement section above. These include regulatory metrics such as LCR, net cumulative cash flow and NSFR.\n\nUnencumbered Liquid Assets\nUnencumbered liquid assets comprise high-quality assets that are marketable, can be pledged as security for borrowings and can be converted to\ncash in a time frame that meets liquidity and funding requirements. Liquid assets are primarily held in our trading businesses, as well as in\nsupplemental liquidity pools that are maintained for contingent liquidity risk management purposes. The liquidity values recognized for different asset\nclasses under BMO’s liquidity and funding risk program reflect management’s assessment of the liquidity values of those assets under a severe stress\nscenario. Liquid assets held in our trading businesses comprise cash on deposit with central banks, short-term deposits with other financial\ninstitutions, highly-rated debt securities, equity securities and short-term reverse repurchase agreements. Supplemental liquidity pool assets primarily\ncomprise cash on deposit with central banks, securities, and short-term reverse repurchase agreements for highly-rated Canadian federal and\nprovincial government debt and U.S. federal government and agency debt. Substantially all supplemental liquidity pool assets meet the definition of\nhigh-quality liquid assets under Basel III. The size of the supplemental liquidity pool is integrated with our assessment of liquidity risk. In order to\ncomply with local regulatory requirements, certain legal entities maintain their own minimum liquidity positions. There may be legal and regulatory\nrestrictions on BMO’s ability to use liquid assets held at one legal entity to support the liquidity requirements of another legal entity.",
+              "similarity": 0.671,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "bank_code": "BMO",
+              "fiscal_year": 2025,
+              "file_name": "BMO_2025_annual_report.pdf",
+              "bank": "Bank of Montreal",
+              "filing_id": "BMO_2025_annual_report_FY",
+              "quarter": 0,
+              "document_type": "annual_report",
+              "page_end": 92,
+              "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+              "page_start": 92
+            },
+            {
+              "chunk_id": "BMO_2025_annual_report_FY_00125",
+              "text": "89\nLiquidity and Funding Risk\n\n98\nOperational Non-Financial Risk\n102\nLegal and Regulatory Compliance Risk\n104\nStrategic Risk\n105\nEnvironmental and Social Risk\n107\nReputation Risk",
+              "similarity": 0.65,
+              "page_start": 69,
+              "quarter": 0,
+              "bank": "Bank of Montreal",
+              "file_name": "BMO_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "page_end": 69,
+              "fiscal_year": 2025,
+              "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+              "section": "Market Risk",
+              "bank_code": "BMO",
+              "filing_id": "BMO_2025_annual_report_FY"
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 1,
+        "action": "search_filings",
+        "arguments": {
+          "query": "liquidity risk controls",
+          "bank": "CIBC",
+          "fiscal_year": 2025,
+          "document_type": "annual_report"
+        },
+        "observation": {
+          "passages": [
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00171",
+              "text": "Liquidity risk is the risk of having insufficient cash or its equivalent in a timely and cost-effective manner to meet financial obligations as they\ncome due. Common sources of liquidity risk inherent in banking services include unanticipated withdrawals of deposits, the inability to replace\nmaturing debt, credit and liquidity commitments, and additional pledging or other collateral requirements.\n\nOur approach to liquidity risk management supports our business strategy, aligns with our risk appetite and adheres to regulatory\nexpectations.\n\nOur management strategies, objectives and practices are regularly reviewed to align with changes to the liquidity environment, including\nregulatory, business and/or market developments. Liquidity risk remains within CIBC’s risk appetite.\n\nGovernance and management\nWe manage liquidity risk in a manner that enables us to withstand a liquidity stress event without an adverse impact on the viability of our\noperations. Actual and anticipated cash flows generated from on- and off-balance sheet exposures are routinely measured and monitored to ensure\ncompliance with established limits. We incorporate stress testing into the management and measurement of liquidity risk. Stress test results assist\nwith the development of our liquidity assumptions, identification of potential constraints to funding planning, and contribute to the design of our\ncontingency funding plan.\n\nLiquidity risk is managed using the three lines of defence model, and the ongoing management of liquidity risk is the responsibility of the\nTreasurer, supported by guidance from GALCO.\n\nThe Treasurer is responsible for managing the activities and processes required for measurement and the reporting and monitoring of CIBC’s\nliquidity risk position as the first line of defence.\n\nThe Liquidity and Non-Trading Market Risk group provides independent oversight of the measurement, monitoring and control of liquidity risk,\nas the second line of defence.\n\nInternal audit is the third line of defence providing reasonable assurance to senior management and the Audit Committee of the Board on the\neffectiveness of CIBC’s governance practices, risk management processes, and internal control as part of its risk-based audit plan and in\naccordance with its mandate as described in the Internal Audit Charter.\n\nThe GALCO governs CIBC’s liquidity risk management, ensuring the liquidity risk management methodologies, assumptions, and key metrics\nare regularly reviewed and aligned with CIBC’s requirements. The Liquidity Risk Management Committee, a subcommittee of GALCO, monitors\nglobal liquidity risk and is responsible for ensuring that CIBC’s liquidity risk profile is comprehensively measured and managed in alignment with\nCIBC’s strategic direction, risk appetite and regulatory requirements.\n\nThe RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually.\n\nPolicies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy.\n\nOur pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.",
+              "similarity": 0.733,
+              "fiscal_year": 2025,
+              "quarter": 0,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "document_type": "annual_report",
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "bank_code": "CIBC",
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "page_start": 83,
+              "section": "Liquidity risk",
+              "page_end": 83
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00172",
+              "text": "The RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually. Policies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy. Our pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.\n\nWe maintain a detailed global contingency funding plan that sets out the strategies for addressing liquidity shortfalls in emergency and\nunexpected situations, and delineates the requirements necessary to manage a range of stress conditions, establishes lines of responsibility,\narticulates implementation, defines escalation procedures, and is aligned to CIBC’s risk appetite. In order to reflect CIBC’s organizational\ncomplexity, regional and subsidiary contingency funding plans are maintained to respond to liquidity stresses unique to the jurisdictions within\nwhich CIBC operates, and support CIBC as an enterprise.\n\nRisk measurement\nOur liquidity risk tolerance is defined by our risk appetite statement, which is approved annually by the Board, and forms the basis for the\ndelegation of liquidity risk authority to senior management. We use both regulatory-driven and internally developed liquidity risk metrics to\nmeasure our liquidity risk exposure. Internally, our liquidity position is measured using the Liquidity Horizon, which combines contractual and\nbehavioural cash flows to measure the future point in time when projected cumulative cash outflows exceed cash inflows under a combined\nCIBC-specific and market-wide stress scenario. Expected and potential anticipated inflows and outflows of funds generated from on- and\noff-balance sheet exposures are measured and monitored on a regular basis to ensure compliance with established limits. These cash flows\nincorporate both contractual and behavioural on- and off-balance sheet cash flows.\n\nOur liquidity measurement system provides liquidity risk exposure reports that include the calculation of the internal liquidity stress tests\nand regulatory reporting such as the LCR, NSFR and net cumulative cash flow (NCCF). Our liquidity management also incorporates the\nmonitoring of our unsecured wholesale funding position and funding capacity.\n\nRisk appetite\nCIBC’s risk appetite statement ensures prudent management of liquidity risk by outlining qualitative considerations and quantitative metrics\nincluding the LCR and Liquidity Horizon. Quantitative metrics are measured and managed to a set of limits approved by Risk Management.\n\nStress testing\nA key component of our liquidity risk management, and complementing our assessments of liquidity risk exposure, is liquidity risk stress testing.\nLiquidity stress testing involves the application of name-specific and market-wide stress scenarios at varying levels of severity to assess the amount\nof available liquidity required to satisfy anticipated obligations as they come due. The scenarios model potential liquidity and funding requirements\nin the event of changes to unsecured wholesale funding and deposit run-off, contingent liquidity utilization, and liquid asset marketability.",
+              "similarity": 0.697,
+              "quarter": 0,
+              "page_start": 83,
+              "fiscal_year": 2025,
+              "document_type": "annual_report",
+              "page_end": 83,
+              "section": "Liquidity risk",
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "bank_code": "CIBC",
+              "filing_id": "CIBC_2025_annual_report_FY"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00161",
+              "text": "These policies are related to the identification and measurement of various\ntypes of market risk, their inclusion in the trading portfolio, and the establishment of limits within which we monitor, manage and report our overall\nexposures. Our policies also outline the requirements for the construction of valuation models, model review and validation, independent\nchecking of the valuation of positions, the establishment of valuation adjustments, and alignment with accounting policies including MTM and\nmark-to-model methodologies. Under the Basel III reforms for market risk, commonly known as the FRTB, we have our Risk Trading Book /\nBanking Book Boundary Procedures and Internal Risk Transfer Trading Procedures, which govern the classification of trading activity and set\nrestrictions on trades crossing the trading book banking book boundary. There are currently no deviations from the presumptive list of instrument\nclassifications, and over the past year, there have been no trading desks that have crossed the boundary.\n\nTrading desk strategies, including hedging strategies, are part of the trading desks operating model and included in each desk’s policies\nand procedures. The use of VaR, stress testing, and profit and loss monitoring also help identify and monitor the effectiveness of their trading\nstrategies, including hedging performance, and fall under the Trading Credit Risk and Market Risk Management Policies and their supporting\nstandards.\n\nMarket risk limits\nWe have risk tolerance levels, expressed in terms of statistically based VaR measures, potential stress losses, and notional or other limits as\nappropriate. We use a multi-tiered approach to set limits on the amounts of risk that we can assume in our trading and non-trading activities, as\nfollows:\n•\nBoard limits control consolidated market risk;\n•\nManagement limits control market risk for CIBC overall and are lower than the Board limits to allow for a buffer in the event of extreme\nmarket moves and/or extraordinary client needs;\n•\nTier 2 limits control market risk at the business unit level; and\n•\nTier 3 limits control market risk at the sub-business unit or desk level.\n\nManagement limits are established by the CRO, consistent with the risk appetite statement approved by the Board. Tier 2 and Tier 3 limits are\napproved at levels of management commensurate with the risk assumed.\n\nProcess and control\nMarket risk exposures are monitored daily against approved risk limits, and processes are in place to monitor that only authorized activities are\nundertaken. We generate daily risk and limit-monitoring reports including intraday limit monitoring for active trading desks, based on the\nprevious day’s positions. Summary market risk and limit compliance reports are produced and reviewed periodically with the GRC and RMC.\n\nManagement limits are established by the CRO, consistent with the risk appetite statement approved by the Board. Tier 2 and Tier 3 limits are\napproved at levels of management commensurate with the risk assumed. Process and control\nMarket risk exposures are monitored daily against approved risk limits, and processes are in place to monitor that only authorized activities are\nundertaken. We generate daily risk and limit-monitoring reports including intraday limit monitoring for active trading desks, based on the\nprevious day’s positions. Summary market risk and limit compliance reports are produced and reviewed periodically with the GRC and RMC.\n\nRisk measurement\nWe use the following measures for market risk:\n•\nVaR enables the meaningful estimation of potential for losses in different businesses and asset classes. VaR is determined by the coherent\nmodelling of VaR for each of interest rate, credit spread, equity, foreign exchange, and commodity, along with the portfolio effect arising\nfrom the interrelationship of the different risks (diversification effect):\n•\nInterest rate risk measures the impact of changes in interest rates and volatilities on cash instruments and derivatives.\n•\nCredit spread risk measures the impact of changes in credit spreads of provincial, municipal and agency bonds, sovereign bonds,\ncorporate bonds, securitized products, and credit derivatives such as credit default swaps.\n•\nEquity risk measures the impact of changes in equity prices and volatilities.\n•\nForeign exchange risk measures the impact of changes in foreign exchange rates and volatilities.\n•\nCommodity risk measures the impact of changes in commodity prices and volatilities, including the basis between related commodities.\n•\nDiversification effect reflects the risk reduction achieved across various financial instrument types, asset class, currencies, and regions.\nThe extent of the diversification benefit depends on the correlation between the assets and risk factors in the portfolio at a particular time.",
+              "similarity": 0.606,
+              "bank_code": "CIBC",
+              "bank": "Canadian Imperial Bank of Commerce",
+              "section": "Market risk",
+              "page_start": 78,
+              "quarter": 0,
+              "page_end": 78,
+              "fiscal_year": 2025,
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "document_type": "annual_report"
+            },
+            {
+              "chunk_id": "CIBC_2025_annual_report_FY_00357",
+              "text": "Derivatives are financial instruments where valuation is linked to changes in interest rates, foreign exchange rates, equity, commodity, credit prices,\nvolatilities, indices or other underlying factors. Changes in value as a result of the aforementioned risk factors are referred to as market risk.\n\nMarket risk arising from derivative trading activities is managed in order to mitigate risk in line with CIBC’s risk appetite. To manage market\nrisk, we set market risk limits and may enter into hedging transactions.\n\nConsolidated financial statements",
+              "similarity": 0.585,
+              "page_start": 161,
+              "bank": "Canadian Imperial Bank of Commerce",
+              "file_name": "CIBC_2025_annual_report.pdf",
+              "section": "Market risk",
+              "document_type": "annual_report",
+              "page_end": 162,
+              "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+              "filing_id": "CIBC_2025_annual_report_FY",
+              "bank_code": "CIBC",
+              "fiscal_year": 2025,
+              "quarter": 0
+            }
+          ],
+          "embedding_tokens": 0
+        },
+        "public_action_summary": "Tool requested: search_filings"
+      },
+      {
+        "iteration": 2,
+        "action": "final_answer",
+        "answer": "### Comparison of Liquidity Risk Controls in BMO and CIBC's 2025 Annual Reports\n\n#### BMO (Bank of Montreal)\n- **Governance and Management**: BMO's liquidity and funding risk management is governed by policies approved by the Board of Directors. The Corporate Treasury group is responsible for ongoing management, while the Enterprise Risk and Portfolio Management (ERPM) provides oversight. The Risk Management Committee (RMC) and Asset Liability Committee (ALCO) oversee significant policies and developments.\n- **Risk Measurement**: BMO employs a Stress Net Liquidity Position (stress NLP) as a key measure of liquidity risk, assessing potential funding needs under severe stress scenarios. They monitor liquidity metrics such as the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR).\n- **Contingency Planning**: An enterprise-wide contingency plan is in place, with early warning indicators monitored regularly.\n- **Liquidity Position**: BMO maintained a strong liquidity position in 2025, with metrics exceeding internal targets and regulatory requirements. Customer deposits grew while wholesale funding decreased.\n\n**Source**: BMO 2025 Annual Report, MD&A section, pages 91-92. [Link to report](https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf)\n\n#### CIBC (Canadian Imperial Bank of Commerce)\n- **Governance and Management**: CIBC manages liquidity risk through a three lines of defence model. The Treasurer oversees liquidity management, supported by the Liquidity and Non-Trading Market Risk group for independent oversight. The Governance and Asset Liability Committee (GALCO) governs liquidity risk management methodologies.\n- **Risk Measurement**: CIBC uses both regulatory-driven and internally developed metrics, including the Liquidity Horizon, which measures future cash flows under stress scenarios. They also conduct stress testing to assess liquidity needs.\n- **Policies**: CIBC has a detailed global contingency funding plan and maintains local liquidity practices for branches and subsidiaries. Their pledging policy sets limits for asset pledging to ensure liquidity.\n- **Liquidity Position**: CIBC's liquidity risk management aligns with their risk appetite and regulatory expectations, ensuring they can withstand liquidity stress events.\n\n**Source**: CIBC 2025 Annual Report, Liquidity Risk section, pages 83-84. [Link to report](https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf)\n\n### Summary\nBoth banks have robust frameworks for managing liquidity risk, with clear governance structures and comprehensive measurement strategies. BMO emphasizes its strong liquidity position and specific metrics like stress NLP, while CIBC highlights its three lines of defence model and detailed contingency planning."
+      }
+    ],
+    "sources": [
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00181",
+        "text": "Liquidity and Funding Risk Management\nBMO’s liquidity and funding risk program is defined and authorized in alignment with corporate policies approved by our Board of Directors and\nstandards approved by management. These policies and standards set out key management principles, liquidity and funding metrics and related\nlimits, as well as roles and responsibilities in the management of liquidity and funding risk across the enterprise.\n\nWe have a robust limit structure in place in order to manage liquidity and funding risk. These limits define BMO’s risk appetite for the key Stress\nNet Liquidity Position (stress NLP) measure, regulatory liquidity ratios, secured and unsecured funding appetite (for both trading and structural\nactivities), as well as enterprise collateral pledging. Limits also establish the tolerance for concentrations of maturities, as well as requirements for\ncounterparty liability diversification, business pledging activity, and the size and type of committed and uncommitted credit and liquidity facilities that\nmay be outstanding.\n\nOperating within these limits helps to confirm that liquidity and funding risk is appropriately managed. An enterprise-wide contingency plan\nintended to facilitate effective risk management in the event of a disruption is also in place. Early warning indicators identified in the contingency\nplan are regularly monitored in order to detect any signs of rising levels of liquidity or funding risk in the market, or any exposure to other risks\nspecific to BMO.\n\nBMO legal entities include regulated and foreign subsidiaries and branches, and as a result, movements of funds between entities in the\ncorporate group are subject to, among other things, the liquidity, funding and capital adequacy requirements of these entities. As such, liquidity and\nfunding positions are managed on both a consolidated and key legal entity basis. Liquidity and funding risk management policies and limits, informed\nby the laws and regulations that apply to each entity, are in place for key legal entities, and positions are regularly reviewed at the key legal entity\nlevel to confirm compliance with applicable laws and regulations.\n\nBMO continued to maintain a strong liquidity position during fiscal 2025. Customer deposits continued to grow, while customer loans declined\nduring the year. Wholesale funding decreased, reflecting net maturities. Our liquidity metrics, including the Liquidity Coverage Ratio (LCR) and Net\nStable Funding Ratio (NSFR), exceeded internal targets and regulatory requirements throughout fiscal 2025.\n\nLiquidity and Funding Risk Measurement\nA key component of liquidity risk management is the measurement of liquidity risk under stress. We use stress NLP as a key measure of liquidity risk.\nStress NLP represents the amount by which liquid assets exceed potential funding needs under severe systemic and enterprise-specific stress\nscenarios, and a combination thereof. Potential funding needs may arise from obligations to repay retail, commercial and wholesale deposits that are\nwithdrawn or not renewed, or to fund drawdowns on available credit and liquidity lines, as well as from obligations to pledge collateral due to ratings\ndowngrades or market volatility, along with the ongoing need to fund new assets and strategic investments. Potential funding needs are quantified\nby applying factors to various business activities based on management’s view of the relative level of liquidity risk related to each activity. These\nfactors vary by deposit classification (e.g., retail, small business, non-financial corporate or wholesale counterparties) and deposit type (e.g., insured,\nuninsured, operational or non-operational deposits), as well as by commitment type (e.g., committed or uncommitted credit or liquidity facilities by\ncounterparty type). Stress scenarios also consider the time horizon over which liquid assets can be monetized and management’s assessment of the\nliquidity value of those assets under conditions of market stress. These potential funding needs are assessed under severe systemic and enterprise-\nspecific stress scenarios, and a combination thereof.\n\nPotential funding needs are quantified\nby applying factors to various business activities based on management’s view of the relative level of liquidity risk related to each activity. These\nfactors vary by deposit classification (e.g., retail, small business, non-financial corporate or wholesale counterparties) and deposit type (e.g., insured,\nuninsured, operational or non-operational deposits), as well as by commitment type (e.g., committed or uncommitted credit or liquidity facilities by\ncounterparty type). Stress scenarios also consider the time horizon over which liquid assets can be monetized and management’s assessment of the\nliquidity value of those assets under conditions of market stress. These potential funding needs are assessed under severe systemic and enterprise-\nspecific stress scenarios, and a combination thereof.\n\nM",
+        "similarity": 0.685,
+        "page_start": 91,
+        "bank_code": "BMO",
+        "page_end": 91,
+        "bank": "Bank of Montreal",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "section": "MD&A",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "quarter": 0,
+        "filing_id": "BMO_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "fiscal_year": 2025
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00180",
+        "text": "Total Liabilities\n1,388,702 158,739\n1,166,934\n63,029\n1,325,361 134,966 1,138,917\n51,478 (1) Primarily comprises balance sheet items that are subject to the trading and underwriting RMF and recorded at fair value through profit or loss. (2) Primarily comprises balance sheet items that are subject to the structural balance sheet insurance RMF and secured financing transactions. Material presented in a blue-tinted font above is an integral part of Note 4 of the audited annual consolidated financial statements. 88 BMO Financial Group 208th Annual Report 2025 Liquidity and Funding Risk\n\nLiquidity and Funding Risk is the potential for financial loss if the bank is unable to meet its financial commitments in a timely manner at\nreasonable prices as they come due. Financial commitments include liabilities to depositors and suppliers, as well as lending, investment and\npledging commitments.\n\nManaging liquidity and funding risk is integral to maintaining enterprise soundness and safety, depositor confidence and earnings stability. It is BMO’s\npolicy to maintain a level of liquid assets and funding capacity sufficient to meet our financial commitments, even in times of stress.\n\nLiquidity and Funding Risk Governance\nThe Corporate Treasury group and the operating segments, as the first line of defence, are responsible for the ongoing identification, assessment,\nmeasurement, management and reporting of liquidity and funding risk. The Corporate Treasury group is responsible for monitoring and reporting on\nexposures to liquidity and funding risk across the enterprise; develops and recommends for approval the Liquidity and Funding Risk Management\nFramework and the related Risk Appetite Statement and limits; monitors adherence to relevant corporate policies; and assesses the impact of market\nevents on liquidity and funding requirements on an ongoing basis.\n\nEnterprise Risk and Portfolio Management (ERPM), as the second line of defence, exercises oversight, conducts independent risk assessment and\nprovides effective challenge of liquidity and funding management frameworks, policies, limits, monitoring and reporting across the enterprise.\n\nThe Risk Management Committee (RMC) and Asset Liability Committee (ALCO) provide senior management oversight, and review and discuss\nsignificant liquidity and funding policies, issues and developments that arise in the pursuit of BMO’s strategic priorities. The Risk Review Committee\n(RRC) provides oversight of the management of liquidity and funding risk, annually approves the applicable policies, limits and contingency plan, and\nregularly reviews liquidity and funding positions.",
+        "similarity": 0.681,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "quarter": 0,
+        "fiscal_year": 2025,
+        "page_start": 91,
+        "document_type": "annual_report",
+        "page_end": 91,
+        "section": "market risk",
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank": "Bank of Montreal",
+        "bank_code": "BMO",
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00182",
+        "text": "Stress testing results are evaluated against our stated risk appetite and are considered in management’s decisions on limit-setting and internal\ntransfer cost of liquidity, and also help to inform and shape the design of business plans and contingency plans. The liquidity and funding risk\nprogram is integrated with enterprise-wide stress testing.\n\nIn addition to stress NLP, we regularly monitor positions in relation to the limits and liquidity ratios noted in the Liquidity and Funding Risk\nManagement section above. These include regulatory metrics such as LCR, net cumulative cash flow and NSFR.\n\nUnencumbered Liquid Assets\nUnencumbered liquid assets comprise high-quality assets that are marketable, can be pledged as security for borrowings and can be converted to\ncash in a time frame that meets liquidity and funding requirements. Liquid assets are primarily held in our trading businesses, as well as in\nsupplemental liquidity pools that are maintained for contingent liquidity risk management purposes. The liquidity values recognized for different asset\nclasses under BMO’s liquidity and funding risk program reflect management’s assessment of the liquidity values of those assets under a severe stress\nscenario. Liquid assets held in our trading businesses comprise cash on deposit with central banks, short-term deposits with other financial\ninstitutions, highly-rated debt securities, equity securities and short-term reverse repurchase agreements. Supplemental liquidity pool assets primarily\ncomprise cash on deposit with central banks, securities, and short-term reverse repurchase agreements for highly-rated Canadian federal and\nprovincial government debt and U.S. federal government and agency debt. Substantially all supplemental liquidity pool assets meet the definition of\nhigh-quality liquid assets under Basel III. The size of the supplemental liquidity pool is integrated with our assessment of liquidity risk. In order to\ncomply with local regulatory requirements, certain legal entities maintain their own minimum liquidity positions. There may be legal and regulatory\nrestrictions on BMO’s ability to use liquid assets held at one legal entity to support the liquidity requirements of another legal entity.",
+        "similarity": 0.671,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "bank_code": "BMO",
+        "fiscal_year": 2025,
+        "file_name": "BMO_2025_annual_report.pdf",
+        "bank": "Bank of Montreal",
+        "filing_id": "BMO_2025_annual_report_FY",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "page_end": 92,
+        "section": "MANAGEMENT’S DISCUSSION AND ANALYSIS",
+        "page_start": 92
+      },
+      {
+        "chunk_id": "BMO_2025_annual_report_FY_00125",
+        "text": "89\nLiquidity and Funding Risk\n\n98\nOperational Non-Financial Risk\n102\nLegal and Regulatory Compliance Risk\n104\nStrategic Risk\n105\nEnvironmental and Social Risk\n107\nReputation Risk",
+        "similarity": 0.65,
+        "page_start": 69,
+        "quarter": 0,
+        "bank": "Bank of Montreal",
+        "file_name": "BMO_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "page_end": 69,
+        "fiscal_year": 2025,
+        "source_url": "https://www.bmo.com/ir/archive/en/bmo_ar2025.pdf",
+        "section": "Market Risk",
+        "bank_code": "BMO",
+        "filing_id": "BMO_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00171",
+        "text": "Liquidity risk is the risk of having insufficient cash or its equivalent in a timely and cost-effective manner to meet financial obligations as they\ncome due. Common sources of liquidity risk inherent in banking services include unanticipated withdrawals of deposits, the inability to replace\nmaturing debt, credit and liquidity commitments, and additional pledging or other collateral requirements.\n\nOur approach to liquidity risk management supports our business strategy, aligns with our risk appetite and adheres to regulatory\nexpectations.\n\nOur management strategies, objectives and practices are regularly reviewed to align with changes to the liquidity environment, including\nregulatory, business and/or market developments. Liquidity risk remains within CIBC’s risk appetite.\n\nGovernance and management\nWe manage liquidity risk in a manner that enables us to withstand a liquidity stress event without an adverse impact on the viability of our\noperations. Actual and anticipated cash flows generated from on- and off-balance sheet exposures are routinely measured and monitored to ensure\ncompliance with established limits. We incorporate stress testing into the management and measurement of liquidity risk. Stress test results assist\nwith the development of our liquidity assumptions, identification of potential constraints to funding planning, and contribute to the design of our\ncontingency funding plan.\n\nLiquidity risk is managed using the three lines of defence model, and the ongoing management of liquidity risk is the responsibility of the\nTreasurer, supported by guidance from GALCO.\n\nThe Treasurer is responsible for managing the activities and processes required for measurement and the reporting and monitoring of CIBC’s\nliquidity risk position as the first line of defence.\n\nThe Liquidity and Non-Trading Market Risk group provides independent oversight of the measurement, monitoring and control of liquidity risk,\nas the second line of defence.\n\nInternal audit is the third line of defence providing reasonable assurance to senior management and the Audit Committee of the Board on the\neffectiveness of CIBC’s governance practices, risk management processes, and internal control as part of its risk-based audit plan and in\naccordance with its mandate as described in the Internal Audit Charter.\n\nThe GALCO governs CIBC’s liquidity risk management, ensuring the liquidity risk management methodologies, assumptions, and key metrics\nare regularly reviewed and aligned with CIBC’s requirements. The Liquidity Risk Management Committee, a subcommittee of GALCO, monitors\nglobal liquidity risk and is responsible for ensuring that CIBC’s liquidity risk profile is comprehensively measured and managed in alignment with\nCIBC’s strategic direction, risk appetite and regulatory requirements.\n\nThe RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually.\n\nPolicies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy.\n\nOur pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.",
+        "similarity": 0.733,
+        "fiscal_year": 2025,
+        "quarter": 0,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "document_type": "annual_report",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "bank_code": "CIBC",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "page_start": 83,
+        "section": "Liquidity risk",
+        "page_end": 83
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00172",
+        "text": "The RMC provides governance through bi-annual review of CIBC’s liquidity risk management policy, and recommends liquidity risk tolerance\nto the Board through the risk appetite statement which is reviewed annually. Policies\nOur liquidity risk management policy establishes requirements that enable us to meet anticipated liquidity needs in both normal and stressed\nconditions by maintaining a sufficient amount of available unencumbered liquid assets and diversified funding sources. Branches and\nsubsidiaries possessing unique liquidity characteristics, due to distinct businesses or jurisdictional requirements, maintain local liquidity\npractices in alignment with CIBC’s liquidity risk management policy. Our pledging policy sets out consolidated limits for the pledging of CIBC’s assets across a broad range of financial activities. These limits\nensure unencumbered liquid assets are available for liquidity purposes.\n\nWe maintain a detailed global contingency funding plan that sets out the strategies for addressing liquidity shortfalls in emergency and\nunexpected situations, and delineates the requirements necessary to manage a range of stress conditions, establishes lines of responsibility,\narticulates implementation, defines escalation procedures, and is aligned to CIBC’s risk appetite. In order to reflect CIBC’s organizational\ncomplexity, regional and subsidiary contingency funding plans are maintained to respond to liquidity stresses unique to the jurisdictions within\nwhich CIBC operates, and support CIBC as an enterprise.\n\nRisk measurement\nOur liquidity risk tolerance is defined by our risk appetite statement, which is approved annually by the Board, and forms the basis for the\ndelegation of liquidity risk authority to senior management. We use both regulatory-driven and internally developed liquidity risk metrics to\nmeasure our liquidity risk exposure. Internally, our liquidity position is measured using the Liquidity Horizon, which combines contractual and\nbehavioural cash flows to measure the future point in time when projected cumulative cash outflows exceed cash inflows under a combined\nCIBC-specific and market-wide stress scenario. Expected and potential anticipated inflows and outflows of funds generated from on- and\noff-balance sheet exposures are measured and monitored on a regular basis to ensure compliance with established limits. These cash flows\nincorporate both contractual and behavioural on- and off-balance sheet cash flows.\n\nOur liquidity measurement system provides liquidity risk exposure reports that include the calculation of the internal liquidity stress tests\nand regulatory reporting such as the LCR, NSFR and net cumulative cash flow (NCCF). Our liquidity management also incorporates the\nmonitoring of our unsecured wholesale funding position and funding capacity.\n\nRisk appetite\nCIBC’s risk appetite statement ensures prudent management of liquidity risk by outlining qualitative considerations and quantitative metrics\nincluding the LCR and Liquidity Horizon. Quantitative metrics are measured and managed to a set of limits approved by Risk Management.\n\nStress testing\nA key component of our liquidity risk management, and complementing our assessments of liquidity risk exposure, is liquidity risk stress testing.\nLiquidity stress testing involves the application of name-specific and market-wide stress scenarios at varying levels of severity to assess the amount\nof available liquidity required to satisfy anticipated obligations as they come due. The scenarios model potential liquidity and funding requirements\nin the event of changes to unsecured wholesale funding and deposit run-off, contingent liquidity utilization, and liquid asset marketability.",
+        "similarity": 0.697,
+        "quarter": 0,
+        "page_start": 83,
+        "fiscal_year": 2025,
+        "document_type": "annual_report",
+        "page_end": 83,
+        "section": "Liquidity risk",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "bank_code": "CIBC",
+        "filing_id": "CIBC_2025_annual_report_FY"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00161",
+        "text": "These policies are related to the identification and measurement of various\ntypes of market risk, their inclusion in the trading portfolio, and the establishment of limits within which we monitor, manage and report our overall\nexposures. Our policies also outline the requirements for the construction of valuation models, model review and validation, independent\nchecking of the valuation of positions, the establishment of valuation adjustments, and alignment with accounting policies including MTM and\nmark-to-model methodologies. Under the Basel III reforms for market risk, commonly known as the FRTB, we have our Risk Trading Book /\nBanking Book Boundary Procedures and Internal Risk Transfer Trading Procedures, which govern the classification of trading activity and set\nrestrictions on trades crossing the trading book banking book boundary. There are currently no deviations from the presumptive list of instrument\nclassifications, and over the past year, there have been no trading desks that have crossed the boundary.\n\nTrading desk strategies, including hedging strategies, are part of the trading desks operating model and included in each desk’s policies\nand procedures. The use of VaR, stress testing, and profit and loss monitoring also help identify and monitor the effectiveness of their trading\nstrategies, including hedging performance, and fall under the Trading Credit Risk and Market Risk Management Policies and their supporting\nstandards.\n\nMarket risk limits\nWe have risk tolerance levels, expressed in terms of statistically based VaR measures, potential stress losses, and notional or other limits as\nappropriate. We use a multi-tiered approach to set limits on the amounts of risk that we can assume in our trading and non-trading activities, as\nfollows:\n•\nBoard limits control consolidated market risk;\n•\nManagement limits control market risk for CIBC overall and are lower than the Board limits to allow for a buffer in the event of extreme\nmarket moves and/or extraordinary client needs;\n•\nTier 2 limits control market risk at the business unit level; and\n•\nTier 3 limits control market risk at the sub-business unit or desk level.\n\nManagement limits are established by the CRO, consistent with the risk appetite statement approved by the Board. Tier 2 and Tier 3 limits are\napproved at levels of management commensurate with the risk assumed.\n\nProcess and control\nMarket risk exposures are monitored daily against approved risk limits, and processes are in place to monitor that only authorized activities are\nundertaken. We generate daily risk and limit-monitoring reports including intraday limit monitoring for active trading desks, based on the\nprevious day’s positions. Summary market risk and limit compliance reports are produced and reviewed periodically with the GRC and RMC.\n\nManagement limits are established by the CRO, consistent with the risk appetite statement approved by the Board. Tier 2 and Tier 3 limits are\napproved at levels of management commensurate with the risk assumed. Process and control\nMarket risk exposures are monitored daily against approved risk limits, and processes are in place to monitor that only authorized activities are\nundertaken. We generate daily risk and limit-monitoring reports including intraday limit monitoring for active trading desks, based on the\nprevious day’s positions. Summary market risk and limit compliance reports are produced and reviewed periodically with the GRC and RMC.\n\nRisk measurement\nWe use the following measures for market risk:\n•\nVaR enables the meaningful estimation of potential for losses in different businesses and asset classes. VaR is determined by the coherent\nmodelling of VaR for each of interest rate, credit spread, equity, foreign exchange, and commodity, along with the portfolio effect arising\nfrom the interrelationship of the different risks (diversification effect):\n•\nInterest rate risk measures the impact of changes in interest rates and volatilities on cash instruments and derivatives.\n•\nCredit spread risk measures the impact of changes in credit spreads of provincial, municipal and agency bonds, sovereign bonds,\ncorporate bonds, securitized products, and credit derivatives such as credit default swaps.\n•\nEquity risk measures the impact of changes in equity prices and volatilities.\n•\nForeign exchange risk measures the impact of changes in foreign exchange rates and volatilities.\n•\nCommodity risk measures the impact of changes in commodity prices and volatilities, including the basis between related commodities.\n•\nDiversification effect reflects the risk reduction achieved across various financial instrument types, asset class, currencies, and regions.\nThe extent of the diversification benefit depends on the correlation between the assets and risk factors in the portfolio at a particular time.",
+        "similarity": 0.606,
+        "bank_code": "CIBC",
+        "bank": "Canadian Imperial Bank of Commerce",
+        "section": "Market risk",
+        "page_start": 78,
+        "quarter": 0,
+        "page_end": 78,
+        "fiscal_year": 2025,
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "CIBC_2025_annual_report_FY_00357",
+        "text": "Derivatives are financial instruments where valuation is linked to changes in interest rates, foreign exchange rates, equity, commodity, credit prices,\nvolatilities, indices or other underlying factors. Changes in value as a result of the aforementioned risk factors are referred to as market risk.\n\nMarket risk arising from derivative trading activities is managed in order to mitigate risk in line with CIBC’s risk appetite. To manage market\nrisk, we set market risk limits and may enter into hedging transactions.\n\nConsolidated financial statements",
+        "similarity": 0.585,
+        "page_start": 161,
+        "bank": "Canadian Imperial Bank of Commerce",
+        "file_name": "CIBC_2025_annual_report.pdf",
+        "section": "Market risk",
+        "document_type": "annual_report",
+        "page_end": 162,
+        "source_url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2025/ar-25-en.pdf",
+        "filing_id": "CIBC_2025_annual_report_FY",
+        "bank_code": "CIBC",
+        "fiscal_year": 2025,
+        "quarter": 0
+      }
+    ],
+    "retrieval_seconds": null,
+    "structured": null
+  },
+  "latency_seconds": 9.7449797000736,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0013958999999999996,
+  "input_tokens": 6702,
+  "output_tokens": 651,
+  "embedding_tokens": 0,
+  "chat_calls": 2,
+  "query_embedding_seconds": 0.040191000094637275,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": false
+  },
+  "judgment": {
+    "faithfulness": 4,
+    "relevance": 4,
+    "completeness": 3,
+    "faithfulness_reason": "The answer accurately reflects the liquidity risk controls of both BMO and CIBC, but some details may not be fully supported by the provided evidence, leading to minor imprecision.",
+    "relevance_reason": "The answer mostly addresses the comparison of liquidity risk controls between BMO and CIBC, but it lacks some specific details that would enhance clarity and relevance.",
+    "completeness_reason": "The answer provides a good overview but omits some specific aspects of liquidity risk management practices from both banks, leading to substantial omissions.",
+    "unsupported_claims": [],
+    "reference_limitations": "The answer does not fully utilize all relevant evidence from the provided reference packet, which may contain additional details on liquidity risk controls."
+  },
+  "judge_cost_usd": 0.0024241499999999995
+}

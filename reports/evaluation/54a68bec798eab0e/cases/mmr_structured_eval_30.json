@@ -1,0 +1,210 @@
+{
+  "case_id": "54a68bec798eab0e/mmr_structured/eval_30",
+  "config": "mmr_structured",
+  "question": {
+    "id": "eval_30",
+    "question": "Calculate the percentage change in RBC provision for credit losses from 2024 to 2025.",
+    "question_type": "edge",
+    "banks": [
+      "RBC"
+    ],
+    "risk": "calculation",
+    "scopes": [
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "document_type": "annual_report"
+      },
+      {
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "document_type": "annual_report"
+      }
+    ],
+    "expected_behavior": "Use matching annual PCL amounts with units and citations; show (new-old)/old*100, or abstain if either input is missing.",
+    "reference_query": "RBC total provision for credit losses fiscal year"
+  },
+  "status": "complete",
+  "generation": {
+    "answer": "The provision for credit losses for Royal Bank of Canada (RBC) for the year ended October 31, 2024, was $2,793 million [S1]. For the year ended October 31, 2025, the provision for credit losses was $3,546 million [S5]. The percentage change from 2024 to 2025 is calculated as follows:\n\n\\[ \\text{Percentage Change} = \\frac{(3546 - 2793)}{2793} \\times 100 = 27.0\\% \\] \n\nThus, the percentage change in RBC provision for credit losses from 2024 to 2025 is 27.0%.",
+    "sources": [
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00357",
+        "text": "Balance at beginning of period\n$\n774\n$\n785 $\n767\n$\n2,326 $\n597\n$\n585 $\n392\n$\n1,574\nProvision for credit losses Transfers to stage 1\n284\n(282)\n(2)\n–\n216\n(215)\n(1)\n–\nTransfers to stage 2\n(152)\n159\n(7)\n–\n(87)\n89\n(2)\n–\nTransfers to stage 3\n(9)\n(77)\n86\n–\n(10)\n(60)\n70\n–\nOriginations\n737\n–\n–\n737\n651\n–\n–\n651\nMaturities\n(438)\n(379)\n–\n(817)\n(448)\n(270)\n–\n(718)\nChanges in risk, parameters and\n\nexposures\n(407)\n827\n957\n1,377\n(153)\n647\n718\n1,212\nWrite-offs\n–\n–\n(763)\n(763)\n–\n–\n(324)\n(324)\nRecoveries\n–\n–\n63\n63\n–\n–\n31\n31\nExchange rate and other\n(2)\n5\n(133)\n(130)\n8\n9\n(117)\n(100)\n\nBalance at end of period\n$\n787\n$\n1,038 $\n968\n$\n2,793 $\n774\n$\n785 $\n767\n$\n2,326\n\nConsolidated Financial Statements\n\nNote 5\nLoans and allowance for credit losses (continued)\n\nKey inputs and assumptions\nThe measurement of expected credit losses is a complex calculation that involves a significant number of interrelated inputs and\nassumptions and the allowance is not sensitive to any one single factor. The key drivers of changes in expected credit losses\ninclude the following:\n\n• Changes in the credit quality of the borrower or instrument, primarily reflected in changes in internal risk ratings;\n• Changes in forward-looking macroeconomic conditions, specifically the macroeconomic variables to which our models are\ncalibrated, which are those most closely correlated with credit losses in the relevant portfolio;\n• Changes in scenario design and the weight assigned to each scenario; and\n• Transfers between stages, which can be triggered by changes to any of the above inputs.\n\nTo reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics.\n\nInternal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit risk\nand Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.",
+        "similarity": 0.5617722868919373,
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2024,
+        "document_type": "annual_report",
+        "page_end": 190,
+        "section": "FVOCI",
+        "bank_code": "RBC",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "quarter": 0,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "page_start": 189
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00016",
+        "text": "Royal Bank of Canada Annual Report 2024 | 19 2024 highlights across our\nbalanced scorecard Shareholders RBC is driven by its vision, values\nand commitment to delivering\nlong-term results. Financial performance metrics Medium-Term Objectives(1)\n3-Year\n5-Year Diluted EPS growth of 7%+\n1%\n5% ROE of 16%+\n15.0%\n15.6% Strong capital ratio (CET1)\n13.4%\n13.3% Dividend payout ratio of 40%–50%\n49%\n48% Total shareholder return(2) Medium-Term Objectives(1)\n3-Year\n5-Year RBC\n14%\n14% Global peer average\n11%\n12% Earnings\n\nRevenue by segment(3)\n\nnet income (C$ billion)\n\n(C$ billion)\n\n$16.2\n\n$14.6\n\n$19.6\nWealth\nManagement\n\n$17.3\nPersonal\nBanking\n\nAnnualized\nDividend\nIncrease of:\n\n7%\n\nFive year(4)\n\n$1.2\nInsurance\n\n7%\n\nTen year(4)\n\n$7.4\nCommercial\nBanking\n\n$12.0\nCapital\nMarkets\n\n2023\n2024\n\n(2) \u0007Annualized TSR is calculated based on the TSX common\n\nshare price appreciation plus reinvested dividend income.\nSource: Bloomberg, as at October 31, 2024. Please refer to\npage 27\n(3) Excludes Corporate Support\n(4) Compound Annual Growth Rate\n\n(1)\n\u0007A medium-term (3-5 year) objective is considered to be\nachieved when the performance goal is met in either a\n3- or 5-year period. These objectives assume a normal\nbusiness environment and our ability to achieve them in a\nperiod may be adversely affected by the macroeconomic\nbackdrop and the cyclical nature of the credit cycle. Our\nfinancial performance reflects the impact of specified\nitems and the amortization of acquisition related\nintangibles\n\n20 | Royal Bank of Canada Annual Report 2024\n\n14.4%\nreturn on common equity(5)\n\n13.2%\nrobust common equity tier 1 (CET1) ratio(6)\n\n$5.60\ndividends declared per share, up 5%\nfrom 2023; dividend payout ratio of 50%\n\n$8.1 billion of profits returned to our\nshareholders through dividends and\nshare repurchases; total payout ratio\nof 51%(7)\n\nStrong funding profile\n99% ratio of loans to deposits in\nCanadian Banking\n\nPrudent risk management\nwith 28 basis points of provision for\ncredit losses (PCL) on impaired loans\n\n$11.25\ndiluted earnings per share (EPS), up 9%\nfrom 2023\n\n(5) Refer to the Glossary for definition on page 138\n(6) \u0007Refer to the Glossary for definition on page 137\n(7) \u0007Total payout ratio is calculated as total common shareholder distributions (common dividends of $7,916 million + common share repurchases of $140 million) as a\n\npercentage of net income available to common shareholders ($15,908 million). $8.1 billion is for common shares\n\nRoyal Bank of Canada Annual Report 2024 | 21",
+        "similarity": 0.5144051313400269,
+        "bank_code": "RBC",
+        "bank": "Royal Bank of Canada",
+        "quarter": 0,
+        "page_start": 20,
+        "section": "FIX IT",
+        "file_name": "RBC_2024_annual_report.pdf",
+        "filing_id": "RBC_2024_annual_report_FY",
+        "fiscal_year": 2024,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "document_type": "annual_report",
+        "page_end": 21
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00403",
+        "text": "The estimation of FVLCD involves significant judgment in the determination of inputs to the discounted cash flow model and\nis most sensitive to changes in future cash flows, discount rates and terminal growth rates applied to cash flows beyond the\nforecast period. The sensitivity of the FVLCD to key inputs and assumptions was tested by recalculating the recoverable amount\nusing reasonably possible changes to those parameters. As at August 1, 2024, no reasonably possible change in an individual key\ninput or assumption, as described, would result in the CGU’s carrying amount exceeding its recoverable amount. 212\nConsolidated Financial Statements Other intangible assets For the year ended October 31, 2024 Customer Internally\ngenerated In process (Millions of Canadian dollars) software Other\nsoftware Core\ndeposit\nintangibles list and\nrelationships (1) software\nTotal Gross carrying amount\n\nBalance at beginning of period\n$\n5,595\n$\n1,097\n$\n1,658\n$\n2,456\n$\n1,527\n$\n12,333\nAdditions\n31\n4\n–\n9\n1,090\n1,134\nAcquisition through business combination\n–\n–\n1,972\n370\n–\n2,342\nTransfers\n1,204\n42\n–\n–\n(1,246)\n–\nDispositions\n(1,204)\n(67)\n–\n(9)\n(1)\n(1,281)\nImpairment losses\n(37)\n(18)\n–\n–\n(30)\n(85)\nCurrency translations\n32\n17\n7\n115\n3\n174\nOther changes\n(47)\n(1)\n–\n–\n14\n(34)\n\nBalance at end of period\n$\n5,574\n$\n1,074\n$\n3,637\n$\n2,941\n$\n1,357\n$\n14,583\n\nAccumulated amortization\n\nBalance at beginning of period\n$\n(3,596) $\n(658) $\n(1,330) $\n(846) $\n–\n$\n(6,430)\nAmortization charge for the year\n(986)\n(102)\n(325)\n(136)\n–\n(1,549)\nDispositions\n1,204\n66\n–\n7\n–\n1,277\nImpairment losses\n12\n5\n–\n–\n–\n17\nCurrency translations\n(21)\n(7)\n(8)\n(31)\n–\n(67)\nOther changes\n–\n(33)\n–\n–\n–\n(33)\n\nBalance at end of period\n$\n(3,387) $\n(729) $\n(1,663) $\n(1,006) $\n–\n$\n(6,785)\n\nNet balance at end of period\n$\n2,187\n$\n345\n$\n1,974\n$\n1,935\n$\n1,357\n$\n7,798\n\nFor the year ended October 31, 2023 (Restated – Note 2)\n\nCustomer\n\nInternally\ngenerated\n\nIn process\n\n(Millions of Canadian dollars)\n\nsoftware\n\nOther\nsoftware\n\nCore\ndeposit\nintangibles\n\nlist and\nrelationships\n\nsoftware\nTotal\n\nGross carrying amount",
+        "similarity": 0.4519202709197998,
+        "bank_code": "RBC",
+        "document_type": "annual_report",
+        "bank": "Royal Bank of Canada",
+        "page_start": 213,
+        "fiscal_year": 2024,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "page_end": 213,
+        "quarter": 0,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "section": "Credit risk",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf"
+      },
+      {
+        "chunk_id": "RBC_2024_annual_report_FY_00349",
+        "text": "Allowance for credit losses on investment securities\nThe following tables reconcile the opening and closing allowance for debt securities at FVOCI and amortized cost by stage.\nReconciling items include the following:\n•\nTransfers between stages, which are presumed to occur before any corresponding remeasurement of the allowance.\n•\nPurchases, which reflect the allowance related to assets newly recognized during the period, including those assets that\nwere derecognized following a modification of terms.\n•\nSales and maturities, which reflect the allowance related to assets derecognized during the period without a credit loss\nbeing incurred, including those assets that were derecognized following a modification of terms.\n•\nChanges in risk, parameters and exposures, which comprise the impact of changes in model inputs or assumptions, including\nchanges in forward-looking macroeconomic conditions; partial repayments; changes in the measurement following a\ntransfer between stages; and unwinding of the time value discount due to the passage of time.\n\nAllowance for credit losses – securities at FVOCI (1)\n\nFor the year ended\n\nOctober 31, 2024\n\nOctober 31, 2023\n\nPerforming\n\nImpaired\n\nPerforming\n\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3 (2)\nTotal\nStage 1\nStage 2\nStage 3 (2)\nTotal\n\nBalance at beginning of period\n$\n4 $\n– $\n(37) $\n(33) $\n3 $\n1 $\n(23) $\n(19)\nProvision for credit losses\n\nTransfers to stage 1\n–\n–\n–\n–\n1\n(1)\n–\n–\nTransfers to stage 2\n–\n–\n–\n–\n–\n–\n–\n–\nTransfers to stage 3\n–\n–\n–\n–\n–\n–\n–\n–\nPurchases\n10\n–\n–\n10\n7\n–\n–\n7\nSales and maturities\n(4)\n–\n–\n(4)\n(2)\n–\n–\n(2)\nChanges in risk, parameters and\n\nexposures\n(4)\n–\n(8)\n(12)\n(5)\n–\n(17)\n(22)\nExchange rate and other\n–\n–\n4\n4\n–\n–\n3\n3\n\nBalance at end of period\n$\n6 $\n– $\n(41) $\n(35) $\n4 $\n– $\n(37) $\n(33)\n\n(1)\nExpected credit losses on debt securities at FVOCI are not separately recognized on the Consolidated Balance Sheets as the related securities are recorded at fair value.\nThe cumulative amount of credit losses recognized in income is presented in Other components of equity.\n(2)\nReflects changes in the allowance for purchased credit impaired securities.\n\nConsolidated Financial Statements\n\nNote 4\nSecurities (continued)\n\nAllowance for credit losses – securities at amortized cost\n\nFor the year ended\n\nOctober 31, 2024\n\nOctober 31, 2023\n\nPerforming\nImpaired\n\nPerforming\nImpaired\n\n(Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal\n\nBalance at beginning of period\n$\n8 $\n15 $\n– $\n23 $\n8 $\n14 $\n– $\n22\nProvision for credit losses",
+        "similarity": 0.5329058766365051,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf",
+        "page_start": 185,
+        "filing_id": "RBC_2024_annual_report_FY",
+        "bank_code": "RBC",
+        "fiscal_year": 2024,
+        "section": "FVOCI",
+        "bank": "Royal Bank of Canada",
+        "page_end": 186,
+        "quarter": 0,
+        "file_name": "RBC_2024_annual_report.pdf",
+        "document_type": "annual_report"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00343",
+        "text": "Consolidated Financial Statements Note 5\nLoans and allowance for credit losses (continued) Allowance for credit losses – Retail and wholesale loans For the year ended October 31, 2025 October 31, 2024 Performing Impaired Performing Impaired (Millions of Canadian dollars)\nStage 1\nStage 2\nStage 3\nTotal\nStage 1\nStage 2\nStage 3\nTotal Residential mortgages\n\nBalance at beginning of period\n$\n215\n$\n126 $\n231\n$\n572 $\n223\n$\n90 $\n168\n$\n481\nProvision for credit losses\n\nTransfers to stage 1\n157\n(153)\n(4)\n–\n99\n(97)\n(2)\n–\nTransfers to stage 2\n(41)\n49\n(8)\n–\n(23)\n36\n(13)\n–\nTransfers to stage 3\n(7)\n(45)\n52\n–\n(5)\n(42)\n47\n–\nOriginations\n100\n–\n–\n100\n94\n–\n–\n94\nMaturities\n(25)\n(29)\n–\n(54)\n(19)\n(17)\n–\n(36)\nChanges in risk, parameters and\n\nexposures\n(123)\n256\n101\n234\n(155)\n157\n54\n56\nWrite-offs\n–\n–\n(20)\n(20)\n–\n–\n(23)\n(23)\nRecoveries\n–\n–\n11\n11\n–\n–\n13\n13\nExchange rate and other\n–\n–\n(49)\n(49)\n1\n(1)\n(13)\n(13)\n\nBalance at end of period\n$\n276\n$\n204 $\n314\n$\n794 $\n215\n$\n126 $\n231\n$\n572\n\nPersonal\n\nBalance at beginning of period\n$\n305\n$\n966 $\n211\n$\n1,482 $\n280\n$\n793 $\n155\n$\n1,228\nProvision for credit losses\n\nTransfers to stage 1\n594\n(593)\n(1)\n–\n537\n(537)\n–\n–\nTransfers to stage 2\n(96)\n100\n(4)\n–\n(75)\n78\n(3)\n–\nTransfers to stage 3\n(4)\n(163)\n167\n–\n(3)\n(130)\n133\n–\nOriginations\n105\n–\n–\n105\n116\n–\n–\n116\nMaturities\n(53)\n(233)\n(1)\n(287)\n(51)\n(186)\n–\n(237)\nChanges in risk, parameters and\n\nexposures\n(562)\n1,040\n660\n1,138\n(499)\n947\n550\n998\nWrite-offs\n–\n–\n(935)\n(935)\n–\n–\n(745)\n(745)\nRecoveries\n–\n–\n156\n156\n–\n–\n129\n129\nExchange rate and other\n2\n(2)\n(20)\n(20)\n–\n1\n(8)\n(7)\n\nBalance at end of period\n$\n291\n$\n1,115 $\n233\n$\n1,639 $\n305\n$\n966 $\n211\n$\n1,482\n\nCredit cards\n\nBalance at beginning of period\n$\n207\n$\n1,026 $\n–\n$\n1,233 $\n203\n$\n866 $\n–\n$\n1,069\nProvision for credit losses",
+        "similarity": 0.5759422183036804,
+        "page_end": 184,
+        "page_start": 184,
+        "document_type": "annual_report",
+        "quarter": 0,
+        "section": "FVOCI",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada",
+        "fiscal_year": 2025,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00423",
+        "text": "Weighted average assumptions For the year ended October 31 October 31\n\n(Canadian dollars per share except percentages and years)\n\n2024\n\n2025\n\nShare price at grant date\n$\n177.97 $\n128.62\nRisk-free interest rate\n3.00%\n3.29%\nExpected dividend yield\n3.85%\n4.20%\nExpected share price volatility\n17%\n16%\nExpected life of option\n6 Years\n6 Years\n\nEmployee savings and share ownership plans\nWe offer many employees an opportunity to own our common shares through savings and share ownership plans. Under these\nplans, the employees can generally contribute between 1% and 10% of their annual salary or benefit base for commission-based\nemployees. For each contribution between 1% and 6%, we will generally match 50% of the employee contributions in our\ncommon shares. For the RBC Dominion Securities Savings® Plan, our maximum annual contribution is $4,500 per employee. For\nthe RBC U.K. Share Incentive Plan, our maximum annual contribution is £1,500 per employee. For the year ended October 31,\n2025, we contributed $164 million (October 31, 2024 – $154 million) under the terms of these plans towards the purchase of our\ncommon shares. As at October 31, 2025 an aggregate of 34 million common shares were held under these plans (October 31, 2024\n– 35 million common shares).\n\nDeferred share and other plans\nWe offer deferred share unit plans to executives, certain key employees and non-employee directors of the Bank. Under these\nplans, participants may choose to receive all or a percentage of their annual variable short-term incentive bonus, commission,\nor directors’ fee in the form of deferred share units (DSUs). The participants must elect to participate in the plan prior to the\nbeginning of the year. DSUs earn dividend equivalents in the form of additional DSUs at the same rate as dividends on common\nshares. The participant is not allowed to convert the DSUs until retirement or termination of employment/directorship. The cash\nvalue of the DSUs is equivalent to the market value of common shares when conversion takes place.\n\nWe offer unit awards for certain key employees within Capital Markets. The bonus is invested as RBC share units and a\nspecified percentage vests on a specified number of anniversary dates each year. Each vested amount is paid in cash and is\nbased on the original number of share units granted plus accumulated dividends, valued using the average closing price of\nRBC common shares during the five trading days immediately preceding the vesting date.\n\nWe offer performance deferred share award plans to certain key employees, all of which vest at the end of three years.\nUpon vesting, the award is generally paid in cash and is based on the original number of RBC share units granted plus\naccumulated dividends, valued using the average closing price of RBC common shares during the five trading days immediately\npreceding the vesting date. A portion of the award under certain plans may be increased or decreased up to 25%, depending on\nour total shareholder return compared to a defined peer group of global financial institutions.\n\nWe maintain non-qualified deferred compensation plans for certain key employees in the U.S. These plans allow eligible\nemployees to defer a portion of their annual income and a variety of productivity and recruitment bonuses and allocate the\ndeferrals among specified fund choices, including a RBC Share Account fund that tracks the value of our common shares.\n\nThe following table presents the units granted under the deferred share and other plans for the year.\n\nUnits granted under deferred share and other plans",
+        "similarity": 0.4651755094528198,
+        "page_end": 226,
+        "bank_code": "RBC",
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "fiscal_year": 2025,
+        "bank": "Royal Bank of Canada",
+        "document_type": "annual_report",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "quarter": 0,
+        "section": "Market risk",
+        "page_start": 226,
+        "file_name": "RBC_2025_annual_report.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00020",
+        "text": "Royal Bank of Canada Annual Report 2025 | 21\n\nManagement’s Discussion and Analysis (MD&A) is provided to enable a reader to assess our results of operations and financial condition for the fiscal\nyear ended October 31, 2025, compared to the preceding fiscal year. This MD&A should be read in conjunction with our 2025 Annual Consolidated\nFinancial Statements and related notes and is dated December 2, 2025. All amounts are in Canadian dollars, unless otherwise specified, and are based on\nfinancial statements presented in accordance with International Financial Reporting Standards (IFRS) as issued by the International Accounting\nStandards Board (IASB), unless otherwise noted.\nAdditional information about us, including our 2025 Annual Information Form, is available free of charge on our website at rbc.com/investorrelations, on\nthe Canadian Securities Administrators’ website, SEDAR+, at sedarplus.com and on the EDGAR section of the United States (U.S.) Securities and\nExchange Commission’s (SEC) website at sec.gov.\nInformation contained in or otherwise accessible through the websites mentioned herein does not form part of this report. All references in this report to\nwebsites are inactive textual references and are for your information only.\n\nTable of contents\n\nKey performance and non-GAAP\n\nCaution regarding forward-looking\n\nstatements\n22\n\nInsurance risk\n102",
+        "similarity": 0.4739915132522583,
+        "section": "Management’s Discussion and Analysis",
+        "bank": "Royal Bank of Canada",
+        "page_end": 24,
+        "file_name": "RBC_2025_annual_report.pdf",
+        "filing_id": "RBC_2025_annual_report_FY",
+        "document_type": "annual_report",
+        "quarter": 0,
+        "bank_code": "RBC",
+        "fiscal_year": 2025,
+        "page_start": 23,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+      },
+      {
+        "chunk_id": "RBC_2025_annual_report_FY_00346",
+        "text": "To reflect relevant risk factors not captured in our modelled results, we applied expert credit judgment in determining the\nmeasurement of our weighted allowance for credit losses. The measurement of expected credit losses, including scenario design\nand weightings, determining significant increases in credit risk since origination and application of expert credit judgment, is\noverseen by a senior management committee that includes representation from Finance, Group Risk Management and\nEconomics. Internal risk ratings\nInternal risk ratings are assigned according to the risk management framework outlined under the headings Wholesale credit\nrisk and Retail credit risk of the Credit risk section of Management’s Discussion and Analysis. Changes in internal risk ratings are\nprimarily reflected in the PD parameters, which are estimated based on our historical loss experience at the relevant risk\nsegment or risk rating level, adjusted for forward-looking information.\n\nScenario design and weightings\nOur estimation of expected credit losses in Stage 1 and Stage 2 considers five distinct future macroeconomic scenarios.\nScenarios are designed to capture a wide range of possible outcomes and are weighted according to our expectation of the\nrelative likelihood of the range of outcomes that each scenario represents at the reporting date. We weight each scenario to\ntake into account historical frequency, current trends, and forward-looking conditions which will change over time. Scenario\nweightings take into consideration the extent to which the base case scenario includes both favourable and unfavourable\neconomic expectations, and upside and downside risks to the base scenario materializing in the future. The base case scenario\nis based on forecasts of the expected rate, value, or yield for each relevant macroeconomic variable. The upside and downside\nscenarios are set by adjusting our base projections to construct reasonably possible scenarios and weightings that are more\noptimistic and pessimistic, respectively, than the base case. Two additional downside scenarios capture the non-linear nature of\npotential credit losses across our portfolios. When the economy is at or near equilibrium, the severity of the downside scenario\ngenerally reflects an adverse event typical for a business cycle and both the non-linear downside scenarios reflect an outcome\nthat is materially more adverse than the downside scenario.\n\nThe impact of each of our five scenarios varies across our portfolios given the portfolios have different sensitivities to\nmovements in each macroeconomic variable.\n\nThe impact of weighting these multiple scenarios increased our ACL on performing loans, relative to our base scenario, by\n$1,268 million as at October 31, 2025 (October 31, 2024 – $945 million).\n\nForward looking macroeconomic variables\nThe PD, LGD and EAD inputs used to estimate Stage 1 and Stage 2 credit loss allowances are modelled based on the\nmacroeconomic variables (or changes in macroeconomic variables) that are most closely correlated with credit losses in the\nrelevant portfolio. Each macroeconomic scenario used in our expected credit loss calculation includes a projection of all\nrelevant macroeconomic variables used in our models for a five-year horizon, reverting to long-run averages generally within\nthe 2 to 5 year period. Depending on their usage in the models, macroeconomic variables are projected at a country, province/\nstate or more granular level. These include one or more of the variables described below, which differ by portfolio and region.\n\nOur allowance for credit losses reflects our economic outlook as at October 31, 2025. Subsequent changes to this forecast and\nrelated estimates will be reflected in our allowance for credit losses in future periods.",
+        "similarity": 0.502853512763977,
+        "source_url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf",
+        "page_start": 185,
+        "bank_code": "RBC",
+        "section": "FVOCI",
+        "quarter": 0,
+        "document_type": "annual_report",
+        "file_name": "RBC_2025_annual_report.pdf",
+        "fiscal_year": 2025,
+        "page_end": 185,
+        "filing_id": "RBC_2025_annual_report_FY",
+        "bank": "Royal Bank of Canada"
+      }
+    ],
+    "structured": {
+      "answer": "The provision for credit losses for Royal Bank of Canada (RBC) for the year ended October 31, 2024, was $2,793 million [S1]. For the year ended October 31, 2025, the provision for credit losses was $3,546 million [S5]. The percentage change from 2024 to 2025 is calculated as follows:\n\n\\[ \\text{Percentage Change} = \\frac{(3546 - 2793)}{2793} \\times 100 = 27.0\\% \\] \n\nThus, the percentage change in RBC provision for credit losses from 2024 to 2025 is 27.0%.",
+      "sources": [
+        {
+          "label": "S1",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "FVOCI",
+          "year": 2024
+        },
+        {
+          "label": "S5",
+          "bank": "Royal Bank of Canada",
+          "document": "annual_report",
+          "section": "FVOCI",
+          "year": 2025
+        }
+      ],
+      "confidence": "high",
+      "caveats": []
+    },
+    "retrieval_seconds": 1.5446901000104845
+  },
+  "latency_seconds": 4.96513619995676,
+  "embedding_cost_usd": 0.0,
+  "generation_cost_usd": 0.0009705,
+  "input_tokens": 5602,
+  "output_tokens": 217,
+  "embedding_tokens": 0,
+  "chat_calls": 1,
+  "query_embedding_seconds": 0.044303799979388714,
+  "citation_checks": {
+    "invalid_labels": [],
+    "invalid_chunk_ids": [],
+    "citation_identifiers_valid": true,
+    "citation_present": true
+  },
+  "judgment": {
+    "faithfulness": 5,
+    "relevance": 5,
+    "completeness": 5,
+    "faithfulness_reason": "All factual claims about the provision for credit losses for RBC for the years 2024 and 2025 are accurately supported by the provided context, including the correct amounts and calculations.",
+    "relevance_reason": "The answer directly addresses the question regarding the percentage change in RBC's provision for credit losses from 2024 to 2025.",
+    "completeness_reason": "The answer includes all necessary information, including the provision amounts for both years and the calculation of the percentage change, fully addressing the request.",
+    "unsupported_claims": [],
+    "reference_limitations": ""
+  },
+  "judge_cost_usd": 0.0025734,
+  "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_30",
+  "reused_from_run": "1622ffdffd9cfdf4"
+}

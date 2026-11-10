@@ -1,0 +1,14 @@
+{
+  "chroma_path": "C:\\Users\\ashym\\Documents\\GitHub\\jarvis_data_eng_YashMehrotra\\ml_3\\models\\chroma",
+  "collections": {
+    "local": "bank_filings_local"
+  },
+  "models": {
+    "local": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "default_provider": "local",
+  "top_k": 5,
+  "fetch_k": 30,
+  "mmr_lambda": 0.7,
+  "local_window_tokens": 220
+}

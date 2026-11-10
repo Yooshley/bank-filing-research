@@ -1,0 +1,241 @@
+{
+  "parent_run": "1622ffdffd9cfdf4",
+  "parent_path": "reports/evaluation/1622ffdffd9cfdf4",
+  "reason": "Agent document_type schema/normalization repaired. All agents rerun. Baseline unchanged; source-metadata normalization is a validated no-op on reused successful MMR outputs. Failed structured cases are rerun.",
+  "corpus_hash": "a6dcfee74676d1730446760df577122fdf02d97b3f6ca5f15b703ceb2c5d618a",
+  "test_set_hash": "28f1d5c72f1f7dfc8045543af7c32d5b0efb129f16058de18191d3ae72474e2d",
+  "reused_cases": [
+    {
+      "file": "basic_top_k_eval_01.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_01"
+    },
+    {
+      "file": "basic_top_k_eval_02.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_02"
+    },
+    {
+      "file": "basic_top_k_eval_03.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_03"
+    },
+    {
+      "file": "basic_top_k_eval_04.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_04"
+    },
+    {
+      "file": "basic_top_k_eval_05.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_05"
+    },
+    {
+      "file": "basic_top_k_eval_06.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_06"
+    },
+    {
+      "file": "basic_top_k_eval_07.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_07"
+    },
+    {
+      "file": "basic_top_k_eval_08.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_08"
+    },
+    {
+      "file": "basic_top_k_eval_09.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_09"
+    },
+    {
+      "file": "basic_top_k_eval_10.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_10"
+    },
+    {
+      "file": "basic_top_k_eval_11.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_11"
+    },
+    {
+      "file": "basic_top_k_eval_12.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_12"
+    },
+    {
+      "file": "basic_top_k_eval_13.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_13"
+    },
+    {
+      "file": "basic_top_k_eval_14.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_14"
+    },
+    {
+      "file": "basic_top_k_eval_15.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_15"
+    },
+    {
+      "file": "basic_top_k_eval_16.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_16"
+    },
+    {
+      "file": "basic_top_k_eval_17.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_17"
+    },
+    {
+      "file": "basic_top_k_eval_18.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_18"
+    },
+    {
+      "file": "basic_top_k_eval_19.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_19"
+    },
+    {
+      "file": "basic_top_k_eval_20.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_20"
+    },
+    {
+      "file": "basic_top_k_eval_21.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_21"
+    },
+    {
+      "file": "basic_top_k_eval_22.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_22"
+    },
+    {
+      "file": "basic_top_k_eval_23.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_23"
+    },
+    {
+      "file": "basic_top_k_eval_24.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_24"
+    },
+    {
+      "file": "basic_top_k_eval_25.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_25"
+    },
+    {
+      "file": "basic_top_k_eval_26.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_26"
+    },
+    {
+      "file": "basic_top_k_eval_27.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_27"
+    },
+    {
+      "file": "basic_top_k_eval_28.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_28"
+    },
+    {
+      "file": "basic_top_k_eval_29.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_29"
+    },
+    {
+      "file": "basic_top_k_eval_30.json",
+      "origin_case_id": "1622ffdffd9cfdf4/basic_top_k/eval_30"
+    },
+    {
+      "file": "mmr_structured_eval_01.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_01"
+    },
+    {
+      "file": "mmr_structured_eval_02.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_02"
+    },
+    {
+      "file": "mmr_structured_eval_03.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_03"
+    },
+    {
+      "file": "mmr_structured_eval_04.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_04"
+    },
+    {
+      "file": "mmr_structured_eval_05.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_05"
+    },
+    {
+      "file": "mmr_structured_eval_06.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_06"
+    },
+    {
+      "file": "mmr_structured_eval_07.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_07"
+    },
+    {
+      "file": "mmr_structured_eval_08.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_08"
+    },
+    {
+      "file": "mmr_structured_eval_10.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_10"
+    },
+    {
+      "file": "mmr_structured_eval_11.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_11"
+    },
+    {
+      "file": "mmr_structured_eval_12.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_12"
+    },
+    {
+      "file": "mmr_structured_eval_13.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_13"
+    },
+    {
+      "file": "mmr_structured_eval_14.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_14"
+    },
+    {
+      "file": "mmr_structured_eval_15.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_15"
+    },
+    {
+      "file": "mmr_structured_eval_16.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_16"
+    },
+    {
+      "file": "mmr_structured_eval_17.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_17"
+    },
+    {
+      "file": "mmr_structured_eval_18.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_18"
+    },
+    {
+      "file": "mmr_structured_eval_19.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_19"
+    },
+    {
+      "file": "mmr_structured_eval_20.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_20"
+    },
+    {
+      "file": "mmr_structured_eval_21.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_21"
+    },
+    {
+      "file": "mmr_structured_eval_22.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_22"
+    },
+    {
+      "file": "mmr_structured_eval_24.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_24"
+    },
+    {
+      "file": "mmr_structured_eval_25.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_25"
+    },
+    {
+      "file": "mmr_structured_eval_26.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_26"
+    },
+    {
+      "file": "mmr_structured_eval_27.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_27"
+    },
+    {
+      "file": "mmr_structured_eval_28.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_28"
+    },
+    {
+      "file": "mmr_structured_eval_29.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_29"
+    },
+    {
+      "file": "mmr_structured_eval_30.json",
+      "origin_case_id": "1622ffdffd9cfdf4/mmr_structured/eval_30"
+    }
+  ]
+}
