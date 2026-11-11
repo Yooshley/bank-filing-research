@@ -33,8 +33,7 @@ with st.sidebar:
     if not os.getenv('OPENAI_API_KEY'):
         st.info('Add OPENAI_API_KEY to the project .env for generated answers. Local evidence search does not need it.')
     mode = st.selectbox('Workflow', ['Structured MMR', 'Basic top-k', 'Agent'])
-    evidence_only = st.checkbox('Evidence only — no generation API calls', value=True)
-    st.caption('Evidence-only search uses your configured embedding provider. OpenAI embeddings, if selected, still incur API calls.')
+    evidence_only = st.checkbox('Evidence Only', value=True)
     if st.button('New conversation'):
         st.session_state.conversation = ConversationState()
         st.session_state.messages = []
@@ -43,8 +42,6 @@ with st.sidebar:
     st.write('Current banks:', ', '.join(state.banks) or 'None')
     st.write('Fiscal years:', ', '.join(map(str, state.years)) or 'None')
     st.caption('Supported: RBC, TD, BMO, BNS / Scotiabank, CIBC. Fiscal 2024–2025.')
-    st.markdown('Try these in order:')
-    st.code('What did BMO disclose about credit risk in 2025?\nWhat was its provision for credit losses?\nCompare TD with it.\nNow describe TD liquidity risk.\nWhat did Bank of Atlantis report in 2025?', language=None)
 
 
 def display(message):
