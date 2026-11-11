@@ -22,32 +22,55 @@ retrieval. New questions replace the topic; short answers such as `2025` or
 references ask for clarification. Unknown bank names cannot be mapped to a
 supported alias. Interpretation can still fail, and errors stop retrieval.
 Expand multi-turn tests before claiming broad conversational reliability.
-The interpreter uses the pinned `gpt-4.1-mini-2025-04-14` model; answer generation
-continues to use the existing model. Run offline checks with
+The interpreter and Research assistant use `gpt-6-astra` with low reasoning effort.
+This upgrades the app's answer model from the benchmark's `gpt-4o-mini`.
+Run offline checks with
 `python -m unittest discover -s tests -q`. The optional
 `python demos/02_check_conversations.py` check makes paid interpretation calls
 and tests 13 turns, including year/bank clarifications, comparisons, topic
 changes and unsupported banks. Its results stay under ignored `.local/`.
+The paid `python demos/03_check_research.py` check also runs complete answers
+against the local index: BMO 2024 credit risk, switching to TD, asking "its"
+liquidity coverage ratio, and comparing that ratio with BMO. Use `--data-root`
+and `--env-file` when the index or environment file lives in another checkout.
 
-Evidence-only mode is on initially. Generation uses the existing API key and
-has an estimated US$2 ledger budget per browser session, excluding any embedding
+Research assistant with generated answers is on initially. It uses the existing API key and
+has an estimated US$5 ledger budget per browser session, excluding any embedding
 API usage not covered by reservations. Local MiniLM embeddings avoid those API
 charges. Evidence-only mode still requires an API key for conversation
 interpretation, although it skips answer generation. Interpretation charges
-are included in displayed turn costs, with a separate estimated US$0.25
+are included in displayed turn costs, with a separate estimated US$1
 interpretation budget per conversation. The limits are not billing guarantees.
-Choose structured MMR, basic retrieval or the tool-calling agent. Source
-passages, original filing links, resolved scope and public tool traces are
-available for inspection. Citation identity checks do not establish claim truth.
+Research assistant combines BM25-style keyword search with local vector search
+inside each validated bank/year/report scope. Reciprocal-rank fusion and reserved
+results for each subquery preserve evidence for specific metrics and comparisons.
+The interpreter proposes up to three topic searches; the research workflow can
+make one additional scoped search when its draft lacks supported evidence.
+The answer model drafts short findings with quotations. A separate evidence-review
+call removes unsupported clauses, corrects citations, and checks metric units and
+periods. Python checks quotation spans, numeric references, scope and source labels
+before display. Metric answers show one point; all answers are capped at 160 words.
+These checks reduce errors but do not establish ground-truth financial accuracy.
+Original passages and filing links remain available for manual verification.
+The optional Basic top-k baseline retains the historical small-model behavior
+for comparison. The original notebook agent and benchmark methods remain in the notebooks.
 The pending request updates during clarification, before retrieval. Inspect the
 `Understood research question` panel to see the complete request used for
-retrieval. Workflow selection remains manual. Use New conversation to clear
+retrieval. The default research workflow expands searches automatically within
+bounded limits. Use New conversation to clear
 the discussion. Live answers use fresh filing retrieval; previous generated
-financial answers are never treated as evidence. These changes add an API call
+financial answers are never treated as evidence. These changes add API calls
 and are not included in the historical benchmark scores or cost averages.
 
-The app is a local extension; the historical evaluation scores do not evaluate
-its new conversation controls. Session logs stay under ignored `.local/demo`.
+The historical evaluation scores do not evaluate this new presentation pipeline.
+The stronger model and evidence-review call cost more than the original demo.
+Token estimates use model-specific input/cached-input/output rates; turn latency
+includes interpretation. Session logs and draft/review diagnostics stay under ignored `.local/demo`.
+The four-turn local smoke check on 2026-11-11 returned cited BMO/TD credit-risk
+summaries, TD's 138% quarterly average LCR, and the TD 138% versus BMO 132%
+comparison. Those turns took approximately 9–32 seconds after model startup,
+with a mean estimated full-turn API cost of US$0.254. This small check is not
+a new benchmark or a guarantee for other questions.
 
 ## Notebook setup
 

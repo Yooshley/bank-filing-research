@@ -1,6 +1,7 @@
 """Local filing research demo. Run: python -m streamlit run app.py"""
 from pathlib import Path
 import os
+import time
 import streamlit as st
 from dotenv import load_dotenv
 
@@ -25,16 +26,18 @@ st.caption('Explore Canadian bank disclosures with cited evidence. Verify financ
 def prepare_index():
     ensure_cloud_index(BASE)
     return True
-if st.session_state.get('conversation_version') != 2:
+if st.session_state.get('conversation_version') != 3:
     st.session_state.conversation = ConversationState()
     st.session_state.messages = []
-    st.session_state.conversation_version = 2
+    st.session_state.conversation_version = 3
+    st.session_state.pop('backend', None)
 with st.sidebar:
     st.header('Research settings')
     if not os.getenv('OPENAI_API_KEY'):
         st.info('Configure OPENAI_API_KEY to interpret conversations and generate answers.')
-    mode = st.selectbox('Workflow', ['Structured MMR', 'Basic top-k', 'Agent'])
-    evidence_only = st.checkbox('Evidence Only', value=True)
+    mode = st.selectbox('Workflow', ['Research assistant', 'Basic top-k (baseline)'])
+    st.caption('Research assistant searches by topic and keywords, then checks each answer point against its evidence.')
+    evidence_only = st.checkbox('Evidence Only', value=False)
     st.caption('Evidence Only skips answer generation. Conversation interpretation still uses the API.')
     if st.button('New conversation'):
         st.session_state.conversation = ConversationState()
@@ -66,7 +69,7 @@ def display(message):
         if 'seconds' in message:
             st.caption(f"{message['seconds']} seconds · estimated API cost US${message.get('api_cost_usd', 0):.6f}")
         if message.get('trace'):
-            with st.expander('Agent tool actions and observations'):
+            with st.expander('Research steps'):
                 st.json(message['trace'])
 
 
@@ -74,6 +77,7 @@ for message in st.session_state.messages:
     display(message)
 question = st.chat_input('Ask about a bank and fiscal year, or follow up on your last question', max_chars=2000)
 if question:
+    started = time.perf_counter()
     user = {'role': 'user', 'text': question}
     st.session_state.messages.append(user)
     display(user)
@@ -81,11 +85,11 @@ if question:
         with st.spinner('Understanding your question…'):
             scope = resolve(question, st.session_state.conversation)
     except Exception as exc:
-        scope = {'ready': False, 'message': f'Could not interpret the question ({type(exc).__name__}). Please retry. The research request was not changed.'}
+        scope = {'ready': False, 'message': 'I couldn’t confidently resolve that reference. Please name the bank and year, or rephrase the question. Your previous research request is still saved.'}
     if not scope['ready']:
         reply = {'role': 'assistant', 'text': scope['message']}
         if scope.get('interpretation_cost_usd'):
-            reply.update(seconds=0, api_cost_usd=scope['interpretation_cost_usd'])
+            reply.update(seconds=round(time.perf_counter()-started, 2), api_cost_usd=scope['interpretation_cost_usd'])
     else:
         try:
             with st.spinner('Finding filing evidence…'):
@@ -94,11 +98,11 @@ if question:
                     st.session_state.backend = DemoBackend(BASE)
                 backend = st.session_state.backend
                 if evidence_only:
-                    hits = backend.runtime.retrieve_scopes(scope['retrieval_query'], scope['scopes'], 'mmr', total=8)
-                    result = {'answer': 'Retrieved evidence is shown below. Turn off evidence-only mode to generate a cited answer.', 'sources': hits, 'seconds': 0, 'api_cost_usd': 0}
+                    result = backend.retrieve(scope)
                 else:
                     result = backend.answer(scope, mode)
                 result['api_cost_usd'] = result.get('api_cost_usd', 0) + scope.get('interpretation_cost_usd', 0)
+                result['seconds'] = round(time.perf_counter()-started, 2)
             st.session_state.conversation.accept(scope)
             reply = {'role': 'assistant', 'text': result.pop('answer'), 'scope': scope, **result}
         except Exception as exc:

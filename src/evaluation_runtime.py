@@ -15,6 +15,7 @@ import numpy as np
 from src.notebook_utils import load_definitions
 
 PRICES = {'gpt-4o-mini': {'input': 0.15, 'cached_input': 0.075, 'output': 0.60},
+          'gpt-6-astra': {'input': 10.0, 'cached_input': 1.0, 'cache_write': 12.50, 'output': 50.0},
           'text-embedding-3-small': {'input': 0.02}}
 PRICING_DATE = '2026-10-27'
 PRICING_SOURCES = ['https://developers.openai.com/api/docs/models/gpt-4o-mini',
@@ -39,10 +40,11 @@ def safe_error(exc):
             'code': getattr(exc, 'code', None)}
 
 
-def token_cost(input_tokens, output_tokens, cached_tokens=0, prices=None):
+def token_cost(input_tokens, output_tokens, cached_tokens=0, prices=None, cache_write_tokens=0):
     prices = prices or PRICES['gpt-4o-mini']
-    return ((input_tokens - cached_tokens) * prices['input'] +
+    return ((input_tokens - cached_tokens - cache_write_tokens) * prices['input'] +
             cached_tokens * prices.get('cached_input', prices['input']) +
+            cache_write_tokens * prices.get('cache_write', prices['input']) +
             output_tokens * prices.get('output', 0)) / 1_000_000
 
 
@@ -132,10 +134,16 @@ class Runtime:
         if kwargs.get('model', self.model) not in PRICES:
             raise ValueError('Configure explicit token prices for a different model before evaluation')
         kwargs.setdefault('model', self.model)
-        kwargs.setdefault('temperature', 0)
+        if kwargs['model'] == 'gpt-6-astra':
+            kwargs.pop('temperature', None)
+            kwargs.setdefault('reasoning_effort', 'low')
+        else:
+            kwargs.setdefault('temperature', 0)
         kwargs.setdefault('max_completion_tokens', 1000)
         count = len(tiktoken.get_encoding('cl100k_base').encode(json.dumps(kwargs, ensure_ascii=False), disallowed_special=())) + 200
-        reservation = token_cost(count, kwargs['max_completion_tokens'])
+        prices = PRICES[kwargs['model']]
+        reserve_prices = {**prices, 'input': max(prices['input'], prices.get('cache_write', 0))}
+        reservation = token_cost(count, kwargs['max_completion_tokens'], prices=reserve_prices)
         with self.lock:
             spent = sum(event.get('cost_usd', 0) for event in self.ledger)
             if spent + self.reserved + reservation > self.budget:
@@ -148,9 +156,11 @@ class Runtime:
                 raise ValueError('Missing API token usage: cannot report a measured cost')
             usage = result.usage
             cached = getattr(usage.prompt_tokens_details, 'cached_tokens', 0) or 0
+            writes = getattr(usage.prompt_tokens_details, 'cache_write_tokens', 0) or 0
             self._record({'model': kwargs['model'], 'input_tokens': usage.prompt_tokens,
                           'output_tokens': usage.completion_tokens, 'cached_input_tokens': cached,
-                          'cost_usd': token_cost(usage.prompt_tokens, usage.completion_tokens, cached),
+                          'cache_write_tokens': writes,
+                          'cost_usd': token_cost(usage.prompt_tokens, usage.completion_tokens, cached, prices, writes),
                           'seconds': time.perf_counter()-start, 'response_id': result.id,
                           'returned_model': result.model, 'status': 'success'})
             if result.choices[0].finish_reason == 'length':

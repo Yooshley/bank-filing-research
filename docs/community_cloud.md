@@ -28,6 +28,13 @@ Cloud secrets are loaded before backend initialization. Follow the sharing
 settings to choose public access or invited viewers. Test the presentation URL
 on the actual second device before the presentation and wake the app in advance.
 
+For the current Research assistant update, keep the existing index bundle and
+secrets: no index rebuild or notebook rerun is needed. After deployment choose
+New conversation. The default pipeline uses `gpt-6-astra` for interpretation,
+drafting and evidence review, so the API project must have access to that model.
+Evidence Only still uses the API to interpret the conversation. Basic top-k is
+an optional historical baseline; Research assistant is the recommended demo mode.
+
 The local budget is per backend session and is not a global spending limit.
 Use private sharing for the presentation and a separately budgeted API project.
 No secrets should appear in the browser or source repository. This deployment

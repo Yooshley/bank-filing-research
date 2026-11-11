@@ -16,11 +16,24 @@ def request(**changes):
 
 
 class InterpreterTests(unittest.TestCase):
+    def test_semantic_comparison_keeps_both_banks_without_compare_keyword(self):
+        state = ConversationState(banks=['TD'], years=[2024], bank_memory=['TD'])
+        value = request(banks=['TD', 'BMO'], years=[2024], answer_type='comparison')
+        result = apply_interpretation('How does it stack up against BMO?', state, value)
+        self.assertEqual(set(result['banks']), {'TD', 'BMO'})
+
+    def test_relative_year_can_be_resolved_from_context(self):
+        state = ConversationState(banks=['TD'], years=[2025])
+        result = apply_interpretation('What about the previous year?', state,
+                                      request(banks=['TD'], years=[2024]))
+        self.assertEqual(result['years'], [2024])
+
     def test_context_does_not_allow_invented_scope_changes(self):
         state = ConversationState(banks=['BMO'], years=[2025])
-        for value in [request(banks=['TD']), request(years=[2024])]:
-            with self.assertRaises(ValueError):
-                apply_interpretation('What was its liquidity coverage ratio?', state, value)
+        result = apply_interpretation('What was its liquidity coverage ratio?', state, request(banks=['TD']))
+        self.assertEqual(result['banks'], ['BMO'])
+        with self.assertRaises(ValueError):
+            apply_interpretation('What was its liquidity coverage ratio?', state, request(years=[2024]))
 
     def test_bare_bank_reply_fills_pending_even_if_model_omits_it(self):
         state = ConversationState()
@@ -112,9 +125,22 @@ class InterpreterTests(unittest.TestCase):
         self.assertFalse(state.history)
 
     def test_explicit_year_and_bank_cannot_be_dropped(self):
-        for message in ['TD credit risk in 2025', 'BMO credit risk in 2024']:
-            with self.assertRaises(ValueError):
-                apply_interpretation(message, ConversationState(), request())
+        result = apply_interpretation('TD credit risk in 2025', ConversationState(), request())
+        self.assertEqual(result['banks'], ['TD'])
+        with self.assertRaises(ValueError):
+            apply_interpretation('BMO credit risk in 2024', ConversationState(), request())
+
+    def test_bank_switch_then_metric_followup_ignores_historical_mentions(self):
+        state = ConversationState()
+        apply_interpretation('BMO credit risk in 2024', state, request(years=[2024]))
+        apply_interpretation('what about TD?', state, request(years=[2024], banks=['TD'],
+            turn_type='follow_up', bank_mentions=[{'text': 'TD', 'bank': 'TD'}]))
+        result = apply_interpretation('what was its liquidity coverage ratio?', state,
+            request(years=[2024], banks=['Toronto-Dominion Bank'], turn_type='follow_up',
+                    topic='liquidity coverage ratio', bank_mentions=[{'text': 'BMO', 'bank': 'BMO'}]))
+        self.assertTrue(result['ready'])
+        self.assertEqual(result['banks'], ['TD'])
+        self.assertEqual(result['retrieval_query'], 'liquidity coverage ratio')
 
     def test_out_of_corpus_year_does_not_mutate_state(self):
         state = ConversationState()
@@ -135,6 +161,9 @@ class InterpreterTests(unittest.TestCase):
         self.assertTrue(result['ready'])
         self.assertGreater(result['interpretation_cost_usd'], 0)
         self.assertTrue(calls[0]['response_format']['json_schema']['strict'])
+        self.assertEqual(calls[0]['reasoning_effort'], 'low')
+        self.assertNotIn('temperature', calls[0])
+        self.assertNotIn('bank_mentions', calls[0]['response_format']['json_schema']['schema']['properties'])
         self.assertIn('pending_request', json.loads(calls[0]['messages'][1]['content']))
 
     def test_truncation_fails_closed(self):
