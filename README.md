@@ -14,25 +14,37 @@ Open the localhost URL printed by Streamlit. The app uses the existing Chroma
 index and project `.env`; run notebooks 1 and 2 first if the index is missing.
 Install dependencies with `python -m pip install -r requirements.txt`.
 
-Start with BMO credit risk in 2025, follow with "its provision for credit losses",
-then "Compare TD with it". A named bank replaces the active bank; explicit years
-replace prior periods. A comparison pronoun excludes banks explicitly named in
-that question and resolves only if exactly one prior candidate remains. Multiple
-possible antecedents trigger clarification. Unknown banks never inherit a valid
-bank. This conservative rule-based resolver supports common English references;
-it is not a general natural-language coreference model.
+The app first uses a structured LLM interpreter to combine the current message,
+recent clarification dialogue and pending research request. Python validates
+bank aliases, explicit bank/year mentions, corpus years and report types before
+retrieval. New questions replace the topic; short answers such as `2025` or
+`BMO` fill missing fields without losing the original request. Ambiguous
+references ask for clarification. Unknown bank names cannot be mapped to a
+supported alias. Interpretation can still fail, and errors stop retrieval.
+Expand multi-turn tests before claiming broad conversational reliability.
+The interpreter uses the pinned `gpt-4.1-mini-2025-04-14` model; answer generation
+continues to use the existing model. Run offline checks with
+`python -m unittest discover -s tests -q`. The optional
+`python demos/02_check_conversations.py` check makes paid interpretation calls
+and tests 13 turns, including year/bank clarifications, comparisons, topic
+changes and unsupported banks. Its results stay under ignored `.local/`.
 
 Evidence-only mode is on initially. Generation uses the existing API key and
 has an estimated US$2 ledger budget per browser session, excluding any embedding
 API usage not covered by reservations. Local MiniLM embeddings avoid those API
-charges. Evidence-only mode with local embeddings works without an API key.
+charges. Evidence-only mode still requires an API key for conversation
+interpretation, although it skips answer generation. Interpretation charges
+are included in displayed turn costs, with a separate estimated US$0.25
+interpretation budget per conversation. The limits are not billing guarantees.
 Choose structured MMR, basic retrieval or the tool-calling agent. Source
 passages, original filing links, resolved scope and public tool traces are
 available for inspection. Citation identity checks do not establish claim truth.
-Conversation state advances only after a successful request. On clarification,
-restate the full question including bank and year. Use New conversation to clear
-the discussion. Live answers use fresh filing retrieval; previous assistant
-answers are never treated as financial evidence.
+The pending request updates during clarification, before retrieval. Inspect the
+`Understood research question` panel to see the complete request used for
+retrieval. Workflow selection remains manual. Use New conversation to clear
+the discussion. Live answers use fresh filing retrieval; previous generated
+financial answers are never treated as evidence. These changes add an API call
+and are not included in the historical benchmark scores or cost averages.
 
 The app is a local extension; the historical evaluation scores do not evaluate
 its new conversation controls. Session logs stay under ignored `.local/demo`.

@@ -31,6 +31,11 @@ class DemoBackend:
                         if bank not in scope['banks']:
                             raise ValueError('Name one of the validated banks in every tool call.')
                         args['bank'] = bank
+                        report = scope.get('document_type')
+                        if report and name in ('search_filings', 'compare_sections'):
+                            if args.get('document_type') not in (None, report):
+                                raise ValueError('Report type must match the validated request.')
+                            args['document_type'] = report
                         if name == 'compare_sections':
                             if any(args.get(k) not in scope['years'] for k in ('year_a', 'year_b')):
                                 raise ValueError('Comparison years must match validated scope.')
@@ -53,6 +58,8 @@ class DemoBackend:
         for hit in result['sources']:
             if hit.get('bank_code') not in scope['banks'] or hit.get('fiscal_year') not in scope['years']:
                 raise ValueError('Retrieved evidence did not match the validated scope.')
+            if scope.get('document_type') and hit.get('document_type') != scope['document_type']:
+                raise ValueError('Retrieved report type did not match the validated request.')
         references = (result.get('structured') or {}).get('sources', [])
         citation_text = result['answer'] + '\n' + ' '.join('[' + s['label'] + ']' for s in references)
         checks = citation_check(citation_text, result['sources'])

@@ -4,7 +4,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
-from src.conversation_scope import ConversationState, resolve
+from src.conversation_interpreter import ConversationState, resolve
 from src.demo_backend import DemoBackend, safe_source_url
 from src.cloud_index import ensure_cloud_index
 
@@ -25,15 +25,17 @@ st.caption('Explore Canadian bank disclosures with cited evidence. Verify financ
 def prepare_index():
     ensure_cloud_index(BASE)
     return True
-if 'conversation' not in st.session_state:
+if st.session_state.get('conversation_version') != 2:
     st.session_state.conversation = ConversationState()
     st.session_state.messages = []
+    st.session_state.conversation_version = 2
 with st.sidebar:
     st.header('Research settings')
     if not os.getenv('OPENAI_API_KEY'):
-        st.info('Add OPENAI_API_KEY to the project .env for generated answers. Local evidence search does not need it.')
+        st.info('Configure OPENAI_API_KEY to interpret conversations and generate answers.')
     mode = st.selectbox('Workflow', ['Structured MMR', 'Basic top-k', 'Agent'])
     evidence_only = st.checkbox('Evidence Only', value=True)
+    st.caption('Evidence Only skips answer generation. Conversation interpretation still uses the API.')
     if st.button('New conversation'):
         st.session_state.conversation = ConversationState()
         st.session_state.messages = []
@@ -50,6 +52,8 @@ def display(message):
         if 'scope' in message:
             scope = message['scope']
             st.caption(f"Resolved scope: {', '.join(scope['banks'])} · {', '.join(map(str, scope['years']))}")
+            with st.expander('Understood research question'):
+                st.text(scope.get('standalone_question', scope['question']))
         if message.get('cited_labels'):
             st.caption('Answer source references: ' + ', '.join(message['cited_labels']))
         for i, hit in enumerate(message.get('sources', []), 1):
@@ -73,9 +77,15 @@ if question:
     user = {'role': 'user', 'text': question}
     st.session_state.messages.append(user)
     display(user)
-    scope = resolve(question, st.session_state.conversation)
+    try:
+        with st.spinner('Understanding your question…'):
+            scope = resolve(question, st.session_state.conversation)
+    except Exception as exc:
+        scope = {'ready': False, 'message': f'Could not interpret the question ({type(exc).__name__}). Please retry. The research request was not changed.'}
     if not scope['ready']:
         reply = {'role': 'assistant', 'text': scope['message']}
+        if scope.get('interpretation_cost_usd'):
+            reply.update(seconds=0, api_cost_usd=scope['interpretation_cost_usd'])
     else:
         try:
             with st.spinner('Finding filing evidence…'):
@@ -85,9 +95,10 @@ if question:
                 backend = st.session_state.backend
                 if evidence_only:
                     hits = backend.runtime.retrieve_scopes(scope['retrieval_query'], scope['scopes'], 'mmr', total=8)
-                    result = {'answer': 'Retrieved evidence is shown below. Turn off evidence-only mode to generate a cited answer.', 'sources': hits}
+                    result = {'answer': 'Retrieved evidence is shown below. Turn off evidence-only mode to generate a cited answer.', 'sources': hits, 'seconds': 0, 'api_cost_usd': 0}
                 else:
                     result = backend.answer(scope, mode)
+                result['api_cost_usd'] = result.get('api_cost_usd', 0) + scope.get('interpretation_cost_usd', 0)
             st.session_state.conversation.accept(scope)
             reply = {'role': 'assistant', 'text': result.pop('answer'), 'scope': scope, **result}
         except Exception as exc:
@@ -98,6 +109,6 @@ if question:
                 message = 'Add OPENAI_API_KEY to the project .env, then restart the app to generate answers.'
             else:
                 message = f'Research could not complete ({type(exc).__name__}). Check the local model cache, index and API configuration.'
-            reply = {'role': 'assistant', 'text': message + ' Conversation scope was not advanced.'}
+            reply = {'role': 'assistant', 'text': message + ' Your research request was saved; you can retry or clarify it.'}
     st.session_state.messages.append(reply)
     display(reply)
