@@ -6,7 +6,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 from src.conversation_interpreter import ConversationState, resolve
-from src.demo_backend import DemoBackend, safe_source_url
+from src.demo_backend import DemoBackend, safe_source_url, load_search_resources
 from src.cloud_index import ensure_cloud_index
 
 BASE = Path(__file__).resolve().parent
@@ -26,10 +26,22 @@ st.caption('Explore Canadian bank disclosures with cited evidence. Verify financ
 def prepare_index():
     ensure_cloud_index(BASE)
     return True
-if st.session_state.get('conversation_version') != 3:
+
+@st.cache_resource(show_spinner='Preparing search for this server…')
+def prepare_search_resources(index_version):
+    prepare_index()
+    return load_search_resources(BASE)
+
+def prepare_backend():
+    if 'backend' not in st.session_state:
+        resources = prepare_search_resources(os.getenv('INDEX_BUNDLE_SHA256', 'local'))
+        st.session_state.backend = DemoBackend(BASE, search_resources=resources)
+    return st.session_state.backend
+
+if st.session_state.get('conversation_version') != 4:
     st.session_state.conversation = ConversationState()
     st.session_state.messages = []
-    st.session_state.conversation_version = 3
+    st.session_state.conversation_version = 4
     st.session_state.pop('backend', None)
 with st.sidebar:
     st.header('Research settings')
@@ -39,6 +51,13 @@ with st.sidebar:
     st.caption('Research assistant searches by topic and keywords, then checks each answer point against its evidence.')
     evidence_only = st.checkbox('Evidence Only', value=False)
     st.caption('Evidence Only skips answer generation. Conversation interpretation still uses the API.')
+    if st.button('Prepare demo'):
+        try:
+            prepare_backend()
+            st.success('Search is ready. No answer-generation calls were made.')
+        except Exception:
+            st.error('Search preparation failed. Check the index bundle and local model configuration, then retry.')
+    st.caption('Prepare demo before presenting to load search ahead of the first question.')
     if st.button('New conversation'):
         st.session_state.conversation = ConversationState()
         st.session_state.messages = []
@@ -68,6 +87,8 @@ def display(message):
                     st.link_button('Open original filing', url)
         if 'seconds' in message:
             st.caption(f"{message['seconds']} seconds · estimated API cost US${message.get('api_cost_usd', 0):.6f}")
+        if message.get('cache_hit'):
+            st.caption('Reused a verified answer for this exact research request.')
         if message.get('trace'):
             with st.expander('Research steps'):
                 st.json(message['trace'])
@@ -93,10 +114,7 @@ if question:
     else:
         try:
             with st.spinner('Finding filing evidence…'):
-                prepare_index()
-                if 'backend' not in st.session_state:
-                    st.session_state.backend = DemoBackend(BASE)
-                backend = st.session_state.backend
+                backend = prepare_backend()
                 if evidence_only:
                     result = backend.retrieve(scope)
                 else:

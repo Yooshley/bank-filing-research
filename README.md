@@ -22,8 +22,9 @@ retrieval. New questions replace the topic; short answers such as `2025` or
 references ask for clarification. Unknown bank names cannot be mapped to a
 supported alias. Interpretation can still fail, and errors stop retrieval.
 Expand multi-turn tests before claiming broad conversational reliability.
-The interpreter and Research assistant use `gpt-6-astra` with low reasoning effort.
-This upgrades the app's answer model from the benchmark's `gpt-4o-mini`.
+The interpreter uses `gpt-6-luna`; answer drafting and evidence review use
+`gpt-6.1-sol`, all with low reasoning effort. The benchmark retains `gpt-4o-mini`.
+Literal bank/year replies to a pending clarification are handled without an API call.
 Run offline checks with
 `python -m unittest discover -s tests -q`. The optional
 `python demos/02_check_conversations.py` check makes paid interpretation calls
@@ -33,6 +34,8 @@ The paid `python demos/03_check_research.py` check also runs complete answers
 against the local index: BMO 2024 credit risk, switching to TD, asking "its"
 liquidity coverage ratio, and comparing that ratio with BMO. Use `--data-root`
 and `--env-file` when the index or environment file lives in another checkout.
+It also checks a repeated answer's zero current generation cost, a credit-risk
+comparison, ambiguity followed by a bank clarification, and rejected bank/year requests.
 
 Research assistant with generated answers is on initially. It uses the existing API key and
 has an estimated US$5 ledger budget per browser session, excluding any embedding
@@ -48,7 +51,8 @@ The interpreter proposes up to three topic searches; the research workflow can
 make one additional scoped search when its draft lacks supported evidence.
 The answer model drafts short findings with quotations. A separate evidence-review
 call removes unsupported clauses, corrects citations, and checks metric units and
-periods. Python checks quotation spans, numeric references, scope and source labels
+periods. It receives the cited full passages with their original labels, rather
+than the entire retrieved context again. Python checks quotation spans, numeric references, scope and source labels
 before display. Metric answers show one point; all answers are capped at 160 words.
 These checks reduce errors but do not establish ground-truth financial accuracy.
 Original passages and filing links remain available for manual verification.
@@ -58,19 +62,36 @@ The pending request updates during clarification, before retrieval. Inspect the
 `Understood research question` panel to see the complete request used for
 retrieval. The default research workflow expands searches automatically within
 bounded limits. Use New conversation to clear
-the discussion. Live answers use fresh filing retrieval; previous generated
-financial answers are never treated as evidence. These changes add API calls
+the discussion. New research uses fresh filing retrieval; previous generated
+financial answers are never treated as evidence. Verified answers may be reused
+for the exact same resolved request, corpus, workflow and model version. The
+browser-session cache holds at most 64 answers and never caches abstentions.
+Cache hits show zero new generation cost; any interpretation cost is still included.
+These changes add API calls
 and are not included in the historical benchmark scores or cost averages.
 
 The historical evaluation scores do not evaluate this new presentation pipeline.
 The stronger model and evidence-review call cost more than the original demo.
 Token estimates use model-specific input/cached-input/output rates; turn latency
 includes interpretation. Session logs and draft/review diagnostics stay under ignored `.local/demo`.
-The four-turn local smoke check on 2026-11-11 returned cited BMO/TD credit-risk
+The four-turn local Astra reference check on 2026-11-11 returned cited BMO/TD credit-risk
 summaries, TD's 138% quarterly average LCR, and the TD 138% versus BMO 132%
 comparison. Those turns took approximately 9–32 seconds after model startup,
 with a mean estimated full-turn API cost of US$0.254. This small check is not
 a new benchmark or a guarantee for other questions.
+The optimized version passed the same four questions and the additional
+presentation sequence. Its mean full-turn API estimate was US$0.0271, compared
+with US$0.2542 for Astra (89.3% lower); mean warm latency was 16.52 seconds
+versus 19.31 seconds (14.4% lower). This is a small local comparison with variable
+API latency, not a quality-equivalence claim or a production benchmark.
+
+Before presenting, click **Prepare demo**. It restores and warms search without
+answer-generation calls. Streamlit shares the index and embedding model across
+browser sessions; each browser keeps separate API clients, ledgers and conversation
+state. One local check took 19.85 seconds to bootstrap search, then about 0.03
+seconds to create another session from those resources. Cloud cold starts may
+take longer. Query embeddings are cached within each demo session; the historical
+evaluation runtime does not enable this cache by default.
 
 ## Notebook setup
 

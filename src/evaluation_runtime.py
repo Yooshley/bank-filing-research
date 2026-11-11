@@ -14,8 +14,12 @@ import numpy as np
 
 from src.notebook_utils import load_definitions
 
+# Demo-model Standard short-context rates checked 2026-11-11:
+# https://developers.openai.com/api/docs/pricing.md
 PRICES = {'gpt-4o-mini': {'input': 0.15, 'cached_input': 0.075, 'output': 0.60},
           'gpt-6-astra': {'input': 10.0, 'cached_input': 1.0, 'cache_write': 12.50, 'output': 50.0},
+          'gpt-6-luna': {'input': .10, 'cached_input': .01, 'cache_write': .125, 'output': .50},
+          'gpt-6.1-sol': {'input': 2.0, 'cached_input': .10, 'cache_write': 2.50, 'output': 10.0},
           'text-embedding-3-small': {'input': 0.02}}
 PRICING_DATE = '2026-10-27'
 PRICING_SOURCES = ['https://developers.openai.com/api/docs/models/gpt-4o-mini',
@@ -53,7 +57,7 @@ class BudgetExceeded(RuntimeError):
 
 
 class Runtime:
-    def __init__(self, base, output, budget_usd=5.0, require_api_key=True):
+    def __init__(self, base, output, budget_usd=5.0, require_api_key=True, search_resources=None):
         import chromadb
         import torch
         from dotenv import load_dotenv
@@ -72,28 +76,32 @@ class Runtime:
         self.ledger_path = self.output / 'api_usage.jsonl'
         self.ledger = [json.loads(line) for line in self.ledger_path.read_text().splitlines() if line.strip()] if self.ledger_path.exists() else []
         self.reserved = 0.0
-        config_path = self.base / 'reports' / 'embedding_vectordb' / 'retrieval_config.json'
-        self.config = json.loads(config_path.read_text())
-        self.provider = self.config.get('default_provider', 'local')
-        # Keep the existing index's embedding provider/preprocessing, not a newly chosen model.
-        self.store = chromadb.PersistentClient(path=str(self.base / 'models' / 'chroma'))
-        collection_name = self.config['collections'][self.provider]
-        self.collection = self.store.get_collection(collection_name, embedding_function=None)
-        corpus = self.collection.get(include=['documents', 'metadatas'])
-        self.corpus = {key: {'chunk_id': key, 'text': text, **metadata}
-                       for key, text, metadata in zip(corpus['ids'], corpus['documents'], corpus['metadatas'])}
-        self.corpus_hash = fingerprint(sorted(self.corpus.items()))
-        self.filings = list({hit.get('filing_id', hit.get('file_name')): hit for hit in self.corpus.values()}.values())
-        torch.set_num_threads(2)
-        local_model = SentenceTransformer(self.config['models']['local']) if self.provider == 'local' else None
-        # Notebook 2's current implementation defines the index preprocessing.
-        self.embedding_ns = {'np': np, 'time': time, 'json': json, 'os': __import__('os'),
-            'local_model': local_model, 'LOCAL_WINDOW_TOKENS': self.config.get('local_window_tokens', 220),
-            'LOCAL_MODEL': self.config['models']['local'],
-            'OPENAI_MODEL': self.config['models'].get('openai', 'text-embedding-3-small'),
-            'OPENAI_USD_PER_MILLION': .02, 'tqdm': lambda x, **kw: x,
-            'TOP_K': 5, 'FETCH_K': 30, 'MMR_LAMBDA': .7}
-        load_definitions(self.base / 'notebooks' / '02_embedding_vectordb.ipynb', self.embedding_ns)
+        if search_resources is None:
+            config_path = self.base / 'reports' / 'embedding_vectordb' / 'retrieval_config.json'
+            self.config = json.loads(config_path.read_text())
+            self.provider = self.config.get('default_provider', 'local')
+            # Keep the existing index's embedding provider/preprocessing, not a newly chosen model.
+            self.store = chromadb.PersistentClient(path=str(self.base / 'models' / 'chroma'))
+            collection_name = self.config['collections'][self.provider]
+            self.collection = self.store.get_collection(collection_name, embedding_function=None)
+            corpus = self.collection.get(include=['documents', 'metadatas'])
+            self.corpus = {key: {'chunk_id': key, 'text': text, **metadata}
+                           for key, text, metadata in zip(corpus['ids'], corpus['documents'], corpus['metadatas'])}
+            self.corpus_hash = fingerprint(sorted(self.corpus.items()))
+            self.filings = list({hit.get('filing_id', hit.get('file_name')): hit for hit in self.corpus.values()}.values())
+            torch.set_num_threads(2)
+            local_model = SentenceTransformer(self.config['models']['local']) if self.provider == 'local' else None
+            # Notebook 2's current implementation defines the index preprocessing.
+            self.embedding_ns = {'np': np, 'time': time, 'json': json, 'os': __import__('os'),
+                'local_model': local_model, 'LOCAL_WINDOW_TOKENS': self.config.get('local_window_tokens', 220),
+                'LOCAL_MODEL': self.config['models']['local'],
+                'OPENAI_MODEL': self.config['models'].get('openai', 'text-embedding-3-small'),
+                'OPENAI_USD_PER_MILLION': .02, 'tqdm': lambda x, **kw: x,
+                'TOP_K': 5, 'FETCH_K': 30, 'MMR_LAMBDA': .7}
+            load_definitions(self.base / 'notebooks' / '02_embedding_vectordb.ipynb', self.embedding_ns)
+        else:
+            for name, value in search_resources.items():
+                setattr(self, name, value)
         proxy = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=self.chat)))
         self.ns = {'np': np, 'json': json, 'time': time, 'llm': proxy,
                    'collection': self.collection, 'EMBEDDING_PROVIDER': self.provider,
@@ -108,7 +116,7 @@ class Runtime:
                          assignments=['COMMON_RULES', 'PROMPTS'])
         self.prompts = prompt_ns['PROMPTS']
         # Warm the model outside the measured query latencies.
-        if local_model is not None:
+        if search_resources is None and self.embedding_ns.get('local_model') is not None:
             self.embedding_ns['embed_local'](['Canadian bank risk'])
 
     @contextlib.contextmanager
@@ -134,9 +142,10 @@ class Runtime:
         if kwargs.get('model', self.model) not in PRICES:
             raise ValueError('Configure explicit token prices for a different model before evaluation')
         kwargs.setdefault('model', self.model)
-        if kwargs['model'] == 'gpt-6-astra':
+        if kwargs['model'] in ('gpt-6-astra', 'gpt-6-luna', 'gpt-6.1-sol'):
             kwargs.pop('temperature', None)
             kwargs.setdefault('reasoning_effort', 'low')
+            kwargs.setdefault('service_tier', 'default')
         else:
             kwargs.setdefault('temperature', 0)
         kwargs.setdefault('max_completion_tokens', 1000)
@@ -177,6 +186,13 @@ class Runtime:
     def embed(self, question):
         start = time.perf_counter()
         with self.embed_lock:
+            cache = getattr(self, 'query_cache', None)
+            if cache is not None and question in cache:
+                cache.move_to_end(question)
+                self._record({'model': self.config['models'][self.provider], 'operation': 'embedding',
+                              'input_tokens': 0, 'output_tokens': 0, 'cost_usd': 0.0,
+                              'seconds': time.perf_counter()-start, 'status': 'success', 'cache_hit': True})
+                return cache[question].copy()
             if self.provider == 'local':
                 # Reuse exactly the document preprocessing saved by notebook 2.
                 vectors, _ = self.embedding_ns['embed_local']([question])
@@ -187,6 +203,10 @@ class Runtime:
                 result = result / np.linalg.norm(result)
                 used = response.usage.total_tokens
                 cost = used * .02 / 1_000_000
+            if cache is not None:
+                cache[question] = result.copy()
+                if len(cache) > 128:
+                    cache.popitem(last=False)
         self._record({'model': self.config['models'][self.provider], 'operation': 'embedding',
                       'input_tokens': used, 'output_tokens': 0, 'cost_usd': cost,
                       'seconds': time.perf_counter()-start, 'status': 'success'})

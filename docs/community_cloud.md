@@ -30,10 +30,16 @@ on the actual second device before the presentation and wake the app in advance.
 
 For the current Research assistant update, keep the existing index bundle and
 secrets: no index rebuild or notebook rerun is needed. After deployment choose
-New conversation. The default pipeline uses `gpt-6-astra` for interpretation,
-drafting and evidence review, so the API project must have access to that model.
+New conversation. The optimized pipeline uses `gpt-6-luna` for interpretation
+and `gpt-6.1-sol` for drafting and evidence review, so the API project must have access to both models.
 Evidence Only still uses the API to interpret the conversation. Basic top-k is
 an optional historical baseline; Research assistant is the recommended demo mode.
+Click **Prepare demo** before presenting and wait for the ready message. This
+downloads/restores and warms search without answer-generation calls. Search
+resources are shared on the server, while conversation state and API spending
+ledgers remain separate per browser session. A sleeping or restarted server still
+needs a cold startup. Exact repeated verified requests reuse the browser's answer
+cache; the displayed API estimate shows only new calls for that turn.
 
 The local budget is per backend session and is not a global spending limit.
 Use private sharing for the presentation and a separately budgeted API project.

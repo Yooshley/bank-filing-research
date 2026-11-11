@@ -90,13 +90,14 @@ class ResearchTests(unittest.TestCase):
         hits = [hit('irrelevant', 'Other evidence.'), hit('td', text)]
         pipeline = HybridResearch(None)
         pipeline.retrieve = Mock(return_value=(hits, []))
-        point = {'text': 'TD’s quarterly average LCR was 138%.',
+        point = {'text': 'S2: TD’s quarterly average LCR was 138%. [S2]',
                  'evidence': [{'source': 'S2', 'quote': text}]}
         pipeline.draft = Mock(return_value={'points': [point], 'limitation': '', 'next_query': ''})
         pipeline.verify = Mock(return_value=([point], []))
         result = pipeline.answer({'question': 'LCR?'})
         self.assertIn('[S1]', result['answer'])
         self.assertNotIn('[S2]', result['answer'])
+        self.assertNotIn('S2:', result['answer'])
         self.assertEqual(result['sources'], [hits[1]])
 
     def test_unverified_facts_produce_abstention(self):

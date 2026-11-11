@@ -9,6 +9,18 @@ from src.conversation_interpreter import apply_interpretation
 
 
 class AppConversationTests(unittest.TestCase):
+    def test_prepare_demo_makes_no_interpretation_call(self):
+        with patch('src.conversation_interpreter.resolve') as interpret, \
+             patch('src.cloud_index.ensure_cloud_index'), \
+             patch('src.demo_backend.load_search_resources', return_value={}), \
+             patch('src.demo_backend.DemoBackend') as backend:
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run()
+            next(b for b in app.button if b.label == 'Prepare demo').click().run()
+            self.assertFalse(app.exception)
+            self.assertTrue(app.success)
+            interpret.assert_not_called()
+            backend.assert_called_once()
+
     def test_generated_answers_are_the_default_workflow(self):
         scope = {'ready': True, 'question': 'TD liquidity coverage ratio', 'original': 'LCR?',
                  'retrieval_query': 'liquidity coverage ratio', 'banks': ['TD'], 'years': [2024],
@@ -17,6 +29,7 @@ class AppConversationTests(unittest.TestCase):
                                     'sources': [], 'seconds': 1, 'api_cost_usd': .2})
         with patch('src.conversation_interpreter.resolve', return_value=scope), \
              patch('src.cloud_index.ensure_cloud_index'), \
+             patch('src.demo_backend.load_search_resources', return_value={}), \
              patch('src.demo_backend.DemoBackend', return_value=SimpleNamespace(answer=answer)):
             app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run()
             self.assertFalse(app.checkbox[0].value)
@@ -41,6 +54,7 @@ class AppConversationTests(unittest.TestCase):
         backend = SimpleNamespace(retrieve=retrieve)
         with patch('src.conversation_interpreter.resolve', side_effect=interpret), \
              patch('src.cloud_index.ensure_cloud_index'), \
+             patch('src.demo_backend.load_search_resources', return_value={}), \
              patch('src.demo_backend.DemoBackend', return_value=backend):
             app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run()
             app.checkbox[0].set_value(True).run()

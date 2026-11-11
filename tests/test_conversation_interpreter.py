@@ -16,6 +16,21 @@ def request(**changes):
 
 
 class InterpreterTests(unittest.TestCase):
+    def test_bare_clarification_reuses_plan_without_an_api_call(self):
+        state = ConversationState()
+        value = request(action='clarify', banks=[], topic='liquidity coverage ratio',
+                        missing_fields=['bank'], answer_type='metric',
+                        search_queries=['liquidity coverage ratio LCR'])
+        apply_interpretation('liquidity coverage ratio in 2025', state, value)
+        def forbidden(**kwargs):
+            raise AssertionError('A literal slot reply must not call the API')
+        client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=forbidden)))
+        result = resolve('BMO', state, client)
+        self.assertTrue(result['ready'])
+        self.assertEqual(result['interpretation_cost_usd'], 0)
+        self.assertEqual(result['answer_type'], 'metric')
+        self.assertEqual(result['search_queries'], ['liquidity coverage ratio LCR'])
+
     def test_semantic_comparison_keeps_both_banks_without_compare_keyword(self):
         state = ConversationState(banks=['TD'], years=[2024], bank_memory=['TD'])
         value = request(banks=['TD', 'BMO'], years=[2024], answer_type='comparison')
