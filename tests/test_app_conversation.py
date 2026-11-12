@@ -15,7 +15,7 @@ class AppConversationTests(unittest.TestCase):
              patch('src.demo_backend.load_search_resources', return_value={}), \
              patch('src.demo_backend.DemoBackend') as backend:
             app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run()
-            next(b for b in app.button if b.label == 'Prepare demo').click().run()
+            next(b for b in app.button if b.label == 'Prepare').click().run()
             self.assertFalse(app.exception)
             self.assertTrue(app.success)
             interpret.assert_not_called()

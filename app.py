@@ -48,17 +48,14 @@ with st.sidebar:
     if not os.getenv('OPENAI_API_KEY'):
         st.info('Configure OPENAI_API_KEY to interpret conversations and generate answers.')
     mode = st.selectbox('Workflow', ['Research assistant', 'Basic top-k (baseline)'])
-    st.caption('Research assistant searches by topic and keywords, then checks each answer point against its evidence.')
     evidence_only = st.checkbox('Evidence Only', value=False)
-    st.caption('Evidence Only skips answer generation. Conversation interpretation still uses the API.')
-    if st.button('Prepare demo'):
+    if st.button('Prepare'):
         try:
             prepare_backend()
             st.success('Search is ready. No answer-generation calls were made.')
         except Exception:
             st.error('Search preparation failed. Check the index bundle and local model configuration, then retry.')
-    st.caption('Prepare demo before presenting to load search ahead of the first question.')
-    if st.button('New conversation'):
+    if st.button('Reload'):
         st.session_state.conversation = ConversationState()
         st.session_state.messages = []
         st.rerun()
